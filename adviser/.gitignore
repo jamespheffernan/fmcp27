@@ -1,0 +1,6 @@
+evidence/
+sessions/
+node_modules/
+tmp/
+__pycache__/
+evals/out/

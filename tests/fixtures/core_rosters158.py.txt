@@ -1,0 +1,180 @@
+from fm_live_mcp.bridge import BridgeError, players, world, teams, database, secrets, datetime, timezone
+
+def get_managed_squad(self, session_id: str, coach_name: str | None = None,
+                      include_clubs: bool = False, include_profile: bool = False, include_health: bool = False, profile_policy: str = "required") -> dict:
+    self._profile_policy(profile_policy)
+    with self.lock, self._read_scope(session_id):
+        process = self._current(session_id)
+        if type(include_health) is not bool:
+            raise BridgeError('include_health must be a boolean.')
+        if type(include_profile) is not bool:
+            raise BridgeError('include_profile must be a boolean.')
+        if type(include_clubs) is not bool:
+            raise BridgeError("include_clubs must be a boolean.")
+        tables = self._player_layout(process)
+        snapshot, record, _ = self._world_state(process, tables)
+        coach = self._select_coach(record, coach_name)
+        pending = []
+        team_cache = {}
+        try:
+            context = None
+            if profile_policy == 'available':
+                _, context = self._roster_team(snapshot, tables[0] - players.RVA[0], coach['team_address'])
+            addresses = world.vector(snapshot, coach["team_address"] + 0x38, 256)
+            for index, address in enumerate(addresses):
+                player, identity = self._roster_player(snapshot, address, tables, include_clubs, team_cache,
+                                                      include_profile, include_health, profile_policy)
+                if context is not None:
+                    self._roster_available_context(snapshot, address, tables, player, identity, context, index)
+                pending.append((address, player, identity))
+            prepared = [self._player_binding(address, player, identity, tables, profile_policy)
+                        for address, player, identity in pending]
+            accounting = self._roster_accounting([player for _, player, _ in pending], profile_policy)
+            snapshot.verify()
+        except (ValueError, IndexError, BridgeError) as exc:
+            raise BridgeError(f"Managed squad rejected; no partial roster returned: {exc}") from exc
+        self._current(session_id)
+        if len(self.player_refs) + len(pending) > 1000:
+            self.player_refs.clear()
+        result = []
+        for (address, player, identity), binding in zip(pending, prepared):
+            ref = secrets.token_urlsafe(12)
+            self.player_refs[ref] = binding
+            result.append({**player, "player_ref": ref})
+        return {"session_id": session_id, "observed_at": datetime.now(timezone.utc).isoformat(),
+                "save": self._public_save(record), "coach": coach["name"], "club": coach["club"],
+                "players": result, "count": len(result), "complete_native_roster": True,
+                **accounting,
+                "evidence": "game_root_to_active_manager_to_club_team_roster",
+                "limitations": "The native managed-team roster can include loaned-out players and differs from UI filters or youth call-ups. This is not the whole club or a match-eligibility list. Unsupported records fail the whole query. Non-atomic reads with byte rechecks." + (
+                    ' Available policy preserves checked virtual identities with explicit unavailable expanded fields; roster context does not establish contract/current club or loan status.'
+                    if profile_policy == 'available' else '')}
+
+
+def get_club_squads(self, session_id: str, coach_name: str | None = None,
+                    club_ref: str | None = None) -> dict:
+    with self.lock, self._read_scope(session_id):
+        process = self._current(session_id)
+        tables = self._player_layout(process)
+        base = tables[0] - players.RVA[0]
+        snapshot, record, _ = self._world_state(process, tables)
+        if club_ref is not None and coach_name is not None:
+            raise BridgeError('Select either club_ref or coach_name, not both.')
+        club_index, club_identity = None, None
+        if club_ref is None:
+            coach = self._select_coach(record, coach_name)
+            club_address = world.pointer(snapshot, coach['team_address'] + 0x30)
+            club = coach['club']
+        else:
+            club, club_address, club_index, club_identity = self._referenced_club(snapshot, base, club_ref, tables)
+        pending = []
+        try:
+            for address in world.vector(snapshot, club_address + 0x18, 64):
+                world.typed(snapshot, base, address, 'team')
+                if world.pointer(snapshot, address + 0x30) != club_address:
+                    raise ValueError('Club team backlink disagrees')
+                identity = snapshot(address + 8, 12)
+                native_type = int.from_bytes(snapshot(address + 0x28, 2), 'little')
+                label = {0: 'Senior', 266: 'U21', 268: 'U18'}.get(native_type, 'Other squad')
+                count = len(world.vector(snapshot, address + 0x38, 256))
+                pending.append((address, identity, native_type, label, count))
+            snapshot.verify()
+        except (ValueError, IndexError) as exc:
+            raise BridgeError(f'Club squads rejected: {exc}') from exc
+        self._current(session_id)
+        if len(self.team_refs) + len(pending) > 256:
+            self.team_refs.clear()
+        result = []
+        for address, identity, native_type, label, count in pending:
+            ref = secrets.token_urlsafe(12)
+            self.team_refs[ref] = {'address': address, 'identity': identity, 'tables': tables,
+                                   'club_address': club_address, 'label': label,
+                                   'club_database_index': club_index, 'club_identity': club_identity}
+            result.append({'team_ref': ref, 'label': label, 'native_type': native_type,
+                           'count': count, 'is_managed_team': any(address == c['team_address'] for c in record['coaches'])})
+        return {'session_id': session_id, 'observed_at': datetime.now(timezone.utc).isoformat(),
+                'save': self._public_save(record), 'club': club, 'squads': result,
+                'evidence': 'live_club_table_to_team_vector' if club_ref is not None else 'managed_club_native_team_vector',
+                'limitations': 'Labels Senior/U21/U18 were crosschecked on Newcastle in the pinned build. Other squad types remain unlabelled. Counts include virtual players; rosters can overlap and differ from UI filters.'}
+
+
+def get_team_squad(self, session_id: str, team_ref: str, include_clubs: bool = False, include_profile: bool = False, include_health: bool = False, profile_policy: str = "required") -> dict:
+    self._profile_policy(profile_policy)
+    with self.lock, self._read_scope(session_id):
+        process = self._current(session_id)
+        if type(include_health) is not bool:
+            raise BridgeError('include_health must be a boolean.')
+        if type(include_profile) is not bool:
+            raise BridgeError('include_profile must be a boolean.')
+        if type(include_clubs) is not bool:
+            raise BridgeError('include_clubs must be a boolean.')
+        saved = self.team_refs.get(team_ref) if isinstance(team_ref, str) else None
+        if not saved:
+            raise BridgeError('Unknown or expired team reference. Call fm_get_club_squads, fm_get_competition_teams or fm_get_competition_registrations again.')
+        tables = self._player_layout(process)
+        snapshot, record, _ = self._world_state(process, tables)
+        pending, team_cache = [], {}
+        try:
+            address = saved['address']
+            if tables != saved['tables'] or snapshot(address + 8, 12) != saved['identity']:
+                raise ValueError('Team identity changed')
+            base = tables[0] - players.RVA[0]
+            team_row = None
+            if saved.get('source') in ('competition', 'national'):
+                team_row, binding = teams.by_index(snapshot, base, saved['database_index'])
+                if any(binding[key] != saved[key] for key in binding):
+                    raise ValueError('Team or owner identity changed')
+                owner = team_row['owner']
+                club = ({'name': owner['name'], 'short_name': owner['short_name']}
+                        if owner and owner['kind'] in ('club', 'league_body_club') else None)
+            else:
+                world.typed(snapshot, tables[0] - players.RVA[0], address, 'team')
+                club_address = world.pointer(snapshot, address + 0x30)
+                if club_address != saved['club_address'] or address not in world.vector(snapshot, club_address + 0x18, 64):
+                    raise ValueError('Team club relationship changed')
+                base = tables[0] - players.RVA[0]
+                club, club_identity = world.club(snapshot, base, club_address)
+                if saved.get('club_database_index') is not None:
+                    info = database.table(snapshot, base, 'clubs')
+                    database.club_membership(snapshot, base, info, saved['club_database_index'], club_address)
+                    if club_identity != saved['club_identity']:
+                        raise ValueError('Team club identity changed')
+            context = None
+            if profile_policy == 'available':
+                canonical, context = self._roster_team(snapshot, base, address, team_row)
+                if team_row is None:
+                    team_row = canonical
+            for index, player_address in enumerate(world.vector(snapshot, address + 0x38, 256)):
+                player, identity = self._roster_player(snapshot, player_address, tables, include_clubs, team_cache,
+                                                      include_profile, include_health, profile_policy)
+                if profile_policy == 'required':
+                    player['native_identity'] = self._required_roster_identity(
+                        snapshot, player_address, tables, player, identity)
+                if context is not None:
+                    self._roster_available_context(snapshot, player_address, tables, player, identity, context, index)
+                pending.append((player_address, player, identity))
+            prepared = [self._player_binding(address, player, identity, tables, profile_policy)
+                        for address, player, identity in pending]
+            accounting = self._roster_accounting([player for _, player, _ in pending], profile_policy)
+            snapshot.verify()
+        except (ValueError, IndexError, BridgeError) as exc:
+            self.team_refs.pop(team_ref, None)
+            raise BridgeError(f'Team squad rejected; no partial roster returned: {exc}') from exc
+        self._current(session_id)
+        if len(self.player_refs) + len(pending) > 1000:
+            self.player_refs.clear()
+        result = []
+        for (address, player, identity), binding in zip(pending, prepared):
+            ref = secrets.token_urlsafe(12)
+            self.player_refs[ref] = binding
+            result.append({**player, 'player_ref': ref})
+        return {'session_id': session_id, 'observed_at': datetime.now(timezone.utc).isoformat(),
+                'save': self._public_save(record), 'team_ref': team_ref, 'label': saved['label'],
+                'club': club, **({'team': team_row} if team_row is not None else {}),
+                'players': result, 'count': len(result), 'complete_native_roster': True,
+                'virtual_player_count': sum(p.get('record_kind') == 'virtual' for p in result),
+                **accounting,
+                'evidence': 'save_bound_database_team_roster' if team_row is not None else 'save_bound_club_team_roster_with_actual_and_virtual_players',
+                'limitations': 'Native roster membership is not ownership or match eligibility. Rich virtual fields require existing identity-matched game caches; no profile is generated by this reader. Non-atomic reads with byte rechecks.' + (
+                    ' Available policy also returns checked identity-only virtual records with null unavailable expanded fields; roster context does not establish contract/current club or loan status.'
+                    if profile_policy == 'available' else '')}

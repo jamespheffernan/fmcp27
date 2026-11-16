@@ -1,0 +1,420 @@
+{
+  "source_snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+  "provenance": "B80 native paired serializer and independent B47 same-file forms; raw frames fully decompressed, both sides complete; later event tail unsupported",
+  "frames": [
+    {
+      "key": 135195,
+      "sha256": "ef501680f653235439243616ffb35599c4d10ae4ca2b200ec1c84eca67d9ce93",
+      "size": 367937,
+      "Gordon": {
+        "side": 0,
+        "slot": 9,
+        "start": 3183,
+        "end": 3459,
+        "raw_sha256": "b5d363abc8d6427e2ee2cccd5a691ed94649fbc08b61944a18feb672f2560158",
+        "person_index_word": 13009,
+        "goals": 1,
+        "assists": 0,
+        "wire_offsets": {
+          "goals": 20,
+          "assists": 56
+        },
+        "appearance_state": null,
+        "completion_state": null
+      },
+      "other_subject_row": {
+        "person_index": 35795,
+        "start": 1077
+      }
+    },
+    {
+      "key": 132398,
+      "sha256": "3028a29340bf8f54c0c215de1a1f3e3d3c710b0d7dbcb48d386f57180deecc68",
+      "size": 345319,
+      "Gordon": {
+        "side": 1,
+        "slot": 9,
+        "start": 13688,
+        "end": 13928,
+        "raw_sha256": "0be5843e47cb73a80ed2fe310a6c80c10d57dbae8e3d9a6f897159d33bd5616b",
+        "person_index_word": 13009,
+        "goals": 0,
+        "assists": 0,
+        "wire_offsets": {
+          "goals": 20,
+          "assists": 56
+        },
+        "appearance_state": null,
+        "completion_state": null
+      },
+      "other_subject_row": {
+        "person_index": 13904,
+        "start": 1053
+      }
+    },
+    {
+      "key": 129861,
+      "sha256": "ee01b39cf8c42b2689290757db29d3bdc4bc3de4ae9eb961cee390d4c716a6a7",
+      "size": 20326,
+      "Gordon": {
+        "side": 1,
+        "slot": 17,
+        "start": 16589,
+        "end": 16829,
+        "raw_sha256": "4336439620361640cde086be787a5b2b07e13523d0185c66cb4ae03961cfad25",
+        "person_index_word": 13009,
+        "goals": 0,
+        "assists": 1,
+        "wire_offsets": {
+          "goals": 20,
+          "assists": 56
+        },
+        "appearance_state": null,
+        "completion_state": null
+      },
+      "other_subject_row": {
+        "person_index": 39559,
+        "start": 1033
+      }
+    }
+  ],
+  "independent_form_oracle_sha256": "5c711d980642e5bef1959e8770ad3690760a97a76e2a361649afad83db814794",
+  "independent_form_controls": [
+    {
+      "key": 135195,
+      "person_index": 13009,
+      "goals": 1,
+      "assists": 0,
+      "form_row_sha256": "3a01a44b81ed265c596b84e4ed1bb366e4c0ba4b2730b28a5f611edf482aecb1"
+    },
+    {
+      "key": 135195,
+      "person_index": 13248,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "614fdcedc5577b6228a915ac569445e7dbbe8f654a7b4daa4ae5c45450e74d7b"
+    },
+    {
+      "key": 135195,
+      "person_index": 41999,
+      "goals": 0,
+      "assists": 1,
+      "form_row_sha256": "9115b8b9cbf9785c1cbfe7f58687c36f0e5d76d7a6653ab7cfb2b4f1f940957a"
+    },
+    {
+      "key": 135195,
+      "person_index": 33495,
+      "goals": 1,
+      "assists": 0,
+      "form_row_sha256": "bd6a799af80c4e6f0dadf9a3da551398f599bf4017e0f68c22de7bb49a5874cf"
+    },
+    {
+      "key": 135195,
+      "person_index": 35795,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "26b6f03dc276eeab55acb030b7420a1ad190f0078a0fce522b1273ccba86821a"
+    },
+    {
+      "key": 135195,
+      "person_index": 37706,
+      "goals": 0,
+      "assists": 1,
+      "form_row_sha256": "83c10f87564e936b5876e0fbd880e0cae94c4cfee9ab3c100ef1ed26ce224718"
+    },
+    {
+      "key": 135195,
+      "person_index": 11178,
+      "goals": 2,
+      "assists": 0,
+      "form_row_sha256": "d0bd5065545dd4c6b6096d211ec63278dfc4f690cef7d6771be863a8b5d3c52e"
+    },
+    {
+      "key": 135195,
+      "person_index": 40862,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "ad47da280bf8467469f05366698487809037873665c7467b2513cc3662d2a4c8"
+    },
+    {
+      "key": 135195,
+      "person_index": 37623,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "2b1b9be3db4557910992277cbecfc58303b29da723ea1f7f9111391d636576d3"
+    },
+    {
+      "key": 135195,
+      "person_index": 53560,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "c742a06c53f16afaf5859c90fb002f96be8e0ed1f410fea909df5e6b3856756f"
+    },
+    {
+      "key": 135195,
+      "person_index": 49717,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "71271a9805ba401248e6b6cdb17aaf97aa5cf820a09ad44cd205ef2f12bf4064"
+    },
+    {
+      "key": 135195,
+      "person_index": 38945,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "40a60c44c69e1933e0cc81f53a1a854bba278a530b1f6a63620bef684224e015"
+    },
+    {
+      "key": 135195,
+      "person_index": 56412,
+      "goals": 0,
+      "assists": 1,
+      "form_row_sha256": "d7a3956d3156b867d7b3c86c33a83f6858bb7a969db4442f08c8bad4776eb367"
+    },
+    {
+      "key": 135195,
+      "person_index": 39235,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "3ed2f88ca95e9b119c1196b4d71c5296af07ac2f2bdd6172b0ac46f53e020d54"
+    },
+    {
+      "key": 135195,
+      "person_index": 20265,
+      "goals": 0,
+      "assists": 1,
+      "form_row_sha256": "55ee0344f7db887aaab8b4047c312df9143d7f4ca7c76e5f90c67f3a4da5c588"
+    },
+    {
+      "key": 135195,
+      "person_index": 13250,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "17ee10c9259a50a71b650293d82dc2172ad355a3c641a5f532286f24fce2f9d5"
+    },
+    {
+      "key": 132398,
+      "person_index": 13009,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "371709a14b12242c27551157cf6b0ea87c36f872b9589af72007c8f1b28a02b6"
+    },
+    {
+      "key": 132398,
+      "person_index": 13248,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "afb01c3f0cbb04cb4a7bc6facb68b21dabf76696fcbdfeb4e266479221cc9ba9"
+    },
+    {
+      "key": 132398,
+      "person_index": 14805,
+      "goals": 0,
+      "assists": 1,
+      "form_row_sha256": "323dcd9ae14594680ef4cb703074370b504540226655aeecc350609c7649a1c9"
+    },
+    {
+      "key": 132398,
+      "person_index": 33495,
+      "goals": 1,
+      "assists": 0,
+      "form_row_sha256": "cd73e1f110a831e56e6e732dd6a77b1e9cfd4009c424192da9f2e6fcd27729e2"
+    },
+    {
+      "key": 132398,
+      "person_index": 35795,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "12068108fe2e2215d0cf03d4669c16dfc2d61cf22fc116442b38058a26b0e035"
+    },
+    {
+      "key": 132398,
+      "person_index": 37706,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "c540ba37da022def4c8ef2a955cc61c32dfa3f8e14e0fb04626d10c1a8536b27"
+    },
+    {
+      "key": 132398,
+      "person_index": 8209,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "ad65879dcc37d4f6b9df871fe72430828f1213e1c12b949c401553ae27629622"
+    },
+    {
+      "key": 132398,
+      "person_index": 37623,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "3f9b66e6942cdd90381e89789e1395660ca8f49b2a4f3e40ab847e72f8e3fd4c"
+    },
+    {
+      "key": 132398,
+      "person_index": 53560,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "0187835d9d65f261471be3d82dfca3f509c2aa4f23d8443a7cf1e820d4ae9be3"
+    },
+    {
+      "key": 132398,
+      "person_index": 49717,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "04b3636e061210fef6b06b046e7dffca18c29291f9df93488a1ae8e4d4b51722"
+    },
+    {
+      "key": 132398,
+      "person_index": 36819,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "4ad9110a13b99ab1e3a4ba039129fffb683a77c5d86d422dd3a642bcb8a6e7ae"
+    },
+    {
+      "key": 132398,
+      "person_index": 38945,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "1fc536bd08bc5f29dffaf67a7ef149f41194bc77f6f204c71d4f1146c853a5c1"
+    },
+    {
+      "key": 132398,
+      "person_index": 56412,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "1bd24e1cb4bf94334b1f9af5754fa535f1e893b294dd0d0f3f4a9276df29393d"
+    },
+    {
+      "key": 132398,
+      "person_index": 20265,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "b3357250c6960bb0260fce2d57afe592cf06be819a356733d6cf45f7c2ac5500"
+    },
+    {
+      "key": 132398,
+      "person_index": 52310,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "6a111baab51d9feebaed0d579ef941149017ccbfefff23286acf54dc7f2142fe"
+    },
+    {
+      "key": 132398,
+      "person_index": 13250,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "d6d3eb876d24c847e93f79e39d017020e220adfcda74be5e29a9e4621555926a"
+    },
+    {
+      "key": 129861,
+      "person_index": 13009,
+      "goals": 0,
+      "assists": 1,
+      "form_row_sha256": "009a35d42514623ced5f38fe5f72ca42db380b513fc4e2f52310b7ff01769876"
+    },
+    {
+      "key": 129861,
+      "person_index": 13248,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "302cb162fea590ca4e2355bcc16a01652ad2db64abeabe49796f49f9050fe1c2"
+    },
+    {
+      "key": 129861,
+      "person_index": 41999,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "535a5653bb9a3aa040492c502ab0e6669417957971a82588a49e0577384b1085"
+    },
+    {
+      "key": 129861,
+      "person_index": 14805,
+      "goals": 1,
+      "assists": 0,
+      "form_row_sha256": "9235839fefcce2cf11e86549d395b92b75e51e2f62f1a9c1245764e2e6faf843"
+    },
+    {
+      "key": 129861,
+      "person_index": 33495,
+      "goals": 1,
+      "assists": 1,
+      "form_row_sha256": "cc3c33b4d99aed4d679e67d2c6944c3c00afddcdc70005a080e952f2aad5e956"
+    },
+    {
+      "key": 129861,
+      "person_index": 35795,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "27b842e26e550ed4727469f3d7fc2b38c4c58235cc0139e6cf31c8f34da98ff9"
+    },
+    {
+      "key": 129861,
+      "person_index": 37706,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "33ff52c18e9459b0f919161d00e4a0e1faf99f461368ceae81721473097dbc5d"
+    },
+    {
+      "key": 129861,
+      "person_index": 47009,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "421ba9306fe7b1d6826c2b3162a439f677df94cccd415ed76944338363ffa16c"
+    },
+    {
+      "key": 129861,
+      "person_index": 11178,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "4cdf3ba8941463cf90bf087cb72cd4027e89afd698e02c13134ca1a0099ab309"
+    },
+    {
+      "key": 129861,
+      "person_index": 37623,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "74c0b56c61dc5fb14cd735debfee80e2323d546a9ead9355f9fdb7b85201744f"
+    },
+    {
+      "key": 129861,
+      "person_index": 53560,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "92791695e363b42f272a18048c18e32f8ea5ad1a52358536f0f93071a70dc61f"
+    },
+    {
+      "key": 129861,
+      "person_index": 36819,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "d1fd2aff3c1edb8fa106cab86b01c15e228921b3aeb1e53e259dfed157494f13"
+    },
+    {
+      "key": 129861,
+      "person_index": 38945,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "030cae9b8ddfeabc5a5a19fef3b0a2f9fcb2a6d54e34d74f1b809dc5291d201f"
+    },
+    {
+      "key": 129861,
+      "person_index": 38560,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "1afe9255a324768e2737f6740d0990a65b6fffbcf9ed73f2bab0db23f967fcdb"
+    },
+    {
+      "key": 129861,
+      "person_index": 52310,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "b9733131b4de61bbbadceea7356a89ba2672563f5f6b58631037f0f9b83a4327"
+    },
+    {
+      "key": 129861,
+      "person_index": 13250,
+      "goals": 0,
+      "assists": 0,
+      "form_row_sha256": "ca091cd6c2c601d6751972fc00113cff46c3a63fd8c7ab56a8ac2bcba828ae5e"
+    }
+  ]
+}

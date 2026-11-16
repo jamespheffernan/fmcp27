@@ -1,0 +1,17 @@
+# Active completed-pass event locations
+
+`fm_get_current_match_pass_events(session_id, team_native_id=None, from_person_native_id=None, to_person_native_id=None, limit=50, cursor=None)` selects native completed category7 events excluding unlabelled mask8, strictly before a checked current playback cutoff. It returns canonical sender/recipient IDs/names, native event ID, original stored actor slots, source start/end ticks, direction flag, official pass-map event point and analytical pitch-third/channel bins.
+
+For “where are Baas and Enciso linking up?”, discover canonical IDs using `fm_get_current_match_pass_network`, then query each direction with the same team and PERSON selectors. Reuse each returned next_cursor with **identical selectors and limit**; 1..100 rows/page. The two directions are separate captures unless a single team-filtered event capture is paged and filtered locally. No implied common cutoff across independent calls.
+
+The existing compact network tool and its input/output schema are unchanged. New location capture adds native `pass_field_position` guards, CBE pitch-half-extents and only consumed completed-event XY bytes to source comparison. Actor, fixture, official game ID, source CBE, engine frontier, world/process epoch and native event selection are checked again at the original fixed cutoff. Monotonic same-match playback may progress; edits, relinks, rewind, early engine or geometry changes reject. Pages reuse immutable captured rows and reverify the original prefix/actors/geometry, without advancing the captured cutoff or re-aggregating a new network. Capture ID, original observation time and prefix verification remain on every page. A bounded four-token cache expires after120seconds; an expired/evicted token requires a fresh capture.
+
+A source-absent response has events:null and total_selected_events:null. A requested side with unresolved consumed actors also withholds its events/count. In an all-team partial response, selection_coverage_state marks unknown actor coverage and side_coverage identifies which side was withheld. An empty fully covered selected set is[]/0.
+
+A point is the **official native pass-map event location**. Ball-release and reception locations, intended destination, trajectory, physical units and human left/right are not proved. Only the source direction flag supplies attack-relative longitudinal coordinate. Bins are explicitly analytical equal longitudinal thirds and central-width third versus outer channels. They are not FM's official location bins. No failed-pass locations, chance creation, current membership, pressing success, displayed minute or official attempts/completion percentage are inferred.
+
+## Evidence
+
+Frozen same-playthrough terminal23929 contains1,020 qualified completed events: Newcastle508, Forest512. Its selected location/flags/IDs at the earlier184cutoff19264 equal all815 previously captured events exactly. Independent struct-only controls check all native points and bins. Baas→Enciso has28event points:14defensive/13middle/1attacking;25outer/3central. These describe event locations, not where the recipient received the ball. Portable fixture tests preserve exact terminal raw/hash, actors and same-run pitch geometry34.3125/50.32500076293945.
+
+One bounded candidate runtime read returned unavailable:no_unique_native_viewable_client. Frozen positive projection is verified; an online combined location endpoint positive remains pending. This does not weaken or reuse the earlier installed network positive as location proof.

@@ -1,0 +1,377 @@
+{
+ "build": "27.0.0.2493426",
+ "walker": "0x256d728",
+ "slot_function": "0x2583dcc",
+ "save_system_vtable": "0x55f4ac8",
+ "method": "static scan of the walker: every direct call `bl f` whose x1 is the walker's archive-item holder (x29-0xb8) and whose x0 is a manager global root (optionally +offset or *offset); each site is verified as `bl f` in the loaded image before use",
+ "routes": [
+  {
+   "key": "GAME_RULE_GROUP_MANAGER",
+   "root": "GAME_RULE_GROUP_MANAGER",
+   "root_rva": "0x56a4b90",
+   "path": "",
+   "function": "0x4215d94",
+   "site": "0x2571a4c"
+  },
+  {
+   "key": "HUMAN_NON_PLAYER_MANAGER",
+   "root": "HUMAN_NON_PLAYER_MANAGER",
+   "root_rva": "0x56a6890",
+   "path": "",
+   "function": "0x26e346c",
+   "site": "0x2571e18"
+  },
+  {
+   "key": "NEWS_MANAGER",
+   "root": "NEWS_MANAGER",
+   "root_rva": "0x56a5908",
+   "path": "",
+   "function": "0x28f274c",
+   "site": "0x25721e4"
+  },
+  {
+   "key": "TRANSFER_MANAGER+0x18",
+   "root": "TRANSFER_MANAGER",
+   "root_rva": "0x56a49f8",
+   "path": "+0x18",
+   "function": "0x1828858",
+   "site": "0x25725b0"
+  },
+  {
+   "key": "TRANSFER_MANAGER*0x7e0",
+   "root": "TRANSFER_MANAGER",
+   "root_rva": "0x56a49f8",
+   "path": "*0x7e0",
+   "function": "0x2c734fc",
+   "site": "0x25725c0"
+  },
+  {
+   "key": "SHORTLIST_MANAGER",
+   "root": "SHORTLIST_MANAGER",
+   "root_rva": "0x56a4be0",
+   "path": "",
+   "function": "0x2b1bb14",
+   "site": "0x257298c"
+  },
+  {
+   "key": "TEAM_CONTAINER_RECORD_MANAGER",
+   "root": "TEAM_CONTAINER_RECORD_MANAGER",
+   "root_rva": "0x56a5e50",
+   "path": "",
+   "function": "0x2b66f84",
+   "site": "0x2573120"
+  },
+  {
+   "key": "TACTICS_MANAGER",
+   "root": "TACTICS_MANAGER",
+   "root_rva": "0x56a8310",
+   "path": "",
+   "function": "0x2b511a0",
+   "site": "0x25734ec"
+  },
+  {
+   "key": "REGENERATION_MANAGER+0x18",
+   "root": "REGENERATION_MANAGER",
+   "root_rva": "0x56a8428",
+   "path": "+0x18",
+   "function": "0x1596634",
+   "site": "0x25738b8"
+  },
+  {
+   "key": "RETIREMENT_MANAGER",
+   "root": "RETIREMENT_MANAGER",
+   "root_rva": "0x56a82a8",
+   "path": "",
+   "function": "0x2a8d2b0",
+   "site": "0x2573c84"
+  },
+  {
+   "key": "DATABASE_ANALYSER",
+   "root": "DATABASE_ANALYSER",
+   "root_rva": "0x56b76a0",
+   "path": "",
+   "function": "0x265bab0",
+   "site": "0x2574050"
+  },
+  {
+   "key": "EDIT_SESSION_MANAGER",
+   "root": "EDIT_SESSION_MANAGER",
+   "root_rva": "0x56a5190",
+   "path": "",
+   "function": "0x266c388",
+   "site": "0x257441c"
+  },
+  {
+   "key": "FOG_OF_WAR_MANAGER",
+   "root": "FOG_OF_WAR_MANAGER",
+   "root_rva": "0x56a8430",
+   "path": "",
+   "function": "0x26c2c48",
+   "site": "0x2574bb4"
+  },
+  {
+   "key": "INJURY_MANAGER",
+   "root": "INJURY_MANAGER",
+   "root_rva": "0x56a82a0",
+   "path": "",
+   "function": "0x26fe31c",
+   "site": "0x2574f80"
+  },
+  {
+   "key": "TRAINING_MANAGER",
+   "root": "TRAINING_MANAGER",
+   "root_rva": "0x56a5740",
+   "path": "",
+   "function": "0x2cb9224",
+   "site": "0x257534c"
+  },
+  {
+   "key": "TRAINING_CAMP_MANAGER",
+   "root": "TRAINING_CAMP_MANAGER",
+   "root_rva": "0x56a8700",
+   "path": "",
+   "function": "0x2c8a83c",
+   "site": "0x2575718"
+  },
+  {
+   "key": "SCOUT_MANAGER",
+   "root": "SCOUT_MANAGER",
+   "root_rva": "0x56a6ab0",
+   "path": "",
+   "function": "0x2aa8aa8",
+   "site": "0x2575d58"
+  },
+  {
+   "key": "AWOL_MANAGER",
+   "root": "AWOL_MANAGER",
+   "root_rva": "0x56a82b0",
+   "path": "",
+   "function": "0x25d0364",
+   "site": "0x2576124"
+  },
+  {
+   "key": "AWARD_MANAGER",
+   "root": "AWARD_MANAGER",
+   "root_rva": "0x56a6218",
+   "path": "",
+   "function": "0x25b8bbc",
+   "site": "0x25764f0"
+  },
+  {
+   "key": "FINE_MANAGER",
+   "root": "FINE_MANAGER",
+   "root_rva": "0x56b5030",
+   "path": "",
+   "function": "0x26bbba4",
+   "site": "0x25768bc"
+  },
+  {
+   "key": "CONTRACT_MANAGER",
+   "root": "CONTRACT_MANAGER",
+   "root_rva": "0x56a64c8",
+   "path": "",
+   "function": "0x26047d0",
+   "site": "0x2576c88"
+  },
+  {
+   "key": "PERSON_RECORD_MANAGER",
+   "root": "PERSON_RECORD_MANAGER",
+   "root_rva": "0x56b50a8",
+   "path": "",
+   "function": "0x291f604",
+   "site": "0x2577054"
+  },
+  {
+   "key": "OFFICIAL_MANAGER",
+   "root": "OFFICIAL_MANAGER",
+   "root_rva": "0x56b5568",
+   "path": "",
+   "function": "0x2905b24",
+   "site": "0x2577420"
+  },
+  {
+   "key": "AGENT_MANAGER",
+   "root": "AGENT_MANAGER",
+   "root_rva": "0x56b6188",
+   "path": "",
+   "function": "0x259e31c",
+   "site": "0x25777ec"
+  },
+  {
+   "key": "DISPUTE_MANAGER",
+   "root": "DISPUTE_MANAGER",
+   "root_rva": "0x56b7680",
+   "path": "",
+   "function": "0x2666838",
+   "site": "0x2577bb8"
+  },
+  {
+   "key": "FINANCE_MANAGER",
+   "root": "FINANCE_MANAGER",
+   "root_rva": "0x56b5428",
+   "path": "",
+   "function": "0x268ba48",
+   "site": "0x2577f84"
+  },
+  {
+   "key": "NETWORK_COMPETITION_MANAGER",
+   "root": "NETWORK_COMPETITION_MANAGER",
+   "root_rva": "0x56a6888",
+   "path": "",
+   "function": "0x28cf5b4",
+   "site": "0x2578350"
+  },
+  {
+   "key": "SIMULATED_STATS_MANAGER",
+   "root": "SIMULATED_STATS_MANAGER",
+   "root_rva": "0x56b54e0",
+   "path": "",
+   "function": "0x2b3f7e0",
+   "site": "0x257871c"
+  },
+  {
+   "key": "HALL_OF_FAME_MANAGER",
+   "root": "HALL_OF_FAME_MANAGER",
+   "root_rva": "0x56a7f10",
+   "path": "",
+   "function": "0x26c90b4",
+   "site": "0x2578ae8"
+  },
+  {
+   "key": "BACKROOM_ADVICE_MANAGER",
+   "root": "BACKROOM_ADVICE_MANAGER",
+   "root_rva": "0x56a4f40",
+   "path": "",
+   "function": "0x25d95e0",
+   "site": "0x2578eb4"
+  },
+  {
+   "key": "INTERACTION_MANAGER",
+   "root": "INTERACTION_MANAGER",
+   "root_rva": "0x56a5688",
+   "path": "",
+   "function": "0x273ee94",
+   "site": "0x2579280"
+  },
+  {
+   "key": "PRESS_CONFERENCE_MANAGER",
+   "root": "PRESS_CONFERENCE_MANAGER",
+   "root_rva": "0x56a8690",
+   "path": "",
+   "function": "0x295290c",
+   "site": "0x257964c"
+  },
+  {
+   "key": "JOB_CENTRE_MANAGER",
+   "root": "JOB_CENTRE_MANAGER",
+   "root_rva": "0x56a57a0",
+   "path": "",
+   "function": "0x278abfc",
+   "site": "0x2579a18"
+  },
+  {
+   "key": "TEAM_TALK_MANAGER",
+   "root": "TEAM_TALK_MANAGER",
+   "root_rva": "0x56b6770",
+   "path": "",
+   "function": "0x2bdb0dc",
+   "site": "0x2579de4"
+  },
+  {
+   "key": "BOARD_TAKEOVER_MANAGER",
+   "root": "BOARD_TAKEOVER_MANAGER",
+   "root_rva": "0x56b5430",
+   "path": "",
+   "function": "0x25e836c",
+   "site": "0x257a1b0"
+  },
+  {
+   "key": "FINANCIAL_FAIR_PLAY_MANAGER",
+   "root": "FINANCIAL_FAIR_PLAY_MANAGER",
+   "root_rva": "0x56b5438",
+   "path": "",
+   "function": "0x26b9d84",
+   "site": "0x257a57c"
+  },
+  {
+   "key": "FEEDER_CLUB_MANAGER",
+   "root": "FEEDER_CLUB_MANAGER",
+   "root_rva": "0x56b6190",
+   "path": "",
+   "function": "0x2675f58",
+   "site": "0x257a948"
+  },
+  {
+   "key": "CHALLENGE_MANAGER",
+   "root": "CHALLENGE_MANAGER",
+   "root_rva": "0x56a86f0",
+   "path": "",
+   "function": "0x25f6b60",
+   "site": "0x257ad14"
+  },
+  {
+   "key": "MEDIA_MANAGER+0x18",
+   "root": "MEDIA_MANAGER",
+   "root_rva": "0x56a80e0",
+   "path": "+0x18",
+   "function": "0x1390904",
+   "site": "0x257b0e0"
+  },
+  {
+   "key": "MORALE_MANAGER",
+   "root": "MORALE_MANAGER",
+   "root_rva": "0x56b5038",
+   "path": "",
+   "function": "0x2878750",
+   "site": "0x257b4ac"
+  },
+  {
+   "key": "MATCHDAY_MANAGER",
+   "root": "MATCHDAY_MANAGER",
+   "root_rva": "0x56a49f0",
+   "path": "",
+   "function": "0x27cd9c4",
+   "site": "0x257b878"
+  },
+  {
+   "key": "PLAY_FIXTURE_MANAGER",
+   "root": "PLAY_FIXTURE_MANAGER",
+   "root_rva": "0x56a4a00",
+   "path": "",
+   "function": "0x293c320",
+   "site": "0x257bc44"
+  },
+  {
+   "key": "DYNAMICS_PIVOTAL_MOMENTS_MANAGER",
+   "root": "DYNAMICS_PIVOTAL_MOMENTS_MANAGER",
+   "root_rva": "0x56a8438",
+   "path": "",
+   "function": "0x2668da8",
+   "site": "0x257c010"
+  },
+  {
+   "key": "MATCH_STATS_MANAGER",
+   "root": "MATCH_STATS_MANAGER",
+   "root_rva": "0x56b5570",
+   "path": "",
+   "function": "0x1c41fdc",
+   "site": "0x257c7a8"
+  },
+  {
+   "key": "MANAGER_MANAGER",
+   "root": "MANAGER_MANAGER",
+   "root_rva": "0x56b51d8",
+   "path": "",
+   "function": "0x27964b8",
+   "site": "0x2572d54",
+   "holder_only": true,
+   "note": "static save function: x0 is the holder; it loads MANAGER_MANAGER itself"
+  }
+ ],
+ "not_routed": {
+  "PERSON_PROGRESSION_MANAGER": "the walker loads it only for its RTTI name (progress label at 0x25758a0); no call with the holder follows before SCOUT_MANAGER's block",
+  "UNLOCKABLE_MANAGER": "the walker reads +0x20 (== 3) and the +0x28 vector for a condition (0x257cbe4); no save call takes the holder",
+  "siapplication::SETTINGS_MANAGER": "read for settings during the save (0x256d8cc, 0x256fed0, 0x2570018, 0x257d078, 0x257d3ac); no save call with the holder",
+  "database tables (AWARD, COMP, GAME_DATABASE_RECORD, NATION, NATIONAL_TEAM_CONTAINER, PERSON) and sicore/sidistribution/sitranslation managers": "loaded by the walker outside the per-manager save blocks (e.g. DATABASE_TABLE<PERSON> at 0x256d94c reads the table vector +0x88 for a count); no call hands them the holder. Their records appear in other roots only as references (save functions 0x1104334 people, 0x1107d38 clubs, 0x1107810 teams, 0x1101624 competitions write the record unique id at +0x8 and +0xc)"
+ }
+}

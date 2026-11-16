@@ -1,0 +1,1795 @@
+{
+  "capture": {
+    "save": {
+      "coaches": [
+        {
+          "club": {
+            "name": "Newcastle United",
+            "short_name": "Newcastle"
+          },
+          "name": "Cesar  Jules"
+        }
+      ],
+      "created_date": "2025-10-23",
+      "created_version": 2223821,
+      "current_date": "2030-11-02",
+      "last_saved_date": "2030-10-30",
+      "name": "Cesar Jules - Newcastle",
+      "save_count": 425
+    },
+    "source_kind": "running_session_active_fd",
+    "fixtures": [
+      {
+        "native_match_key": 128409,
+        "fixture": {
+          "fixture_id": "2420e37f0ee18a72161de24f",
+          "home_team_id": 600,
+          "away_team_id": 688
+        }
+      },
+      {
+        "native_match_key": 129168,
+        "fixture": {
+          "fixture_id": "b8dd1757aff97f4f2ba1a998",
+          "home_team_id": 688,
+          "away_team_id": 680
+        }
+      },
+      {
+        "native_match_key": 129861,
+        "fixture": {
+          "fixture_id": "2806c6f26d9ef3ec74880e2e",
+          "home_team_id": 622,
+          "away_team_id": 688
+        }
+      },
+      {
+        "native_match_key": 130445,
+        "fixture": {
+          "fixture_id": "ec6e88b34fd3606d2b032c7b",
+          "home_team_id": 688,
+          "away_team_id": 722
+        }
+      },
+      {
+        "native_match_key": 131098,
+        "fixture": {
+          "fixture_id": "e356029edec2b79b9952b322",
+          "home_team_id": 688,
+          "away_team_id": 609
+        }
+      },
+      {
+        "native_match_key": 131797,
+        "fixture": {
+          "fixture_id": "bb887b37c71bdda438d25c96",
+          "home_team_id": 740,
+          "away_team_id": 688
+        }
+      },
+      {
+        "native_match_key": 132398,
+        "fixture": {
+          "fixture_id": "b3581cd223733b66c8475b31",
+          "home_team_id": 602,
+          "away_team_id": 688
+        }
+      },
+      {
+        "native_match_key": 135195,
+        "fixture": {
+          "fixture_id": "b6e22c78259586c091a79590",
+          "home_team_id": 688,
+          "away_team_id": 650
+        }
+      },
+      {
+        "native_match_key": 135857,
+        "fixture": {
+          "fixture_id": "05a630f99022fca9c40e31fc",
+          "home_team_id": 630,
+          "away_team_id": 688
+        }
+      }
+    ]
+  },
+  "retained_players": [
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 98040383,
+      "person_name": "Gregor Kobel",
+      "minutes": 90,
+      "progressive_passes": 0,
+      "raw_child_sha256": "d7933827a4f0bd49d5711bbd40473cffab285cc26221294826d356c93353870d"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 28124569,
+      "person_name": "Tino Livramento",
+      "minutes": 63,
+      "progressive_passes": 3,
+      "raw_child_sha256": "4d542270ea1483008a8312a50f999aaeb665f81a9bfe3ec780dd9d44d824683f"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 2000094252,
+      "person_name": "Beraldo",
+      "minutes": 57,
+      "progressive_passes": 1,
+      "raw_child_sha256": "a5821299538864a416d7435c14e0bae0d18761d3f0b8794939dd1bd4e6fc6ab9"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 28124573,
+      "person_name": "Levi Colwill",
+      "minutes": 90,
+      "progressive_passes": 2,
+      "raw_child_sha256": "f75241b8fa30a30f5ce543d12cc69301c90809fa3233b1db4d0aa21c95d3e526"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 2000108691,
+      "person_name": "Lewis Hall",
+      "minutes": 90,
+      "progressive_passes": 11,
+      "raw_child_sha256": "15cb524868f44934a9d3a5c8331692ce9fbd71e57c98773ce065413444877560"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 29193659,
+      "person_name": "Jacob Ramsey",
+      "minutes": 90,
+      "progressive_passes": 6,
+      "raw_child_sha256": "4e8dae84ef06b92e48681178e5212ab65dae127524609167f32d4bca8254ea2e"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 2000053516,
+      "person_name": "Adam Wharton",
+      "minutes": 63,
+      "progressive_passes": 9,
+      "raw_child_sha256": "0d6f2d65d846025c51c1fd25b93b22ce9b500d6611843d016969f82f8f1c42c7"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 2000030130,
+      "person_name": "Jo\u00e3o Neves",
+      "minutes": 90,
+      "progressive_passes": 3,
+      "raw_child_sha256": "cae4c10f9513de67fc4773c5e0ca11ec5d2e9d6d113e95ce1fc20d9ed6bede88"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 19377206,
+      "person_name": "Luiz Henrique",
+      "minutes": 21,
+      "progressive_passes": 1,
+      "raw_child_sha256": "1e5293c94d14f30109f1ff3cf89fa9a01a3f16f6137a91054fce91ac9764e5a2"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 28116386,
+      "person_name": "Anthony Gordon",
+      "minutes": 57,
+      "progressive_passes": 1,
+      "raw_child_sha256": "9fa7f61319ab1b01654e4ccd5a6741eeac4c69eb8beb5292c8e9ac8aebab9a7c"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 91187791,
+      "person_name": "Nick Woltemade",
+      "minutes": 90,
+      "progressive_passes": 1,
+      "raw_child_sha256": "092aa5907b0aa5c091ff5f133b0b9fc3e2d4479578c91832cba3ababac4c8e7c"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 2000111044,
+      "person_name": "Silas Huber",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "5fa0219def6190779f1939fb79eea82b76e7b50386123fd6fd0af48678eef47e"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 2000048260,
+      "person_name": "Alberto Costa",
+      "minutes": 27,
+      "progressive_passes": 4,
+      "raw_child_sha256": "c726d86083809c814eaa2e2964b11473eee137f21320633c64fb93aa3da6fa52"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 2000220048,
+      "person_name": "Chema Andr\u00e9s",
+      "minutes": 27,
+      "progressive_passes": 6,
+      "raw_child_sha256": "92ad7023003f8b9b16d75e5850ece4bffb397553f07df596d572ffc2609e7dff"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 2000015300,
+      "person_name": "Jamie Gittens",
+      "minutes": 69,
+      "progressive_passes": 3,
+      "raw_child_sha256": "33163b80c08c1bb3a653a0749369debdf37fa3561b355083732b6e11045e20b4"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 43500245,
+      "person_name": "Giovanni Fabbian",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "223c4099ab27d5bc3ba74779c7949eb5a01b9d71da66f5164c76b69c0d46e585"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 12093353,
+      "person_name": "Karim Konat\u00e9",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "a5cababf1b493395ec0c60c08d66cb94c95a90ae8590b6bd50dbbf90c5077683"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 2000262615,
+      "person_name": "El Hadji Malick Diouf",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "cdc395943a20c2bff3ad2ddc0554ac1d2fbcd5d53d99057a2e24ccf98305ac20"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 2000058232,
+      "person_name": "Chadi Riad",
+      "minutes": 33,
+      "progressive_passes": 1,
+      "raw_child_sha256": "ec4cfa905a0cc61a891140a633631a0b07473c07c15eda28f0f7bcad6680ba9b"
+    },
+    {
+      "fixture_key": 128409,
+      "side_index": 1,
+      "canonical_person_id": 2000307251,
+      "person_name": "Konstantinos Karetsas",
+      "minutes": 33,
+      "progressive_passes": 4,
+      "raw_child_sha256": "1f0f82d57304f575ad713e5f86a5226d9b42f1721132f6936fd61042e3e53ddc"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 98040383,
+      "person_name": "Gregor Kobel",
+      "minutes": 90,
+      "progressive_passes": 0,
+      "raw_child_sha256": "a2897e1a858b585aadce1db2d3dbc585f0b70daf1bfdebc2fee74eef604adaac"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 28124569,
+      "person_name": "Tino Livramento",
+      "minutes": 90,
+      "progressive_passes": 12,
+      "raw_child_sha256": "d4410f2737cbd22febd34a263228d866046e4e12358e3b49e9d0038f95ea94f9"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 2000027898,
+      "person_name": "Shea Charles",
+      "minutes": 90,
+      "progressive_passes": 5,
+      "raw_child_sha256": "26403da692716e0d2dc33b597ef11ed2ada2228f031419f5c54c6412f0ec911a"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 28124573,
+      "person_name": "Levi Colwill",
+      "minutes": 65,
+      "progressive_passes": 3,
+      "raw_child_sha256": "44bb4aefd340146496d1343f2fdcd802f41364d9397dab321c10094109e6ca2c"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 2000108691,
+      "person_name": "Lewis Hall",
+      "minutes": 90,
+      "progressive_passes": 12,
+      "raw_child_sha256": "fdd65d1c205f435a04d332bd3a31ef15f248f649bd9d0ca094516f0820203f24"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 29193659,
+      "person_name": "Jacob Ramsey",
+      "minutes": 65,
+      "progressive_passes": 3,
+      "raw_child_sha256": "a106e579d89893864e624e0468113ba731995dd7ef9b071a69f66eb2f29963a4"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 2000053516,
+      "person_name": "Adam Wharton",
+      "minutes": 90,
+      "progressive_passes": 10,
+      "raw_child_sha256": "28ba2192f19ce8eb70ef392a0eb76120d6e8be16b61ddc521e8910371a278762"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 2000030130,
+      "person_name": "Jo\u00e3o Neves",
+      "minutes": 65,
+      "progressive_passes": 0,
+      "raw_child_sha256": "40cac624618dee62a84d58e54469ae65b1f8b9a204a16032f7e184aed96be7fc"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 19377206,
+      "person_name": "Luiz Henrique",
+      "minutes": 45,
+      "progressive_passes": 5,
+      "raw_child_sha256": "7b395f78205a5240a578f8bc35e56ffbaace515f4c55c4ca4707f6970608e319"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 28116386,
+      "person_name": "Anthony Gordon",
+      "minutes": 36,
+      "progressive_passes": 1,
+      "raw_child_sha256": "1c338491cf0ce6ee053329de49a588057ee49e88851181818ce42fd5c3d04eab"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 91187791,
+      "person_name": "Nick Woltemade",
+      "minutes": 90,
+      "progressive_passes": 0,
+      "raw_child_sha256": "123a38fb0ecb82faecfa0babda5ba431b09e8b5b91df3cd248e882ddc06acef7"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 43500245,
+      "person_name": "Giovanni Fabbian",
+      "minutes": 25,
+      "progressive_passes": 0,
+      "raw_child_sha256": "c9130e552dff18b42266b4d91b005d4d6a61f9fb7c17811f8deb283d6d25c0c8"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 2000262615,
+      "person_name": "El Hadji Malick Diouf",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "129bc95fde6dbecd3ca5b5815a9c7f66d9ef8d6c946a786a24ba4da28fefe572"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 2000015300,
+      "person_name": "Jamie Gittens",
+      "minutes": 45,
+      "progressive_passes": 2,
+      "raw_child_sha256": "9732cf7d050bc5f98a0f13ab3dc9fbc2b423de84219e6766137c5a1f5627e3cc"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 12093353,
+      "person_name": "Karim Konat\u00e9",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "cc04c4e7d0fa8eaf6f873c5295494c8dd9172b7e2606d5d879dca59a46fe2273"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 2000058232,
+      "person_name": "Chadi Riad",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "3caafd50c7042780c935d132d6fbc30fe82edff4d71cd7de8b794c4da693cdfe"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 2000220048,
+      "person_name": "Chema Andr\u00e9s",
+      "minutes": 25,
+      "progressive_passes": 4,
+      "raw_child_sha256": "fd3b5610ed43af2203d6b99fd3d3c8a46ecb52583f85a6260cfaf92cf9fee128"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 2000275657,
+      "person_name": "Jay Robinson",
+      "minutes": 54,
+      "progressive_passes": 3,
+      "raw_child_sha256": "e6b249a49d4dbe2a5dc495549dc8de19ec7e5feae7b3dec04d8480e62376d3e8"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 2000094252,
+      "person_name": "Beraldo",
+      "minutes": 25,
+      "progressive_passes": 1,
+      "raw_child_sha256": "1b6af3b537d91c2bf2e379b2bb2c51a2eebde8fa6a056cc92b12848c4b60a2dd"
+    },
+    {
+      "fixture_key": 129168,
+      "side_index": 0,
+      "canonical_person_id": 2000307251,
+      "person_name": "Konstantinos Karetsas",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "cbf994baf112f774c31533b09dfa7e016b73afb83073c86857e2fb7d6f936eaa"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 98040383,
+      "person_name": "Gregor Kobel",
+      "minutes": 90,
+      "progressive_passes": 0,
+      "raw_child_sha256": "3e45927a0fe374c4e2ff4d708926934aa00a5a5b2795d474ae879a5b4fd9fade"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 28124569,
+      "person_name": "Tino Livramento",
+      "minutes": 55,
+      "progressive_passes": 13,
+      "raw_child_sha256": "58bbb98bb77cd3aa7a6b06079f166f27596dea8bc01b25fc3320853b1cf0fb0e"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 2000027898,
+      "person_name": "Shea Charles",
+      "minutes": 90,
+      "progressive_passes": 3,
+      "raw_child_sha256": "9131e41c86871dacfb42d33c6025250e59986deb8f979398926789271a00715f"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 28124573,
+      "person_name": "Levi Colwill",
+      "minutes": 90,
+      "progressive_passes": 3,
+      "raw_child_sha256": "4d99b9e31b6740913e655e57ca1f742d1787f02b350a4e56dd82af5cb6029d41"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 2000108691,
+      "person_name": "Lewis Hall",
+      "minutes": 52,
+      "progressive_passes": 8,
+      "raw_child_sha256": "e97fb21faebd3a7625fa302878a993621e7c14ee12c75471d79758775aaa4b42"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 29193659,
+      "person_name": "Jacob Ramsey",
+      "minutes": 90,
+      "progressive_passes": 3,
+      "raw_child_sha256": "c082497d05ac432a27b2a00c461b007f66db434760131c9b5def1f454154e24f"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 2000053516,
+      "person_name": "Adam Wharton",
+      "minutes": 66,
+      "progressive_passes": 7,
+      "raw_child_sha256": "55648257ee6ddbb8eb8d342001afeb56f3e03472114f36cf96d1607b0dd18aae"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 2000030130,
+      "person_name": "Jo\u00e3o Neves",
+      "minutes": 90,
+      "progressive_passes": 4,
+      "raw_child_sha256": "6909a2f58b26df5f502293ba3e0377c9591cd75a58fa2d372f7ac4dd4ef27971"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 19377206,
+      "person_name": "Luiz Henrique",
+      "minutes": 52,
+      "progressive_passes": 3,
+      "raw_child_sha256": "637bbbc15ef0ddc4a75a6ea349f6023a07d3e5e9a35a0364b169d5e0b3565e04"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 2000275657,
+      "person_name": "Jay Robinson",
+      "minutes": 55,
+      "progressive_passes": 5,
+      "raw_child_sha256": "4fc7b4d2d80b104e93ec908c1a78667782ef22465da7bdae14215b6b9570db08"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 91187791,
+      "person_name": "Nick Woltemade",
+      "minutes": 90,
+      "progressive_passes": 0,
+      "raw_child_sha256": "ab12829b5498bcc6ac50179b381a429c2660ba172e715c3ea9e0940507a78d1a"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 2000111044,
+      "person_name": "Silas Huber",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "69781f2cf8264b9a37b96f7e007074175cf2ac6a14da9a5bf3c116b80f1ee1a7"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 2000048260,
+      "person_name": "Alberto Costa",
+      "minutes": 35,
+      "progressive_passes": 0,
+      "raw_child_sha256": "d2023452f2ae32859439553182585bb82d284755d0ec62b38ffca79c0a59aacd"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 2000015300,
+      "person_name": "Jamie Gittens",
+      "minutes": 38,
+      "progressive_passes": 3,
+      "raw_child_sha256": "2bda4fa4792712ee998eb95a74a56f479dd38c990078acd1273e2a7a7b36bd87"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 12093353,
+      "person_name": "Karim Konat\u00e9",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "32c997919ee722352bec4fc5ae5706eb0208864ff96280a852b2a76fcc930c44"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 2000262615,
+      "person_name": "El Hadji Malick Diouf",
+      "minutes": 38,
+      "progressive_passes": 9,
+      "raw_child_sha256": "4bd6518c5339da7bfe104316dc4f2eb6dbf31db3971a396b90a6c46c02e30bb8"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 2000189871,
+      "person_name": "Lewis Miley",
+      "minutes": 24,
+      "progressive_passes": 2,
+      "raw_child_sha256": "95270b6f23e35580152fe313a88275b6e22f26a84d7590335fdfa59db211b209"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 28116386,
+      "person_name": "Anthony Gordon",
+      "minutes": 35,
+      "progressive_passes": 3,
+      "raw_child_sha256": "4336439620361640cde086be787a5b2b07e13523d0185c66cb4ae03961cfad25"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 2000058232,
+      "person_name": "Chadi Riad",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "10c3a40be0c6b981a0ea12c1cf0fb5a9d0ff2b85d84d52055bafe3aaf761cec1"
+    },
+    {
+      "fixture_key": 129861,
+      "side_index": 1,
+      "canonical_person_id": 2000094252,
+      "person_name": "Beraldo",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "162fd0338724ae161a8f7e11a5e33fcbf3ed9fd9b8f1ead663835fac94a9c7f7"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 98040383,
+      "person_name": "Gregor Kobel",
+      "minutes": 90,
+      "progressive_passes": 0,
+      "raw_child_sha256": "1a03ac330802dd7002c489b071771ba075a95a531d9ec17d02475b4a6f4bb5e6"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 2000048260,
+      "person_name": "Alberto Costa",
+      "minutes": 66,
+      "progressive_passes": 6,
+      "raw_child_sha256": "1ad9e06ca3093136b5b02e848690b0b7a90b820f8ab4de40eaf6b460bcc80349"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 2000027898,
+      "person_name": "Shea Charles",
+      "minutes": 90,
+      "progressive_passes": 2,
+      "raw_child_sha256": "bc1bc09a5891a655936e5b0449bc17daabf39581e49d0bb60028a029433a1a06"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 2000094252,
+      "person_name": "Beraldo",
+      "minutes": 90,
+      "progressive_passes": 7,
+      "raw_child_sha256": "fcc09da97c41300eb610d07953b811f4e9493438cda22ac4bed6dc4007a4f521"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 2000108691,
+      "person_name": "Lewis Hall",
+      "minutes": 90,
+      "progressive_passes": 9,
+      "raw_child_sha256": "162b9ef30137e7ce6a95117304c2f289adcb18f0b61dd90cc32badb44c9a5e4a"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 29193659,
+      "person_name": "Jacob Ramsey",
+      "minutes": 66,
+      "progressive_passes": 6,
+      "raw_child_sha256": "feae69a55a069c40c9e8503815e7da279ceeafa3513e50103b5f8d82715fcebc"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 2000053516,
+      "person_name": "Adam Wharton",
+      "minutes": 90,
+      "progressive_passes": 13,
+      "raw_child_sha256": "aa51b3007effd15a05a28dafe79b2082d58c801451149fe0bafa762c6b62c1c5"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 2000030130,
+      "person_name": "Jo\u00e3o Neves",
+      "minutes": 84,
+      "progressive_passes": 4,
+      "raw_child_sha256": "efa5397ae90f5dbf13d7d2d7564f311b044efd5b997b9942447cbbaa33587e2b"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 2000275657,
+      "person_name": "Jay Robinson",
+      "minutes": 90,
+      "progressive_passes": 5,
+      "raw_child_sha256": "a67e618cb67fa396a6c2472a6849efbeffce9954a1202a75c3aee655a2d181f6"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 28116386,
+      "person_name": "Anthony Gordon",
+      "minutes": 45,
+      "progressive_passes": 4,
+      "raw_child_sha256": "31603ecbeb7209c53750017743deb002e1794bc6d30f31e75bff2b1ce6971e0a"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 91187791,
+      "person_name": "Nick Woltemade",
+      "minutes": 84,
+      "progressive_passes": 1,
+      "raw_child_sha256": "b91f8f91a923fe07c75563404faa4390248d979f5be480893029387243ea1609"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 2000111044,
+      "person_name": "Silas Huber",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "270adbca957d03374473fd0ca05c77de28d29e05de265e893fb0e95165eea76c"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 28124573,
+      "person_name": "Levi Colwill",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "04ec5338efadc1015208beef03668c0f77aa1d65cedd7cbf19e9aa5459d560b8"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 2000015300,
+      "person_name": "Jamie Gittens",
+      "minutes": 45,
+      "progressive_passes": 3,
+      "raw_child_sha256": "d807eb94870b38d0486b21fcdbd8f3eb2087484e465d4ebe3b2f20e42236f4a4"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 12093353,
+      "person_name": "Karim Konat\u00e9",
+      "minutes": 6,
+      "progressive_passes": 0,
+      "raw_child_sha256": "44a14dd2442844c1f876975d56c5820517b7b5cdfbe021ec806278764d76d92c"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 28124569,
+      "person_name": "Tino Livramento",
+      "minutes": 24,
+      "progressive_passes": 3,
+      "raw_child_sha256": "50a03ae4df37d870800270ad327280c8346c9f2f940bd49f0db51f58db6fbed2"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 2000220048,
+      "person_name": "Chema Andr\u00e9s",
+      "minutes": 24,
+      "progressive_passes": 1,
+      "raw_child_sha256": "54bdf0cf16ff9879fc84f18c2ec3871abaf7988af78d7c4806e44fd742d1718f"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 19377206,
+      "person_name": "Luiz Henrique",
+      "minutes": 6,
+      "progressive_passes": 3,
+      "raw_child_sha256": "fb23f6f98fe875cba2e23d7c5987af5c2370d833e2c837a8879e12824b16c843"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 2000262615,
+      "person_name": "El Hadji Malick Diouf",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "37066e5be3ae0ccd921d930986cab2d7791d2009e148751d616608eb739db82a"
+    },
+    {
+      "fixture_key": 130445,
+      "side_index": 0,
+      "canonical_person_id": 2000189871,
+      "person_name": "Lewis Miley",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "3d9678d6949d10dfb3f0e6b2b2fd573b884e3d4b32f4472873b0d5ae62ef68cb"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 98040383,
+      "person_name": "Gregor Kobel",
+      "minutes": 90,
+      "progressive_passes": 0,
+      "raw_child_sha256": "65afa6506a930db8040ef941e5ebb97e27f920122a971e2ffc46cfa692f2ccae"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 28124569,
+      "person_name": "Tino Livramento",
+      "minutes": 90,
+      "progressive_passes": 10,
+      "raw_child_sha256": "27b73c714d5d1a0a306fe9e589092225fc81486dd9fbb1eb8539b636bbf7a9cd"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 2000027898,
+      "person_name": "Shea Charles",
+      "minutes": 90,
+      "progressive_passes": 3,
+      "raw_child_sha256": "881b102441dfbc5e0ccd67d7951f3428a5ff2a66cb23cc328fe24db90131dbbb"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 28124573,
+      "person_name": "Levi Colwill",
+      "minutes": 45,
+      "progressive_passes": 0,
+      "raw_child_sha256": "00ed3da2b77de25b72ffe4569ad958d4e69a5ae69be14ced6196c47d10f21530"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 2000108691,
+      "person_name": "Lewis Hall",
+      "minutes": 90,
+      "progressive_passes": 5,
+      "raw_child_sha256": "ac4996ad84fabe7af0d766fd670e8f3cf2f05221a52a3daf7cbe937dc583ab74"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 29193659,
+      "person_name": "Jacob Ramsey",
+      "minutes": 45,
+      "progressive_passes": 4,
+      "raw_child_sha256": "1c1752fdfb5382f629e25cc59beaf54c9a711c5815c926dcc4f84afed3d4b2d7"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 2000030130,
+      "person_name": "Jo\u00e3o Neves",
+      "minutes": 45,
+      "progressive_passes": 4,
+      "raw_child_sha256": "84de33ba56fe6ff78d2d4304425203fc8ef44ca3e99642dd24e372b90af6f196"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 2000053516,
+      "person_name": "Adam Wharton",
+      "minutes": 90,
+      "progressive_passes": 2,
+      "raw_child_sha256": "e701db01a7913c3661b41514d9a922116b67d7b410ad859b60752a50c848c044"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 2000275657,
+      "person_name": "Jay Robinson",
+      "minutes": 90,
+      "progressive_passes": 10,
+      "raw_child_sha256": "8a1a96261b06e5f1243ee552168878ebd040ea5aee820c9c8cd7b0c0f42a8128"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 28116386,
+      "person_name": "Anthony Gordon",
+      "minutes": 45,
+      "progressive_passes": 5,
+      "raw_child_sha256": "822ad1887dd9044f234452deb6692bab2ab0d148d75bc754014703fa12768d59"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 12093353,
+      "person_name": "Karim Konat\u00e9",
+      "minutes": 90,
+      "progressive_passes": 0,
+      "raw_child_sha256": "0d865ae3e0e6840df642412217c0e46a5824d99bf78f76815b110a507640192c"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 2000111044,
+      "person_name": "Silas Huber",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "83214994a50eb1812cfba993e6713eaabc058440db5f76ac94db3112f6fcda98"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 2000094252,
+      "person_name": "Beraldo",
+      "minutes": 45,
+      "progressive_passes": 0,
+      "raw_child_sha256": "2dcea0eddb9cf774505f719f5db524a43bf87aba47fe36d462e53b239e7013eb"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 2000220048,
+      "person_name": "Chema Andr\u00e9s",
+      "minutes": 45,
+      "progressive_passes": 2,
+      "raw_child_sha256": "b84c6c43e29cfeaf0e9c647109dd0eb252240a90a7b04061c9c6fc80069ec3c3"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 43500245,
+      "person_name": "Giovanni Fabbian",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "19cfb050f40eb4ad7d63b1992dbd2c0f9ed0284919cd3353960e5b535b6b1074"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 2000048260,
+      "person_name": "Alberto Costa",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "cbdd6e475f55dfe3d6e5fd4a110abc9b6fa05d00af1025633a7d51a40785decb"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 2000307251,
+      "person_name": "Konstantinos Karetsas",
+      "minutes": 45,
+      "progressive_passes": 1,
+      "raw_child_sha256": "853d26cf48df2d100a9a2bf34d79c2d2621ead54554738460ed0acffac117f7b"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 2000058232,
+      "person_name": "Chadi Riad",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "053102ac0ed9780cde70d27d41daeb7f14a5c2ec9ab258561045fb94177875a9"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 2000262615,
+      "person_name": "El Hadji Malick Diouf",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "a20264a16f58e11049642a6787d4bf89ac261e20eed77002a8db28d64c6c2cda"
+    },
+    {
+      "fixture_key": 131098,
+      "side_index": 0,
+      "canonical_person_id": 2000015300,
+      "person_name": "Jamie Gittens",
+      "minutes": 45,
+      "progressive_passes": 3,
+      "raw_child_sha256": "7dbed763812c7b8387fe3af73110fa50a5e52db368e7576ac0d228e18649ec33"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 98040383,
+      "person_name": "Gregor Kobel",
+      "minutes": 90,
+      "progressive_passes": 0,
+      "raw_child_sha256": "5db29e712aa4a9c14ebdc4516ba3ec03d9e56d3b79c2a878b3629e8bf995eef9"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 2000048260,
+      "person_name": "Alberto Costa",
+      "minutes": 90,
+      "progressive_passes": 5,
+      "raw_child_sha256": "92540fa1a925149c4a857646df968cf9c07afe0d92cff51af3248074ba908b65"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 2000027898,
+      "person_name": "Shea Charles",
+      "minutes": 90,
+      "progressive_passes": 4,
+      "raw_child_sha256": "2a7a7c4561884aefb6c91f73d170b0c107bfa8d1de5f37d200a5f8743d3e0817"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 28124573,
+      "person_name": "Levi Colwill",
+      "minutes": 90,
+      "progressive_passes": 8,
+      "raw_child_sha256": "03f7b117fd36f05f898c785cba8bd53aee9aadbee42e7a65c8a1118f43e3d1c5"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 2000108691,
+      "person_name": "Lewis Hall",
+      "minutes": 79,
+      "progressive_passes": 4,
+      "raw_child_sha256": "4fb88627dc6120166b928f6a59bd96847cf998adc4d3dfec8bd6abe512506b10"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 29193659,
+      "person_name": "Jacob Ramsey",
+      "minutes": 59,
+      "progressive_passes": 1,
+      "raw_child_sha256": "bd7437c20eccc909e203b66c0e89dc82ca8f151aa36ae02005ea5f30131fdbc6"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 2000030130,
+      "person_name": "Jo\u00e3o Neves",
+      "minutes": 59,
+      "progressive_passes": 7,
+      "raw_child_sha256": "841a5a6e806bda2af4aece396dd74f9a55a033b622ef24221a01d0efe97d0917"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 2000053516,
+      "person_name": "Adam Wharton",
+      "minutes": 90,
+      "progressive_passes": 4,
+      "raw_child_sha256": "4398b390bf2313ca40543af9b2156e5a8f3d61c68391a5fe977b135affc189fe"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 28116386,
+      "person_name": "Anthony Gordon",
+      "minutes": 90,
+      "progressive_passes": 8,
+      "raw_child_sha256": "b0ad04acabf4f2cf7a838a0a6bb0e46deb5b7396ebd3105329aad42af09406a6"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 2000275657,
+      "person_name": "Jay Robinson",
+      "minutes": 59,
+      "progressive_passes": 4,
+      "raw_child_sha256": "59feb308fb88956e93b7f046dbfce182cd1b8430738da68902e4d4f88dbfcc58"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 12093353,
+      "person_name": "Karim Konat\u00e9",
+      "minutes": 79,
+      "progressive_passes": 0,
+      "raw_child_sha256": "75a452ca5a04731234481c7ab1adbfbbbcdee20362b7abfb1b22903f5c0642f4"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 2000111044,
+      "person_name": "Silas Huber",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "80f7d479018576d9cecabf51e28f153fd533843136dc6a61ec251af883761b58"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 28124569,
+      "person_name": "Tino Livramento",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "56c884259f5fc913111ba5fcc598caede28696ac923a8877ce071ef020ac2c0b"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 2000220048,
+      "person_name": "Chema Andr\u00e9s",
+      "minutes": 31,
+      "progressive_passes": 6,
+      "raw_child_sha256": "dab39ca4f5d43a6fd30688efc9715331f9e3a22ce0f9cd58d8a22e680206f77f"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 91187791,
+      "person_name": "Nick Woltemade",
+      "minutes": 11,
+      "progressive_passes": 0,
+      "raw_child_sha256": "7a4a6a22446bb717aedd7027542da3ae7d1f9353f97e40021741b994a5312efe"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 2000262615,
+      "person_name": "El Hadji Malick Diouf",
+      "minutes": 11,
+      "progressive_passes": 1,
+      "raw_child_sha256": "b0ffbf444f72cae7190a82e58dac3d5194c3235d6be081b64199ed71f9af7266"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 2000307251,
+      "person_name": "Konstantinos Karetsas",
+      "minutes": 31,
+      "progressive_passes": 1,
+      "raw_child_sha256": "80d539bbf2c0a97757ced665b69f8e76206273486e88039e4f705c8e431fafcc"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 2000015300,
+      "person_name": "Jamie Gittens",
+      "minutes": 31,
+      "progressive_passes": 5,
+      "raw_child_sha256": "54918690a181d8558de3534a4f2dfb3675d879a60fb903ebe84592e0da99ea04"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 2000058232,
+      "person_name": "Chadi Riad",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "e0103a059d8287e8ec9e393d66d5f19cbe33fecb77a665d119f2cf753e2e88f6"
+    },
+    {
+      "fixture_key": 131797,
+      "side_index": 1,
+      "canonical_person_id": 2000094252,
+      "person_name": "Beraldo",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "5509d2719bdcddb8b44540fd81eb3245271690441c810fce7282aec88d680550"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 98040383,
+      "person_name": "Gregor Kobel",
+      "minutes": 90,
+      "progressive_passes": 0,
+      "raw_child_sha256": "9678b015d088c0d60268dccb48ce9d9747e7607ac89b455689eb59d627c9a04b"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 28124569,
+      "person_name": "Tino Livramento",
+      "minutes": 90,
+      "progressive_passes": 8,
+      "raw_child_sha256": "eb04b7f586c4365de90e8f015cafae7c1195727bd166909cabd4ad165632c527"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 2000027898,
+      "person_name": "Shea Charles",
+      "minutes": 90,
+      "progressive_passes": 2,
+      "raw_child_sha256": "500bc0c198b397acb11a9d644cbefafdb5594f334cd2cec744f7150603820240"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 28124573,
+      "person_name": "Levi Colwill",
+      "minutes": 90,
+      "progressive_passes": 5,
+      "raw_child_sha256": "c533aa9b4f1b4373d0320c69d8bc87b9dfe05b97efe6ed042943182d84fe90f0"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 2000262615,
+      "person_name": "El Hadji Malick Diouf",
+      "minutes": 90,
+      "progressive_passes": 7,
+      "raw_child_sha256": "9893e9a4798e2f1a6d187601f260a5a13acbc3ef00e327bdf6707fe56c9e6e3c"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 29193659,
+      "person_name": "Jacob Ramsey",
+      "minutes": 80,
+      "progressive_passes": 2,
+      "raw_child_sha256": "a0e0c1bff2ff38cf99ccbd7113e1dc12993704eceb7476d61963e537abe3979f"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 2000030130,
+      "person_name": "Jo\u00e3o Neves",
+      "minutes": 65,
+      "progressive_passes": 3,
+      "raw_child_sha256": "05f08bb0db633fd456f6385e45a7def98945ee6aed2b825184c08230a2660924"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 2000220048,
+      "person_name": "Chema Andr\u00e9s",
+      "minutes": 90,
+      "progressive_passes": 3,
+      "raw_child_sha256": "58f2588dcde456abad7ace2cf6532342c83a41c0b2887847d042b7f9470c1c81"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 2000015300,
+      "person_name": "Jamie Gittens",
+      "minutes": 65,
+      "progressive_passes": 4,
+      "raw_child_sha256": "2cd854b5e95f2fe734ab1f8c427809429193f4fa75298f8ad3c574f2a63153b6"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 28116386,
+      "person_name": "Anthony Gordon",
+      "minutes": 65,
+      "progressive_passes": 6,
+      "raw_child_sha256": "0be5843e47cb73a80ed2fe310a6c80c10d57dbae8e3d9a6f897159d33bd5616b"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 12093353,
+      "person_name": "Karim Konat\u00e9",
+      "minutes": 48,
+      "progressive_passes": 0,
+      "raw_child_sha256": "ef2194f4cfab4c61f88144b50967c93fbf9c9af2c8b06e9ff06574b22a2c550d"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 2000111044,
+      "person_name": "Silas Huber",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "33b7fcff074a97de8542374a9a6513009749ee9e096354f01beb59cd380642b7"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 2000048260,
+      "person_name": "Alberto Costa",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "2c2544fc597839858e5d1277053e4d596acbadf9d78c850ea84ac62905b7e4b4"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 2000053516,
+      "person_name": "Adam Wharton",
+      "minutes": 25,
+      "progressive_passes": 2,
+      "raw_child_sha256": "aa39e542ec0798914720f57f988e0239cc89394e9362479ff8a1baeb8e4556f8"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 91187791,
+      "person_name": "Nick Woltemade",
+      "minutes": 42,
+      "progressive_passes": 0,
+      "raw_child_sha256": "a9c081e7e0bad8feeb885374823db50db7a9cd5f645e5cbbcdf462b4a9b20f02"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 43500245,
+      "person_name": "Giovanni Fabbian",
+      "minutes": 25,
+      "progressive_passes": 0,
+      "raw_child_sha256": "aa9a30422483979d440481e49359b642342cd62bccef798dc3b3c43bd6506980"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 2000307251,
+      "person_name": "Konstantinos Karetsas",
+      "minutes": 10,
+      "progressive_passes": 0,
+      "raw_child_sha256": "7a49db9d857885961a53c76bdd7fe874d96f1d574be3f632459354c4b3f99c62"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 2000275657,
+      "person_name": "Jay Robinson",
+      "minutes": 25,
+      "progressive_passes": 3,
+      "raw_child_sha256": "81dee50ff9fc77f7d312ae5cd6f3fda4e89000e5d1a1fe52defd1a579991c760"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 2000058232,
+      "person_name": "Chadi Riad",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "053676a75135a9230d04ec02145ae88cd6b880f98b57709c2afb0ad28dada28e"
+    },
+    {
+      "fixture_key": 132398,
+      "side_index": 1,
+      "canonical_person_id": 2000094252,
+      "person_name": "Beraldo",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "03d5e5277396719fa5cc924c08defa0ea7b7166a6bf64bc00cd777d11d040589"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 98040383,
+      "person_name": "Gregor Kobel",
+      "minutes": 90,
+      "progressive_passes": 0,
+      "raw_child_sha256": "6e24f405c8cc688bc8ee44c6c2ef53a68d16236e81a17e85f0b1bc5e4d5d26d1"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 28124569,
+      "person_name": "Tino Livramento",
+      "minutes": 90,
+      "progressive_passes": 14,
+      "raw_child_sha256": "a120ee53caf0dd21f9b72b3d0c88c90f5b7c712499c5b9790dd92035c485d3a1"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 2000027898,
+      "person_name": "Shea Charles",
+      "minutes": 90,
+      "progressive_passes": 2,
+      "raw_child_sha256": "ec4acfa344fc7c26ef98688c0c456bff2e4606e80c32a7ee9ae41a99880eefe3"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 28124573,
+      "person_name": "Levi Colwill",
+      "minutes": 67,
+      "progressive_passes": 2,
+      "raw_child_sha256": "edf2378d7dcfab1216b38405410aaf2ceb972cc185c17553ccdf57331f8d52e0"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 2000108691,
+      "person_name": "Lewis Hall",
+      "minutes": 90,
+      "progressive_passes": 5,
+      "raw_child_sha256": "a24cdc6fdb13c29467e455830ca8d4a93da2d955e355513dec4ff9f842c97a05"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 2000030130,
+      "person_name": "Jo\u00e3o Neves",
+      "minutes": 67,
+      "progressive_passes": 6,
+      "raw_child_sha256": "e01b77511592d1bccc09a979d365ed3b3cdb3dd150eaf3589fc2e7b1b4d6bb91"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 2000053516,
+      "person_name": "Adam Wharton",
+      "minutes": 67,
+      "progressive_passes": 3,
+      "raw_child_sha256": "d259d5bde0fbf43f45ba68cc5eea3062a64e2e4af07bc8759db4eb16d4bca381"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 19377206,
+      "person_name": "Luiz Henrique",
+      "minutes": 56,
+      "progressive_passes": 3,
+      "raw_child_sha256": "33ef0e45bb4518bd6b43fc00448ac6aff23d426e14dffb00661c54261a250582"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 2000307251,
+      "person_name": "Konstantinos Karetsas",
+      "minutes": 56,
+      "progressive_passes": 2,
+      "raw_child_sha256": "01e25c461cf7b9fadd609955a97cfe8013f8e965d6e2b27dce878c7ec9f865cc"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 28116386,
+      "person_name": "Anthony Gordon",
+      "minutes": 90,
+      "progressive_passes": 13,
+      "raw_child_sha256": "b5d363abc8d6427e2ee2cccd5a691ed94649fbc08b61944a18feb672f2560158"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 91187791,
+      "person_name": "Nick Woltemade",
+      "minutes": 90,
+      "progressive_passes": 0,
+      "raw_child_sha256": "85c85e4f66eba3e23d7bac89d064f8754887a5540260baa230ec782f53664a46"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 43500245,
+      "person_name": "Giovanni Fabbian",
+      "minutes": 34,
+      "progressive_passes": 0,
+      "raw_child_sha256": "7cfe70f91d8d2e2abf67974be3dc27485179c3038187dc59654b08dc72ac9f6a"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 2000094252,
+      "person_name": "Beraldo",
+      "minutes": 23,
+      "progressive_passes": 2,
+      "raw_child_sha256": "b55c165b40a91ae3aea6f5a0388ecb39de6aab8355c1c3f5257eeef6c6fcfaf0"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 2000220048,
+      "person_name": "Chema Andr\u00e9s",
+      "minutes": 23,
+      "progressive_passes": 1,
+      "raw_child_sha256": "cc10ac9b6e595a5a67428b49fd145dbcca8eb1303e717acd4d79f1ef46ebb476"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 12093353,
+      "person_name": "Karim Konat\u00e9",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "69c53cb0cdf2e01f02b5711ebda39e7e28316feab9978415d5693c499c113fdc"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 2000048260,
+      "person_name": "Alberto Costa",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "95041748198fe3b0a17cd746c3f759157214bba9d2abc2696a2791dad38f2cc0"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 2000058232,
+      "person_name": "Chadi Riad",
+      "minutes": 23,
+      "progressive_passes": 1,
+      "raw_child_sha256": "614d0449db17e1a3009bbbd507cdc81d3b17b04441db47ab040b5134dc8d01a4"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 2000015300,
+      "person_name": "Jamie Gittens",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "8ebcafd4b49e43f4bbd3e588299eec5bf80cebf59a5cfdfa2f92cfe4b7c13a81"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 2000262615,
+      "person_name": "El Hadji Malick Diouf",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "3b1737dcdebd984361375524a945a143f873948ca92ab2cf13899e188c6ea930"
+    },
+    {
+      "fixture_key": 135195,
+      "side_index": 0,
+      "canonical_person_id": 2000275657,
+      "person_name": "Jay Robinson",
+      "minutes": 34,
+      "progressive_passes": 3,
+      "raw_child_sha256": "e6a1a831adac74dd1fb6dfd13141af67a4aa0ad5ffd966b58c51f89cb83bac36"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 98040383,
+      "person_name": "Gregor Kobel",
+      "minutes": 90,
+      "progressive_passes": 1,
+      "raw_child_sha256": "ff3b57b22416494263cf0f079f7363f6b3c8ae5eb1e4ca39ba10c0c6dc2e6dfe"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 28124569,
+      "person_name": "Tino Livramento",
+      "minutes": 90,
+      "progressive_passes": 9,
+      "raw_child_sha256": "143e3b8e7b41b53bc5f71ee12115e72d265e0e68a0a22f632adff3a174c292e0"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 2000027898,
+      "person_name": "Shea Charles",
+      "minutes": 90,
+      "progressive_passes": 3,
+      "raw_child_sha256": "656b546f93e5da3a4d6bb64382f6edafa96fbd69de55962ef73c253324e4a731"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 28124573,
+      "person_name": "Levi Colwill",
+      "minutes": 90,
+      "progressive_passes": 3,
+      "raw_child_sha256": "0414a990878e750cdf7886e1eb92ba9bc5538b4f27052fdc88b61a0cf20e1296"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 2000108691,
+      "person_name": "Lewis Hall",
+      "minutes": 90,
+      "progressive_passes": 3,
+      "raw_child_sha256": "bae8a71f3f47f2fd92d9f9389d45f491405cc235ea42926ddb5be4c2fa45a797"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 2000030130,
+      "person_name": "Jo\u00e3o Neves",
+      "minutes": 70,
+      "progressive_passes": 1,
+      "raw_child_sha256": "d92cbe90bf07217d946b572ce6a567cb7ff4a03a47ce69f1b1545f96812fdd78"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 2000053516,
+      "person_name": "Adam Wharton",
+      "minutes": 90,
+      "progressive_passes": 6,
+      "raw_child_sha256": "6f3364e089a1d8011a45456eaead19e6da8f8bce5ecc5924e4d612087d72f205"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 19377206,
+      "person_name": "Luiz Henrique",
+      "minutes": 65,
+      "progressive_passes": 6,
+      "raw_child_sha256": "94f82a7141a66ddc62bf2c7febe1264b0cadd2a4638988bb2b5386b03d39bfe6"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 2000307251,
+      "person_name": "Konstantinos Karetsas",
+      "minutes": 70,
+      "progressive_passes": 3,
+      "raw_child_sha256": "ff311ab482ec2315214156b118d30ff730ae95bb83567f3d648c05dcd55df470"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 28116386,
+      "person_name": "Anthony Gordon",
+      "minutes": 65,
+      "progressive_passes": 2,
+      "raw_child_sha256": "d2fcc21df030129ad6553d1b06ac15a2bb2386b59cad9c20bd3a668bf04ab465"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 12093353,
+      "person_name": "Karim Konat\u00e9",
+      "minutes": 65,
+      "progressive_passes": 1,
+      "raw_child_sha256": "78901ca974b51f37aaefe29c94795a0732a39a9db909e57716b1a45ba6fc6d18"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 2000111044,
+      "person_name": "Silas Huber",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "b7206d0f73f118c5198c5ecde9a6f8c607c276aea3f29ccefcfb5a4ed2a640d5"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 2000094252,
+      "person_name": "Beraldo",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "e63f6394c774da675cccb5abb2fd0053083a170f0804525dbca95c2f103486dc"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 2000220048,
+      "person_name": "Chema Andr\u00e9s",
+      "minutes": 20,
+      "progressive_passes": 3,
+      "raw_child_sha256": "3b46ad54e5a10e9251ad7c25a18be89cfe353f93f7659d47a29d9f1d0384d9df"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 91187791,
+      "person_name": "Nick Woltemade",
+      "minutes": 25,
+      "progressive_passes": 0,
+      "raw_child_sha256": "d79c31d6eaab1facfa09ea82b7ee3e2d64945f0bf7243653ce16483722088ea4"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 2000048260,
+      "person_name": "Alberto Costa",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "2c2544fc597839858e5d1277053e4d596acbadf9d78c850ea84ac62905b7e4b4"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 43500245,
+      "person_name": "Giovanni Fabbian",
+      "minutes": 20,
+      "progressive_passes": 0,
+      "raw_child_sha256": "90483fe9051cf8ae3ec8caa8bcd606812ba26c37438c2d5fc418aafc274dbc65"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 2000015300,
+      "person_name": "Jamie Gittens",
+      "minutes": 25,
+      "progressive_passes": 2,
+      "raw_child_sha256": "f6e62c2ba734d269bf096a6c3f5e9debf009b58cadb069f7b8c9b2b42c0cc4f0"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 2000262615,
+      "person_name": "El Hadji Malick Diouf",
+      "minutes": null,
+      "progressive_passes": 0,
+      "raw_child_sha256": "6fc861fa23076111770e3446d5fe94017d06379cf5bde41ef9f781aa4ceeb894"
+    },
+    {
+      "fixture_key": 135857,
+      "side_index": 1,
+      "canonical_person_id": 2000275657,
+      "person_name": "Jay Robinson",
+      "minutes": 25,
+      "progressive_passes": 1,
+      "raw_child_sha256": "a28dcb93b0e582af3ed535178d42cdc6abb20cdbbcd67754e7e304eb0f8225de"
+    }
+  ],
+  "eligible_midfielders": [
+    {
+      "canonical_person_id": 29193659,
+      "name": "Jacob Ramsey",
+      "position_ratings": {
+        "midfielder_central": 20
+      }
+    },
+    {
+      "canonical_person_id": 2000030130,
+      "name": "Jo\u00e3o Neves",
+      "position_ratings": {
+        "defensive_midfielder": 18,
+        "midfielder_central": 20
+      }
+    },
+    {
+      "canonical_person_id": 2000189871,
+      "name": "Lewis Miley",
+      "position_ratings": {
+        "defensive_midfielder": 16,
+        "midfielder_central": 20
+      }
+    },
+    {
+      "canonical_person_id": 2000271404,
+      "name": "Rory Finneran",
+      "position_ratings": {
+        "defensive_midfielder": 20,
+        "midfielder_central": 20
+      }
+    },
+    {
+      "canonical_person_id": 2000027898,
+      "name": "Shea Charles",
+      "position_ratings": {
+        "defensive_midfielder": 20,
+        "midfielder_central": 16
+      }
+    },
+    {
+      "canonical_person_id": 2000220048,
+      "name": "Chema Andr\u00e9s",
+      "position_ratings": {
+        "defensive_midfielder": 20,
+        "midfielder_central": 16
+      }
+    },
+    {
+      "canonical_person_id": 2000007415,
+      "name": "Andrey Santos",
+      "position_ratings": {
+        "defensive_midfielder": 16,
+        "midfielder_central": 20
+      }
+    },
+    {
+      "canonical_person_id": 2000053516,
+      "name": "Adam Wharton",
+      "position_ratings": {
+        "defensive_midfielder": 20,
+        "midfielder_central": 20
+      }
+    },
+    {
+      "canonical_person_id": 43500245,
+      "name": "Giovanni Fabbian",
+      "position_ratings": {
+        "defensive_midfielder": 16,
+        "midfielder_central": 20
+      }
+    }
+  ],
+  "source_sha256": {
+    "live-source.json": "c4ede19e02e8b674ff79edb91c22318e0981653e6ffa3f07c6bd8250204f5d99",
+    "live-selection.json": "0502b79fb99205ec20d59126711964fe979d525237c53f22034fcb7f2c482b60"
+  }
+}

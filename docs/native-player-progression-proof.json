@@ -1,0 +1,195 @@
+{
+  "state": "verified_official_individual_progressive_passes_native_getter_exporter_wire",
+  "metadata_sha256": "ff4780c66f37e088f363d0c4365110dd0d7968204cb36283a6262055badab21d",
+  "game_assembly_sha256": "d26f882851f26248bb56ca3575fc7759d74aebc21fb9722f44cab29b63c1e654",
+  "native_plugin_sha256": "774cacde63567fd3901c47719e7a6ed94cc3a0a62e9b94989dcac6b4890ec0e1",
+  "field": {
+    "name": "progressive_passes",
+    "official_label": "ProgressivePasses",
+    "literal_index": 15692,
+    "key": "0x6161476c",
+    "managed_registration_rva": "0xab76b4",
+    "managed_raw": "80ed8852202cac72010080d2565cd59488bb02d008413391020140f9880240f9e103002ae80700f9ff0300b9e00313aa030080d2040080d2050080d2060080d2070080d2e5884d94",
+    "native_offset": "0xf1",
+    "wire_offset_u32_person": 186,
+    "wire_offset_u64_person": 190,
+    "unit": "unsigned byte stored count",
+    "retained_parent_version": 60
+  },
+  "instruction_guards": [
+    {
+      "rva": "0x205288",
+      "raw": "e1c64339",
+      "instruction": [
+        "ldrb",
+        "w1, [x23, #0xf1]"
+      ]
+    },
+    {
+      "rva": "0x205290",
+      "raw": "0cfb0795",
+      "instruction": [
+        "bl",
+        "#0x4403ec0"
+      ]
+    },
+    {
+      "rva": "0x20529c",
+      "raw": "81ed8852",
+      "instruction": [
+        "mov",
+        "w1, #0x476c"
+      ]
+    },
+    {
+      "rva": "0x2052a0",
+      "raw": "212cac72",
+      "instruction": [
+        "movk",
+        "w1, #0x6161, lsl #16"
+      ]
+    },
+    {
+      "rva": "0x2052a4",
+      "raw": "10c80795",
+      "instruction": [
+        "bl",
+        "#0x43f72e4"
+      ]
+    },
+    {
+      "rva": "0x266d70",
+      "raw": "89ed8852",
+      "instruction": [
+        "mov",
+        "w9, #0x476c"
+      ]
+    },
+    {
+      "rva": "0x266d74",
+      "raw": "292cac72",
+      "instruction": [
+        "movk",
+        "w9, #0x6161, lsl #16"
+      ]
+    },
+    {
+      "rva": "0x266d78",
+      "raw": "1f01096b",
+      "instruction": [
+        "cmp",
+        "w8, w9"
+      ]
+    },
+    {
+      "rva": "0x266d7c",
+      "raw": "c11e0054",
+      "instruction": [
+        "b.ne",
+        "#0x267154"
+      ]
+    },
+    {
+      "rva": "0x266d80",
+      "raw": "01c44339",
+      "instruction": [
+        "ldrb",
+        "w1, [x0, #0xf1]"
+      ]
+    },
+    {
+      "rva": "0x266d84",
+      "raw": "d5000014",
+      "instruction": [
+        "b",
+        "#0x2670d8"
+      ]
+    },
+    {
+      "rva": "0x2670dc",
+      "raw": "79730695",
+      "instruction": [
+        "bl",
+        "#0x4403ec0"
+      ]
+    },
+    {
+      "rva": "0x267130",
+      "raw": "f0750695",
+      "instruction": [
+        "bl",
+        "#0x44048f0"
+      ]
+    },
+    {
+      "rva": "0x26713c",
+      "raw": "20008052",
+      "instruction": [
+        "mov",
+        "w0, #1"
+      ]
+    },
+    {
+      "rva": "0x4ad2de0",
+      "raw": "34c10391",
+      "instruction": [
+        "add",
+        "x20, x9, #0xf0"
+      ]
+    },
+    {
+      "rva": "0x4ad2e18",
+      "raw": "e83740b9",
+      "instruction": [
+        "ldr",
+        "w8, [sp, #0x34]"
+      ]
+    },
+    {
+      "rva": "0x4ad2e1c",
+      "raw": "1ff10071",
+      "instruction": [
+        "cmp",
+        "w8, #0x3c"
+      ]
+    },
+    {
+      "rva": "0x4ad2e20",
+      "raw": "ab000054",
+      "instruction": [
+        "b.lt",
+        "#0x4ad2e34"
+      ]
+    },
+    {
+      "rva": "0x4ad2e24",
+      "raw": "28018052",
+      "instruction": [
+        "mov",
+        "w8, #9"
+      ]
+    },
+    {
+      "rva": "0x4ad2e3c",
+      "raw": "c8008052",
+      "instruction": [
+        "mov",
+        "w8, #6"
+      ]
+    },
+    {
+      "rva": "0x4ad2e40",
+      "raw": "f4a305a9",
+      "instruction": [
+        "stp",
+        "x20, x8, [sp, #0x58]"
+      ]
+    }
+  ],
+  "limits": [
+    "Official FM progressive-pass definition; no distance/angle threshold independently established",
+    "No final-third entry count, pass origin/destination, carry progression or role-specific split is implied",
+    "OpenPlayFinalThirdPasses separately named but into-versus-in-third semantics remain unproved",
+    "Third-completion property keys found in separate four-argument container exporter, no verified retained-player getter linkage"
+  ]
+}

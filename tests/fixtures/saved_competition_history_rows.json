@@ -1,0 +1,4616 @@
+{
+  "source": "Four checked original save comp_history_dt.cmt components; frozen B75 competition/actual.json",
+  "research_receipt_sha256": "a29f3e574627a09d9ef75dd1b3a672288a888908db9b9a16260eaa01c80b9d26",
+  "observation_count": 1024,
+  "distinct_row_count": 256,
+  "rows": [
+    {
+      "raw_hex": "0000000068070000ce000000d6000000b4600000ffffffffffffffffffffffffffffffffffffffffffffffff0004006707680701006c07",
+      "competition_index_word": 0,
+      "year": 1896,
+      "start_year": 1895,
+      "end_year": 1896,
+      "first_placed_team_index": 206,
+      "second_placed_team_index": 214,
+      "third_placed_team_index": 24756,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000069070000b2600000ce000000d6000000ffffffffffffffffffffffffffffffffffffffffffffffff0004006807690701006c07",
+      "competition_index_word": 0,
+      "year": 1897,
+      "start_year": 1896,
+      "end_year": 1897,
+      "first_placed_team_index": 24754,
+      "second_placed_team_index": 206,
+      "third_placed_team_index": 214,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000006a070000ce000000b26000004b200000ffffffffffffffffffffffffffffffffffffffffffffffff00040069076a0701006c07",
+      "competition_index_word": 0,
+      "year": 1898,
+      "start_year": 1897,
+      "end_year": 1898,
+      "first_placed_team_index": 206,
+      "second_placed_team_index": 24754,
+      "third_placed_team_index": 8267,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000006b070000ce00000093000000b2600000ffffffffffffffffffffffffffffffffffffffffffffffff0004006a076b0701006c07",
+      "competition_index_word": 0,
+      "year": 1899,
+      "start_year": 1898,
+      "end_year": 1899,
+      "first_placed_team_index": 206,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 24754,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000006c070000b2600000d6000000b4600000ffffffffffffffffffffffffffffffffffffffffffffffff0004006b076c0701006c07",
+      "competition_index_word": 0,
+      "year": 1900,
+      "start_year": 1899,
+      "end_year": 1900,
+      "first_placed_team_index": 24754,
+      "second_placed_team_index": 214,
+      "third_placed_team_index": 24756,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000006d070000b26000008c0000004b200000ffffffffffffffffffffffffffffffffffffffffffffffff0004006c076d0701006c07",
+      "competition_index_word": 0,
+      "year": 1901,
+      "start_year": 1900,
+      "end_year": 1901,
+      "first_placed_team_index": 24754,
+      "second_placed_team_index": 140,
+      "third_placed_team_index": 8267,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000006e070000b26000004b200000ea000000ffffffffffffffffffffffffffffffffffffffffffffffff0004006d076e0701006c07",
+      "competition_index_word": 0,
+      "year": 1902,
+      "start_year": 1901,
+      "end_year": 1902,
+      "first_placed_team_index": 24754,
+      "second_placed_team_index": 8267,
+      "third_placed_team_index": 234,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000006f070000b2600000ea0000008c000000ffffffffffffffffffffffffffffffffffffffffffffffff0004006e076f0701006c07",
+      "competition_index_word": 0,
+      "year": 1903,
+      "start_year": 1902,
+      "end_year": 1903,
+      "first_placed_team_index": 24754,
+      "second_placed_team_index": 234,
+      "third_placed_team_index": 140,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000070070000ea000000b260000093000000ffffffffffffffffffffffffffffffffffffffffffffffff0004006f07700701006c07",
+      "competition_index_word": 0,
+      "year": 1904,
+      "start_year": 1903,
+      "end_year": 1904,
+      "first_placed_team_index": 234,
+      "second_placed_team_index": 24754,
+      "third_placed_team_index": 147,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000071070000ea000000b260000093000000ffffffffffffffffffffffffffffffffffffffffffffffff0004007007710701006c07",
+      "competition_index_word": 0,
+      "year": 1905,
+      "start_year": 1904,
+      "end_year": 1905,
+      "first_placed_team_index": 234,
+      "second_placed_team_index": 24754,
+      "third_placed_team_index": 147,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000072070000ea00000093000000b2600000ffffffffffffffffffffffffffffffffffffffffffffffff0004007107720701006c07",
+      "competition_index_word": 0,
+      "year": 1906,
+      "start_year": 1905,
+      "end_year": 1906,
+      "first_placed_team_index": 234,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 24754,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000073070000ea000000b260000093000000ffffffffffffffffffffffffffffffffffffffffffffffff0004007207730701006c07",
+      "competition_index_word": 0,
+      "year": 1907,
+      "start_year": 1906,
+      "end_year": 1907,
+      "first_placed_team_index": 234,
+      "second_placed_team_index": 24754,
+      "third_placed_team_index": 147,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000074070000b2600000b360000093000000ffffffffffffffffffffffffffffffffffffffffffffffff0004007307740701006c07",
+      "competition_index_word": 0,
+      "year": 1908,
+      "start_year": 1907,
+      "end_year": 1908,
+      "first_placed_team_index": 24754,
+      "second_placed_team_index": 24755,
+      "third_placed_team_index": 147,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000075070000ea000000b360000093000000ffffffffffffffffffffffffffffffffffffffffffffffff0004007407750701006c07",
+      "competition_index_word": 0,
+      "year": 1909,
+      "start_year": 1908,
+      "end_year": 1909,
+      "first_placed_team_index": 234,
+      "second_placed_team_index": 24755,
+      "third_placed_team_index": 147,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000076070000ea0000009300000091000000ffffffffffffffffffffffffffffffffffffffffffffffff0004007507760701006c07",
+      "competition_index_word": 0,
+      "year": 1910,
+      "start_year": 1909,
+      "end_year": 1910,
+      "first_placed_team_index": 234,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 145,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000770700009100000093000000b3600000ffffffffffffffffffffffffffffffffffffffffffffffff0004007607770701006c07",
+      "competition_index_word": 0,
+      "year": 1911,
+      "start_year": 1910,
+      "end_year": 1911,
+      "first_placed_team_index": 145,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 24755,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000078070000b3600000ea000000b2600000ffffffffffffffffffffffffffffffffffffffffffffffff0004007707780701006c07",
+      "competition_index_word": 0,
+      "year": 1912,
+      "start_year": 1911,
+      "end_year": 1912,
+      "first_placed_team_index": 24755,
+      "second_placed_team_index": 234,
+      "third_placed_team_index": 24754,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000079070000ea000000b3600000b2600000ffffffffffffffffffffffffffffffffffffffffffffffff0004007807790701006c07",
+      "competition_index_word": 0,
+      "year": 1913,
+      "start_year": 1912,
+      "end_year": 1913,
+      "first_placed_team_index": 234,
+      "second_placed_team_index": 24755,
+      "third_placed_team_index": 24754,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000007a070000b3600000ea00000091000000ffffffffffffffffffffffffffffffffffffffffffffffff00040079077a0701006c07",
+      "competition_index_word": 0,
+      "year": 1914,
+      "start_year": 1913,
+      "end_year": 1914,
+      "first_placed_team_index": 24755,
+      "second_placed_team_index": 234,
+      "third_placed_team_index": 145,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000008007000093000000ea000000b3600000ffffffffffffffffffffffffffffffffffffffffffffffff0004007f07800701006c07",
+      "competition_index_word": 0,
+      "year": 1920,
+      "start_year": 1919,
+      "end_year": 1920,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 234,
+      "third_placed_team_index": 24755,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000081070000b3600000ea0000008c000000ffffffffffffffffffffffffffffffffffffffffffffffff0004008007810701006c07",
+      "competition_index_word": 0,
+      "year": 1921,
+      "start_year": 1920,
+      "end_year": 1921,
+      "first_placed_team_index": 24755,
+      "second_placed_team_index": 234,
+      "third_placed_team_index": 140,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000820700008c000000ea000000d6000000ffffffffffffffffffffffffffffffffffffffffffffffff0004008107820701006c07",
+      "competition_index_word": 0,
+      "year": 1922,
+      "start_year": 1921,
+      "end_year": 1922,
+      "first_placed_team_index": 140,
+      "second_placed_team_index": 234,
+      "third_placed_team_index": 214,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000083070000ea0000008c00000091000000ffffffffffffffffffffffffffffffffffffffffffffffff0004008207830701006c07",
+      "competition_index_word": 0,
+      "year": 1923,
+      "start_year": 1922,
+      "end_year": 1923,
+      "first_placed_team_index": 234,
+      "second_placed_team_index": 140,
+      "third_placed_team_index": 145,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000840700008c000000ea00000091000000ffffffffffffffffffffffffffffffffffffffffffffffff0004008307840701006c07",
+      "competition_index_word": 0,
+      "year": 1924,
+      "start_year": 1923,
+      "end_year": 1924,
+      "first_placed_team_index": 140,
+      "second_placed_team_index": 234,
+      "third_placed_team_index": 145,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000850700008c000000d6000000ea000000ffffffffffffffffffffffffffffffffffffffffffffffff0004008407850701006c07",
+      "competition_index_word": 0,
+      "year": 1925,
+      "start_year": 1924,
+      "end_year": 1925,
+      "first_placed_team_index": 140,
+      "second_placed_team_index": 214,
+      "third_placed_team_index": 234,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000860700008c000000cb000000b3600000ffffffffffffffffffffffffffffffffffffffffffffffff0004008507860701006c07",
+      "competition_index_word": 0,
+      "year": 1926,
+      "start_year": 1925,
+      "end_year": 1926,
+      "first_placed_team_index": 140,
+      "second_placed_team_index": 203,
+      "third_placed_team_index": 24755,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000087070000910000008c000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff0004008607870701006c07",
+      "competition_index_word": 0,
+      "year": 1927,
+      "start_year": 1926,
+      "end_year": 1927,
+      "first_placed_team_index": 145,
+      "second_placed_team_index": 140,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000088070000241d0000cb00000091000000ffffffffffffffffffffffffffffffffffffffffffffffff0004008707880701006c07",
+      "competition_index_word": 0,
+      "year": 1928,
+      "start_year": 1927,
+      "end_year": 1928,
+      "first_placed_team_index": 7460,
+      "second_placed_team_index": 203,
+      "third_placed_team_index": 145,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000089070000d60000008c000000d4000000ffffffffffffffffffffffffffffffffffffffffffffffff0004008807890701006c07",
+      "competition_index_word": 0,
+      "year": 1929,
+      "start_year": 1928,
+      "end_year": 1929,
+      "first_placed_team_index": 214,
+      "second_placed_team_index": 140,
+      "third_placed_team_index": 212,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000008a07000091000000d6000000d4000000ffffffffffffffffffffffffffffffffffffffffffffffff00040089078a0701006c07",
+      "competition_index_word": 0,
+      "year": 1930,
+      "start_year": 1929,
+      "end_year": 1930,
+      "first_placed_team_index": 145,
+      "second_placed_team_index": 214,
+      "third_placed_team_index": 212,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000008b070000d6000000bc0000008d000000ffffffffffffffffffffffffffffffffffffffffffffffff0004008a078b0701006c07",
+      "competition_index_word": 0,
+      "year": 1931,
+      "start_year": 1930,
+      "end_year": 1931,
+      "first_placed_team_index": 214,
+      "second_placed_team_index": 188,
+      "third_placed_team_index": 141,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000008c070000da000000d6000000ea000000ffffffffffffffffffffffffffffffffffffffffffffffff0004008b078c0701006c07",
+      "competition_index_word": 0,
+      "year": 1932,
+      "start_year": 1931,
+      "end_year": 1932,
+      "first_placed_team_index": 218,
+      "second_placed_team_index": 214,
+      "third_placed_team_index": 234,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000008d070000ea000000d600000091000000ffffffffffffffffffffffffffffffffffffffffffffffff0004008c078d0701006c07",
+      "competition_index_word": 0,
+      "year": 1933,
+      "start_year": 1932,
+      "end_year": 1933,
+      "first_placed_team_index": 234,
+      "second_placed_team_index": 214,
+      "third_placed_team_index": 145,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000008e070000ea000000b3600000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff0004008d078e0701006c07",
+      "competition_index_word": 0,
+      "year": 1934,
+      "start_year": 1933,
+      "end_year": 1934,
+      "first_placed_team_index": 234,
+      "second_placed_team_index": 24755,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000008f070000ea000000da000000b3600000ffffffffffffffffffffffffffffffffffffffffffffffff0004008e078f0701006c07",
+      "competition_index_word": 0,
+      "year": 1935,
+      "start_year": 1934,
+      "end_year": 1935,
+      "first_placed_team_index": 234,
+      "second_placed_team_index": 218,
+      "third_placed_team_index": 24755,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000090070000b3600000cb000000ea000000ffffffffffffffffffffffffffffffffffffffffffffffff0004008f07900701006c07",
+      "competition_index_word": 0,
+      "year": 1936,
+      "start_year": 1935,
+      "end_year": 1936,
+      "first_placed_team_index": 24755,
+      "second_placed_team_index": 203,
+      "third_placed_team_index": 234,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000091070000b36000008c000000ea000000ffffffffffffffffffffffffffffffffffffffffffffffff0004009007910701006c07",
+      "competition_index_word": 0,
+      "year": 1937,
+      "start_year": 1936,
+      "end_year": 1937,
+      "first_placed_team_index": 24755,
+      "second_placed_team_index": 140,
+      "third_placed_team_index": 234,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000920700008c000000b3600000ea000000ffffffffffffffffffffffffffffffffffffffffffffffff0004009107920701006c07",
+      "competition_index_word": 0,
+      "year": 1938,
+      "start_year": 1937,
+      "end_year": 1938,
+      "first_placed_team_index": 140,
+      "second_placed_team_index": 24755,
+      "third_placed_team_index": 234,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000930700008c000000da000000d7000000ffffffffffffffffffffffffffffffffffffffffffffffff0004009207930701006c07",
+      "competition_index_word": 0,
+      "year": 1939,
+      "start_year": 1938,
+      "end_year": 1939,
+      "first_placed_team_index": 140,
+      "second_placed_team_index": 218,
+      "third_placed_team_index": 215,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000096070000da0000008c000000d6000000ffffffffffffffffffffffffffffffffffffffffffffffff0004009507960701006c07",
+      "competition_index_word": 0,
+      "year": 1942,
+      "start_year": 1941,
+      "end_year": 1942,
+      "first_placed_team_index": 218,
+      "second_placed_team_index": 140,
+      "third_placed_team_index": 214,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000097070000bc0000008c000000da000000ffffffffffffffffffffffffffffffffffffffffffffffff0004009607970701006c07",
+      "competition_index_word": 0,
+      "year": 1943,
+      "start_year": 1942,
+      "end_year": 1943,
+      "first_placed_team_index": 188,
+      "second_placed_team_index": 140,
+      "third_placed_team_index": 218,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0000000098070000d6000000d00000008c000000ffffffffffffffffffffffffffffffffffffffffffffffff0004009707980701006c07",
+      "competition_index_word": 0,
+      "year": 1944,
+      "start_year": 1943,
+      "end_year": 1944,
+      "first_placed_team_index": 214,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 140,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000009a070000bc000000d6000000d0000000ffffffffffffffffffffffffffffffffffffffffffffffff00040099079a0701006c07",
+      "competition_index_word": 0,
+      "year": 1946,
+      "start_year": 1945,
+      "end_year": 1946,
+      "first_placed_team_index": 188,
+      "second_placed_team_index": 214,
+      "third_placed_team_index": 208,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000009b070000d0000000c7000000d4000000ffffffffffffffffffffffffffffffffffffffffffffffff0004009a079b0701006c07",
+      "competition_index_word": 0,
+      "year": 1947,
+      "start_year": 1946,
+      "end_year": 1947,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 199,
+      "third_placed_team_index": 212,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000009c070000bc000000d0000000ce000000ffffffffffffffffffffffffffffffffffffffffffffffff0004009b079c0701006c07",
+      "competition_index_word": 0,
+      "year": 1948,
+      "start_year": 1947,
+      "end_year": 1948,
+      "first_placed_team_index": 188,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 206,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000009d070000d00000008d000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff0004009c079d0701006c07",
+      "competition_index_word": 0,
+      "year": 1949,
+      "start_year": 1948,
+      "end_year": 1949,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 141,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000009e070000d00000008d000000d4000000ffffffffffffffffffffffffffffffffffffffffffffffff0004009d079e0701006c07",
+      "competition_index_word": 0,
+      "year": 1950,
+      "start_year": 1949,
+      "end_year": 1950,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 141,
+      "third_placed_team_index": 212,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "000000009f070000d00000008d000000d4000000ffffffffffffffffffffffffffffffffffffffffffffffff0004009e079f0701006c07",
+      "competition_index_word": 0,
+      "year": 1951,
+      "start_year": 1950,
+      "end_year": 1951,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 141,
+      "third_placed_team_index": 212,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000a0070000ce000000d4000000d6000000ffffffffffffffffffffffffffffffffffffffffffffffff0004009f07a00701006c07",
+      "competition_index_word": 0,
+      "year": 1952,
+      "start_year": 1951,
+      "end_year": 1952,
+      "first_placed_team_index": 206,
+      "second_placed_team_index": 212,
+      "third_placed_team_index": 214,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000a1070000ce000000d00000008c000000ffffffffffffffffffffffffffffffffffffffffffffffff000400a007a10701006c07",
+      "competition_index_word": 0,
+      "year": 1953,
+      "start_year": 1952,
+      "end_year": 1953,
+      "first_placed_team_index": 206,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 140,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000a2070000d0000000bc00000086000000ffffffffffffffffffffffffffffffffffffffffffffffff000400a107a20701006c07",
+      "competition_index_word": 0,
+      "year": 1954,
+      "start_year": 1953,
+      "end_year": 1954,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 188,
+      "third_placed_team_index": 134,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000a3070000d000000086000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400a207a30701006c07",
+      "competition_index_word": 0,
+      "year": 1955,
+      "start_year": 1954,
+      "end_year": 1955,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 134,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000a4070000d0000000d6000000ea000000ffffffffffffffffffffffffffffffffffffffffffffffff000400a307a40701006c07",
+      "competition_index_word": 0,
+      "year": 1956,
+      "start_year": 1955,
+      "end_year": 1956,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 214,
+      "third_placed_team_index": 234,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000a5070000d6000000d000000086000000ffffffffffffffffffffffffffffffffffffffffffffffff000400a407a50701006c07",
+      "competition_index_word": 0,
+      "year": 1957,
+      "start_year": 1956,
+      "end_year": 1957,
+      "first_placed_team_index": 214,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 134,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000a6070000cb000000d600000086000000ffffffffffffffffffffffffffffffffffffffffffffffff000400a507a60701006c07",
+      "competition_index_word": 0,
+      "year": 1958,
+      "start_year": 1957,
+      "end_year": 1958,
+      "first_placed_team_index": 203,
+      "second_placed_team_index": 214,
+      "third_placed_team_index": 134,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000a7070000d0000000ce000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400a607a70701006c07",
+      "competition_index_word": 0,
+      "year": 1959,
+      "start_year": 1958,
+      "end_year": 1959,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 206,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000a8070000da000000d000000021090000ffffffffffffffffffffffffffffffffffffffffffffffff000400a707a80701006c07",
+      "competition_index_word": 0,
+      "year": 1960,
+      "start_year": 1959,
+      "end_year": 1960,
+      "first_placed_team_index": 218,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 2337,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000a9070000cb000000ce000000d0000000ffffffffffffffffffffffffffffffffffffffffffffffff000400a807a90701006c07",
+      "competition_index_word": 0,
+      "year": 1961,
+      "start_year": 1960,
+      "end_year": 1961,
+      "first_placed_team_index": 203,
+      "second_placed_team_index": 206,
+      "third_placed_team_index": 208,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000aa070000d0000000cb000000d6000000ffffffffffffffffffffffffffffffffffffffffffffffff000400a907aa0701006c07",
+      "competition_index_word": 0,
+      "year": 1962,
+      "start_year": 1961,
+      "end_year": 1962,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 203,
+      "third_placed_team_index": 214,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000ab070000cb000000d6000000d0000000ffffffffffffffffffffffffffffffffffffffffffffffff000400aa07ab0701006c07",
+      "competition_index_word": 0,
+      "year": 1963,
+      "start_year": 1962,
+      "end_year": 1963,
+      "first_placed_team_index": 203,
+      "second_placed_team_index": 214,
+      "third_placed_team_index": 208,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000ac070000d00000009e000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400ab07ac0701006c07",
+      "competition_index_word": 0,
+      "year": 1964,
+      "start_year": 1963,
+      "end_year": 1964,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 158,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000ad070000d0000000cb0000008c000000ffffffffffffffffffffffffffffffffffffffffffffffff000400ac07ad0701006c07",
+      "competition_index_word": 0,
+      "year": 1965,
+      "start_year": 1964,
+      "end_year": 1965,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 203,
+      "third_placed_team_index": 140,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000ae070000d0000000e3000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400ad07ae0701006c07",
+      "competition_index_word": 0,
+      "year": 1966,
+      "start_year": 1965,
+      "end_year": 1966,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 227,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000af070000d000000093000000ce000000ffffffffffffffffffffffffffffffffffffffffffffffff000400ae07af0701006c07",
+      "competition_index_word": 0,
+      "year": 1967,
+      "start_year": 1966,
+      "end_year": 1967,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 206,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000b0070000d000000093000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400af07b00701006c07",
+      "competition_index_word": 0,
+      "year": 1968,
+      "start_year": 1967,
+      "end_year": 1968,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000b1070000cb000000d7000000da000000ffffffffffffffffffffffffffffffffffffffffffffffff000400b007b10701006c07",
+      "competition_index_word": 0,
+      "year": 1969,
+      "start_year": 1968,
+      "end_year": 1969,
+      "first_placed_team_index": 203,
+      "second_placed_team_index": 215,
+      "third_placed_team_index": 218,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000b2070000cb0000009300000086000000ffffffffffffffffffffffffffffffffffffffffffffffff000400b107b20701006c07",
+      "competition_index_word": 0,
+      "year": 1970,
+      "start_year": 1969,
+      "end_year": 1970,
+      "first_placed_team_index": 203,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 134,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000b3070000cb00000093000000d0000000ffffffffffffffffffffffffffffffffffffffffffffffff000400b207b30701006c07",
+      "competition_index_word": 0,
+      "year": 1971,
+      "start_year": 1970,
+      "end_year": 1971,
+      "first_placed_team_index": 203,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 208,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000b4070000d000000093000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400b307b40701006c07",
+      "competition_index_word": 0,
+      "year": 1972,
+      "start_year": 1971,
+      "end_year": 1972,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000b507000093000000cb000000c8270000ffffffffffffffffffffffffffffffffffffffffffffffff000400b407b50701006c07",
+      "competition_index_word": 0,
+      "year": 1973,
+      "start_year": 1972,
+      "end_year": 1973,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 203,
+      "third_placed_team_index": 10184,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000b6070000d0000000d6000000c8270000ffffffffffffffffffffffffffffffffffffffffffffffff000400b507b60701006c07",
+      "competition_index_word": 0,
+      "year": 1974,
+      "start_year": 1973,
+      "end_year": 1974,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 214,
+      "third_placed_team_index": 10184,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000b7070000c8270000d6000000d0000000ffffffffffffffffffffffffffffffffffffffffffffffff000400b607b70701006c07",
+      "competition_index_word": 0,
+      "year": 1975,
+      "start_year": 1974,
+      "end_year": 1975,
+      "first_placed_team_index": 10184,
+      "second_placed_team_index": 214,
+      "third_placed_team_index": 208,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000b807000093000000d0000000c8270000ffffffffffffffffffffffffffffffffffffffffffffffff000400b707b80701006c07",
+      "competition_index_word": 0,
+      "year": 1976,
+      "start_year": 1975,
+      "end_year": 1976,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 10184,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000b907000093000000d0000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400b807b90701006c07",
+      "competition_index_word": 0,
+      "year": 1977,
+      "start_year": 1976,
+      "end_year": 1977,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000ba07000093000000d0000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400b907ba0701006c07",
+      "competition_index_word": 0,
+      "year": 1978,
+      "start_year": 1977,
+      "end_year": 1978,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000bb070000d9000000d0000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400ba07bb0701006c07",
+      "competition_index_word": 0,
+      "year": 1979,
+      "start_year": 1978,
+      "end_year": 1979,
+      "first_placed_team_index": 217,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000bc07000093000000cb000000c8270000ffffffffffffffffffffffffffffffffffffffffffffffff000400bb07bc0701006c07",
+      "competition_index_word": 0,
+      "year": 1980,
+      "start_year": 1979,
+      "end_year": 1980,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 203,
+      "third_placed_team_index": 10184,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000bd070000d0000000d8000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400bc07bd0701006c07",
+      "competition_index_word": 0,
+      "year": 1981,
+      "start_year": 1980,
+      "end_year": 1981,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 216,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000be070000cb000000d000000086000000ffffffffffffffffffffffffffffffffffffffffffffffff000400bd07be0701006c07",
+      "competition_index_word": 0,
+      "year": 1982,
+      "start_year": 1981,
+      "end_year": 1982,
+      "first_placed_team_index": 203,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 134,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000bf070000cb000000d0000000d6000000ffffffffffffffffffffffffffffffffffffffffffffffff000400be07bf0701006c07",
+      "competition_index_word": 0,
+      "year": 1983,
+      "start_year": 1982,
+      "end_year": 1983,
+      "first_placed_team_index": 203,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 214,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000c0070000d9000000d000000093000000ffffffffffffffffffffffffffffffffffffffffffffffff000400bf07c00701006c07",
+      "competition_index_word": 0,
+      "year": 1984,
+      "start_year": 1983,
+      "end_year": 1984,
+      "first_placed_team_index": 217,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 147,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000c1070000d000000093000000ce000000ffffffffffffffffffffffffffffffffffffffffffffffff000400c007c10701006c07",
+      "competition_index_word": 0,
+      "year": 1985,
+      "start_year": 1984,
+      "end_year": 1985,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 206,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000c2070000d000000093000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400c107c20701006c07",
+      "competition_index_word": 0,
+      "year": 1986,
+      "start_year": 1985,
+      "end_year": 1986,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000c3070000d0000000bc00000093000000ffffffffffffffffffffffffffffffffffffffffffffffff000400c207c30701006c07",
+      "competition_index_word": 0,
+      "year": 1987,
+      "start_year": 1986,
+      "end_year": 1987,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 188,
+      "third_placed_team_index": 147,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000c407000093000000bc000000d6000000ffffffffffffffffffffffffffffffffffffffffffffffff000400c307c40701006c07",
+      "competition_index_word": 0,
+      "year": 1988,
+      "start_year": 1987,
+      "end_year": 1988,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 188,
+      "third_placed_team_index": 214,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000c5070000bc000000d0000000ce000000ffffffffffffffffffffffffffffffffffffffffffffffff000400c407c50701006c07",
+      "competition_index_word": 0,
+      "year": 1989,
+      "start_year": 1988,
+      "end_year": 1989,
+      "first_placed_team_index": 188,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 206,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000c607000093000000d0000000bc000000ffffffffffffffffffffffffffffffffffffffffffffffff000400c507c60701006c07",
+      "competition_index_word": 0,
+      "year": 1990,
+      "start_year": 1989,
+      "end_year": 1990,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 188,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000c7070000d0000000bc00000093000000ffffffffffffffffffffffffffffffffffffffffffffffff000400c607c70701006c07",
+      "competition_index_word": 0,
+      "year": 1991,
+      "start_year": 1990,
+      "end_year": 1991,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 188,
+      "third_placed_team_index": 147,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000c807000093000000d0000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400c707c80701006c07",
+      "competition_index_word": 0,
+      "year": 1992,
+      "start_year": 1991,
+      "end_year": 1992,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000c9070000d0000000cb000000bc000000ffffffffffffffffffffffffffffffffffffffffffffffff000400c807c90701006c07",
+      "competition_index_word": 0,
+      "year": 1993,
+      "start_year": 1992,
+      "end_year": 1993,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 203,
+      "third_placed_team_index": 188,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000ca070000d0000000930000009b160000ffffffffffffffffffffffffffffffffffffffffffffffff000400c907ca0701006c07",
+      "competition_index_word": 0,
+      "year": 1994,
+      "start_year": 1993,
+      "end_year": 1994,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 5787,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000cb070000d0000000cb00000093000000ffffffffffffffffffffffffffffffffffffffffffffffff000400ca07cb0701006c07",
+      "competition_index_word": 0,
+      "year": 1995,
+      "start_year": 1994,
+      "end_year": 1995,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 203,
+      "third_placed_team_index": 147,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000cc07000093000000d0000000af000000ffffffffffffffffffffffffffffffffffffffffffffffff000400cb07cc0701006c07",
+      "competition_index_word": 0,
+      "year": 1996,
+      "start_year": 1995,
+      "end_year": 1996,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 175,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000cd070000da000000930000009b000000ffffffffffffffffffffffffffffffffffffffffffffffff000400cc07cd0701006c07",
+      "competition_index_word": 0,
+      "year": 1997,
+      "start_year": 1996,
+      "end_year": 1997,
+      "first_placed_team_index": 218,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 155,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000ce07000093000000d2000000af000000ffffffffffffffffffffffffffffffffffffffffffffffff000400cd07ce0701006c07",
+      "competition_index_word": 0,
+      "year": 1998,
+      "start_year": 1997,
+      "end_year": 1998,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 210,
+      "third_placed_team_index": 175,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000cf070000d200000093000000d0000000ffffffffffffffffffffffffffffffffffffffffffffffff000400ce07cf0701006c07",
+      "competition_index_word": 0,
+      "year": 1999,
+      "start_year": 1998,
+      "end_year": 1999,
+      "first_placed_team_index": 210,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 208,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000d0070000d00000009300000086000000ffffffffffffffffffffffffffffffffffffffffffffffff000400cf07d00701006c07",
+      "competition_index_word": 0,
+      "year": 2000,
+      "start_year": 1999,
+      "end_year": 2000,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 134,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000d1070000d000000093000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400d007d10701006c07",
+      "competition_index_word": 0,
+      "year": 2001,
+      "start_year": 2000,
+      "end_year": 2001,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000d2070000d200000093000000d0000000ffffffffffffffffffffffffffffffffffffffffffffffff000400d107d20701006c07",
+      "competition_index_word": 0,
+      "year": 2002,
+      "start_year": 2001,
+      "end_year": 2002,
+      "first_placed_team_index": 210,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 208,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000d307000093000000d0000000d8000000ffffffffffffffffffffffffffffffffffffffffffffffff000400d207d30701006c07",
+      "competition_index_word": 0,
+      "year": 2003,
+      "start_year": 2002,
+      "end_year": 2003,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 216,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000d4070000d000000093000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400d307d40701006c07",
+      "competition_index_word": 0,
+      "year": 2004,
+      "start_year": 2003,
+      "end_year": 2004,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000d507000093000000d0000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400d407d50701006c07",
+      "competition_index_word": 0,
+      "year": 2005,
+      "start_year": 2004,
+      "end_year": 2005,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000d6070000d0000000cb00000093000000ffffffffffffffffffffffffffffffffffffffffffffffff000400d507d60701006c07",
+      "competition_index_word": 0,
+      "year": 2006,
+      "start_year": 2005,
+      "end_year": 2006,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 203,
+      "third_placed_team_index": 147,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000d7070000d0000000d2000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400d607d70701006c07",
+      "competition_index_word": 0,
+      "year": 2007,
+      "start_year": 2006,
+      "end_year": 2007,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 210,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000d8070000cb000000d000000093000000ffffffffffffffffffffffffffffffffffffffffffffffff000400d707d80701006c07",
+      "competition_index_word": 0,
+      "year": 2008,
+      "start_year": 2007,
+      "end_year": 2008,
+      "first_placed_team_index": 203,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 147,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000d9070000cb000000d000000093000000ffffffffffffffffffffffffffffffffffffffffffffffff000400d807d90701006c07",
+      "competition_index_word": 0,
+      "year": 2009,
+      "start_year": 2008,
+      "end_year": 2009,
+      "first_placed_team_index": 203,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 147,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000da070000d00000008600000093000000ffffffffffffffffffffffffffffffffffffffffffffffff000400d907da0701006c07",
+      "competition_index_word": 0,
+      "year": 2010,
+      "start_year": 2009,
+      "end_year": 2010,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 134,
+      "third_placed_team_index": 147,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000db070000d2000000cb000000d0000000ffffffffffffffffffffffffffffffffffffffffffffffff000400da07db078900db07",
+      "competition_index_word": 0,
+      "year": 2011,
+      "start_year": 2010,
+      "end_year": 2011,
+      "first_placed_team_index": 210,
+      "second_placed_team_index": 203,
+      "third_placed_team_index": 208,
+      "date_decided": {
+        "value": "2011-05-17",
+        "raw_hex": "8900db07",
+        "native_year": 2011,
+        "native_day_low9": 137,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "00000000dc070000d000000093000000d2000000ffffffffffffffffffffffffffffffffffffffffffffffff000400db07dc0701006c07",
+      "competition_index_word": 0,
+      "year": 2012,
+      "start_year": 2011,
+      "end_year": 2012,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 210,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000dd070000d0000000f400000093000000ffffffffffffffffffffffffffffffffffffffffffffffff000400dc07dd0701006c07",
+      "competition_index_word": 0,
+      "year": 2013,
+      "start_year": 2012,
+      "end_year": 2013,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 244,
+      "third_placed_team_index": 147,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000de070000d0000000cb00000093000000ffffffffffffffffffffffffffffffffffffffffffffffff000400dd07de078700de07",
+      "competition_index_word": 0,
+      "year": 2014,
+      "start_year": 2013,
+      "end_year": 2014,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 203,
+      "third_placed_team_index": 147,
+      "date_decided": {
+        "value": "2014-05-15",
+        "raw_hex": "8700de07",
+        "native_year": 2014,
+        "native_day_low9": 135,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "00000000df0700008600000093000000d0000000ffffffffffffffffffffffffffffffffffffffffffffffff000400de07df079000df07",
+      "competition_index_word": 0,
+      "year": 2015,
+      "start_year": 2014,
+      "end_year": 2015,
+      "first_placed_team_index": 134,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 208,
+      "date_decided": {
+        "value": "2015-05-24",
+        "raw_hex": "9000df07",
+        "native_year": 2015,
+        "native_day_low9": 144,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "00000000e007000093000000d000000086000000ffffffffffffffffffffffffffffffffffffffffffffffff000400df07e0078800e007",
+      "competition_index_word": 0,
+      "year": 2016,
+      "start_year": 2015,
+      "end_year": 2016,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 134,
+      "date_decided": {
+        "value": "2016-05-15",
+        "raw_hex": "8800e007",
+        "native_year": 2016,
+        "native_day_low9": 136,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "00000000e1070000d00000009300000086000000ffffffffffffffffffffffffffffffffffffffffffffffff000400e007e10701006c07",
+      "competition_index_word": 0,
+      "year": 2017,
+      "start_year": 2016,
+      "end_year": 2017,
+      "first_placed_team_index": 208,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 134,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000e207000093000000cb000000d0000000ffffffffffffffffffffffffffffffffffffffffffffffff000400e107e20701006c07",
+      "competition_index_word": 0,
+      "year": 2018,
+      "start_year": 2017,
+      "end_year": 2018,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 203,
+      "third_placed_team_index": 208,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000e3070000d200000093000000cb000000ffffffffffffffffffffffffffffffffffffffffffffffff000400e207e30701006c07",
+      "competition_index_word": 0,
+      "year": 2019,
+      "start_year": 2018,
+      "end_year": 2019,
+      "first_placed_team_index": 210,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 203,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000e40700009300000086000000d7000000ffffffffffffffffffffffffffffffffffffffffffffffff000400e307e4076a00e407",
+      "competition_index_word": 0,
+      "year": 2020,
+      "start_year": 2019,
+      "end_year": 2020,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 134,
+      "third_placed_team_index": 215,
+      "date_decided": {
+        "value": "2020-04-15",
+        "raw_hex": "6a00e407",
+        "native_year": 2020,
+        "native_day_low9": 106,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "00000000e507000093000000d2000000d6000000ffffffffffffffffffffffffffffffffffffffffffffffff000400e407e5078f00e507",
+      "competition_index_word": 0,
+      "year": 2021,
+      "start_year": 2020,
+      "end_year": 2021,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 210,
+      "third_placed_team_index": 214,
+      "date_decided": {
+        "value": "2021-05-23",
+        "raw_hex": "8f00e507",
+        "native_year": 2021,
+        "native_day_low9": 143,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "00000000e607000093000000ea000000d0000000ffffffffffffffffffffffffffffffffffffffffffffffff000400e507e6078e00e607",
+      "competition_index_word": 0,
+      "year": 2022,
+      "start_year": 2021,
+      "end_year": 2022,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 234,
+      "third_placed_team_index": 208,
+      "date_decided": {
+        "value": "2022-05-22",
+        "raw_hex": "8e00e607",
+        "native_year": 2022,
+        "native_day_low9": 142,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "00000000e7070000d6000000d2000000ea000000ffffffffffffffffffffffffffffffffffffffffffffffff000400e607e7079b00e707",
+      "competition_index_word": 0,
+      "year": 2023,
+      "start_year": 2022,
+      "end_year": 2023,
+      "first_placed_team_index": 214,
+      "second_placed_team_index": 210,
+      "third_placed_team_index": 234,
+      "date_decided": {
+        "value": "2023-06-04",
+        "raw_hex": "9b00e707",
+        "native_year": 2023,
+        "native_day_low9": 155,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "00000000e807000093000000ea000000d000000093000000ffffffffffffffffffffffffffffffffffffffff000400e707e8079400e807",
+      "competition_index_word": 0,
+      "year": 2024,
+      "start_year": 2023,
+      "end_year": 2024,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 234,
+      "third_placed_team_index": 208,
+      "date_decided": {
+        "value": "2024-05-27",
+        "raw_hex": "9400e807",
+        "native_year": 2024,
+        "native_day_low9": 148,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "00000000e9070000ea00000093000000d2000000ea000000ffffffffffffffffffffffffffffffffffffffff000400e807e90701006c07",
+      "competition_index_word": 0,
+      "year": 2025,
+      "start_year": 2024,
+      "end_year": 2025,
+      "first_placed_team_index": 234,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 210,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "00000000ea07e90793000000d0000000d2000000ffffffffffffffffffffffffffffffffffffffffffffffff000400e907ea078182ea07",
+      "competition_index_word": 0,
+      "year": 2026,
+      "start_year": 2025,
+      "end_year": 2026,
+      "first_placed_team_index": 147,
+      "second_placed_team_index": 208,
+      "third_placed_team_index": 210,
+      "date_decided": {
+        "value": "2026-05-09",
+        "raw_hex": "8182ea07",
+        "native_year": 2026,
+        "native_day_low9": 129,
+        "unmapped_high7": 65,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "00000000eb07ea07d200000093000000ea000000ffffffffffffffffffffffffffffffffffffffffffffffff000400ea07eb078e82eb07",
+      "competition_index_word": 0,
+      "year": 2027,
+      "start_year": 2026,
+      "end_year": 2027,
+      "first_placed_team_index": 210,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 234,
+      "date_decided": {
+        "value": "2027-05-22",
+        "raw_hex": "8e82eb07",
+        "native_year": 2027,
+        "native_day_low9": 142,
+        "unmapped_high7": 65,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "00000000ec07eb07d20000009300000091000000ffffffffffffffffffffffffffffffffffffffffffffffff000400eb07ec078d82ec07",
+      "competition_index_word": 0,
+      "year": 2028,
+      "start_year": 2027,
+      "end_year": 2028,
+      "first_placed_team_index": 210,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 145,
+      "date_decided": {
+        "value": "2028-05-20",
+        "raw_hex": "8d82ec07",
+        "native_year": 2028,
+        "native_day_low9": 141,
+        "unmapped_high7": 65,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "00000000ed07ec07d200000093000000d7000000ffffffffffffffffffffffffffffffffffffffffffffffff000400ec07ed078b82ed07",
+      "competition_index_word": 0,
+      "year": 2029,
+      "start_year": 2028,
+      "end_year": 2029,
+      "first_placed_team_index": 210,
+      "second_placed_team_index": 147,
+      "third_placed_team_index": 215,
+      "date_decided": {
+        "value": "2029-05-19",
+        "raw_hex": "8b82ed07",
+        "native_year": 2029,
+        "native_day_low9": 139,
+        "unmapped_high7": 65,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "07000000610700002d020000cd01000054020000ffffffffffffffffffffffffffffffffffffffffffffffff0004006007610701006c07",
+      "competition_index_word": 7,
+      "year": 1889,
+      "start_year": 1888,
+      "end_year": 1889,
+      "first_placed_team_index": 557,
+      "second_placed_team_index": 461,
+      "third_placed_team_index": 596,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000620700002d020000fb010000d6010000ffffffffffffffffffffffffffffffffffffffffffffffff0004006107620701006c07",
+      "competition_index_word": 7,
+      "year": 1890,
+      "start_year": 1889,
+      "end_year": 1890,
+      "first_placed_team_index": 557,
+      "second_placed_team_index": 507,
+      "third_placed_team_index": 470,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0700000063070000fb0100002d02000026020000ffffffffffffffffffffffffffffffffffffffffffffffff0004006207630701006c07",
+      "competition_index_word": 7,
+      "year": 1891,
+      "start_year": 1890,
+      "end_year": 1891,
+      "first_placed_team_index": 507,
+      "second_placed_team_index": 557,
+      "third_placed_team_index": 550,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0700000064070000430200002d020000d8010000ffffffffffffffffffffffffffffffffffffffffffffffff0004006307640701006c07",
+      "competition_index_word": 7,
+      "year": 1892,
+      "start_year": 1891,
+      "end_year": 1892,
+      "first_placed_team_index": 579,
+      "second_placed_team_index": 557,
+      "third_placed_team_index": 472,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0700000065070000430200002d020000fb010000ffffffffffffffffffffffffffffffffffffffffffffffff0004006407650701006c07",
+      "competition_index_word": 7,
+      "year": 1893,
+      "start_year": 1892,
+      "end_year": 1893,
+      "first_placed_team_index": 579,
+      "second_placed_team_index": 557,
+      "third_placed_team_index": 507,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0700000066070000cd01000043020000f7010000ffffffffffffffffffffffffffffffffffffffffffffffff0004006507660701006c07",
+      "competition_index_word": 7,
+      "year": 1894,
+      "start_year": 1893,
+      "end_year": 1894,
+      "first_placed_team_index": 461,
+      "second_placed_team_index": 579,
+      "third_placed_team_index": 503,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000006707000043020000fb010000cd010000ffffffffffffffffffffffffffffffffffffffffffffffff0004006607670701006c07",
+      "competition_index_word": 7,
+      "year": 1895,
+      "start_year": 1894,
+      "end_year": 1895,
+      "first_placed_team_index": 579,
+      "second_placed_team_index": 507,
+      "third_placed_team_index": 461,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0700000068070000cd010000f7010000fb010000ffffffffffffffffffffffffffffffffffffffffffffffff0004006707680701006c07",
+      "competition_index_word": 7,
+      "year": 1896,
+      "start_year": 1895,
+      "end_year": 1896,
+      "first_placed_team_index": 461,
+      "second_placed_team_index": 503,
+      "third_placed_team_index": 507,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0700000069070000cd01000035020000f7010000ffffffffffffffffffffffffffffffffffffffffffffffff0004006807690701006c07",
+      "competition_index_word": 7,
+      "year": 1897,
+      "start_year": 1896,
+      "end_year": 1897,
+      "first_placed_team_index": 461,
+      "second_placed_team_index": 565,
+      "third_placed_team_index": 503,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000006a070000350200004302000054020000ffffffffffffffffffffffffffffffffffffffffffffffff00040069076a0701006c07",
+      "competition_index_word": 7,
+      "year": 1898,
+      "start_year": 1897,
+      "end_year": 1898,
+      "first_placed_team_index": 565,
+      "second_placed_team_index": 579,
+      "third_placed_team_index": 596,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000006b070000cd01000015020000e0010000ffffffffffffffffffffffffffffffffffffffffffffffff0004006a076b0701006c07",
+      "competition_index_word": 7,
+      "year": 1899,
+      "start_year": 1898,
+      "end_year": 1899,
+      "first_placed_team_index": 461,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 480,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000006c070000cd0100003502000043020000ffffffffffffffffffffffffffffffffffffffffffffffff0004006b076c0701006c07",
+      "competition_index_word": 7,
+      "year": 1900,
+      "start_year": 1899,
+      "end_year": 1900,
+      "first_placed_team_index": 461,
+      "second_placed_team_index": 565,
+      "third_placed_team_index": 579,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000006d070000150200004302000026020000ffffffffffffffffffffffffffffffffffffffffffffffff0004006c076d0701006c07",
+      "competition_index_word": 7,
+      "year": 1901,
+      "start_year": 1900,
+      "end_year": 1901,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 579,
+      "third_placed_team_index": 550,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000006e07000043020000fb01000021020000ffffffffffffffffffffffffffffffffffffffffffffffff0004006d076e0701006c07",
+      "competition_index_word": 7,
+      "year": 1902,
+      "start_year": 1901,
+      "end_year": 1902,
+      "first_placed_team_index": 579,
+      "second_placed_team_index": 507,
+      "third_placed_team_index": 545,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000006f07000036020000cd01000043020000ffffffffffffffffffffffffffffffffffffffffffffffff0004006e076f0701006c07",
+      "competition_index_word": 7,
+      "year": 1903,
+      "start_year": 1902,
+      "end_year": 1903,
+      "first_placed_team_index": 566,
+      "second_placed_team_index": 461,
+      "third_placed_team_index": 579,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000700700003602000018020000fb010000ffffffffffffffffffffffffffffffffffffffffffffffff0004006f07700701006c07",
+      "competition_index_word": 7,
+      "year": 1904,
+      "start_year": 1903,
+      "end_year": 1904,
+      "first_placed_team_index": 566,
+      "second_placed_team_index": 536,
+      "third_placed_team_index": 507,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000007107000021020000fb01000018020000ffffffffffffffffffffffffffffffffffffffffffffffff0004007007710701006c07",
+      "competition_index_word": 7,
+      "year": 1905,
+      "start_year": 1904,
+      "end_year": 1905,
+      "first_placed_team_index": 545,
+      "second_placed_team_index": 507,
+      "third_placed_team_index": 536,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0700000072070000150200002d02000036020000ffffffffffffffffffffffffffffffffffffffffffffffff0004007107720701006c07",
+      "competition_index_word": 7,
+      "year": 1906,
+      "start_year": 1905,
+      "end_year": 1906,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 557,
+      "third_placed_team_index": 566,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000007307000021020000dd010000fb010000ffffffffffffffffffffffffffffffffffffffffffffffff0004007207730701006c07",
+      "competition_index_word": 7,
+      "year": 1907,
+      "start_year": 1906,
+      "end_year": 1907,
+      "first_placed_team_index": 545,
+      "second_placed_team_index": 477,
+      "third_placed_team_index": 507,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000007407000019020000cd01000018020000ffffffffffffffffffffffffffffffffffffffffffffffff0004007307740701006c07",
+      "competition_index_word": 7,
+      "year": 1908,
+      "start_year": 1907,
+      "end_year": 1908,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 461,
+      "third_placed_team_index": 536,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000007507000021020000fb01000043020000ffffffffffffffffffffffffffffffffffffffffffffffff0004007407750701006c07",
+      "competition_index_word": 7,
+      "year": 1909,
+      "start_year": 1908,
+      "end_year": 1909,
+      "first_placed_team_index": 545,
+      "second_placed_team_index": 507,
+      "third_placed_team_index": 579,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0700000076070000cd01000015020000d6010000ffffffffffffffffffffffffffffffffffffffffffffffff0004007507760701006c07",
+      "competition_index_word": 7,
+      "year": 1910,
+      "start_year": 1909,
+      "end_year": 1910,
+      "first_placed_team_index": 461,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 470,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000007707000019020000cd01000043020000ffffffffffffffffffffffffffffffffffffffffffffffff0004007607770701006c07",
+      "competition_index_word": 7,
+      "year": 1911,
+      "start_year": 1910,
+      "end_year": 1911,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 461,
+      "third_placed_team_index": 579,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0700000078070000d6010000fb01000021020000ffffffffffffffffffffffffffffffffffffffffffffffff0004007707780701006c07",
+      "competition_index_word": 7,
+      "year": 1912,
+      "start_year": 1911,
+      "end_year": 1912,
+      "first_placed_team_index": 470,
+      "second_placed_team_index": 507,
+      "third_placed_team_index": 545,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000007907000043020000cd01000036020000ffffffffffffffffffffffffffffffffffffffffffffffff0004007807790701006c07",
+      "competition_index_word": 7,
+      "year": 1913,
+      "start_year": 1912,
+      "end_year": 1913,
+      "first_placed_team_index": 579,
+      "second_placed_team_index": 461,
+      "third_placed_team_index": 566,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000007a070000d6010000cd0100001e020000ffffffffffffffffffffffffffffffffffffffffffffffff00040079077a0701006c07",
+      "competition_index_word": 7,
+      "year": 1914,
+      "start_year": 1913,
+      "end_year": 1914,
+      "first_placed_team_index": 470,
+      "second_placed_team_index": 461,
+      "third_placed_team_index": 542,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000007b070000fb01000027020000d6010000ffffffffffffffffffffffffffffffffffffffffffffffff0004007a077b0701006c07",
+      "competition_index_word": 7,
+      "year": 1915,
+      "start_year": 1914,
+      "end_year": 1915,
+      "first_placed_team_index": 507,
+      "second_placed_team_index": 551,
+      "third_placed_team_index": 470,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000800700004e020000e0010000e8010000ffffffffffffffffffffffffffffffffffffffffffffffff0004007f07800701006c07",
+      "competition_index_word": 7,
+      "year": 1920,
+      "start_year": 1919,
+      "end_year": 1920,
+      "first_placed_team_index": 590,
+      "second_placed_team_index": 480,
+      "third_placed_team_index": 488,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0700000081070000e001000018020000d8010000ffffffffffffffffffffffffffffffffffffffffffffffff0004008007810701006c07",
+      "competition_index_word": 7,
+      "year": 1921,
+      "start_year": 1920,
+      "end_year": 1921,
+      "first_placed_team_index": 480,
+      "second_placed_team_index": 536,
+      "third_placed_team_index": 472,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000820700001502000049020000e0010000ffffffffffffffffffffffffffffffffffffffffffffffff0004008107820701006c07",
+      "competition_index_word": 7,
+      "year": 1922,
+      "start_year": 1921,
+      "end_year": 1922,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 585,
+      "third_placed_team_index": 480,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0700000083070000150200004302000009020000ffffffffffffffffffffffffffffffffffffffffffffffff0004008207830701006c07",
+      "competition_index_word": 7,
+      "year": 1923,
+      "start_year": 1922,
+      "end_year": 1923,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 579,
+      "third_placed_team_index": 521,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000008407000009020000e301000043020000ffffffffffffffffffffffffffffffffffffffffffffffff0004008307840701006c07",
+      "competition_index_word": 7,
+      "year": 1924,
+      "start_year": 1923,
+      "end_year": 1924,
+      "first_placed_team_index": 521,
+      "second_placed_team_index": 483,
+      "third_placed_team_index": 579,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0700000085070000090200004e020000d8010000ffffffffffffffffffffffffffffffffffffffffffffffff0004008407850701006c07",
+      "competition_index_word": 7,
+      "year": 1925,
+      "start_year": 1924,
+      "end_year": 1925,
+      "first_placed_team_index": 521,
+      "second_placed_team_index": 590,
+      "third_placed_team_index": 472,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000008607000009020000cc01000043020000ffffffffffffffffffffffffffffffffffffffffffffffff0004008507860701006c07",
+      "competition_index_word": 7,
+      "year": 1926,
+      "start_year": 1925,
+      "end_year": 1926,
+      "first_placed_team_index": 521,
+      "second_placed_team_index": 460,
+      "third_placed_team_index": 579,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0700000087070000210200000902000043020000ffffffffffffffffffffffffffffffffffffffffffffffff0004008607870701006c07",
+      "competition_index_word": 7,
+      "year": 1927,
+      "start_year": 1926,
+      "end_year": 1927,
+      "first_placed_team_index": 545,
+      "second_placed_team_index": 521,
+      "third_placed_team_index": 579,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0700000088070000fb0100000902000012020000ffffffffffffffffffffffffffffffffffffffffffffffff0004008707880701006c07",
+      "competition_index_word": 7,
+      "year": 1928,
+      "start_year": 1927,
+      "end_year": 1928,
+      "first_placed_team_index": 507,
+      "second_placed_team_index": 521,
+      "third_placed_team_index": 530,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000890700003602000012020000cd010000ffffffffffffffffffffffffffffffffffffffffffffffff0004008807890701006c07",
+      "competition_index_word": 7,
+      "year": 1929,
+      "start_year": 1928,
+      "end_year": 1929,
+      "first_placed_team_index": 566,
+      "second_placed_team_index": 530,
+      "third_placed_team_index": 461,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000008a07000036020000f701000018020000ffffffffffffffffffffffffffffffffffffffffffffffff00040089078a0701006c07",
+      "competition_index_word": 7,
+      "year": 1930,
+      "start_year": 1929,
+      "end_year": 1930,
+      "first_placed_team_index": 566,
+      "second_placed_team_index": 503,
+      "third_placed_team_index": 536,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000008b070000cc010000cd01000036020000ffffffffffffffffffffffffffffffffffffffffffffffff0004008a078b0701006c07",
+      "competition_index_word": 7,
+      "year": 1931,
+      "start_year": 1930,
+      "end_year": 1931,
+      "first_placed_team_index": 460,
+      "second_placed_team_index": 461,
+      "third_placed_team_index": 566,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000008c070000fb010000cc01000036020000ffffffffffffffffffffffffffffffffffffffffffffffff0004008b078c0701006c07",
+      "competition_index_word": 7,
+      "year": 1932,
+      "start_year": 1931,
+      "end_year": 1932,
+      "first_placed_team_index": 507,
+      "second_placed_team_index": 460,
+      "third_placed_team_index": 566,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000008d070000cc010000cd01000036020000ffffffffffffffffffffffffffffffffffffffffffffffff0004008c078d0701006c07",
+      "competition_index_word": 7,
+      "year": 1933,
+      "start_year": 1932,
+      "end_year": 1933,
+      "first_placed_team_index": 460,
+      "second_placed_team_index": 461,
+      "third_placed_team_index": 566,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000008e070000cc0100000902000049020000ffffffffffffffffffffffffffffffffffffffffffffffff0004008d078e0701006c07",
+      "competition_index_word": 7,
+      "year": 1934,
+      "start_year": 1933,
+      "end_year": 1934,
+      "first_placed_team_index": 460,
+      "second_placed_team_index": 521,
+      "third_placed_team_index": 585,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000008f070000cc0100004302000036020000ffffffffffffffffffffffffffffffffffffffffffffffff0004008e078f0701006c07",
+      "competition_index_word": 7,
+      "year": 1935,
+      "start_year": 1934,
+      "end_year": 1935,
+      "first_placed_team_index": 460,
+      "second_placed_team_index": 579,
+      "third_placed_team_index": 566,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000009007000043020000f701000009020000ffffffffffffffffffffffffffffffffffffffffffffffff0004008f07900701006c07",
+      "competition_index_word": 7,
+      "year": 1936,
+      "start_year": 1935,
+      "end_year": 1936,
+      "first_placed_team_index": 579,
+      "second_placed_team_index": 503,
+      "third_placed_team_index": 521,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000009107000018020000e6010000cc010000ffffffffffffffffffffffffffffffffffffffffffffffff0004009007910701006c07",
+      "competition_index_word": 7,
+      "year": 1937,
+      "start_year": 1936,
+      "end_year": 1937,
+      "first_placed_team_index": 536,
+      "second_placed_team_index": 486,
+      "third_placed_team_index": 460,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0700000092070000cc010000540200002d020000ffffffffffffffffffffffffffffffffffffffffffffffff0004009107920701006c07",
+      "competition_index_word": 7,
+      "year": 1938,
+      "start_year": 1937,
+      "end_year": 1938,
+      "first_placed_team_index": 460,
+      "second_placed_team_index": 596,
+      "third_placed_team_index": 557,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "0700000093070000fb01000054020000e6010000ffffffffffffffffffffffffffffffffffffffffffffffff0004009207930701006c07",
+      "competition_index_word": 7,
+      "year": 1939,
+      "start_year": 1938,
+      "end_year": 1939,
+      "first_placed_team_index": 507,
+      "second_placed_team_index": 596,
+      "third_placed_team_index": 486,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000009b070000150200001902000054020000ffffffffffffffffffffffffffffffffffffffffffffffff0004009a079b0701006c07",
+      "competition_index_word": 7,
+      "year": 1947,
+      "start_year": 1946,
+      "end_year": 1947,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 596,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000009c070000cc01000019020000e0010000ffffffffffffffffffffffffffffffffffffffffffffffff0004009b079c0701006c07",
+      "competition_index_word": 7,
+      "year": 1948,
+      "start_year": 1947,
+      "end_year": 1948,
+      "first_placed_team_index": 460,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 480,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000009d0700002c02000019020000f7010000ffffffffffffffffffffffffffffffffffffffffffffffff0004009c079d0701006c07",
+      "competition_index_word": 7,
+      "year": 1949,
+      "start_year": 1948,
+      "end_year": 1949,
+      "first_placed_team_index": 556,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 503,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000009e0700002c0200005402000043020000ffffffffffffffffffffffffffffffffffffffffffffffff0004009d079e0701006c07",
+      "competition_index_word": 7,
+      "year": 1950,
+      "start_year": 1949,
+      "end_year": 1950,
+      "first_placed_team_index": 556,
+      "second_placed_team_index": 596,
+      "third_placed_team_index": 579,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "070000009f0700004902000019020000d7010000ffffffffffffffffffffffffffffffffffffffffffffffff0004009e079f0701006c07",
+      "competition_index_word": 7,
+      "year": 1951,
+      "start_year": 1950,
+      "end_year": 1951,
+      "first_placed_team_index": 585,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 471,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000a00700001902000049020000cc010000ffffffffffffffffffffffffffffffffffffffffffffffff0004009f07a00701006c07",
+      "competition_index_word": 7,
+      "year": 1952,
+      "start_year": 1951,
+      "end_year": 1952,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 585,
+      "third_placed_team_index": 460,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000a1070000cc0100002d02000054020000ffffffffffffffffffffffffffffffffffffffffffffffff000400a007a10701006c07",
+      "competition_index_word": 7,
+      "year": 1953,
+      "start_year": 1952,
+      "end_year": 1953,
+      "first_placed_team_index": 460,
+      "second_placed_team_index": 557,
+      "third_placed_team_index": 596,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000a2070000540200004e02000009020000ffffffffffffffffffffffffffffffffffffffffffffffff000400a107a20701006c07",
+      "competition_index_word": 7,
+      "year": 1954,
+      "start_year": 1953,
+      "end_year": 1954,
+      "first_placed_team_index": 596,
+      "second_placed_team_index": 590,
+      "third_placed_team_index": 521,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000a3070000e8010000540200002c020000ffffffffffffffffffffffffffffffffffffffffffffffff000400a207a30701006c07",
+      "competition_index_word": 7,
+      "year": 1955,
+      "start_year": 1954,
+      "end_year": 1955,
+      "first_placed_team_index": 488,
+      "second_placed_team_index": 596,
+      "third_placed_team_index": 556,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000a407000019020000d701000054020000ffffffffffffffffffffffffffffffffffffffffffffffff000400a307a40701006c07",
+      "competition_index_word": 7,
+      "year": 1956,
+      "start_year": 1955,
+      "end_year": 1956,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 471,
+      "third_placed_team_index": 596,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000a507000019020000490200002d020000ffffffffffffffffffffffffffffffffffffffffffffffff000400a407a50701006c07",
+      "competition_index_word": 7,
+      "year": 1957,
+      "start_year": 1956,
+      "end_year": 1957,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 585,
+      "third_placed_team_index": 557,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000a6070000540200002d02000049020000ffffffffffffffffffffffffffffffffffffffffffffffff000400a507a60701006c07",
+      "competition_index_word": 7,
+      "year": 1958,
+      "start_year": 1957,
+      "end_year": 1958,
+      "first_placed_team_index": 596,
+      "second_placed_team_index": 557,
+      "third_placed_team_index": 585,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000a70700005402000019020000cc010000ffffffffffffffffffffffffffffffffffffffffffffffff000400a607a70701006c07",
+      "competition_index_word": 7,
+      "year": 1959,
+      "start_year": 1958,
+      "end_year": 1959,
+      "first_placed_team_index": 596,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 460,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000a8070000e00100005402000049020000ffffffffffffffffffffffffffffffffffffffffffffffff000400a707a80701006c07",
+      "competition_index_word": 7,
+      "year": 1960,
+      "start_year": 1959,
+      "end_year": 1960,
+      "first_placed_team_index": 480,
+      "second_placed_team_index": 596,
+      "third_placed_team_index": 585,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000a9070000490200003602000054020000ffffffffffffffffffffffffffffffffffffffffffffffff000400a807a90701006c07",
+      "competition_index_word": 7,
+      "year": 1961,
+      "start_year": 1960,
+      "end_year": 1961,
+      "first_placed_team_index": 585,
+      "second_placed_team_index": 566,
+      "third_placed_team_index": 596,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000aa0700000c020000e001000049020000ffffffffffffffffffffffffffffffffffffffffffffffff000400a907aa0701006c07",
+      "competition_index_word": 7,
+      "year": 1962,
+      "start_year": 1961,
+      "end_year": 1962,
+      "first_placed_team_index": 524,
+      "second_placed_team_index": 480,
+      "third_placed_team_index": 585,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000ab070000fb01000049020000e0010000ffffffffffffffffffffffffffffffffffffffffffffffff000400aa07ab0701006c07",
+      "competition_index_word": 7,
+      "year": 1963,
+      "start_year": 1962,
+      "end_year": 1963,
+      "first_placed_team_index": 507,
+      "second_placed_team_index": 585,
+      "third_placed_team_index": 480,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000ac0700001502000019020000fb010000ffffffffffffffffffffffffffffffffffffffffffffffff000400ab07ac0701006c07",
+      "competition_index_word": 7,
+      "year": 1964,
+      "start_year": 1963,
+      "end_year": 1964,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 507,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000ad0700001902000010020000e8010000ffffffffffffffffffffffffffffffffffffffffffffffff000400ac07ad0701006c07",
+      "competition_index_word": 7,
+      "year": 1965,
+      "start_year": 1964,
+      "end_year": 1965,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 528,
+      "third_placed_team_index": 488,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000ae0700001502000010020000e0010000ffffffffffffffffffffffffffffffffffffffffffffffff000400ad07ae0701006c07",
+      "competition_index_word": 7,
+      "year": 1966,
+      "start_year": 1965,
+      "end_year": 1966,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 528,
+      "third_placed_team_index": 480,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000af070000190200002502000049020000ffffffffffffffffffffffffffffffffffffffffffffffff000400ae07af0701006c07",
+      "competition_index_word": 7,
+      "year": 1967,
+      "start_year": 1966,
+      "end_year": 1967,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 549,
+      "third_placed_team_index": 585,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000b0070000180200001902000015020000ffffffffffffffffffffffffffffffffffffffffffffffff000400af07b00701006c07",
+      "competition_index_word": 7,
+      "year": 1968,
+      "start_year": 1967,
+      "end_year": 1968,
+      "first_placed_team_index": 536,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 533,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000b10700001002000015020000fb010000ffffffffffffffffffffffffffffffffffffffffffffffff000400b007b10701006c07",
+      "competition_index_word": 7,
+      "year": 1969,
+      "start_year": 1968,
+      "end_year": 1969,
+      "first_placed_team_index": 528,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 507,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000b2070000fb01000010020000e8010000ffffffffffffffffffffffffffffffffffffffffffffffff000400b107b20701006c07",
+      "competition_index_word": 7,
+      "year": 1970,
+      "start_year": 1969,
+      "end_year": 1970,
+      "first_placed_team_index": 507,
+      "second_placed_team_index": 528,
+      "third_placed_team_index": 488,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000b3070000cc0100001002000049020000ffffffffffffffffffffffffffffffffffffffffffffffff000400b207b30701006c07",
+      "competition_index_word": 7,
+      "year": 1971,
+      "start_year": 1970,
+      "end_year": 1971,
+      "first_placed_team_index": 460,
+      "second_placed_team_index": 528,
+      "third_placed_team_index": 585,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000b4070000f70100001002000015020000ffffffffffffffffffffffffffffffffffffffffffffffff000400b307b40701006c07",
+      "competition_index_word": 7,
+      "year": 1972,
+      "start_year": 1971,
+      "end_year": 1972,
+      "first_placed_team_index": 503,
+      "second_placed_team_index": 528,
+      "third_placed_team_index": 533,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000b507000015020000cc01000010020000ffffffffffffffffffffffffffffffffffffffffffffffff000400b407b50701006c07",
+      "competition_index_word": 7,
+      "year": 1973,
+      "start_year": 1972,
+      "end_year": 1973,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 460,
+      "third_placed_team_index": 528,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000b60700001002000015020000f7010000ffffffffffffffffffffffffffffffffffffffffffffffff000400b507b60701006c07",
+      "competition_index_word": 7,
+      "year": 1974,
+      "start_year": 1973,
+      "end_year": 1974,
+      "first_placed_team_index": 528,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 503,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000b7070000f7010000150200000c020000ffffffffffffffffffffffffffffffffffffffffffffffff000400b607b70701006c07",
+      "competition_index_word": 7,
+      "year": 1975,
+      "start_year": 1974,
+      "end_year": 1975,
+      "first_placed_team_index": 503,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 524,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000b8070000150200002e02000019020000ffffffffffffffffffffffffffffffffffffffffffffffff000400b707b80701006c07",
+      "competition_index_word": 7,
+      "year": 1976,
+      "start_year": 1975,
+      "end_year": 1976,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 558,
+      "third_placed_team_index": 537,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000b907000015020000180200000c020000ffffffffffffffffffffffffffffffffffffffffffffffff000400b807b90701006c07",
+      "competition_index_word": 7,
+      "year": 1977,
+      "start_year": 1976,
+      "end_year": 1977,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 536,
+      "third_placed_team_index": 524,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000ba0700002502000015020000fb010000ffffffffffffffffffffffffffffffffffffffffffffffff000400b907ba0701006c07",
+      "competition_index_word": 7,
+      "year": 1978,
+      "start_year": 1977,
+      "end_year": 1978,
+      "first_placed_team_index": 549,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 507,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000bb07000015020000250200004e020000ffffffffffffffffffffffffffffffffffffffffffffffff000400ba07bb0701006c07",
+      "competition_index_word": 7,
+      "year": 1979,
+      "start_year": 1978,
+      "end_year": 1979,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 549,
+      "third_placed_team_index": 590,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000bc07000015020000190200000c020000ffffffffffffffffffffffffffffffffffffffffffffffff000400bb07bc0701006c07",
+      "competition_index_word": 7,
+      "year": 1980,
+      "start_year": 1979,
+      "end_year": 1980,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 524,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000bd070000cd0100000c020000cc010000ffffffffffffffffffffffffffffffffffffffffffffffff000400bc07bd0701006c07",
+      "competition_index_word": 7,
+      "year": 1981,
+      "start_year": 1980,
+      "end_year": 1981,
+      "first_placed_team_index": 461,
+      "second_placed_team_index": 524,
+      "third_placed_team_index": 460,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000be070000150200000c02000019020000ffffffffffffffffffffffffffffffffffffffffffffffff000400bd07be0701006c07",
+      "competition_index_word": 7,
+      "year": 1982,
+      "start_year": 1981,
+      "end_year": 1982,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 524,
+      "third_placed_team_index": 537,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000bf070000150200004c02000019020000ffffffffffffffffffffffffffffffffffffffffffffffff000400be07bf0701006c07",
+      "competition_index_word": 7,
+      "year": 1983,
+      "start_year": 1982,
+      "end_year": 1983,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 588,
+      "third_placed_team_index": 537,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000c0070000150200003a02000025020000ffffffffffffffffffffffffffffffffffffffffffffffff000400bf07c00701006c07",
+      "competition_index_word": 7,
+      "year": 1984,
+      "start_year": 1983,
+      "end_year": 1984,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 570,
+      "third_placed_team_index": 549,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000c1070000fb0100001502000049020000ffffffffffffffffffffffffffffffffffffffffffffffff000400c007c10701006c07",
+      "competition_index_word": 7,
+      "year": 1985,
+      "start_year": 1984,
+      "end_year": 1985,
+      "first_placed_team_index": 507,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 585,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000c207000015020000fb0100004f020000ffffffffffffffffffffffffffffffffffffffffffffffff000400c107c20701006c07",
+      "competition_index_word": 7,
+      "year": 1986,
+      "start_year": 1985,
+      "end_year": 1986,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 507,
+      "third_placed_team_index": 591,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000c3070000fb0100001502000049020000ffffffffffffffffffffffffffffffffffffffffffffffff000400c207c30701006c07",
+      "competition_index_word": 7,
+      "year": 1987,
+      "start_year": 1986,
+      "end_year": 1987,
+      "first_placed_team_index": 507,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 585,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000c4070000150200001902000025020000ffffffffffffffffffffffffffffffffffffffffffffffff000400c307c40701006c07",
+      "competition_index_word": 7,
+      "year": 1988,
+      "start_year": 1987,
+      "end_year": 1988,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 549,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000c5070000cc0100001502000025020000ffffffffffffffffffffffffffffffffffffffffffffffff000400c407c50701006c07",
+      "competition_index_word": 7,
+      "year": 1989,
+      "start_year": 1988,
+      "end_year": 1989,
+      "first_placed_team_index": 460,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 549,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000c607000015020000cd01000049020000ffffffffffffffffffffffffffffffffffffffffffffffff000400c507c60701006c07",
+      "competition_index_word": 7,
+      "year": 1990,
+      "start_year": 1989,
+      "end_year": 1990,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 461,
+      "third_placed_team_index": 585,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000c7070000cc01000015020000f4010000ffffffffffffffffffffffffffffffffffffffffffffffff000400c607c70701006c07",
+      "competition_index_word": 7,
+      "year": 1991,
+      "start_year": 1990,
+      "end_year": 1991,
+      "first_placed_team_index": 460,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 500,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000c8070000100200001902000036020000ffffffffffffffffffffffffffffffffffffffffffffffff000400c707c80701006c07",
+      "competition_index_word": 7,
+      "year": 1992,
+      "start_year": 1991,
+      "end_year": 1992,
+      "first_placed_team_index": 528,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 566,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000c907000019020000cd01000024020000ffffffffffffffffffffffffffffffffffffffffffffffff000400c807c90701006c07",
+      "competition_index_word": 7,
+      "year": 1993,
+      "start_year": 1992,
+      "end_year": 1993,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 461,
+      "third_placed_team_index": 548,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000ca07000019020000d601000021020000ffffffffffffffffffffffffffffffffffffffffffffffff000400c907ca0701006c07",
+      "competition_index_word": 7,
+      "year": 1994,
+      "start_year": 1993,
+      "end_year": 1994,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 470,
+      "third_placed_team_index": 545,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000cb070000d60100001902000025020000ffffffffffffffffffffffffffffffffffffffffffffffff000400ca07cb0701006c07",
+      "competition_index_word": 7,
+      "year": 1995,
+      "start_year": 1994,
+      "end_year": 1995,
+      "first_placed_team_index": 470,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 549,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000cc070000190200002102000015020000ffffffffffffffffffffffffffffffffffffffffffffffff000400cb07cc0701006c07",
+      "competition_index_word": 7,
+      "year": 1996,
+      "start_year": 1995,
+      "end_year": 1996,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 545,
+      "third_placed_team_index": 533,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000cd0700001902000021020000cc010000ffffffffffffffffffffffffffffffffffffffffffffffff000400cc07cd0701006c07",
+      "competition_index_word": 7,
+      "year": 1997,
+      "start_year": 1996,
+      "end_year": 1997,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 545,
+      "third_placed_team_index": 460,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000ce070000cc0100001902000015020000ffffffffffffffffffffffffffffffffffffffffffffffff000400cd07ce0701006c07",
+      "competition_index_word": 7,
+      "year": 1998,
+      "start_year": 1997,
+      "end_year": 1998,
+      "first_placed_team_index": 460,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 533,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000cf07000019020000cc010000e8010000ffffffffffffffffffffffffffffffffffffffffffffffff000400ce07cf0701006c07",
+      "competition_index_word": 7,
+      "year": 1999,
+      "start_year": 1998,
+      "end_year": 1999,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 460,
+      "third_placed_team_index": 488,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000d007000019020000cc01000010020000ffffffffffffffffffffffffffffffffffffffffffffffff000400cf07d00701006c07",
+      "competition_index_word": 7,
+      "year": 2000,
+      "start_year": 1999,
+      "end_year": 2000,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 460,
+      "third_placed_team_index": 528,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000d107000019020000cc01000015020000ffffffffffffffffffffffffffffffffffffffffffffffff000400d007d10701006c07",
+      "competition_index_word": 7,
+      "year": 2001,
+      "start_year": 2000,
+      "end_year": 2001,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 460,
+      "third_placed_team_index": 533,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000d2070000cc0100001502000019020000ffffffffffffffffffffffffffffffffffffffffffffffff000400d107d20701006c07",
+      "competition_index_word": 7,
+      "year": 2002,
+      "start_year": 2001,
+      "end_year": 2002,
+      "first_placed_team_index": 460,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 537,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000d307000019020000cc01000021020000ffffffffffffffffffffffffffffffffffffffffffffffff000400d207d30701006c07",
+      "competition_index_word": 7,
+      "year": 2003,
+      "start_year": 2002,
+      "end_year": 2003,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 460,
+      "third_placed_team_index": 545,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000d4070000cc010000e801000019020000ffffffffffffffffffffffffffffffffffffffffffffffff000400d307d40701006c07",
+      "competition_index_word": 7,
+      "year": 2004,
+      "start_year": 2003,
+      "end_year": 2004,
+      "first_placed_team_index": 460,
+      "second_placed_team_index": 488,
+      "third_placed_team_index": 537,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000d5070000e8010000cc01000019020000ffffffffffffffffffffffffffffffffffffffffffffffff000400d407d50701006c07",
+      "competition_index_word": 7,
+      "year": 2005,
+      "start_year": 2004,
+      "end_year": 2005,
+      "first_placed_team_index": 488,
+      "second_placed_team_index": 460,
+      "third_placed_team_index": 537,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000d6070000e80100001902000015020000ffffffffffffffffffffffffffffffffffffffffffffffff000400d507d60701006c07",
+      "competition_index_word": 7,
+      "year": 2006,
+      "start_year": 2005,
+      "end_year": 2006,
+      "first_placed_team_index": 488,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 533,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000d707000019020000e801000015020000ffffffffffffffffffffffffffffffffffffffffffffffff000400d607d70701006c07",
+      "competition_index_word": 7,
+      "year": 2007,
+      "start_year": 2006,
+      "end_year": 2007,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 488,
+      "third_placed_team_index": 533,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000d807000019020000e8010000cc010000ffffffffffffffffffffffffffffffffffffffffffffffff000400d707d80701006c07",
+      "competition_index_word": 7,
+      "year": 2008,
+      "start_year": 2007,
+      "end_year": 2008,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 488,
+      "third_placed_team_index": 460,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000d90700001902000015020000e8010000ffffffffffffffffffffffffffffffffffffffffffffffff000400d807d90701006c07",
+      "competition_index_word": 7,
+      "year": 2009,
+      "start_year": 2008,
+      "end_year": 2009,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 488,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000da070000e801000019020000cc010000ffffffffffffffffffffffffffffffffffffffffffffffff000400d907da0701006c07",
+      "competition_index_word": 7,
+      "year": 2010,
+      "start_year": 2009,
+      "end_year": 2010,
+      "first_placed_team_index": 488,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 460,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000db07000019020000e801000018020000ffffffffffffffffffffffffffffffffffffffffffffffff000400da07db0701006c07",
+      "competition_index_word": 7,
+      "year": 2011,
+      "start_year": 2010,
+      "end_year": 2011,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 488,
+      "third_placed_team_index": 536,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000dc0700001802000019020000cc010000ffffffffffffffffffffffffffffffffffffffffffffffff000400db07dc0701006c07",
+      "competition_index_word": 7,
+      "year": 2012,
+      "start_year": 2011,
+      "end_year": 2012,
+      "first_placed_team_index": 536,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 460,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000dd0700001902000018020000e8010000ffffffffffffffffffffffffffffffffffffffffffffffff000400dc07dd0701006c07",
+      "competition_index_word": 7,
+      "year": 2013,
+      "start_year": 2012,
+      "end_year": 2013,
+      "first_placed_team_index": 537,
+      "second_placed_team_index": 536,
+      "third_placed_team_index": 488,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000de0700001802000015020000e8010000ffffffffffffffffffffffffffffffffffffffffffffffff000400dd07de0701006c07",
+      "competition_index_word": 7,
+      "year": 2014,
+      "start_year": 2013,
+      "end_year": 2014,
+      "first_placed_team_index": 536,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 488,
+      "date_decided": {
+        "value": null,
+        "raw_hex": "01006c07",
+        "native_year": 1900,
+        "native_day_low9": 1,
+        "unmapped_high7": 0,
+        "state": "native_unset"
+      }
+    },
+    {
+      "raw_hex": "07000000df070000e801000018020000cc010000ffffffffffffffffffffffffffffffffffffffffffffffff000400de07df079000df07",
+      "competition_index_word": 7,
+      "year": 2015,
+      "start_year": 2014,
+      "end_year": 2015,
+      "first_placed_team_index": 488,
+      "second_placed_team_index": 536,
+      "third_placed_team_index": 460,
+      "date_decided": {
+        "value": "2015-05-24",
+        "raw_hex": "9000df07",
+        "native_year": 2015,
+        "native_day_low9": 144,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "07000000e007000012020000cc01000049020000ffffffffffffffffffffffffffffffffffffffffffffffff000400df07e0078800e007",
+      "competition_index_word": 7,
+      "year": 2016,
+      "start_year": 2015,
+      "end_year": 2016,
+      "first_placed_team_index": 530,
+      "second_placed_team_index": 460,
+      "third_placed_team_index": 585,
+      "date_decided": {
+        "value": "2016-05-15",
+        "raw_hex": "8800e007",
+        "native_year": 2016,
+        "native_day_low9": 136,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "07000000e1070000e80100004902000018020000ffffffffffffffffffffffffffffffffffffffffffffffff000400e007e1078d00e107",
+      "competition_index_word": 7,
+      "year": 2017,
+      "start_year": 2016,
+      "end_year": 2017,
+      "first_placed_team_index": 488,
+      "second_placed_team_index": 585,
+      "third_placed_team_index": 536,
+      "date_decided": {
+        "value": "2017-05-21",
+        "raw_hex": "8d00e107",
+        "native_year": 2017,
+        "native_day_low9": 141,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "07000000e2070000180200001902000049020000ffffffffffffffffffffffffffffffffffffffffffffffff000400e107e2078500e207",
+      "competition_index_word": 7,
+      "year": 2018,
+      "start_year": 2017,
+      "end_year": 2018,
+      "first_placed_team_index": 536,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 585,
+      "date_decided": {
+        "value": "2018-05-13",
+        "raw_hex": "8500e207",
+        "native_year": 2018,
+        "native_day_low9": 133,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "07000000e30700001802000015020000e8010000ffffffffffffffffffffffffffffffffffffffffffffffff000400e207e3078400e307",
+      "competition_index_word": 7,
+      "year": 2019,
+      "start_year": 2018,
+      "end_year": 2019,
+      "first_placed_team_index": 536,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 488,
+      "date_decided": {
+        "value": "2019-05-12",
+        "raw_hex": "8400e307",
+        "native_year": 2019,
+        "native_day_low9": 132,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "07000000e4070000150200001802000019020000ffffffffffffffffffffffffffffffffffffffffffffffff000400e307e4079900e407",
+      "competition_index_word": 7,
+      "year": 2020,
+      "start_year": 2019,
+      "end_year": 2020,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 536,
+      "third_placed_team_index": 537,
+      "date_decided": {
+        "value": "2020-06-01",
+        "raw_hex": "9900e407",
+        "native_year": 2020,
+        "native_day_low9": 153,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "07000000e5070000180200001902000015020000ffffffffffffffffffffffffffffffffffffffffffffffff000400e407e5078f00e507",
+      "competition_index_word": 7,
+      "year": 2021,
+      "start_year": 2020,
+      "end_year": 2021,
+      "first_placed_team_index": 536,
+      "second_placed_team_index": 537,
+      "third_placed_team_index": 533,
+      "date_decided": {
+        "value": "2021-05-23",
+        "raw_hex": "8f00e507",
+        "native_year": 2021,
+        "native_day_low9": 143,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "07000000e60700001802000015020000e8010000ffffffffffffffffffffffffffffffffffffffffffffffff000400e507e6078e00e607",
+      "competition_index_word": 7,
+      "year": 2022,
+      "start_year": 2021,
+      "end_year": 2022,
+      "first_placed_team_index": 536,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 488,
+      "date_decided": {
+        "value": "2022-05-22",
+        "raw_hex": "8e00e607",
+        "native_year": 2022,
+        "native_day_low9": 142,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "07000000e707000018020000cc01000019020000ffffffffffffffffffffffffffffffffffffffffffffffff000400e607e7079400e707",
+      "competition_index_word": 7,
+      "year": 2023,
+      "start_year": 2022,
+      "end_year": 2023,
+      "first_placed_team_index": 536,
+      "second_placed_team_index": 460,
+      "third_placed_team_index": 537,
+      "date_decided": {
+        "value": "2023-05-28",
+        "raw_hex": "9400e707",
+        "native_year": 2023,
+        "native_day_low9": 148,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "07000000e807000018020000cc01000015020000ffffffffffffffffffffffffffffffffffffffffffffffff000400e707e8078c00e807",
+      "competition_index_word": 7,
+      "year": 2024,
+      "start_year": 2023,
+      "end_year": 2024,
+      "first_placed_team_index": 536,
+      "second_placed_team_index": 460,
+      "third_placed_team_index": 533,
+      "date_decided": {
+        "value": "2024-05-19",
+        "raw_hex": "8c00e807",
+        "native_year": 2024,
+        "native_day_low9": 140,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "07000000e907000015020000cc01000018020000ffffffffffffffffffffffffffffffffffffffffffffffff000400e807e9079100e907",
+      "competition_index_word": 7,
+      "year": 2025,
+      "start_year": 2024,
+      "end_year": 2025,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 460,
+      "third_placed_team_index": 536,
+      "date_decided": {
+        "value": "2025-05-25",
+        "raw_hex": "9100e907",
+        "native_year": 2025,
+        "native_day_low9": 145,
+        "unmapped_high7": 0,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "07000000ea07e90715020000cc01000018020000ffffffffffffffffffffffffffffffffffffffffffffffff000400e907ea079382ea07",
+      "competition_index_word": 7,
+      "year": 2026,
+      "start_year": 2025,
+      "end_year": 2026,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 460,
+      "third_placed_team_index": 536,
+      "date_decided": {
+        "value": "2026-05-27",
+        "raw_hex": "9382ea07",
+        "native_year": 2026,
+        "native_day_low9": 147,
+        "unmapped_high7": 65,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "07000000eb07ea0715020000cc01000018020000ffffffffffffffffffffffffffffffffffffffffffffffff000400ea07eb078852eb07",
+      "competition_index_word": 7,
+      "year": 2027,
+      "start_year": 2026,
+      "end_year": 2027,
+      "first_placed_team_index": 533,
+      "second_placed_team_index": 460,
+      "third_placed_team_index": 536,
+      "date_decided": {
+        "value": "2027-05-16",
+        "raw_hex": "8852eb07",
+        "native_year": 2027,
+        "native_day_low9": 136,
+        "unmapped_high7": 41,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "07000000ec07eb07cc0100001502000019020000ffffffffffffffffffffffffffffffffffffffffffffffff000400eb07ec078752ec07",
+      "competition_index_word": 7,
+      "year": 2028,
+      "start_year": 2027,
+      "end_year": 2028,
+      "first_placed_team_index": 460,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 537,
+      "date_decided": {
+        "value": "2028-05-14",
+        "raw_hex": "8752ec07",
+        "native_year": 2028,
+        "native_day_low9": 135,
+        "unmapped_high7": 41,
+        "state": "stored_Date_Decided"
+      }
+    },
+    {
+      "raw_hex": "07000000ed07ec07cc0100001502000018020000ffffffffffffffffffffffffffffffffffffffffffffffff000400ec07ed078f82ed07",
+      "competition_index_word": 7,
+      "year": 2029,
+      "start_year": 2028,
+      "end_year": 2029,
+      "first_placed_team_index": 460,
+      "second_placed_team_index": 533,
+      "third_placed_team_index": 536,
+      "date_decided": {
+        "value": "2029-05-23",
+        "raw_hex": "8f82ed07",
+        "native_year": 2029,
+        "native_day_low9": 143,
+        "unmapped_high7": 65,
+        "state": "stored_Date_Decided"
+      }
+    }
+  ]
+}

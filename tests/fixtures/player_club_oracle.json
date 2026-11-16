@@ -1,0 +1,14 @@
+{
+  "source": "Read Newcastle Players on loan screen on 2026-11-06; local screenshot evidence/continue-loans.png. Native current-team and full/loan-contract links were then checked against all four displayed destinations.",
+  "save_name": "Cesar Jules - Newcastle",
+  "contract_club": "Newcastle United",
+  "managed_roster_count": 28,
+  "managed_roster_loans": ["Trevan Sanusi", "Leo Shahar", "Matthew Cox"],
+  "loans": [
+    {"name": "Trevan Sanusi", "current_club_short_name": "Fulham"},
+    {"name": "Leo Shahar", "current_club_short_name": "RC Lens"},
+    {"name": "Mason Miley", "current_club_short_name": "Luton"},
+    {"name": "Matthew Cox", "current_club_short_name": "Bolton"}
+  ],
+  "scope": "Mason Miley belongs to the separate 23-player native U21 roster. The managed-team query must not claim to include every club loan. Current game date shown was 18 September 2030."
+}

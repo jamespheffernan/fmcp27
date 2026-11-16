@@ -1,0 +1,342 @@
+{
+  "parent_capture_id": "96a4c9a070ecea5badb975a5146dc61aadc63f19e2fc675b06463a9e45cd439f",
+  "parent_observation": {
+    "schema_version": 1,
+    "source_kind": "host_captured_native_period_observation",
+    "capture_method": "verified_retrospective_authentic_bundle",
+    "career": {
+      "name": "Cesar Jules - Newcastle",
+      "created_date": "2025-10-23",
+      "created_version": 2223821
+    },
+    "fixture": {
+      "date": "2030-11-11",
+      "competition": {
+        "database_index": 7,
+        "native_id": 11,
+        "random_id": 11
+      },
+      "home_team": {
+        "database_index": 545,
+        "native_id": 688,
+        "random_id": 688
+      },
+      "away_team": {
+        "database_index": 549,
+        "native_id": 692,
+        "random_id": 692
+      }
+    },
+    "official_match_unique_id": 2341023333120,
+    "process_load_epoch": "93553f0b8d340620d3222a2e9006892631b26b06d7021781e43094ea4b7acdc5",
+    "observed_at": "2026-11-07T22:28:40.900265+00:00",
+    "fingerprint_cursor": 23929,
+    "attempt_prefix": [
+      {
+        "event_id": 14,
+        "side_index": 0,
+        "start_tick": 127,
+        "end_tick": 131,
+        "semantic_sha256": "986f7259dcc315745b0d9b5303c4bc159533b596db701cdbc9fd52cb05978cf5"
+      },
+      {
+        "event_id": 43,
+        "side_index": 1,
+        "start_tick": 425,
+        "end_tick": 429,
+        "semantic_sha256": "2461c29f388163a235699d8a02a6d5d390711213ecba14e9630dc496b0904876"
+      },
+      {
+        "event_id": 157,
+        "side_index": 0,
+        "start_tick": 1730,
+        "end_tick": 1743,
+        "semantic_sha256": "f262246dba628cee649c0ef6872c4484da463096065b1908f0ee809fa9428d9b"
+      },
+      {
+        "event_id": 202,
+        "side_index": 0,
+        "start_tick": 2190,
+        "end_tick": 2194,
+        "semantic_sha256": "1dd2a0562913188df2b6dccac9c1f949e471c3e089004d2035fb3980f9598853"
+      },
+      {
+        "event_id": 310,
+        "side_index": 1,
+        "start_tick": 3153,
+        "end_tick": 3157,
+        "semantic_sha256": "e889c53cc2dccbf8d868226fa4abc51ea226bd43e54563dcf9741078ab913fd1"
+      },
+      {
+        "event_id": 357,
+        "side_index": 1,
+        "start_tick": 3854,
+        "end_tick": 3858,
+        "semantic_sha256": "0b857197541774777bca221dc9d155768850bf5c9bcea5ec0899ef2dc3759d00"
+      },
+      {
+        "event_id": 477,
+        "side_index": 1,
+        "start_tick": 5114,
+        "end_tick": 5118,
+        "semantic_sha256": "aec71781e575ba93aedcb7ca73bfd4f15b78704e30c9912455dd6feaabd854da"
+      },
+      {
+        "event_id": 577,
+        "side_index": 1,
+        "start_tick": 6062,
+        "end_tick": 6068,
+        "semantic_sha256": "e36000314667606830905098dcc7d40a3d8ad1368bd7e87026487078e515778a"
+      },
+      {
+        "event_id": 648,
+        "side_index": 0,
+        "start_tick": 7130,
+        "end_tick": 7133,
+        "semantic_sha256": "e83770fd7c00d81d5756cd3bb57629e94a7eef0f5caf990a5eded22469cbcef7"
+      },
+      {
+        "event_id": 725,
+        "side_index": 0,
+        "start_tick": 7829,
+        "end_tick": 7833,
+        "semantic_sha256": "d57baf4131a5dc6dea45ccb776c08ba2e63f92f3cd395fec043e58d4a481f7f7"
+      },
+      {
+        "event_id": 812,
+        "side_index": 0,
+        "start_tick": 8576,
+        "end_tick": 8581,
+        "semantic_sha256": "ccde2528b4ab533c73d0f6d7e75d1de63d1a46f411c53a76f7e4e269207d04c4"
+      },
+      {
+        "event_id": 821,
+        "side_index": 0,
+        "start_tick": 8628,
+        "end_tick": 8641,
+        "semantic_sha256": "a530137dd51b00aa0bc35df7ec10761038b4fb26469dde74d05706a9dcf4e887"
+      },
+      {
+        "event_id": 838,
+        "side_index": 0,
+        "start_tick": 8749,
+        "end_tick": 8755,
+        "semantic_sha256": "a2acf29da28bc5f20071b2175ba424831628dc7ad37c2e55a4d2211a97879172"
+      },
+      {
+        "event_id": 1069,
+        "side_index": 0,
+        "start_tick": 11058,
+        "end_tick": 11060,
+        "semantic_sha256": "d5f8a0ea48a400e80bcd20479f19d047c4fc5f1e8b8f97dae86ff4d7b339ee88"
+      },
+      {
+        "event_id": 1119,
+        "side_index": 0,
+        "start_tick": 11829,
+        "end_tick": 11834,
+        "semantic_sha256": "5dafd0164c3b75f80bc501ee4aceaffd6188b182e16732d672f7e1b1dbe52ae4"
+      },
+      {
+        "event_id": 1150,
+        "side_index": 0,
+        "start_tick": 12268,
+        "end_tick": 12273,
+        "semantic_sha256": "92342903c5634f797cfdd62185d79697927d69fa6c8cd67268dfe6ed16e122ba"
+      },
+      {
+        "event_id": 1219,
+        "side_index": 0,
+        "start_tick": 12954,
+        "end_tick": 12958,
+        "semantic_sha256": "900cad651da1edbb865bf1b456a860a4e2bc594edf7533da9e4b378c9249b515"
+      },
+      {
+        "event_id": 1303,
+        "side_index": 0,
+        "start_tick": 14146,
+        "end_tick": 14179,
+        "semantic_sha256": "4839c5e3ccf647e92c328a47203b21bac04e5956da817eccdcbc75c6dcafa04d"
+      },
+      {
+        "event_id": 1497,
+        "side_index": 0,
+        "start_tick": 16131,
+        "end_tick": 16137,
+        "semantic_sha256": "d327ac0f325444c4ba56d041e5e98cb4eb9afb4fc78275fac1e7558eb8e331d9"
+      },
+      {
+        "event_id": 1539,
+        "side_index": 0,
+        "start_tick": 16508,
+        "end_tick": 16522,
+        "semantic_sha256": "168729fc740dae5bfe9cc1855a53e99b335dea7d715b16b56dc6ad28cda912bf"
+      },
+      {
+        "event_id": 1617,
+        "side_index": 0,
+        "start_tick": 17209,
+        "end_tick": 17213,
+        "semantic_sha256": "2c53fe7fa4f79dfbdeda5ac7f27e1697787fec9416542141c0989646fcf658cd"
+      },
+      {
+        "event_id": 1705,
+        "side_index": 1,
+        "start_tick": 18313,
+        "end_tick": 18317,
+        "semantic_sha256": "b6ee8dabe4cd1ec938a865be33ade7ecc6a50010e25ed6dce96dc563b7579551"
+      },
+      {
+        "event_id": 1719,
+        "side_index": 1,
+        "start_tick": 18487,
+        "end_tick": 18488,
+        "semantic_sha256": "78b275ee6bb4afbd83585f06a7ac06ba8c582183cdcffbb5038f44ac19fdfae4"
+      },
+      {
+        "event_id": 1790,
+        "side_index": 0,
+        "start_tick": 19253,
+        "end_tick": 19257,
+        "semantic_sha256": "f97a58c802e1ac2d430e65281100ae3c84fc8af4b5c1fc1fe77f6e8c2cacd8fa"
+      },
+      {
+        "event_id": 1883,
+        "side_index": 0,
+        "start_tick": 20085,
+        "end_tick": 20092,
+        "semantic_sha256": "bd9aae4d2acc330cd022cdd005dead002544e808ea4ee5ad9c53fb9383ed5e3f"
+      },
+      {
+        "event_id": 1891,
+        "side_index": 0,
+        "start_tick": 20209,
+        "end_tick": 20233,
+        "semantic_sha256": "9c84be2c2674df7480398c63cb676f0b26632f82299091c4265710f843b274f7"
+      },
+      {
+        "event_id": 2047,
+        "side_index": 1,
+        "start_tick": 21997,
+        "end_tick": 22001,
+        "semantic_sha256": "8ea3bec9891e83768c53a823101391db5e9211735b9d4a60fd49059bca9d6194"
+      }
+    ],
+    "period_markers": [
+      {
+        "source_index": 0,
+        "stop_time_slice": 1,
+        "next_stop_reason_raw_u8": 3,
+        "next_stop_reason": "StartOfPeriod",
+        "set_piece_type_raw_u8": 0
+      },
+      {
+        "source_index": 51,
+        "stop_time_slice": 11655,
+        "next_stop_reason_raw_u8": 1,
+        "next_stop_reason": "EndOfPeriod",
+        "set_piece_type_raw_u8": 0
+      },
+      {
+        "source_index": 52,
+        "stop_time_slice": 11715,
+        "next_stop_reason_raw_u8": 3,
+        "next_stop_reason": "StartOfPeriod",
+        "set_piece_type_raw_u8": 0
+      },
+      {
+        "source_index": 105,
+        "stop_time_slice": 23929,
+        "next_stop_reason_raw_u8": 5,
+        "next_stop_reason": "EndOfGame",
+        "set_piece_type_raw_u8": 0
+      }
+    ],
+    "intervals": [
+      {
+        "state": "verified_first_half_boundary",
+        "reason": null,
+        "official_match_unique_id": 2341023333120,
+        "time_slice_domain": "native_playback_time_slice",
+        "period": "FirstHalf",
+        "start_tick": 1,
+        "end_tick": 11655,
+        "time_slice": 11655,
+        "second_half_start_tick": 11715,
+        "boundary_semantics": "Native EndOfPeriod stop marker; equality and overlapping-action classification are consumer-specific."
+      },
+      {
+        "state": "verified_second_half_start",
+        "reason": null,
+        "official_match_unique_id": 2341023333120,
+        "time_slice_domain": "native_playback_time_slice",
+        "period": "SecondHalf",
+        "start_tick": 11715,
+        "end_tick": 23929
+      }
+    ],
+    "confidence": "native_period_evidence_pending_retained_continuity",
+    "clock_domain": "native_playback_time_slice",
+    "boundary_policy": "start<=event_start<=event_end<period_end",
+    "source_hashes": {
+      "events": "f6e4bfddc8d6e4ff3cfa2fa5af6642f8f2e6c88f6da6f3ad817983747c505ef8",
+      "vectors": [
+        "4c600a8ed9ac9fd26493dd8faf8dd4e70f78da3e11d4a393ad4b57cd021a07f5",
+        "af162242cbdcc8194db3cbdb9a07dabfacfdcca8c3844191147f36f733d12bc4"
+      ]
+    },
+    "pass_event_fingerprint": {
+      "schema": 1,
+      "semantic_sha256": "cc2b3eb86be01efe77dfa60850516e82e6f4ab020813526e270348769ced2504",
+      "event_count": 1166,
+      "cutoff_exclusive": 23929
+    },
+    "cross_observation": true,
+    "seed_provenance": {
+      "source": "explicit_frozen_terminal_bundle_import",
+      "terminal_sha256": "9ee6e05dd61b20ba3b4d0a1aa71e72825768f0ced6204889c003c5bb7ebc9a9c",
+      "terminal_path": "/Volumes/4TB Private/Offloaded/FMCP 27/evidence/batches/forest-halftime-live-182/terminal-1794090520907917000.json",
+      "terminal_verification_sha256": "5abbc2b7fc35f905aabc3439f353a5ab772d5d612ff7f456412556680e9148f9",
+      "fresh_native_read_performed": false,
+      "report_specific_enrichment": {
+        "source": "original_frozen_terminal_events_only",
+        "original_capture_id": "3b6556a19b464ff3c21d204969579f41c3cbef450f2e93f67c034df4a96d9768",
+        "terminal_sha256": "9ee6e05dd61b20ba3b4d0a1aa71e72825768f0ced6204889c003c5bb7ebc9a9c",
+        "computed_at": "2026-11-07T23:08:48.262123+00:00",
+        "fresh_native_observation": false,
+        "retained_bytes_used_to_create_witness": false
+      }
+    },
+    "pass_period_report_fingerprint": {
+      "schema": 1,
+      "report_policy": "period_network_fields_and_selection_mask8_v1",
+      "native_flags_mask": 8,
+      "semantic_sha256": "352346e13592f2f0b35388b51d3d730b4bd385aef3c4ddf9af001afb32bf7cd4",
+      "event_count": 1166,
+      "cutoff_exclusive": 23929
+    }
+  },
+  "attestation": {
+    "attestation_id": "0e340d1d0746da112b6dff63f4887b4d1950c6566c8066768ec2f93f7c3ac899",
+    "attestation": {
+      "schema": 1,
+      "policy": "original_terminal_possession_period_attestation_v1",
+      "parent_capture_id": "96a4c9a070ecea5badb975a5146dc61aadc63f19e2fc675b06463a9e45cd439f",
+      "original_terminal_sha256": "9ee6e05dd61b20ba3b4d0a1aa71e72825768f0ced6204889c003c5bb7ebc9a9c",
+      "parent_event_source_sha256": "f6e4bfddc8d6e4ff3cfa2fa5af6642f8f2e6c88f6da6f3ad817983747c505ef8",
+      "fingerprint": {
+        "schema": 1,
+        "report_policy": "possession_period_actor_category_clocks_v1",
+        "semantic_sha256": "3f365c47abd98ac8e64293530be4ec119e3dc5fef63fda6330cb72ee59ec0d6b",
+        "event_count": 354,
+        "cutoff_exclusive": 23929
+      },
+      "provenance": "derived_only_from_pinned_original_terminal_not_current_retained_source",
+      "original_observation_modified": false,
+      "existing_links_modified": false,
+      "fresh_match_observation": false
+    }
+  },
+  "original_terminal_sha256": "9ee6e05dd61b20ba3b4d0a1aa71e72825768f0ced6204889c003c5bb7ebc9a9c",
+  "fixture_bytes_not_used_to_create_witness": true
+}

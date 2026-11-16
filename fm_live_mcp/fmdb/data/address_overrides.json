@@ -1,0 +1,2408 @@
+{
+ "about": "Explicit census decisions where the rules in fmdb/address_census.py cannot tell an address from a coincidence. 'C': leave the literal as written. 'A': an address; 'method' names a resolution the resolver must use ('range': a range bound, kept at the same offset inside the same section; 'page': the page of another address in the same file; 'manual': never resolved mechanically, so the code refuses on another build). 'of' (with 'page'): the page of that one address. Keys are files relative to fm_live_mcp/, or '*' for every file; keys starting adviser/ are pi-fm's tactic writer, relative to the repository root (its census: fmdb/data/adviser_census.json.gz). Reviewed by hand on 12 November 2026 against build 27.0.0.2493426.",
+ "overrides": {
+  "*": {
+   "0x100000c": {"decision": "C", "why": "CPU_TYPE_ARM64 in Mach-O headers"},
+   "0x15378": {"decision": "C", "why": "GAME_MATCH engine offset (second side pointer, next to 0x15370)"},
+   "0x154f0": {"decision": "C", "why": "GAME_MATCH engine offset (flags)"},
+   "0x15454": {"decision": "C", "why": "GAME_MATCH engine offset (elapsed)"},
+   "0x14a58": {"decision": "C", "why": "GAME_MATCH engine offset (event store, + 0x440)"},
+   "0xd70dd0": {"decision": "C", "why": "a 32-bit club field value compared after a read, not an address"},
+   "0x264b4": {"decision": "C", "why": "a 32-bit club field value compared after a read, not an address"},
+   "0x24dcc": {"decision": "C", "why": "a native id compared with a decoded id"}
+  },
+  "prepared_tactics_fields.py": {
+   "0x200010": {"decision": "C", "why": "position bit masks"},
+   "0x100010": {"decision": "C", "why": "position bit masks"},
+   "0x200080": {"decision": "C", "why": "position bit masks"},
+   "0x100080": {"decision": "C", "why": "position bit masks"},
+   "0x102000": {"decision": "C", "why": "position bit masks"},
+   "0x202000": {"decision": "C", "why": "position bit masks"},
+   "0x104000": {"decision": "C", "why": "position bit masks"},
+   "0x204000": {"decision": "C", "why": "position bit masks"},
+   "0x200400": {"decision": "C", "why": "position bit masks"},
+   "0x100400": {"decision": "C", "why": "position bit masks"}
+  },
+  "individual_training_position.py": {
+   "0x200010": {"decision": "C", "why": "position bit masks"},
+   "0x100010": {"decision": "C", "why": "position bit masks"},
+   "0x200080": {"decision": "C", "why": "position bit masks"},
+   "0x100080": {"decision": "C", "why": "position bit masks"},
+   "0x102000": {"decision": "C", "why": "position bit masks"},
+   "0x202000": {"decision": "C", "why": "position bit masks"},
+   "0x104000": {"decision": "C", "why": "position bit masks"},
+   "0x204000": {"decision": "C", "why": "position bit masks"},
+   "0x200400": {"decision": "C", "why": "position bit masks"},
+   "0x100400": {"decision": "C", "why": "position bit masks"}
+  },
+  "player_instruction_source.py": {
+   "0x400008": {"decision": "C", "why": "role rule bit sets"},
+   "0x400004": {"decision": "C", "why": "role rule bit sets"}
+  },
+  "saved_match_player_actions.py": {
+   "0x2f10ba4": {"decision": "C", "why": "provenance: consumer load RVA on the pinned build, only printed"},
+   "0x2f10c10": {"decision": "C", "why": "provenance"}, "0x2f109f4": {"decision": "C", "why": "provenance"},
+   "0x2f10a60": {"decision": "C", "why": "provenance"}, "0x2f10acc": {"decision": "C", "why": "provenance"},
+   "0x2f10b38": {"decision": "C", "why": "provenance"}, "0x2f10c7c": {"decision": "C", "why": "provenance"},
+   "0x2f10ce8": {"decision": "C", "why": "provenance"}, "0x2f10d5c": {"decision": "C", "why": "provenance"},
+   "0x2051a8": {"decision": "C", "why": "provenance"}, "0x205520": {"decision": "C", "why": "provenance"},
+   "0x204e78": {"decision": "C", "why": "provenance"}
+  },
+  "saved_match_player_defensive.py": {
+   "0x205818": {"decision": "C", "why": "provenance: native load RVA on the pinned build, only printed"},
+   "0x205840": {"decision": "C", "why": "provenance"}, "0x205180": {"decision": "C", "why": "provenance"},
+   "0x204ec8": {"decision": "C", "why": "provenance"}
+  },
+  "saved_match_player_keeper.py": {
+   "0x2052b0": {"decision": "C", "why": "provenance: native load RVA on the pinned build, only printed"},
+   "0x2052d8": {"decision": "C", "why": "provenance"}, "0x205330": {"decision": "C", "why": "provenance"}
+  },
+  "knowledge_native.py": {
+   "0x20ee608": {"decision": "A", "why": "RELATION_MASK_RVA, the relation mask function the emulator calls; the 'mask' rule took the name for a bit mask, so on 27.0.1 the emulator ran the pinned address and refused (found live 12 November 2026)"}
+  },
+  "transfer_cash_context.py": {
+   "0x54a0000": {"decision": "A", "method": "range", "why": "lower bound of a pointer sanity range"},
+   "0x56f0000": {"decision": "A", "method": "range", "why": "upper bound of a pointer sanity range"},
+   "0x5300000": {"decision": "A", "method": "range", "why": "lower bound of a string range"},
+   "0x54e0000": {"decision": "A", "method": "range", "why": "upper bound of a string range"},
+   "0x4aef800": {"decision": "A", "method": "range", "why": "upper bound of code plus stubs"}
+  },
+  "ffp_projection.py": {
+   "0x4aef800": {"decision": "A", "method": "range", "why": "TEXT_END: upper bound of code plus stubs"},
+   "0x4aee000": {"decision": "A", "method": "range", "why": "IMPORT_START: lower bound of the import stubs it emulates"}
+  },
+  "live_team_sheet_source.py": {
+   "0x4f00000": {"decision": "A", "method": "range", "why": "upper bound of a method pointer"}
+  },
+  "fmdb/fieldroutes.py": {
+   "0x56a0000": {"decision": "A", "method": "range", "why": "lower bound of the globals scanned for table singletons"}
+  },
+  "knowledge_relation_fixes.py": {
+   "0x50d7920": {"decision": "A", "method": "range", "why": "upper bound of the executable span the lazy replay accepts (base + TEXT[1]), past __stubs"}
+  },
+  "fmdb/ui_vm.py": {
+   "0x56a4000": {"decision": "A", "method": "page", "why": "ADRP page expected in a register at a free-list site"},
+   "0x56a8000": {"decision": "A", "method": "page", "why": "ADRP page expected in a register at a free-list site"},
+   "0x56b1000": {"decision": "A", "method": "page", "why": "ADRP page expected in a register at a free-list site"}
+  },
+  "adviser/pi/fm-tactic-files.py": {
+   "0x102000": {"decision": "C", "why": "position mask AM(CL) next to a record-prefix sha256, not an address"},
+   "0x202000": {"decision": "C", "why": "position mask AM(CR) next to a record-prefix sha256, not an address"},
+   "0x200010": {"decision": "C", "why": "native role word (Defensive Midfielder | Defend)"},
+   "0x200200": {"decision": "C", "why": "native role word (Full-Back | Defend)"},
+   "0x200800": {"decision": "C", "why": "native role word (Holding Full-Back | Defend)"},
+   "0x201000": {"decision": "C", "why": "native role word (Wing-Back | Defend)"},
+   "0x400080": {"decision": "C", "why": "native role word (Winger | Support)"},
+   "0x400400": {"decision": "C", "why": "native role word (Pressing Full-Back | Support)"},
+   "0x402000": {"decision": "C", "why": "native role word (Pressing Wing-Back | Support)"},
+   "0x410000": {"decision": "C", "why": "native role word (Box-To-Box Midfielder | Support)"},
+   "0x800200": {"decision": "C", "why": "native role word (Attacking Midfielder | Attack)"},
+   "0x2050000": {"decision": "C", "why": "player-instruction bits 16, 18 and 25 of a stored role profile"}
+  },
+  "adviser/pi/fm_tactic_native_core.py": {
+   "0x4856000": {"decision": "A", "method": "page", "why": "first of the two code pages premapped for the body reader (0x4856b6c, its return hook 0x4856e64)"},
+   "0x485b000": {"decision": "A", "method": "page", "why": "code page premapped for the outer version guard (0x485b788..0x485b7b0)"},
+   "0x486b000": {"decision": "A", "method": "page", "of": "0x486b0c0", "why": "code page premapped for the instruction-vector hook 0x486b0c0 (on 27.0.1 the vector reader 0x486b200 sits in the next page; code fetches outside premapped pages are mapped on demand)"},
+   "0x4383000": {"decision": "A", "method": "page", "of": "0x4383000", "why": "code page premapped for the body reader (fetched by it; no hook in it): the page of the same instruction on the new build"},
+   "0x4355000": {"decision": "A", "method": "page", "why": "code page of the allocator entries 0x4355a04 and 0x4355ed4 the emulator answers"},
+   "0x4319000": {"decision": "A", "method": "page", "why": "code page premapped for the payload header reader (0x431957c, 0x431966c)"},
+   "0x437e000": {"decision": "A", "method": "page", "why": "code page premapped for the header acceptance hook 0x437eed0"},
+   "0x54b0000": {"decision": "A", "method": "page", "why": "data page of the global 0x54b05b0 the emulator seeds (mapped empty)"},
+   "0x56c1000": {"decision": "A", "method": "page", "why": "data page of the globals 0x56c1628 and 0x56c1910 the emulator seeds (mapped empty)"},
+   "0x56d5000": {"decision": "A", "method": "page", "why": "data page of the global 0x56d5f70 the emulator seeds (mapped empty)"},
+   "0x56a4000": {"decision": "A", "method": "page", "of": "0x56a4a90", "why": "data page of the allocator context global 0x56a4a90 the body reads (seeded by fm_tactic_native_authoring.py; mapped empty)"},
+   "0x4af0000": {"decision": "A", "method": "range", "why": "upper bound of the code the emulator maps on demand (past __text and __stubs, inside __objc_stubs)"}
+  },
+  "adviser/pi/fm_tactic_native_authoring.py": {
+   "0x484a000": {"decision": "A", "method": "page", "why": "code page of the creator constructor windows 0x484a7f4..0x484a854 it executes"}
+  }
+ },
+ "builds_about": "Per build (plugin sha256), read by fmdb/address_map.py: 'values' are addresses established by hand from both builds' code (they replace what the automatic methods found); 'guards' are native guards whose code changed but whose meaning for the decoder was established by comparing both builds' code, re-derived from the new bytes at 'new' (and 'length' when the span's length changed) only when the address map puts the span there. Verdicts: 'registers' the same instructions up to register allocation, stack slots or instruction order; 'shape' the same fields and values reached through different code; 'ported' the logic changed and the reader's port follows the new build (the evidence names the change and the code that follows it). Each entry carries its evidence: the instructions on both builds. 'adviser_guards' are the same kind of review for pi-fm's tactic writer (fmdb/adviser_update.py), keyed by adviser/pi/<file>; their verdicts: 'same' (the same logic up to registers, instruction order or a hoisted constant), 'context flag' (the same logic except a context word the caller passes), 'behaviour equal on the tested inputs' (changed code whose results were compared on both builds by scripts/adviser_two_build.py and found equal).",
+ "builds": {
+  "68adfde2e0588458c1830cb7e688855d9c61237973a7eb7a105af5ac4ed112a4": {
+   "version": "27.0.1.2503222",
+   "values": {
+    "0xd6c4": {
+     "value": "0xd790",
+     "evidence": "The game's static initialiser writes each match record's own layout as text: a label string, then the integer with operator<< (mov w1,#value; bl). Both builds write the same labels with the same values; 27.0.1 adds three one-byte fields (isWearingFaceMask 0x37, isWearingHeadBandage 0x38, isWearingHijab 0x39, in what was padding) before teamIndex, so the code after them sits 0xCC later. Pinned 0xd6c4: label 's=' then mov w1,#0x160 (the size of one entity setup row). 27.0.1 0xd790: label 's=' then mov w1,#0x160."
+    },
+    "0xdb74": {
+     "value": "0xdc40",
+     "evidence": "The game's static initialiser writes each match record's own layout as text: a label string, then the integer with operator<< (mov w1,#value; bl). Both builds write the same labels with the same values; 27.0.1 adds three one-byte fields (isWearingFaceMask 0x37, isWearingHeadBandage 0x38, isWearingHijab 0x39, in what was padding) before teamIndex, so the code after them sits 0xCC later. Pinned 0xdb74: label 'o(teamIndex)=' then mov w1,#0x3a. 27.0.1 0xdc40: label 'o(teamIndex)=' then mov w1,#0x3a."
+    },
+    "0xdbb8": {
+     "value": "0xdc84",
+     "evidence": "The game's static initialiser writes each match record's own layout as text: a label string, then the integer with operator<< (mov w1,#value; bl). Both builds write the same labels with the same values; 27.0.1 adds three one-byte fields (isWearingFaceMask 0x37, isWearingHeadBandage 0x38, isWearingHijab 0x39, in what was padding) before teamIndex, so the code after them sits 0xCC later. Pinned 0xdbb8: label 'o(uniqueID)=' then mov w1,#0x3c. 27.0.1 0xdc84: label 'o(uniqueID)=' then mov w1,#0x3c."
+    },
+    "0xe204": {
+     "value": "0xe2d0",
+     "evidence": "The game's static initialiser writes each match record's own layout as text: a label string, then the integer with operator<< (mov w1,#value; bl). Both builds write the same labels with the same values; 27.0.1 adds three one-byte fields (isWearingFaceMask 0x37, isWearingHeadBandage 0x38, isWearingHijab 0x39, in what was padding) before teamIndex, so the code after them sits 0xCC later. Pinned 0xe204: the 233 instructions that write the playback event row (row size 's=' 0x2c before it; o(PlayerID1)= 0x0 .. o(PlayerID6)= 0x14, o(PlayerTeams)= 0x18, o(CommentaryEvent)= 0x1a, o(TimeSlice)= 0x1c, o(DurationTimeSlices)= 0x20, o(Flags)= 0x24 and the rest). 27.0.1 0xe2d0: the same 233 instructions word for word once ADRP pages, ADD page offsets and BL displacements are masked, referencing the same label strings with the same offsets; the only masked match in 0xd000..0xf400."
+    },
+    "0x493eb08": {
+     "value": "0x4a47890",
+     "evidence": "NPxG accumulation in the match engine (0x493c244 -> 0x4a467fc): the 14 instructions 0x493eae8..0x493eb1c (ldr s0,[x22,#0x30]; ldr/fadd/str s1 +0x60; cbz x23; ldr/fadd/str s1 [x23,#0x1c]; ldrb w8,[x22,#0x34]; cmp w8,#4; b.eq; ldr/fadd/str s1 [x23,#0x20]) are word for word at 0x4a47870..0x4a478a4 except the base register of +0x60 (x19 -> x25). The automatic alignment paired 0x493eb08 with an unrelated ldrb w8,[x24,#0x34]; cmp w8,#0xa at 0x4a48640."
+    },
+    "0x493eb0c": {
+     "value": "0x4a47894",
+     "evidence": "cmp w8,#4 (penalty shot type excluded from NPxG), same block as 0x493eb08 -> 0x4a47890"
+    },
+    "0x493eb10": {
+     "value": "0x4a47898",
+     "evidence": "b.eq over the NPxG add, same block as 0x493eb08 -> 0x4a47890"
+    },
+    "0x4ad2f10": {
+     "value": "0x4a5614c",
+     "evidence": "MATCH_PLAYER_STATS vtable slot 4 (the stats deserializer, 0x4ad2910 -> 0x4a559c8, both slot 4 of N13simatchshared18MATCH_PLAYER_STATSE) reads the 2-byte fields +0x104, +0x10a and then the 4-byte float +0x20. Pinned: add x1,x22,#0x20; bl 0x43548cc (a float read helper). 27.0.1 reads every field through the stream's virtual read: add x22,x25,#0x20; ldr x8,[x26]; ldr x8,[x8,#0x30]; mov w2,#4; blr x8 at 0x4a5614c..0x4a56168, right after +0x104 and +0x10a as before. +0x20 is still the persisted 4-byte field in the same place of the sequence."
+    },
+    "0x4ad2f14": {
+     "value": "0x4a56168",
+     "evidence": "the read call for +0x20: bl 0x43548cc on the pinned build, the stream's virtual read blr x8 (w2 = 4 bytes) on 27.0.1; see 0x4ad2f10"
+    },
+    "0x4ad2a54": {
+     "value": "0x4a55b80",
+     "evidence": "MATCH_PLAYER_STATS deserializer (slot 4, 0x4ad2910 -> 0x4a559c8): the reads of +0x90 (12 bytes), +0x9d (2) and +0x9c (1). Emulated on both builds over the same stream for versions 52, 53, 54, 59, 60 and 61 (work/streamemu.py: fn(obj, &stream, version), the stream's virtual +0x30 answered by a hook): the same 48 to 52 reads, the same stream offsets, lengths and object offsets, the same resulting object; the serializer (slot 3, 0x4ad215c -> 0x4a549b8) writes the same 221 bytes in the same order. The wire of a player row is unchanged; 27.0.1 reads each field through the stream's virtual read (add x22,x25,#off; mov w2,#n; blr x8) instead of the pinned build's coalescing helper."
+    },
+    "0x4ad2aa0": {
+     "value": "0x4a55be0",
+     "evidence": "deserializer read of +0x9f (15 bytes); see 0x4ad2a54"
+    },
+    "0x4ad2d7c": {
+     "value": "0x4a55f84",
+     "evidence": "deserializer reads of +0x82 (4 bytes) and the float +0x68; see 0x4ad2a54"
+    },
+    "0x4ad2dd0": {
+     "value": "0x4a55fe4",
+     "evidence": "deserializer read of +0xec (4 bytes) before +0xe0/+0xf0; see 0x4ad2a54"
+    },
+    "0x4ad2e3c": {
+     "value": "0x4a5604c",
+     "evidence": "deserializer reads of +0xf0 (6 bytes) and +0x24 (8); see 0x4ad2a54"
+    },
+    "0x4ad2e68": {
+     "value": "0x4a5608c",
+     "evidence": "deserializer reads of +0x100, +0x106, +0x102, +0x108, +0x104, +0x10a (2 bytes each) and +0x20 (4), the order the emulation shows on both builds; see 0x4ad2a54"
+    },
+    "0x493c4d8": {
+     "value": "0x4a469a4",
+     "evidence": "match-engine event processor (0x493c244 -> 0x4a467fc): the event-kind switch cmp w9,#0x1d; b.hi; adrp/add table; adr; ldrh; add; br, the same eight instructions at 0x4a469a4 (table 0x54052ec -> 0x54a05cc, base 0x493c4f8 -> 0x4a469c4). All 30 cases compared head by head: each increments the same team (x22) and player (x23) stats offsets (+0x9f, +0xa1, +0xa4, +0xbc/+0xbd, +0xc8, +0xce, +0xd4, +0xd7/+0x220, +0xd8/+0x238, +0x17e..+0x180, +0x1a0, +0x134, +0x163), differing only in branch targets and the register of the second argument (x25 -> x20) or the spilled event pointer (ldr x10,[sp,#0x30] -> x19)."
+    },
+    "0x5405304": {
+     "value": "0x54a05e4",
+     "evidence": "event-kind jump table entry 12 (table 0x54052ec -> 0x54a05cc; entry 0x12f -> case 0x493c9b4 on the pinned build, entry 0 -> case 0x4a469c4 on 27.0.1, the same code); see 0x493c4d8"
+    },
+    "0x5405306": {
+     "value": "0x54a05e6",
+     "evidence": "jump table entry 13 (dribble: player +0xa1): 0x41 -> 0x493c5fc, 0x4dd -> 0x4a47d38; see 0x493c4d8"
+    },
+    "0x5405308": {
+     "value": "0x54a05e8",
+     "evidence": "jump table entries 14 and 15 (cases 0x493c79c/0x493c72c -> 0x4a47140/0x4a470d8); see 0x493c4d8"
+    },
+    "0x540531c": {
+     "value": "0x54a05fc",
+     "evidence": "jump table entry 24 (case 0x493c75c -> 0x4a47c10: player +0xbc, and +0xbd unless flags & 0x218); see 0x493c4d8"
+    },
+    "0x493c5fc": {
+     "value": "0x4a47d38",
+     "evidence": "event kind 13 case: cbz x23; ldrb/add/strb [x23,#0xa1]; b join, identical at 0x4a47d38"
+    },
+    "0x493c75c": {
+     "value": "0x4a47c10",
+     "evidence": "event kind 24 case: [x23,#0xbc]++, mov w9,#0x218; tst; b.ne; [x23,#0xbd]++, identical at 0x4a47c10"
+    },
+    "0x493c9b4": {
+     "value": "0x4a469c4",
+     "evidence": "event kind 12 case: tbnz w8,#5; mov x8,#-1; event->+0x30; cbz; ldrb +0x6e; tbz, at 0x4a469c4 with the event in x19 instead of the spill [sp,#0x30]"
+    },
+    "0x493d034": {
+     "value": "0x4a46a70",
+     "evidence": "the kind 12 fall-through: ldrb w8,[event,#0x69]; cmp #0; cset w4,eq; mov x0..x3; bl 0x493f4e0 -> bl 0x4a49980, identical at 0x4a46a70"
+    },
+    "0x493c2e0": {
+     "value": "0x4a46898",
+     "evidence": "event processor prologue: side = ldrsb event+0x6a, team stats = (engine+0x68)[side], player = ldrsb event+0x6b indexing team+0x250..+0x258 (8-byte entries); the same loads at 0x4a46898..0x4a468d0 with registers instead of stack spills"
+    },
+    "0x493c42c": {
+     "value": "0x4a46984",
+     "evidence": "event flags +0x64 and kind +0x68 loaded before the switch (pinned: through the spilled event pointer; 27.0.1: ldr w8,[x19,#0x64]; ldrb w9,[x19,#0x68]; tbz w8,#3; cmp w9,#0x15)"
+    },
+    "0x493c430": {
+     "value": "0x4a46984",
+     "evidence": "see 0x493c42c: ldr w8,[event,#0x64]; ldrb w9,[event,#0x68]; tbz w8,#3; cmp w9,#0x15 at 0x4a46984"
+    },
+    "0x54023d0": {
+     "value": "0x549d5a0",
+     "evidence": "byte jump table of the event-code function 0x48930ac -> 0x494cfe0 (table 0x54023c4 -> 0x549d594), entry 12. The two functions return the same event code for every (type, subtype) in 0..63 x 0..63 (4,096 calls emulated on both builds, work/purefn.py); entries 12 and 13 are the same bytes (2c 0b) on both builds."
+    },
+    "0x54023d1": {
+     "value": "0x549d5a1",
+     "evidence": "entry 13 of the same byte table; see 0x54023d0"
+    },
+    "0x488abc4": {
+     "value": "0x4944bbc",
+     "evidence": "pass event builder 0x488a5a4 -> 0x49445b8: tbz w8,#7; ldrh/orr #0x100/strh [x19,#0x30]; tbnz w8,#5, the same words at 0x4944bbc..0x4944bcc (only branch offsets differ); the 6-instruction sequence occurs once on 27.0.1"
+    },
+    "0x488abd4": {
+     "value": "0x4944bcc",
+     "evidence": "tbnz w8,#5 (event flag bit 5) after the +0x30 flag update; see 0x488abc4"
+    },
+    "0x4512c24": {
+     "value": "0x4537790",
+     "evidence": "live match lineup builder 0x4510a74 -> 0x4535a90 (loop over the 26 slots): ldr [x20,#0x288]; add x,x19,lsl #3; ldr [x,#0x140]; add #1,lsl #12; strb w19,[+0xe27]; cmp #0xb; csinv; strb +0xe52; strb +0xe51. The nine instructions are equal with registers masked at 0x4537790 and nowhere else in the function (x27/x28 -> x26/...)"
+    },
+    "0x451abec": {
+     "value": "0x4540a9c",
+     "evidence": "0x451ab80 -> 0x4540a30: the 14 instructions (team slot pointer, +0x1000 +0xe26 == 1, ldrsb +0xe51, smaddl into the 0x48-byte slot table, +0x40 / +8 / +0x10 vector) are equal with registers masked at 0x4540a9c only"
+    },
+    "0x4a79b58": {
+     "value": "0x4891e60",
+     "evidence": "PLAYER_PUT_ONE vtable slot 4 (substitute put on, 0x4a79a04 -> 0x4891d20): the pinned build calls the unchanged minute helper 0x44afcb0 (-> 0x44cede0, matched exactly) for player +0xaf from engine+0x15454; 27.0.1 inlines the same helper (the same +0x154f0 bit test, divide by 120 plus 1, the same clamps 45/46/90/91/105/106/120 by period byte +0x1555a, the same +0x15536 fallback). Then the same stores: +0x54 <- [+0xa8c], +0x70 <- slot table +0x1920, +0xe32 = 0xff, +0xe26 = 1, +0xe51 and +0x98 = the slot, then the +0xbcc flag test, at 0x4891e60..0x4891f18."
+    },
+    "0x48d4970": {
+     "value": "0x49ced00",
+     "evidence": "shot timeline 0x48d4950 -> 0x49cece0: the time-slice argument w1 spilled at entry (str w1,[sp,#0x50] -> str w1,[sp,#0x1c])"
+    },
+    "0x48d6bd0": {
+     "value": "0x49cfe90",
+     "evidence": "and passed as w2 to 0x48d8e68 -> 0x49d0c10 (matched by callers, 0.996): add x1,sp,#..; mov x0,this; ldr w2,[sp,#0x1c]; bl at 0x49cfe90"
+    },
+    "0xd19eb0": {
+     "value": "0xd1d530",
+     "evidence": "the PERSON attribute getter, vtable slot +0xf0 of ACTUAL_PLAYER and ACTUAL_PLAYER_AND_NON_PLAYER on both builds (0x5588fd8/0x558f028/0x55911c0 -> 0x5624fd8/0x562b028/0x562d1c0 hold it). Pinned: index = 0x4acf834(code), 0xff when -1, else byte person+0x148+index, shown as clamp(1..20, (raw*0x6667+0xccce)>>17 rounded) when person+0x270 is negative. 27.0.1 inlines 0x4acf834 as a 47-entry int64 table at 0x5423190 (codes above 0x2e give 0xff); the table equals 0x4acf834 (unchanged, matched exactly) for every code 0..63 (emulated); the rest is the same instructions. The rule is unchanged."
+    },
+    "0xd19ecc": {
+     "value": "0xd1d540",
+     "evidence": "the index load and the +0x270 / +0x148 reads of the attribute getter (see 0xd19eb0); 27.0.1 loads the index from the table instead of testing the helper's -1"
+    },
+    "0xd19ef0": {
+     "value": "0xd1d564",
+     "evidence": "mov w9,#0x6667; mov w10,#0xccce; madd; asr #0x11; add lsr #31: the same five words at 0xd1d564"
+    },
+    "0x13714f8": {
+     "value": "0x13760e8",
+     "evidence": "the debt obligation amount function 0x13714f8 -> 0x13760e8 (the address map put it at 0x13760f0, after the two new d8-d11 saves of the 27.0.1 prologue). The two functions return the same amount for 40,000 random obligations, dates and flags (work/debtfuzz.py: 25,065 distinct results, 0 differences); 27.0.1 vectorises the day-count loop differently."
+    },
+    "0x377b98": {
+     "value": "0x387728",
+     "evidence": "the person UI handler getter (vtable slot match 0x376980 -> 0x376e10): pinned, the key 'adef' test (mov/movk 0x64616665; cmp w21; b.ne) is followed by its case: property 0x506d6f72 through 0x43f899c/0x4404a08, flag bit 12 of the +0x18 entry stored to +0xb8, then bl 0x154ab00 (the morale function, -> 0x15527b0 unchanged, matched exactly). On 27.0.1 the key test sits in the compare chain at 0x37ba08 (b.eq) and the case block is at 0x387728: the same 18 instructions up to call targets."
+    },
+    "0x22c8218": {
+     "value": "0x22d7444",
+     "evidence": "in-possession pairing loop of the working-payload builder (0x22c7944 -> 0x22d6b18): the span 0x22c8218..0x22c82bc (ldr x8,[sp,#0x80]; position-list pointer from the player vector at +0x1000/+0x1008 for index <= 2 else bl 0x2b520f8; count >= 1; table x9 + 0x1020; creator + 0x120 72-byte position records; bl 0x2b56664 per slot) starts at 0x22d7444 (ldr x8,[sp,#0x88]). The automatic alignment put it one instruction early at 0x22d7440 (ldr x27,[sp,#0xf0], a hoisted reload)."
+    },
+    "0x49743c4": {
+     "value": "0x4a90c28",
+     "evidence": "the role rule's option-22 case block (mov x0,x1; mov x1,x2; str x4,[sp,#8]; bl 0x4972ac4; ldr x4,[sp,#8]; b 0x497387c) is at 0x4a90c28 in the rewritten rule 0x4a8fbb0: the same six instructions, bl to 0x4a8f314 (= 0x4972ac4 by unique fingerprint, byte-identical) and b to 0x4a8ffe8 (= 0x497387c). Jump table entry 21 of 0x54a1804 (option 22) points at it, as entry 21 of 0x5406684 pointed at 0x49743c4."
+    },
+    "0x54066ae": {
+     "value": "0x54a182e",
+     "evidence": "entry 21 (option 22, PI_GET_FORWARD_OFTEN) of the role rule's u16 jump table: 0x5406684 + 0x2a on 27.0.0 (adrp/add at 0x497350c), 0x54a1804 + 0x2a on 27.0.1 (adrp/add at 0x4a8fd5c, same dispatch: sub w8,w8,#1; cmp w8,#0x29; ldrh; adr base +0x18; br). Value 0x3a8 -> 0x49743c4 on 27.0.0, 0x3ad -> 0x4a90c28 on 27.0.1: the same case block."
+    },
+    "0x4857a1c": {
+     "value": "0x4891950",
+     "evidence": "the slot-remap setter 0x4857a1c (index and value unsigned <= 10, strb value at creator + 0x7b4) has no function on 27.0.1: its only caller, the position-swap change apply 0x4a797c8, became 0x48918fc and stores in line. Legacy-version path 0x4891950..0x4891964: cmp w9,#0xa; ccmp w8,#0xa,#2,ls; b.hi past; add x9,x20,x9; mov w10,#0x1fb4 (= 0x1800 + 0x7b4); strb w8,[x9,x10]. The bytes come from ldrb instead of ldrsb, so the accepted set (0..10) is the same. The newer-version path (0x4891970) applies the same bounds to manager + 0x2780 + 0x7b4 as 0x4a6554c did on 27.0.0. The getter 0x48578f0 -> 0x4907624 is unchanged."
+    },
+    "0x4a6556c": {
+     "value": "0x454d420",
+     "evidence": "the creator-name setter. Its only caller 0x4a7b280 (unique fingerprint -> 0x4894c44, all 21 instructions equal) calls 0x454d420 at the same instruction (0x4a7b2b0 -> 0x4894c74). Old: x0 + 0x2780 (the creator) passed to 0x4a8d42c, which adds 0x790 and tail-calls the refcounted string assignment 0x438906c. New: the assignment is inlined at x0 + 0x2f10 (= 0x2780 + 0x790), with the same release/retain of the string's count at ptr-4; afterwards it calls 0x284750(x0 + 0x1800, creator) and a vtable +0x30 callback over the 0x48-byte vector at +0x2f40, which store nothing in the creator's name or phase fields"
+    },
+    "0x4a8d42c": {
+     "value": "0x454d434",
+     "evidence": "old 0x4a8d42c (add x0,x0,#0x790; b 0x438906c) has no counterpart: no add #0x790 followed by a branch to the new string assignment 0x43a1c88 (same bytes as 0x438906c) exists on 27.0.1; it is inlined. 0x454d434 holds the creator offset and the name field it targets (mov w20,#0x2780; mov w8,#0x2f10 = 0x2780 + 0x790) in the inlined setter (see 0x4a6556c)"
+    },
+    "0x4a8d824": {
+     "value": "0x4905500",
+     "evidence": "the creator serializer 0x4a8d728 -> 0x4905350 (callers match): add x0,x20,#0xe0; mov x1,x19; bl <options bitset writer>; cbz w0 at 0x4905500, masked equal to 0x4a8d824. Old called 0x4a8e878 (version byte, creator +0x104, +0x105, then the bitset writer 0x4a8e948, then +0xf8 string, +0x100 u32); new writes +0x104 and +0x105 inline just before (0x49054dc, 0x49054f4), calls 0x491c028 (= 0x4a8e948 with 0x4a8eb90 inlined) and writes +0xf8 and +0x100 right after (0x4905514, 0x490552c): the same fields"
+    },
+    "0x4a8ebec": {
+     "value": "0x491c0bc",
+     "evidence": "the 84-bit options bitset loop of 0x4a8eb90, inlined in 0x491c028 (the bitset writer called at 0x4905508): the 68 guard bytes are identical at 0x491c0bc (bits read as u64 words [x20,(bit>>3)&0x18], cmp #0x54, 32 bits per written word)"
+    },
+    "0x4a8ec4c": {
+     "value": "0x491c11c",
+     "evidence": "end of the same loop (ldrb w8,[sp,#0xf]; cmp w23,w8; b.lo): the 12 guard bytes are identical at 0x491c11c"
+    },
+    "0x4adddc4": {
+     "value": "0x4a8a66c",
+     "evidence": "the template eligibility check, inlined in the first-match recognition 0x4ade244 -> 0x4a8a634 (callers match) at 0x4a8a66c..0x4a8a744: policy vector 0x57bda40 (= POLICY_RVA 0x5721a18 mapped); non-empty: eligible iff id < size and byte[id] != 0 (old: the same, b.ls / cset ne); empty: excluded iff id <= 49 and bit id of 0x0003382000022002 (= the old mask 0x00019c1000011001 tested at id - 1: ids 1,13,17,37,43,44,45,48,49 = STATIC_EXCLUDED), ids above 49 eligible (the loop stops at 0x46 on both builds)"
+    },
+    "0x4ad8094": {
+     "value": "0x4a6cf04",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: the pinned span is the prologue and the ordered bit-test chain; re-derived as the whole 27.0.1 function (5572 bytes), which holds the same 39 tests in the same bit order and the same resource keys; every key route was compared by emulating both builds (tests/test_tactics_271_roles.py)"
+    },
+    "0x4ad81a0": {
+     "value": "0x4a6d024",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 0 branch entry, `cbz` on the label-form argument (w22 -> w3) choosing the resource-key path"
+    },
+    "0x4ad820c": {
+     "value": "0x4a6d068",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 2 branch entry, `cbz` on the label-form argument (w22 -> w3) choosing the resource-key path"
+    },
+    "0x4ad8244": {
+     "value": "0x4a6d0ac",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 0 key block of the resource-key form, resource key 688068 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad82f4": {
+     "value": "0x4a6d0c0",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 1 branch entry, `cbz` on the label-form argument (w22 -> w3) choosing the resource-key path"
+    },
+    "0x4ad832c": {
+     "value": "0x4a6d118",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 2 key block of the resource-key form, resource key 688069 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8394": {
+     "value": "0x4a6d184",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 1 key block of the resource-key form, resource key 688070 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad83fc": {
+     "value": "0x4a6d1f0",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 3 key block of the resource-key form, resource key 688071 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8464": {
+     "value": "0x4a6d25c",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 5 key block of the resource-key form, resource key 688072 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad84cc": {
+     "value": "0x4a6d2c8",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 4 key block of the resource-key form, resource key 688073 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8534": {
+     "value": "0x4a6d334",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 8 key block of the resource-key form, resource key 688074 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad859c": {
+     "value": "0x4a6d3a0",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 7 key block of the resource-key form, resource key 688075 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8604": {
+     "value": "0x4a6d40c",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 6 key block of the resource-key form, resource key 688076 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad866c": {
+     "value": "0x4a6d478",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 9 key block of the resource-key form, resource key 688077 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad86d4": {
+     "value": "0x4a6d4e4",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 11 key block of the resource-key form, resource key 688078 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad873c": {
+     "value": "0x4a6d550",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 10 key block of the resource-key form, resource key 688079 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad87a4": {
+     "value": "0x4a6d5b8",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 12 key block of the resource-key form, resource key 688080 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad880c": {
+     "value": "0x4a6d624",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 14 key block of the resource-key form, resource key 688081 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8874": {
+     "value": "0x4a6d694",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 13 key block of the resource-key form, resource key 688082 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad88dc": {
+     "value": "0x4a6d704",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 15 key block of the resource-key form, resource key 688083 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8944": {
+     "value": "0x4a6d774",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 16 key block of the resource-key form, resource key 688084 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad89ac": {
+     "value": "0x4a6d7e4",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 17 key block of the resource-key form, resource key 688085 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8a14": {
+     "value": "0x4a6d854",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 18 key block of the resource-key form, resource key 688086 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8a7c": {
+     "value": "0x4a6d8c4",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 19 key block of the resource-key form, resource key 688087 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8ae4": {
+     "value": "0x4a6d934",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 20 key block of the resource-key form, resource key 688088 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8b4c": {
+     "value": "0x4a6d9a4",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 27 key block of the resource-key form, resource key 688089 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8bb4": {
+     "value": "0x4a6da14",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 28 key block of the resource-key form, resource key 688090 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8c1c": {
+     "value": "0x4a6da84",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 29 key block of the resource-key form, resource key 688091 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8c84": {
+     "value": "0x4a6daf4",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 36 key block of the resource-key form, resource key 688092 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8cec": {
+     "value": "0x4a6db64",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 35 key block of the resource-key form, resource key 688093 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8d54": {
+     "value": "0x4a6dbd4",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 37 key block of the resource-key form, resource key 688094 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8dbc": {
+     "value": "0x4a6dc44",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 30 key block of the resource-key form, resource key 688095 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8e24": {
+     "value": "0x4a6dcb4",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 32 key block of the resource-key form, resource key 688096 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8e8c": {
+     "value": "0x4a6dd24",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 33 key block of the resource-key form, resource key 688097 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8ef4": {
+     "value": "0x4a6dd94",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 31 key block of the resource-key form, resource key 688098 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8f5c": {
+     "value": "0x4a6de04",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 40 key block of the resource-key form, resource key 696138 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad8fc4": {
+     "value": "0x4a6de74",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 39 key block of the resource-key form, resource key 688100 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad902c": {
+     "value": "0x4a6dee4",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 41 key block of the resource-key form, resource key 688101 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9094": {
+     "value": "0x4a6df54",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 38 key block of the resource-key form, resource key 688102 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad90fc": {
+     "value": "0x4a6dfc4",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 42 key block of the resource-key form, resource key 688103 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9164": {
+     "value": "0x4a6e068",
+     "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 43 key block of the resource-key form, resource key 688104 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21; the pinned span ran on over the next 5 contiguous key blocks of 27.0.0, which 27.0.1 lays out elsewhere: those are pinned by the whole-function span"
+    },
+    "0x4ad94b8": {
+     "value": "0x4a6e4c8",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: the pinned span is the prologue and the ordered bit-test chain; re-derived as the whole 27.0.1 function (7024 bytes), which holds the same 50 tests in the same bit order and the same resource keys; every key route was compared by emulating both builds (tests/test_tactics_271_roles.py)"
+    },
+    "0x4ad95f0": {
+     "value": "0x4a6e614",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 0 branch entry, `cbz` on the label-form argument (w22 -> w3) choosing the resource-key path"
+    },
+    "0x4ad965c": {
+     "value": "0x4a6e658",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 1 branch entry, `cbz` on the label-form argument (w22 -> w3) choosing the resource-key path"
+    },
+    "0x4ad9694": {
+     "value": "0x4a6e69c",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 0 key block of the resource-key form, resource key 688068 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9744": {
+     "value": "0x4a6e6b0",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 2 branch entry, `cbz` on the label-form argument (w22 -> w3) choosing the resource-key path"
+    },
+    "0x4ad977c": {
+     "value": "0x4a6e708",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 1 key block of the resource-key form, resource key 688071 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad97e4": {
+     "value": "0x4a6e774",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 2 key block of the resource-key form, resource key 688077 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad984c": {
+     "value": "0x4a6e7e0",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 52 key block of the resource-key form, resource key 688107 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad98b4": {
+     "value": "0x4a6e84c",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 3 key block of the resource-key form, resource key 688080 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad991c": {
+     "value": "0x4a6e8b8",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 4 key block of the resource-key form, resource key 688083 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9984": {
+     "value": "0x4a6e924",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 5 key block of the resource-key form, resource key 688088 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad99ec": {
+     "value": "0x4a6e990",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 6 key block of the resource-key form, resource key 688108 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9a54": {
+     "value": "0x4a6e9fc",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 7 key block of the resource-key form, resource key 688102 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9abc": {
+     "value": "0x4a6ea68",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 27 key block of the resource-key form, resource key 688109 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9b24": {
+     "value": "0x4a6ead4",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 49 key block of the resource-key form, resource key 688110 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9b8c": {
+     "value": "0x4a6eb40",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 9 key block of the resource-key form, resource key 688095 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9bf4": {
+     "value": "0x4a6eba8",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 56 key block of the resource-key form, resource key 688111 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9c5c": {
+     "value": "0x4a6ec14",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 10 key block of the resource-key form, resource key 688112 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9cc4": {
+     "value": "0x4a6ec84",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 11 key block of the resource-key form, resource key 688103 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9d2c": {
+     "value": "0x4a6ecf4",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 12 key block of the resource-key form, resource key 688113 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9d94": {
+     "value": "0x4a6ed64",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 53 key block of the resource-key form, resource key 688114 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9dfc": {
+     "value": "0x4a6edd4",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 14 key block of the resource-key form, resource key 688115 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9e64": {
+     "value": "0x4a6ee44",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 24 key block of the resource-key form, resource key 688116 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9ecc": {
+     "value": "0x4a6eeb4",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 51 key block of the resource-key form, resource key 688117 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9f34": {
+     "value": "0x4a6ef24",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 54 key block of the resource-key form, resource key 688118 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ad9f9c": {
+     "value": "0x4a6ef94",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 15 key block of the resource-key form, resource key 688119 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada004": {
+     "value": "0x4a6f004",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 28 key block of the resource-key form, resource key 688120 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada06c": {
+     "value": "0x4a6f074",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 16 key block of the resource-key form, resource key 688121 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada0d4": {
+     "value": "0x4a6f0e4",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 47 key block of the resource-key form, resource key 688122 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada13c": {
+     "value": "0x4a6f154",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 48 key block of the resource-key form, resource key 688123 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada1a4": {
+     "value": "0x4a6f1c4",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 50 key block of the resource-key form, resource key 688124 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada20c": {
+     "value": "0x4a6f234",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 17 key block of the resource-key form, resource key 688125 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada274": {
+     "value": "0x4a6f2a4",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 18 key block of the resource-key form, resource key 688126 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada2dc": {
+     "value": "0x4a6f314",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 19 key block of the resource-key form, resource key 688127 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada344": {
+     "value": "0x4a6f384",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 20 key block of the resource-key form, resource key 688128 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada3ac": {
+     "value": "0x4a6f3f4",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 29 key block of the resource-key form, resource key 688129 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada414": {
+     "value": "0x4a6f464",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 30 key block of the resource-key form, resource key 688130 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada47c": {
+     "value": "0x4a6f4d4",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 31 key block of the resource-key form, resource key 688635 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada4e4": {
+     "value": "0x4a6f544",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 32 key block of the resource-key form, resource key 688131 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada54c": {
+     "value": "0x4a6f5b4",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 33 key block of the resource-key form, resource key 688132 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada5b4": {
+     "value": "0x4a6f624",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 35 key block of the resource-key form, resource key 688133 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada61c": {
+     "value": "0x4a6f694",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 39 key block of the resource-key form, resource key 688134 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada684": {
+     "value": "0x4a6f704",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 36 key block of the resource-key form, resource key 688135 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada6ec": {
+     "value": "0x4a6f774",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 38 key block of the resource-key form, resource key 688136 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada754": {
+     "value": "0x4a6f7e4",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 37 key block of the resource-key form, resource key 688137 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada7bc": {
+     "value": "0x4a6f854",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 42 key block of the resource-key form, resource key 688138 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada83c": {
+     "value": "0x4a6f8c4",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 40 key block of the resource-key form, resource key 688139 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada8a4": {
+     "value": "0x4a6f934",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 41 key block of the resource-key form, resource key 688140 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada90c": {
+     "value": "0x4a6f9a4",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 43 key block of the resource-key form, resource key 688141 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada974": {
+     "value": "0x4a6fa14",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 44 key block of the resource-key form, resource key 688142 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4ada9dc": {
+     "value": "0x4a6fa84",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 55 key block of the resource-key form, resource key 688143 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+    },
+    "0x4adaa44": {
+     "value": "0x4a6fb28",
+     "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 45 key block of the resource-key form, resource key 696156 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21; the pinned span ran on over the next 4 contiguous key blocks of 27.0.0, which 27.0.1 lays out elsewhere: those are pinned by the whole-function span"
+    },
+    "0x4adae88": {
+     "value": "0x4a71504",
+     "evidence": "role-name phase dispatcher 0x4adae6c -> 0x4a714e4 (vtable slot match): the same reads and dispatch through different code. Both take the plan entry from [x1], test its phase byte +0x18 against 1, read the role word +0x10, and call the label object's virtual +0x2c8 (phase 1) or +0x2c0 (otherwise) with x1 = word & 0xFFFFFFFBF91FFFFF (ROLE_NAME_MASK: mov #-0x6e00001; movk #0xfffb, lsl 32 at 0x4adaea0 and 0x4a716b8 / 0x4a717f0), x2 = the caller's text and w3 = the label form. 27.0.1 inlines the label-object getter 0x4930048 (ldr of global 0x5721A08) as a load of 0x57BDA30 with the same null exit, and inlines the text search that sets the label form (global text 0x5721A90 -> 0x57BDAB8; the three globals of this page moved by the same +0x9C028). The decoder reads the stored word itself and names only the resource-key form, so it does not rely on that search. Re-derived as 0x4a71504..0x4a71808: the global load through both virtual calls."
+    },
+    "0x488a5f0": {
+     "value": "0x4944604",
+     "evidence": "CBE builder 0x488a5a4 -> 0x49445b8 (callers of the converter): record +0x18 xy cleared, +0x20 cleared, +0x22 native clock start from event +0x44; the same five instructions"
+    },
+    "0x488a6dc": {
+     "value": "0x49446f0",
+     "evidence": "CBE builder 0x488a5a4 -> 0x49445b8 (callers of the converter): outcome of a linked event (linked kind +0x68 <= 0x14: in 0x4200 -> outcome 8, in 6 -> 6, in 0x1c0000 -> 5; 27.0.1 tests 0x4200 before 0x1c0000, the sets are disjoint so the outcome is the same), the kind 0x15/outcome 0 skip, the converter call (0x48930ac -> 0x494cfe0, proven equal on all 65,536 kind/outcome bytes), the stores +0x2a category, +0x2c event id, +0x30 flags = 0, +0x32 native clock end, +0x18 xy; the same 37 instructions apart from the order of the two mask tests and branch targets"
+    },
+    "0x488a724": {
+     "value": "0x49450d8",
+     "evidence": "CBE builder 0x488a5a4 -> 0x49445b8 (callers of the converter): outcome 8 for linked kinds in 0x4200 (old: mov w8,#8; b to the converter call; new: mov w8,#8 then the shared ldrb w9,[x20,#0x68]; b)"
+    },
+    "0x488af44": {
+     "value": "0x4944738",
+     "evidence": "CBE builder 0x488a5a4 -> 0x49445b8 (callers of the converter): outcome 5 for linked kinds in 0x1c0000 (old: mov w8,#5; ldrb w9,[x20,#0x68]; b; new: mov w8,#5; b to the shared ldrb)"
+    },
+    "0x488b074": {
+     "value": "0x49450e4",
+     "evidence": "CBE builder 0x488a5a4 -> 0x49445b8 (callers of the converter): outcome 6 for linked kinds 1 and 2 (mov w8,#6; b)"
+    },
+    "0x488ab3c": {
+     "value": "0x4944b34",
+     "evidence": "CBE builder 0x488a5a4 -> 0x49445b8 (callers of the converter): record +0x25 from event +0x6c and +0x27 (stored player slot) from event +0x6b; the same four instructions"
+    },
+    "0x488ab74": {
+     "value": "0x4944b6c",
+     "evidence": "CBE builder 0x488a5a4 -> 0x49445b8 (callers of the converter): record +0x28 (side) from event +0x6a; the same two instructions"
+    },
+    "0x493c7cc": {
+     "value": "0x4a479bc",
+     "evidence": "match engine 0x493c244 -> 0x4a467fc, event-kind case 3 (kind-3 = crossing; case address from the 30-entry halfword switch table, old 0x54052ec / new 0x54a05cc, entry 3 -> 0x493c7cc / 0x4a479bc): team +0xd4 += 1 and player stats +0xb5 (CrossAttempts) += 1 when the player is set; the same seven instructions"
+    },
+    "0x493c7e8": {
+     "value": "0x4a479d8",
+     "evidence": "match engine 0x493c244 -> 0x4a467fc, event-kind case 3 (kind-3 = crossing; case address from the 30-entry halfword switch table, old 0x54052ec / new 0x54a05cc, entry 3 -> 0x493c7cc / 0x4a479bc): flags & 0x218 selects the set-piece branch (team +0x148, side +0x14a, player +0xb7); old b.eq to the open-play path, new b.ne to the set-piece block (0x4a4832c, the same nine instructions as 0x493c7f8) and tbz bit 11 to the open-play path"
+    },
+    "0x493e6e0": {
+     "value": "0x4a47fb4",
+     "evidence": "match engine 0x493c244 -> 0x4a467fc, event-kind case 3 (kind-3 = crossing; case address from the 30-entry halfword switch table, old 0x54052ec / new 0x54a05cc, entry 3 -> 0x493c7cc / 0x4a479bc): linked event: ldr x12,[x12,#8]; ldrb w11,[x12,#0x68]; and; cmp w11,#0x1d (the linked kind)"
+    },
+    "0x493e7bc": {
+     "value": "0x4a47fc8",
+     "evidence": "match engine 0x493c244 -> 0x4a467fc, event-kind case 3 (kind-3 = crossing; case address from the 30-entry halfword switch table, old 0x54052ec / new 0x54a05cc, entry 3 -> 0x493c7cc / 0x4a479bc): linked kind > 0x14 -> completed; in mask 0x1c4200 -> no completion; in 6 -> the linked-outcome path; else completed. The same tests; 27.0.1 adds an unconditional branch to the linked path"
+    },
+    "0x493e700": {
+     "value": "0x4a47ff4",
+     "evidence": "match engine 0x493c244 -> 0x4a467fc, event-kind case 3 (kind-3 = crossing; case address from the 30-entry halfword switch table, old 0x54052ec / new 0x54a05cc, entry 3 -> 0x493c7cc / 0x4a479bc): unlinked event outcome +0x69: 0 -> completed, 6 -> linked path, other -> no completion (old cmp #6/b.eq/cbnz, new cbz/cmp #6/b.ne)"
+    },
+    "0x493e710": {
+     "value": "0x4a48838",
+     "evidence": "match engine 0x493c244 -> 0x4a467fc, event-kind case 3 (kind-3 = crossing; case address from the 30-entry halfword switch table, old 0x54052ec / new 0x54a05cc, entry 3 -> 0x493c7cc / 0x4a479bc): team +0xd6 += 1 and player stats +0xb6 (CrossesCompleted) += 1 when the player is set; the same seven instructions"
+    },
+    "0x493e900": {
+     "value": "0x4a47668",
+     "evidence": "match engine shot case: the shooter MATCH_PLAYER lookup in the side vector (+0x250/+0x258, bounds-checked by the slot) after cmp kind #0xb selects the side: old 0x493e8e0..0x493e914 (x19 side, x11 slot), new 0x4a4764c..0x4a4767c (x25 side, x28 slot), the same instructions with registers renamed"
+    },
+    "0x493c558": {
+     "value": "0x4a474b8",
+     "evidence": "match engine event-kind case 28 (table entry 28: 0x493c558 / 0x4a474b8): team +0x134 += 1, player +0xec += 1; the same seven instructions, byte for byte"
+    },
+    "0x4abce24": {
+     "value": "0x498fd30",
+     "evidence": "engine period producer 0x4abcdbc (one caller: the frame constructor 0x4ab3218 at 0x4ab3378) is inlined on 27.0.1 into the constructor's counterpart 0x498fa58 at 0x498fd08..0x498fe10, with its callees 0x44b4850 and 0x44afcb0 inlined too. From 0x498fd30: ldr x11,[sp,#0xb0] (match+0x14a04, stored at 0x498fafc); record +4 = max([x11,#0xad8],1)-1, the tick the pinned code takes from match+0x154dc; ldrb w8,[x11,#0xb56] at 0x498fd48, the pinned ldrb w8,[x21,#0x2ba] with x21 = match+0x152a0: the same byte match+0x1555a; the minute bytes for periods 6 and 7; the reload at 0x498fd9c and strb w8,[sp,#0x1c8] at 0x498fda8, the pinned strb w8,[x19,#8] (the 13-byte record is sp+0x1c0). The other periods leave at 0x498fd54 and return to 0x498fd9c, or to 0x498fda0 with w8 still the byte loaded at 0x498fd48 (from 0x499bb0c, 0x499bb78, 0x499bd2c). Both builds' blocks (27.0.0 0x4ab3360..0x4ab3418, 27.0.1 0x498fd08..0x498ff74) emulated over 512 synthetic matches, every period code 0..255 twice, each with the frame forced, unchanged and changed (1,536 runs per build): the same 13 bytes at frame +0x34..+0x40, a delta written in the same runs, and frame +0x3c equal to match+0x1555a in every run (tests/test_frame_goal_area_271.py). The guard is 0x498fd30..0x498fdac (124 bytes)"
+    },
+    "0x4ab33fc": {
+     "value": "0x498ff64",
+     "evidence": "frame copy of the period record: the pinned seven instructions ldr x8,[sp,#0x98]; stur x8,[x20,#0x34]; ldur x8,[x28,#5]; mov w9,#0x23f0; movk w9,#0x4974,lsl#16; dup.2s v0,w9; stur x8,[x20,#0x39] are at 0x498ff64 as ldr x8,[sp,#0x1c0]; stur x8,[x20,#0x34]; ldur x8,[x27,#5]; stur x8,[x20,#0x39]; mov w8,#0x23f0; movk w8,#0x4974,lsl#16; dup.2s v0,w8 (x27 = sp+0x1c0, set at 0x498fb5c and set again by the out-of-line period blocks, e.g. 0x499ba8c, 0x499bb64; the second store moved before the unrelated constant). Reached by falling through from the delta block and by b 0x498ff60 from the unchanged-frame compare (0x4994b64). Record +8 lands at frame +0x3c on both builds. Emulated with 0x4abce24"
+    },
+    "0x4abd804": {
+     "value": "0x49901d4",
+     "evidence": "frame upfield producer 0x4abd7e8 (one caller: the constructor at 0x4ab35b8) is inlined at 0x49901d0..0x49902b4. The pinned add x22,x0,#0x15,lsl#12; ldr x8,[x22,#0x418]; ldr x9,[x22,#0x370]; cmp x8,x9; cset w8,ne; strb w8,[x1,#2] is ldr x21,[sp,#0xb0]; add x8,x21,#0xa14; ldr x10,[x8]; add x8,x21,#0x96c; str x8,[sp,#0x88]; ldr x11,[x8]; cmp x10,x11; cset w8,ne; strb w8,[sp,#0x1a2] at 0x49901d4..0x49901f8 (x21 = match+0x14a04, so match+0x15418 against match+0x15370 into byte 2 of the 3-byte record sp+0x1a0). Both builds' blocks (27.0.0 0x4ab35a8..0x4ab360c, 27.0.1 0x49901d0..0x49902f0) emulated over 512 synthetic matches, each with the frame forced, unchanged and changed (1,536 runs per build): the same 3 bytes at frame +0x80..+0x82 and at context +0x18..+0x1a, a delta written in the same runs, and frame +0x82 equal to 0 when match+0x15418 is the first side pointer and 1 otherwise in every run (tests/test_frame_goal_area_271.py)"
+    },
+    "0x4ab35f4": {
+     "value": "0x49902d4",
+     "evidence": "constructor copy of the upfield record into frame +0x80..+0x82: the same four instructions ldrh w8,[sp,#0x1a0]; strh w8,[x20,#0x80]; ldrb w9,[sp,#0x1a2]; strb w9,[x20,#0x82] (the record at sp+0x1a0 instead of sp+0x78), followed as on 27.0.0 by the two stores into the context (+0x18, +0x1a). Reached by falling through from the unchanged-frame compare and by b 0x49902d4 from the end of the delta block 0x49955c0 (0x499565c). Emulated with 0x4abd804"
+    },
+    "0x4abd9dc": {
+     "value": "0x49b2744",
+     "evidence": "endpoint producer 0x4abd940 -> 0x49b2744 (the same arguments player, match, tick, packet; called at 0x499d78c from the standalone per-entity updater 0x499d6fc, where 27.0.0's 0x4ab4d84 calls 0x4abd940). 0x4a75f00 and the stored-row paths of the motion getter 0x47d46c4 are inlined: start player+0x200, end +0x208, buffer +0x170, ring player+0x180+32*(max(tick,0)&3), 25 bytes copied; the generation path calls 0x4871ecc, 0x486a8ec, 0x486d6c8. The pinned span's append is 0x49b27bc..0x49b2808: count at packet +0, sample i at packet +0x10+32*i with xyz at +0, the parameter 1.0 at +0x10, the motion word at +0x14 and the two halved u16 at +0x18, +0x19. Both builds' producers emulated over 1,200 synthetic players (resident ring, buffer, negative end with the +0xd4 clock, last buffered row, previous-tick sample with a buffered row and with the last row) fill the same 0x60 packet bytes (tests/test_frame_goal_area_271.py). Re-derived as the whole 27.0.1 function (1480 bytes)"
+    },
+    "0x4ab1f78": {
+     "value": "0x499d6fc",
+     "evidence": "entity copy 0x4ab1f78 (packet +0..+0x4f to entity +0x10..+0x5f) is no function on 27.0.1: it is inlined into the counterparts of both callers. (1) Per-entity updater 0x4ab4d84 -> standalone 0x499d6fc (compare 0x4ab30dc inlined; copy at 0x499d83c..0x499d854: ldp q1,q0,[sp,#0x50]; ldr q2,[sp,#0x40]; stp q2,q1,[x24,#0x30]; str q0,[x24,#0x50]; ldp q1,q0,[sp,#0x20]; stp q1,q0,[x24,#0x10], reached from the compare and by one b from the delta block). Emulated from its entry to 0x499d854 against 27.0.0's 0x4ab4df8..0x4ab4e80 over 600 synthetic players: the same entity bytes. (2) Delta applier 0x4ab5ebc -> 0x499e968 (its 13 call sites pair with the 10 of 0x4ab5ebc, e.g. 0x48b4ea8+0x60 -> 0x49a4674+0x60 and 0x48e3f58+0xb0 -> 0x49df49c+0xb0; record reader 0x4ab6ccc inlined): entity lookup and copy at 0x499f070..0x499f0a8 from the packet at sp+0xe0 (x25 = sp+0xe0, set at 0x499eaf8 and set again after each temporary use). Both builds' lookup and copy (27.0.0 0x4ab645c..0x4ab6484) emulated over 400 packets and indexes: the same entity bytes, untouched when the index is outside the table or the entity is null (tests/test_frame_goal_area_271.py). The guard is 0x499d6fc..0x499f0a8 (6572 bytes): the standalone updater, the functions between the two and the applier through its entity copy. The seven copies inlined in the frame constructor are under 0x4ab4df8"
+    },
+    "0x4ab4df8": {
+     "value": "0x4990b0c",
+     "evidence": "per-entity updater 0x4ab4d84 (13 calls from the frame constructor 0x4ab3218 and one from 0x4ab50d8) is inlined seven times in the constructor 0x498fa58, each copy with the producer 0x4abd940, the motion getter's stored-row paths, the compare 0x4ab30dc and the entity copy 0x4ab1f78 inlined; one call of the standalone 0x499d6fc remains (0x499a76c). The seven entity copies are at 0x4990cbc, 0x49911c0, 0x49916a4, 0x49925d0, 0x4992ab0, 0x4992f98, 0x49934c4: ldr q0,[x8,#0x50]; str q0,[E,#0x10]; ldp q1,q0,[x8,#0x80]; ldp q3,q2,[x8,#0x60]; stp q3,q2,[E,#0x20]; stp q1,q0,[E,#0x40] with x8 = sp+0x580 and the packet at sp+0x5d0; each is reached only from its compare and by one b from the end of its delta block, and the constructor has no other q store to an entity. Each copy emulated from its packet zeroing to after its entity copy against 27.0.0's 0x4ab4df8..0x4ab4e80 over 600 synthetic players (4,200 runs): the same 0x50 packet bytes on the stack and the same entity bytes. The entity is pre-set to compare equal with every byte the compare does not read changed, so the delta blocks, which need the frame's stream, are not run (tests/test_frame_goal_area_271.py). The guard is 0x4990b0c..0x49934dc (10704 bytes), from the first copy's entity lookup to the end of the seventh copy"
+    },
+    "0x47d46c4": {
+     "value": "0x486a34c",
+     "evidence": "cached player motion getter 0x47d46c4 -> 0x486a34c (the only 27.0.1 function called from both unchanged callers 0x44eb00c/0x44eb188 at the call index where 27.0.0's 0x44d0fe8/0x44d1164 call 0x47d46c4). Rewritten: the generation path (old bl 0x47d0688 with the motion copied to the stack) is set up inline and calls 0x486a8ec/0x486d6c8. The paths native_motion_cache mirrors are the same instructions: start = [x0,#0x180]; start > tick -> ring x0+0x100+32*(max(tick,0)&3) (0x486a560..0x486a578); end = [x0,#0x188] >= 0 and >= tick -> buffer [x0,#0xf0] + 32*(tick-start) (0x486a3d0..0x486a3f0); 25 bytes copied (ldr q0 / ldur q1 #9). end < 0 with [x0,#0x54] >= tick takes the buffer path on both builds; end < tick returns the last buffered row on both (old via 0x47d4640, new inline); the mirror refuses both. Both builds' getters emulated over 1,200 synthetic motion objects copy the same bytes, equal to the mirror's (tests/test_frame_271.py). Re-derived as the whole 27.0.1 function (1440 bytes)."
+    },
+    "0x4548640": {
+     "value": "0x4891f64",
+     "evidence": "player kicking-upfield setter 0x4548640 (player+0x2cd = match[+0x280]+0x15418 == player+0x288) is inlined on 27.0.1 into its only caller's counterpart 0x4a79a04 -> 0x4891d20 (vtable slot match): 0x4891f64..0x4891f80 ldr x8,[x22,#0x280]; mov w9,#0x5418; movk w9,#1,lsl#16; ldr x8,[x8,x9]; ldr x9,[x22,#0x288]; cmp; cset eq; strb w8,[x22,#0x2cd], between the same two calls as on 27.0.0 (0x45b0d80 -> 0x45e012c before, 0x46ff604 -> 0x4777bc4 after)"
+    },
+    "0x495c740": {
+     "value": "0x4a6ae98",
+     "evidence": "named xG feature parser 0x495bbf0 -> 0x4a69d90 (neighbour match): the block comparing a 0x36-byte name with 'transformed_angle_from_shot_location_to_centre_of_goal' (0x52db5cf -> 0x5375cdd, the only reference) through memcmp (stub 0x4aeeda4 -> 0x4b88c68, both bound to _memcmp) and selecting feature 3: the same 10 instructions at 0x4a6ae98 with x22/w26 for x23/w19"
+    },
+    "0x4a7a9bc": {
+     "value": "0x48dea28",
+     "evidence": "SUBSTITUTION_TACTIC_CHANGE constructor inlined into the factory (case code 4): the same nine stores (clock +8 = -1, +0xc word 0xffff0400 = code 4 at +0xd, side/on -1, +0x10 = 0xff, vtable 0x573b7e0) without the ret; the change factory 0x4a8b248 -> 0x48de720 (callers 0x4a8b52c/0x4a8bb10 -> imports match) inlines the five small constructors on 27.0.1; emulating both factories for type codes 0..63 gives the same class (RTTI) and the same 16 initial bytes for every code (tests/test_player_changes_271.py)"
+    },
+    "0x4a799dc": {
+     "value": "0x48deac4",
+     "evidence": "PLAYER_PUT_ON constructor inlined into the factory (case code 22): clock -1, vtable 0x573b628, +0xc word 0xffff1600 (code 22 at +0xd), +0x10 = 0xff, in another order; the change factory 0x4a8b248 -> 0x48de720 (callers 0x4a8b52c/0x4a8bb10 -> imports match) inlines the five small constructors on 27.0.1; emulating both factories for type codes 0..63 gives the same class (RTTI) and the same 16 initial bytes for every code (tests/test_player_changes_271.py)"
+    },
+    "0x4a7aa40": {
+     "value": "0x48938a8",
+     "evidence": "SUBSTITUTION apply (vtable slot 4, 0x4a7a9e4 -> 0x4893858): ldrsb side +0xe, engine side pointer at engine +0x15370 + 8 x side into x26; the same five instructions"
+    },
+    "0x4a7aa5c": {
+     "value": "0x48938e8",
+     "evidence": "SUBSTITUTION apply: side +0x140 slot table indexed by +0x10 and +0xf; 27.0.1 inlines the byte getters 0x16c16e8 ([x0,#1] of obj+0xf) and 0x16c16e0 ([x0] of obj+0xf) as ldrsb [x20,#0x10] / [x20,#0xf]; the same two slots, then both pointers tested non-null"
+    },
+    "0x4a79a54": {
+     "value": "0x4891d68",
+     "evidence": "PLAYER_PUT_ON apply (0x4a79a04 -> 0x4891d20): side +0xe -> engine +0x15370 side, on slot +0xf through side +0x140; the +0x140 is added before the indexed load instead of after"
+    },
+    "0x48bd7bc": {
+     "value": "0x49b4d58",
+     "evidence": "the change-vector clearer: x0 +0x38 (engine) non-null -> engine +0x147f0 (the vector the decoder reads) tail-called; the null branch inverted (cbnz/ret -> cbz to a ret at the end)"
+    },
+    "0x4a8b248": {
+     "value": "0x48de720",
+     "evidence": "the factory prologue and type-code switch: 27.0.1 tests code - 1 <= 0x1b (null for 0 and above 0x1c, as the pinned table did); the change factory 0x4a8b248 -> 0x48de720 (callers 0x4a8b52c/0x4a8bb10 -> imports match) inlines the five small constructors on 27.0.1; emulating both factories for type codes 0..63 gives the same class (RTTI) and the same 16 initial bytes for every code (tests/test_player_changes_271.py)"
+    },
+    "0x4a796d0": {
+     "value": "0x48dea58",
+     "evidence": "INJURE_PLAYER constructor inlined (case code 11): clock -1, vtable 0x573b578, +0xc word 0xffff0b00; the change factory 0x4a8b248 -> 0x48de720 (callers 0x4a8b52c/0x4a8bb10 -> imports match) inlines the five small constructors on 27.0.1; emulating both factories for type codes 0..63 gives the same class (RTTI) and the same 16 initial bytes for every code (tests/test_player_changes_271.py)"
+    },
+    "0x4a7a414": {
+     "value": "0x48de764",
+     "evidence": "PLAYER_TAKEN_OFF constructor inlined (cases 6 and 18): clock -1, +0xc = 0, +0xd = the type code (w20 = the factory argument, w1 before), +0xe halfword 0xffff, vtable 0x573b6d8 stored by the shared str at 0x48dea48; the change factory 0x4a8b248 -> 0x48de720 (callers 0x4a8b52c/0x4a8bb10 -> imports match) inlines the five small constructors on 27.0.1; emulating both factories for type codes 0..63 gives the same class (RTTI) and the same 16 initial bytes for every code (tests/test_player_changes_271.py)"
+    },
+    "0x4a7a45c": {
+     "value": "0x4892e28",
+     "evidence": "PLAYER_TAKEN_OFF apply (0x4a7a43c -> 0x4892df0): side +0xe, slot +0xf through side +0x140, then the player byte +0x1e26 (27.0.1: add #0x1000 then ldrb #0xe26) compared with 5"
+    },
+    "0x4a7a494": {
+     "value": "0x4892e64",
+     "evidence": "PLAYER_TAKEN_OFF apply: code byte +0xd read, requested status = 5 if code 6 else 3 (mov 3, mov 5, cmp #6, csel), computed here on 27.0.1 instead of next to the call"
+    },
+    "0x4a7a4b4": {
+     "value": "0x4892f54",
+     "evidence": "PLAYER_TAKEN_OFF apply: the status request call with engine +0x12f30, x6 = sp, w5 = the selected status, w7 = 0 to the status setter 0x4563538 -> 0x458b6f8 (the same 12 callers in the matched functions)"
+    },
+    "0x4a7a814": {
+     "value": "0x48de814",
+     "evidence": "SEND_OFF_PLAYER constructor inlined (case code 12): clock -1, vtable 0x573b788, +0xc word 0xffff0c00 stored by the shared str s0 at 0x48dea70; the change factory 0x4a8b248 -> 0x48de720 (callers 0x4a8b52c/0x4a8bb10 -> imports match) inlines the five small constructors on 27.0.1; emulating both factories for type codes 0..63 gives the same class (RTTI) and the same 16 initial bytes for every code (tests/test_player_changes_271.py)"
+    },
+    "0x4a7a85c": {
+     "value": "0x48935b8",
+     "evidence": "SEND_OFF_PLAYER apply (0x4a7a834 -> 0x48935b0): side +0xe, slot +0xf through side +0x140, engine +0x12f30 (add #0x12000, #0xf30 instead of mov/movk 0x12f30); the event-record helper 0x4a65be8 is inlined after it"
+    },
+    "0x4a7a89c": {
+     "value": "0x4893664",
+     "evidence": "SEND_OFF_PLAYER apply: mov x6,sp; mov w5,#2 (requested status 2); mov w7,#0; bl status setter 0x458b6f8 (counterpart of 0x4563538); x0 = the player, x1..x4 the apply arguments as before"
+    },
+    "0x4a7a9e4": {
+     "value": "0x4893858",
+     "evidence": "SUBSTITUTION_TACTIC_CHANGE vtable 0x573b7e0 slot 4 (+0x20), read from the 27.0.1 file; the apply route the decoder compares with the vtable"
+    },
+    "0x4a7a834": {
+     "value": "0x48935b0",
+     "evidence": "SEND_OFF_PLAYER vtable 0x573b788 slot 4 (+0x20), read from the 27.0.1 file; the apply route the decoder compares with the vtable"
+    },
+    "0x4967b80": {
+     "value": "0x4a7ac4c",
+     "evidence": "the formation-name renderer (record; x8 = text out): the wrapper 0x496d478 -> 0x4a88d08 is the same 480 bytes up to address fields (unique fingerprint) and calls the sort at +0xd0 (0x496ae3c -> 0x4a7e074) and the renderer at +0xdc (0x4967b80 -> 0x4a7ac4c); seven call sites on both builds in corresponding functions; the same text ids (0x57c16, 0x4d9b9, 0x4d9be, 0x57d54, 0x57cd3, 0x3f552, 0x788ea) and the same byte-22 test (ldrb [record + 0x16]; cmp #4). 12,028 bytes became 11,288 (0x4a7ac4c..0x4a7d864): re-laid out; four of the nine text lookups are turned into a string by the helper 0x43d3b4c -> 0x43ec6ec (57 instructions on both builds, the same three calls) where 27.0.0 had that sequence in line, and the nine releases at the end go through a 13-instruction helper 0x4a80b0c"
+    },
+    "0x496aa7c": {
+     "value": "0x4a7d8c0",
+     "evidence": "the number-line builder (string builder, counts) the renderer calls twice on both builds (0x49697c8 and 0x496988c -> 0x4a7c6f0 and 0x4a7d2d8, the only callers): 908 -> 924 bytes, the same seven integer-to-text calls (0x4388224 -> 0x43a0e40) and appends; run as part of the renderer on both builds (values 0x4967b80)"
+    },
+    "0x54060ba": {
+     "value": "0x54a129c",
+     "evidence": "the renderer's 15-entry halfword jump table (index = token + 15 for tokens -15..-1): referenced once in each renderer by the same instructions (0x4968800 -> 0x4a7b63c: adrp/add; adr x13, base; ldrh w14, [x15, x12, lsl #1]; add x13, x13, x14, lsl #2); all 15 entries land inside the renderer on each build (bases 0x4968824 and 0x4a7b660); the offsets differ because the code moved"
+    }
+   },
+   "adviser_guards": {
+    "adviser/pi/fm_tactic_team_instructions.py": {
+     "0x4469400": {
+      "new": "0x447acbc",
+      "length": 524,
+      "verdict": "same",
+      "evidence": "The team-instruction command dispatcher (kind 0 select with the compiled exclusion pairs, kind 1 clear), 141 instructions on both builds (function match: call graph). Aligned instruction by instruction (function_match.align/classify): 138 identical up to address fields (the exclusion-pair table 0x54010e4 is 0x549c2b4 on 27.0.1; its 792 bytes are unchanged), and one pair of bounds-check blocks laid out in the other order with the branch conditions inverted (27.0.0: mov x14,x13; cmp x13,#0x54; b.lo clear / cmp x14,#0x54; b.hs abort; 27.0.1: cmp x14,#0x54; b.lo clear / mov x14,x13; cmp x13,#0x54; b.hs abort): both reach the same clear-bit block or the same abort. Two-build emulation (tools/two_build.py, 12 November 2026): 1,360 commands over 17 templates (each of the 79 unparameterised options alone, then the nine-option set of the acceptance request) leave the same 16-byte stored selection on both builds."
+     }
+    },
+    "adviser/pi/fm-tactic-files.py": {
+     "0x44694e8": {
+      "new": "0x447ada4",
+      "length": 112,
+      "verdict": "same",
+      "evidence": "112 bytes inside the team-instruction dispatcher 0x4469400 (0x447acbc on 27.0.1): the exclusion-pair loop. The same 28 instructions up to address fields (the pair table 0x54010ec -> 0x549c2bc) except the two bounds-check blocks, which 27.0.1 lays out in the other order with inverted branch conditions; every path reaches the same clear-bit block or abort (see the review of 0x4469400 in fm_tactic_team_instructions.py)."
+     }
+    },
+    "adviser/pi/fm_tactic_role_catalog.py": {
+     "0x538ef8": {
+      "new": "0x539984",
+      "length": 296,
+      "verdict": "context flag",
+      "evidence": "In-possession player-instruction availability wrapper (role catalog PHASES['in_possession'][3]); 72 -> 74 instructions. Aligned: 67 identical up to address fields, 3 with another register, and one change of logic: the four-byte context word it passes to the availability predicate 0x4973360 is 0x1b000100 on 27.0.1 instead of 0x1b000000 (mov w9,#0x1b000000 became mov w9,#0x100; movk w9,#0x1b00,lsl #16; the copy kept for the loop likewise). The role setter 0x539138 and the body reader 0x4856b6c pass the same new word to the reconciliation; the new predicate 0x4a8fbb0 reads it. Two-build emulation (tools/two_build.py, 12 November 2026): all 15,708 availability queries (22 slots x 42 options x 17 templates) return the same available flag and editor state on both builds."
+     },
+     "0x539018": {
+      "new": "0x539aac",
+      "length": 296,
+      "verdict": "context flag",
+      "evidence": "Out-of-possession twin of 0x538ef8 (role catalog PHASES['out_of_possession'][3]); the same change: 72 -> 74 instructions, 67 identical up to address fields, 3 register choices, and the context word 0x1b000000 -> 0x1b000100 passed to the availability predicate. Covered by the same 15,708 availability queries, equal on both builds."
+     },
+     "0x4973360": {
+      "new": "0x4a8fbb0",
+      "length": 7808,
+      "verdict": "behaviour equal on the tested inputs",
+      "evidence": "The per-option availability predicate (option, current-role profile, role word, context word, out state), called by both availability wrappers and by the role-change reconciliation 0x4976f28/0x49771cc; 1,916 -> 1,952 instructions (function match: callers, similarity 0.968). Aligned: 1,313 identical up to address fields, 80 with other registers or stack slots, 17 with another immediate or offset, 10 changed, 496 removed and 532 added (blocks re-laid out; 27.0.1 also reads the new context bit 0x100). It is not proved equivalent instruction by instruction. What the writer consumes from it was compared on both builds by emulation (tools/two_build.py over the 17 templates of the Tactics folder, 12 November 2026): 15,708 availability queries, 1,736 legal single-slot role changes (each runs the reconciliation over the slot's stored instructions: the 22 records and the serialization after each are equal), 3,698 player-instruction selections with their current-role resets, and the acceptance request (output byte-identical). No difference."
+     },
+     "0x4975710": {
+      "new": "0x4a925e0",
+      "length": 264,
+      "verdict": "same",
+      "evidence": "Find-or-insert of the instruction profile for a role key (the stored role word masked by 0xfffffffbf91fffff when the key argument is zero); 68 -> 66 instructions. 27.0.1 materialises the mask once before the null test instead of on both paths; the binary search over the sorted 24-byte entries, the default entry it inserts (0x4977a84 -> 0x4a96bcc) and the returned pointer are the same instruction for instruction up to registers and branch targets. It runs under every availability query and setter of the two-build emulation, with equal results."
+     },
+     "0x4976154": {
+      "new": "0x4a949e0",
+      "length": 1128,
+      "verdict": "same",
+      "evidence": "The player-instruction setter with a position target (the specific-position marking, option 35), which mark_specific_position calls; 183 -> 282 instructions. 27.0.1 inlines the call to the exclusion helper 0x4ade3f8 (the walk over the compiled option-pair table clearing each opposite below 43, then setting the option's bit) and lays the position-class switch out after the main path; the ten target masks of that switch are the same (7, 0xe00, 0x1f8, 0x7000, 0xf8000, 0x3800000000, 0x38100000, 0x3c0000000, 0x3c000000000, 0x3c0000000000), as is the search of the 16-byte target entries. Two-build emulation (tools/two_build_targets.py, 12 November 2026): every out-of-possession slot of the 17 templates where option 35 is available, with each of the 25 non-goalkeeper targets: 4,250 settings, all accepted by the writer's own accessor checks, with the same stored bits and serialization on both builds."
+     }
+    }
+   },
+   "guards": {
+    "retained_shot_values.py": {
+     "0x493eae8": {
+      "new": "0x4a47870",
+      "verdict": "registers",
+      "evidence": "56 bytes at 0x4a47870: the same 14 instructions as 0x493eae8 with x25 for x19 as the base of the team-stats +0x60 accumulation (xG into team +0x60, player +0x1c, NPxG into player +0x20 unless shot type +0x34 == 4)"
+     }
+    },
+    "live_retained_shots.py": {
+     "0x489b1b0": {
+      "new": "0x49552ac",
+      "verdict": "registers",
+      "evidence": "the CBE shot-end name table (0x489b080 -> 0x4955184): the same seven entries (values 0,7,1,2,3,4,5) bound to the same strings CBE_END_SHOT_GONE_IN, _MISSED_TARGET, _HIT_WOODWORK, _SAVED, _BLOCKED (compared by content) and the same table size (mov w1,#7); only the registers holding the table cursor differ (x21/x22/x23/x24 -> x19/x20)"
+     },
+     "0x4ad2f10": {
+      "new": "0x4a5614c",
+      "verdict": "shape",
+      "evidence": "see values 0x4ad2f10: the same +0x20 float, read through the stream's virtual read"
+     },
+     "0x4ad2f14": {
+      "new": "0x4a56168",
+      "verdict": "shape",
+      "evidence": "see values 0x4ad2f14"
+     },
+     "0x493eb08": {
+      "new": "0x4a47890",
+      "verdict": "registers",
+      "evidence": "see values 0x493eb08 (the same word)"
+     },
+     "0x493eb0c": {
+      "new": "0x4a47894",
+      "verdict": "registers",
+      "evidence": "see values 0x493eb0c (the same word)"
+     },
+     "0x493eb10": {
+      "new": "0x4a47898",
+      "verdict": "registers",
+      "evidence": "b.eq over the NPxG add; only the branch offset differs"
+     }
+    },
+    "saved_match_player_dribbling.py": {
+     "0x4ad2a54": {
+      "new": "0x4a55b80",
+      "length": 96,
+      "verdict": "shape",
+      "evidence": "see values 0x4ad2a54 (wire unchanged by emulation of both builds)"
+     },
+     "0x4ad2aa0": {
+      "new": "0x4a55be0",
+      "length": 32,
+      "verdict": "shape",
+      "evidence": "see values 0x4ad2aa0"
+     },
+     "0x493c4d8": {
+      "new": "0x4a469a4",
+      "verdict": "registers",
+      "evidence": "see values 0x493c4d8"
+     },
+     "0x493c5fc": {
+      "new": "0x4a47d38",
+      "verdict": "registers",
+      "evidence": "see values 0x493c5fc"
+     },
+     "0x5405306": {
+      "new": "0x54a05e6",
+      "verdict": "shape",
+      "evidence": "see values 0x5405306"
+     },
+     "0x54023d0": {
+      "new": "0x549d5a0",
+      "verdict": "registers",
+      "evidence": "see values 0x54023d0 (the same byte)"
+     }
+    },
+    "saved_match_player_running.py": {
+     "0x4ad2d7c": {
+      "new": "0x4a55f84",
+      "length": 64,
+      "verdict": "shape",
+      "evidence": "see values 0x4ad2d7c"
+     }
+    },
+    "saved_match_player_sprinting.py": {
+     "0x4ad2dd0": {
+      "new": "0x4a55fe4",
+      "length": 32,
+      "verdict": "shape",
+      "evidence": "see values 0x4ad2dd0"
+     },
+     "0x4ad2e3c": {
+      "new": "0x4a5604c",
+      "length": 64,
+      "verdict": "shape",
+      "evidence": "see values 0x4ad2e3c"
+     }
+    },
+    "saved_match_player_final_third.py": {
+     "0x4ad2e68": {
+      "new": "0x4a5608c",
+      "length": 224,
+      "verdict": "shape",
+      "evidence": "see values 0x4ad2e68"
+     }
+    },
+    "retained_key_passes.py": {
+     "0x493c42c": {
+      "new": "0x4a46984",
+      "length": 16,
+      "verdict": "registers",
+      "evidence": "see values 0x493c42c"
+     },
+     "0x493c4d8": {
+      "new": "0x4a469a4",
+      "verdict": "registers",
+      "evidence": "see values 0x493c4d8"
+     },
+     "0x493c75c": {
+      "new": "0x4a47c10",
+      "verdict": "registers",
+      "evidence": "see values 0x493c75c"
+     },
+     "0x540531c": {
+      "new": "0x54a05fc",
+      "verdict": "shape",
+      "evidence": "see values 0x540531c"
+     },
+     "0x4894f0c": {
+      "new": "0x494ecf0",
+      "verdict": "registers",
+      "evidence": "the backward search for the event's key pass (0x4894f0c -> 0x494ecf0, 444 bytes on both): the same instructions, constants ('Kcat', 'sorc', 'tohs', 'Sapa' keys, 0x38-byte entries, +0x22/+0x27/+0x28/+0x29/+0x2a/+0x30 fields) and exits; 27.0.1 moves the cmp w19,#1 tail (mov x26,x9) out of line"
+     }
+    },
+    "retained_possession_events.py": {
+     "0x493c2e0": {
+      "new": "0x4a46898",
+      "length": 60,
+      "verdict": "registers",
+      "evidence": "see values 0x493c2e0"
+     },
+     "0x493c430": {
+      "new": "0x4a46984",
+      "verdict": "registers",
+      "evidence": "see values 0x493c430"
+     },
+     "0x493c4d8": {
+      "new": "0x4a469a4",
+      "verdict": "registers",
+      "evidence": "see values 0x493c4d8"
+     },
+     "0x493c72c": {
+      "new": "0x4a470d8",
+      "verdict": "registers",
+      "evidence": "event kind 15 case: bl 0x4950a70 -> 0x4a5baa0 (unchanged function, matched exactly); team (x22 + 4*w0)+0x238 += 1; player +0xd8 += 1; identical but for x25 -> x20"
+     },
+     "0x493c79c": {
+      "new": "0x4a47140",
+      "verdict": "registers",
+      "evidence": "event kind 14 case: team (x22 + 4*w0)+0x220 += 1; player +0xd7 += 1; as 0x493c72c"
+     },
+     "0x5405308": {
+      "new": "0x54a05e8",
+      "verdict": "shape",
+      "evidence": "see values 0x5405308"
+     },
+     "0x54023d1": {
+      "new": "0x549d5a1",
+      "verdict": "registers",
+      "evidence": "see values 0x54023d1 (the same bytes)"
+     },
+     "0x488ab3c": {
+      "new": "0x4944b34",
+      "verdict": "registers",
+      "evidence": "pass event builder: +0x6c -> +0x25, +0x6b -> +0x27, bl 0x495aaec -> 0x4a68b44, the kind byte +0x2a tested against 7 and 12 (in the other order on 27.0.1), event +0x30 loaded into x0 instead of x21; 64 bytes at 0x4944b34"
+     }
+    },
+    "active_match_people.py": {
+     "0x488ab3c": {
+      "new": "0x4944b34",
+      "verdict": "registers",
+      "evidence": "see retained_possession_events.py 0x488ab3c"
+     },
+     "0x4894fb4": {
+      "new": "0x494ed98",
+      "verdict": "registers",
+      "evidence": "inside the key pass search 0x4894f0c -> 0x494ecf0 (see retained_key_passes.py 0x4894f0c): the same tests of +0x27, +0x29, w19 == 0x36 and == 1, +0x30 bit 0, with the cmp w19,#1 tail moved out of line"
+     },
+     "0x4512c24": {
+      "new": "0x4537790",
+      "verdict": "registers",
+      "evidence": "see values 0x4512c24"
+     },
+     "0x4512d7c": {
+      "new": "0x45378d4",
+      "verdict": "registers",
+      "evidence": "the second of the two occurrences on both builds (after strb 0xff,[+0xe51]): ldrsb [x20,#0x2cf]; [x27,#0x280] -> [x28,#0x280]; +0x14e90; +0x68; +0x250; slot; str [+0x1880]"
+     },
+     "0x451abec": {
+      "new": "0x4540a9c",
+      "verdict": "registers",
+      "evidence": "see values 0x451abec"
+     },
+     "0x4a79b58": {
+      "new": "0x4891e60",
+      "length": 188,
+      "verdict": "shape",
+      "evidence": "see values 0x4a79b58"
+     }
+    },
+    "knowledge_context_score_source.py": {
+     "0xd19eb0": {
+      "new": "0xd1d530",
+      "verdict": "shape",
+      "evidence": "see values 0xd19eb0; the hash keeps its length 0x78: the 0x64 bytes of the 27.0.1 getter and the first 0x14 bytes of the function after it"
+     }
+    },
+    "knowledge_passing_view.py": {
+     "0xd19eb0": {
+      "new": "0xd1d530",
+      "verdict": "shape",
+      "evidence": "the same 0x78-byte guard of the PERSON attribute getter as knowledge_context_score_source.py (see values 0xd19eb0); ProjectionSource checks it on construction, and every manager-visible source (relation mask, person selector, crossing, UI callers, the bulk and fast paths) derives from ProjectionSource, so with the guard left at the pinned bytes every field refused 'Passing projection native source changed'. Both builds' getters return the same byte for every attribute code 0..63 over synthetic PERSON objects (tests/test_knowledge_271.py)"
+     }
+    },
+    "knowledge_passing_range.py": {
+     "0xd19ecc": {
+      "new": "0xd1d540",
+      "verdict": "shape",
+      "evidence": "see values 0xd19ecc"
+     },
+     "0xd19ef0": {
+      "new": "0xd1d564",
+      "verdict": "registers",
+      "evidence": "see values 0xd19ef0"
+     }
+    },
+    "knowledge_relation_mask_source.py": {
+     "0x11d60e4": {
+      "new": "0x11dd5dc",
+      "verdict": "registers",
+      "evidence": "0x11d60e4 -> 0x11dd5dc (call graph, 0.916): with registers and address fields masked the only differences are the order of the binary-search loop's blocks (b.ge/b.le become b.lt/b.gt with the moved tail) and eor x,x,#-1 written as mvn; the std::function it builds points at the comparator 0x11d6378 -> 0x11dd880 (unchanged, matched exactly). The relation mask rule is unchanged. The hash keeps its length 660 (the 27.0.1 function is 676 bytes; the last 16, its moved loop tail, are outside the hash)."
+     }
+    },
+    "active_match_shot_timeline.py": {
+     "0x48d4970": {
+      "new": "0x49ced00",
+      "verdict": "registers",
+      "evidence": "see values 0x48d4970"
+     },
+     "0x48d6bd0": {
+      "new": "0x49cfe90",
+      "verdict": "registers",
+      "evidence": "see values 0x48d6bd0"
+     }
+    },
+    "active_match_tracking.py": {
+     "0x4891ffc": {
+      "new": "0x494bfe0",
+      "length": 36,
+      "verdict": "registers",
+      "evidence": "tracking sample index (0x4891f94 -> 0x494bf74): w = (tick / 24) * 24 + 24 through mov/movk 0x2aaaaaab; smull; lsr; lsr; add; mov #0x18 twice; madd, the same nine instructions with w20/w24 -> w21/w25; the pinned build's next add x9,sp,#0x20 is not part of the computation"
+     },
+     "0x4892038": {
+      "new": "0x494c008",
+      "length": 64,
+      "verdict": "registers",
+      "evidence": "the sample-count step: ldur w8,[x26,#-0x18]; subs; b.le; (tick difference) / 24 by smull with 0x2aaaaaab (hoisted into w27 on the pinned build, materialised in the loop on 27.0.1); ldp [x26,#-0x10]; size >> 2; compare; sub, the same sequence at 0x494c008..0x494c044"
+     }
+    },
+    "live_retained_pass_events.py": {
+     "0x493c4d8": {
+      "new": "0x4a469a4",
+      "verdict": "registers",
+      "evidence": "see values 0x493c4d8"
+     },
+     "0x493c9b4": {
+      "new": "0x4a469c4",
+      "verdict": "registers",
+      "evidence": "see values 0x493c9b4"
+     },
+     "0x493d034": {
+      "new": "0x4a46a70",
+      "verdict": "registers",
+      "evidence": "see values 0x493d034"
+     },
+     "0x5405304": {
+      "new": "0x54a05e4",
+      "verdict": "shape",
+      "evidence": "see values 0x5405304"
+     },
+     "0x488abd4": {
+      "new": "0x4944bcc",
+      "verdict": "registers",
+      "evidence": "see values 0x488abd4"
+     },
+     "0x48930ac": {
+      "new": "0x494cfe0",
+      "verdict": "shape",
+      "evidence": "the event-code function f(type, subtype), 0x17c bytes on both builds: emulated on both builds for every (type, subtype) in 0..63 x 0..63, the same result for all 4,096 (work/purefn.py); the 27.0.1 code merges two tails"
+     },
+     "0x54023c4": {
+      "new": "0x549d594",
+      "verdict": "shape",
+      "evidence": "the byte jump table of 0x48930ac; its function is equivalent by emulation (see 0x48930ac); the entries differ where the 27.0.1 code merged tails"
+     }
+    },
+    "pass_field_position.py": {
+     "0x488abc4": {
+      "new": "0x4944bbc",
+      "verdict": "registers",
+      "evidence": "see values 0x488abc4"
+     }
+    },
+    "active_pass_network.py": {
+     "0x488abd4": {
+      "new": "0x4944bcc",
+      "verdict": "registers",
+      "evidence": "see values 0x488abd4"
+     },
+     "0x493c9b4": {
+      "new": "0x4a469c4",
+      "verdict": "registers",
+      "evidence": "see values 0x493c9b4"
+     }
+    },
+    "live_team_sheet_source.py": {
+     "0x22c85f0": {
+      "new": "0x22d7818",
+      "length": 16,
+      "verdict": "registers",
+      "evidence": "after bl 0x22c1e50 -> 0x22d1090 (the team-sheet builder): sxtb of the slot count; cmp #0xb; add x8,sp,#0x298; csel ...,xzr,x8,lt. Pinned: the count in w8 is also spilled to [sp,#0xb8] and the csel writes x24; 27.0.1 keeps the count in w23 and stores the csel result to [sp,#0x88]. The +0x1D0 -> +0x80 'structure candidate' in this function is a stack slot: [x27,#0x1d0] with x27 = sp+0x180 on the pinned build and [x8,#0x80] with x8 = sp+0x2d0 on 27.0.1, both sp+0x350."
+     }
+    },
+    "knowledge_retained_person.py": {
+     "0x15c18a4": {
+      "new": "0x15caa30",
+      "verdict": "ported",
+      "evidence": "27.0.1 adds one test to the retained-PERSON resolver: after the ordinal lookup (primary vector root+0x68 or the canonical list) and after the UID search (tail call 0x1084ca4 -> call 0x108827c), a non-null PERSON whose virtual +0x510 returns true is dropped (0x15cac5c: ldr x8,[x0]; ldr x8,[x8,#0x510]; blr x8; tbnz w8,#0 -> mov x0,#0). Everything else is the same instructions with registers masked (the globals 0x56d2d80/0x56d34e0 move by the data shift to 0x576edb8/0x576f518). knowledge_retained_person._native_hidden applies it on 27.0.1 (constant-return methods only; any other method refuses). The hash keeps its length 632 of the 652-byte 27.0.1 function."
+     }
+    },
+    "club_staff_responsibilities.py": {
+     "0x15c18a4": {
+      "new": "0x15caa30",
+      "verdict": "ported",
+      "evidence": "27.0.1 adds one test to the retained-PERSON resolver: after the ordinal lookup (primary vector root+0x68 or the canonical list) and after the UID search (tail call 0x1084ca4 -> call 0x108827c), a non-null PERSON whose virtual +0x510 returns true is dropped (0x15cac5c: ldr x8,[x0]; ldr x8,[x8,#0x510]; blr x8; tbnz w8,#0 -> mov x0,#0). Everything else is the same instructions with registers masked (the globals 0x56d2d80/0x56d34e0 move by the data shift to 0x576edb8/0x576f518). club_staff_responsibilities._reference applies it through knowledge_retained_person._native_hidden."
+     },
+     "0x22d23e8": {
+      "new": "0x22e191c",
+      "verdict": "registers",
+      "evidence": "the responsibility rebuild 0x22d23e8 -> 0x22e191c (callers, 0.914): the same calls in the same order to matched functions (0x17b9558, 0x15c23a0, 0x17bbcc8, 0x15b4708, 0x15b4b70, 0x15bb0e4, 0x15bdb88 and the rest), the same element clear loop (moved below its test) and fields; the exception cleanup paths are outlined (0x22e1c04, 0x22e1c5c)"
+     }
+    },
+    "current_staff_responsibilities.py": {
+     "0x15c18a4": {
+      "new": "0x15caa30",
+      "length": 652,
+      "verdict": "shape",
+      "evidence": "the whole function, 0x15c18a4..0x15c1b1c -> 0x15caa30..0x15cacbc (632 -> 652 bytes; both ends mapped, the next function matched exactly). 27.0.1 adds one test to the retained-PERSON resolver: after the ordinal lookup (primary vector root+0x68 or the canonical list) and after the UID search (tail call 0x1084ca4 -> call 0x108827c), a non-null PERSON whose virtual +0x510 returns true is dropped (0x15cac5c: ldr x8,[x0]; ldr x8,[x8,#0x510]; blr x8; tbnz w8,#0 -> mov x0,#0). Everything else is the same instructions with registers masked (the globals 0x56d2d80/0x56d34e0 move by the data shift to 0x576edb8/0x576f518). This module executes the native resolver in its emulator, so the 27.0.1 test runs as shipped."
+     },
+     "0x17bbfc8": {
+      "new": "0x17c64bc",
+      "length": 864,
+      "verdict": "shape",
+      "evidence": "the whole function, 0x17bbfc8..0x17bc310 -> 0x17c64bc..0x17c681c (840 -> 864 bytes; both ends mapped, the next function matched exactly): the retained-node loop of the selector (call graph, 0.981), the same instructions with registers masked and the global page offsets moved by the data shift, plus the hidden-PERSON test of 0x15c18a4 on the resolved PERSON before the comparison with the subject (ldr x8,[x20]; ldr x8,[x8,#0x510]; blr x8; cbz w0). Executed natively by this module's emulator, which interprets the +0x510 method only when it is a constant return. The first review kept the hash at 840 bytes, so the emulator stopped at the function's last 24 bytes (0x17c6804) and every current delegate was unavailable on 27.0.1 (found live)."
+     }
+    },
+    "knowledge_person_selector.py": {
+     "0x17bbfc8": {
+      "new": "0x17c64bc",
+      "verdict": "ported",
+      "evidence": "see current_staff_responsibilities.py 0x17bbfc8: the hidden-PERSON test is the only change; the port reaches retained PERSONs only through knowledge_retained_person.resolve, which applies it on 27.0.1."
+     }
+    },
+    "club_debt_obligations.py": {
+     "0x13714f8": {
+      "new": "0x13760e8",
+      "verdict": "shape",
+      "evidence": "see values 0x13714f8; the hash keeps its length 648 of the 1,524-byte 27.0.1 function"
+     }
+    },
+    "committed_wage_owner_source.py": {
+     "0x1fecadc": {
+      "new": "0x1ffa778",
+      "verdict": "shape",
+      "evidence": "0x1fecadc -> 0x1ffa778 (call order, 0.891): the pinned build inlines the attribute-mask computation (bytes person+0x148..+0x156 compared with 15, bits 1,8/9,0x10,4,0x80,0x200,0x400,0x100,0x1000,0x2000,0x800,0x4000,0x40,0x20); 27.0.1 calls the unchanged function 0x4914bd8 -> 0x4a1c05c (matched exactly) with x0 = person+0x140 and w1 = 15, which is the same code; the default 0x400 when the virtual +0x40 check fails is kept; the other calls go to matched functions in the same order. The hash keeps its length 1204; the 27.0.1 function is 996 bytes, so the hash also covers the start of the next function."
+     }
+    },
+    "committed_wage_spending_core.py": {
+     "0xcc0014": {
+      "new": "0xcc38a8",
+      "length": 1080,
+      "verdict": "shape",
+      "evidence": "the whole function 0xcc0014..0xcc0450 -> 0xcc38a8..0xcc3ce0 (call graph, 0.976; both ends mapped). With registers and address fields masked the only difference is the switch on w0: the pinned build tests the set {1..6, 15..20} as a bit mask (mov #1; lsl; and #0x1ffffe; and #0xffff807f; ccmp), 27.0.1 as two ranges (sub #1; cmp #6; b.hs, then sub #0xf; cmp #6; b.lo), the same set; the calls go to matched functions in the same order. The reducer executes it, so the new code is what runs; only the span's length (1084 -> 1080) blocked the guard."
+     },
+     "0x1002b10": {
+      "new": "0x1006224",
+      "length": 444,
+      "verdict": "shape",
+      "evidence": "the whole function 0x1002b10..0x1002ce0 -> 0x1006224..0x10063e0 (call order, 0.916; both ends mapped): a leaf switch on w2 that loads one float constant per code; the compiler re-laid the compare tree (the same codes 1, 2, 3, 4..6, 7..10, 13, 15, 20 and default) and the constants moved with the data shift. Executed by the reducer, which reads the constants from the running build's image; only the span's length (464 -> 444) blocked the guard."
+     },
+     "0x129b5f4": {
+      "new": "0x12a2c94",
+      "length": 324,
+      "verdict": "shape",
+      "evidence": "the whole function 0x129b5f4..0x129b804 -> 0x12a2c94..0x12a2dd8 (callers, 0.714; both ends mapped). The pinned build inlines the attribute-mask computation of x0 (bytes +0x148..+0x156 against 15, 52 instructions); 27.0.1 calls the unchanged leaf 0x4914bd8 -> 0x4a1c05c (matched exactly) with x0 + 0x140 and w1 = 15 and passes its result where the pinned build passes the inlined mask (x3 of the same callee); the rest is the same instructions with registers masked. Both give the same mask for 2,000 random attribute blocks (tests/test_knowledge_271.py). The reducer now allows the leaf (_SPANS) and executes the new code."
+     }
+    },
+    "player_registration_source.py": {
+     "0x14d1880": {
+      "new": "0x14d9060",
+      "verdict": "registers",
+      "evidence": "0x14d1880 -> 0x14d9060 (call order, 0.948): with registers masked, the same instructions with the 'entry kind 4 -> compare its person with x1' test laid out as a branch (pinned: x13 = kind 4 ? person : 0, then compare) and the epilogue duplicated; the two differ only for a null person argument. The hash keeps its length 292 of 324 bytes."
+     }
+    },
+    "ucl_registration_source.py": {
+     "0x14d2ef4": {
+      "new": "0x14da524",
+      "verdict": "registers",
+      "evidence": "0x14d2ef4 -> 0x14da524 (call graph, 0.952): with registers masked, the loops are rotated (their tests moved to the bottom) and the globals' page offsets moved by the data shift (+0x38: 0x523/0x522, 0x6b0, 0x7d0, 0xdb0, 0x4e0); the same calls, fields and constants otherwise. Code comparison only. The hash keeps its length 844 of 888 bytes."
+     }
+    },
+    "individual_training_ip_role.py": {
+     "0x1579b00": {
+      "new": "0x1581f5c",
+      "verdict": "registers",
+      "evidence": "the in-possession role mask function 0x1579b00 -> 0x1581f5c (544 bytes on both): the switch cases are reordered and its two byte jump tables rebuilt; emulated on both builds for every 16-bit role word in a one-entry vector (work/iprole.py), the same mask for all 65,536 (51 distinct masks)."
+     },
+     "0x539da5c": {
+      "new": "0x54384eb",
+      "verdict": "shape",
+      "evidence": "the second byte jump table of 0x1579b00 (adrp+add #0x4eb in 0x1581f5c); see 0x1579b00"
+     },
+     "0x539da70": {
+      "new": "0x54384ff",
+      "verdict": "shape",
+      "evidence": "the first byte jump table of 0x1579b00 (adrp+add #0x4ff in 0x1581f5c); see 0x1579b00"
+     }
+    },
+    "individual_training_position.py": {
+     "0x2cf5728": {
+      "new": "0x2d04a80",
+      "verdict": "registers",
+      "evidence": "0x2cf5728 -> 0x2d04a80 (call graph, 0.987): the only differences with registers and string page offsets masked are inside the role-word to position-mask switch (pinned 0x2cf57c8..0x2cf5814, 27.0.1 0x2d04b20..0x2d04b6c); that region run on both builds for every 16-bit role word gives the same mask for all 65,536 (work/region.py, 27 distinct). The strings it formats are the same (player_id, player_age, individual_focus, club/national_training_intensity, ip_position, ip_role, oop_role). The hash keeps its length 2140 of 2148 bytes."
+     },
+     "0x53cdfca": {
+      "new": "0x5469102",
+      "verdict": "shape",
+      "evidence": "the halfword jump table of that switch (adrp 0x5469000 + 0x102 in 0x2d04a80); see 0x2cf5728"
+     }
+    },
+    "player_career_morale.py": {
+     "0x377b98": {
+      "new": "0x387728",
+      "verdict": "shape",
+      "evidence": "see values 0x377b98; the hash keeps its length 88: the 72-byte case block, its branch to the join and the first three instructions after it"
+     }
+    },
+    "live_match_performance.py": {
+     "0x27ea20c": {
+      "new": "0x27fa3c0",
+      "length": 40,
+      "verdict": "registers",
+      "evidence": "the match statistics builder 0x27ea100 -> 0x27fa2b8 (call order, 0.997): add x11,x22,#0x68 (the two team-stats pointers of the engine); the +8 word of [x21] shifted into the high half or -1<<32; (engine+0x68)[1] and [x20]; the +0x2c words of both. The same instructions at 0x27fa3c0..0x27fa3e4 without the pinned build's two stack spills (the constant 1 stays in w13 instead of [sp,#0x90])."
+     }
+    },
+    "resident_match_plans.py": {
+     "0x451f248": {
+      "new": "0x4545898",
+      "verdict": "shape",
+      "evidence": "MATCH_MANAGER load_tactics 0x451f1f8 -> 0x4545860: the 14 instructions 0x451f248..0x451f27c (ldr x10,[x0,#0x280]; GAME_MATCH +0x15580 list; mov w22,#0x1800; ldrsb w21,[x19,#0x2cf]; scan for entries with flag bit 2 at +8) are the same at 0x4545898; the loop's exit b.eq became b.ne back to the head, and the in-line call block 0x451f288..0x451f2ac (entry->vtable+0x48(entry, w21, manager + 0x1800)) moved to 0x4545a2c with identical bytes (tbnz w10,#2 at 0x45458c4 branches there). The re-derived 92 bytes at 0x4545898 cover the loader and the scan; the moved call block is checked by tests/test_tactics_271_live.py."
+     }
+    },
+    "live_personal_overrides.py": {
+     "0x52e718": {
+      "new": "0x52f194",
+      "length": 216,
+      "verdict": "shape",
+      "evidence": "in-possession instruction exporter 0x52e718..0x52e7ec -> 0x52f194..0x52f26c: one change, the version word stored to [sp,#4] and passed to the role rule, mov w24,#0x1b000000 (27.0.0.0) -> mov w24,#0x100; movk w24,#0x1b00,lsl 16 (0x1b000100, 27.0.1.0); the other 52 instructions are the same up to call targets (0x4973360 -> 0x4a8fbb0, 0x4975820 -> 0x4a926e8 unchanged fingerprint, 0x4405554 -> 0x441e67c). The function grew by 4 bytes: re-derived over all 216."
+     },
+     "0x52e7ec": {
+      "new": "0x52f26c",
+      "length": 216,
+      "verdict": "shape",
+      "evidence": "out-of-possession instruction exporter 0x52e7ec..0x52e8c0 -> 0x52f26c..0x52f344: the same version word change (0x1b000000 -> 0x1b000100); otherwise the same up to call targets; its callees 0x4975150 -> 0x4a91a30 and 0x4adec28 -> 0x4a93008 are the same code up to call targets (masked diff ratio 1.0)."
+     }
+    },
+    "player_instruction_source.py": {
+     "0x52e738": {
+      "new": "0x52f1b4",
+      "length": 132,
+      "verdict": "shape",
+      "evidence": "the same exporter as live_personal_overrides 0x52e718 from +0x20: the 32 guarded instructions plus the movk the version word 0x1b000100 needs (132 bytes, ending at the same subs x23 as the pinned span)."
+     },
+     "0x49743c4": {
+      "new": "0x4a90c28",
+      "verdict": "shape",
+      "evidence": "see values 0x49743c4: the same six instructions; only the bl and b displacements differ."
+     },
+     "0x54066ae": {
+      "new": "0x54a182e",
+      "verdict": "shape",
+      "evidence": "see values 0x54066ae: the option-22 jump table entry, 0x3a8 -> 0x3ad, the same case block."
+     },
+     "0x5406560": {
+      "new": "0x54a16e0",
+      "verdict": "ported",
+      "evidence": "the role rule's 13 (mask, value) vectors (ldr q at 0x4973398.. / 0x4a8fbe8..): one byte differs. Vector 5 (0x54065b0) lane 0, compared for equality with lane 0 of 0x54065f0 (0): mask 0x201000000000 -> 0x1000000000, so the test 'role bits 36 and 45 clear' became 'role bit 36 clear'. The rule was rewritten (0x4973360 -> 0x4a8fbb0, 1916 -> 1952 instructions). Emulating both builds' rule in the VM, each with its own version word (0x1b000000 / 0x1b000100), over options 0..42 x position 0 and 1 << 0..31 x the 2,080 one- and two-bit role words (2,951,520 cases): identical result and state on every case, including the four ROLE_RULE_CASES (option 22, positions 4 and 8, roles 0x400008 -> state 3, 0x400004 -> state 0), which are all the reader takes from the rule."
+     }
+    },
+    "live_in_possession_source.py": {
+     "0x22c8218": {
+      "new": "0x22d7444",
+      "length": 160,
+      "verdict": "registers",
+      "evidence": "see values 0x22c8218. 0x22c8218..0x22c82bc -> 0x22d7444..0x22d74e0: the same loads, tests, table +0x1020, creator +0x120, 72-byte stride and calls (0x2b520f8, 0x2b56664, then 0x22cd4bc under the same two null checks), with registers and spill slots reassigned (sp+0x80 -> sp+0x88, sp+0x68 -> sp+0x70, sp+0x7c -> sp+0x84, sp+0x90 -> sp+0x98; x26/x27/x25 -> x24/x22/x27; the third argument of 0x22cd4bc kept in a stack slot sp+0xe8 instead of x22, the second in x28 instead of slot sp+0xb8; the w21 spill to sp+0x9c dropped). Two instructions shorter: re-derived over 160 bytes."
+     },
+     "0x22c8344": {
+      "new": "0x22d7568",
+      "verdict": "registers",
+      "evidence": "cmp x27,#0xa .. str w8,[x21] -> cmp x22,#0xa ..: the same 17 instructions (position record = creator + 0x120 + 0x48 x slot; mask copy; stack table sp + 0x15860) with the slot index in x22 instead of x27 and slot sp+0x90 -> sp+0x98."
+     }
+    },
+    "live_tactical_assignments_source.py": {
+     "0x4857a1c": {
+      "new": "0x4891950",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "see values 0x4857a1c: the setter is inlined into its only caller with the same bounds and the same byte store at creator + 0x7b4; the 24 bytes at 0x4891950 are that store."
+     }
+    },
+    "prepared_tactics_fields.py": {
+     "0x4a6556c": {
+      "new": "0x454d420",
+      "length": 100,
+      "verdict": "shape",
+      "evidence": "see values 0x4a6556c: the creator at +0x2780 and its name string at creator +0x790 (+0x2f10), assigned with the same refcounted string semantics; 100 bytes through the store str x22,[x21] at 0x454d480"
+     },
+     "0x4a8d42c": {
+      "new": "0x454d434",
+      "length": 8,
+      "verdict": "shape",
+      "evidence": "see values 0x4a8d42c: mov w20,#0x2780; mov w8,#0x2f10 (creator +0x790) in the inlined name setter"
+     },
+     "0x4a8d598": {
+      "new": "0x48ffda8",
+      "length": 184,
+      "verdict": "shape",
+      "evidence": "the phase positions function 0x4a8d598 -> 0x48ffda8 (callers match): the same 11 u32 masks selected by the phase flag (w2 == 0: +0x120, else +0x440; then +0x168/+0x488 ... +0x3f0/+0x710, stride 0x48), each converted by the compact-position function. Old called the setter 0x4addfa4 (strb compact(mask) at obj[i]) per index and tail-called 0x4addfd0 (sort of the 11 bytes, args 6, 1); new inlines the setter (bl 0x4a33e34; strb w0,[x19,#i]) and the sort call (bl with x19+0xb, 6, 1). 184 bytes: the prologue and the whole offset table"
+     }
+    },
+    "prepared_tactic_instructions.py": {
+     "0x2b51780": {
+      "new": "0x2b61320",
+      "verdict": "registers",
+      "evidence": "the label loop over option bits 1..0x53 of creator +0xe0 in 0x2b51708 -> 0x2b612a8: the 28 instructions are equal apart from the stack slots of the key buffer (sp+0x38/0x44 -> sp+0x28/0x34)"
+     },
+     "0x2b51afc": {
+      "new": "0x2b6169c",
+      "verdict": "registers",
+      "evidence": "the same function's 'team_instructions_list' key (string compared by content at 0x515c148 / 0x51f6839): 22 instructions, the same calls, other stack slots (sp+0x10/0x38/0x44/8 -> x29-0x68/sp+0x28/0x34/0x58) and the pair stored at sp+0x60 written as stp xzr,x8,[sp,#0x58]; str x9,[sp,#0x68] instead of stp x8,x9,[sp,#0x60]: the same two words at sp+0x60 and sp+0x68"
+     },
+     "0x4a8d824": {
+      "new": "0x4905500",
+      "verdict": "shape",
+      "evidence": "see values 0x4a8d824"
+     },
+     "0x4a8ebec": {
+      "new": "0x491c0bc",
+      "verdict": "registers",
+      "evidence": "identical bytes inside the inlined bitset writer; see values 0x4a8ebec"
+     },
+     "0x4a8ec4c": {
+      "new": "0x491c11c",
+      "verdict": "registers",
+      "evidence": "identical bytes inside the inlined bitset writer; see values 0x4a8ec4c"
+     }
+    },
+    "prepared_tactic_formations.py": {
+     "0x492b8c8": {
+      "new": "0x4a33e34",
+      "length": 648,
+      "verdict": "registers",
+      "evidence": "the compact-position function (mask -> token, the mirror _compact_position), 0x492b8c8 -> 0x4a33e34 (call graph match; the whole new function, 648 bytes), re-laid out: emulated on both builds over all 8,388,608 masks of bits 0..22 and 18,423 with one of bits 23..31 set (8,407,031 masks), 0 differences between the two builds and _compact_position (work/compact_exhaustive.py; sampled in tests/test_tactics_271_prepared.py)"
+     },
+     "0x496e104": {
+      "new": "0x4a89b94",
+      "length": 572,
+      "verdict": "registers",
+      "evidence": "the compact-and-store variant (obj, index, mask) 0x496e104 -> 0x4a89b94 (whole function): emulated on both builds over 30,000 masks and indices, the same 64 bytes written"
+     },
+     "0x4ade094": {
+      "new": "0x4a89e60",
+      "length": 236,
+      "verdict": "registers",
+      "evidence": "the order-free template comparison (greedy matching of INVERSE[code + 15] of two 11-byte arrays) 0x4ade094 -> 0x4a89e60: one block moved, inverse table 0x540644c -> 0x54a15c8 (mapped by xref); emulated on 30,000 pairs (a third of them permutations), the same result"
+     },
+     "0x4ade244": {
+      "new": "0x4a8a634",
+      "length": 488,
+      "verdict": "shape",
+      "evidence": "first-match recognition 0x4ade244 -> 0x4a8a634 (callers match), ids 1..0x45 in order: the eligibility check inlined (values 0x4adddc4); the template lookup 0x495fa3c+0x495fc78 inlined (metadata 0x57d8fa8, fallback id 3, template vector 0x57d8f90 + index x 0x18, default record 0x0c8c x 11 / 0x0204); the same sort of the 11 halfwords (0x496ae3c -> 0x4a7e074, args 6, 1: emulated equal on 20,000 records, always a permutation), the unchanged converter 0x4962b74 -> 0x4a75b40 and the comparison 0x4a89e60. The mirror's multiset signature is unaffected by the sort"
+     },
+     "0x4adddc4": {
+      "new": "0x4a8a66c",
+      "length": 216,
+      "verdict": "shape",
+      "evidence": "see values 0x4adddc4 (216 bytes: the inlined check through the loop increment)"
+     },
+     "0x496ae3c": {
+      "new": "0x4a7e074",
+      "length": 768,
+      "verdict": "registers",
+      "evidence": "the 11-halfword sort (rec, rec + 0x16, tmp, 6, 1) 0x496ae3c -> 0x4a7e074: emulated on both builds over 20,000 records, the same 48 bytes after the call; each result a permutation of the input. Naming route only; its other changed spans are the guards 0x4967b80, 0x496aa7c and 0x54060ba"
+     },
+     "0x4967b80": {
+      "new": "0x4a7ac4c",
+      "verdict": "shape",
+      "evidence": "see values 0x4967b80. The pinned length (12,028 bytes) from 0x4a7ac4c covers the whole renderer (11,288 bytes), the 92-byte helper 0x4a7d864 the renderer calls once (0x4adb1a4 on 27.0.0) and the first 648 bytes of the number-line builder 0x4a7d8c0. Results compared by running both builds' code: ids 0..70 through each build's wrapper 0x496d478 -> 0x4a88d08 (template lookup with its static initialiser, sort, renderer) in the reader's static VM, the text lookup by id (0x43db8b8 -> 0x43f4458) modelled alike on both builds with the English text of the 27.0.1 example.ltf: the same 24 template bytes, the same text and the same ids asked for every id (67 ids named, 61 distinct token sets; ids 0 and 70 'Custom'; the asymmetric ids 50 and 53 stop on both builds after asking 0x4d9b9 and 0x57beb, where the route enters the text engine); every symmetric shape (2,952 records, 1,192 distinct names) through sort + renderer gives the same text on both builds; 67 templates x 40 variants of high bits, order and byte 23 leave the text unchanged on both; byte 22 other than 4 asks for 0x788ea on both; 1,500 random records stop alike on both (tests/test_formation_names_271.py repeats the id runs). The reader's names on this build are this build's results (prepared_tactic_formations._ENGLISH_PROJECTIONS_BY_BUILD)"
+     },
+     "0x496aa7c": {
+      "new": "0x4a7d8c0",
+      "verdict": "shape",
+      "evidence": "see values 0x496aa7c. The pinned length (968 bytes) from 0x4a7d8c0 covers the whole builder (924 bytes) and the first 44 bytes of 0x4a7dc5c (the asymmetric-shape helper, 0x4adb200 on 27.0.0). It runs inside the renderer in every run of guards 0x4967b80, with the same text on both builds"
+     },
+     "0x54060ba": {
+      "new": "0x54a129c",
+      "verdict": "shape",
+      "evidence": "see values 0x54060ba: the same 15 cases reached through offsets into the re-laid-out renderer. Run on both builds with 40 records for each largest token -15..-1 (600 records): the same text (41 records) or the same stop after the same ids asked (559, shapes whose route enters the text engine)"
+     }
+    },
+    "prepared_tactic_roles.py": {
+     "0x4ad8094": {
+      "new": "0x4a6cf04",
+      "length": 5572,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: the pinned span is the prologue and the ordered bit-test chain; re-derived as the whole 27.0.1 function (5572 bytes), which holds the same 39 tests in the same bit order and the same resource keys; every key route was compared by emulating both builds (tests/test_tactics_271_roles.py)"
+     },
+     "0x4ad81a0": {
+      "new": "0x4a6d024",
+      "length": 4,
+      "verdict": "registers",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 0 branch entry, `cbz` on the label-form argument (w22 -> w3) choosing the resource-key path"
+     },
+     "0x4ad820c": {
+      "new": "0x4a6d068",
+      "length": 4,
+      "verdict": "registers",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 2 branch entry, `cbz` on the label-form argument (w22 -> w3) choosing the resource-key path"
+     },
+     "0x4ad8244": {
+      "new": "0x4a6d0ac",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 0 key block of the resource-key form, resource key 688068 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad82f4": {
+      "new": "0x4a6d0c0",
+      "length": 4,
+      "verdict": "registers",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 1 branch entry, `cbz` on the label-form argument (w22 -> w3) choosing the resource-key path"
+     },
+     "0x4ad832c": {
+      "new": "0x4a6d118",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 2 key block of the resource-key form, resource key 688069 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8394": {
+      "new": "0x4a6d184",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 1 key block of the resource-key form, resource key 688070 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad83fc": {
+      "new": "0x4a6d1f0",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 3 key block of the resource-key form, resource key 688071 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8464": {
+      "new": "0x4a6d25c",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 5 key block of the resource-key form, resource key 688072 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad84cc": {
+      "new": "0x4a6d2c8",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 4 key block of the resource-key form, resource key 688073 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8534": {
+      "new": "0x4a6d334",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 8 key block of the resource-key form, resource key 688074 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad859c": {
+      "new": "0x4a6d3a0",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 7 key block of the resource-key form, resource key 688075 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8604": {
+      "new": "0x4a6d40c",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 6 key block of the resource-key form, resource key 688076 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad866c": {
+      "new": "0x4a6d478",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 9 key block of the resource-key form, resource key 688077 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad86d4": {
+      "new": "0x4a6d4e4",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 11 key block of the resource-key form, resource key 688078 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad873c": {
+      "new": "0x4a6d550",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 10 key block of the resource-key form, resource key 688079 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad87a4": {
+      "new": "0x4a6d5b8",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 12 key block of the resource-key form, resource key 688080 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad880c": {
+      "new": "0x4a6d624",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 14 key block of the resource-key form, resource key 688081 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8874": {
+      "new": "0x4a6d694",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 13 key block of the resource-key form, resource key 688082 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad88dc": {
+      "new": "0x4a6d704",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 15 key block of the resource-key form, resource key 688083 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8944": {
+      "new": "0x4a6d774",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 16 key block of the resource-key form, resource key 688084 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad89ac": {
+      "new": "0x4a6d7e4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 17 key block of the resource-key form, resource key 688085 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8a14": {
+      "new": "0x4a6d854",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 18 key block of the resource-key form, resource key 688086 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8a7c": {
+      "new": "0x4a6d8c4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 19 key block of the resource-key form, resource key 688087 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8ae4": {
+      "new": "0x4a6d934",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 20 key block of the resource-key form, resource key 688088 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8b4c": {
+      "new": "0x4a6d9a4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 27 key block of the resource-key form, resource key 688089 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8bb4": {
+      "new": "0x4a6da14",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 28 key block of the resource-key form, resource key 688090 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8c1c": {
+      "new": "0x4a6da84",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 29 key block of the resource-key form, resource key 688091 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8c84": {
+      "new": "0x4a6daf4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 36 key block of the resource-key form, resource key 688092 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8cec": {
+      "new": "0x4a6db64",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 35 key block of the resource-key form, resource key 688093 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8d54": {
+      "new": "0x4a6dbd4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 37 key block of the resource-key form, resource key 688094 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8dbc": {
+      "new": "0x4a6dc44",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 30 key block of the resource-key form, resource key 688095 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8e24": {
+      "new": "0x4a6dcb4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 32 key block of the resource-key form, resource key 688096 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8e8c": {
+      "new": "0x4a6dd24",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 33 key block of the resource-key form, resource key 688097 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8ef4": {
+      "new": "0x4a6dd94",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 31 key block of the resource-key form, resource key 688098 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8f5c": {
+      "new": "0x4a6de04",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 40 key block of the resource-key form, resource key 696138 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad8fc4": {
+      "new": "0x4a6de74",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 39 key block of the resource-key form, resource key 688100 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad902c": {
+      "new": "0x4a6dee4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 41 key block of the resource-key form, resource key 688101 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9094": {
+      "new": "0x4a6df54",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 38 key block of the resource-key form, resource key 688102 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad90fc": {
+      "new": "0x4a6dfc4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 42 key block of the resource-key form, resource key 688103 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9164": {
+      "new": "0x4a6e068",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "out-of-possession role naming function 0x4ad8094 -> 0x4a6cf04: bit 43 key block of the resource-key form, resource key 688104 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21; the pinned span ran on over the next 5 contiguous key blocks of 27.0.0, which 27.0.1 lays out elsewhere: those are pinned by the whole-function span"
+     },
+     "0x4ad94b8": {
+      "new": "0x4a6e4c8",
+      "length": 7024,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: the pinned span is the prologue and the ordered bit-test chain; re-derived as the whole 27.0.1 function (7024 bytes), which holds the same 50 tests in the same bit order and the same resource keys; every key route was compared by emulating both builds (tests/test_tactics_271_roles.py)"
+     },
+     "0x4ad95f0": {
+      "new": "0x4a6e614",
+      "length": 4,
+      "verdict": "registers",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 0 branch entry, `cbz` on the label-form argument (w22 -> w3) choosing the resource-key path"
+     },
+     "0x4ad965c": {
+      "new": "0x4a6e658",
+      "length": 4,
+      "verdict": "registers",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 1 branch entry, `cbz` on the label-form argument (w22 -> w3) choosing the resource-key path"
+     },
+     "0x4ad9694": {
+      "new": "0x4a6e69c",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 0 key block of the resource-key form, resource key 688068 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9744": {
+      "new": "0x4a6e6b0",
+      "length": 4,
+      "verdict": "registers",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 2 branch entry, `cbz` on the label-form argument (w22 -> w3) choosing the resource-key path"
+     },
+     "0x4ad977c": {
+      "new": "0x4a6e708",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 1 key block of the resource-key form, resource key 688071 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad97e4": {
+      "new": "0x4a6e774",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 2 key block of the resource-key form, resource key 688077 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad984c": {
+      "new": "0x4a6e7e0",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 52 key block of the resource-key form, resource key 688107 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad98b4": {
+      "new": "0x4a6e84c",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 3 key block of the resource-key form, resource key 688080 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad991c": {
+      "new": "0x4a6e8b8",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 4 key block of the resource-key form, resource key 688083 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9984": {
+      "new": "0x4a6e924",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 5 key block of the resource-key form, resource key 688088 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad99ec": {
+      "new": "0x4a6e990",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 6 key block of the resource-key form, resource key 688108 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9a54": {
+      "new": "0x4a6e9fc",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 7 key block of the resource-key form, resource key 688102 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9abc": {
+      "new": "0x4a6ea68",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 27 key block of the resource-key form, resource key 688109 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9b24": {
+      "new": "0x4a6ead4",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 49 key block of the resource-key form, resource key 688110 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9b8c": {
+      "new": "0x4a6eb40",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 9 key block of the resource-key form, resource key 688095 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9bf4": {
+      "new": "0x4a6eba8",
+      "length": 20,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 56 key block of the resource-key form, resource key 688111 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9c5c": {
+      "new": "0x4a6ec14",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 10 key block of the resource-key form, resource key 688112 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9cc4": {
+      "new": "0x4a6ec84",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 11 key block of the resource-key form, resource key 688103 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9d2c": {
+      "new": "0x4a6ecf4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 12 key block of the resource-key form, resource key 688113 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9d94": {
+      "new": "0x4a6ed64",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 53 key block of the resource-key form, resource key 688114 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9dfc": {
+      "new": "0x4a6edd4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 14 key block of the resource-key form, resource key 688115 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9e64": {
+      "new": "0x4a6ee44",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 24 key block of the resource-key form, resource key 688116 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9ecc": {
+      "new": "0x4a6eeb4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 51 key block of the resource-key form, resource key 688117 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9f34": {
+      "new": "0x4a6ef24",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 54 key block of the resource-key form, resource key 688118 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ad9f9c": {
+      "new": "0x4a6ef94",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 15 key block of the resource-key form, resource key 688119 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada004": {
+      "new": "0x4a6f004",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 28 key block of the resource-key form, resource key 688120 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada06c": {
+      "new": "0x4a6f074",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 16 key block of the resource-key form, resource key 688121 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada0d4": {
+      "new": "0x4a6f0e4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 47 key block of the resource-key form, resource key 688122 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada13c": {
+      "new": "0x4a6f154",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 48 key block of the resource-key form, resource key 688123 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada1a4": {
+      "new": "0x4a6f1c4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 50 key block of the resource-key form, resource key 688124 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada20c": {
+      "new": "0x4a6f234",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 17 key block of the resource-key form, resource key 688125 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada274": {
+      "new": "0x4a6f2a4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 18 key block of the resource-key form, resource key 688126 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada2dc": {
+      "new": "0x4a6f314",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 19 key block of the resource-key form, resource key 688127 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada344": {
+      "new": "0x4a6f384",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 20 key block of the resource-key form, resource key 688128 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada3ac": {
+      "new": "0x4a6f3f4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 29 key block of the resource-key form, resource key 688129 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada414": {
+      "new": "0x4a6f464",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 30 key block of the resource-key form, resource key 688130 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada47c": {
+      "new": "0x4a6f4d4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 31 key block of the resource-key form, resource key 688635 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada4e4": {
+      "new": "0x4a6f544",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 32 key block of the resource-key form, resource key 688131 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada54c": {
+      "new": "0x4a6f5b4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 33 key block of the resource-key form, resource key 688132 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada5b4": {
+      "new": "0x4a6f624",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 35 key block of the resource-key form, resource key 688133 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada61c": {
+      "new": "0x4a6f694",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 39 key block of the resource-key form, resource key 688134 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada684": {
+      "new": "0x4a6f704",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 36 key block of the resource-key form, resource key 688135 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada6ec": {
+      "new": "0x4a6f774",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 38 key block of the resource-key form, resource key 688136 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada754": {
+      "new": "0x4a6f7e4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 37 key block of the resource-key form, resource key 688137 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada7bc": {
+      "new": "0x4a6f854",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 42 key block of the resource-key form, resource key 688138 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada83c": {
+      "new": "0x4a6f8c4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 40 key block of the resource-key form, resource key 688139 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada8a4": {
+      "new": "0x4a6f934",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 41 key block of the resource-key form, resource key 688140 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada90c": {
+      "new": "0x4a6f9a4",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 43 key block of the resource-key form, resource key 688141 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada974": {
+      "new": "0x4a6fa14",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 44 key block of the resource-key form, resource key 688142 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4ada9dc": {
+      "new": "0x4a6fa84",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 55 key block of the resource-key form, resource key 688143 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21"
+     },
+     "0x4adaa44": {
+      "new": "0x4a6fb28",
+      "length": 24,
+      "verdict": "shape",
+      "evidence": "in-possession role naming function 0x4ad94b8 -> 0x4a6e4c8: bit 45 key block of the resource-key form, resource key 696156 (lookup 0x43db8b8 -> 0x43f4458); 27.0.1 passes the label table object in x0 from the prologue load or its stack spill instead of x21; the pinned span ran on over the next 4 contiguous key blocks of 27.0.0, which 27.0.1 lays out elsewhere: those are pinned by the whole-function span"
+     },
+     "0x4adae88": {
+      "new": "0x4a71504",
+      "length": 772,
+      "verdict": "shape",
+      "evidence": "role-name phase dispatcher 0x4adae6c -> 0x4a714e4 (vtable slot match): the same reads and dispatch through different code. Both take the plan entry from [x1], test its phase byte +0x18 against 1, read the role word +0x10, and call the label object's virtual +0x2c8 (phase 1) or +0x2c0 (otherwise) with x1 = word & 0xFFFFFFFBF91FFFFF (ROLE_NAME_MASK: mov #-0x6e00001; movk #0xfffb, lsl 32 at 0x4adaea0 and 0x4a716b8 / 0x4a717f0), x2 = the caller's text and w3 = the label form. 27.0.1 inlines the label-object getter 0x4930048 (ldr of global 0x5721A08) as a load of 0x57BDA30 with the same null exit, and inlines the text search that sets the label form (global text 0x5721A90 -> 0x57BDAB8; the three globals of this page moved by the same +0x9C028). The decoder reads the stored word itself and names only the resource-key form, so it does not rely on that search. Re-derived as 0x4a71504..0x4a71808: the global load through both virtual calls."
+     }
+    },
+    "retained_cross_events.py": {
+     "0x488a6dc": {
+      "new": "0x49446f0",
+      "verdict": "shape",
+      "evidence": "CBE builder 0x488a5a4 -> 0x49445b8 (callers of the converter): outcome of a linked event (linked kind +0x68 <= 0x14: in 0x4200 -> outcome 8, in 6 -> 6, in 0x1c0000 -> 5; 27.0.1 tests 0x4200 before 0x1c0000, the sets are disjoint so the outcome is the same), the kind 0x15/outcome 0 skip, the converter call (0x48930ac -> 0x494cfe0, proven equal on all 65,536 kind/outcome bytes), the stores +0x2a category, +0x2c event id, +0x30 flags = 0, +0x32 native clock end, +0x18 xy; the same 37 instructions apart from the order of the two mask tests and branch targets"
+     },
+     "0x488a724": {
+      "new": "0x49450d8",
+      "verdict": "shape",
+      "evidence": "CBE builder 0x488a5a4 -> 0x49445b8 (callers of the converter): outcome 8 for linked kinds in 0x4200 (old: mov w8,#8; b to the converter call; new: mov w8,#8 then the shared ldrb w9,[x20,#0x68]; b)",
+      "length": 12
+     },
+     "0x488af44": {
+      "new": "0x4944738",
+      "verdict": "shape",
+      "evidence": "CBE builder 0x488a5a4 -> 0x49445b8 (callers of the converter): outcome 5 for linked kinds in 0x1c0000 (old: mov w8,#5; ldrb w9,[x20,#0x68]; b; new: mov w8,#5; b to the shared ldrb)",
+      "length": 8
+     },
+     "0x488b074": {
+      "new": "0x49450e4",
+      "verdict": "shape",
+      "evidence": "CBE builder 0x488a5a4 -> 0x49445b8 (callers of the converter): outcome 6 for linked kinds 1 and 2 (mov w8,#6; b)"
+     },
+     "0x493c4d8": {
+      "new": "0x4a469a4",
+      "verdict": "shape",
+      "evidence": "match engine 0x493c244 -> 0x4a467fc, event-kind case 3 (kind-3 = crossing; case address from the 30-entry halfword switch table, old 0x54052ec / new 0x54a05cc, entry 3 -> 0x493c7cc / 0x4a479bc): the dispatch: cmp w9,#0x1d; b.hi; adrp/add table; adr; ldrh; add; br; the same eight instructions, table and anchor addresses differ. All 30 table entries map to cases whose first four instructions are equal up to registers (work/kindswitch.py)"
+     },
+     "0x493c7cc": {
+      "new": "0x4a479bc",
+      "verdict": "shape",
+      "evidence": "match engine 0x493c244 -> 0x4a467fc, event-kind case 3 (kind-3 = crossing; case address from the 30-entry halfword switch table, old 0x54052ec / new 0x54a05cc, entry 3 -> 0x493c7cc / 0x4a479bc): team +0xd4 += 1 and player stats +0xb5 (CrossAttempts) += 1 when the player is set; the same seven instructions (the cbz target differs)"
+     },
+     "0x493c7e8": {
+      "new": "0x4a479d8",
+      "verdict": "shape",
+      "evidence": "match engine 0x493c244 -> 0x4a467fc, event-kind case 3 (kind-3 = crossing; case address from the 30-entry halfword switch table, old 0x54052ec / new 0x54a05cc, entry 3 -> 0x493c7cc / 0x4a479bc): flags & 0x218 selects the set-piece branch (team +0x148, side +0x14a, player +0xb7); old b.eq to the open-play path, new b.ne to the set-piece block (0x4a4832c, the same nine instructions as 0x493c7f8) and tbz bit 11 to the open-play path"
+     },
+     "0x493e7bc": {
+      "new": "0x4a47fc8",
+      "verdict": "shape",
+      "evidence": "match engine 0x493c244 -> 0x4a467fc, event-kind case 3 (kind-3 = crossing; case address from the 30-entry halfword switch table, old 0x54052ec / new 0x54a05cc, entry 3 -> 0x493c7cc / 0x4a479bc): linked kind > 0x14 -> completed; in mask 0x1c4200 -> no completion; in 6 -> the linked-outcome path; else completed. The same tests; 27.0.1 adds an unconditional branch to the linked path",
+      "length": 44
+     },
+     "0x493e700": {
+      "new": "0x4a47ff4",
+      "verdict": "shape",
+      "evidence": "match engine 0x493c244 -> 0x4a467fc, event-kind case 3 (kind-3 = crossing; case address from the 30-entry halfword switch table, old 0x54052ec / new 0x54a05cc, entry 3 -> 0x493c7cc / 0x4a479bc): unlinked event outcome +0x69: 0 -> completed, 6 -> linked path, other -> no completion (old cmp #6/b.eq/cbnz, new cbz/cmp #6/b.ne)"
+     },
+     "0x48930ac": {
+      "new": "0x494cfe0",
+      "verdict": "shape",
+      "evidence": "the event converter (kind, outcome) -> CBE category, 380 bytes on both builds: the same result on all 65,536 signed kind/outcome byte pairs, emulated on both builds (tests/test_retained_cross_271.py); kind 3 alone reaches categories 12..17 and outcome 0 gives 12. Its byte switch tables moved and changed (data 0x54023c4)"
+     },
+     "0x54023c4": {
+      "new": "0x549d594",
+      "verdict": "shape",
+      "evidence": "the converter's two byte switch tables (29 + 9 bytes and padding, 0x54023c4 / 0x54023ea -> 0x549d594 / 0x549d5ba): entries differ because the case blocks moved; their meaning is proven by emulating each build's converter with its own tables over all 65,536 inputs"
+     },
+     "0x54052ec": {
+      "new": "0x54a05cc",
+      "verdict": "shape",
+      "evidence": "the match engine's 30-entry halfword event-kind switch table: every entry differs because the cases moved; each of the 30 entries resolves to the case of the same kind, whose first four instructions are equal up to registers on both builds (work/kindswitch.py); kind 3 -> 0x493c7cc / 0x4a479bc, kind 28 -> 0x493c558 / 0x4a474b8"
+     }
+    },
+    "current_player_chance_quality_statistics.py": {
+     "0x493e900": {
+      "new": "0x4a47668",
+      "verdict": "registers",
+      "evidence": "the six instructions ldr x9,[side,#0x258]; ldr x8,[side,#0x250]; sub; cmp slot, x9, asr #3; b.hs; ldr x23,[x8,slot,lsl #3] with side x19 -> x25 and slot x11 -> x28 (x23 = the shooter, used by the xG block 0x493eae8 -> 0x4a47870)"
+     },
+     "0x493eae8": {
+      "new": "0x4a47870",
+      "verdict": "registers",
+      "evidence": "as retained_shot_values.py 0x493eae8: the xG / NPxG accumulation, the same instructions with x25 for x19 as the team-stats base"
+     }
+    },
+    "native_motion_cache.py": {
+     "0x47d46c4": {
+      "new": "0x486a34c",
+      "length": 1440,
+      "verdict": "shape",
+      "evidence": "cached player motion getter 0x47d46c4 -> 0x486a34c (the only 27.0.1 function called from both unchanged callers 0x44eb00c/0x44eb188 at the call index where 27.0.0's 0x44d0fe8/0x44d1164 call 0x47d46c4). Rewritten: the generation path (old bl 0x47d0688 with the motion copied to the stack) is set up inline and calls 0x486a8ec/0x486d6c8. The paths native_motion_cache mirrors are the same instructions: start = [x0,#0x180]; start > tick -> ring x0+0x100+32*(max(tick,0)&3) (0x486a560..0x486a578); end = [x0,#0x188] >= 0 and >= tick -> buffer [x0,#0xf0] + 32*(tick-start) (0x486a3d0..0x486a3f0); 25 bytes copied (ldr q0 / ldur q1 #9). end < 0 with [x0,#0x54] >= tick takes the buffer path on both builds; end < tick returns the last buffered row on both (old via 0x47d4640, new inline); the mirror refuses both. Both builds' getters emulated over 1,200 synthetic motion objects copy the same bytes, equal to the mirror's (tests/test_frame_271.py). Re-derived as the whole 27.0.1 function (1440 bytes)."
+     }
+    },
+    "native_motion_world_basis.py": {
+     "0x4abd9dc": {
+      "new": "0x49b2744",
+      "length": 1480,
+      "verdict": "shape",
+      "evidence": "see values 0x4abd9dc: the whole standalone producer 0x49b2744 (1480 bytes); its seven inlined copies are under 0x4ab4df8"
+     },
+     "0x4ab1f78": {
+      "new": "0x499d6fc",
+      "length": 6572,
+      "verdict": "shape",
+      "evidence": "see values 0x4ab1f78: 0x499d6fc..0x499f0a8 (6572 bytes), the standalone per-entity updater with its inlined copy at 0x499d83c and the delta applier through its inlined copy at 0x499f090"
+     },
+     "0x4ab4df8": {
+      "new": "0x4990b0c",
+      "length": 10704,
+      "verdict": "shape",
+      "evidence": "see values 0x4ab4df8: 0x4990b0c..0x49934dc (10704 bytes), the seven inlined per-entity updates of the frame constructor"
+     },
+     "0x47d46c4": {
+      "new": "0x486a34c",
+      "length": 1440,
+      "verdict": "shape",
+      "evidence": "cached player motion getter 0x47d46c4 -> 0x486a34c (the only 27.0.1 function called from both unchanged callers 0x44eb00c/0x44eb188 at the call index where 27.0.0's 0x44d0fe8/0x44d1164 call 0x47d46c4). Rewritten: the generation path (old bl 0x47d0688 with the motion copied to the stack) is set up inline and calls 0x486a8ec/0x486d6c8. The paths native_motion_cache mirrors are the same instructions: start = [x0,#0x180]; start > tick -> ring x0+0x100+32*(max(tick,0)&3) (0x486a560..0x486a578); end = [x0,#0x188] >= 0 and >= tick -> buffer [x0,#0xf0] + 32*(tick-start) (0x486a3d0..0x486a3f0); 25 bytes copied (ldr q0 / ldur q1 #9). end < 0 with [x0,#0x54] >= tick takes the buffer path on both builds; end < tick returns the last buffered row on both (old via 0x47d4640, new inline); the mirror refuses both. Both builds' getters emulated over 1,200 synthetic motion objects copy the same bytes, equal to the mirror's (tests/test_frame_271.py). Re-derived as the whole 27.0.1 function (1440 bytes)."
+     }
+    },
+    "frame_attacked_goal_basis.py": {
+     "0x4abce24": {
+      "new": "0x498fd30",
+      "length": 124,
+      "verdict": "shape",
+      "evidence": "see values 0x4abce24: 0x498fd30..0x498fdac (124 bytes): the tick into record +4 and the byte match+0x1555a into record +8, through the base match+0x14a04 held in [sp,#0xb0]"
+     },
+     "0x4ab33fc": {
+      "new": "0x498ff64",
+      "verdict": "registers",
+      "evidence": "see values 0x4ab33fc: the same seven instructions, record at sp+0x1c0 with x27 for x28, one store moved before the constant"
+     },
+     "0x4abd804": {
+      "new": "0x49901d4",
+      "length": 36,
+      "verdict": "shape",
+      "evidence": "see values 0x4abd804: match+0x15418 != match+0x15370 into record +2, through the base match+0x14a04; 36 bytes 0x49901d4..0x49901f8"
+     },
+     "0x4ab35f4": {
+      "new": "0x49902d4",
+      "verdict": "registers",
+      "evidence": "see values 0x4ab35f4: the same four instructions, the record at sp+0x1a0 instead of sp+0x78"
+     },
+     "0x4548640": {
+      "new": "0x4891f64",
+      "length": 32,
+      "verdict": "shape",
+      "evidence": "the setter's eight instructions inlined at 0x4891f64 with x22 for x0 (see values 0x4548640); 32 bytes, without the ret"
+     },
+     "0x495c740": {
+      "new": "0x4a6ae98",
+      "verdict": "registers",
+      "evidence": "see values 0x495c740: the same 10 instructions, x22/w26 for x23/w19"
+     },
+     "0x495d9e4": {
+      "new": "0x4a6c370",
+      "verdict": "registers",
+      "evidence": "original feature-selector loop 0x495d6c8 -> 0x4a6c054 (data match 1.0): the 40 instructions 0x495d9e4..0x495da84 select the same input per feature code (1 -> [x1,#0x1c], 2 -> #0xc, 3 -> #0x10, 4 -> #0x14, 5 -> #0x20, 6 -> s1, 0 -> #0x18, other -> 0.0), multiply by the next weight [x13],#4 and accumulate; 27.0.1 moves the code-0 block after the code-3 block (0x4a6c3e8..0x4a6c3f4); every code reaches the same load on both builds"
+     },
+     "0x48db578": {
+      "new": "0x49d356c",
+      "verdict": "registers",
+      "evidence": "bounded xG producer 0x48db4d4 -> 0x49d34c8 (call order 0.865): the 127 instructions 0x48db578..0x48db774 are the same at 0x49d356c up to register allocation and spill slots (w26 kept in x21 instead of [sp,#0x34]; [sp,#0x38] -> [sp,#0x18]; s3 -> s6 and one q spill dropped; [sp,#0x140] -> [sp,#0x120]) and ADRP page offsets: the constants 90.0 and 180.0 at 0x5402e70 (-> 0x549e060, the same 16 bytes) and the i16 table global 0x56d6828 + 0x25990 (-> 0x5772858 + 0x25990, zero in both files and filled at run time, indexed the same way)"
+     }
+    },
+    "fixture_rules.py": {
+     "0x22c1e90": {
+      "new": "0x22d10d0",
+      "verdict": "shape",
+      "evidence": "the substitution-ceiling call site in 0x22c1e50 -> 0x22d1090: the same 46 instructions 0x22c1e90..0x22c1f74 = 0x22d10d0..0x22d11b0 (signed code at fixture +0x3e and away = fixture +8 != team to the named-cap helper, min with the fixture's virtual +0xb0, the 0xff store, the rule-text branch on +0x54/+0x38/+0x39, the +0x125 byte store) apart from the ADRP page offset of one global (0xa08 -> 0xa30) and one stack spill (str x20,[sp,#0xc0]) moved out of the block; the span's last two words fall in the following block, which 27.0.1 rewrote (a vector-size helper call instead of the inline ldp/subs); no field the decoder reads is involved"
+     },
+     "0x48f9da4": {
+      "new": "0x49ff414",
+      "verdict": "shape",
+      "evidence": "the used-substitute cap helper 0x48f9da4 -> 0x49ff400 (5-instruction prologue returning 5 for codes 0x38..0x40, then the same `cmp w0,#0x5a; b.hi; ldrb table[code]; br` dispatch at 0x49ff414 and the same case bodies re-laid out, plus a second 15 case). Emulated on both builds over every signed code -128..127 with away 0 and 1 (512 calls each, tests/test_four_tools_271.py): identical results, and equal to fixture_rules.substitutions; the guard covers 0x49ff414..0x49ff4ac, the dispatch and every case"
+     },
+     "0x54037d9": {
+      "new": "0x549e9a9",
+      "verdict": "shape",
+      "evidence": "the used-cap helper's byte jump table (91 entries, read by add x9,#0x9a9 at 0x49ff42c): the case offsets differ because the case bodies moved (33 of 91 bytes); the code -> cap mapping is unchanged for every code, proven by emulating both helpers (see 0x48f9da4). The mirror keeps its own table (USED, USED_RESULTS) and is equal to both builds"
+     }
+    },
+    "league_player_ranking.py": {
+     "0xf5301c": {
+      "new": "0xf566c8",
+      "verdict": "shape",
+      "evidence": "the whole function, 2,580 bytes on both builds (0xf566c8..0xf570dc): all 645 instructions pair with registers unmasked; two out-of-line blocks (mov w28,#0; b +0xb0 and sub w8,w8,w9; b) swapped places, every internal branch targets the paired instruction, the 11 calls are in the same places, and the one differing immediate is the page offset of a float constant (ldr s1,[x8,#0xfb4] -> #0x634, base from ADRP)"
+     }
+    },
+    "live_player_match_form.py": {
+     "0x153f518": {
+      "new": "0x15471c8",
+      "verdict": "shape",
+      "evidence": "the whole function, 2,388 bytes on both builds (0x15471c8..0x1547b1c): 597 instructions each, the same with registers unmasked; two out-of-line tails moved (sub w8,w8,w10; b -> the sxtb block, and the guard-variable release; b -> the adrp +0x250 block), each branch still reaching its paired target; the 13 differing immediates are all ADRP page offsets of globals and strings; the calls (0x153ef98 and the runtime helpers) in the same places"
+     }
+    },
+    "native_player_changes.py": {
+     "0x4a7a9bc": {
+      "new": "0x48dea28",
+      "verdict": "shape",
+      "length": 36,
+      "evidence": "SUBSTITUTION_TACTIC_CHANGE constructor inlined into the factory (case code 4): the same nine stores (clock +8 = -1, +0xc word 0xffff0400 = code 4 at +0xd, side/on -1, +0x10 = 0xff, vtable 0x573b7e0) without the ret; the change factory 0x4a8b248 -> 0x48de720 (callers 0x4a8b52c/0x4a8bb10 -> imports match) inlines the five small constructors on 27.0.1; emulating both factories for type codes 0..63 gives the same class (RTTI) and the same 16 initial bytes for every code (tests/test_player_changes_271.py)"
+     },
+     "0x4a799dc": {
+      "new": "0x48deac4",
+      "verdict": "shape",
+      "length": 36,
+      "evidence": "PLAYER_PUT_ON constructor inlined into the factory (case code 22): clock -1, vtable 0x573b628, +0xc word 0xffff1600 (code 22 at +0xd), +0x10 = 0xff, in another order; the change factory 0x4a8b248 -> 0x48de720 (callers 0x4a8b52c/0x4a8bb10 -> imports match) inlines the five small constructors on 27.0.1; emulating both factories for type codes 0..63 gives the same class (RTTI) and the same 16 initial bytes for every code (tests/test_player_changes_271.py)"
+     },
+     "0x4a7aa5c": {
+      "new": "0x48938e8",
+      "verdict": "shape",
+      "length": 20,
+      "evidence": "SUBSTITUTION apply: side +0x140 slot table indexed by +0x10 and +0xf; 27.0.1 inlines the byte getters 0x16c16e8 ([x0,#1] of obj+0xf) and 0x16c16e0 ([x0] of obj+0xf) as ldrsb [x20,#0x10] / [x20,#0xf]; the same two slots, then both pointers tested non-null"
+     },
+     "0x4a79a54": {
+      "new": "0x4891d68",
+      "verdict": "shape",
+      "length": 32,
+      "evidence": "PLAYER_PUT_ON apply (0x4a79a04 -> 0x4891d20): side +0xe -> engine +0x15370 side, on slot +0xf through side +0x140; the +0x140 is added before the indexed load instead of after"
+     },
+     "0x48bd7bc": {
+      "new": "0x49b4d58",
+      "verdict": "registers",
+      "length": 24,
+      "evidence": "the change-vector clearer: x0 +0x38 (engine) non-null -> engine +0x147f0 (the vector the decoder reads) tail-called; the null branch inverted (cbnz/ret -> cbz to a ret at the end)"
+     },
+     "0x4a8b248": {
+      "new": "0x48de720",
+      "verdict": "shape",
+      "length": 60,
+      "evidence": "the factory prologue and type-code switch: 27.0.1 tests code - 1 <= 0x1b (null for 0 and above 0x1c, as the pinned table did); the change factory 0x4a8b248 -> 0x48de720 (callers 0x4a8b52c/0x4a8bb10 -> imports match) inlines the five small constructors on 27.0.1; emulating both factories for type codes 0..63 gives the same class (RTTI) and the same 16 initial bytes for every code (tests/test_player_changes_271.py)"
+     }
+    },
+    "native_player_removal_source.py": {
+     "0x4a796d0": {
+      "new": "0x48dea58",
+      "verdict": "shape",
+      "length": 28,
+      "evidence": "INJURE_PLAYER constructor inlined (case code 11): clock -1, vtable 0x573b578, +0xc word 0xffff0b00; the change factory 0x4a8b248 -> 0x48de720 (callers 0x4a8b52c/0x4a8bb10 -> imports match) inlines the five small constructors on 27.0.1; emulating both factories for type codes 0..63 gives the same class (RTTI) and the same 16 initial bytes for every code (tests/test_player_changes_271.py)"
+     },
+     "0x4a7a414": {
+      "new": "0x48de764",
+      "verdict": "shape",
+      "length": 36,
+      "evidence": "PLAYER_TAKEN_OFF constructor inlined (cases 6 and 18): clock -1, +0xc = 0, +0xd = the type code (w20 = the factory argument, w1 before), +0xe halfword 0xffff, vtable 0x573b6d8 stored by the shared str at 0x48dea48; the change factory 0x4a8b248 -> 0x48de720 (callers 0x4a8b52c/0x4a8bb10 -> imports match) inlines the five small constructors on 27.0.1; emulating both factories for type codes 0..63 gives the same class (RTTI) and the same 16 initial bytes for every code (tests/test_player_changes_271.py)"
+     },
+     "0x4a7a45c": {
+      "new": "0x4892e28",
+      "verdict": "shape",
+      "length": 44,
+      "evidence": "PLAYER_TAKEN_OFF apply (0x4a7a43c -> 0x4892df0): side +0xe, slot +0xf through side +0x140, then the player byte +0x1e26 (27.0.1: add #0x1000 then ldrb #0xe26) compared with 5"
+     },
+     "0x4a7a494": {
+      "new": "0x4892e64",
+      "verdict": "shape",
+      "length": 20,
+      "evidence": "PLAYER_TAKEN_OFF apply: code byte +0xd read, requested status = 5 if code 6 else 3 (mov 3, mov 5, cmp #6, csel), computed here on 27.0.1 instead of next to the call"
+     },
+     "0x4a7a4b4": {
+      "new": "0x4892f54",
+      "verdict": "shape",
+      "length": 36,
+      "evidence": "PLAYER_TAKEN_OFF apply: the status request call with engine +0x12f30, x6 = sp, w5 = the selected status, w7 = 0 to the status setter 0x4563538 -> 0x458b6f8 (the same 12 callers in the matched functions)"
+     },
+     "0x4a7a814": {
+      "new": "0x48de814",
+      "verdict": "shape",
+      "length": 28,
+      "evidence": "SEND_OFF_PLAYER constructor inlined (case code 12): clock -1, vtable 0x573b788, +0xc word 0xffff0c00 stored by the shared str s0 at 0x48dea70; the change factory 0x4a8b248 -> 0x48de720 (callers 0x4a8b52c/0x4a8bb10 -> imports match) inlines the five small constructors on 27.0.1; emulating both factories for type codes 0..63 gives the same class (RTTI) and the same 16 initial bytes for every code (tests/test_player_changes_271.py)"
+     },
+     "0x4a7a85c": {
+      "new": "0x48935b8",
+      "verdict": "shape",
+      "length": 40,
+      "evidence": "SEND_OFF_PLAYER apply (0x4a7a834 -> 0x48935b0): side +0xe, slot +0xf through side +0x140, engine +0x12f30 (add #0x12000, #0xf30 instead of mov/movk 0x12f30); the event-record helper 0x4a65be8 is inlined after it"
+     },
+     "0x4a7a89c": {
+      "new": "0x4893664",
+      "verdict": "shape",
+      "length": 16,
+      "evidence": "SEND_OFF_PLAYER apply: mov x6,sp; mov w5,#2 (requested status 2); mov w7,#0; bl status setter 0x458b6f8 (counterpart of 0x4563538); x0 = the player, x1..x4 the apply arguments as before"
+     }
+    }
+   }
+  }
+ }
+}

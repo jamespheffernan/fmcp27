@@ -1,0 +1,3342 @@
+[
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 0,
+    "raw_hex": "0100009a0f2c14da0267007800221c1c1c1c1e211e210c09030a110b06080f110e0c010d39080c06060902010a030a130a193939392135052b1e2828301e370530344b053c37142d4b0f0f64020000c53c08002d0f000000000000ffffffffffffffff0100000001006c0722ff02010104b801006c0701006c0701010100048300000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff000001010200011b09011f0900000000000100010100020000240e00000000000000000000000001006c079932ed070a008841000005000100000000000000000000000001006c07ffffffffffffffff00000002ffffffff19000e00ffffffff19000500000000000000ff0304000000000000006c07000000000000ffffffffffffffffb500ef079932ed0700000040000000000000009932ed0757e214ff000000000000000000000001006c070000000000ce00000000000000d7030000220000ffffffff000209000000000000000a070000000000000005000000000103030a09041401010106050101010100000000d500b0070001006c0701006c07ffffffffffffffff01006c07020000000000000000c9590000009e6a000000ffffffff0000000000d500b0070600070102000000030183000000000000000b09130b0f0f040b14000000000000000104f12800000000000003000301644f00ffa91c00000000000006000301504f00ff5f0000000000000002000103464f00ff2a00000000000000020001033c4f00ff00000000ff01ff0000000002581000000000000000000900000009000000",
+    "expected": {
+      "ordinal": 0,
+      "signed_tag": 1,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_NON_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 22985,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 27294,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 0,
+      "native_id_word": 9,
+      "secondary_word": 9
+    },
+    "source_tag_offset": 5,
+    "source_end": 598
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 1,
+    "raw_hex": "10001a5a0000dd6900000102401000000000010000000e0000000e000000",
+    "expected": {
+      "ordinal": 1,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x20",
+          "namespace": "first",
+          "raw_index": 23066,
+          "state": "unresolved_name_reference"
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "second",
+          "raw_index": 27101,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 0,
+        "raw_field20_u32": 23066,
+        "raw_field28_u32": 27101,
+        "final_flags_u64": 272630273
+      }
+    },
+    "identity": {
+      "stored_index": 1,
+      "native_id_word": 14,
+      "secondary_word": 14
+    },
+    "source_tag_offset": 598,
+    "source_end": 628
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 81,
+    "raw_hex": "1001964c01000102403000000000510000005504000055040000",
+    "expected": {
+      "ordinal": 81,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x28",
+          "namespace": "common",
+          "raw_index": 85142,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 1,
+        "raw_field20_u32": null,
+        "raw_field28_u32": 85142,
+        "final_flags_u64": 809501185
+      }
+    },
+    "identity": {
+      "stored_index": 81,
+      "native_id_word": 1109,
+      "secondary_word": 1109
+    },
+    "source_tag_offset": 32682,
+    "source_end": 32708
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 348,
+    "raw_hex": "04a30500000000000050005000b70f0f0a1212140a1200000a01040052e52aee070000ac0100000101047500008f74000001000049ec2aee070000ac0100000100267500009174000001000049f32aee070000ac010000000163740000f874000001030058fa2aee070000ac0100000202be7400009781000001030050006bee070100451b00000302457500003975000001000049034bee0700005f150000010023900000f190000001000053082bee070000ac0100000202877400008f74000001000049114bee0700005f150000020022750000c874000001000049162bee070000d31800000101c88f0000b0740000010300581d2bee0700005615000001014c7500007b74000001000000861ebe010000000001006c0700e03d010000199c030000ffffffff0000000000f000cb07ff0007010100000003018b000000000000000a0a0a0a0a0a0a0a1004000000000000000000010010010000005c010000e8140000e8140000",
+    "expected": {
+      "ordinal": 348,
+      "signed_tag": 4,
+      "state": "decoded",
+      "source_record_kind": "OFFICIAL",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 81376,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 236569,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 348,
+      "native_id_word": 5352,
+      "secondary_word": 5352
+    },
+    "source_tag_offset": 141749,
+    "source_end": 142110
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 1488,
+    "raw_hex": "037316e317e11173007d007300ff037e7d00ffffffffffca040000000000001401010101010101010101010101010a1905260f19052f05192d414f3f403752352e4a4b4330212d640f0d3e3e0f2832412712412c32583214454253322a1e1e4746323e3d432c0a0001b600e90701006c07e4252d0098210000000000ff777d02c40002510f75bd000c000000000000ff00000000ff00ff00ffffffff0c071e329c9c9c9c9c9c9c0000010000003afc000103ff000001006c07ff00000002000000ff03000e780000990000009901ff1601000000000000010700f8ff0001006c070001006c0701006c07ff00000000001234f400ffffffff941100000100000000c300000000005d01af004901af00af0000000000c300af00af000000000000ca040000ffffffff1d63ee072b63ee070000ff7a00000300000001ffff00000301ffff00000301ffff000003300003000100005a8000350c000201ff00005b106b14620b430078000004230404162320040c0208020a10100a0706060b08083204080e0d09030c0d0409070d28232a2b21220a16080d121c12225f0a05280f554614052d2805ffffffffffffffffffffffffffffffffffffffffffffffff0000000001006c0700ff000101030001006c0701006c0701010300048100000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff64049100000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff6404a700000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff0100000109551054125a0a5b11480c4d024e135f076011000000000100000200011000180b00000000000000000000000001006c07b600e9070a000f00000005000185ef0100cb570000000000000212ed07ffffffffffffffff00000004c3030000ffff2000c3030000ffff2200f0000000ffff2600ffffffff01001600000000000000ff030400000000000000ec07000000000000ffffffffffffffff9700ef07b600e9070202020000000000000000a22aeb071464600100001e000000000000000001006c0700d0050000ca04000000000000d0120000010000ffffffff000107000000000000000a0000000001070c0f01010e01010514080401010600000000b600e9070201006c0701006c0726830000ffffffff051aed070600000000000000001e54000000344a000000ffffffff00000000005601cb070a00090104000000030181000000000000000e0b0f0e0c0e0c07a408000000000000010781000000000000000000084601ff00ff25010000000000004b0107121b5a00ff3d020000000000000000014801ff00ff91000000000000000000084601ff00ffca0400000000000000000419000000ffca0400000000000000000443000400ff08040000000000000000016a041e08ff02000000a7000000026401080400000164000101ff0a00760067e21a000000220278f402000000fc04006f02000000da028acb16000000d902ac8c260000005e01cd2b26000000dc16005f020000009008dd0a0c0000008d070085020000008d0700ca04000000000622781004000000d0050000b1360300b1360300",
+    "expected": {
+      "ordinal": 1488,
+      "signed_tag": 3,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_PLAYER_AND_NON_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 21534,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 18996,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 1488,
+      "native_id_word": 210609,
+      "secondary_word": 210609
+    },
+    "source_tag_offset": 590855,
+    "source_end": 592032
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 1512,
+    "raw_hex": "021c1167127c085e0078005e021102767900ffffffffffc6040000000000000101140e0101010101010101011202312c2331273c313918402c050f0f050a0f3b380f410f3738642323373b3c20050a0539272f343a311e2336464841352d14473d2d3c3ed6360000089732ee0701006c07542448001c250000000000ff627802b400022aafa1bd100c000000010100ff000000ffff00ff00ffffffff0c07189c2324241b04fbd801020204057503c458ed07caff030001000e0d10011405c458ed070405b801bf7cee074c0002000200020112011405c47cee07000000000000000002000000ff030009780000160000006f00ff1701000000000000070500fdff0001006c070001006c0701006c07ff01000000008502000000000000ae02000001010001000b000900090048010b004801b6000b00010001000b000b00b60001000000010538060000ffffffff4601000046010000ae020000000000000907c4020000470003002303da05e44000000000000000000000ffffffff000000000000000000000000c6040000ffffffff1f23ee072b53ee070000090d01000300000001ffff00000301ffff00000301ffff0000035c0019000702005a802c02030a090bff10c0140400000000000000000000020001006c079732ee070a01bf2500002f700000050001f109000065010000000000009732ee07ffffffffffffffff000000057f000000ffff20005f000000ffff22001f000000ffff2600ffffffff19000b00ffffffff01001600000000000000ff030400000000000000ef07000000000000ffffffffffffffff9700ef079732ee0703000300000000000000009732ee07145930ff000008000000000000000001006c0700e8050000c6040000000000007f020000010000ffffffff01ff020101bf250000816967ff000000000000000001006c0700000600000000000000000000000200000007010301011604000007010301011404000000000000009732ee070001006c0701006c07be090000058a0100ad32ec0700000000000000000055570100009af8030000ffffffff00000000006001cd0707000901040000000301a7000000000000000a0a0a0a0a0a0a0a833700000000000001078b0000000000000000000809645000ff8b000000000000000000080e645000ff74010000000000000000014801ff00ff8b000000000000000000084601ff00ff14040000000000000000016a091e03ff140400000000000000000169051e00ff04040000000000000000016a031e0aff020000001404000001350004040000013200ff01ff0c00c4066bf701000000970000d1010000000c02bdd7010000000202dd4a020000007300004102000000960000de010000009f18006902000000da02001a0200000016041dd804000000c7024dd60400000064070085020000018a00602306000000000002781004000000e8050000af490300af490300",
+    "expected": {
+      "ordinal": 1512,
+      "signed_tag": 2,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 87893,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 260250,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 1512,
+      "native_id_word": 215471,
+      "secondary_word": 215471
+    },
+    "source_tag_offset": 608269,
+    "source_end": 609335
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 1818,
+    "raw_hex": "10003ec40100c452040001024110000000001a0700001224080012240800",
+    "expected": {
+      "ordinal": 1818,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x20",
+          "namespace": "second",
+          "raw_index": 115774,
+          "state": "unresolved_name_reference"
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "first",
+          "raw_index": 283332,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 0,
+        "raw_field20_u32": 115774,
+        "raw_field28_u32": 283332,
+        "final_flags_u64": 272695809
+      }
+    },
+    "identity": {
+      "stored_index": 1818,
+      "native_id_word": 533522,
+      "secondary_word": 533522
+    },
+    "source_tag_offset": 736014,
+    "source_end": 736044
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 9998,
+    "raw_hex": "010000f615f615a40778008c002e1d1c1d1d161616210c0c10080b020f0c03020c0804104b0f0b0b0b0f0e06040c080d0f3c192f3532195a25281e3c282826374b23280f234b50194b1423c0060000ba0000009100000000000000ffffffffffffffff0000000001006c0700ff0001010300b700e40701006c0700000000000000010002000000010000350000000000000000000000000001006c07b700e4070a00ffffffff05050e2700009300000000000000c006000026ac00ffffffff0002090000000000000005070000000000000005000000000000000000b700e4070001006c0701006c07ffffffffffffffff01006c07000000000000000000395a000000d86a000000ffffffff0000000000bd00bd0706000c010200000003018300000000000000080c120b0b0a130301000000000000000101350000000000000004000103644e00ff00000000ff01ff00000000015010000000000e2700004006140140061401",
+    "expected": {
+      "ordinal": 9998,
+      "signed_tag": 1,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_NON_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 23097,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 27352,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 9998,
+      "native_id_word": 18089536,
+      "secondary_word": 18089536
+    },
+    "source_tag_offset": 4620013,
+    "source_end": 4620372
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 9999,
+    "raw_hex": "010000ab0e1f12680473007300221c07231c1e1623210c080702010f0f0e0713070408083c0d0c070b0906110d0b0a1009463c302f3a440a1e0a23143223145a3d3d4b05234b0f0f190f05d305000000010000c900000000000000ffffffffffffffff0100000001006c0700ff02010103afb600e90701006c0701010100048300000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff000001010200011b09011f09000000000001010101000000406d0000000000000000000000000001006c07b600e9070a00e971000005000100000000000000000000000001006c07ffffffffffffffff00000001ffffffff19000f00000000000000ff0304000000000000006c07000000000000ffffffffffffffffb500ef07b600e90700000000000000000000009732ed0719e214ff000000000000000000000001006c07000f270000d0000000000000006b060000220000ffffffff0002070000000000000002090000000000000004000000000108040a070614010101030803010101000000006000cd070001006c0701006c07ffffffffffffffff01006c07010000000000000000f35a0000006b69000000ffffffff00000000006000cd0706000b0103000000030183000000000000000a0b0c0e090b0b0401000000000000000101462700000000000002000301644f00ff00000000ff01ff00000000025810000000000f2700004606140146061401",
+    "expected": {
+      "ordinal": 9999,
+      "signed_tag": 1,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_NON_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 23283,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 26987,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 9999,
+      "native_id_word": 18089542,
+      "secondary_word": 18089542
+    },
+    "source_tag_offset": 4620372,
+    "source_end": 4620909
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 10000,
+    "raw_hex": "1000059c0200783d05000122401000000000102700004c0614014c061401",
+    "expected": {
+      "ordinal": 10000,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x20",
+          "namespace": "first",
+          "raw_index": 171013,
+          "state": "unresolved_name_reference"
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "second",
+          "raw_index": 343416,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 0,
+        "raw_field20_u32": 171013,
+        "raw_field28_u32": 343416,
+        "final_flags_u64": 272638465
+      }
+    },
+    "identity": {
+      "stored_index": 10000,
+      "native_id_word": 18089548,
+      "secondary_word": 18089548
+    },
+    "source_tag_offset": 4620909,
+    "source_end": 4620939
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 10001,
+    "raw_hex": "1000dd5900005d6d00000102401001000000112700005206140152061401",
+    "expected": {
+      "ordinal": 10001,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x20",
+          "namespace": "first",
+          "raw_index": 23005,
+          "state": "unresolved_name_reference"
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "second",
+          "raw_index": 27997,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 0,
+        "raw_field20_u32": 23005,
+        "raw_field28_u32": 27997,
+        "final_flags_u64": 4567597569
+      }
+    },
+    "identity": {
+      "stored_index": 10001,
+      "native_id_word": 18089554,
+      "secondary_word": 18089554
+    },
+    "source_tag_offset": 4620939,
+    "source_end": 4620969
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 41382,
+    "raw_hex": "022f113011750965008900a009ff0479700007ffffffffa4730000000000000101010101010c0101140c0f0101012e2c17063014362515193c0a0f05140f0a333d0510144a4e643448223b3214050f0a43251243490f161e482826233e1e2d374e4b261fedc521001001006c0701006c077d190000e8260000000000ff658902a8000300000000120c000000020201000101000101000102ffffffff0c072d9c1c032d2d2d1af60102010405061a2a1bec070a0000000000141414001a052a1bec0701010b0000000501c01aee07011801000000000000000504d01aee0701000509d01aee0701000516ef1aee07010b01000000010206000000050aef1aee0701000509ef1aee070100051f061bee0701181000000000000000050d0e1bee07010005250e1bee070100050a0e1bee07010005090e1bee070100000000000001031033330e1bee07107a050101461aed070000000000002d3502000000ff0400000000000000000003000215010000000000000e110001000001006c070001006c0701006c07ff000000000044010000ffffffffffffffff01000000000100000000000100000000000000000000000000010000000000010000000000000001011401060100000600000001c078ee076e190000f70100000c0001c678ee076e190000f70100000c0001d152ee07010100007c0000000c0001df52ee07010100007c0000000c0001f452ee070b0100007c0000000c00010253ee07000100007c0000000c0000000000000006010000ffffffff0e1bee078088ee070000070601000300000001ffff00000301ffff00000301ffff000003540019000c05001380072d31262729ff0000ffffffffffffffff00000000000001006c074d01e8070a00e61b01000500017616000071080000000000009b32ee07ffffffffffffffff0000000910000000ffff200039000000ffff27000b000000ffff2600ffffffff05000300a60200000f000d005104000019000d00ffffffff01001600568a2700ffff1000edc52100ffff1200000000000000ff030400000007040000ef07000000000000ffffffffa47300006d01f1070a01ec070a000a000000010000000725b30403ffffffffffffffff0212ed071b38ed070000000400000000009f2cee0750cd14ff000b00000000000000000001006c070ba6a1000006010000000000007f010000010000ffffffff00011700000000000000050000000000000000004d01e8070001006c0701006c07b23700004a8a01000f1bec070000001000000000002fc6020000ed9e0500002fc6020000000000007a00dc07ff0905010b0000000301bd00000000000000090d0b060b0a0910b3cd0000000000000105aa0000000000000001000103644e00ff501f00000000000006000301640000ffaa000000000000000000016a011e05ff060100000000000000000443021000ff060100000000000000000419020000ff01000000aa000000010100ff01ff0400640800ff040000006408500601000002680500ff040000026805000601000000000802405004000000a6a100007423377774233777",
+    "expected": {
+      "ordinal": 41382,
+      "signed_tag": 2,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 181807,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 368365,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": 181807,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 41382,
+      "native_id_word": 2000102260,
+      "secondary_word": 2000102260
+    },
+    "source_tag_offset": 27536876,
+    "source_end": 27538013
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 49606,
+    "raw_hex": "02560f770fc90b58008a00740213046a660034ffffffff33750000000000000101140105010901011001010109012f25102d1f322320112e1d0a0f140a050f2a310f3e05263d64352814251c2e0f0f0a3d014640325b432d325f2d2d2c4b232d4e502a3d52341d000d2380ee0701006c07c8242eff28260000000000ff588a02c3000300000000000c00000000000001010000000000010054c902000c07329c323232322c09cd0102020405061a0b81ee071c00100005001001130114051579ee070405b7033a1aee070f000f000b00141414001a05f978ee070101070000000501de1aee07011802000000000000000504e71aee0701000509e71aee0701000504061bee0701000509061bee07010005271a1bee0701110005011a1bee0701180100000000000000000000000001031026250063ee07107a0501011a1bee0700000000eaff303002021b00010d00091100008a00000026010117010000101000000b0b0000000001006c070001006c0701006c07ff0900000000c705000054c90200c7070000010000000000000100010012000000120000000000000000000000000000000100000104b0020000a04d55770b0000000000000000000000110d00000000000061ed00000000000001006c07000105b00200006b905b0095d500004d660200c7070000000000000303b700000000000000000000000000001e0000128004000000ed080000000000000000010154c902009e010000bf010000237aee0701021401420200000100000001e170ee07f8010000960200000c001401337500000700000001f96aee0745750000451b000000010302080000003400340102020200000001000000000000005a4b3a3900000000040400026e4c0001006bee0705750000451b0000000001076bee07cb740000451b00000000010b73ee0766740000561b000000010302001000004f00070000060100030001000000000000005a3c2c250100000002010001874d00010e6bee07c9740000451b0000000001156bee0739750000451b000000010302001000000000070000000001030101010000000000005a4a1c140201010005050001774b00011c6bee0774740000451b00000000000000011f000000000000000000000001006c0700000001006c0701006c0701006c0701006c0701006c0700000a00ffffffffffffffffffffffff02ffffffff01006c0700000000000101ac12ec0701006c0700000000601f000002000000000001006c070001006c07ffffffff01006c07ffffffff000102040500000005f71801f7f0f0f0f0f0f0f0f0f0f0b512000005b73a01f7f0f0f0f0f0f0f0f0f0f02923000005b70301f7f0f0f0f0f0f0f0f0f0f06122000005061a0106f0f0f0f0f0f0f0f0f0f0730000000506200106f0f0f0f0f0f0f0f0f0f07f000000010000000a5b040000010000000a5b040000010000000a5b040000010000000a5b040000010000000a5b040000010000000a5b0400001c61ee070133750000ffffffff2033ee071e79ee0700006d9000000300000001ffff00000301ffff00000301ffff0000035e0019001b0b005a8034022c0b090aff00009e0100000000000000000000000001006c072380ee070a00efce000005000104480000e00f0000f0070000b61aee07ffffffffffffffff00000008ffffffff19000e00ffffffff19000500e3030000ffff2000f8000000ffff220097020000ffff26005e0a00000f000d009610000019000d00ffffffff01001600000000000000ff03040000000a000000ee07000093000000ffffffffffffffffb600f0072380ee070a0b0b02000500000000002380ee073ca314ff001f00000000000000000101006c071fc6c1000042020000000000007b060000010000ffffffff000107000000000000000a000000000000000000d934ed070001006c0701006c0772aa0000fc8901006d1aea07000000000000000000e2c0020000589d050000e2c0020000000000007400da07ff010f020d0000000301bd000000000000000c0a0f0e0d0d120418e20000000000000107a20000000000000000000809645000ffbd000000000000000000084602ff00ffc20300000000000001000103644e00ffa2000000000000000000084602ff00ffc2030000000000000000014801ff00ff210200000000000001000475000600ff9e0100000000000000000169021e00ff01000000bf010000010400ff01040a402207008002000000f909008002000000f909598404000002470700800200000247070084040000000100992102000000fd00006902000000fe00904202000002fd00006902000002fd00003375000000000c02405000000000c6c1000042eb387742eb3877",
+    "expected": {
+      "ordinal": 49606,
+      "signed_tag": 2,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 180450,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 367960,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": 180450,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 49606,
+      "native_id_word": 2000218946,
+      "secondary_word": 2000218946
+    },
+    "source_tag_offset": 34610042,
+    "source_end": 34611754
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 71529,
+    "raw_hex": "05000000000f000000466f74617120537472616b6f736861000040000000000069170100a4b85477a4b85477",
+    "expected": {
+      "ordinal": 71529,
+      "signed_tag": 5,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_STRINGS",
+      "names": null,
+      "stored_name_strings": [
+        {
+          "start": 54409014,
+          "end": 54409018,
+          "native_offset": "0x20",
+          "byte_count": 0,
+          "raw_hex": "",
+          "text": "",
+          "text_state": "utf8",
+          "null_vs_empty_distinguished": false
+        },
+        {
+          "start": 54409018,
+          "end": 54409037,
+          "native_offset": "0x28",
+          "byte_count": 15,
+          "raw_hex": "466f74617120537472616b6f736861",
+          "text": "Fotaq Strakosha",
+          "text_state": "utf8",
+          "null_vs_empty_distinguished": false
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 71529,
+      "native_id_word": 2002040996,
+      "secondary_word": 2002040996
+    },
+    "source_tag_offset": 54409013,
+    "source_end": 54409057
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 73009,
+    "raw_hex": "07890101006c07c40011ef9000000000400000000000311d01006cbe54776cbe5477",
+    "expected": {
+      "ordinal": 73009,
+      "signed_tag": 7,
+      "state": "decoded",
+      "source_record_kind": "VIRTUAL_PLAYER",
+      "names": null,
+      "native_fields": {
+        "0x16_u16_flags_raw": 393,
+        "0x10_13_raw_hex": "01006c07",
+        "0x18_u16": 196,
+        "0x1a_u8": 17,
+        "0x08_u32_raw": 37103
+      },
+      "optional_0c": {
+        "present": false,
+        "start": 54472052,
+        "end": 54472052,
+        "raw_word_u32": null
+      }
+    },
+    "identity": {
+      "stored_index": 73009,
+      "native_id_word": 2002042476,
+      "secondary_word": 2002042476
+    },
+    "source_tag_offset": 54472038,
+    "source_end": 54472072
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 93245,
+    "raw_hex": "08ffffffff38006dcc000000350b020000ffffffff00000000003301c807ff02050208020000030100000000000000000a0a0a0a0a0a0a0aa304000000000000010100000000000000000000083564ff00ff00000000ff01ff00000008010010000000003d6c0100780d5577780d5577",
+    "expected": {
+      "ordinal": 93245,
+      "signed_tag": 8,
+      "state": "decoded",
+      "source_record_kind": "SUPPORT_STAFF",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 52333,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 133941,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ],
+      "native_fields": {
+        "0x68_raw_reference_word_u32": 4294967295,
+        "0x71_u8": 56,
+        "0x70_u8": 0
+      }
+    },
+    "identity": {
+      "stored_index": 93245,
+      "native_id_word": 2002062712,
+      "secondary_word": 2002062712
+    },
+    "source_tag_offset": 55327542,
+    "source_end": 55327654
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 100604,
+    "raw_hex": "1201031110120000f51aee0700000000280000001a200000ff320000bb520000e15200008655000030560000e8560000315700000a580000d45800007082000003900000bd920000809e0000c5a0000007aa0000ffb000003ab1000056c600008ad0000044d400003ceb00008a0a0100550c0100e80c0100f00c0100ce0e0100cf0e0100f612010054170100a15a000088dd010049030200f6c800004ab8000021910000cbba0000450301003f150100e6a40000080000009d1aed073a01dd02611bed075e0e3d77641bed0798d73c77681bed0752e83a772a1aee079e343a775f1aee0719ac3b779c1aee073c2c3d77bc1aee072a5837770170cc000000540b020000ffffffff00000000006000c507ff02100209010300050100000000000000000a0a0a0a0a0a0a0a973c0000000000000119a01100000000000000000302140000ff6e1800000000000000000302150000ff870c00000000000000000302320000ff832e00000000000000000302180000ffef7400000000000000000302150000ff380200000000000000000302180000ff921d00000000000000000302170000ff551e00000000000000000302160000ff326100000000000000000302150000ff6b0600000000000000000302180000ff671700000000000000000302180000ffbf0100000000000000000302450000ff7b0c000000000000000003022e0000fffd5900000000000000000302140000ff6003000000000000000003022a0000ffe50700000000000000000302340000ff0e0d000000000000000003021a0000ff720000000000000000000302640000ff6c0500000000000000000302180000ff2d1600000000000000000302170000ff840c00000000000000000302160000ffc00400000000000000000302150000ffde7900000000000000000302140000ff2e1200000000000000000302160000ff4d12000000000000000003021a0000ff00000000ff01ff0000000802401000000000fc880100372a5577372a5577",
+    "expected": {
+      "ordinal": 100604,
+      "signed_tag": 18,
+      "state": "decoded",
+      "source_record_kind": "AGENT",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 52336,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 133972,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ],
+      "native_fields": {
+        "0xa0_i8": 1,
+        "0xa8_ad_raw_hex": "031110120000",
+        "0xa4_a7_raw_date_hex": "f51aee07",
+        "0xae_u8": 1
+      },
+      "nation_reference": {
+        "start": 55823780,
+        "end": 55823784,
+        "namespace": "NATION",
+        "transport": "conditional_full_loader_raw32",
+        "raw_word_u32": 0,
+        "identity_resolved": false
+      },
+      "reference_conditions": "NATION11182BC fullstream flagsbit1 and(root80A bit0 OR root80B bit0), local2C98=1. Writer root808/809 raw-index branch separately requires global2AF8!=1 for4B. Runtime globals are unobserved.",
+      "person_vector_summary": {
+        "count": 40,
+        "count_offset": 55823784,
+        "rows_start": 55823788,
+        "rows_end": 55823948,
+        "entry_bytes": 4,
+        "payload_state": "not_projected"
+      },
+      "date_word_vector_summary": {
+        "count": 8,
+        "count_offset": 55823948,
+        "rows_start": 55823952,
+        "rows_end": 55824016,
+        "entry_bytes": 8,
+        "payload_state": "not_projected"
+      }
+    },
+    "identity": {
+      "stored_index": 100604,
+      "native_id_word": 2002070071,
+      "secondary_word": 2002070071
+    },
+    "source_tag_offset": 55823768,
+    "source_end": 55824506
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 100605,
+    "raw_hex": "1201041310080000f51aec070100000011000000d07500006d8400008d890000539d000079b40000b9b60000335d0000bfee010031e30100cbee0100b5770000a2570000c9840000084d0000ce980000acfb0000b477000005000000a41aed07db6c6f05e91aed0724353d779a1aee07d77c48039a1aee07a5b93577b01aee07f765aa0501cb95020000f334050000ffffffff00000000005f01bd07ff03050211010000030101000000000000000a0a0a0a0a0a0a0a344f00000000000001077f00000000000000000003021d0000ff0b0c000000000000000003021a0000ff782400000000000000000302140000ff641f00000000000000000302160000ff870c000000000000000003021b0000ffc6e601000000000000000302480000ff0edd01000000000000000302180000ff00000000ff01ff0000000802401000000000fd880100382a5577382a5577",
+    "expected": {
+      "ordinal": 100605,
+      "signed_tag": 18,
+      "state": "decoded",
+      "source_record_kind": "AGENT",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 169419,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 341235,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ],
+      "native_fields": {
+        "0xa0_i8": 1,
+        "0xa8_ad_raw_hex": "041310080000",
+        "0xa4_a7_raw_date_hex": "f51aec07",
+        "0xae_u8": 1
+      },
+      "nation_reference": {
+        "start": 55824518,
+        "end": 55824522,
+        "namespace": "NATION",
+        "transport": "conditional_full_loader_raw32",
+        "raw_word_u32": 1,
+        "identity_resolved": false
+      },
+      "reference_conditions": "NATION11182BC fullstream flagsbit1 and(root80A bit0 OR root80B bit0), local2C98=1. Writer root808/809 raw-index branch separately requires global2AF8!=1 for4B. Runtime globals are unobserved.",
+      "person_vector_summary": {
+        "count": 17,
+        "count_offset": 55824522,
+        "rows_start": 55824526,
+        "rows_end": 55824594,
+        "entry_bytes": 4,
+        "payload_state": "not_projected"
+      },
+      "date_word_vector_summary": {
+        "count": 5,
+        "count_offset": 55824594,
+        "rows_start": 55824598,
+        "rows_end": 55824638,
+        "entry_bytes": 8,
+        "payload_state": "not_projected"
+      }
+    },
+    "identity": {
+      "stored_index": 100605,
+      "native_id_word": 2002070072,
+      "secondary_word": 2002070072
+    },
+    "source_tag_offset": 55824506,
+    "source_end": 55824840
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v02).fm",
+    "snapshot_id": "ef221d1ec222494e8f3d874dad27a1190e124d2d096d74f17338ca477f8bf5d5",
+    "original_ordinal": 100606,
+    "raw_hex": "1201020f0f110000ae1aed070600000022000000252100005d3800000f590000cc5b0000b56e0000ba98000066a5000096ac000092ad0000e5b2000045b60000dec3000062c90000b8ca00008ce20000bae50000cfee00009eef00001bf30000d5f70000780b0100490c01007c0c0100691001008f1201007a15010027e30100a9dd0100a7ba00004dd60000efee0000414002002dab0000eaf100000b000000a51aed07b7171305b21aed070a083977c31aed07d7b13b77f81aed0709373d770f1aee076bfbdc02151aee074f083777441aee07a17e39779e1aee0749d51205b61aee078ff13c77c31aee07962a3c77c51aee07a9563a77012870020000fffe040000ffffffff0000000000d700b607ff03100211010300030106000000000000000a0a0a0a0a0a0a0aa0150000000000000104391400000000000000000302170000ffad1e00000000000006000301180000ffa00c00000000000000000302170000ff100900000000000000000302170000ff00000000ff01ff0000000802401000000000fe880100392a5577392a5577",
+    "expected": {
+      "ordinal": 100606,
+      "signed_tag": 18,
+      "state": "decoded",
+      "source_record_kind": "AGENT",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 159784,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 327423,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ],
+      "native_fields": {
+        "0xa0_i8": 1,
+        "0xa8_ad_raw_hex": "020f0f110000",
+        "0xa4_a7_raw_date_hex": "ae1aed07",
+        "0xae_u8": 1
+      },
+      "nation_reference": {
+        "start": 55824852,
+        "end": 55824856,
+        "namespace": "NATION",
+        "transport": "conditional_full_loader_raw32",
+        "raw_word_u32": 6,
+        "identity_resolved": false
+      },
+      "reference_conditions": "NATION11182BC fullstream flagsbit1 and(root80A bit0 OR root80B bit0), local2C98=1. Writer root808/809 raw-index branch separately requires global2AF8!=1 for4B. Runtime globals are unobserved.",
+      "person_vector_summary": {
+        "count": 34,
+        "count_offset": 55824856,
+        "rows_start": 55824860,
+        "rows_end": 55824996,
+        "entry_bytes": 4,
+        "payload_state": "not_projected"
+      },
+      "date_word_vector_summary": {
+        "count": 11,
+        "count_offset": 55824996,
+        "rows_start": 55825000,
+        "rows_end": 55825088,
+        "entry_bytes": 8,
+        "payload_state": "not_projected"
+      }
+    },
+    "identity": {
+      "stored_index": 100606,
+      "native_id_word": 2002070073,
+      "secondary_word": 2002070073
+    },
+    "source_tag_offset": 55824840,
+    "source_end": 55825242
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 0,
+    "raw_hex": "0100009a0f2c14da0267007800221c1c1c1c1e211e210c09030a110b06080f110e0c010d39080c06060902010a030a130a193939392135052b1e2828301e370530344b053c37142d4b0f0f64020000c53c08002d0f000000000000ffffffffffffffff0100000001006c0722ff02010104b801006c0701006c0701010100048300000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff000001010200011b09011f0900000000000100010100020000240e00000000000000000000000001006c079932ed070a008841000005000100000000000000000000000001006c07ffffffffffffffff00000002ffffffff19000e00ffffffff19000500000000000000ff0304000000000000006c07000000000000ffffffffffffffffb500ef079932ed0700000040000000000000009932ed0757e214ff000000000000000000000001006c070000000000ce00000000000000d7030000220000ffffffff000209000000000000000a070000000000000005000000000103030a09041401010106050101010100000000d500b0070001006c0701006c07ffffffffffffffff01006c07020000000000000000c9590000009e6a000000ffffffff0000000000d500b0070600070102000000030183000000000000000b09130b0f0f040b14000000000000000104f12800000000000003000301644f00ffa91c00000000000006000301504f00ff5f0000000000000002000103464f00ff2a00000000000000020001033c4f00ff00000000ff01ff0000000002581000000000000000000900000009000000",
+    "expected": {
+      "ordinal": 0,
+      "signed_tag": 1,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_NON_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 22985,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 27294,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 0,
+      "native_id_word": 9,
+      "secondary_word": 9
+    },
+    "source_tag_offset": 5,
+    "source_end": 598
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 1,
+    "raw_hex": "10001a5a0000dd6900000102401000000000010000000e0000000e000000",
+    "expected": {
+      "ordinal": 1,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x20",
+          "namespace": "first",
+          "raw_index": 23066,
+          "state": "unresolved_name_reference"
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "second",
+          "raw_index": 27101,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 0,
+        "raw_field20_u32": 23066,
+        "raw_field28_u32": 27101,
+        "final_flags_u64": 272630273
+      }
+    },
+    "identity": {
+      "stored_index": 1,
+      "native_id_word": 14,
+      "secondary_word": 14
+    },
+    "source_tag_offset": 598,
+    "source_end": 628
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 81,
+    "raw_hex": "1001964c01000102403000000000510000005504000055040000",
+    "expected": {
+      "ordinal": 81,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x28",
+          "namespace": "common",
+          "raw_index": 85142,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 1,
+        "raw_field20_u32": null,
+        "raw_field28_u32": 85142,
+        "final_flags_u64": 809501185
+      }
+    },
+    "identity": {
+      "stored_index": 81,
+      "native_id_word": 1109,
+      "secondary_word": 1109
+    },
+    "source_tag_offset": 32628,
+    "source_end": 32654
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 348,
+    "raw_hex": "04a30500000000000050005000b60f0f0a1212140a1200000a01000049832aee070000d3180000020127900000be8f000001040052e52aee070000ac0100000101047500008f74000001000049ec2aee070000ac0100000100267500009174000001000049f32aee070000ac010000000163740000f874000001030058fa2aee070000ac0100000202be7400009781000001030050006bee070100451b00000302457500003975000001000049034bee0700005f150000010023900000f190000001000053082bee070000ac0100000202877400008f74000001000049114bee0700005f150000020022750000c874000001000049162bee070000d31800000101c88f0000b074000001000000861ebe010000000001006c0700e03d010000199c030000ffffffff0000000000f000cb07ff0007010100000003018b000000000000000a0a0a0a0a0a0a0a1004000000000000000000010010010000005c010000e8140000e8140000",
+    "expected": {
+      "ordinal": 348,
+      "signed_tag": 4,
+      "state": "decoded",
+      "source_record_kind": "OFFICIAL",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 81376,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 236569,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 348,
+      "native_id_word": 5352,
+      "secondary_word": 5352
+    },
+    "source_tag_offset": 141598,
+    "source_end": 141959
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 1488,
+    "raw_hex": "037316e317e11173007d007300ff037e7d00ffffffffffca040000000000001401010101010101010101010101010a1905260f19052f05192d414f3f403752352e4a4b4330212d640f0d3e3e0f2832412712412c32583214454253322a1e1e4746323e3dea930a0001b600e90701006c07ac262d0060220000000000ff777d02c40002510f75bd000c000000000000ff00000000ff00ff00ffffffff0c071e329c9c9c9c9c9c9c0000010000003afc000103ff000001006c07ff00000002000000ff03000e780000990000009901ff1601000000000000010700f8ff0001006c070001006c0701006c07ff00000000001234f400ffffffff941100000100000000c200000000005c01ae004801ae00ae0000000000c200ae00ae000000000000ca040000ffffffff161bee072463ee070000ff7a00000300000001ffff00000301ffff00000301ffff000003300003000100005a8000350c000201ff00005b106b14620b430078000004230404162320040c0208020a10100a0706060b08083204080e0d09030c0d0409070d28232a2b21220a16080d121c12225f0a05280f554614052d2805ffffffffffffffffffffffffffffffffffffffffffffffff0000000001006c0700ff000101030001006c0701006c0701010300048100000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff64049100000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff6404a700000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff0100000109551054125a0a5b11480c4d024e135f076011000000000100000200011000180b00000000000000000000000001006c07b600e9070a000f00000005000185ef0100cb570000000000000212ed07ffffffffffffffff00000004c3030000ffff2000c3030000ffff2200f0000000ffff2600ffffffff01001600000000000000ff030400000000000000ec07000000000000ffffffffffffffff9700ef07b600e9070202020000000000000000a22aeb0714645f0100001d000000000000000001006c0700d0050000ca04000000000000d0120000010000ffffffff000107000000000000000a0000000001070c0f01010e01010514080401010600000000b600e9070201006c0701006c0726830000ffffffff051aed070600000000000000001e54000000344a000000ffffffff00000000005601cb070a00090104000000030181000000000000000e0b0f0e0c0e0c07a408000000000000010781000000000000000000084601ff00ff2501000000000000520107121b5a00ff3d020000000000000000014801ff00ff91000000000000000000084601ff00ffca0400000000000000000419000000ffca0400000000000000000443000400ff08040000000000000000016a041e08ff02000000a7000000026401080400000164000101ff0a00760067e21a000000220278f402000000fc04006f02000000da028acb16000000d902ac8c260000005e01cd2b26000000dc16005f020000009008dd0a0c0000008607008502000000860700ca04000000000622781004000000d0050000b1360300b1360300",
+    "expected": {
+      "ordinal": 1488,
+      "signed_tag": 3,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_PLAYER_AND_NON_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 21534,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 18996,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 1488,
+      "native_id_word": 210609,
+      "secondary_word": 210609
+    },
+    "source_tag_offset": 590695,
+    "source_end": 591872
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 1512,
+    "raw_hex": "021c1167127c085e0078005e021102767900ffffffffffc6040000000000000101140e0101010101010101011202312c2331273c313918402c050f0f050a0f3b380f410f3738642323373b3c20050a0539272f343a311e2336464841352d14473d2d3c3e03390000089732ee0701006c0710275a00901a0000000000ff627802b400022aafa1bd100c000000010100ff000000ffff00ff00ffffffff0c071c9c272828200900d601020204057503c458ed07caff030001000e0d10011405c458ed070405b801bf7cee074c0002000200020112011405c47cee070101010000000520bf7cee070111f80000000000000002000000ff030009780000160000006f00ff1601000000000000070500fdff0001006c070001006c0701006c07ff00000000008502000000000000ae02000001010001000a000900090047010a004701b5000a00010001000a000a00b50001000000010538060000ffffffff4601000046010000ae020000000000000907c4020000470003002303da05e44000000000000000000000ffffffff000000000000000000000000c6040000ffffffff1663ee072463ee070000090d01000300000001ffff00000301ffff00000301ffff0000035a0019000800005a802c02030a090bff10c0140400000000000000000000020001006c079732ee070a01bf2500002f700000050001f109000065010000000000009732ee07ffffffffffffffff000000057f000000ffff20005f000000ffff22001f000000ffff2600ffffffff19000b00ffffffff01001600000000000000ff030400000000000000ef07000000000000ffffffffffffffff9700ef079732ee0703000300000000000000009732ee07145830ff000008000000000000000001006c0700e8050000c6040000000000007f020000010000ffffffff01ff020101bf250000816967ff000000000000000001006c0700000600000000000000000000000200000007010301011604000007010301011404000000000000009732ee070001006c0701006c07be090000058a0100ad32ec0700000000000000000055570100009af8030000ffffffff00000000006001cd0707000901040000000301a7000000000000000a0a0a0a0a0a0a0a833700000000000001078b0000000000000000000809645000ff8b000000000000000000080e645000ff74010000000000000000014801ff00ff8b000000000000000000084601ff00ff14040000000000000000016a091e03ff140400000000000000000169051e00ff04040000000000000000016a021e08ff020000001404000001370004040000013000ff01ff0c00c4066bf701000000970000d1010000000c02bdd7010000000202dd4a020000007300004102000000960000de010000009f18006902000000da02001a0200000016041dd804000000c7024dd6040000005d070085020000018300602306000000000002781004000000e8050000af490300af490300",
+    "expected": {
+      "ordinal": 1512,
+      "signed_tag": 2,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 87893,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 260250,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 1512,
+      "native_id_word": 215471,
+      "secondary_word": 215471
+    },
+    "source_tag_offset": 608122,
+    "source_end": 609202
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 1818,
+    "raw_hex": "10003ec40100c452040001024110000000001a0700001224080012240800",
+    "expected": {
+      "ordinal": 1818,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x20",
+          "namespace": "second",
+          "raw_index": 115774,
+          "state": "unresolved_name_reference"
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "first",
+          "raw_index": 283332,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 0,
+        "raw_field20_u32": 115774,
+        "raw_field28_u32": 283332,
+        "final_flags_u64": 272695809
+      }
+    },
+    "identity": {
+      "stored_index": 1818,
+      "native_id_word": 533522,
+      "secondary_word": 533522
+    },
+    "source_tag_offset": 735830,
+    "source_end": 735860
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 9998,
+    "raw_hex": "010000f615f615a40778008c002e1d1c1d1d161616210c0c10080b020f0c03020c0804104b0f0b0b0b0f0e06040c080d0f3c192f3532195a25281e3c282826374b23280f234b50194b1423c0060000ba0000009100000000000000ffffffffffffffff0000000001006c0700ff0001010300b700e40701006c0700000000000000010002000000010000350000000000000000000000000001006c07b700e4070a00ffffffff05050e2700009300000000000000c006000026ac00ffffffff0002090000000000000005070000000000000005000000000000000000b700e4070001006c0701006c07ffffffffffffffff01006c07000000000000000000395a000000d86a000000ffffffff0000000000bd00bd0706000c010200000003018300000000000000080c120b0b0a130301000000000000000101350000000000000004000103644e00ff00000000ff01ff00000000015010000000000e2700004006140140061401",
+    "expected": {
+      "ordinal": 9998,
+      "signed_tag": 1,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_NON_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 23097,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 27352,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 9998,
+      "native_id_word": 18089536,
+      "secondary_word": 18089536
+    },
+    "source_tag_offset": 4623521,
+    "source_end": 4623880
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 9999,
+    "raw_hex": "010000a80e1d12680473007300221c07231c1e1623210c080702010f0f0e0713070408083c0d0c070b0906110d0b0a1009463c302f3a440a1e0a23143223145a3d3d4b05234b0f0f190f05d305000000010000c900000000000000ffffffffffffffff0100000001006c0700ff02010103afb600e90701006c0701010100048300000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff000001010200011b09011f09000000000001010101000000406d0000000000000000000000000001006c07b600e9070a00e971000005000100000000000000000000000001006c07ffffffffffffffff00000001ffffffff19000f00000000000000ff0304000000000000006c07000000000000ffffffffffffffffb500ef07b600e90700000000000000000000009732ed0719e214ff000000000000000000000001006c07000f270000d0000000000000006b060000220000ffffffff0002070000000000000002090000000000000004000000000108040a070614010101030803010101000000006000cd070001006c0701006c07ffffffffffffffff01006c07010000000000000000f35a0000006b69000000ffffffff00000000006000cd0706000b0103000000030183000000000000000a0b0c0e090b0b0401000000000000000101462700000000000002000301644f00ff00000000ff01ff00000000025810000000000f2700004606140146061401",
+    "expected": {
+      "ordinal": 9999,
+      "signed_tag": 1,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_NON_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 23283,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 26987,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 9999,
+      "native_id_word": 18089542,
+      "secondary_word": 18089542
+    },
+    "source_tag_offset": 4623880,
+    "source_end": 4624417
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 10000,
+    "raw_hex": "1000059c0200783d05000122401000000000102700004c0614014c061401",
+    "expected": {
+      "ordinal": 10000,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x20",
+          "namespace": "first",
+          "raw_index": 171013,
+          "state": "unresolved_name_reference"
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "second",
+          "raw_index": 343416,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 0,
+        "raw_field20_u32": 171013,
+        "raw_field28_u32": 343416,
+        "final_flags_u64": 272638465
+      }
+    },
+    "identity": {
+      "stored_index": 10000,
+      "native_id_word": 18089548,
+      "secondary_word": 18089548
+    },
+    "source_tag_offset": 4624417,
+    "source_end": 4624447
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 10001,
+    "raw_hex": "1000dd5900005d6d00000102401001000000112700005206140152061401",
+    "expected": {
+      "ordinal": 10001,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x20",
+          "namespace": "first",
+          "raw_index": 23005,
+          "state": "unresolved_name_reference"
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "second",
+          "raw_index": 27997,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 0,
+        "raw_field20_u32": 23005,
+        "raw_field28_u32": 27997,
+        "final_flags_u64": 4567597569
+      }
+    },
+    "identity": {
+      "stored_index": 10001,
+      "native_id_word": 18089554,
+      "secondary_word": 18089554
+    },
+    "source_tag_offset": 4624447,
+    "source_end": 4624477
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 41382,
+    "raw_hex": "022f113011750965008900a009ff0479700007ffffffffa4730000000000000101010101010c0101140c0f0101012e2c17063014362515193c0a0f05140f0a333d0510144a4e643448223b3214050f0a43251243490f161e482826233e1e2d374e4b261fedc521001001006c0701006c077d190000e8260000000000ff658902a8000300000000120c000000020201000101000101000102ffffffff0c072d9c1c032d2d2d1af60102010405061a2a1bec070a0000000000141414001a052a1bec0701010b0000000501c01aee07011801000000000000000504d01aee0701000509d01aee0701000516ef1aee07010b01000000010206000000050aef1aee0701000509ef1aee070100051f061bee0701181000000000000000050d0e1bee07010005250e1bee070100050a0e1bee07010005090e1bee070100000000000001031033330e1bee07107a050101461aed070000000000002d3502000000ff0400000000000000000003000215010000000000000e110001000001006c070001006c0701006c07ff000000000044010000ffffffffffffffff01000000000100000000000100000000000000000000000000010000000000010000000000000001011401060100000600000001c078ee076e190000f70100000c0001c678ee076e190000f70100000c0001d152ee07010100007c0000000c0001df52ee07010100007c0000000c0001f452ee070b0100007c0000000c00010253ee07000100007c0000000c0000000000000006010000ffffffff0e1bee078088ee070000070601000300000001ffff00000301ffff00000301ffff000003540019000c05001380072d31262729ff0000ffffffffffffffff00000000000001006c074d01e8070a00e61b01000500017616000071080000000000009b32ee07ffffffffffffffff0000000910000000ffff200039000000ffff27000b000000ffff2600ffffffff05000300a60200000f000d005104000019000d00ffffffff01001600568a2700ffff1000edc52100ffff1200000000000000ff030400000007040000ef07000000000000ffffffffa47300006d01f1070a01ec070a000a000000010000000725b30403ffffffffffffffff0212ed071b38ed070000000400000000009f2cee0750cd14ff000b00000000000000000001006c070ba6a1000006010000000000007f010000010000ffffffff00011700000000000000050000000000000000004d01e8070001006c0701006c07b23700004a8a01000f1bec070000001000000000002fc6020000ed9e0500002fc6020000000000007a00dc07ff0905010b0000000301bd00000000000000090d0b060b0a0910b3cd0000000000000105aa0000000000000001000103644e00ff501f00000000000006000301640000ffaa000000000000000000016a011e05ff060100000000000000000443021000ff060100000000000000000419020000ff01000000aa000000010100ff01ff04005d0800ff040000005d08500601000002610500ff040000026105000601000000000802405004000000a6a100007423377774233777",
+    "expected": {
+      "ordinal": 41382,
+      "signed_tag": 2,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 181807,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 368365,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": 181807,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 41382,
+      "native_id_word": 2000102260,
+      "secondary_word": 2000102260
+    },
+    "source_tag_offset": 27582258,
+    "source_end": 27583395
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 49606,
+    "raw_hex": "02560f770fc90b58008a00740213046a660034ffffffff33750000000000000101140105010901011001010109012f25102d1f322320112e1d0a0f140a050f2a310f3e05263d64352814251c2e0f0f0a3d014640325b432d325f2d2d2c4b232d4e502a3d52341d000e2380ee0701006c07802551ffaa230000000000ff588a02c3000300000000000c00000000000001010000000000010054c902000c07329c32322f302603c80102020405061a0b81ee071c00100005001001130114051579ee070405b7033a1aee070f000f000b00141414001a05f978ee070101080000000501de1aee07011802000000000000000504e71aee0701000509e71aee070100051ffc1aee0701181000000000000000050d061bee0701000525061bee0701000504061bee0701000509061bee070100000000000001031026250063ee07107a050101e14aee070000eaffeaff303002021b00010d00091100008a0000002601001601000010100000070b0000000001006c070001006c0701006c07ff0600000000c705000054c90200c7070000010000000000000100010012000000120000000000000000000000000000000100000104b0020000a04d55770a0000000000000000000000110d00000000000061ed00000000000001006c07000105b00200006b905b0095d500004d660200c7070000000000000303b700000000000000000000000000001e0000128004000000ed080000000000000000010154c902009e010000bf010000237aee0701021401420200000100000001e170ee07f8010000960200000c001401337500000600000001f96aee0745750000451b000000010302080000003400340102020200000001000000000000005a4b3a3900000000040400026e4c0001006bee0705750000451b0000000001076bee07cb740000451b00000000010b73ee0766740000561b000000010302001000004f00070000060100030001000000000000005a3c2c250100000002010001874d00010e6bee07c9740000451b0000000001156bee0739750000451b000000010302001000000000070000000001030101010000000000005a4a1c140201010005050001774b00000000011f000000000000000000000001006c0700000001006c0701006c0701006c0701006c0701006c0700000a00ffffffffffffffffffffffff02ffffffff01006c0700000000000101ac12ec0701006c0700000000601f000002000000000001006c070001006c07ffffffff01006c07ffffffff000102040500000005f71801f7f0f0f0f0f0f0f0f0f0f07d13000005b73a01f7f0f0f0f0f0f0f0f0f0f0f123000005b70301f7f0f0f0f0f0f0f0f0f0f02923000005061a0106f0f0f0f0f0f0f0f0f0f03b0100000506200106f0f0f0f0f0f0f0f0f0f047010000010000000a23050000010000000a23050000010000000a23050000010000000a23050000010000000a23050000010000000a230500001579ee070133750000ffffffff1933ee071e79ee0700006d9000000300000001ffff00000301ffff00000301ffff0000035e0019001b04005a8034022c0b090aff00009e0100000000000000000000000001006c072380ee070a00efce000005000104480000e00f0000f0070000b61aee07ffffffffffffffff00000008ffffffff19000e00ffffffff19000500e3030000ffff2000f8000000ffff220097020000ffff26005e0a00000f000d009610000019000d00ffffffff01001600000000000000ff03040000000a000000ee07000093000000ffffffffffffffffb600f0072380ee070a0b0b02000500000000002380ee073ca614ff001e00000000000000000101006c071ec6c1000042020000000000007b060000010000ffffffff000107000000000000000a000000000000000000d934ed070001006c0701006c0772aa0000fc8901006d1aea07000000000000000000e2c0020000589d050000e2c0020000000000007400da07ff010f020d0000000301bd000000000000000c0a0f0e0d0d120418e20000000000000107a20000000000000000000809645000ffbd000000000000000000084602ff00ffc20300000000000001000103644e00ffa2000000000000000000084602ff00ffc2030000000000000000014801ff00ff210200000000000001000475000600ff9e0100000000000000000169021e00ff01000000bf010000010400ff01040a402207008002000000f909008002000000f909598404000002470700800200000247070084040000000100992102000000f600006902000000f700904202000002f600006902000002f600003375000000000c02405000000000c6c1000042eb387742eb3877",
+    "expected": {
+      "ordinal": 49606,
+      "signed_tag": 2,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 180450,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 367960,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": 180450,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 49606,
+      "native_id_word": 2000218946,
+      "secondary_word": 2000218946
+    },
+    "source_tag_offset": 34661794,
+    "source_end": 34663498
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 71529,
+    "raw_hex": "05000000000f000000466f74617120537472616b6f736861000040000000000069170100a4b85477a4b85477",
+    "expected": {
+      "ordinal": 71529,
+      "signed_tag": 5,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_STRINGS",
+      "names": null,
+      "stored_name_strings": [
+        {
+          "start": 54468393,
+          "end": 54468397,
+          "native_offset": "0x20",
+          "byte_count": 0,
+          "raw_hex": "",
+          "text": "",
+          "text_state": "utf8",
+          "null_vs_empty_distinguished": false
+        },
+        {
+          "start": 54468397,
+          "end": 54468416,
+          "native_offset": "0x28",
+          "byte_count": 15,
+          "raw_hex": "466f74617120537472616b6f736861",
+          "text": "Fotaq Strakosha",
+          "text_state": "utf8",
+          "null_vs_empty_distinguished": false
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 71529,
+      "native_id_word": 2002040996,
+      "secondary_word": 2002040996
+    },
+    "source_tag_offset": 54468392,
+    "source_end": 54468436
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 73009,
+    "raw_hex": "07890101006c07c40011ef9000000000400000000000311d01006cbe54776cbe5477",
+    "expected": {
+      "ordinal": 73009,
+      "signed_tag": 7,
+      "state": "decoded",
+      "source_record_kind": "VIRTUAL_PLAYER",
+      "names": null,
+      "native_fields": {
+        "0x16_u16_flags_raw": 393,
+        "0x10_13_raw_hex": "01006c07",
+        "0x18_u16": 196,
+        "0x1a_u8": 17,
+        "0x08_u32_raw": 37103
+      },
+      "optional_0c": {
+        "present": false,
+        "start": 54531431,
+        "end": 54531431,
+        "raw_word_u32": null
+      }
+    },
+    "identity": {
+      "stored_index": 73009,
+      "native_id_word": 2002042476,
+      "secondary_word": 2002042476
+    },
+    "source_tag_offset": 54531417,
+    "source_end": 54531451
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 93245,
+    "raw_hex": "08ffffffff38006dcc000000350b020000ffffffff00000000003301c807ff02050208020000030100000000000000000a0a0a0a0a0a0a0aa304000000000000010100000000000000000000083564ff00ff00000000ff01ff00000008010010000000003d6c0100780d5577780d5577",
+    "expected": {
+      "ordinal": 93245,
+      "signed_tag": 8,
+      "state": "decoded",
+      "source_record_kind": "SUPPORT_STAFF",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 52333,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 133941,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ],
+      "native_fields": {
+        "0x68_raw_reference_word_u32": 4294967295,
+        "0x71_u8": 56,
+        "0x70_u8": 0
+      }
+    },
+    "identity": {
+      "stored_index": 93245,
+      "native_id_word": 2002062712,
+      "secondary_word": 2002062712
+    },
+    "source_tag_offset": 55386921,
+    "source_end": 55387033
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 100604,
+    "raw_hex": "1201031110120000f51aee0700000000280000001a200000ff320000bb520000e15200008655000030560000e8560000315700000a580000d45800007082000003900000bd920000809e0000c5a0000007aa0000ffb000003ab1000056c600008ad0000044d400003ceb00008a0a0100550c0100e80c0100f00c0100ce0e0100cf0e0100f612010054170100a15a000088dd010049030200f6c800004ab8000021910000cbba0000450301003f150100e6a40000080000009d1aed073a01dd02611bed075e0e3d77641bed0798d73c77681bed0752e83a772a1aee079e343a775f1aee0719ac3b779c1aee073c2c3d77bc1aee072a5837770170cc000000540b020000ffffffff00000000006000c507ff02100209010300050100000000000000000a0a0a0a0a0a0a0a973c0000000000000119a01100000000000000000302140000ff6e1800000000000000000302150000ff870c00000000000000000302320000ff832e00000000000000000302180000ffef7400000000000000000302150000ff380200000000000000000302180000ff921d00000000000000000302170000ff551e00000000000000000302160000ff326100000000000000000302150000ff6b0600000000000000000302180000ff671700000000000000000302180000ffbf0100000000000000000302450000ff7b0c000000000000000003022e0000fffd5900000000000000000302140000ff6003000000000000000003022a0000ffe50700000000000000000302340000ff0e0d000000000000000003021a0000ff720000000000000000000302640000ff6c0500000000000000000302180000ff2d1600000000000000000302170000ff840c00000000000000000302160000ffc00400000000000000000302150000ffde7900000000000000000302140000ff2e1200000000000000000302160000ff4d12000000000000000003021a0000ff00000000ff01ff0000000802401000000000fc880100372a5577372a5577",
+    "expected": {
+      "ordinal": 100604,
+      "signed_tag": 18,
+      "state": "decoded",
+      "source_record_kind": "AGENT",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 52336,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 133972,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ],
+      "native_fields": {
+        "0xa0_i8": 1,
+        "0xa8_ad_raw_hex": "031110120000",
+        "0xa4_a7_raw_date_hex": "f51aee07",
+        "0xae_u8": 1
+      },
+      "nation_reference": {
+        "start": 55883159,
+        "end": 55883163,
+        "namespace": "NATION",
+        "transport": "conditional_full_loader_raw32",
+        "raw_word_u32": 0,
+        "identity_resolved": false
+      },
+      "reference_conditions": "NATION11182BC fullstream flagsbit1 and(root80A bit0 OR root80B bit0), local2C98=1. Writer root808/809 raw-index branch separately requires global2AF8!=1 for4B. Runtime globals are unobserved.",
+      "person_vector_summary": {
+        "count": 40,
+        "count_offset": 55883163,
+        "rows_start": 55883167,
+        "rows_end": 55883327,
+        "entry_bytes": 4,
+        "payload_state": "not_projected"
+      },
+      "date_word_vector_summary": {
+        "count": 8,
+        "count_offset": 55883327,
+        "rows_start": 55883331,
+        "rows_end": 55883395,
+        "entry_bytes": 8,
+        "payload_state": "not_projected"
+      }
+    },
+    "identity": {
+      "stored_index": 100604,
+      "native_id_word": 2002070071,
+      "secondary_word": 2002070071
+    },
+    "source_tag_offset": 55883147,
+    "source_end": 55883885
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 100605,
+    "raw_hex": "1201041310080000f51aec070100000011000000d07500006d8400008d890000539d000079b40000b9b60000335d0000bfee010031e30100cbee0100b5770000a2570000c9840000084d0000ce980000acfb0000b477000005000000a41aed07db6c6f05e91aed0724353d779a1aee07d77c48039a1aee07a5b93577b01aee07f765aa0501cb95020000f334050000ffffffff00000000005f01bd07ff03050211010000030101000000000000000a0a0a0a0a0a0a0a344f00000000000001077f00000000000000000003021d0000ff0b0c000000000000000003021a0000ff782400000000000000000302140000ff641f00000000000000000302160000ff870c000000000000000003021b0000ffc6e601000000000000000302480000ff0edd01000000000000000302180000ff00000000ff01ff0000000802401000000000fd880100382a5577382a5577",
+    "expected": {
+      "ordinal": 100605,
+      "signed_tag": 18,
+      "state": "decoded",
+      "source_record_kind": "AGENT",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 169419,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 341235,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ],
+      "native_fields": {
+        "0xa0_i8": 1,
+        "0xa8_ad_raw_hex": "041310080000",
+        "0xa4_a7_raw_date_hex": "f51aec07",
+        "0xae_u8": 1
+      },
+      "nation_reference": {
+        "start": 55883897,
+        "end": 55883901,
+        "namespace": "NATION",
+        "transport": "conditional_full_loader_raw32",
+        "raw_word_u32": 1,
+        "identity_resolved": false
+      },
+      "reference_conditions": "NATION11182BC fullstream flagsbit1 and(root80A bit0 OR root80B bit0), local2C98=1. Writer root808/809 raw-index branch separately requires global2AF8!=1 for4B. Runtime globals are unobserved.",
+      "person_vector_summary": {
+        "count": 17,
+        "count_offset": 55883901,
+        "rows_start": 55883905,
+        "rows_end": 55883973,
+        "entry_bytes": 4,
+        "payload_state": "not_projected"
+      },
+      "date_word_vector_summary": {
+        "count": 5,
+        "count_offset": 55883973,
+        "rows_start": 55883977,
+        "rows_end": 55884017,
+        "entry_bytes": 8,
+        "payload_state": "not_projected"
+      }
+    },
+    "identity": {
+      "stored_index": 100605,
+      "native_id_word": 2002070072,
+      "secondary_word": 2002070072
+    },
+    "source_tag_offset": 55883885,
+    "source_end": 55884219
+  },
+  {
+    "filename": "Cesar Jules - Newcastle (v03).fm",
+    "snapshot_id": "1d31d9563e5d6e009aff780c3df7875b5c851d7e4a3e416e5088d8b339b0115f",
+    "original_ordinal": 100606,
+    "raw_hex": "1201020f0f110000ae1aed070600000022000000252100005d3800000f590000cc5b0000b56e0000ba98000066a5000096ac000092ad0000e5b2000045b60000dec3000062c90000b8ca00008ce20000bae50000cfee00009eef00001bf30000d5f70000780b0100490c01007c0c0100691001008f1201007a15010027e30100a9dd0100a7ba00004dd60000efee0000414002002dab0000eaf100000b000000a51aed07b7171305b21aed070a083977c31aed07d7b13b77f81aed0709373d770f1aee076bfbdc02151aee074f083777441aee07a17e39779e1aee0749d51205b61aee078ff13c77c31aee07962a3c77c51aee07a9563a77012870020000fffe040000ffffffff0000000000d700b607ff03100211010300030106000000000000000a0a0a0a0a0a0a0aa0150000000000000104391400000000000000000302170000ffad1e00000000000006000301180000ffa00c00000000000000000302170000ff100900000000000000000302170000ff00000000ff01ff0000000802401000000000fe880100392a5577392a5577",
+    "expected": {
+      "ordinal": 100606,
+      "signed_tag": 18,
+      "state": "decoded",
+      "source_record_kind": "AGENT",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 159784,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 327423,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ],
+      "native_fields": {
+        "0xa0_i8": 1,
+        "0xa8_ad_raw_hex": "020f0f110000",
+        "0xa4_a7_raw_date_hex": "ae1aed07",
+        "0xae_u8": 1
+      },
+      "nation_reference": {
+        "start": 55884231,
+        "end": 55884235,
+        "namespace": "NATION",
+        "transport": "conditional_full_loader_raw32",
+        "raw_word_u32": 6,
+        "identity_resolved": false
+      },
+      "reference_conditions": "NATION11182BC fullstream flagsbit1 and(root80A bit0 OR root80B bit0), local2C98=1. Writer root808/809 raw-index branch separately requires global2AF8!=1 for4B. Runtime globals are unobserved.",
+      "person_vector_summary": {
+        "count": 34,
+        "count_offset": 55884235,
+        "rows_start": 55884239,
+        "rows_end": 55884375,
+        "entry_bytes": 4,
+        "payload_state": "not_projected"
+      },
+      "date_word_vector_summary": {
+        "count": 11,
+        "count_offset": 55884375,
+        "rows_start": 55884379,
+        "rows_end": 55884467,
+        "entry_bytes": 8,
+        "payload_state": "not_projected"
+      }
+    },
+    "identity": {
+      "stored_index": 100606,
+      "native_id_word": 2002070073,
+      "secondary_word": 2002070073
+    },
+    "source_tag_offset": 55884219,
+    "source_end": 55884621
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 0,
+    "raw_hex": "010000a00f3014dc0267007800221c1c1c1c1e211e210c09030a110b06080f110e0c010d39080c06060902010a030a130a193939392135052b1e2828301e370530344b053c37142d4b0f0f64020000c53c08002d0f000000000000ffffffffffffffff0100000001006c0722ff02010104b801006c0701006c0701010100048300000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff000001010200011b09011f0900000000000100010100020000240e00000000000000000000000001006c079932ed070a008841000005000100000000000000000000000001006c07ffffffffffffffff00000002ffffffff19000e00ffffffff19000500000000000000ff0304000000000000006c07000000000000ffffffffffffffffb500ef079932ed0700000040000000000000009932ed0757e214ff000000000000000000000001006c070000000000ce00000000000000d7030000220000ffffffff000209000000000000000a070000000000000005000000000103030a09041401010106050101010100000000d500b0070001006c0701006c07ffffffffffffffff01006c07020000000000000000c9590000009e6a000000ffffffff0000000000d500b0070600070102000000030183000000000000000b09130b0f0f040b14000000000000000104f12800000000000003000301644f00ffa91c00000000000006000301504f00ff5f0000000000000002000103464f00ff2a00000000000000020001033c4f00ff00000000ff01ff0000000002581000000000000000000900000009000000",
+    "expected": {
+      "ordinal": 0,
+      "signed_tag": 1,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_NON_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 22985,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 27294,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 0,
+      "native_id_word": 9,
+      "secondary_word": 9
+    },
+    "source_tag_offset": 5,
+    "source_end": 598
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 1,
+    "raw_hex": "10001a5a0000dd6900000102401000000000010000000e0000000e000000",
+    "expected": {
+      "ordinal": 1,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x20",
+          "namespace": "first",
+          "raw_index": 23066,
+          "state": "unresolved_name_reference"
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "second",
+          "raw_index": 27101,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 0,
+        "raw_field20_u32": 23066,
+        "raw_field28_u32": 27101,
+        "final_flags_u64": 272630273
+      }
+    },
+    "identity": {
+      "stored_index": 1,
+      "native_id_word": 14,
+      "secondary_word": 14
+    },
+    "source_tag_offset": 598,
+    "source_end": 628
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 81,
+    "raw_hex": "1001964c01000102403000000000510000005504000055040000",
+    "expected": {
+      "ordinal": 81,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x28",
+          "namespace": "common",
+          "raw_index": 85142,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 1,
+        "raw_field20_u32": null,
+        "raw_field28_u32": 85142,
+        "final_flags_u64": 809501185
+      }
+    },
+    "identity": {
+      "stored_index": 81,
+      "native_id_word": 1109,
+      "secondary_word": 1109
+    },
+    "source_tag_offset": 32714,
+    "source_end": 32740
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 348,
+    "raw_hex": "04a30500000000000050005000b70f0f0a1212140a1200000a01000049ec2aee070000ac0100000100267500009174000001000049f32aee070000ac010000000163740000f874000001030058fa2aee070000ac0100000202be7400009781000001030050006bee070100451b00000302457500003975000001000049034bee0700005f150000010023900000f190000001000053082bee070000ac0100000202877400008f74000001000049114bee0700005f150000020022750000c874000001000049162bee070000d31800000101c88f0000b0740000010300581d2bee0700005615000001014c7500007b74000001050051242bee070000561500000003fc7400007d74000001000000861ebe010000000001006c0700e03d010000199c030000ffffffff0000000000f000cb07ff0007010100000003018b000000000000000a0a0a0a0a0a0a0a1004000000000000000000010010010000005c010000e8140000e8140000",
+    "expected": {
+      "ordinal": 348,
+      "signed_tag": 4,
+      "state": "decoded",
+      "source_record_kind": "OFFICIAL",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 81376,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 236569,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 348,
+      "native_id_word": 5352,
+      "secondary_word": 5352
+    },
+    "source_tag_offset": 141829,
+    "source_end": 142190
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 1488,
+    "raw_hex": "037316e317e11173007d007300ff037e7d00ffffffffffca040000000000001401010101010101010101010101010a1905260f19052f05192d414f3f403752352e4a4b4330212d640f0d3e3e0f2832412712412c32583214454253322a1e1e4746323e3d02c6090001b600e90701006c07ac262d0060220000000000ff777d02c40002510f75bd000c000000000000ff00000000ff00ff00ffffffff0c071e329c9c9c9c9c9c9c0000010000003afc000103ff000001006c07ff00000002000000ff03000e780000990000009901ff1601000000000000010700f8ff0001006c070001006c0701006c07ff00000000001234f400ffffffff941100000100000000c400000000005e01b0004a01b000b00000000000c400b000b0000000000000ca040000ffffffff245fee07325fee070000ff7a00000300000001ffff00000301ffff00000301ffff000003300003000100005a8000350c000201ff00005b106b14620b430078000004230404162320040c0208020a10100a0706060b08083204080e0d09030c0d0409070d28232a2b21220a16080d121c12225f0a05280f554614052d2805ffffffffffffffffffffffffffffffffffffffffffffffff0000000001006c0700ff000101030001006c0701006c0701010300048100000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff64049100000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff6404a700000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff0100000109551054125a0a5b11480c4d024e135f076011000000000100000200011000180b00000000000000000000000001006c07b600e9070a000f00000005000185ef0100cb570000000000000212ed07ffffffffffffffff00000004c3030000ffff2000c3030000ffff2200f0000000ffff2600ffffffff01001600000000000000ff030400000000000000ec07000000000000ffffffffffffffff9700ef07b600e9070202020000000000000000a22aeb071464610100001f000000000000000001006c0700d0050000ca04000000000000d0120000010000ffffffff000107000000000000000a0000000001070c0f01010e01010514080401010600000000b600e9070201006c0701006c0726830000ffffffff051aed070600000000000000001e54000000344a000000ffffffff00000000005601cb070a00090104000000030181000000000000000e0b0f0e0c0e0c07a408000000000000010781000000000000000000084601ff00ff2501000000000000440107121b5a00ff3d020000000000000000014801ff00ff91000000000000000000084601ff00ffca0400000000000000000419000000ffca0400000000000000000443000400ff08040000000000000000016a041e08ff02000000a7000000026401080400000164000101ff0a00760067e21a000000220278f402000000fc04006f02000000da028acb16000000d902ac8c260000005e01cd2b26000000dc16005f020000009008dd0a0c0000009407008502000000940700ca04000000000622781004000000d0050000b1360300b1360300",
+    "expected": {
+      "ordinal": 1488,
+      "signed_tag": 3,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_PLAYER_AND_NON_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 21534,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 18996,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 1488,
+      "native_id_word": 210609,
+      "secondary_word": 210609
+    },
+    "source_tag_offset": 591112,
+    "source_end": 592289
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 1512,
+    "raw_hex": "021c1167127c085e0078005e021102767900ffffffffffc6040000000000000101140e0101010101010101011202312c2331273c313918402c050f0f050a0f3b380f410f3738642323373b3c20050a0539272f343a311e2336464841352d14473d2d3c3eb0340000089732ee0701006c07e4255700bc1b0000000000ff627802b400022aafa1bd100c000000010100ff000000ffff00ff00ffffffff0c07189c2324241b04fbd801020204057503c458ed07caff030001000e0d10011405c458ed070405b801bf7cee074c0002000200020112011405c47cee07000000000000000002000000ff030009780000160000006f00ff1701000000000000070500fdff0001006c070001006c0701006c07ff01000000008502000000000000ae02000001010001000c000900090049010c004901b7000c00010001000c000c00b70001000000010538060000ffffffff4601000046010000ae020000000000000907c4020000470003002303da05e44000000000000000000000ffffffff000000000000000000000000c6040000ffffffff245fee07325fee070000090d01000300000001ffff00000301ffff00000301ffff0000035c0019000700005a802c02030a090bff10c0140400000000000000000000020001006c079732ee070a01bf2500002f700000050001f109000065010000000000009732ee07ffffffffffffffff000000057f000000ffff20005f000000ffff22001f000000ffff2600ffffffff19000b00ffffffff01001600000000000000ff030400000000000000ef07000000000000ffffffffffffffff9700ef079732ee0703000300000000000000009732ee07145a34ff000009000000000000000001006c0700e8050000c6040000000000007f020000010000ffffffff01ff020101bf250000816967ff000000000000000001006c0700000600000000000000000000000200000007010301011604000007010301011404000000000000009732ee070001006c0701006c07be090000058a0100ad32ec0700000000000000000055570100009af8030000ffffffff00000000006001cd0707000901040000000301a7000000000000000a0a0a0a0a0a0a0a833700000000000001078b0000000000000000000809645000ff8b000000000000000000080e645000ff74010000000000000000014801ff00ff8b000000000000000000084601ff00ff14040000000000000000016a091e03ff140400000000000000000169051e00ff04040000000000000000016a031e0aff020000001404000001330004040000013300ff01ff0c00c4066bf701000000970000d1010000000c02bdd7010000000202dd4a020000007300004102000000960000de010000009f18006902000000da02001a0200000016041dd804000000c7024dd6040000006b070085020000019100602306000000000002781004000000e8050000af490300af490300",
+    "expected": {
+      "ordinal": 1512,
+      "signed_tag": 2,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 87893,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 260250,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 1512,
+      "native_id_word": 215471,
+      "secondary_word": 215471
+    },
+    "source_tag_offset": 608542,
+    "source_end": 609608
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 1818,
+    "raw_hex": "10003ec40100c452040001024110000000001a0700001224080012240800",
+    "expected": {
+      "ordinal": 1818,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x20",
+          "namespace": "second",
+          "raw_index": 115774,
+          "state": "unresolved_name_reference"
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "first",
+          "raw_index": 283332,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 0,
+        "raw_field20_u32": 115774,
+        "raw_field28_u32": 283332,
+        "final_flags_u64": 272695809
+      }
+    },
+    "identity": {
+      "stored_index": 1818,
+      "native_id_word": 533522,
+      "secondary_word": 533522
+    },
+    "source_tag_offset": 736228,
+    "source_end": 736258
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 9998,
+    "raw_hex": "010000f415f415a30778008c002e1d1c1d1d161616210c0c10080b020f0c03020c0804104b0f0b0b0b0f0e06040c080d0f3c192f3532195a25281e3c282826374b23280f234b50194b1423c0060000ba0000009100000000000000ffffffffffffffff0000000001006c0700ff0001010300b700e40701006c0700000000000000010002000000010000350000000000000000000000000001006c07b700e4070a00ffffffff05050e2700009300000000000000c006000026ac00ffffffff0002090000000000000005070000000000000005000000000000000000b700e4070001006c0701006c07ffffffffffffffff01006c07000000000000000000395a000000d86a000000ffffffff0000000000bd00bd0706000c010200000003018300000000000000080c120b0b0a130301000000000000000101350000000000000004000103644e00ff00000000ff01ff00000000015010000000000e2700004006140140061401",
+    "expected": {
+      "ordinal": 9998,
+      "signed_tag": 1,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_NON_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 23097,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 27352,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 9998,
+      "native_id_word": 18089536,
+      "secondary_word": 18089536
+    },
+    "source_tag_offset": 4621458,
+    "source_end": 4621817
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 9999,
+    "raw_hex": "010000ae0e2112680473007300221c07231c1e1623210c080702010f0f0e0713070408083c0d0c070b0906110d0b0a1009463c302f3a440a1e0a23143223145a3d3d4b05234b0f0f190f05d305000000010000c900000000000000ffffffffffffffff0100000001006c0700ff02010103afb600e90701006c0701010100048300000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff000001010200011b09011f09000000000001010101000000406d0000000000000000000000000001006c07b600e9070a00e971000005000100000000000000000000000001006c07ffffffffffffffff00000001ffffffff19000f00000000000000ff0304000000000000006c07000000000000ffffffffffffffffb500ef07b600e90700000000000000000000009732ed0719e214ff000000000000000000000001006c07000f270000d0000000000000006b060000220000ffffffff0002070000000000000002090000000000000004000000000108040a070614010101030803010101000000006000cd070001006c0701006c07ffffffffffffffff01006c07010000000000000000f35a0000006b69000000ffffffff00000000006000cd0706000b0103000000030183000000000000000a0b0c0e090b0b0401000000000000000101462700000000000002000301644f00ff00000000ff01ff00000000025810000000000f2700004606140146061401",
+    "expected": {
+      "ordinal": 9999,
+      "signed_tag": 1,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_NON_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 23283,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 26987,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 9999,
+      "native_id_word": 18089542,
+      "secondary_word": 18089542
+    },
+    "source_tag_offset": 4621817,
+    "source_end": 4622354
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 10000,
+    "raw_hex": "1000059c0200783d05000122401000000000102700004c0614014c061401",
+    "expected": {
+      "ordinal": 10000,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x20",
+          "namespace": "first",
+          "raw_index": 171013,
+          "state": "unresolved_name_reference"
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "second",
+          "raw_index": 343416,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 0,
+        "raw_field20_u32": 171013,
+        "raw_field28_u32": 343416,
+        "final_flags_u64": 272638465
+      }
+    },
+    "identity": {
+      "stored_index": 10000,
+      "native_id_word": 18089548,
+      "secondary_word": 18089548
+    },
+    "source_tag_offset": 4622354,
+    "source_end": 4622384
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 10001,
+    "raw_hex": "1000dd5900005d6d00000102401001000000112700005206140152061401",
+    "expected": {
+      "ordinal": 10001,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x20",
+          "namespace": "first",
+          "raw_index": 23005,
+          "state": "unresolved_name_reference"
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "second",
+          "raw_index": 27997,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 0,
+        "raw_field20_u32": 23005,
+        "raw_field28_u32": 27997,
+        "final_flags_u64": 4567597569
+      }
+    },
+    "identity": {
+      "stored_index": 10001,
+      "native_id_word": 18089554,
+      "secondary_word": 18089554
+    },
+    "source_tag_offset": 4622384,
+    "source_end": 4622414
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 41382,
+    "raw_hex": "022f113011750965008900a009ff0479700007ffffffffa4730000000000000101010101010c0101140c0f0101012e2c17063014362515193c0a0f05140f0a333d0510144a4e643448223b3214050f0a43251243490f161e482826233e1e2d374e4b261fedc521001001006c0701006c077d190000e8260000000000ff658902a8000300000000120c000000020201000101000101000102ffffffff0c072d9c1c032d2d2d1af60102010405061a2a1bec070a0000000000141414001a052a1bec0701010b0000000501c01aee07011801000000000000000504d01aee0701000509d01aee0701000516ef1aee07010b01000000010206000000050aef1aee0701000509ef1aee070100051f061bee0701181000000000000000050d0e1bee07010005250e1bee070100050a0e1bee07010005090e1bee070100000000000001031033330e1bee07107a050101461aed070000000000002d3502000000ff0400000000000000000003000215010000000000000e110001000001006c070001006c0701006c07ff000000000044010000ffffffffffffffff01000000000100000000000100000000000000000000000000010000000000010000000000000001011401060100000600000001c078ee076e190000f70100000c0001c678ee076e190000f70100000c0001d152ee07010100007c0000000c0001df52ee07010100007c0000000c0001f452ee070b0100007c0000000c00010253ee07000100007c0000000c0000000000000006010000ffffffff2179ee078088ee070000070601000300000001ffff00000301ffff00000301ffff000003540019000c05001380072d31262729ff0000ffffffffffffffff00000000000001006c074d01e8070a00e61b01000500017616000071080000000000009b32ee07ffffffffffffffff0000000910000000ffff200039000000ffff27000b000000ffff2600ffffffff05000300a60200000f000d005104000019000d00ffffffff01001600568a2700ffff1000edc52100ffff1200000000000000ff030400000007040000ef07000000000000ffffffffa47300006d01f1070a01ec070a000a000000010000000725b30403ffffffffffffffff0212ed071b38ed070000000400000000009f2cee0750ca14ff000c00000000000000000001006c070ca6a1000006010000000000007f010000010000ffffffff00011700000000000000050000000000000000004d01e8070001006c0701006c07b23700004a8a01000f1bec070000001000000000002fc6020000ed9e0500002fc6020000000000007a00dc07ff0905010b0000000301bd00000000000000090d0b060b0a0910b3cd0000000000000105aa0000000000000001000103644e00ff501f00000000000006000301640000ffaa000000000000000000016a011e05ff060100000000000000000443021000ff060100000000000000000419020000ff01000000aa000000010100ff01ff04006b0800ff040000006b085006010000026f0500ff040000026f05000601000000000802405004000000a6a100007423377774233777",
+    "expected": {
+      "ordinal": 41382,
+      "signed_tag": 2,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 181807,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 368365,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": 181807,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 41382,
+      "native_id_word": 2000102260,
+      "secondary_word": 2000102260
+    },
+    "source_tag_offset": 27545141,
+    "source_end": 27546278
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 49606,
+    "raw_hex": "02690f820fc90b59008a00750213046a670034ffffffff33750000000000000101140105010901011001010109013026102d20322321112e1e0a0f140a050f2b320f3e05273d64352814251c2f0f0f0a3e014741325b432d325f2d2d2d4b232d4e502a3d9b3a1d000a2380ee0701006c0754245effb01d0000000000ff598a02c3000300000000000c00000000000101000000000001000154c902000c07329c32322e302d13d70102020405061a0b81ee07beff110005001001130114051579ee070405b7033a1aee070f0010000c00141414001a052759ee0701010c0000000501de1aee07011802000000000000000504e71aee0701000509e71aee0701000504061bee0701000509061bee07010005271a1bee0701110005011a1bee07011801000000000000000516241bee07010b01000000010206000000050d241bee0701000525241bee0701000504241bee0701000509241bee070100000000000001031026260063ee07107a050101235fee070000000000002d2d02010d00021b00091100008a0000003701011901000010100000080b0002000001006c070001006c0701006c07ff0300000000c705000054c90200c7070000010000000000000100010012000000120000000000000000000000000000000100000104b0020000a04d55770e0000000000000000000000110d00000000000061ed00000000000001006c07000105b00200006b905b0095d500004d660200c7070000000000000303b700000000000000000000000000001e0000128004000000ed080000000000000000010154c902009e010000bf010000237aee0701021401420200000100000001e170ee07f8010000960200000c001401337500000900000001f96aee0745750000451b000000010302080000003400340102020200000001000000000000005a4b3a3900000000040400026e4c0001006bee0705750000451b0000000001076bee07cb740000451b00000000010b73ee0766740000561b000000010302001000004f00070000060100030001000000000000005a3c2c250100000002010001874d00010e6bee07c9740000451b0000000001156bee0739750000451b000000010302001000000000070000000001030101010000000000005a4a1c140201010005050001774b00011c6bee0774740000451b0000000001236bee07cf740000451b0000000001274bee0788740000451b000000010302080000000000340002000000000200010000000000005a452d2b00010100050302035e4c00000000011f000000000000000000000001006c0700000001006c0701006c0701006c0701006c0701006c0700000a00ffffffffffffffffffffffff02ffffffff01006c0700000000000101ac12ec0701006c0700000000601f000002000000000001006c070001006c07ffffffff01006c07ffffffff000102040300000005f71801f7f0f0f0f0f0f0f0f0f0f02c14000005b73a01f7f0f0f0f0f0f0f0f0f0f01b23000005b70301f7f0f0f0f0f0f0f0f0f0f027210000010000000a14050000010000000a14050000010000000a14050000010000000a14050000010000000a14050000010000000a140500002759ee070133750000ffffffff2733ee073059ee0700006d9000000300000001ffff00000301ffff00000301ffff0000035e0019001b00005a8034022c0b090aff00009e0100000000000000000000000001006c072380ee070a00efce000005000104480000e00f0000f0070000b61aee07ffffffffffffffff00000008ffffffff19000e00ffffffff19000500e3030000ffff2000f8000000ffff220097020000ffff26005e0a00000f000d009610000019000d00ffffffff01001600000000000000ff03040000000a000000ee07000093000000ffffffff33750000b600f0072380ee070a0b0b02000500000000002380ee07149d14ff002100000000000000000101006c0722c6c1000042020000000000007b060000010000ffffffff000107000000000000000a000000000000000000d934ed070001006c0701006c0772aa0000fc8901006d1aea07000000000000000000e2c0020000589d050000e2c0020000000000007400da07ff010f020d0000000301bd000000000000000c0a0f0e0e0d120418e20000000000000107a20000000000000000000809645000ffbd000000000000000000084602ff00ffc20300000000000001000103644e00ffa2000000000000000000084602ff00ffc2030000000000000000014801ff00ff210200000000000001000475000600ff9e0100000000000000000169021e00ff01000000bf010000010400ff01040a402207008002000000f909008002000000f9095984040000024707008002000002470700840400000001009921020000000401006902000000050190420200000204010069020000020401003375000000000c02405000000000c6c1000042eb387742eb3877",
+    "expected": {
+      "ordinal": 49606,
+      "signed_tag": 2,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 180450,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 367960,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": 180450,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 49606,
+      "native_id_word": 2000218946,
+      "secondary_word": 2000218946
+    },
+    "source_tag_offset": 34619375,
+    "source_end": 34621168
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 71529,
+    "raw_hex": "05000000000f000000466f74617120537472616b6f736861000040000000000069170100a4b85477a4b85477",
+    "expected": {
+      "ordinal": 71529,
+      "signed_tag": 5,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_STRINGS",
+      "names": null,
+      "stored_name_strings": [
+        {
+          "start": 54430021,
+          "end": 54430025,
+          "native_offset": "0x20",
+          "byte_count": 0,
+          "raw_hex": "",
+          "text": "",
+          "text_state": "utf8",
+          "null_vs_empty_distinguished": false
+        },
+        {
+          "start": 54430025,
+          "end": 54430044,
+          "native_offset": "0x28",
+          "byte_count": 15,
+          "raw_hex": "466f74617120537472616b6f736861",
+          "text": "Fotaq Strakosha",
+          "text_state": "utf8",
+          "null_vs_empty_distinguished": false
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 71529,
+      "native_id_word": 2002040996,
+      "secondary_word": 2002040996
+    },
+    "source_tag_offset": 54430020,
+    "source_end": 54430064
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 73009,
+    "raw_hex": "07890101006c07c40011ef9000000000400000000000311d01006cbe54776cbe5477",
+    "expected": {
+      "ordinal": 73009,
+      "signed_tag": 7,
+      "state": "decoded",
+      "source_record_kind": "VIRTUAL_PLAYER",
+      "names": null,
+      "native_fields": {
+        "0x16_u16_flags_raw": 393,
+        "0x10_13_raw_hex": "01006c07",
+        "0x18_u16": 196,
+        "0x1a_u8": 17,
+        "0x08_u32_raw": 37103
+      },
+      "optional_0c": {
+        "present": false,
+        "start": 54493059,
+        "end": 54493059,
+        "raw_word_u32": null
+      }
+    },
+    "identity": {
+      "stored_index": 73009,
+      "native_id_word": 2002042476,
+      "secondary_word": 2002042476
+    },
+    "source_tag_offset": 54493045,
+    "source_end": 54493079
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 93245,
+    "raw_hex": "08ffffffff38006dcc000000350b020000ffffffff00000000003301c807ff02050208020000030100000000000000000a0a0a0a0a0a0a0aa304000000000000010100000000000000000000083564ff00ff00000000ff01ff00000008010010000000003d6c0100780d5577780d5577",
+    "expected": {
+      "ordinal": 93245,
+      "signed_tag": 8,
+      "state": "decoded",
+      "source_record_kind": "SUPPORT_STAFF",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 52333,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 133941,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ],
+      "native_fields": {
+        "0x68_raw_reference_word_u32": 4294967295,
+        "0x71_u8": 56,
+        "0x70_u8": 0
+      }
+    },
+    "identity": {
+      "stored_index": 93245,
+      "native_id_word": 2002062712,
+      "secondary_word": 2002062712
+    },
+    "source_tag_offset": 55348549,
+    "source_end": 55348661
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 100604,
+    "raw_hex": "1201031110120000f51aee0700000000290000001a200000ff320000bb520000e15200008655000030560000e8560000315700000a580000d45800007082000003900000bd920000809e0000c5a0000007aa0000ffb000003ab1000056c600008ad0000044d400003ceb00008a0a0100550c0100e80c0100f00c0100ce0e0100cf0e0100f612010054170100a15a000088dd010049030200f6c800004ab8000021910000cbba0000450301003f150100e6a4000030e60000080000009d1aed073a01dd02611bed075e0e3d77641bed0798d73c77681bed0752e83a772a1aee079e343a775f1aee0719ac3b779c1aee073c2c3d77bc1aee072a5837770170cc000000540b020000ffffffff00000000006000c507ff02100209010300050100000000000000000a0a0a0a0a0a0a0a973c0000000000000119a01100000000000000000302140000ff6e1800000000000000000302150000ff870c00000000000000000302320000ff832e00000000000000000302180000ffef7400000000000000000302150000ff380200000000000000000302180000ff921d00000000000000000302170000ff551e00000000000000000302160000ff326100000000000000000302150000ff6b0600000000000000000302180000ff671700000000000000000302180000ffbf0100000000000000000302450000ff7b0c000000000000000003022e0000fffd5900000000000000000302140000ff6003000000000000000003022a0000ffe50700000000000000000302340000ff0e0d000000000000000003021a0000ff720000000000000000000302640000ff6c0500000000000000000302180000ff2d1600000000000000000302170000ff840c00000000000000000302160000ffc00400000000000000000302150000ffde7900000000000000000302140000ff2e1200000000000000000302160000ff4d12000000000000000003021a0000ff00000000ff01ff0000000802401000000000fc880100372a5577372a5577",
+    "expected": {
+      "ordinal": 100604,
+      "signed_tag": 18,
+      "state": "decoded",
+      "source_record_kind": "AGENT",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 52336,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 133972,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ],
+      "native_fields": {
+        "0xa0_i8": 1,
+        "0xa8_ad_raw_hex": "031110120000",
+        "0xa4_a7_raw_date_hex": "f51aee07",
+        "0xae_u8": 1
+      },
+      "nation_reference": {
+        "start": 55844787,
+        "end": 55844791,
+        "namespace": "NATION",
+        "transport": "conditional_full_loader_raw32",
+        "raw_word_u32": 0,
+        "identity_resolved": false
+      },
+      "reference_conditions": "NATION11182BC fullstream flagsbit1 and(root80A bit0 OR root80B bit0), local2C98=1. Writer root808/809 raw-index branch separately requires global2AF8!=1 for4B. Runtime globals are unobserved.",
+      "person_vector_summary": {
+        "count": 41,
+        "count_offset": 55844791,
+        "rows_start": 55844795,
+        "rows_end": 55844959,
+        "entry_bytes": 4,
+        "payload_state": "not_projected"
+      },
+      "date_word_vector_summary": {
+        "count": 8,
+        "count_offset": 55844959,
+        "rows_start": 55844963,
+        "rows_end": 55845027,
+        "entry_bytes": 8,
+        "payload_state": "not_projected"
+      }
+    },
+    "identity": {
+      "stored_index": 100604,
+      "native_id_word": 2002070071,
+      "secondary_word": 2002070071
+    },
+    "source_tag_offset": 55844775,
+    "source_end": 55845517
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 100605,
+    "raw_hex": "1201041310080000f51aec070100000011000000d07500006d8400008d890000539d000079b40000b9b60000335d0000bfee010031e30100cbee0100b5770000a2570000c9840000084d0000ce980000acfb0000b477000005000000a41aed07db6c6f05e91aed0724353d779a1aee07d77c48039a1aee07a5b93577b01aee07f765aa0501cb95020000f334050000ffffffff00000000005f01bd07ff03050211010000030101000000000000000a0a0a0a0a0a0a0a344f00000000000001077f00000000000000000003021d0000ff0b0c000000000000000003021a0000ff782400000000000000000302140000ff641f00000000000000000302160000ff870c000000000000000003021b0000ffc6e601000000000000000302480000ff0edd01000000000000000302180000ff00000000ff01ff0000000802401000000000fd880100382a5577382a5577",
+    "expected": {
+      "ordinal": 100605,
+      "signed_tag": 18,
+      "state": "decoded",
+      "source_record_kind": "AGENT",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 169419,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 341235,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ],
+      "native_fields": {
+        "0xa0_i8": 1,
+        "0xa8_ad_raw_hex": "041310080000",
+        "0xa4_a7_raw_date_hex": "f51aec07",
+        "0xae_u8": 1
+      },
+      "nation_reference": {
+        "start": 55845529,
+        "end": 55845533,
+        "namespace": "NATION",
+        "transport": "conditional_full_loader_raw32",
+        "raw_word_u32": 1,
+        "identity_resolved": false
+      },
+      "reference_conditions": "NATION11182BC fullstream flagsbit1 and(root80A bit0 OR root80B bit0), local2C98=1. Writer root808/809 raw-index branch separately requires global2AF8!=1 for4B. Runtime globals are unobserved.",
+      "person_vector_summary": {
+        "count": 17,
+        "count_offset": 55845533,
+        "rows_start": 55845537,
+        "rows_end": 55845605,
+        "entry_bytes": 4,
+        "payload_state": "not_projected"
+      },
+      "date_word_vector_summary": {
+        "count": 5,
+        "count_offset": 55845605,
+        "rows_start": 55845609,
+        "rows_end": 55845649,
+        "entry_bytes": 8,
+        "payload_state": "not_projected"
+      }
+    },
+    "identity": {
+      "stored_index": 100605,
+      "native_id_word": 2002070072,
+      "secondary_word": 2002070072
+    },
+    "source_tag_offset": 55845517,
+    "source_end": 55845851
+  },
+  {
+    "filename": "Cesar Jules - Newcastle.fm",
+    "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+    "original_ordinal": 100606,
+    "raw_hex": "1201020f0f110000ae1aed070600000022000000252100005d3800000f590000cc5b0000b56e0000ba98000066a5000096ac000092ad0000e5b2000045b60000dec3000062c90000b8ca00008ce20000bae50000cfee00009eef00001bf30000d5f70000780b0100490c01007c0c0100691001008f1201007a15010027e30100a9dd0100a7ba00004dd60000efee0000414002002dab0000eaf100000b000000a51aed07b7171305b21aed070a083977c31aed07d7b13b77f81aed0709373d770f1aee076bfbdc02151aee074f083777441aee07a17e39779e1aee0749d51205b61aee078ff13c77c31aee07962a3c77c51aee07a9563a77012870020000fffe040000ffffffff0000000000d700b607ff03100211010300030106000000000000000a0a0a0a0a0a0a0aa0150000000000000104391400000000000000000302170000ffad1e00000000000006000301180000ffa00c00000000000000000302170000ff100900000000000000000302170000ff00000000ff01ff0000000802401000000000fe880100392a5577392a5577",
+    "expected": {
+      "ordinal": 100606,
+      "signed_tag": 18,
+      "state": "decoded",
+      "source_record_kind": "AGENT",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 159784,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 327423,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ],
+      "native_fields": {
+        "0xa0_i8": 1,
+        "0xa8_ad_raw_hex": "020f0f110000",
+        "0xa4_a7_raw_date_hex": "ae1aed07",
+        "0xae_u8": 1
+      },
+      "nation_reference": {
+        "start": 55845863,
+        "end": 55845867,
+        "namespace": "NATION",
+        "transport": "conditional_full_loader_raw32",
+        "raw_word_u32": 6,
+        "identity_resolved": false
+      },
+      "reference_conditions": "NATION11182BC fullstream flagsbit1 and(root80A bit0 OR root80B bit0), local2C98=1. Writer root808/809 raw-index branch separately requires global2AF8!=1 for4B. Runtime globals are unobserved.",
+      "person_vector_summary": {
+        "count": 34,
+        "count_offset": 55845867,
+        "rows_start": 55845871,
+        "rows_end": 55846007,
+        "entry_bytes": 4,
+        "payload_state": "not_projected"
+      },
+      "date_word_vector_summary": {
+        "count": 11,
+        "count_offset": 55846007,
+        "rows_start": 55846011,
+        "rows_end": 55846099,
+        "entry_bytes": 8,
+        "payload_state": "not_projected"
+      }
+    },
+    "identity": {
+      "stored_index": 100606,
+      "native_id_word": 2002070073,
+      "secondary_word": 2002070073
+    },
+    "source_tag_offset": 55845851,
+    "source_end": 55846253
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 0,
+    "raw_hex": "0100009b0f2d14da0267007800221c1c1c1c1e211e210c09030a110b06080f110e0c010d39080c06060902010a030a130a193939392135052b1e2828301e370530344b053c37142d4b0f0f64020000c53c08002d0f000000000000ffffffffffffffff0100000001006c0722ff02010104b801006c0701006c0701010100048300000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff000001010200011b09011f0900000000000100010100020000240e00000000000000000000000001006c079932ed070a008841000005000100000000000000000000000001006c07ffffffffffffffff00000002ffffffff19000e00ffffffff19000500000000000000ff0304000000000000006c07000000000000ffffffffffffffffb500ef079932ed0700000040000000000000009932ed0757e214ff000000000000000000000001006c070000000000ce00000000000000d7030000220000ffffffff000209000000000000000a070000000000000005000000000103030a09041401010106050101010100000000d500b0070001006c0701006c07ffffffffffffffff01006c07020000000000000000c9590000009e6a000000ffffffff0000000000d500b0070600070102000000030183000000000000000b09130b0f0f040b14000000000000000104f12800000000000003000301644f00ffa91c00000000000006000301504f00ff5f0000000000000002000103464f00ff2a00000000000000020001033c4f00ff00000000ff01ff0000000002581000000000000000000900000009000000",
+    "expected": {
+      "ordinal": 0,
+      "signed_tag": 1,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_NON_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 22985,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 27294,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 0,
+      "native_id_word": 9,
+      "secondary_word": 9
+    },
+    "source_tag_offset": 5,
+    "source_end": 598
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 1,
+    "raw_hex": "10001a5a0000dd6900000102401000000000010000000e0000000e000000",
+    "expected": {
+      "ordinal": 1,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x20",
+          "namespace": "first",
+          "raw_index": 23066,
+          "state": "unresolved_name_reference"
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "second",
+          "raw_index": 27101,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 0,
+        "raw_field20_u32": 23066,
+        "raw_field28_u32": 27101,
+        "final_flags_u64": 272630273
+      }
+    },
+    "identity": {
+      "stored_index": 1,
+      "native_id_word": 14,
+      "secondary_word": 14
+    },
+    "source_tag_offset": 598,
+    "source_end": 628
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 81,
+    "raw_hex": "1001964c01000102403000000000510000005504000055040000",
+    "expected": {
+      "ordinal": 81,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x28",
+          "namespace": "common",
+          "raw_index": 85142,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 1,
+        "raw_field20_u32": null,
+        "raw_field28_u32": 85142,
+        "final_flags_u64": 809501185
+      }
+    },
+    "identity": {
+      "stored_index": 81,
+      "native_id_word": 1109,
+      "secondary_word": 1109
+    },
+    "source_tag_offset": 32431,
+    "source_end": 32457
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 348,
+    "raw_hex": "04a30500000000000050005000b60f0f0a1212140a1200000a01000049592aee070000d31800000101dc8f0000efa5000001000049682aee070000d318000002078e8e0000c68f000001000049752aee070000d018000001004b8000005791000001000049832aee070000d3180000020127900000be8f000001040052e52aee070000ac0100000101047500008f74000001000049ec2aee070000ac0100000100267500009174000001000049f32aee070000ac010000000163740000f874000001030058fa2aee070000ac0100000202be7400009781000001030050006bee070100451b00000302457500003975000001000049034bee0700005f150000010023900000f190000001000000861ebe010000000001006c0700e03d010000199c030000ffffffff0000000000f000cb07ff0007010100000003018b000000000000000a0a0a0a0a0a0a0a1004000000000000000000010010010000005c010000e8140000e8140000",
+    "expected": {
+      "ordinal": 348,
+      "signed_tag": 4,
+      "state": "decoded",
+      "source_record_kind": "OFFICIAL",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 81376,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 236569,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 348,
+      "native_id_word": 5352,
+      "secondary_word": 5352
+    },
+    "source_tag_offset": 141308,
+    "source_end": 141669
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 1488,
+    "raw_hex": "037316e317e11173007d007300ff037e7d00ffffffffffca040000000000001401010101010101010101010101010a1905260f19052f05192d404f3f403751352e4a4b432f212d640f0d3e3e0f2832412812432e33583214464152322a1e1e4646323d3d23210c0001b600e90701006c07e4252d0060220000000000ff777d02c4000200000000000c00000000000000ff00000000ff00ffffffffff0c07222a9c9c9c9c9c9c9c00010101000000051fa622ee070118ffffffffffffffff010000003afb000103ff000001006c07ff00000002000000ff03000e780000990000009901ff1201000000000000010300fcff0001006c070001006c0701006c07ff04000000001234f400ffffffff941100000100000000bf00000000005901ab004501ab00ab0000000000bf00ab00ab000000000000ca040000ffffffff015bee070f5bee070000ff7a00000300000001ffff00000301ffff00000301ffff000003300003000100005a8000350c000201ff00005b106b14620b430078000004230404162320040c0208020a10100a0706060b08083204080e0d09030c0d0409070d28232a2b21220a16080d121c12225f0a05280f554614052d2805ffffffffffffffffffffffffffffffffffffffffffffffff0000000001006c0700ff000101030001006c0701006c0701010300048100000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff64049100000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff6404a700000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff0100000109551054125a0a5b11480c4d024e135f076011000000000100000200011000180b00000000000000000000000001006c07b600e9070a000f00000005000185ef0100cb570000000000000212ed07ffffffffffffffff00000004c3030000ffff2000c3030000ffff2200f0000000ffff2600ffffffff01001600000000000000ff030400000000000000ec07000000000000ffffffffffffffff9700ef07b600e9070202020000000000000000a22aeb0714645c0100001a000000000000000001006c0700d0050000ca04000000000000d0120000010000ffffffff000107000000000000000a0000000001070c0f01010e01010514080401010600000000b600e9070201006c0701006c0726830000ffffffff051aed070600000000000000001e54000000344a000000ffffffff00000000005601cb070a00090104000000030181000000000000000e0b0f0e0c0e0c07a408000000000000010781000000000000000000084601ff00ff2501000000000000670107121b5a00ff3d020000000000000000014801ff00ff91000000000000000000084601ff00ffca0400000000000000000419000000ffca0400000000000000000443000400ff08040000000000000000016a041e08ff02000000a7000000026401080400000164000101ff0a00760067e21a000000220278f402000000fc04006f02000000da028acb16000000d902ac8c260000005e01cd2b26000000dc16005f020000009008dd0a0c0000007107008502000000710700ca04000000000622781004000000d0050000b1360300b1360300",
+    "expected": {
+      "ordinal": 1488,
+      "signed_tag": 3,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_PLAYER_AND_NON_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 21534,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 18996,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 1488,
+      "native_id_word": 210609,
+      "secondary_word": 210609
+    },
+    "source_tag_offset": 589792,
+    "source_end": 590990
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 1512,
+    "raw_hex": "021c1167127c085e0078005e021102767900ffffffffffc604000000000000010114100101010101010101011202312c2331273c313918402c050f0f050a0f3b380f410f3738642323373b3c20050a0539272f343b311e2337464741352d14463d2d3c3e59410000089732ee0701006c0748265a00901a0000000000ff627802b4000200000000100c00000000010100ff000000ffff00ffffffffff0c07199c2524241e07fec901020204057503c458ed07caff03000100100d10011405c458ed070405b801bf7cee074c0002000200020112011405c47cee070101010000000520bf7cee070111f80000000000000002000000ff030009780000160000006f00ff1201000000000000070300fcff0001006c070001006c0701006c07ff04000000008502000000000000ae0200000101000100070009000900440107004401b20007000100010007000700b20001000000010538060000ffffffff4601000046010000ae020000000000000907c4020000470003002303da05e44000000000000000000000ffffffff000000000000000000000000c6040000ffffffff015bee070f5bee070000090d01000300000001ffff00000301ffff00000301ffff0000035a0019000800005a802c02030a090bff10c0140400000000000000000000020001006c079732ee070a01bf2500002f700000050001f109000065010000000000009732ee07ffffffffffffffff000000057f000000ffff20005f000000ffff22001f000000ffff2600ffffffff19000b00ffffffff01001600000000000000ff030400000000000000ef07000000000000ffffffffffffffff9700ef079732ee0703000300000000000000009732ee07145424ff000005000000000000000001006c0700e8050000c6040000000000007f020000010000ffffffff01ff020101bf250000816967ff000000000000000001006c0700000600000000000000000000000200000007010301011604000007010301011404000000000000009732ee070001006c0701006c07be090000058a0100ad32ec0700000000000000000055570100009af8030000ffffffff00000000006001cd0707000901040000000301a7000000000000000a0a0a0a0a0a0a0a833700000000000001078b0000000000000000000809645000ff8b000000000000000000080e645000ff74010000000000000000014801ff00ff8b000000000000000000084601ff00ff14040000000000000000016a091e03ff140400000000000000000169051e00ff04040000000000000000016a021e08ff0200000014040000013d0004040000012c00ff01ff0c00c4066bf701000000970000d1010000000c02bdd7010000000202dd4a020000007300004102000000960000de010000009f18006902000000da02001a0200000016041dd804000000c7024dd60400000048070085020000016e00602306000000000002781004000000e8050000af490300af490300",
+    "expected": {
+      "ordinal": 1512,
+      "signed_tag": 2,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 87893,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 260250,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 1512,
+      "native_id_word": 215471,
+      "secondary_word": 215471
+    },
+    "source_tag_offset": 607010,
+    "source_end": 608090
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 1818,
+    "raw_hex": "10003ec40100c452040001024110000000001a0700001224080012240800",
+    "expected": {
+      "ordinal": 1818,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x20",
+          "namespace": "second",
+          "raw_index": 115774,
+          "state": "unresolved_name_reference"
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "first",
+          "raw_index": 283332,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 0,
+        "raw_field20_u32": 115774,
+        "raw_field28_u32": 283332,
+        "final_flags_u64": 272695809
+      }
+    },
+    "identity": {
+      "stored_index": 1818,
+      "native_id_word": 533522,
+      "secondary_word": 533522
+    },
+    "source_tag_offset": 734335,
+    "source_end": 734365
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 9998,
+    "raw_hex": "010000f715f715a40778008c002e1d1c1d1d161616210c0c10080b020f0c03020c0804104b0f0b0b0b0f0e06040c080d0f3c192f3532195a25281e3c282826374b23280f234b50194b1423c0060000ba0000009100000000000000ffffffffffffffff0000000001006c0700ff0001010300b700e40701006c0700000000000000010002000000010000350000000000000000000000000001006c07b700e4070a00ffffffff05050e2700009300000000000000c006000026ac00ffffffff0002090000000000000005070000000000000005000000000000000000b700e4070001006c0701006c07ffffffffffffffff01006c07000000000000000000395a000000d86a000000ffffffff0000000000bd00bd0706000c010200000003018300000000000000080c120b0b0a130301000000000000000101350000000000000004000103644e00ff00000000ff01ff00000000015010000000000e2700004006140140061401",
+    "expected": {
+      "ordinal": 9998,
+      "signed_tag": 1,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_NON_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 23097,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 27352,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 9998,
+      "native_id_word": 18089536,
+      "secondary_word": 18089536
+    },
+    "source_tag_offset": 4613460,
+    "source_end": 4613819
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 9999,
+    "raw_hex": "010000a80e1d12680473007300221c07231c1e1623210c080702010f0f0e0713070408083c0d0c070b0906110d0b0a1009463c302f3a440a1e0a23143223145a3d3d4b05234b0f0f190f05d305000000010000c900000000000000ffffffffffffffff0100000001006c0700ff02010103afb600e90701006c0701010100048300000000000000ffffffffffffffffffffffffffffffff649400ee07ffffffffffffffff000001010200011b09011f09000000000001010101000000406d0000000000000000000000000001006c07b600e9070a00e971000005000100000000000000000000000001006c07ffffffffffffffff00000001ffffffff19000f00000000000000ff0304000000000000006c07000000000000ffffffffffffffffb500ef07b600e90700000000000000000000009732ed0719e214ff000000000000000000000001006c07000f270000d0000000000000006b060000220000ffffffff0002070000000000000002090000000000000004000000000108040a070614010101030803010101000000006000cd070001006c0701006c07ffffffffffffffff01006c07010000000000000000f35a0000006b69000000ffffffff00000000006000cd0706000b0103000000030183000000000000000a0b0c0e090b0b0401000000000000000101462700000000000002000301644f00ff00000000ff01ff00000000025810000000000f2700004606140146061401",
+    "expected": {
+      "ordinal": 9999,
+      "signed_tag": 1,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_NON_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 23283,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 26987,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 9999,
+      "native_id_word": 18089542,
+      "secondary_word": 18089542
+    },
+    "source_tag_offset": 4613819,
+    "source_end": 4614356
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 10000,
+    "raw_hex": "1000059c0200783d05000122401000000000102700004c0614014c061401",
+    "expected": {
+      "ordinal": 10000,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x20",
+          "namespace": "first",
+          "raw_index": 171013,
+          "state": "unresolved_name_reference"
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "second",
+          "raw_index": 343416,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 0,
+        "raw_field20_u32": 171013,
+        "raw_field28_u32": 343416,
+        "final_flags_u64": 272638465
+      }
+    },
+    "identity": {
+      "stored_index": 10000,
+      "native_id_word": 18089548,
+      "secondary_word": 18089548
+    },
+    "source_tag_offset": 4614356,
+    "source_end": 4614386
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 10001,
+    "raw_hex": "1000dd5900005d6d00000102401001000000112700005206140152061401",
+    "expected": {
+      "ordinal": 10001,
+      "signed_tag": 16,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "names": null,
+      "retired_name_references": [
+        {
+          "native_offset": "0x20",
+          "namespace": "first",
+          "raw_index": 23005,
+          "state": "unresolved_name_reference"
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "second",
+          "raw_index": 27997,
+          "state": "unresolved_name_reference"
+        }
+      ],
+      "retired_pointer_raw": {
+        "selector": 0,
+        "raw_field20_u32": 23005,
+        "raw_field28_u32": 27997,
+        "final_flags_u64": 4567597569
+      }
+    },
+    "identity": {
+      "stored_index": 10001,
+      "native_id_word": 18089554,
+      "secondary_word": 18089554
+    },
+    "source_tag_offset": 4614386,
+    "source_end": 4614416
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 41382,
+    "raw_hex": "02ff1000117509630089009c09ff04786f0007ffffffffa4730000000000000101010101010c0101140c0f0101012d2b17053013362415193b0a0f05140f0a323c0510144a4d643448213a3114050f0a42251143480c161e482826233e1d2d374e4b261fedc521001001006c0701006c077d190000e8260000000000ff638902a8000300000000120c000000020202010001010001010001ffffffff0c072d9c0af12d292d08e40102010405061a2a1bec070a0000000000141414001a052a1bec0701010a0000000501a21aee0701180200000000000000050ab21aee0701000509b21aee0701000501c01aee07011801000000000000000504d01aee0701000509d01aee0701000516ef1aee07010b010000000102060000000525ef1aee070100050aef1aee0701000509ef1aee07010000000000000103143636d01aee07143a050101461aed070000000000002d3402000000ff0400000000000000000003000212010000000000000e0b0001000001006c070001006c0701006c07ff040000000044010000ffffffffffffffff01000000000100000000000100000000000000000000000000010000000000010000000000000001011401060100000600000001c078ee076e190000f70100000c0001c678ee076e190000f70100000c0001d152ee07010100007c0000000c0001df52ee07010100007c0000000c0001f452ee070b0100007c0000000c00010253ee07000100007c0000000c0000000000000006010000ffffffff025fee078088ee070000070601000300000001ffff00000301ffff00000301ffff000003540019000c0500138007311b262729ff0000ffffffffffffffff00000000000001006c074d01e8070a00e61b01000500017616000071080000000000009b32ee07ffffffffffffffff0000000910000000ffff200039000000ffff27000b000000ffff2600ffffffff05000300a60200000f000d005104000019000d00ffffffff01001600568a2700ffff1000edc52100ffff1200000000000000ff030400000007040000ef07000000000000ffffffffa47300006d01f1070a01ec070a000a000000010000000725b30403ffffffffffffffff0212ed071b38ed070000000400000000009f2cee0750cd14ff000b00000000000000000001006c070ba6a1000006010000000000007f010000010000ffffffff00011700000000000000050000000000000000004d01e8070001006c0701006c07b23700004a8a01000f1bec070000001000000000002fc6020000ed9e0500002fc6020000000000007a00dc07ff0905010b0000000301bd00000000000000090d0b060b0a0910b3cd0000000000000105aa0000000000000001000103644e00ff501f00000000000006000301640000ffaa000000000000000000016a011e05ff060100000000000000000443021000ff060100000000000000000419020000ff01000000aa000000010100ff01ff0400480800ff0400000048085006010000024c0500ff040000024c05000601000000000802405004000000a6a100007423377774233777",
+    "expected": {
+      "ordinal": 41382,
+      "signed_tag": 2,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 181807,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 368365,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": 181807,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 41382,
+      "native_id_word": 2000102260,
+      "secondary_word": 2000102260
+    },
+    "source_tag_offset": 27449964,
+    "source_end": 27451093
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 49606,
+    "raw_hex": "024b0f720fc90b58008a00740213046b670034ffffffff33750000000000000101140105010901011001010109013026112e1f332420122e1d0a0f140a050f2b320f3f05273e64352715261c2f0f0f0a3e014740335c432d325f2d2d2c4b232d4d502b3d77311d00072380ee0701006c0798232dff08260000000000ff588a02c3000300000000000c00000000000000010100000000000154c902000c07229c2b261d1e14f3b90102020405061a2778ee07beff0e0003001001130114053578ee070405b7033a1aee070f000d000b00141414001a05f978ee070101040000000501de1aee07011802000000000000000504e71aee0701000509e71aee070100051ffc1aee0701181000000000000000000000000001031026260063ee07107a050101e14aee070000eaffeaff303002010d000753000911000067000000000100130100001010000006050003000001006c070001006c0701006c07ff0700000000c705000054c90200c7070000010000000000000100010012000000120000000000000000000000000000000100000104b0020000a04d5577090000000000000000000000110d00000000000061ed00000000000001006c07000105b00200006b905b0095d500004d660200c7070000000000000303b700000000000000000000000000001e0000128004000000ed080000000000000000010154c902009e010000bf010000237aee0701021401420200000100000001e170ee07f8010000960200000c001401337500000200000001f96aee0745750000451b000000010302080000003400340102020200000001000000000000005a4b3a3900000000040400026e4c0001006bee0705750000451b00000000000000011f000000000000000000000001006c0700000001006c0701006c0701006c0701006c0701006c0700000a00ffffffffffffffffffffffff02ffffffff01006c0700000000000101ac12ec0701006c0700000000601f000002000000000001006c070001006c07ffffffff01006c07ffffffff000102040300000005f71801f7f0f0f0f0f0f0f0f0f0f0d415000005b73a01f7f0f0f0f0f0f0f0f0f0f04826000005b70301f7f0f0f0f0f0f0f0f0f0f080250000010000000a4c040000010000000a4c040000010000000a4c040000010000000a4c040000010000000a4c040000010000000a4c0400000063ee070133750000ffffffff0433ee070279ee0700006d9000000300000001ffff00000301ffff00000301ffff0000035e0019001b0b005a8034022c0b090aff00009e0100000000000000000000000001006c072380ee070a00efce000005000104480000e00f0000f0070000b61aee07ffffffffffffffff00000008ffffffff19000e00ffffffff19000500e3030000ffff2000f8000000ffff220097020000ffff26005e0a00000f000d009610000019000d00ffffffff01001600000000000000ff03040000000a000000ee07000093000000ffffffffffffffffb600f0072380ee070a0b0b02000500000000002380ee0714a914ff001d00000000000000000101006c071dc6c1000042020000000000007b060000010000ffffffff000107000000000000000a000000000000000000d934ed070001006c0701006c0772aa0000fc8901006d1aea07000000000000000000e2c0020000589d050000e2c0020000000000007400da07ff010f020d0000000301bd000000000000000c0a0f0e0d0d120418e20000000000000107a20000000000000000000809645000ffbd000000000000000000084602ff00ffc20300000000000001000103644e00ffa2000000000000000000084602ff00ffc2030000000000000000014801ff00ff210200000000000001000475000600ff9e0100000000000000000169021e00ff01000000bf010000010400ff01040a402207008002000000f909008002000000f909598404000002470700800200000247070084040000000100992102000000e100006902000000e200904202000002e100006902000002e100003375000000000c02405000000000c6c1000042eb387742eb3877",
+    "expected": {
+      "ordinal": 49606,
+      "signed_tag": 2,
+      "state": "decoded",
+      "source_record_kind": "ACTUAL_PLAYER",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 180450,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 367960,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": 180450,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 49606,
+      "native_id_word": 2000218946,
+      "secondary_word": 2000218946
+    },
+    "source_tag_offset": 34504985,
+    "source_end": 34506481
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 71529,
+    "raw_hex": "05000000000f000000466f74617120537472616b6f736861000040000000000069170100a4b85477a4b85477",
+    "expected": {
+      "ordinal": 71529,
+      "signed_tag": 5,
+      "state": "decoded",
+      "source_record_kind": "RETIRED_PERSON_NAME_STRINGS",
+      "names": null,
+      "stored_name_strings": [
+        {
+          "start": 54207065,
+          "end": 54207069,
+          "native_offset": "0x20",
+          "byte_count": 0,
+          "raw_hex": "",
+          "text": "",
+          "text_state": "utf8",
+          "null_vs_empty_distinguished": false
+        },
+        {
+          "start": 54207069,
+          "end": 54207088,
+          "native_offset": "0x28",
+          "byte_count": 15,
+          "raw_hex": "466f74617120537472616b6f736861",
+          "text": "Fotaq Strakosha",
+          "text_state": "utf8",
+          "null_vs_empty_distinguished": false
+        }
+      ]
+    },
+    "identity": {
+      "stored_index": 71529,
+      "native_id_word": 2002040996,
+      "secondary_word": 2002040996
+    },
+    "source_tag_offset": 54207064,
+    "source_end": 54207108
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 73009,
+    "raw_hex": "07890101006c07c40011ef9000000000400000000000311d01006cbe54776cbe5477",
+    "expected": {
+      "ordinal": 73009,
+      "signed_tag": 7,
+      "state": "decoded",
+      "source_record_kind": "VIRTUAL_PLAYER",
+      "names": null,
+      "native_fields": {
+        "0x16_u16_flags_raw": 393,
+        "0x10_13_raw_hex": "01006c07",
+        "0x18_u16": 196,
+        "0x1a_u8": 17,
+        "0x08_u32_raw": 37103
+      },
+      "optional_0c": {
+        "present": false,
+        "start": 54270103,
+        "end": 54270103,
+        "raw_word_u32": null
+      }
+    },
+    "identity": {
+      "stored_index": 73009,
+      "native_id_word": 2002042476,
+      "secondary_word": 2002042476
+    },
+    "source_tag_offset": 54270089,
+    "source_end": 54270123
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 93245,
+    "raw_hex": "08ffffffff38006dcc000000350b020000ffffffff00000000003301c807ff02050208020000030100000000000000000a0a0a0a0a0a0a0aa304000000000000010100000000000000000000083564ff00ff00000000ff01ff00000008010010000000003d6c0100780d5577780d5577",
+    "expected": {
+      "ordinal": 93245,
+      "signed_tag": 8,
+      "state": "decoded",
+      "source_record_kind": "SUPPORT_STAFF",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 52333,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 133941,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ],
+      "native_fields": {
+        "0x68_raw_reference_word_u32": 4294967295,
+        "0x71_u8": 56,
+        "0x70_u8": 0
+      }
+    },
+    "identity": {
+      "stored_index": 93245,
+      "native_id_word": 2002062712,
+      "secondary_word": 2002062712
+    },
+    "source_tag_offset": 55125593,
+    "source_end": 55125705
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 100604,
+    "raw_hex": "1201031110120000f51aee0700000000280000001a200000ff320000bb520000e15200008655000030560000e8560000315700000a580000d45800007082000003900000bd920000809e0000c5a0000007aa0000ffb000003ab1000056c600008ad0000044d400003ceb00008a0a0100550c0100e80c0100f00c0100ce0e0100cf0e0100f612010054170100a15a000088dd010049030200f6c800004ab8000021910000cbba0000450301003f150100e6a40000080000009d1aed073a01dd02611bed075e0e3d77641bed0798d73c77681bed0752e83a772a1aee079e343a775f1aee0719ac3b779c1aee073c2c3d77bc1aee072a5837770170cc000000540b020000ffffffff00000000006000c507ff02100209010300050100000000000000000a0a0a0a0a0a0a0a973c0000000000000119a01100000000000000000302140000ff6e1800000000000000000302150000ff870c00000000000000000302320000ff832e00000000000000000302180000ffef7400000000000000000302150000ff380200000000000000000302180000ff921d00000000000000000302170000ff551e00000000000000000302160000ff326100000000000000000302150000ff6b0600000000000000000302180000ff671700000000000000000302180000ffbf0100000000000000000302450000ff7b0c000000000000000003022e0000fffd5900000000000000000302140000ff6003000000000000000003022a0000ffe50700000000000000000302340000ff0e0d000000000000000003021a0000ff720000000000000000000302640000ff6c0500000000000000000302180000ff2d1600000000000000000302170000ff840c00000000000000000302160000ffc00400000000000000000302150000ffde7900000000000000000302140000ff2e1200000000000000000302160000ff4d12000000000000000003021a0000ff00000000ff01ff0000000802401000000000fc880100372a5577372a5577",
+    "expected": {
+      "ordinal": 100604,
+      "signed_tag": 18,
+      "state": "decoded",
+      "source_record_kind": "AGENT",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 52336,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 133972,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ],
+      "native_fields": {
+        "0xa0_i8": 1,
+        "0xa8_ad_raw_hex": "031110120000",
+        "0xa4_a7_raw_date_hex": "f51aee07",
+        "0xae_u8": 1
+      },
+      "nation_reference": {
+        "start": 55621831,
+        "end": 55621835,
+        "namespace": "NATION",
+        "transport": "conditional_full_loader_raw32",
+        "raw_word_u32": 0,
+        "identity_resolved": false
+      },
+      "reference_conditions": "NATION11182BC fullstream flagsbit1 and(root80A bit0 OR root80B bit0), local2C98=1. Writer root808/809 raw-index branch separately requires global2AF8!=1 for4B. Runtime globals are unobserved.",
+      "person_vector_summary": {
+        "count": 40,
+        "count_offset": 55621835,
+        "rows_start": 55621839,
+        "rows_end": 55621999,
+        "entry_bytes": 4,
+        "payload_state": "not_projected"
+      },
+      "date_word_vector_summary": {
+        "count": 8,
+        "count_offset": 55621999,
+        "rows_start": 55622003,
+        "rows_end": 55622067,
+        "entry_bytes": 8,
+        "payload_state": "not_projected"
+      }
+    },
+    "identity": {
+      "stored_index": 100604,
+      "native_id_word": 2002070071,
+      "secondary_word": 2002070071
+    },
+    "source_tag_offset": 55621819,
+    "source_end": 55622557
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 100605,
+    "raw_hex": "1201041310080000f51aec070100000011000000d07500006d8400008d890000539d000079b40000b9b60000335d0000bfee010031e30100cbee0100b5770000a2570000c9840000084d0000ce980000acfb0000b477000005000000a41aed07db6c6f05e91aed0724353d779a1aee07d77c48039a1aee07a5b93577b01aee07f765aa0501cb95020000f334050000ffffffff00000000005f01bd07ff03050211010000030101000000000000000a0a0a0a0a0a0a0a344f00000000000001077f00000000000000000003021d0000ff0b0c000000000000000003021a0000ff782400000000000000000302140000ff641f00000000000000000302160000ff870c000000000000000003021b0000ffc6e601000000000000000302480000ff0edd01000000000000000302180000ff00000000ff01ff0000000802401000000000fd880100382a5577382a5577",
+    "expected": {
+      "ordinal": 100605,
+      "signed_tag": 18,
+      "state": "decoded",
+      "source_record_kind": "AGENT",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 169419,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 341235,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ],
+      "native_fields": {
+        "0xa0_i8": 1,
+        "0xa8_ad_raw_hex": "041310080000",
+        "0xa4_a7_raw_date_hex": "f51aec07",
+        "0xae_u8": 1
+      },
+      "nation_reference": {
+        "start": 55622569,
+        "end": 55622573,
+        "namespace": "NATION",
+        "transport": "conditional_full_loader_raw32",
+        "raw_word_u32": 1,
+        "identity_resolved": false
+      },
+      "reference_conditions": "NATION11182BC fullstream flagsbit1 and(root80A bit0 OR root80B bit0), local2C98=1. Writer root808/809 raw-index branch separately requires global2AF8!=1 for4B. Runtime globals are unobserved.",
+      "person_vector_summary": {
+        "count": 17,
+        "count_offset": 55622573,
+        "rows_start": 55622577,
+        "rows_end": 55622645,
+        "entry_bytes": 4,
+        "payload_state": "not_projected"
+      },
+      "date_word_vector_summary": {
+        "count": 5,
+        "count_offset": 55622645,
+        "rows_start": 55622649,
+        "rows_end": 55622689,
+        "entry_bytes": 8,
+        "payload_state": "not_projected"
+      }
+    },
+    "identity": {
+      "stored_index": 100605,
+      "native_id_word": 2002070072,
+      "secondary_word": 2002070072
+    },
+    "source_tag_offset": 55622557,
+    "source_end": 55622891
+  },
+  {
+    "filename": "last save overwrite backup.fm",
+    "snapshot_id": "f305511fdb53971561a4bed140e05979237d8651ecd28a2dce5844fb48f6a0b7",
+    "original_ordinal": 100606,
+    "raw_hex": "1201020f0f110000ae1aed070600000022000000252100005d3800000f590000cc5b0000b56e0000ba98000066a5000096ac000092ad0000e5b2000045b60000dec3000062c90000b8ca00008ce20000bae50000cfee00009eef00001bf30000d5f70000780b0100490c01007c0c0100691001008f1201007a15010027e30100a9dd0100a7ba00004dd60000efee0000414002002dab0000eaf100000b000000a51aed07b7171305b21aed070a083977c31aed07d7b13b77f81aed0709373d770f1aee076bfbdc02151aee074f083777441aee07a17e39779e1aee0749d51205b61aee078ff13c77c31aee07962a3c77c51aee07a9563a77012870020000fffe040000ffffffff0000000000d700b607ff03100211010300030106000000000000000a0a0a0a0a0a0a0aa0150000000000000104391400000000000000000302170000ffad1e00000000000006000301180000ffa00c00000000000000000302170000ff100900000000000000000302170000ff00000000ff01ff0000000802401000000000fe880100392a5577392a5577",
+    "expected": {
+      "ordinal": 100606,
+      "signed_tag": 18,
+      "state": "decoded",
+      "source_record_kind": "AGENT",
+      "names": [
+        {
+          "root_offset": "0xc8",
+          "original_reference_index": 159784,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd0",
+          "original_reference_index": 327423,
+          "inline_marker": 0,
+          "inline_record": null
+        },
+        {
+          "root_offset": "0xd8",
+          "original_reference_index": -1,
+          "inline_marker": 0,
+          "inline_record": null
+        }
+      ],
+      "native_fields": {
+        "0xa0_i8": 1,
+        "0xa8_ad_raw_hex": "020f0f110000",
+        "0xa4_a7_raw_date_hex": "ae1aed07",
+        "0xae_u8": 1
+      },
+      "nation_reference": {
+        "start": 55622903,
+        "end": 55622907,
+        "namespace": "NATION",
+        "transport": "conditional_full_loader_raw32",
+        "raw_word_u32": 6,
+        "identity_resolved": false
+      },
+      "reference_conditions": "NATION11182BC fullstream flagsbit1 and(root80A bit0 OR root80B bit0), local2C98=1. Writer root808/809 raw-index branch separately requires global2AF8!=1 for4B. Runtime globals are unobserved.",
+      "person_vector_summary": {
+        "count": 34,
+        "count_offset": 55622907,
+        "rows_start": 55622911,
+        "rows_end": 55623047,
+        "entry_bytes": 4,
+        "payload_state": "not_projected"
+      },
+      "date_word_vector_summary": {
+        "count": 11,
+        "count_offset": 55623047,
+        "rows_start": 55623051,
+        "rows_end": 55623139,
+        "entry_bytes": 8,
+        "payload_state": "not_projected"
+      }
+    },
+    "identity": {
+      "stored_index": 100606,
+      "native_id_word": 2002070073,
+      "secondary_word": 2002070073
+    },
+    "source_tag_offset": 55622891,
+    "source_end": 55623293
+  }
+]

@@ -1,0 +1,134 @@
+{
+  "verified": true,
+  "plugin_sha256": "774cacde63567fd3901c47719e7a6ed94cc3a0a62e9b94989dcac6b4890ec0e1",
+  "native_guards": [
+    {
+      "rva": "0xd32054",
+      "length": 656,
+      "sha256": "c8e5a0ed8f94d32ad40c215396d1f6417f48c95906b6ce0ca5b3b71ae0b0b55b"
+    },
+    {
+      "rva": "0xd325dc",
+      "length": 628,
+      "sha256": "3e22e4a95f35ac82a2229bfe1bca3cfee404ec09ea23cab63079c5627a2bfa3e"
+    },
+    {
+      "rva": "0x14d1880",
+      "length": 292,
+      "sha256": "d284b35320714f337884e96e7b83822ae0251daa77840d5a5b2263a59e7dfeb4"
+    },
+    {
+      "rva": "0xd2dcb8",
+      "length": 936,
+      "sha256": "efdebfe23f59ddeb11e677743246d04d3f57342580d9ddfbf13266b4f935f4de"
+    },
+    {
+      "rva": "0x14a6478",
+      "length": 428,
+      "sha256": "9df7a86301b56c53e1798e7171e61252a3c950358feee7068cd4d7ad1c2a8002"
+    },
+    {
+      "rva": "0x3d46bf0",
+      "length": 464,
+      "sha256": "52bf8f78528afb1b26f67a7da4dbbcd5ba778eb02884624f12dce767a40bbddc"
+    }
+  ],
+  "instruction_anchors": {
+    "0x4dcb64": "ldur x0, [x29, #-0x70]",
+    "0x4dcb70": "ldr x8, [x8, #0x240]",
+    "0x4dcb7c": "mov w4, #1",
+    "0x4dcb80": "blr x8",
+    "0x4dcb84": "tbnz w0, #0, #0x4dcba0",
+    "0x4dcba8": "bl #0x1255bb0",
+    "0x22bc7a8": "mov w3, #0x19",
+    "0x22bc7b0": "bl #0xd325dc",
+    "0x22b90b4": "mov w3, #0x1a",
+    "0x22b90bc": "bl #0x14d1880",
+    "0x22bc28c": "bl #0x22bc3c8",
+    "0xd2dff0": "tbz w22, #0xe, #0xd2dffc",
+    "0xd2dffc": "tbz x22, #0x25, #0xd2e008",
+    "0xd2e008": "tbz w22, #3, #0xd2e014",
+    "0xd2e014": "tbz w22, #0x1f, #0xd2dd00",
+    "0xd2e020": "mov w8, #1"
+  },
+  "save": {
+    "name": "Cesar Jules - Newcastle",
+    "created_date": "2025-10-23",
+    "created_version": 2223821,
+    "save_count": 428,
+    "last_saved_date": "2030-11-13",
+    "current_date": "2030-11-13",
+    "coaches": [
+      {
+        "name": "Cesar  Jules",
+        "club": {
+          "name": "Newcastle United",
+          "short_name": "Newcastle"
+        }
+      }
+    ]
+  },
+  "context": {
+    "source_state": "available",
+    "reason": "native_current_pl_registration_context",
+    "team": {
+      "database_index": 545,
+      "native_id": 688,
+      "random_id": null,
+      "kind": "team",
+      "native_type_code": 0,
+      "owner": {
+        "database_index": 414,
+        "native_id": 688,
+        "random_id": null,
+        "kind": "club",
+        "name": "Newcastle United",
+        "short_name": "Newcastle",
+        "name_source": "stored_native_strings"
+      }
+    },
+    "competition": {
+      "native_id": 11,
+      "random_id": null,
+      "database_index": 7,
+      "name": "Premier League",
+      "short_name": "Premier League",
+      "abbreviation": "PL",
+      "name_source": "stored_native_strings"
+    },
+    "native_season_code": 2030,
+    "native_selector": 8,
+    "native_rule_index": 6,
+    "pending_context_kinds": [
+      37,
+      37,
+      37,
+      37
+    ]
+  },
+  "counts": {
+    "native_predicate_true": 25,
+    "native_predicate_false": 37,
+    "unavailable": 5
+  },
+  "physical_source_slots": 67,
+  "source_readset_regions": 1508,
+  "genuine_positive_controls": [
+    "Anthony Gordon",
+    "Adam Wharton",
+    "Silas Huber"
+  ],
+  "genuine_false_age_exempt_controls": [
+    "Isaac Moran",
+    "Cal Cresdee"
+  ],
+  "candidate_public_stdio_verified": true,
+  "installed": false,
+  "scope": "exact_current_native_D32054_mode1_not_full_submitted_population_or_fixture_eligibility",
+  "source_file_sha256": "a75231171b2ebea366c9f428d22e571a9f5258882d0414d3cb2d51ddf564859c",
+  "evidence_sha256": {
+    "current-predicate.json": "7ec19cf62b457d7a04585694e47d6ad003e77c0733f5bc24b7d6733327d681dc",
+    "current-persistent.json": "a301ae2c72e2b7f76509823490a7b30ddd8c66df0ed95854c92e93a62063cea2",
+    "candidate-public-mcp.json": "91635e82c5c79ac54e879b585c95be2dbcb66695942916e966939681cf6fca3c"
+  }
+}

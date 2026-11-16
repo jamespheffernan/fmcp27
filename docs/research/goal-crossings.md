@@ -1,0 +1,13 @@
+# Credited-goal line crossings
+
+`saved_goal_crossings.decode_frame(raw, fixture_key, scoreline=None)` decodes goal-line endpoints from the native MATCH_STATS60/FIXTURE31 area-record vector. It validates both complete sides, side TEAM references, the surrounding tail and every scorer's count against that stored player's credited goals before returning rows. PERSON and TEAM indices are source-local; callers retain the existing snapshot identity/fixture-key authority.
+
+The native constructor44A3A24 names itself `add_goal_to_stats`; its assertion52D8382 explicitly names the record of where a goal crossed the goalline. It writes subtype1 into ADVANCED_SHOT_ZONE_AREA_INFO+26, actor slot into+23, side into+24 and endpoint floats into+10/+14. Native4943438..49435E8 persists these objects as 24-byte records in MATCH_STATS+88. These are endpoints, not locations from which shots were taken. Subtype2 is intentionally excluded because its named football meaning remains unproved.
+
+The native height bands use1.22f and2.44f (RVA53E63DC/53FB7D4); lower/upper half retain those exact float32 thresholds. `native_horizontal` preserves its signed engine axis with viewpoint unresolved. `native_height` preserves the native height. `coordinate_units` remains null. No left/right, metres, shot xG, save, current keeper or keeper blame is inferred.
+
+A 91-fixture league control reconstructs credited goals for all 182 sides and 3,640 stored player slots, with zero mismatches. The scorer mapping includes substitute slots. Four scoreline gaps remain explicit:128408 side0,131358 side1,134310 side0 and135904 side0 each has one scoreline goal beyond player credits. The same four fixtures are pinned test inputs. This is consistent with own-goal exclusion but does not prove each gap's reason. Without an independently supplied scoreline, scoreline completeness is null.
+
+The captured positive class2 branch493EAE8 adds XG_SHOT_DATA+30 into SIDE_STATS+60 and player accumulators. Its presence does not supply a persisted per-attempt xG list. A large appended payload may remain opaque while the complete MATCH_STATS tail and crossing vector are validated; returned coverage makes that boundary explicit.
+
+Integration should add an explicitly named goal-crossings query behind existing checked saved/live retained-frame selection, then resolve source-local scorer/team indices through that exact source's identity map. Exercise an actual hosted query for a substituted scorer, a scoreline gap, a zero-goal fixture and Porto132100/Olympiacos135566. Compare returned SHA and scorer credits with the checked source. Do not expose this as a full shot map, and do not gate the existing 0.89 release on this candidate.

@@ -1,0 +1,36 @@
+#!/bin/zsh
+set -eu
+root="${0:A:h:h}"
+# macOS lets only the desktop login read FM's memory. Started over SSH or mosh, the default
+# reader runs through the desktop-session agent instead (pi/fm-desktop-reader.mjs).
+if [[ -z "${PI_FM_DESKTOP_READER-}" && -z "${PI_FM_MCP_LAUNCHER-}" ]] &&
+   { [[ "$(/bin/launchctl managername 2>/dev/null)" != Aqua ]] || [[ -n "${SSH_CONNECTION-}${SSH_TTY-}" ]]; }; then
+  export PI_FM_DESKTOP_READER=1
+fi
+launcher="${PI_FM_MCP_LAUNCHER:-/Volumes/4TB Private/Offloaded/FMCP 27/scripts/run_mcp.sh}"
+papercut="$HOME/.agents/skills/pi-coding/extension/papercut.pi.ts"
+skill_prompt="$(node "$root/pi/fm-skills.mjs" --index)"
+[[ -r "$launcher" ]] || { print -u2 "pi-fm: FM live reader missing: $launcher"; exit 1; }
+[[ -r "$papercut" ]] || { print -u2 "pi-fm: papercut extension missing: $papercut"; exit 1; }
+export PI_FM_MCP_LAUNCHER="$launcher"
+export FMCP_CACHE_DIR="${FMCP_CACHE_DIR-/Volumes/4TB Private/Offloaded/Agent Work/fmcp-source-cache}"
+export PI_HARNESS=pi-fm
+cd "$root"
+# Reader tools outside the small direct set are deferred; tool_search declares them on demand.
+tools=(codemode tool_search papercut fm_tactic_file fm_write_text fm_read_skill fm_toolbox)
+[[ ! -r "${launcher:h}/run_match_report.sh" ]] || tools+=(fm_match_report)
+tools+=(fm_report)
+tools+=('mcp__fm_live__*')
+tool_allowlist="${(j:,:)tools}"
+args=(--no-extensions --no-skills --no-context-files --no-prompt-templates --no-builtin-tools
+  --system-prompt "$root/pi/system.md"
+  --append-system-prompt "$skill_prompt"
+  --session-dir "${PI_FM_SESSION_DIR:-$root/sessions}"
+  -e "$root/pi/fm.pi.ts"
+  -e "$papercut"
+  --tools "$tool_allowlist"
+  --model "${PI_FM_MODEL:-openai-codex/gpt-6-astra}"
+  --models "${PI_FM_MODEL:-openai-codex/gpt-6-astra}" --thinking medium)
+herdr="$HOME/.pi/agent/extensions/herdr-agent-state.ts"
+[[ ! -r "$herdr" ]] || args+=(-e "$herdr")
+exec pi "${args[@]}" "$@"

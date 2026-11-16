@@ -1,0 +1,262 @@
+{
+ "template": "4231 FM27 .fmf",
+ "template_sha256": "8b032acccc57b077e3a1500e41f6cf36d196b577a707ebac385430dde010bdc8",
+ "about": "The stored role word the tactic writer wrote for every legal role at every position of this template before role edits were reduced to {phase, position_index, role} (authoring_catalog at commit a21bbe19). Roles are in the order the catalog listed them.",
+ "slots": [
+  {
+   "phase": "in_possession",
+   "position_index": 0,
+   "position_name": "GK",
+   "stored_word_by_role": {
+    "Goalkeeper": "0000000000200001",
+    "Ball-Playing Goalkeeper": "0000000000401000",
+    "No-Nonsense Goalkeeper": "0020000000200000"
+   }
+  },
+  {
+   "phase": "in_possession",
+   "position_index": 1,
+   "position_name": "D(R)",
+   "stored_word_by_role": {
+    "Full-Back": "0000000000400004",
+    "Inside Full-Back": "0010000000200000",
+    "Wing-Back": "0000000000400008",
+    "Inside Wing-Back": "0000100000200000",
+    "Playmaking Wing-Back": "0080000000400000"
+   }
+  },
+  {
+   "phase": "in_possession",
+   "position_index": 2,
+   "position_name": "D(CR)",
+   "stored_word_by_role": {
+    "Centre-Back": "0000000000200002",
+    "Advanced Centre-Back": "0000000000204000",
+    "Ball-Playing Centre-Back": "0000000001200000",
+    "Wide Centre-Back": "0008000000200000",
+    "Overlapping Centre-Back": "0040000000800000",
+    "No-Nonsense Centre-Back": "0000000020200000"
+   }
+  },
+  {
+   "phase": "in_possession",
+   "position_index": 3,
+   "position_name": "D(CL)",
+   "stored_word_by_role": {
+    "Centre-Back": "0000000000200002",
+    "Advanced Centre-Back": "0000000000204000",
+    "Ball-Playing Centre-Back": "0000000001200000",
+    "Wide Centre-Back": "0008000000200000",
+    "Overlapping Centre-Back": "0040000000800000",
+    "No-Nonsense Centre-Back": "0000000020200000"
+   }
+  },
+  {
+   "phase": "in_possession",
+   "position_index": 4,
+   "position_name": "D(L)",
+   "stored_word_by_role": {
+    "Full-Back": "0000000000400004",
+    "Inside Full-Back": "0010000000200000",
+    "Wing-Back": "0000000000400008",
+    "Inside Wing-Back": "0000100000200000",
+    "Playmaking Wing-Back": "0080000000400000"
+   }
+  },
+  {
+   "phase": "in_possession",
+   "position_index": 5,
+   "position_name": "DM(CR)",
+   "stored_word_by_role": {
+    "Defensive Midfielder": "0000000000200010",
+    "Deep-Lying Playmaker": "0000000000408000",
+    "Box-To-Box Midfielder": "0000000000410000",
+    "Half Back": "0000000800200000",
+    "Box-To-Box Playmaker": "0000400000400000"
+   }
+  },
+  {
+   "phase": "in_possession",
+   "position_index": 6,
+   "position_name": "DM(CL)",
+   "stored_word_by_role": {
+    "Defensive Midfielder": "0000000000200010",
+    "Deep-Lying Playmaker": "0000000000408000",
+    "Box-To-Box Midfielder": "0000000000410000",
+    "Half Back": "0000000800200000",
+    "Box-To-Box Playmaker": "0000400000400000"
+   }
+  },
+  {
+   "phase": "in_possession",
+   "position_index": 7,
+   "position_name": "AM(R)",
+   "stored_word_by_role": {
+    "Winger": "0000000000400080",
+    "Inside Forward": "0000000008800000",
+    "Inside Winger": "0002000000400000",
+    "Playmaking Winger": "0000080000400000",
+    "Wide Forward": "0000200000800000"
+   }
+  },
+  {
+   "phase": "in_possession",
+   "position_index": 8,
+   "position_name": "AM(C)",
+   "stored_word_by_role": {
+    "Attacking Midfielder": "0000000000800200",
+    "Channel Midfielder": "0100000000800000",
+    "Advanced Playmaker": "0000000000820000",
+    "Free Role": "0000000100800000",
+    "Second Striker": "0000020000800000"
+   }
+  },
+  {
+   "phase": "in_possession",
+   "position_index": 9,
+   "position_name": "AM(L)",
+   "stored_word_by_role": {
+    "Winger": "0000000000400080",
+    "Inside Forward": "0000000008800000",
+    "Inside Winger": "0002000000400000",
+    "Playmaking Winger": "0000080000400000",
+    "Wide Forward": "0000200000800000"
+   }
+  },
+  {
+   "phase": "in_possession",
+   "position_index": 10,
+   "position_name": "ST(C)",
+   "stored_word_by_role": {
+    "Deep-Lying Forward": "0000000000800400",
+    "Centre Forward": "0000000000800800",
+    "Target Forward": "0000000000840000",
+    "Poacher": "0000000000880000",
+    "Channel Forward": "0000000080800000",
+    "False Nine": "0000010000800000"
+   }
+  },
+  {
+   "phase": "out_of_possession",
+   "position_index": 0,
+   "position_name": "GK",
+   "stored_word_by_role": {
+    "Goalkeeper": "0000000000400001",
+    "Line-Holding Goalkeeper": "0000000000200004",
+    "Sweeper Keeper": "0000000000800002"
+   }
+  },
+  {
+   "phase": "out_of_possession",
+   "position_index": 1,
+   "position_name": "D(R)",
+   "stored_word_by_role": {
+    "Full-Back": "0000000000200200",
+    "Holding Full-Back": "0000000000200800",
+    "Pressing Full-Back": "0000000000400400"
+   }
+  },
+  {
+   "phase": "out_of_possession",
+   "position_index": 2,
+   "position_name": "D(CR)",
+   "stored_word_by_role": {
+    "Centre-Back": "0000000000200008",
+    "Covering Centre-Back": "0000000000200020",
+    "Stopping Centre-Back": "0000000000200010",
+    "Covering Wide Centre-Back": "0000000000200100",
+    "Stopping Wide Centre-Back": "0000000000200080",
+    "Wide Centre-Back": "0000000000200040"
+   }
+  },
+  {
+   "phase": "out_of_possession",
+   "position_index": 3,
+   "position_name": "D(CL)",
+   "stored_word_by_role": {
+    "Centre-Back": "0000000000200008",
+    "Covering Centre-Back": "0000000000200020",
+    "Stopping Centre-Back": "0000000000200010",
+    "Covering Wide Centre-Back": "0000000000200100",
+    "Stopping Wide Centre-Back": "0000000000200080",
+    "Wide Centre-Back": "0000000000200040"
+   }
+  },
+  {
+   "phase": "out_of_possession",
+   "position_index": 4,
+   "position_name": "D(L)",
+   "stored_word_by_role": {
+    "Full-Back": "0000000000200200",
+    "Holding Full-Back": "0000000000200800",
+    "Pressing Full-Back": "0000000000400400"
+   }
+  },
+  {
+   "phase": "out_of_possession",
+   "position_index": 5,
+   "position_name": "DM(CR)",
+   "stored_word_by_role": {
+    "Defensive Midfielder": "0000000000208000",
+    "Dropping Defensive Midfielder": "0000000000210000",
+    "Pressing Defensive Midfielder": "0000000000420000",
+    "Screening Defensive Midfielder": "0000000000240000",
+    "Wide Covering Defensive Midfielder": "0000000000280000"
+   }
+  },
+  {
+   "phase": "out_of_possession",
+   "position_index": 6,
+   "position_name": "DM(CL)",
+   "stored_word_by_role": {
+    "Defensive Midfielder": "0000000000208000",
+    "Dropping Defensive Midfielder": "0000000000210000",
+    "Pressing Defensive Midfielder": "0000000000420000",
+    "Screening Defensive Midfielder": "0000000000240000",
+    "Wide Covering Defensive Midfielder": "0000000000280000"
+   }
+  },
+  {
+   "phase": "out_of_possession",
+   "position_index": 7,
+   "position_name": "M(R)",
+   "stored_word_by_role": {
+    "Tracking Wide Midfielder": "0000001000200000",
+    "Wide Midfielder": "0000000800400000",
+    "Wide Outlet Wide Midfielder": "0000002000800000"
+   }
+  },
+  {
+   "phase": "out_of_possession",
+   "position_index": 8,
+   "position_name": "M(L)",
+   "stored_word_by_role": {
+    "Tracking Wide Midfielder": "0000001000200000",
+    "Wide Midfielder": "0000000800400000",
+    "Wide Outlet Wide Midfielder": "0000002000800000"
+   }
+  },
+  {
+   "phase": "out_of_possession",
+   "position_index": 9,
+   "position_name": "AM(C)",
+   "stored_word_by_role": {
+    "Attacking Midfielder": "0000000040400000",
+    "Central Outlet Attacking Midfielder": "0000000100800000",
+    "Splitting Outlet Attacking Midfielder": "0000000200800000",
+    "Tracking Attacking Midfielder": "0000000080200000"
+   }
+  },
+  {
+   "phase": "out_of_possession",
+   "position_index": 10,
+   "position_name": "ST(C)",
+   "stored_word_by_role": {
+    "Centre Forward": "0000040000400000",
+    "Tracking Centre Forward": "0000080000200000",
+    "Central Outlet Centre Forward": "0000100000800000",
+    "Splitting Outlet Centre Forward": "0000200000800000"
+   }
+  }
+ ]
+}

@@ -1,0 +1,136 @@
+{
+  "title": "Opposition scouting: Calderbrook United",
+  "subtitle": "League match, Saturday 22 January 2028, away",
+  "game_date": "2028-01-14",
+  "view": "full",
+  "summary": "Calderbrook build almost everything down their left through **Okonjo** and **Pereira**; press that side and keep our right-back narrow. Their double pivot leaves space behind the full-backs, so play early balls into the channels rather than through the middle.",
+  "sections": [
+    {
+      "type": "kpis",
+      "title": "Form over the last ten league matches",
+      "items": [
+        { "label": "Points per game", "value": 1.7, "decimals": 1, "delta": 0.3, "delta_label": "vs season", "better": "high" },
+        { "label": "xG for per match", "value": 1.62, "decimals": 2 },
+        { "label": "xG against per match", "value": 1.31, "decimals": 2, "delta": 0.18, "delta_label": "vs season", "better": "low" },
+        { "label": "Possession", "value": 54, "type": "percent" },
+        { "label": "Share of attacks down the left", "value": 46, "type": "percent", "note": "League average 36%" }
+      ]
+    },
+    {
+      "type": "pitch",
+      "title": "Expected line-up, 4-2-3-1",
+      "note": "Based on the last four starting elevens; Okonjo is the only doubt (minor knock).",
+      "teams": [{ "id": "cal", "name": "Calderbrook" }],
+      "formation": {
+        "shape": "4-2-3-1",
+        "slots": [
+          { "position": "GK", "number": 1, "name": "Haaland-Berg" },
+          { "position": "DR", "number": 2, "name": "Whitfield" },
+          { "position": "DC", "number": 5, "name": "Mensah" },
+          { "position": "DC", "number": 6, "name": "Kowalczyk" },
+          { "position": "DL", "number": 3, "name": "Pereira" },
+          { "position": "DM", "number": 8, "name": "Aldous" },
+          { "position": "DM", "number": 4, "name": "Rinaldi" },
+          { "position": "AMR", "number": 7, "name": "Fairclough" },
+          { "position": "AMC", "number": 10, "name": "Varga" },
+          { "position": "AML", "number": 11, "name": "Okonjo" },
+          { "position": "ST", "number": 9, "name": "Delacroix" }
+        ]
+      }
+    },
+    {
+      "type": "pitch",
+      "title": "Average positions and passing, last three matches",
+      "note": "Circle size shows touches per match; lines show completed passes between the pair per match (pairs under 6 omitted). The left-back pushes higher than the right winger.",
+      "teams": [{ "id": "cal", "name": "Calderbrook" }],
+      "positions": [
+        { "id": "gk", "x": 7, "y": 50, "label": "1", "name": "Haaland-Berg", "touches": 34 },
+        { "id": "rb", "x": 38, "y": 86, "label": "2", "name": "Whitfield", "touches": 58 },
+        { "id": "rcb", "x": 24, "y": 62, "label": "5", "name": "Mensah", "touches": 71 },
+        { "id": "lcb", "x": 25, "y": 37, "label": "6", "name": "Kowalczyk", "touches": 76 },
+        { "id": "lb", "x": 52, "y": 10, "label": "3", "name": "Pereira", "touches": 81 },
+        { "id": "dm1", "x": 41, "y": 42, "label": "8", "name": "Aldous", "touches": 88 },
+        { "id": "dm2", "x": 40, "y": 60, "label": "4", "name": "Rinaldi", "touches": 64 },
+        { "id": "rw", "x": 62, "y": 82, "label": "7", "name": "Fairclough", "touches": 39 },
+        { "id": "am", "x": 63, "y": 46, "label": "10", "name": "Varga", "touches": 57 },
+        { "id": "lw", "x": 70, "y": 22, "label": "11", "name": "Okonjo", "touches": 66 },
+        { "id": "st", "x": 78, "y": 50, "label": "9", "name": "Delacroix", "touches": 29 }
+      ],
+      "links": [
+        { "from": "lcb", "to": "lb", "count": 19 },
+        { "from": "lb", "to": "lw", "count": 17 },
+        { "from": "dm1", "to": "lb", "count": 15 },
+        { "from": "lcb", "to": "dm1", "count": 14 },
+        { "from": "dm1", "to": "am", "count": 11 },
+        { "from": "lw", "to": "am", "count": 10 },
+        { "from": "rcb", "to": "lcb", "count": 13 },
+        { "from": "rcb", "to": "dm2", "count": 9 },
+        { "from": "rcb", "to": "rb", "count": 10 },
+        { "from": "rb", "to": "rw", "count": 7 },
+        { "from": "dm2", "to": "dm1", "count": 9 },
+        { "from": "am", "to": "st", "count": 7 },
+        { "from": "gk", "to": "lcb", "count": 8 },
+        { "from": "gk", "to": "rcb", "count": 7 },
+        { "from": "lw", "to": "st", "count": 6 }
+      ]
+    },
+    {
+      "type": "line_chart",
+      "title": "Chance quality, match by match",
+      "note": "Their attack has held steady while chances conceded have risen since the turn of the year.",
+      "x_type": "date",
+      "y_label": "Expected goals",
+      "decimals": 2,
+      "reference_lines": [{ "axis": "y", "value": 1.35, "label": "League average 1.35" }],
+      "series": [
+        { "name": "xG for", "points": [
+          { "x": "2027-10-23", "y": 1.4 }, { "x": "2027-10-30", "y": 2.1 }, { "x": "2027-11-06", "y": 1.2 }, { "x": "2027-11-20", "y": 1.8 }, { "x": "2027-11-27", "y": 1.5 },
+          { "x": "2027-12-04", "y": 1.9 }, { "x": "2027-12-18", "y": 1.3 }, { "x": "2027-12-26", "y": 1.7 }, { "x": "2028-01-02", "y": 1.6 }, { "x": "2028-01-08", "y": 1.7 }
+        ] },
+        { "name": "xG against", "points": [
+          { "x": "2027-10-23", "y": 0.9 }, { "x": "2027-10-30", "y": 1.1 }, { "x": "2027-11-06", "y": 1.0 }, { "x": "2027-11-20", "y": 1.2 }, { "x": "2027-11-27", "y": 0.8 },
+          { "x": "2027-12-04", "y": 1.4 }, { "x": "2027-12-18", "y": 1.5 }, { "x": "2027-12-26", "y": 1.6 }, { "x": "2028-01-02", "y": 1.9 }, { "x": "2028-01-08", "y": 1.7 }
+        ] }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "How to beat them",
+      "bullets": [
+        "Press **Pereira** on receipt: 19 passes a match come from Kowalczyk to him, the most of any pair.",
+        "Our right-back stays narrow; the right winger tracks Pereira's overlap rather than Okonjo.",
+        "Their pivot sits deep (average 40–41% up the pitch). Early diagonals behind Whitfield have produced 0.4 xG a match against them.",
+        "Delacroix touches the ball 29 times a match; deny Varga the half-turn and the striker is isolated."
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Players to plan for",
+      "columns": [
+        { "key": "name", "label": "Player" },
+        { "key": "pos", "label": "Position" },
+        { "key": "mins", "label": "Minutes", "type": "number" },
+        { "key": "goals", "label": "Goals", "type": "number" },
+        { "key": "xa", "label": "xA per 90", "type": "number", "decimals": 2, "scale": { "min": 0, "max": 0.4, "style": "heat" } },
+        { "key": "prog", "label": "Progressive passes per 90", "type": "number", "decimals": 1, "scale": { "min": 0, "max": 10, "style": "bar" } },
+        { "key": "rating", "label": "Average rating", "type": "number", "decimals": 2 }
+      ],
+      "rows": [
+        { "name": "Okonjo", "pos": "AML", "mins": 1620, "goals": 8, "xa": 0.31, "prog": 4.2, "rating": 7.21 },
+        { "name": "Pereira", "pos": "DL", "mins": 1710, "goals": 1, "xa": 0.24, "prog": 8.6, "rating": 7.05 },
+        { "name": "Varga", "pos": "AMC", "mins": 1540, "goals": 5, "xa": 0.27, "prog": 5.9, "rating": 7.02 },
+        { "name": "Delacroix", "pos": "ST", "mins": 1580, "goals": 10, "xa": 0.08, "prog": 0.9, "rating": 6.94 },
+        { "name": "Aldous", "pos": "DM", "mins": 1800, "goals": 0, "xa": 0.06, "prog": 7.4, "rating": 6.88 }
+      ]
+    }
+  ],
+  "caveats": [
+    "Average positions combine three matches with different opponents; they show tendencies, not fixed spots.",
+    "Expected line-up is a projection from recent starts, not a confirmed team sheet."
+  ],
+  "sources": [
+    "fm_get_club_fixtures and match results, Calderbrook United, Oct 2027 to Jan 2028",
+    "Retained match statistics for three matches (average positions, pass pairs)",
+    "fm_get_player_season_stats, Calderbrook senior squad"
+  ]
+}

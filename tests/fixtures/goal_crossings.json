@@ -1,0 +1,71 @@
+{
+  "source": "B142 read-only league benchmark retained MATCH_STATS frames",
+  "frames": [
+    {
+      "key": 128408,
+      "sha256": "929d3de79a9e9ba46d96075bf329f6fceff73d0fb26ee1523ce47fedf08eeb29",
+      "size": 24928,
+      "scoreline": [
+        4,
+        1
+      ],
+      "fixture_label": "Arsenal v Southampton",
+      "date": "2030-08-10"
+    },
+    {
+      "key": 131358,
+      "sha256": "e61018a09168b0619fbabe10b527213c5b52779693b2d52952849953beb8a9da",
+      "size": 103313,
+      "scoreline": [
+        2,
+        3
+      ],
+      "fixture_label": "Aston Villa v Crystal Palace",
+      "date": "2030-09-09"
+    },
+    {
+      "key": 134310,
+      "sha256": "e062b43b7aa434f27a6f471d66e1724f29b174be78b73cda640c69c8e0554f71",
+      "size": 103218,
+      "scoreline": [
+        2,
+        1
+      ],
+      "fixture_label": "Chelsea v AFC Bournemouth",
+      "date": "2030-10-11"
+    },
+    {
+      "key": 135904,
+      "sha256": "accb35037ba22ea0e6f655ed261b0f8ad09cacdaf73d57c03b0d556cf24a2f36",
+      "size": 102363,
+      "scoreline": [
+        2,
+        2
+      ],
+      "fixture_label": "Southampton v Nottingham Forest",
+      "date": "2030-10-26"
+    },
+    {
+      "key": 129873,
+      "sha256": "77f5aabc2e132e2ffbfa459a11e85db2147429374aefc5b95bfc66bf4d4c0213",
+      "size": 23969,
+      "scoreline": [
+        0,
+        0
+      ],
+      "fixture_label": "Crystal Palace v Nottingham Forest",
+      "date": "2030-08-24"
+    },
+    {
+      "key": 128692,
+      "sha256": "d33626c5535e7840bc14c39844709d93e11408e0c032298c3e55294ff8b91eee",
+      "size": 23889,
+      "scoreline": [
+        0,
+        1
+      ],
+      "fixture_label": "Birmingham City v Nottingham Forest",
+      "date": "2030-08-12"
+    }
+  ]
+}

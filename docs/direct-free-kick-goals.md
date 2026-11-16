@@ -1,0 +1,11 @@
+# Recorded direct free-kick goals
+
+Use `fm_get_match_data_columns`, then select `direct_free_kick_goals` from `retained_players` with `fm_query_match_data` for exact fixture references, or `fm_query_live_match_data` for an explicit team/date/competition scope. Request fixture identity, side, `canonical_person_id`, `person_index_word`, `person_name`, `identity_state`, and `goals` alongside it. Continue every page. The value is also typed in the exported `retained_players` table and `player_match_analysis` view.
+
+This is the official individual `DirectFreeKickGoals` count for the retained match. Attribute a named scorer only after the normal canonical identity join succeeds. A count does not provide an event clock or distinguish particular goals when a player scored several; one total goal and one direct-free-kick goal uniquely identifies that player's goal. Do not attach the count to a shot by order or proximity. A missing fixture/player source is unknown, not zero. Do not infer corner, indirect free kick or open play from this field.
+
+Source: indexed official managed literal7364 → property30616977 → individual native getter266F1C and exporter2058A8 load MATCH_STATS_INPUT+DE → version60 reader D0..DF block4AD2DB4..DCC → wire158 for u32 PERSON (162 for wide PERSON). The exact native/managed guards and independent positive/negative controls are in `docs/source-proofs/direct-free-kick-goals-b156.json`.
+
+The real controls include Anderson (Forest–Chelsea,19October2030), Ødegaard (Arsenal–Birmingham,26October), and Wirtz (Liverpool–Manchester City,2November), each one recorded direct-free-kick goal and one total goal. All80 retained player records across Southampton–Forest26October and Burnley–Southampton29October contain zero. Therefore none of the three goals Southampton conceded in those two matches is recorded as a direct-free-kick goal; their corner/indirect origins remain unknown.
+
+No additional game capture is needed to project the field from an already captured player child. The fixture/player source and identity coverage remain explicit. Source research uses existing read-only live-memory captures and static installed binaries, without game execution, UI control or .fm archive decoding.

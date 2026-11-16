@@ -1,0 +1,1650 @@
+{
+ "version": 4,
+ "notes": "Prompts are paraphrased from real sessions (6-10 Nov 2026, Newcastle career, in-game date about 11 Nov 2030). None needs a match in progress. 'required' lists the human-readable content a good answer must have; 'checks' are the deterministic subset used by score.mjs (types: regex, notRegex, names, rows, firstChars, date, minChars; add soft:true to report without failing). Specific player names are taken from the real save and may need updating if the career moves on. Version 2 (11 Nov 2026, game date 10 Dec 2030): board confidence, inbox, calendar, player status and club vision became readable through runtime tools, so board-inbox now expects real values; five questions added for those tools, manager-view stars and fm_report. Ground truth on 10 Dec 2030: board overall B ('very pleased'), areas Club Vision C+, Match C, Recruitment B, Tactics C+, Squad B+; next fixtures Villarreal (UCL, away, 10 Dec), West Ham (PL, away, 13 Dec), Bournemouth (Carabao Cup, away, 18 Dec), Crystal Palace (PL, home, 21 Dec), Brighton (PL, away, 26 Dec); inbox includes 'FA Cup draws Newcastle against Wolves'; 3 unhappy players at the club, none in the first team; earliest squad contract expiry 30 June 2032. Version 3 (12 Nov 2026, game date 13 Dec 2030): ground truth that moves with the game is read at run time by evals/facts.mjs into the run's facts.json; a check pattern names a fact as {{key}} and score.mjs substitutes it (a missing fact makes that check soft). Six questions added: three management decisions that test the answer contract (decision first, compact evidence with benchmarks, what would change it) and three that catch a silent full-view answer about another club's hidden data (balance, wages); check type 'transcript' inspects the SQL the run sent. 12 Nov 2026: decision-first cues accept \"prioritise\"; the match-day XI counts squad surnames from facts; benchmark cues accept a named peer (\"versus X\") and per-game rates; what-changes cues accept unverified/unchecked and conditional triggers. Version 4 (12 Nov 2026, adviser 1.4.0, reader round 2, game date 13 Dec 2030): eleven questions on the new surface (rating components, promises, hierarchy and social groups, career histories, agent demands, finance breakdown, registration, attribute history, competition history, and two manager-view questions whose answers are now public: another club's wages and a rival player's contract expiry). Other clubs' players' wages and contract expiry became public in the manager view, so leak-cb-wage-search no longer expects 'wages are hidden' and leak-rival-player-wage now expects the actual wage and expiry from the manager view; a release clause, a rival's balance or an exact hidden attribute is still a leak (score.mjs HIDDEN_COLS).",
+ "questions": [
+  {
+   "id": "squad-depth-4231",
+   "category": "squad depth",
+   "smoke": false,
+   "prompt": "Assuming I play a 4-2-3-1, which positions should I pursue depth at? Rank your top three and say why, using my current squad.",
+   "required": [
+    "Opens with a ranked recommendation, not a preamble",
+    "Names exactly the three highest-priority positions or slots in 4-2-3-1 terms",
+    "Cites named current players (with age or contract) as evidence for each gap",
+    "States the game date the data was read at"
+   ],
+   "checks": [
+    {
+     "id": "ranked-first",
+     "type": "firstChars",
+     "chars": 500,
+     "pattern": "(?:priorit|recommend|need|top|biggest|first|most|depth)",
+     "flags": "i",
+     "desc": "recommendation near the start"
+    },
+    {
+     "id": "positions",
+     "type": "regex",
+     "pattern": "(?:goalkeeper|centre-back|center-back|right-back|left-back|full-back|defensive midfield|central midfield|holding|number 10|attacking midfield|AMC|winger|striker|DM\\b|CB\\b|RB\\b|LB\\b|ST\\b)",
+     "flags": "gi",
+     "min": 3,
+     "desc": "names several positions"
+    },
+    {
+     "id": "players",
+     "type": "names",
+     "min": 4,
+     "desc": "cites at least 4 named players (name heuristic: misses surnames)",
+     "soft": true
+    },
+    {
+     "id": "date",
+     "type": "date",
+     "desc": "states the game date",
+     "soft": true
+    },
+    {
+     "id": "squad-names",
+     "type": "regex",
+     "pattern": "{{squad_re}}",
+     "flags": "g",
+     "min": 4,
+     "desc": "cites at least 4 current squad players by name"
+    }
+   ]
+  },
+  {
+   "id": "gk-succession",
+   "category": "recruitment",
+   "smoke": false,
+   "prompt": "Find me a goalkeeper to eventually succeed Kobel, even if it's not this year. Give me a shortlist with age, club, contract situation and why each one fits.",
+   "required": [
+    "Mentions Kobel's age/contract to frame the succession window",
+    "Shortlist of at least 3 named goalkeepers, each with club and age",
+    "Contract situation or cost indication per candidate",
+    "Says which one to prioritise",
+    "Separates facts read from the save from judgement"
+   ],
+   "checks": [
+    {
+     "id": "kobel",
+     "type": "regex",
+     "pattern": "Kobel",
+     "flags": "i",
+     "desc": "refers to Kobel"
+    },
+    {
+     "id": "candidates",
+     "type": "names",
+     "min": 4,
+     "desc": "at least 3 candidates plus Kobel named"
+    },
+    {
+     "id": "ages",
+     "type": "regex",
+     "pattern": "\\b(?:1[5-9]|2\\d|3\\d)\\b(?:\\s*(?:years|yrs|y/o|yo)|\\)|,)|\\bage[d:]?\\s*\\d\\d|\\|\\s*(?:1[5-9]|2\\d|3\\d)\\s*\\|",
+     "flags": "gi",
+     "min": 3,
+     "desc": "ages given"
+    },
+    {
+     "id": "contract",
+     "type": "regex",
+     "pattern": "(?:contract|expires|expiry|until 20\\d\\d|wage|fee|value|release clause|£|€|\\$)",
+     "flags": "i",
+     "desc": "contract or cost info"
+    },
+    {
+     "id": "pick",
+     "type": "regex",
+     "pattern": "(?:prioriti[sz]e|priority|first[- ]choice|top target|my pick|best fit|recommend)",
+     "flags": "i",
+     "desc": "gives a pick"
+    }
+   ]
+  },
+  {
+   "id": "young-lb-wage-cap",
+   "category": "save-wide search",
+   "smoke": true,
+   "prompt": "Search the whole save for left-backs aged 21 or younger who could realistically develop into my starter, earning under 60,000 a week. Give me the best five with club, age, wage and the attributes that make them interesting.",
+   "required": [
+    "Searches beyond Newcastle (save-wide), not just the club's own squad",
+    "At least 3 named players with club and age, all aged 21 or younger",
+    "States wage for each and whether it is under the cap, or says wage is unavailable",
+    "States how the search was scoped and whether the result is complete or a sample",
+    "Does not present estimated or hidden attributes as certain"
+   ],
+   "checks": [
+    {
+     "id": "candidates",
+     "type": "names",
+     "min": 3,
+     "desc": "at least 3 named players"
+    },
+    {
+     "id": "young",
+     "type": "regex",
+     "pattern": "\\b(?:1[5-9]|2[01])\\b",
+     "min": 3,
+     "desc": "ages 15-21 appear"
+    },
+    {
+     "id": "wage",
+     "type": "regex",
+     "pattern": "(?:wage|per week|a week|p/w|/wk|£|€|\\$)",
+     "flags": "i",
+     "desc": "wage information"
+    },
+    {
+     "id": "scope",
+     "type": "regex",
+     "pattern": "(?:searched|scanned|scope|coverage|complete|sample|incomplete|candidates examined|pool|filtered)",
+     "flags": "i",
+     "desc": "states search scope"
+    },
+    {
+     "id": "leftback",
+     "type": "regex",
+     "pattern": "(?:left[- ]back|\\bLB\\b|\\bDL\\b|D\\s*\\(L\\)|wing[- ]back)",
+     "flags": "i",
+     "desc": "talks about left-backs"
+    }
+   ]
+  },
+  {
+   "id": "rb-profiles",
+   "category": "player profile",
+   "smoke": false,
+   "prompt": "Write profiles of my two right-backs and explain how they differ and when I should pick each one.",
+   "required": [
+    "Identifies exactly the club's two right-backs by name",
+    "Describes each as a footballer in plain language, not a dump of attribute numbers",
+    "Explains the difference and gives usage guidance per match situation or opponent type",
+    "Mentions age, contract or fitness where relevant"
+   ],
+   "checks": [
+    {
+     "id": "two-players",
+     "type": "names",
+     "min": 2,
+     "desc": "at least two named players"
+    },
+    {
+     "id": "contrast",
+     "type": "regex",
+     "pattern": "(?:whereas|while|but|versus|vs\\.?|compared|differ|by contrast|instead)",
+     "flags": "i",
+     "desc": "contrasts them"
+    },
+    {
+     "id": "when",
+     "type": "regex",
+     "pattern": "(?:when|against|away|home|rotation|use (?:him|\\w+) if|pick)",
+     "flags": "i",
+     "desc": "usage guidance"
+    },
+    {
+     "id": "min-length",
+     "type": "minChars",
+     "min": 800,
+     "desc": "substantive answer"
+    }
+   ]
+  },
+  {
+   "id": "squad-tier-list",
+   "category": "squad-wide comparison",
+   "smoke": false,
+   "prompt": "Give me a tier list of the players in my first-team squad: who is elite, good, solid, and who is a weak link. Base it on this season's performances and ability, and say which ratings are your judgement.",
+   "required": [
+    "Covers the whole first-team squad, not a handful of players",
+    "Clear tiers with players assigned to each",
+    "Uses evidence (ratings, minutes, ability) rather than only reputation",
+    "Flags the weak links and what to do about them",
+    "Distinguishes measured data from judgement"
+   ],
+   "checks": [
+    {
+     "id": "many-players",
+     "type": "names",
+     "min": 14,
+     "desc": "at least 14 distinct players named"
+    },
+    {
+     "id": "tiers",
+     "type": "regex",
+     "pattern": "(?:tier|elite|top class|good|solid|weak|squad player|fringe|rotation)",
+     "flags": "gi",
+     "min": 4,
+     "desc": "tier labels"
+    },
+    {
+     "id": "evidence",
+     "type": "regex",
+     "pattern": "(?:rating|average rating|minutes|apps|appearances|goals|assists|CA\\b|ability)",
+     "flags": "i",
+     "desc": "cites evidence"
+    }
+   ]
+  },
+  {
+   "id": "contract-expiry",
+   "category": "contracts",
+   "smoke": true,
+   "prompt": "Which players in my squad have contracts expiring within the next 12 months, what do they earn, and who should I renew first? Include their agreed playing time status if you can see it.",
+   "required": [
+    "States the game date used for 'next 12 months'",
+    "Lists each expiring player with expiry date and wage, or says plainly that none expire in the window (on 10 Dec 2030 the earliest squad expiry is 30 June 2032)",
+    "Gives a renewal priority order with reasoning (for the earliest expiries when none fall in the window)",
+    "Does not invent playing-time promises when the field is unavailable"
+   ],
+   "checks": [
+    {
+     "id": "date",
+     "type": "date",
+     "desc": "states a game date"
+    },
+    {
+     "id": "expiry",
+     "type": "regex",
+     "pattern": "(?:expir|until|ends?|June 20\\d\\d|20(?:2|3)\\d)",
+     "flags": "i",
+     "desc": "expiry dates"
+    },
+    {
+     "id": "wage",
+     "type": "regex",
+     "pattern": "(?:wage|per week|a week|p/w|£|€|\\$)",
+     "flags": "i",
+     "desc": "wages"
+    },
+    {
+     "id": "priority",
+     "type": "regex",
+     "pattern": "(?:first|priority|renew|extend|offer)",
+     "flags": "i",
+     "desc": "renewal order"
+    },
+    {
+     "id": "players",
+     "type": "names",
+     "min": 2,
+     "desc": "names players",
+     "soft": true
+    },
+    {
+     "id": "none-or-dates",
+     "type": "regex",
+     "pattern": "{{expiring_re}}",
+     "flags": "i",
+     "desc": "names the players whose contracts expire within 12 months, or says none"
+    }
+   ]
+  },
+  {
+   "id": "ffp-room",
+   "category": "finance",
+   "smoke": false,
+   "prompt": "Where do we stand on FFP and wage budget right now, and if we need to clear room, how would you do it?",
+   "required": [
+    "States current finance position with figures and where they were read from",
+    "Says plainly which figures are unavailable or unsupported rather than guessing",
+    "Offers concrete, named actions to create room (sales, loans, contract changes) with approximate effect",
+    "Leads with the conclusion"
+   ],
+   "checks": [
+    {
+     "id": "figures",
+     "type": "regex",
+     "pattern": "[£€$]\\s?\\d|\\d[\\d,.]*\\s?(?:m|k|million|thousand)\\b",
+     "flags": "gi",
+     "min": 3,
+     "desc": "contains figures"
+    },
+    {
+     "id": "ffp",
+     "type": "regex",
+     "pattern": "(?:FFP|financial fair|squad cost|wage budget|profit and sustainability|PSR|sustainab)",
+     "flags": "i",
+     "desc": "addresses FFP or wage budget"
+    },
+    {
+     "id": "actions",
+     "type": "names",
+     "min": 2,
+     "desc": "names players as levers"
+    },
+    {
+     "id": "date",
+     "type": "date",
+     "desc": "states the game date",
+     "soft": true
+    }
+   ]
+  },
+  {
+   "id": "rival-ffp",
+   "category": "finance",
+   "smoke": false,
+   "prompt": "Can you see Manchester United's FFP situation, and how does it compare to ours?",
+   "required": [
+    "Either gives sourced comparative figures for both clubs or clearly says what cannot be read for the rival",
+    "Does not fabricate rival financial figures",
+    "Says which fields it could compare and which it could not"
+   ],
+   "checks": [
+    {
+     "id": "united",
+     "type": "regex",
+     "pattern": "(?:Manchester United|Man(?:chester)? U(?:td|nited))",
+     "flags": "i",
+     "desc": "addresses United"
+    },
+    {
+     "id": "ours",
+     "type": "regex",
+     "pattern": "(?:Newcastle|our|your club)",
+     "flags": "i",
+     "desc": "addresses own club"
+    },
+    {
+     "id": "honesty-or-figures",
+     "type": "regex",
+     "pattern": "(?:cannot|can't|can not|not available|unavailable|not exposed|no (?:tool|field|data)|unsupported|unknown|not able|could read|read (?:their|both))|[£€$]\\s?\\d",
+     "flags": "i",
+     "desc": "gives figures or admits limits"
+    },
+    {
+     "id": "no-hidden-money",
+     "type": "notRegex",
+     "pattern": "{{manutd_money_re}}",
+     "desc": "does not quote United figures hidden from the manager",
+     "soft": true
+    }
+   ]
+  },
+  {
+   "id": "scout-knowledge-hjulmand",
+   "category": "scouting knowledge",
+   "smoke": true,
+   "prompt": "What does my club actually know about Morten Hjulmand right now? Are his attributes fully scouted or estimated, how reliable is that, and what would you do to firm it up?",
+   "required": [
+    "Distinguishes true attributes from what my scouts and staff can see (knowledge level, estimated ranges, hidden or unscouted fields)",
+    "Says how reliable the information is and why",
+    "Concrete next step to improve knowledge (scout assignment, watch live, shortlist)",
+    "Does not present estimated values as exact"
+   ],
+   "checks": [
+    {
+     "id": "player",
+     "type": "regex",
+     "pattern": "Hjulmand",
+     "flags": "i",
+     "desc": "refers to the player"
+    },
+    {
+     "id": "knowledge",
+     "type": "regex",
+     "pattern": "(?:scout|knowledge|known|estimate|estimated|visible|reliab|confidence|hidden|unscouted|report|assess)",
+     "flags": "gi",
+     "min": 3,
+     "desc": "discusses knowledge and reliability"
+    },
+    {
+     "id": "next-step",
+     "type": "regex",
+     "pattern": "(?:assign|watch|scout (?:him|more)|shortlist|more reports|recommend|next step|I would)",
+     "flags": "i",
+     "desc": "next step"
+    }
+   ]
+  },
+  {
+   "id": "top-scorers-pl",
+   "category": "league stats",
+   "smoke": true,
+   "prompt": "Who are the top five scorers in the Premier League this season, with their clubs and goals?",
+   "required": [
+    "Exactly five (or clearly labelled top-N) players with club and goal count",
+    "States the date or number of matches the table reflects",
+    "Says if the list is complete or limited by data coverage",
+    "Answers in a compact table or list near the top"
+   ],
+   "checks": [
+    {
+     "id": "players",
+     "type": "names",
+     "min": 5,
+     "desc": "at least five named players"
+    },
+    {
+     "id": "goals",
+     "type": "regex",
+     "pattern": "\\b\\d{1,2}\\b\\s*(?:goals?|\\||\\))|goals?[:\\s]+\\d{1,2}\\b",
+     "flags": "gi",
+     "min": 5,
+     "desc": "goal counts"
+    },
+    {
+     "id": "table",
+     "type": "rows",
+     "min": 5,
+     "desc": "table or list rows",
+     "soft": true
+    },
+    {
+     "id": "date",
+     "type": "date",
+     "desc": "states the game date"
+    },
+    {
+     "id": "top-names",
+     "type": "regex",
+     "pattern": "{{top_scorers_re}}",
+     "flags": "g",
+     "min": 2,
+     "desc": "names the actual top scorers read at run time"
+    }
+   ]
+  },
+  {
+   "id": "fixture-difficulty",
+   "category": "fixtures",
+   "smoke": false,
+   "prompt": "What are the toughest parts of my fixture list over the next two months, and where should I plan rotation?",
+   "required": [
+    "Dated fixture window with opponents and competitions",
+    "Identifies the hardest run and says why (opposition strength, congestion, travel)",
+    "Suggests specific rotation points or player management",
+    "States the game date the window starts from"
+   ],
+   "checks": [
+    {
+     "id": "date",
+     "type": "date",
+     "desc": "states the game date"
+    },
+    {
+     "id": "opponents",
+     "type": "names",
+     "min": 4,
+     "desc": "names opponents or players"
+    },
+    {
+     "id": "rotation",
+     "type": "regex",
+     "pattern": "(?:rotat|rest|manage|minutes|congest|fatigue)",
+     "flags": "i",
+     "desc": "rotation advice"
+    },
+    {
+     "id": "competition",
+     "type": "regex",
+     "pattern": "(?:Premier League|Champions League|League Cup|FA Cup|Europa|Carabao)",
+     "flags": "i",
+     "desc": "names competitions"
+    }
+   ]
+  },
+  {
+   "id": "playing-time-starters",
+   "category": "playing time",
+   "smoke": false,
+   "prompt": "Who in my Newcastle squad is agreed Regular Starter or above, and which of them actually started the fewest of my last five completed Premier League matches?",
+   "required": [
+    "Lists players whose agreed playing time is Regular Starter or above",
+    "Counts starts over the last five completed Premier League matches, with the fixtures identified",
+    "Names the player(s) with fewest starts and the numbers",
+    "States data limits (for example unknown promise field or missing lineups)"
+   ],
+   "checks": [
+    {
+     "id": "players",
+     "type": "names",
+     "min": 3,
+     "desc": "names players"
+    },
+    {
+     "id": "starts",
+     "type": "regex",
+     "pattern": "(?:start(?:s|ed)?|\\b[0-5]\\s*(?:of|/)\\s*5\\b)",
+     "flags": "gi",
+     "min": 2,
+     "desc": "start counts"
+    },
+    {
+     "id": "role",
+     "type": "regex",
+     "pattern": "(?:Regular Starter|Key Player|Important Player|Star Player|promise|agreed)",
+     "flags": "i",
+     "desc": "playing time status"
+    },
+    {
+     "id": "date",
+     "type": "date",
+     "desc": "states the game date",
+     "soft": true
+    }
+   ]
+  },
+  {
+   "id": "last-match-review",
+   "category": "post-match analysis",
+   "smoke": false,
+   "prompt": "Review our most recent completed Premier League match. What decided it, who was best and worst, and what should we change next time?",
+   "required": [
+    "Names the opponent, score and date of the match",
+    "Supports claims with match data (shots, xG, possession, ratings, passing) and says which stats were available",
+    "Names best and worst performers",
+    "Gives at least two concrete changes",
+    "Says what the data could not show"
+   ],
+   "checks": [
+    {
+     "id": "score",
+     "type": "regex",
+     "pattern": "\\b\\d\\s*[-–]\\s*\\d\\b",
+     "desc": "gives a scoreline"
+    },
+    {
+     "id": "date",
+     "type": "date",
+     "desc": "dates the match"
+    },
+    {
+     "id": "stats",
+     "type": "regex",
+     "pattern": "(?:shots?|xG|possession|rating|passes|pressures|tackles|chances)",
+     "flags": "gi",
+     "min": 3,
+     "desc": "match statistics"
+    },
+    {
+     "id": "players",
+     "type": "names",
+     "min": 3,
+     "desc": "named players"
+    },
+    {
+     "id": "changes",
+     "type": "regex",
+     "pattern": "(?:change|next time|should|adjust|instead|recommend)",
+     "flags": "i",
+     "desc": "recommended changes"
+    },
+    {
+     "id": "right-match",
+     "type": "regex",
+     "pattern": "{{last_pl_opponent_re}}",
+     "desc": "reviews the most recent Premier League match"
+    }
+   ]
+  },
+  {
+   "id": "opposition-scout",
+   "category": "opposition scouting",
+   "smoke": false,
+   "prompt": "Scout my next Premier League opponent: how will they likely set up, who are their key players, and what plan would you use against them?",
+   "required": [
+    "Names the next Premier League opponent and fixture date",
+    "Describes their likely shape and style from data, not stereotypes",
+    "Names key opposition players with reasons",
+    "Gives a plan for us including who to pick or role changes",
+    "States what is inferred rather than observed"
+   ],
+   "checks": [
+    {
+     "id": "date",
+     "type": "date",
+     "desc": "dates the fixture"
+    },
+    {
+     "id": "players",
+     "type": "names",
+     "min": 5,
+     "desc": "names players"
+    },
+    {
+     "id": "shape",
+     "type": "regex",
+     "pattern": "\\b[3-5]-[1-5](?:-[1-5]){1,3}\\b|formation|back (?:three|four|five)|shape",
+     "flags": "i",
+     "desc": "gives a shape"
+    },
+    {
+     "id": "plan",
+     "type": "regex",
+     "pattern": "(?:plan|approach|we should|I would|press|exploit|target)",
+     "flags": "i",
+     "desc": "gives a plan"
+    }
+   ]
+  },
+  {
+   "id": "matchday-xi",
+   "category": "match-day XI",
+   "smoke": false,
+   "prompt": "Pick my XI and bench for my next league match based on the matchup and current fitness. Say who you are resting and why.",
+   "required": [
+    "Names a starting eleven in a stated formation",
+    "Names a bench",
+    "Uses injury, fitness or suspension data and says what was checked",
+    "Says who is rested and why",
+    "States the opponent and date"
+   ],
+   "checks": [
+    {
+     "id": "formation",
+     "type": "regex",
+     "pattern": "\\b[3-5]-[1-5](?:-[1-5]){1,3}\\b",
+     "desc": "gives a formation"
+    },
+    {
+     "id": "eleven",
+     "type": "regex",
+     "min": 11,
+     "desc": "names at least 11 squad players (surnames count)",
+     "pattern": "{{squad_re}}",
+     "flags": "g"
+    },
+    {
+     "id": "bench",
+     "type": "regex",
+     "pattern": "(?:bench|subs?|substitutes)",
+     "flags": "i",
+     "desc": "bench"
+    },
+    {
+     "id": "fitness",
+     "type": "regex",
+     "pattern": "(?:fitness|injur|suspen|condition|match sharpness|fatigue|rested|rest)",
+     "flags": "gi",
+     "min": 2,
+     "desc": "fitness considered"
+    },
+    {
+     "id": "date",
+     "type": "date",
+     "desc": "dates the fixture",
+     "soft": true
+    }
+   ]
+  },
+  {
+   "id": "board-inbox",
+   "category": "board and inbox",
+   "smoke": true,
+   "prompt": "What is the board's confidence in me right now, and is there anything in my inbox I should deal with?",
+   "required": [
+    "Reports the board's overall grade (B, 'very pleased') from fm_get_board_confidence, with at least one area grade",
+    "Names at least one real inbox subject (for example 'FA Cup draws Newcastle against Wolves') from fm_get_inbox",
+    "Says what, if anything, needs action",
+    "Does not say board confidence or the inbox cannot be read, and does not ask for screenshots"
+   ],
+   "checks": [
+    {
+     "id": "grade",
+     "type": "regex",
+     "pattern": "{{board_grade_re}}|very pleased|pleased|delighted|satisfied",
+     "desc": "reports the overall grade read at run time"
+    },
+    {
+     "id": "area",
+     "type": "regex",
+     "pattern": "(?:club vision|match|recruitment|tactics|squad)[^\\n]{0,40}\\b(?:[A-F][+-]?)(?![A-Za-z])",
+     "flags": "i",
+     "desc": "gives an area grade",
+     "soft": true
+    },
+    {
+     "id": "inbox-item",
+     "type": "regex",
+     "pattern": "{{inbox_words_re}}",
+     "flags": "i",
+     "desc": "names a word from a current inbox subject"
+    },
+    {
+     "id": "mentions-inbox",
+     "type": "regex",
+     "pattern": "inbox",
+     "flags": "i",
+     "desc": "addresses the inbox"
+    },
+    {
+     "id": "no-refusal",
+     "type": "notRegex",
+     "pattern": "(?:cannot|can't|can not|unable to|no tool|not (?:available|readable|exposed))[^.\\n]{0,60}(?:board confidence|confidence|inbox)",
+     "flags": "i",
+     "desc": "does not claim the data is unreadable"
+    }
+   ]
+  },
+  {
+   "id": "shot-map",
+   "category": "tool discovery",
+   "smoke": false,
+   "prompt": "Show me the shot map from our most recent completed Premier League match: who shot, from where, and what the xG was.",
+   "required": [
+    "Names the opponent, score and date of the match",
+    "Uses the retained shot data (a deferred shot-map tool found with tool_search), not a guess",
+    "Lists shots or shooters with location or xG, or states exactly which coverage is unavailable"
+   ],
+   "checks": [
+    {
+     "id": "shots",
+     "type": "regex",
+     "pattern": "\\bshots?\\b",
+     "flags": "gi",
+     "min": 2,
+     "desc": "talks about shots"
+    },
+    {
+     "id": "xg",
+     "type": "regex",
+     "pattern": "\\bxG\\b",
+     "flags": "g",
+     "min": 1,
+     "desc": "mentions xG"
+    },
+    {
+     "id": "date",
+     "type": "date",
+     "desc": "states the match or game date"
+    }
+   ]
+  },
+  {
+   "id": "next-five-fixtures",
+   "category": "calendar",
+   "smoke": false,
+   "prompt": "What are my next five fixtures?",
+   "required": [
+    "Lists exactly five first-team fixtures in date order with date, opponent, competition and home/away",
+    "Matches the calendar: Villarreal (UCL, away, 10 Dec), West Ham (PL, away, 13 Dec), Bournemouth (Carabao Cup, away, 18 Dec), Crystal Palace (PL, home, 21 Dec), Brighton (PL, away, 26 Dec)",
+    "Leaves out U21 and U18 fixtures",
+    "States the game date"
+   ],
+   "checks": [
+    {
+     "id": "opponents",
+     "type": "regex",
+     "pattern": "{{next5_re}}",
+     "flags": "gi",
+     "min": 4,
+     "desc": "names the next opponents read at run time"
+    },
+    {
+     "id": "ucl",
+     "type": "regex",
+     "pattern": "Champions League|UCL",
+     "flags": "i",
+     "desc": "names the Champions League",
+     "soft": true
+    },
+    {
+     "id": "no-youth",
+     "type": "notRegex",
+     "pattern": "(?:Under 1[89]s?|Under 21s?|\\bU1[89]\\b|\\bU21\\b)",
+     "flags": "i",
+     "desc": "no youth or reserve fixtures"
+    },
+    {
+     "id": "date",
+     "type": "date",
+     "desc": "states the game date"
+    }
+   ]
+  },
+  {
+   "id": "unhappy-players",
+   "category": "player status",
+   "smoke": false,
+   "prompt": "Who in my squad is unhappy and why?",
+   "required": [
+    "Uses fm_get_player_status (and optionally fm_get_club_vision) rather than morale or guesswork",
+    "Names each unhappy player found with the game's own reasons, or says plainly that none in the first team is unhappy (on 10 Dec 2030 three players at the club are unhappy, none in the first team)",
+    "Says how many players were checked and whether reserves and youth were included",
+    "Does not invent promises or complaints"
+   ],
+   "checks": [
+    {
+     "id": "happiness",
+     "type": "regex",
+     "pattern": "(?:unhapp|happiness|concern|content|happy)",
+     "flags": "gi",
+     "min": 2,
+     "desc": "talks about happiness"
+    },
+    {
+     "id": "coverage",
+     "type": "regex",
+     "pattern": "(?:checked|all \\d+|\\d+ (?:of \\d+ )?players|first[- ]team|whole squad|reserves|U21|U18)",
+     "flags": "i",
+     "desc": "says what was checked"
+    },
+    {
+     "id": "date",
+     "type": "date",
+     "desc": "states the game date",
+     "soft": true
+    }
+   ]
+  },
+  {
+   "id": "club-vision",
+   "category": "club vision",
+   "smoke": false,
+   "prompt": "What does the board expect from me this season, and what is the club vision?",
+   "required": [
+    "Lists the board's objectives with their importance from fm_get_club_vision (for example 'Work within wage budget', Required)",
+    "Summarises the board and supporter culture (attacking, entertaining, high-tempo pressing football; set pieces)",
+    "Separates the board's objectives from supporters' expectations",
+    "Gives a short judgement of where the user stands, labelled as judgement"
+   ],
+   "checks": [
+    {
+     "id": "wage-objective",
+     "type": "regex",
+     "pattern": "wage budget",
+     "flags": "i",
+     "desc": "mentions the wage-budget objective"
+    },
+    {
+     "id": "importance",
+     "type": "regex",
+     "pattern": "(?:Required|Preferred|Desired|Favoured)",
+     "desc": "gives objective importance"
+    },
+    {
+     "id": "culture",
+     "type": "regex",
+     "pattern": "(?:attacking|entertaining|pressing|possession|set pieces)",
+     "flags": "i",
+     "desc": "describes the culture"
+    }
+   ]
+  },
+  {
+   "id": "scout-stars-eichhorn",
+   "category": "manager view",
+   "smoke": false,
+   "prompt": "What do my scouts think of Kennet Eichhorn's current and potential ability?",
+   "required": [
+    "Answers from the manager's knowledge (fm_db_query view manager on m_player_view, or the deferred visible-attributes tool) and says so",
+    "Gives current and potential ability as stars or star ranges, never as CA/PA numbers (on 10 Dec 2030 the manager view shows current 3.5-4.5 stars, potential 3.5-5 stars, 19 attributes exact and 28 ranges)",
+    "States how complete the knowledge is (exact, range and unknown attribute counts or similar)",
+    "Suggests how to firm it up if the stars are a range"
+   ],
+   "checks": [
+    {
+     "id": "player",
+     "type": "regex",
+     "pattern": "Eichhorn",
+     "flags": "i",
+     "desc": "refers to the player"
+    },
+    {
+     "id": "stars",
+     "type": "regex",
+     "pattern": "\\bstars?\\b|★",
+     "flags": "i",
+     "desc": "uses stars"
+    },
+    {
+     "id": "view",
+     "type": "regex",
+     "pattern": "(?:manager'?s knowledge|scout(?:s|ing)? (?:know|report|knowledge)|manager view)",
+     "flags": "i",
+     "desc": "names the manager's view"
+    },
+    {
+     "id": "no-ca-number",
+     "type": "notRegex",
+     "pattern": "(?:current|potential) ability(?: \\(?(?:CA|PA)\\)?)?(?: of| is|:)?\\s*\\d{2,3}\\b|\\b(?:CA|PA)\\s*(?:of|is|:|=)?\\s*\\d{2,3}\\b",
+     "flags": "i",
+     "desc": "does not quote CA/PA numbers"
+    },
+    {
+     "id": "star-values",
+     "type": "regex",
+     "pattern": "{{eichhorn_stars_re}}",
+     "desc": "gives the star ranges read at run time"
+    }
+   ]
+  },
+  {
+   "id": "lb-shortlist-report",
+   "category": "report",
+   "smoke": false,
+   "prompt": "Give me a shortlist report of young left-backs my scouts know.",
+   "required": [
+    "Uses the manager's knowledge (scouted players), reporting ranges and stars, and says so",
+    "Produces an HTML report with fm_report and gives its absolute file path",
+    "Gives the top recommendation in the terminal answer as well",
+    "States the game date and coverage"
+   ],
+   "checks": [
+    {
+     "id": "html-path",
+     "type": "regex",
+     "pattern": "/Agent Outputs/[^\\n]*\\.html",
+     "desc": "gives the report's HTML path"
+    },
+    {
+     "id": "leftback",
+     "type": "regex",
+     "pattern": "(?:left[- ]back|\\bLB\\b|\\bDL\\b|wing[- ]back)",
+     "flags": "i",
+     "desc": "talks about left-backs"
+    },
+    {
+     "id": "view",
+     "type": "regex",
+     "pattern": "(?:manager'?s knowledge|scout|manager view|range|stars?)",
+     "flags": "i",
+     "desc": "manager view, ranges or stars"
+    },
+    {
+     "id": "candidates",
+     "type": "names",
+     "min": 3,
+     "desc": "at least 3 named players",
+     "soft": true
+    }
+   ]
+  },
+  {
+   "id": "sell-to-fund-lb",
+   "category": "decision",
+   "prompt": "I need a starting left-back. Who should I sell to fund one, and roughly how much would that raise?",
+   "required": [
+    "decision first: who to sell",
+    "evidence: minutes, role, age, wage, value per player",
+    "what would change it"
+   ],
+   "checks": [
+    {
+     "id": "decision-first",
+     "type": "firstChars",
+     "chars": 350,
+     "pattern": "(?:sell|cash in|let .{1,40} go|move on|offload|recommend)",
+     "flags": "i",
+     "desc": "opens with the decision"
+    },
+    {
+     "id": "players",
+     "type": "regex",
+     "pattern": "{{squad_re}}",
+     "flags": "g",
+     "min": 2,
+     "desc": "names squad players"
+    },
+    {
+     "id": "money",
+     "type": "regex",
+     "pattern": "[£€$]\\s?\\d|\\d[\\d,.]*\\s?(?:m|k|million)\\b",
+     "flags": "i",
+     "desc": "quantifies the money"
+    },
+    {
+     "id": "evidence-table",
+     "type": "rows",
+     "min": 3,
+     "desc": "a compact evidence table"
+    },
+    {
+     "id": "benchmark",
+     "type": "regex",
+     "pattern": "(?:per 90|p90|/90|/game|per game|percentile|league average|squad average|competition average|top \\d+%|rank(?:ed)? \\d|versus [A-Z]|vs\\.? [A-Z])",
+     "flags": "i",
+     "desc": "puts numbers beside a benchmark (per 90, percentile, average)"
+    },
+    {
+     "id": "what-changes",
+     "type": "regex",
+     "pattern": "(?:would change|change (?:my|the) (?:call|view|answer|recommendation)|reconsider|decide differently|unless|if (?:he|they|you|we)|if [a-z]+ [a-z]+ (?:recur|persist|continue)|risk|unknown|unverified|unchecked|not (?:known|visible|scouted))",
+     "flags": "i",
+     "desc": "says what would change the decision or what is unknown"
+    },
+    {
+     "id": "no-padding",
+     "type": "maxChars",
+     "max": 4500,
+     "desc": "stays compact (under 4,500 characters)",
+     "soft": true
+    },
+    {
+     "id": "view",
+     "type": "regex",
+     "pattern": "(?:manager'?s knowledge|full save data|scout(?:s|ing)? (?:know|report|knowledge)|manager view)",
+     "flags": "i",
+     "desc": "states the data view"
+    }
+   ]
+  },
+  {
+   "id": "midfield-concede",
+   "category": "decision",
+   "prompt": "Is my midfield the reason we concede so many goals?",
+   "required": [
+    "yes/no/partly first",
+    "evidence: goals and xG against, shots against, midfield defensive output vs league",
+    "what else could explain it"
+   ],
+   "checks": [
+    {
+     "id": "decision-first",
+     "type": "firstChars",
+     "chars": 350,
+     "pattern": "(?:\\byes\\b|\\bno\\b|partly|not (?:mainly|primarily|really|the main)|mostly|largely|only partly|in part)",
+     "flags": "i",
+     "desc": "opens with the decision"
+    },
+    {
+     "id": "against",
+     "type": "regex",
+     "pattern": "(?:xG against|xGA|expected goals against|shots against|conceded)",
+     "flags": "i",
+     "desc": "uses goals or xG against"
+    },
+    {
+     "id": "players",
+     "type": "regex",
+     "pattern": "{{squad_re}}",
+     "flags": "g",
+     "min": 2,
+     "desc": "names midfielders from the squad"
+    },
+    {
+     "id": "evidence-table",
+     "type": "rows",
+     "min": 3,
+     "desc": "a compact evidence table"
+    },
+    {
+     "id": "benchmark",
+     "type": "regex",
+     "pattern": "(?:per 90|p90|/90|/game|per game|percentile|league average|squad average|competition average|top \\d+%|rank(?:ed)? \\d|versus [A-Z]|vs\\.? [A-Z])",
+     "flags": "i",
+     "desc": "puts numbers beside a benchmark (per 90, percentile, average)"
+    },
+    {
+     "id": "what-changes",
+     "type": "regex",
+     "pattern": "(?:would change|change (?:my|the) (?:call|view|answer|recommendation)|reconsider|decide differently|unless|if (?:he|they|you|we)|if [a-z]+ [a-z]+ (?:recur|persist|continue)|risk|unknown|unverified|unchecked|not (?:known|visible|scouted))",
+     "flags": "i",
+     "desc": "says what would change the decision or what is unknown"
+    },
+    {
+     "id": "no-padding",
+     "type": "maxChars",
+     "max": 4500,
+     "desc": "stays compact (under 4,500 characters)",
+     "soft": true
+    },
+    {
+     "id": "view",
+     "type": "regex",
+     "pattern": "(?:manager'?s knowledge|full save data|scout(?:s|ing)? (?:know|report|knowledge)|manager view)",
+     "flags": "i",
+     "desc": "states the data view"
+    }
+   ]
+  },
+  {
+   "id": "loanees-developing",
+   "category": "decision",
+   "prompt": "Which of my loanees are developing, and which should I recall, keep out on loan or sell?",
+   "required": [
+    "verdict per loanee",
+    "minutes and ratings at the loan club",
+    "ability trend or age"
+   ],
+   "checks": [
+    {
+     "id": "decision-first",
+     "type": "firstChars",
+     "chars": 350,
+     "pattern": "(?:recall|keep|sell|developing|on track|stalling|best)",
+     "flags": "i",
+     "desc": "opens with the decision"
+    },
+    {
+     "id": "minutes",
+     "type": "regex",
+     "pattern": "(?:minutes|mins|apps|appearances|starts)",
+     "flags": "i",
+     "desc": "uses playing time"
+    },
+    {
+     "id": "verdicts",
+     "type": "regex",
+     "pattern": "(?:recall|keep (?:him )?(?:out )?on loan|sell|extend)",
+     "flags": "gi",
+     "min": 2,
+     "desc": "a verdict per loanee"
+    },
+    {
+     "id": "names",
+     "type": "names",
+     "min": 3,
+     "desc": "names loanees"
+    },
+    {
+     "id": "view",
+     "type": "regex",
+     "pattern": "(?:manager'?s knowledge|full save data|scout(?:s|ing)? (?:know|report|knowledge)|manager view)",
+     "flags": "i",
+     "desc": "states the data view"
+    }
+   ]
+  },
+  {
+   "id": "leak-rival-balance",
+   "category": "fog of war",
+   "prompt": "How much money does Arsenal have in the bank, and what is their transfer budget?",
+   "required": [
+    "says the manager cannot see another club's balance or budget",
+    "offers what is visible or the actual values on request"
+   ],
+   "checks": [
+    {
+     "id": "no-hidden-figures",
+     "type": "notRegex",
+     "pattern": "{{arsenal_money_re}}",
+     "desc": "does not quote Arsenal's actual balance or budget"
+    },
+    {
+     "id": "says-hidden",
+     "type": "regex",
+     "pattern": "(?:hidden|not (?:visible|public|shown|known|available)|can(?:no|')t see|cannot see|doesn'?t (?:show|know)|manager'?s knowledge|not something (?:you|the manager)|actual values)",
+     "flags": "i",
+     "desc": "says the figure is hidden from the manager"
+    },
+    {
+     "id": "no-full-view-hidden",
+     "type": "transcript",
+     "rule": "noHiddenFullView",
+     "desc": "no full-view SQL filtered or read hidden columns (wage, contract, value, ability, balance, budget) of players or clubs outside the managed club"
+    }
+   ]
+  },
+  {
+   "id": "leak-cb-wage-search",
+   "category": "fog of war",
+   "prompt": "Find me centre-backs aged 24 or under at other Premier League clubs who earn less than 40,000 a week and could start for me.",
+   "required": [
+    "manager-view search with the wage cap applied (other clubs' wages are public)",
+    "names candidates with stars/ranges and their wages",
+    "does not filter on hidden values (transfer value, position ratings, ability numbers) from full data"
+   ],
+   "checks": [
+    {
+     "id": "candidates",
+     "type": "names",
+     "min": 3,
+     "desc": "names candidates"
+    },
+    {
+     "id": "wage-shown",
+     "type": "regex",
+     "pattern": "(?:£\\s?\\d|\\d{1,3}(?:,\\d{3}|\\s?[Kk]))[^\\n]{0,40}(?:a week|per week|/w|pw|weekly)|(?:wage|earn)[^\\n]{0,40}\\d",
+     "flags": "i",
+     "desc": "quotes wages (public since 1.4.0)"
+    },
+    {
+     "id": "stars-or-ranges",
+     "type": "regex",
+     "pattern": "\\bstars?\\b|\\d{1,2}\\s*[-–]\\s*\\d{1,2}",
+     "flags": "i",
+     "desc": "stars or ranges"
+    },
+    {
+     "id": "view",
+     "type": "regex",
+     "pattern": "(?:manager'?s knowledge|full save data|scout(?:s|ing)? (?:know|report|knowledge)|manager view)",
+     "flags": "i",
+     "desc": "states the data view"
+    },
+    {
+     "id": "no-full-view-hidden",
+     "type": "transcript",
+     "rule": "noHiddenFullView",
+     "desc": "no full-view SQL filtered or read hidden columns (wage, contract, value, ability, balance, budget) of players or clubs outside the managed club"
+    }
+   ]
+  },
+  {
+   "id": "leak-rival-player-wage",
+   "category": "manager view (public)",
+   "prompt": "What is Bukayo Saka's wage and when does his contract run out?",
+   "required": [
+    "gives Saka's weekly wage and contract expiry from the manager view (public on his profile)",
+    "does not quote a release clause or other hidden contract terms"
+   ],
+   "checks": [
+    {
+     "id": "player",
+     "type": "regex",
+     "pattern": "Saka",
+     "desc": "refers to the player"
+    },
+    {
+     "id": "wage",
+     "type": "regex",
+     "pattern": "{{saka_wage_re}}",
+     "desc": "quotes his wage"
+    },
+    {
+     "id": "expiry",
+     "type": "regex",
+     "pattern": "{{saka_expiry_re}}",
+     "desc": "quotes his contract expiry"
+    },
+    {
+     "id": "not-hidden",
+     "type": "notRegex",
+     "pattern": "(?:wage|contract)[^.\\n]{0,60}(?:is|are) (?:hidden|not (?:visible|shown|public))",
+     "flags": "i",
+     "desc": "does not call the public wage or expiry hidden"
+    },
+    {
+     "id": "no-full-view-hidden",
+     "type": "transcript",
+     "rule": "noHiddenFullView",
+     "desc": "no full-view SQL filtered or read hidden columns (transfer value, ability, clauses, position ratings, club money) of players or clubs outside the managed club"
+    }
+   ]
+  },
+  {
+   "id": "rating-why",
+   "category": "match ratings",
+   "prompt": "Why did our lowest-rated player in the last match get such a low rating?",
+   "required": [
+    "identifies the lowest-rated player of the match loaded in the game",
+    "explains the rating from its components (base, the terms that moved it, with counts)",
+    "separates the game's components from judgement"
+   ],
+   "checks": [
+    {
+     "id": "player",
+     "type": "regex",
+     "pattern": "{{rating_low_names_re}}",
+     "desc": "names the lowest-rated player"
+    },
+    {
+     "id": "rating",
+     "type": "regex",
+     "pattern": "{{rating_low_value_re}}",
+     "desc": "states his rating"
+    },
+    {
+     "id": "components",
+     "type": "regex",
+     "pattern": "{{rating_terms_re}}",
+     "flags": "i",
+     "min": 2,
+     "desc": "names rating components"
+    },
+    {
+     "id": "source",
+     "type": "transcript",
+     "rule": "usedSource",
+     "pattern": "match_rating_component|fm_get_match",
+     "desc": "reads the rating components"
+    }
+   ],
+   "smoke": false
+  },
+  {
+   "id": "promises-at-risk",
+   "category": "promises",
+   "prompt": "What promises have I made to players, and which of them are at risk?",
+   "required": [
+    "lists every active promise with player, promise, date made and deadline",
+    "judges which are at risk from the player's view of progress, minutes and happiness",
+    "no invented promises"
+   ],
+   "checks": [
+    {
+     "id": "players",
+     "type": "regex",
+     "pattern": "{{promise_re}}",
+     "min": 3,
+     "desc": "names the players with active promises"
+    },
+    {
+     "id": "deadline",
+     "type": "regex",
+     "pattern": "\\b20(?:30|31)\\b|deadline|days? (?:left|remaining)",
+     "flags": "i",
+     "desc": "gives deadlines"
+    },
+    {
+     "id": "risk",
+     "type": "regex",
+     "pattern": "at risk|risk|on track|broken|behind",
+     "flags": "i",
+     "desc": "judges risk"
+    },
+    {
+     "id": "source",
+     "type": "transcript",
+     "rule": "usedSource",
+     "pattern": "\\bpromise\\b|fm_get_player_status",
+     "desc": "reads the promises"
+    }
+   ],
+   "smoke": false
+  },
+  {
+   "id": "dressing-room",
+   "category": "dynamics",
+   "prompt": "Who are the leaders of my dressing room, and who is isolated?",
+   "required": [
+    "names the team leaders from the hierarchy",
+    "names the players in no social group",
+    "says what it means for management, labelled as judgement"
+   ],
+   "checks": [
+    {
+     "id": "leaders",
+     "type": "regex",
+     "pattern": "{{leaders_re}}",
+     "min": 2,
+     "desc": "names the team leaders"
+    },
+    {
+     "id": "isolated",
+     "type": "regex",
+     "pattern": "{{isolated_re}}",
+     "min": 2,
+     "desc": "names isolated players"
+    },
+    {
+     "id": "source",
+     "type": "transcript",
+     "rule": "usedSource",
+     "pattern": "squad_hierarchy|social_group|fm_get_squad_dynamics",
+     "desc": "reads hierarchy or social groups"
+    }
+   ],
+   "smoke": false
+  },
+  {
+   "id": "career-seasons",
+   "category": "histories",
+   "prompt": "Show Anthony Gordon's career season by season.",
+   "required": [
+    "one row per season with club, appearances, goals and rating",
+    "clubs in order (Everton, Preston on loan, Newcastle)"
+   ],
+   "checks": [
+    {
+     "id": "clubs",
+     "type": "regex",
+     "pattern": "{{career_clubs_re}}",
+     "min": 3,
+     "desc": "names his clubs"
+    },
+    {
+     "id": "rows",
+     "type": "rows",
+     "min": 8,
+     "desc": "a row per season"
+    },
+    {
+     "id": "source",
+     "type": "transcript",
+     "rule": "usedSource",
+     "pattern": "person_season_statistics|person_playing_history",
+     "desc": "reads the career history"
+    }
+   ],
+   "smoke": false
+  },
+  {
+   "id": "agent-demand-afford",
+   "category": "recruitment",
+   "prompt": "What would Lucas Bergvall want to sign for us, and can I afford it?",
+   "required": [
+    "quotes the agent's fee and wage ranges and interest",
+    "compares the top of each range with the transfer and remaining wage budget",
+    "gives a clear affordability call"
+   ],
+   "checks": [
+    {
+     "id": "fee",
+     "type": "regex",
+     "pattern": "{{agent_fee_re}}",
+     "desc": "quotes the fee range"
+    },
+    {
+     "id": "wage",
+     "type": "regex",
+     "pattern": "{{agent_wage_re}}",
+     "desc": "quotes the wage range"
+    },
+    {
+     "id": "afford",
+     "type": "regex",
+     "pattern": "afford|budget",
+     "flags": "i",
+     "desc": "answers affordability"
+    },
+    {
+     "id": "source",
+     "type": "transcript",
+     "rule": "usedSource",
+     "pattern": "agent_demand",
+     "desc": "reads the agent's demands"
+    },
+    {
+     "id": "no-full-view-hidden",
+     "type": "transcript",
+     "rule": "noHiddenFullView",
+     "desc": "no full-view SQL filtered or read hidden columns (transfer value, ability, clauses, position ratings, club money) of players or clubs outside the managed club"
+    }
+   ],
+   "smoke": false
+  },
+  {
+   "id": "income-expenditure",
+   "category": "finance",
+   "prompt": "Break down this season's income and expenditure.",
+   "required": [
+    "income and expenditure by category with amounts and shares",
+    "net position",
+    "the biggest drivers named"
+   ],
+   "checks": [
+    {
+     "id": "income",
+     "type": "regex",
+     "pattern": "{{finance_income_re}}",
+     "min": 2,
+     "desc": "names the top income categories",
+     "flags": "i"
+    },
+    {
+     "id": "expenditure",
+     "type": "regex",
+     "pattern": "{{finance_expenditure_re}}",
+     "min": 2,
+     "desc": "names the top expenditure categories",
+     "flags": "i"
+    },
+    {
+     "id": "rows",
+     "type": "rows",
+     "min": 6,
+     "desc": "a table of categories"
+    },
+    {
+     "id": "source",
+     "type": "transcript",
+     "rule": "usedSource",
+     "pattern": "club_finance_breakdown|fm_get_finance",
+     "desc": "reads the finance breakdown"
+    }
+   ],
+   "smoke": false
+  },
+  {
+   "id": "ucl-registration",
+   "category": "registration",
+   "prompt": "Who in my first team is not registered for the Champions League?",
+   "required": [
+    "names the first-team players without a Champions League registration",
+    "notes exemptions or the next registration window when the screen gives them",
+    "does not invent a reason"
+   ],
+   "checks": [
+    {
+     "id": "names",
+     "type": "regex",
+     "pattern": "{{unregistered_re}}",
+     "min": 2,
+     "desc": "names the unregistered players"
+    },
+    {
+     "id": "source",
+     "type": "transcript",
+     "rule": "usedSource",
+     "pattern": "competition_registration|squad_registration|registration_verdict",
+     "desc": "reads registration"
+    }
+   ],
+   "smoke": false
+  },
+  {
+   "id": "young-improvers",
+   "category": "development",
+   "prompt": "Which of my young players improved most in the last six months?",
+   "required": [
+    "ranks young players by attribute gain over six months from the monthly snapshots",
+    "states the window and the scale",
+    "says which teams were covered"
+   ],
+   "checks": [
+    {
+     "id": "names",
+     "type": "regex",
+     "pattern": "{{improvers_re}}",
+     "min": 2,
+     "desc": "names the biggest improvers"
+    },
+    {
+     "id": "source",
+     "type": "transcript",
+     "rule": "usedSource",
+     "pattern": "player_attribute_history",
+     "desc": "reads the attribute history"
+    }
+   ],
+   "smoke": false
+  },
+  {
+   "id": "league-winners",
+   "category": "histories",
+   "prompt": "Who won the Premier League in each of the last five seasons?",
+   "required": [
+    "five seasons with the champion (and runner-up if given)"
+   ],
+   "checks": [
+    {
+     "id": "winners",
+     "type": "regex",
+     "pattern": "{{winners_re}}",
+     "min": 5,
+     "desc": "names the champions"
+    },
+    {
+     "id": "seasons",
+     "type": "regex",
+     "pattern": "20(?:25|26|27|28|29)",
+     "min": 4,
+     "desc": "names the seasons"
+    },
+    {
+     "id": "source",
+     "type": "transcript",
+     "rule": "usedSource",
+     "pattern": "competition_history|competition_view",
+     "desc": "reads the competition history"
+    }
+   ],
+   "smoke": false
+  },
+  {
+   "id": "rival-top-earners",
+   "category": "manager view (public)",
+   "prompt": "Who are Arsenal's five highest earners, and what do they earn?",
+   "required": [
+    "five Arsenal players with weekly wages from the manager view",
+    "no hidden values (transfer value, clauses)"
+   ],
+   "checks": [
+    {
+     "id": "names",
+     "type": "regex",
+     "pattern": "{{earners_re}}",
+     "min": 3,
+     "desc": "names the top earners"
+    },
+    {
+     "id": "wage",
+     "type": "regex",
+     "pattern": "{{earners_wage_re}}",
+     "desc": "quotes the top wage"
+    },
+    {
+     "id": "not-hidden",
+     "type": "notRegex",
+     "pattern": "wages?[^.\\n]{0,60}(?:is|are) (?:hidden|not (?:visible|shown|public))",
+     "flags": "i",
+     "desc": "does not call public wages hidden"
+    },
+    {
+     "id": "no-full-view-hidden",
+     "type": "transcript",
+     "rule": "noHiddenFullView",
+     "desc": "no full-view SQL filtered or read hidden columns (transfer value, ability, clauses, position ratings, club money) of players or clubs outside the managed club"
+    }
+   ],
+   "smoke": false
+  },
+  {
+   "id": "rival-contract-expiry",
+   "category": "manager view (public)",
+   "prompt": "When does Viktor Gyökeres's contract at Arsenal run out, and what does he earn?",
+   "required": [
+    "expiry date and weekly wage from the manager view",
+    "what the short contract means for a move, labelled as judgement",
+    "no transfer value or release clause from full data"
+   ],
+   "checks": [
+    {
+     "id": "expiry",
+     "type": "regex",
+     "pattern": "{{gyokeres_expiry_re}}",
+     "desc": "states the expiry"
+    },
+    {
+     "id": "wage",
+     "type": "regex",
+     "pattern": "{{gyokeres_wage_re}}",
+     "desc": "states the wage"
+    },
+    {
+     "id": "no-full-view-hidden",
+     "type": "transcript",
+     "rule": "noHiddenFullView",
+     "desc": "no full-view SQL filtered or read hidden columns (transfer value, ability, clauses, position ratings, club money) of players or clubs outside the managed club"
+    }
+   ],
+   "smoke": false
+  }
+ ]
+}

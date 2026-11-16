@@ -1,0 +1,17 @@
+#!/bin/sh
+# The FMCP 27 MCP server (stdio). Give this file's path to an assistant as the
+# command of an MCP server; it takes no arguments.
+set -eu
+ROOT="$(cd "$(dirname "$0")" && pwd)"
+[ -x "$ROOT/.venv/bin/python" ] || { echo "FMCP 27 is not set up yet. Run: sh \"$ROOT/install.sh\"" >&2; exit 1; }
+# What the reader works out about a save is kept here so later questions are quick.
+# It is rebuilt when missing; deleting it loses nothing.
+export FMCP_CACHE_DIR="${FMCP_CACHE_DIR:-$HOME/Library/Caches/FMCP27}"
+export FM_LIVE_OBSERVED_STORE="${FM_LIVE_OBSERVED_STORE:-$HOME/Library/Application Support/FMCP27/observed-runs}"
+/bin/mkdir -p "$FMCP_CACHE_DIR"
+# The files that let the reader address the current game build (see seed_builds.py).
+"$ROOT/.venv/bin/python" "$ROOT/seed_builds.py" seed "$ROOT/builds" "$FMCP_CACHE_DIR/fmdb" \
+    "$(/usr/bin/sed -n 's/^commit //p' "$ROOT/VERSION")" >&2 || true
+cd "$ROOT"
+# -W ignore: a dependency's start-up warnings are of no use to a player and would fill the assistant's log.
+exec "$ROOT/.venv/bin/python" -W ignore -m fm_live_mcp.server

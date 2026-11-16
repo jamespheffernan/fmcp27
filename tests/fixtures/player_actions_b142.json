@@ -1,0 +1,32 @@
+[
+  {
+    "key": 132100,
+    "teams": [
+      {
+        "team_index": 545,
+        "shots": 24,
+        "shots_on_target": 11
+      },
+      {
+        "team_index": 1155,
+        "shots": 10,
+        "shots_on_target": 4
+      }
+    ]
+  },
+  {
+    "key": 135566,
+    "teams": [
+      {
+        "team_index": 784,
+        "shots": 13,
+        "shots_on_target": 7
+      },
+      {
+        "team_index": 545,
+        "shots": 14,
+        "shots_on_target": 5
+      }
+    ]
+  }
+]

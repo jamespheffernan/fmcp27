@@ -1,0 +1,145 @@
+{
+  "title": "Kingsmere Town 2–1 Harrowgate Rovers",
+  "subtitle": "League, matchday 21 · Kingsmere Park · 8 January 2028",
+  "game_date": "2028-01-08",
+  "view": "full",
+  "summary": "A deserved win: we created twice their chance quality (2.04 xG to 0.92), mostly through the left channel. The one problem was the 20 minutes after half-time, when the pivot dropped too deep and Rovers took 0.58 xG from four shots; keep Holm higher in that phase next week.",
+  "sections": [
+    {
+      "type": "kpis",
+      "items": [
+        { "label": "Expected goals", "value": 2.04, "decimals": 2, "delta": 1.12, "delta_label": "more than Rovers", "better": "high" },
+        { "label": "Shots (on target)", "value": "15 (8)", "type": "text", "note": "Rovers 8 (4)" },
+        { "label": "Possession", "value": 56, "type": "percent" },
+        { "label": "Passes completed", "value": 87, "type": "percent", "delta": 6, "delta_label": "vs season average", "better": "high" },
+        { "label": "High turnovers won", "value": 11, "note": "Rovers 4" }
+      ]
+    },
+    {
+      "type": "pitch",
+      "title": "Shot map",
+      "note": "Kingsmere attack to the right, Rovers to the left. Marker size is the chance's xG.",
+      "teams": [{ "id": "kin", "name": "Kingsmere" }, { "id": "har", "name": "Rovers" }],
+      "shots": [
+        { "team": "kin", "x": 89, "y": 44, "xg": 0.38, "outcome": "goal", "player": "Delaney", "minute": 23 },
+        { "team": "kin", "x": 94, "y": 53, "xg": 0.52, "outcome": "goal", "player": "Okafor", "minute": 78 },
+        { "team": "kin", "x": 82, "y": 36, "xg": 0.09, "outcome": "saved", "player": "Delaney", "minute": 11 },
+        { "team": "kin", "x": 76, "y": 58, "xg": 0.04, "outcome": "off_target", "player": "Holm", "minute": 15 },
+        { "team": "kin", "x": 88, "y": 30, "xg": 0.12, "outcome": "blocked", "player": "Ferreira", "minute": 31 },
+        { "team": "kin", "x": 91, "y": 61, "xg": 0.18, "outcome": "saved", "player": "Okafor", "minute": 38 },
+        { "team": "kin", "x": 72, "y": 49, "xg": 0.03, "outcome": "off_target", "player": "Sule", "minute": 42 },
+        { "team": "kin", "x": 86, "y": 47, "xg": 0.11, "outcome": "post", "player": "Delaney", "minute": 57 },
+        { "team": "kin", "x": 83, "y": 66, "xg": 0.06, "outcome": "blocked", "player": "Paredes", "minute": 63 },
+        { "team": "kin", "x": 79, "y": 41, "xg": 0.05, "outcome": "saved", "player": "Varela", "minute": 66 },
+        { "team": "kin", "x": 92, "y": 40, "xg": 0.14, "outcome": "saved", "player": "Okafor", "minute": 71 },
+        { "team": "kin", "x": 74, "y": 32, "xg": 0.03, "outcome": "off_target", "player": "Reid", "minute": 74 },
+        { "team": "kin", "x": 87, "y": 55, "xg": 0.07, "outcome": "saved", "player": "Varela", "minute": 83 },
+        { "team": "kin", "x": 81, "y": 50, "xg": 0.05, "outcome": "blocked", "player": "Holm", "minute": 88 },
+        { "team": "kin", "x": 95, "y": 47, "xg": 0.17, "outcome": "saved", "player": "Okafor", "minute": 90 },
+        { "team": "har", "x": 88, "y": 52, "xg": 0.31, "outcome": "goal", "player": "Brennan", "minute": 52 },
+        { "team": "har", "x": 80, "y": 40, "xg": 0.06, "outcome": "off_target", "player": "Achterberg", "minute": 8 },
+        { "team": "har", "x": 84, "y": 63, "xg": 0.08, "outcome": "saved", "player": "Brennan", "minute": 29 },
+        { "team": "har", "x": 91, "y": 45, "xg": 0.14, "outcome": "saved", "player": "Coyle", "minute": 49 },
+        { "team": "har", "x": 76, "y": 55, "xg": 0.04, "outcome": "blocked", "player": "Nwosu", "minute": 58 },
+        { "team": "har", "x": 86, "y": 38, "xg": 0.09, "outcome": "off_target", "player": "Achterberg", "minute": 64 },
+        { "team": "har", "x": 73, "y": 48, "xg": 0.03, "outcome": "off_target", "player": "Nwosu", "minute": 81 },
+        { "team": "har", "x": 93, "y": 50, "xg": 0.17, "outcome": "saved", "player": "Brennan", "minute": 89 }
+      ]
+    },
+    {
+      "type": "line_chart",
+      "title": "How the chances built up",
+      "x_label": "Minute",
+      "y_label": "Cumulative xG",
+      "decimals": 2,
+      "reference_lines": [{ "axis": "x", "value": 45, "label": "Half-time" }],
+      "series": [
+        { "name": "Kingsmere", "points": [
+          { "x": 0, "y": 0 }, { "x": 11, "y": 0.09 }, { "x": 15, "y": 0.13 }, { "x": 23, "y": 0.51, "label": "Delaney goal" }, { "x": 31, "y": 0.63 }, { "x": 38, "y": 0.81 }, { "x": 42, "y": 0.84 },
+          { "x": 57, "y": 0.95 }, { "x": 63, "y": 1.01 }, { "x": 66, "y": 1.06 }, { "x": 71, "y": 1.2 }, { "x": 74, "y": 1.23 }, { "x": 78, "y": 1.75, "label": "Okafor goal" }, { "x": 83, "y": 1.82 }, { "x": 88, "y": 1.87 }, { "x": 90, "y": 2.04 }
+        ] },
+        { "name": "Rovers", "points": [
+          { "x": 0, "y": 0 }, { "x": 8, "y": 0.06 }, { "x": 29, "y": 0.14 }, { "x": 49, "y": 0.28 }, { "x": 52, "y": 0.59, "label": "Brennan goal" }, { "x": 58, "y": 0.63 }, { "x": 64, "y": 0.72 }, { "x": 81, "y": 0.75 }, { "x": 89, "y": 0.92 }, { "x": 90, "y": 0.92 }
+        ] }
+      ]
+    },
+    {
+      "type": "pitch",
+      "title": "Kingsmere passing network",
+      "note": "Average position while in possession; circle size is touches and line width is completed passes between the pair (6 or more).",
+      "teams": [{ "id": "kin", "name": "Kingsmere" }],
+      "positions": [
+        { "id": "marsh", "x": 6, "y": 50, "label": "1", "name": "Marsh", "touches": 41 },
+        { "id": "ward", "x": 40, "y": 88, "label": "2", "name": "Ward", "touches": 63 },
+        { "id": "bell", "x": 27, "y": 63, "label": "5", "name": "Bellandi", "touches": 79 },
+        { "id": "ito", "x": 27, "y": 38, "label": "6", "name": "Ito", "touches": 74 },
+        { "id": "reid", "x": 44, "y": 26, "label": "3", "name": "Reid", "touches": 68 },
+        { "id": "sule", "x": 42, "y": 54, "label": "4", "name": "Sule", "touches": 92 },
+        { "id": "holm", "x": 52, "y": 40, "label": "8", "name": "Holm", "touches": 77 },
+        { "id": "par", "x": 66, "y": 85, "label": "7", "name": "Paredes", "touches": 44 },
+        { "id": "var", "x": 67, "y": 52, "label": "10", "name": "Varela", "touches": 61 },
+        { "id": "fer", "x": 70, "y": 15, "label": "11", "name": "Ferreira", "touches": 58 },
+        { "id": "oka", "x": 81, "y": 46, "label": "9", "name": "Okafor", "touches": 33 }
+      ],
+      "links": [
+        { "from": "ito", "to": "reid", "count": 21 },
+        { "from": "reid", "to": "fer", "count": 18 },
+        { "from": "sule", "to": "holm", "count": 16 },
+        { "from": "ito", "to": "sule", "count": 15 },
+        { "from": "bell", "to": "sule", "count": 14 },
+        { "from": "bell", "to": "ito", "count": 13 },
+        { "from": "holm", "to": "fer", "count": 12 },
+        { "from": "holm", "to": "var", "count": 11 },
+        { "from": "bell", "to": "ward", "count": 11 },
+        { "from": "ward", "to": "par", "count": 8 },
+        { "from": "var", "to": "oka", "count": 9 },
+        { "from": "fer", "to": "var", "count": 8 },
+        { "from": "marsh", "to": "bell", "count": 7 },
+        { "from": "marsh", "to": "ito", "count": 9 },
+        { "from": "sule", "to": "var", "count": 7 },
+        { "from": "par", "to": "var", "count": 6 }
+      ]
+    },
+    {
+      "type": "bar_chart",
+      "title": "Match ratings",
+      "value_label": "Rating",
+      "decimals": 1,
+      "reference_lines": [{ "value": 6.9, "label": "Team average 6.9" }],
+      "bars": [
+        { "label": "Okafor", "value": 8.1, "highlight": true, "note": "1 goal, 1.01 xG" },
+        { "label": "Holm", "value": 7.6, "highlight": true },
+        { "label": "Ferreira", "value": 7.4 },
+        { "label": "Delaney", "value": 7.3, "note": "1 goal, off 60′" },
+        { "label": "Sule", "value": 7.1 },
+        { "label": "Ito", "value": 7.0 },
+        { "label": "Reid", "value": 6.9 },
+        { "label": "Bellandi", "value": 6.8 },
+        { "label": "Varela", "value": 6.7 },
+        { "label": "Marsh", "value": 6.5 },
+        { "label": "Ward", "value": 6.4 },
+        { "label": "Paredes", "value": 6.2 }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "What to change",
+      "paragraphs": [
+        "After half-time Sule and Holm both sat below the ball (average 39% up the pitch against 47% before the break), which left Varela alone between the lines and invited Rovers' press. Their goal came from that spell."
+      ],
+      "bullets": [
+        "Keep Holm as a box-to-box midfielder in the second phase; only Sule holds.",
+        "The left channel (Reid to Ferreira, 18 passes) produced 0.71 xG; repeat it against Calderbrook, whose right side is weaker.",
+        "Ward completed 6 of 14 crosses but none led to a shot. Ask for cut-backs instead."
+      ]
+    }
+  ],
+  "caveats": [
+    "The passing network shows the eleven who finished the match. Delaney, replaced by Varela at 60′, appears in the shot map and ratings but not the network.",
+    "xG figures come from the game's own chance model and are not comparable with other providers."
+  ],
+  "sources": [
+    "fm_match_report retained source for Kingsmere Town v Harrowgate Rovers, 8 Jan 2028",
+    "Retained shot events (23) and pass pairs, full match"
+  ]
+}

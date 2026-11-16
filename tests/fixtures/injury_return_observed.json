@@ -1,0 +1,20 @@
+{
+  "injury_raw_hex": "0000000000000000e0106b0a7a000000000000000000000028edf2047a0000002343ee07ffffffff40002c0000070301020000ff00000000",
+  "current_date_raw_hex": "2d23ee07",
+  "staff_inputs": {
+    "slot": 6,
+    "native_DA_u16": 150,
+    "physiotherapy_raw_signed8": 96,
+    "people_management_raw_signed8": 84
+  },
+  "mode": 0,
+  "expected_days": [
+    39,
+    62
+  ],
+  "expected_dates": [
+    "2030-12-06",
+    "2030-12-29"
+  ],
+  "source_provenance": "B119 independent native/source audit; portable immutable test fixture"
+}

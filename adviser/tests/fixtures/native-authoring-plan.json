@@ -1,0 +1,159 @@
+{
+  "source": "/Volumes/4TB Private/Offloaded/FMCP 27/evidence/tactic-authoring-priority-20261109/liverpool-target.json",
+  "source_sha256": "6a9489376b69bbcab648b0ae2a11ce523ec9b0978e411299bf8b401abdd45648",
+  "request": {
+    "action": "generate",
+    "template_path": "/Users/jamesheffernan/Library/Application Support/Sports Interactive/Football Manager 27/Tactics/4231 FM27 .fmf",
+    "template_sha256": "8b032acccc57b077e3a1500e41f6cf36d196b577a707ebac385430dde010bdc8",
+    "name": "Liverpool whole-plan schema fixture",
+    "mentality": "Positive",
+    "native_authoring": {
+      "positions": {
+        "in_possession": [
+          "GK",
+          "D(R)",
+          "D(CR)",
+          "D(CL)",
+          "D(L)",
+          "DM(CR)",
+          "DM(CL)",
+          "AM(R)",
+          "AM(C)",
+          "AM(L)",
+          "ST(C)"
+        ],
+        "out_of_possession": [
+          "GK",
+          "D(R)",
+          "D(CR)",
+          "D(CL)",
+          "D(L)",
+          "DM(CR)",
+          "DM(CL)",
+          "M(R)",
+          "M(L)",
+          "AM(C)",
+          "ST(C)"
+        ]
+      },
+      "roles": [
+        {
+          "phase": "in_possession",
+          "position_index": 0,
+          "role": "Goalkeeper"
+        },
+        {
+          "phase": "in_possession",
+          "position_index": 1,
+          "role": "Wing-Back"
+        },
+        {
+          "phase": "in_possession",
+          "position_index": 2,
+          "role": "Centre-Back"
+        },
+        {
+          "phase": "in_possession",
+          "position_index": 3,
+          "role": "Ball-Playing Centre-Back"
+        },
+        {
+          "phase": "in_possession",
+          "position_index": 4,
+          "role": "Full-Back"
+        },
+        {
+          "phase": "in_possession",
+          "position_index": 5,
+          "role": "Defensive Midfielder"
+        },
+        {
+          "phase": "in_possession",
+          "position_index": 6,
+          "role": "Deep-Lying Playmaker"
+        },
+        {
+          "phase": "in_possession",
+          "position_index": 7,
+          "role": "Inside Forward"
+        },
+        {
+          "phase": "in_possession",
+          "position_index": 8,
+          "role": "Attacking Midfielder"
+        },
+        {
+          "phase": "in_possession",
+          "position_index": 9,
+          "role": "Winger"
+        },
+        {
+          "phase": "in_possession",
+          "position_index": 10,
+          "role": "Centre Forward"
+        },
+        {
+          "phase": "out_of_possession",
+          "position_index": 0,
+          "role": "Goalkeeper"
+        },
+        {
+          "phase": "out_of_possession",
+          "position_index": 1,
+          "role": "Full-Back"
+        },
+        {
+          "phase": "out_of_possession",
+          "position_index": 2,
+          "role": "Centre-Back"
+        },
+        {
+          "phase": "out_of_possession",
+          "position_index": 3,
+          "role": "Centre-Back"
+        },
+        {
+          "phase": "out_of_possession",
+          "position_index": 4,
+          "role": "Full-Back"
+        },
+        {
+          "phase": "out_of_possession",
+          "position_index": 5,
+          "role": "Defensive Midfielder"
+        },
+        {
+          "phase": "out_of_possession",
+          "position_index": 6,
+          "role": "Defensive Midfielder"
+        },
+        {
+          "phase": "out_of_possession",
+          "position_index": 7,
+          "role": "Tracking Wide Midfielder"
+        },
+        {
+          "phase": "out_of_possession",
+          "position_index": 8,
+          "role": "Tracking Wide Midfielder"
+        },
+        {
+          "phase": "out_of_possession",
+          "position_index": 9,
+          "role": "Attacking Midfielder"
+        },
+        {
+          "phase": "out_of_possession",
+          "position_index": 10,
+          "role": "Centre Forward"
+        }
+      ],
+      "team_instructions": [
+        "Counter",
+        "Mid Block",
+        "Regroup"
+      ],
+      "instruction_policy": "native_defaults"
+    }
+  }
+}

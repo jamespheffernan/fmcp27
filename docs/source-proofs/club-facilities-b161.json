@@ -1,0 +1,253 @@
+{
+  "state": "verified_own_stored_club_facility_levels",
+  "plugin_sha256": "774cacde63567fd3901c47719e7a6ed94cc3a0a62e9b94989dcac6b4890ec0e1",
+  "editor_source": "/Volumes/4TB Private/Offloaded/FMCP 27/evidence/editor-contract-frame-50.xml",
+  "editor_sha256": "15f3bf07cfcd9505aad3137462b752920d7029d3c509e63c463f3f32f1029a24",
+  "editor_fields": {
+    "Ctlv": {
+      "field": "Ctlv",
+      "name": "Training",
+      "type": "integer",
+      "min_value": "0",
+      "max_value": "20"
+    },
+    "Cytv": {
+      "field": "Cytv",
+      "name": "Youth Coaching",
+      "type": "integer",
+      "min_value": "-1",
+      "max_value": "20"
+    },
+    "Cyfb": {
+      "field": "Cyfb",
+      "name": "Youth Facilities",
+      "type": "integer",
+      "min_value": "-1",
+      "max_value": "20"
+    },
+    "Crcb": {
+      "field": "Crcb",
+      "name": "Youth Recruitment",
+      "type": "integer",
+      "min_value": "-1",
+      "max_value": "20"
+    }
+  },
+  "instruction_guards": [
+    {
+      "rva": "0xe4b6fc",
+      "raw": "c88e8d52",
+      "instruction": [
+        "mov",
+        "w8, #0x6c76"
+      ]
+    },
+    {
+      "rva": "0xe4b700",
+      "raw": "886ea872",
+      "instruction": [
+        "movk",
+        "w8, #0x4374, lsl #16"
+      ]
+    },
+    {
+      "rva": "0xe4b704",
+      "raw": "3f00086b",
+      "instruction": [
+        "cmp",
+        "w1, w8"
+      ]
+    },
+    {
+      "rva": "0xe4b70c",
+      "raw": "888240f9",
+      "instruction": [
+        "ldr",
+        "x8, [x20, #0x100]"
+      ]
+    },
+    {
+      "rva": "0xe4b710",
+      "raw": "1381c439",
+      "instruction": [
+        "ldrsb",
+        "w19, [x8, #0x120]"
+      ]
+    },
+    {
+      "rva": "0xe4bbc0",
+      "raw": "c88e8e52",
+      "instruction": [
+        "mov",
+        "w8, #0x7476"
+      ]
+    },
+    {
+      "rva": "0xe4bbc4",
+      "raw": "286fa872",
+      "instruction": [
+        "movk",
+        "w8, #0x4379, lsl #16"
+      ]
+    },
+    {
+      "rva": "0xe4bbc8",
+      "raw": "3f00086b",
+      "instruction": [
+        "cmp",
+        "w1, w8"
+      ]
+    },
+    {
+      "rva": "0xe4bbcc",
+      "raw": "80c70154",
+      "instruction": [
+        "b.eq",
+        "#0xe4f4bc"
+      ]
+    },
+    {
+      "rva": "0xe4f4bc",
+      "raw": "888240f9",
+      "instruction": [
+        "ldr",
+        "x8, [x20, #0x100]"
+      ]
+    },
+    {
+      "rva": "0xe4f4c0",
+      "raw": "13b1c439",
+      "instruction": [
+        "ldrsb",
+        "w19, [x8, #0x12c]"
+      ]
+    },
+    {
+      "rva": "0xe480d4",
+      "raw": "48cc8c52",
+      "instruction": [
+        "mov",
+        "w8, #0x6662"
+      ]
+    },
+    {
+      "rva": "0xe480d8",
+      "raw": "286fa872",
+      "instruction": [
+        "movk",
+        "w8, #0x4379, lsl #16"
+      ]
+    },
+    {
+      "rva": "0xe480dc",
+      "raw": "3f00086b",
+      "instruction": [
+        "cmp",
+        "w1, w8"
+      ]
+    },
+    {
+      "rva": "0xe480e0",
+      "raw": "60360454",
+      "instruction": [
+        "b.eq",
+        "#0xe507ac"
+      ]
+    },
+    {
+      "rva": "0xe507ac",
+      "raw": "888240f9",
+      "instruction": [
+        "ldr",
+        "x8, [x20, #0x100]"
+      ]
+    },
+    {
+      "rva": "0xe507b0",
+      "raw": "13adc439",
+      "instruction": [
+        "ldrsb",
+        "w19, [x8, #0x12b]"
+      ]
+    },
+    {
+      "rva": "0xe4a91c",
+      "raw": "486c8c52",
+      "instruction": [
+        "mov",
+        "w8, #0x6362"
+      ]
+    },
+    {
+      "rva": "0xe4a920",
+      "raw": "486ea872",
+      "instruction": [
+        "movk",
+        "w8, #0x4372, lsl #16"
+      ]
+    },
+    {
+      "rva": "0xe4a924",
+      "raw": "3f00086b",
+      "instruction": [
+        "cmp",
+        "w1, w8"
+      ]
+    },
+    {
+      "rva": "0xe4a928",
+      "raw": "80e70254",
+      "instruction": [
+        "b.eq",
+        "#0xe50618"
+      ]
+    },
+    {
+      "rva": "0xe50618",
+      "raw": "888240f9",
+      "instruction": [
+        "ldr",
+        "x8, [x20, #0x100]"
+      ]
+    },
+    {
+      "rva": "0xe5061c",
+      "raw": "13b5c439",
+      "instruction": [
+        "ldrsb",
+        "w19, [x8, #0x12d]"
+      ]
+    }
+  ],
+  "source_pointer": "canonical CLUB+0x100",
+  "field_offsets": {
+    "training_facilities": "0x120",
+    "youth_facilities": "0x12b",
+    "youth_coaching": "0x12c",
+    "youth_recruitment": "0x12d"
+  },
+  "live_save": {
+    "name": "Cesar Jules - Newcastle",
+    "created_date": "2025-10-23",
+    "created_version": 2223821,
+    "save_count": 425,
+    "last_saved_date": "2030-10-30",
+    "current_date": "2030-11-01",
+    "coaches": [
+      {
+        "name": "Cesar  Jules",
+        "club": {
+          "name": "Newcastle United",
+          "short_name": "Newcastle"
+        }
+      }
+    ]
+  },
+  "live_control_count": 35,
+  "limits": [
+    "Own stored signed levels only, not affiliation-adjusted or inferred effective facilities",
+    "Editor scale0..20training,-1..20youth fields; -1 is unassigned stored level, zero retained explicitly",
+    "No stars, descriptive quality bands, capacity, investment, development effect or youth-intake forecast",
+    "Corporate facilities and training ground links excluded; frontend rating properties have different computed sources"
+  ]
+}

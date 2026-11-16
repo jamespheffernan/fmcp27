@@ -1,0 +1,9 @@
+# Active-career crossing reports
+
+Use `fm_report_live_match_crossing` after attaching to the current career. Select explicit native competition/team IDs and canonical inclusive dates. This tool captures the active native source once with competition team totals and all canonical retained players, then runs the existing crossing report over an in-process SQLite projection. It does not consult a named export or last disk save.
+
+Find the upcoming match through live fixture tools and supply its `fixture_ref` with `venue=matchup` to derive the selected team's home/away league comparison. Competition defaults from the anchor; explicitly choose a league ID when scouting a cup opponent using league results. The matchup is independently rechecked after capture. A normally expired calendar reference can be rebound only through a bounded exact-date/team/competition search with one identical matchup; changed/ambiguous matches or genuine load-epoch changes reject the report.
+
+The existing scoped adapter consumes every result page with bounded windows/retries and at most128selected matches. Missing native years/groups and retained backing are reported explicitly; incomplete enumeration or backing yields `available_partial`. The response records first/last active career dates, non-atomicity, source counts, missing keys and load consistency. Stored results are not an independent proof of match completion. Native season date ranges, delivery flank and current player tactical assignments remain unproved.
+
+Named all-cross/open-play suppliers, venue-matched league team/player reference groups and opponents faced come from the same captured fixture set. Lists cap100rows and disclose original counts and truncated cutoff ties. Count/rank calculations run over the complete captured scope before response clipping.

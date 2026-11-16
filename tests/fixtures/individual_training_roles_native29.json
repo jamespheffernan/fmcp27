@@ -1,0 +1,477 @@
+{
+  "state": "canonical_rebind_and_original_training_source_comparison_passed",
+  "operand_origin": "retained-genuine-root-capture",
+  "regular_PLAYER_rows": 29,
+  "rows": [
+    {
+      "roster_slot": 0,
+      "native_identity": {
+        "database_index": 13009,
+        "native_id": 28116386,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x80",
+      "original_full_IP_instruction_count": 25,
+      "original_audit_prefix_instruction_count": 77,
+      "original_audit_prefix_IP_position_mask": "0x1000",
+      "native_OOP_signed_code": 0,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 1,
+      "native_identity": {
+        "database_index": 13248,
+        "native_id": 28124569,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x100000000000",
+      "original_full_IP_instruction_count": 30,
+      "original_audit_prefix_instruction_count": 86,
+      "original_audit_prefix_IP_position_mask": "0x4",
+      "native_OOP_signed_code": -22,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 2,
+      "native_identity": {
+        "database_index": 41999,
+        "native_id": 2000108691,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x100000000000",
+      "original_full_IP_instruction_count": 30,
+      "original_audit_prefix_instruction_count": 86,
+      "original_audit_prefix_IP_position_mask": "0x8",
+      "native_OOP_signed_code": -22,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 3,
+      "native_identity": {
+        "database_index": 14805,
+        "native_id": 29193659,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x20000",
+      "original_full_IP_instruction_count": 25,
+      "original_audit_prefix_instruction_count": 81,
+      "original_audit_prefix_IP_position_mask": "0x400",
+      "native_OOP_signed_code": -8,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 4,
+      "native_identity": {
+        "database_index": 33495,
+        "native_id": 91187791,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x8000000",
+      "original_full_IP_instruction_count": 33,
+      "original_audit_prefix_instruction_count": 93,
+      "original_audit_prefix_IP_position_mask": "0x1000",
+      "native_OOP_signed_code": 4,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 5,
+      "native_identity": {
+        "database_index": 35795,
+        "native_id": 98040383,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x1",
+      "original_full_IP_instruction_count": 24,
+      "original_audit_prefix_instruction_count": 80,
+      "original_audit_prefix_IP_position_mask": "0x1",
+      "native_OOP_signed_code": -31,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 6,
+      "native_identity": {
+        "database_index": 37706,
+        "native_id": 2000030130,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x20",
+      "original_full_IP_instruction_count": 25,
+      "original_audit_prefix_instruction_count": 81,
+      "original_audit_prefix_IP_position_mask": "0x400",
+      "native_OOP_signed_code": -16,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 7,
+      "native_identity": {
+        "database_index": 47009,
+        "native_id": 2000189871,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x200000000000000",
+      "original_full_IP_instruction_count": 30,
+      "original_audit_prefix_instruction_count": 86,
+      "original_audit_prefix_IP_position_mask": "0x400",
+      "native_OOP_signed_code": -7,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 8,
+      "native_identity": {
+        "database_index": 11178,
+        "native_id": 19377206,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x80",
+      "original_full_IP_instruction_count": 33,
+      "original_audit_prefix_instruction_count": 97,
+      "original_audit_prefix_IP_position_mask": "0x100",
+      "native_OOP_signed_code": -2,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 9,
+      "native_identity": {
+        "database_index": 40862,
+        "native_id": 2000094252,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x1000000",
+      "original_full_IP_instruction_count": 25,
+      "original_audit_prefix_instruction_count": 81,
+      "original_audit_prefix_IP_position_mask": "0x10",
+      "native_OOP_signed_code": -28,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 10,
+      "native_identity": {
+        "database_index": 55949,
+        "native_id": 2000302092,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x0",
+      "original_full_IP_instruction_count": 5,
+      "original_audit_prefix_instruction_count": 29,
+      "original_audit_prefix_IP_position_mask": "0x0",
+      "native_OOP_signed_code": 0,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 11,
+      "native_identity": {
+        "database_index": 53192,
+        "native_id": 2000271404,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x8000",
+      "original_full_IP_instruction_count": 25,
+      "original_audit_prefix_instruction_count": 81,
+      "original_audit_prefix_IP_position_mask": "0x80",
+      "native_OOP_signed_code": -14,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 12,
+      "native_identity": {
+        "database_index": 55948,
+        "native_id": 2000302088,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x0",
+      "original_full_IP_instruction_count": 18,
+      "original_audit_prefix_instruction_count": 52,
+      "original_audit_prefix_IP_position_mask": "0x0",
+      "native_OOP_signed_code": -20,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 13,
+      "native_identity": {
+        "database_index": 8209,
+        "native_id": 12093353,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x80000000",
+      "original_full_IP_instruction_count": 25,
+      "original_audit_prefix_instruction_count": 75,
+      "original_audit_prefix_IP_position_mask": "0x4000",
+      "native_OOP_signed_code": 4,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 14,
+      "native_identity": {
+        "database_index": 37623,
+        "native_id": 2000027898,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x10",
+      "original_full_IP_instruction_count": 25,
+      "original_audit_prefix_instruction_count": 81,
+      "original_audit_prefix_IP_position_mask": "0x80",
+      "native_OOP_signed_code": -13,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 15,
+      "native_identity": {
+        "database_index": 15163,
+        "native_id": 29235125,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x0",
+      "original_full_IP_instruction_count": 18,
+      "original_audit_prefix_instruction_count": 52,
+      "original_audit_prefix_IP_position_mask": "0x0",
+      "native_OOP_signed_code": -31,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 16,
+      "native_identity": {
+        "database_index": 53560,
+        "native_id": 2000275657,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x200000000000",
+      "original_full_IP_instruction_count": 30,
+      "original_audit_prefix_instruction_count": 82,
+      "original_audit_prefix_IP_position_mask": "0x1000",
+      "native_OOP_signed_code": -2,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 17,
+      "native_identity": {
+        "database_index": 49717,
+        "native_id": 2000220048,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x800000000",
+      "original_full_IP_instruction_count": 25,
+      "original_audit_prefix_instruction_count": 81,
+      "original_audit_prefix_IP_position_mask": "0x80",
+      "native_OOP_signed_code": -16,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 18,
+      "native_identity": {
+        "database_index": 36634,
+        "native_id": 2000007415,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x20",
+      "original_full_IP_instruction_count": 25,
+      "original_audit_prefix_instruction_count": 81,
+      "original_audit_prefix_IP_position_mask": "0x400",
+      "native_OOP_signed_code": -11,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 19,
+      "native_identity": {
+        "database_index": 36819,
+        "native_id": 2000015300,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x200000000000",
+      "original_full_IP_instruction_count": 43,
+      "original_audit_prefix_instruction_count": 107,
+      "original_audit_prefix_IP_position_mask": "0x800",
+      "native_OOP_signed_code": 0,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 20,
+      "native_identity": {
+        "database_index": 38945,
+        "native_id": 2000053516,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x8000",
+      "original_full_IP_instruction_count": 25,
+      "original_audit_prefix_instruction_count": 81,
+      "original_audit_prefix_IP_position_mask": "0x80",
+      "native_OOP_signed_code": -16,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 21,
+      "native_identity": {
+        "database_index": 56412,
+        "native_id": 2000307251,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x20000",
+      "original_full_IP_instruction_count": 38,
+      "original_audit_prefix_instruction_count": 107,
+      "original_audit_prefix_IP_position_mask": "0x400",
+      "native_OOP_signed_code": -7,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 22,
+      "native_identity": {
+        "database_index": 39235,
+        "native_id": 2000058232,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x4000",
+      "original_full_IP_instruction_count": 25,
+      "original_audit_prefix_instruction_count": 81,
+      "original_audit_prefix_IP_position_mask": "0x10",
+      "native_OOP_signed_code": -27,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 23,
+      "native_identity": {
+        "database_index": 20265,
+        "native_id": 43500245,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x20000000000",
+      "original_full_IP_instruction_count": 43,
+      "original_audit_prefix_instruction_count": 108,
+      "original_audit_prefix_IP_position_mask": "0x2000",
+      "native_OOP_signed_code": -7,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 24,
+      "native_identity": {
+        "database_index": 38560,
+        "native_id": 2000048260,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x80000000000000",
+      "original_full_IP_instruction_count": 30,
+      "original_audit_prefix_instruction_count": 86,
+      "original_audit_prefix_IP_position_mask": "0x4",
+      "native_OOP_signed_code": -20,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 25,
+      "native_identity": {
+        "database_index": 52310,
+        "native_id": 2000262615,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x80",
+      "original_full_IP_instruction_count": 30,
+      "original_audit_prefix_instruction_count": 89,
+      "original_audit_prefix_IP_position_mask": "0x200",
+      "native_OOP_signed_code": -2,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 26,
+      "native_identity": {
+        "database_index": 13250,
+        "native_id": 28124573,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x1000000",
+      "original_full_IP_instruction_count": 25,
+      "original_audit_prefix_instruction_count": 81,
+      "original_audit_prefix_IP_position_mask": "0x10",
+      "native_OOP_signed_code": -28,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 27,
+      "native_identity": {
+        "database_index": 42203,
+        "native_id": 2000111044,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x1",
+      "original_full_IP_instruction_count": 24,
+      "original_audit_prefix_instruction_count": 80,
+      "original_audit_prefix_IP_position_mask": "0x1",
+      "native_OOP_signed_code": -31,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    },
+    {
+      "roster_slot": 28,
+      "native_identity": {
+        "database_index": 136908,
+        "native_id": 2002096563,
+        "random_id": null
+      },
+      "full_original_IP_operator_returned": true,
+      "native_IP_mask": "0x80000000",
+      "original_full_IP_instruction_count": 25,
+      "original_audit_prefix_instruction_count": 75,
+      "original_audit_prefix_IP_position_mask": "0x4000",
+      "native_OOP_signed_code": 4,
+      "OOP_source_state": "present_child",
+      "full_audit_returned": false
+    }
+  ],
+  "game_access": false,
+  "game_calls": false,
+  "applied_training_evaluated": false,
+  "effective_training_evaluated": false,
+  "full_audit_function_returned": false,
+  "capture_sha256": "2411f9a4a60a7617d1ecc8e3dfbfb07986c3c714d32456d4cb8052060ab794b1"
+}

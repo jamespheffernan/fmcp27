@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fm-live-mcp"
+version = "0.175.0"
+description = "MCP bridge for Football Manager queries and guarded training selection editing on macOS"
+requires-python = ">=3.12"
+dependencies = ["mcp==1.29.0", "unicorn==2.1.4"]
+
+[project.optional-dependencies]
+test = ["pytest>=9,<10", "pytest-xdist>=3.8,<4"]
+
+[project.scripts]
+fm-live-mcp = "fm_live_mcp.server:main"
+fm-capture = "fm_live_mcp.captured_match_registry:main"
+fm-match-crossing-report = "fm_live_mcp.match_crossing_report:main"
+fm-match-stills = "fm_live_mcp.match_stills:main"
+fm-enhance = "fm_live_mcp.enhance:main"
+
+[tool.setuptools.packages.find]
+include = ["fm_live_mcp*"]
+
+[tool.setuptools.package-data]
+"fm_live_mcp.fmdb" = ["data/*.json.gz"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Default developer run: offline and fast tests, in parallel. `pytest --complete` runs everything;
+# naming files or ids runs them whole. docs/TESTING.md has the commands and the marker rules.
+addopts = ["-m", "not slow and not live and not mapped_build", "-n", "auto", "--dist", "loadgroup"]
+markers = [
+    "live: reads the running Football Manager 27; serialised in one xdist group; excluded by default",
+    "slow: measured as individually expensive (tests/suite_profile.json); excluded by default",
+    "evidence: needs git-ignored files under evidence/",
+    "pinned_build: compares with the pinned game build's files (tests/_pinned_build.py); skips without them",
+    "mapped_build: checks the installed build through its address map (files *_mapped.py); `pytest -m mapped_build`",
+]
+

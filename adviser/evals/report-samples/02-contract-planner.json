@@ -1,0 +1,90 @@
+{
+  "title": "Contract-expiry planner",
+  "subtitle": "Senior squad contracts ending before June 2029, with the dates that force a decision",
+  "game_date": "2028-01-14",
+  "view": "full",
+  "summary": "Renew **Marco Bellandi** and **Adebayo Sule** before the end of February: both are starters and become free to sign pre-contracts elsewhere now. Let **Callum Reid**'s deal run to 2029 while a successor arrives, and release the three fringe players in June to free £61K a week.",
+  "sections": [
+    {
+      "type": "kpis",
+      "items": [
+        { "label": "Contracts ending by June 2028", "value": 7, "note": "4 first-team regulars" },
+        { "label": "Weekly wages ending", "value": 214000, "type": "money", "unit": "p/w" },
+        { "label": "Wage bill vs budget", "value": 96, "type": "percent", "delta": 4, "delta_label": "vs August", "better": "low" },
+        { "label": "Renewals agreed this season", "value": 2, "delta": -1, "delta_label": "vs last season", "better": "high" }
+      ]
+    },
+    {
+      "type": "timeline",
+      "title": "Decision dates",
+      "note": "Players in the final six months of a contract can agree a pre-contract with a foreign club; the dates below assume no renewal.",
+      "events": [
+        { "date": "2027-12-20", "label": "Renewal talks stalled over squad status", "subject": "Adebayo Sule", "kind": "contract", "detail": "Asked for Key Player status; offered First Team." },
+        { "date": "2028-01-01", "label": "Pre-contract window opened for June expiries", "kind": "contract", "status": "warning" },
+        { "date": "2028-01-31", "label": "January transfer window closes", "kind": "transfer" },
+        { "date": "2028-02-10", "label": "Returns from hamstring injury", "subject": "Marco Bellandi", "kind": "injury" },
+        { "date": "2028-02-28", "label": "Last sensible date to renew", "subject": "Marco Bellandi", "kind": "contract", "status": "critical", "detail": "Two Serie A clubs have asked about his availability." },
+        { "date": "2028-02-28", "label": "Last sensible date to renew", "subject": "Adebayo Sule", "kind": "contract", "status": "critical" },
+        { "date": "2028-03-15", "label": "Loan recall option expires", "subject": "Kian Walsh", "kind": "loan", "detail": "At Harrowgate Rovers until the end of the season." },
+        { "date": "2028-05-20", "label": "Final league match", "kind": "fixture" },
+        { "date": "2028-06-30", "label": "Contract ends", "subject": "Dominik Hrubý", "kind": "contract", "status": "good", "detail": "Release; wage £24K p/w." },
+        { "date": "2028-06-30", "label": "Contract ends", "subject": "Luis Paredes", "kind": "contract", "status": "good", "detail": "Release; wage £21K p/w." },
+        { "date": "2028-06-30", "label": "Contract ends", "subject": "Ryan Ashworth", "kind": "contract", "status": "good", "detail": "Release; wage £16K p/w." },
+        { "date": "2028-07-01", "label": "Summer window opens", "kind": "transfer" },
+        { "date": "2029-06-30", "label": "Contract ends", "subject": "Callum Reid", "kind": "contract", "status": "warning", "detail": "Successor search under way (see shortlist report)." }
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Every contract ending before June 2029",
+      "columns": [
+        { "key": "name", "label": "Player" },
+        { "key": "pos", "label": "Position" },
+        { "key": "age", "label": "Age", "type": "number" },
+        { "key": "ends", "label": "Contract ends", "type": "date" },
+        { "key": "wage", "label": "Wage", "type": "money", "unit": "p/w" },
+        { "key": "apps", "label": "Starts", "type": "number", "scale": { "min": 0, "max": 26, "style": "bar" } },
+        { "key": "ability", "label": "Current ability", "type": "number", "scale": { "min": 100, "max": 160, "style": "heat" } },
+        { "key": "status", "label": "Squad status" },
+        { "key": "plan", "label": "Plan" }
+      ],
+      "rows": [
+        { "name": "Marco Bellandi", "pos": "DC", "age": 27, "ends": "2028-06-30", "wage": 52000, "apps": 18, "ability": 152, "status": "Key Player", "plan": "Renew now, up to £65K p/w" },
+        { "name": "Adebayo Sule", "pos": "DM", "age": 25, "ends": "2028-06-30", "wage": 38000, "apps": 21, "ability": 146, "status": "First Team", "plan": "Renew; offer Key Player status" },
+        { "name": "Dominik Hrubý", "pos": "GK", "age": 33, "ends": "2028-06-30", "wage": 24000, "apps": 2, "ability": 121, "status": "Backup", "plan": "Release" },
+        { "name": "Luis Paredes", "pos": "AMR", "age": 30, "ends": "2028-06-30", "wage": 21000, "apps": 6, "ability": 128, "status": "Rotation", "plan": "Release or sell in January" },
+        { "name": "Ryan Ashworth", "pos": "ST", "age": 29, "ends": "2028-06-30", "wage": 16000, "apps": 3, "ability": 117, "status": "Backup", "plan": "Release" },
+        { "name": "Jesper Holm", "pos": "MC", "age": 24, "ends": "2028-06-30", "wage": 27000, "apps": 14, "ability": 138, "status": "Rotation", "plan": "Renew at the same wage" },
+        { "name": "Kian Walsh", "pos": "DL", "age": 22, "ends": "2028-06-30", "wage": 4000, "apps": 0, "ability": 112, "status": "On loan", "plan": "Extend one year; review after loan" },
+        { "name": "Callum Reid", "pos": "DL", "age": 31, "ends": "2029-06-30", "wage": 36000, "apps": 20, "ability": 139, "status": "First Team", "plan": "Keep to expiry; sign successor" },
+        { "name": "Theo Marsh", "pos": "GK", "age": 28, "ends": "2029-06-30", "wage": 41000, "apps": 24, "ability": 147, "status": "Key Player", "plan": "Open talks in the summer" }
+      ],
+      "highlight_rows": [0, 1]
+    },
+    {
+      "type": "bar_chart",
+      "title": "Weekly wages ending by June 2028, by decision",
+      "value_label": "Weekly wage",
+      "currency": "£",
+      "unit": "p/w",
+      "bars": [
+        { "label": "Renew: Bellandi", "value": 52000, "highlight": true },
+        { "label": "Renew: Sule", "value": 38000, "highlight": true },
+        { "label": "Renew: Holm", "value": 27000 },
+        { "label": "Release: Hrubý", "value": 24000 },
+        { "label": "Release: Paredes", "value": 21000 },
+        { "label": "Release: Ashworth", "value": 16000 },
+        { "label": "Extend: Walsh", "value": 4000 }
+      ]
+    }
+  ],
+  "caveats": [
+    "Current ability is the stored value, which the manager does not see in the game.",
+    "Wage demands in renewal talks can exceed the planned ceiling; the plan column is a recommendation, not an agreed term."
+  ],
+  "sources": [
+    "fm_get_squad_contracts, senior squad, 14 Jan 2028",
+    "fm_get_contract_offers, stored renewal talks",
+    "fm_get_fixtures and competition calendar"
+  ]
+}

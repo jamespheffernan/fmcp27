@@ -1,0 +1,1512 @@
+{
+  "source_snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+  "source_receipt_sha256": "e604a64ca8c9af22cb6a0f05a7145f8b7d665a32324f7812f2c944b39b9abfd0",
+  "source_scope": "28 audited same-file original regular PLAYER records,301 retained injury-history rows; field/date meaning limitations retained",
+  "rows": [
+    {
+      "raw_hex": "0b00ffffffff00033f00e70716000000",
+      "date": "2023-03-04",
+      "injury_index": 11
+    },
+    {
+      "raw_hex": "0600ffffffff00032200e80706000000",
+      "date": "2024-02-03",
+      "injury_index": 6
+    },
+    {
+      "raw_hex": "0900ffffffff00028800e8070a000000",
+      "date": "2024-05-15",
+      "injury_index": 9
+    },
+    {
+      "raw_hex": "5800ffffffff00032c01e80704000000",
+      "date": "2024-10-26",
+      "injury_index": 88
+    },
+    {
+      "raw_hex": "6100ffffffff00032400e90707000000",
+      "date": "2025-02-05",
+      "injury_index": 97
+    },
+    {
+      "raw_hex": "05002102000002029280eb070e000501",
+      "date": "2027-05-26",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "5c00ffffffff03016243ec0703000601",
+      "date": "2028-12-19",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "5c00ffffffff03012243ed0702000601",
+      "date": "2029-10-17",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "5c00ffffffff03025243ed0702000701",
+      "date": "2029-12-04",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "5900ffffffff03024042ee070f000401",
+      "date": "2030-03-05",
+      "injury_index": 89
+    },
+    {
+      "raw_hex": "16002102000001015d80ee0717000501",
+      "date": "2030-04-03",
+      "injury_index": 22
+    },
+    {
+      "raw_hex": "1c002102000001019580ee070d000b01",
+      "date": "2030-05-29",
+      "injury_index": 28
+    },
+    {
+      "raw_hex": "5400210200000102e558ee0702000501",
+      "date": "2030-08-17",
+      "injury_index": 84
+    },
+    {
+      "raw_hex": "1600ffffffff00000600e6071a000000",
+      "date": "2022-01-06",
+      "injury_index": 22
+    },
+    {
+      "raw_hex": "1b00ffffffff00027200e60752010000",
+      "date": "2022-04-24",
+      "injury_index": 27
+    },
+    {
+      "raw_hex": "0200ffffffff00000c00e80704000000",
+      "date": "2024-01-12",
+      "injury_index": 2
+    },
+    {
+      "raw_hex": "0500ffffffff00034700e8070e000000",
+      "date": "2024-03-11",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "0600ffffffff00015a00e8070d000000",
+      "date": "2024-03-30",
+      "injury_index": 6
+    },
+    {
+      "raw_hex": "0b00ffffffff00018400e80718000000",
+      "date": "2024-05-11",
+      "injury_index": 11
+    },
+    {
+      "raw_hex": "0100ffffffff00006701e80704000000",
+      "date": "2024-12-24",
+      "injury_index": 1
+    },
+    {
+      "raw_hex": "5f00ffffffff03025242ea0702000401",
+      "date": "2026-03-23",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "5a00ffffffff03022342ec0702000101",
+      "date": "2028-02-04",
+      "injury_index": 90
+    },
+    {
+      "raw_hex": "0500ffffffff03015b42ec070b000401",
+      "date": "2028-03-31",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "54002102000001018750ec0703000001",
+      "date": "2028-05-14",
+      "injury_index": 84
+    },
+    {
+      "raw_hex": "6400ffffffff03032742ed073c000402",
+      "date": "2029-02-08",
+      "injury_index": 100
+    },
+    {
+      "raw_hex": "05002102000001027d58ed070e000001",
+      "date": "2029-05-05",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "0b00ffffffff03024543ed071c000601",
+      "date": "2029-11-21",
+      "injury_index": 11
+    },
+    {
+      "raw_hex": "0000ffffffff03030a42ee0704000008",
+      "date": "2030-01-10",
+      "injury_index": 0
+    },
+    {
+      "raw_hex": "5400ffffffff03017c42ee0702000101",
+      "date": "2030-05-04",
+      "injury_index": 84
+    },
+    {
+      "raw_hex": "5f00ffffffff03010643ee0702000601",
+      "date": "2030-09-19",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "0f00ffffffff00023900e9079d000002",
+      "date": "2025-02-26",
+      "injury_index": 15
+    },
+    {
+      "raw_hex": "7200ffffffff03022143e90714000002",
+      "date": "2025-10-16",
+      "injury_index": 114
+    },
+    {
+      "raw_hex": "58006902000004019d58ea0702000001",
+      "date": "2026-06-06",
+      "injury_index": 88
+    },
+    {
+      "raw_hex": "5e002102000001011658ec0703000001",
+      "date": "2028-01-22",
+      "injury_index": 94
+    },
+    {
+      "raw_hex": "08002102000001010551ec0708000001",
+      "date": "2028-09-17",
+      "injury_index": 8
+    },
+    {
+      "raw_hex": "41002102000001020e64ed070e000020",
+      "date": "2029-01-14",
+      "injury_index": 65
+    },
+    {
+      "raw_hex": "1500690200000401a17eed0778000b02",
+      "date": "2029-06-10",
+      "injury_index": 21
+    },
+    {
+      "raw_hex": "5c002102000002024d6fed0703000501",
+      "date": "2029-11-29",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "5c00ffffffff03020743ee0702000501",
+      "date": "2030-09-20",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "6000ffffffff00035301e6071f000000",
+      "date": "2022-12-05",
+      "injury_index": 96
+    },
+    {
+      "raw_hex": "0f00ffffffff0002b700e7074a000000",
+      "date": "2023-07-02",
+      "injury_index": 15
+    },
+    {
+      "raw_hex": "0700ffffffff00021101e70735000000",
+      "date": "2023-09-30",
+      "injury_index": 7
+    },
+    {
+      "raw_hex": "5600ffffffff00023e00e80754000000",
+      "date": "2024-03-02",
+      "injury_index": 86
+    },
+    {
+      "raw_hex": "2200ffffffff00011401e8070e000000",
+      "date": "2024-10-02",
+      "injury_index": 34
+    },
+    {
+      "raw_hex": "6000ffffffff00013a01e80731000000",
+      "date": "2024-11-09",
+      "injury_index": 96
+    },
+    {
+      "raw_hex": "5800ffffffff0302e542e90703000401",
+      "date": "2025-08-17",
+      "injury_index": 88
+    },
+    {
+      "raw_hex": "5c00ffffffff03025643e90703000601",
+      "date": "2025-12-08",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "58002102000001025480ea0703000001",
+      "date": "2026-03-25",
+      "injury_index": 88
+    },
+    {
+      "raw_hex": "0000ffffffff03036e42ea0704000008",
+      "date": "2026-04-20",
+      "injury_index": 0
+    },
+    {
+      "raw_hex": "57002102000001013165ea0702000001",
+      "date": "2026-11-01",
+      "injury_index": 87
+    },
+    {
+      "raw_hex": "0600ffffffff03024b43ea070e000501",
+      "date": "2026-11-27",
+      "injury_index": 6
+    },
+    {
+      "raw_hex": "05002102000001023780eb070c000001",
+      "date": "2027-02-24",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "5800ffffffff03029342eb0702000401",
+      "date": "2027-05-27",
+      "injury_index": 88
+    },
+    {
+      "raw_hex": "5900210200000101f758eb070f000001",
+      "date": "2027-09-04",
+      "injury_index": 89
+    },
+    {
+      "raw_hex": "4d00ffffffff03035642ec071f000720",
+      "date": "2028-03-26",
+      "injury_index": 77
+    },
+    {
+      "raw_hex": "5a00ffffffff03017e42ec0702000101",
+      "date": "2028-05-05",
+      "injury_index": 90
+    },
+    {
+      "raw_hex": "05002102000001016258ed070c000001",
+      "date": "2029-04-08",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "0100ffffffff03031d42ee0708000020",
+      "date": "2030-01-29",
+      "injury_index": 1
+    },
+    {
+      "raw_hex": "59002102000002018e80ee070e000501",
+      "date": "2030-05-22",
+      "injury_index": 89
+    },
+    {
+      "raw_hex": "5f00ffffffff0301c742ee0703000601",
+      "date": "2030-07-18",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "5400210200000201cc80ee0703000c01",
+      "date": "2030-07-23",
+      "injury_index": 84
+    },
+    {
+      "raw_hex": "5c00210200000202fd80ee0703001101",
+      "date": "2030-09-10",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "0200ffffffff00006e01e4071f000000",
+      "date": "2020-12-31",
+      "injury_index": 2
+    },
+    {
+      "raw_hex": "1700ffffffff00005b00e5073c000000",
+      "date": "2021-04-01",
+      "injury_index": 23
+    },
+    {
+      "raw_hex": "2800ffffffff0000bd00e5070c000000",
+      "date": "2021-07-08",
+      "injury_index": 40
+    },
+    {
+      "raw_hex": "0f00ffffffff00001801e50755000000",
+      "date": "2021-10-07",
+      "injury_index": 15
+    },
+    {
+      "raw_hex": "2800ffffffff0000e500e70704000000",
+      "date": "2023-08-17",
+      "injury_index": 40
+    },
+    {
+      "raw_hex": "0000ffffffff00002200e90703000000",
+      "date": "2025-02-03",
+      "injury_index": 0
+    },
+    {
+      "raw_hex": "1100ffffffff03027c42ea0717000601",
+      "date": "2026-05-04",
+      "injury_index": 17
+    },
+    {
+      "raw_hex": "5f00ffffffff03021542eb0703000501",
+      "date": "2027-01-21",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "0300ffffffff03030242ec0703000020",
+      "date": "2028-01-02",
+      "injury_index": 3
+    },
+    {
+      "raw_hex": "5e00ffffffff03015d43ec0703000401",
+      "date": "2028-12-14",
+      "injury_index": 94
+    },
+    {
+      "raw_hex": "5d002102000002016684ed0726001101",
+      "date": "2029-04-12",
+      "injury_index": 93
+    },
+    {
+      "raw_hex": "5b00210200000201d858ed0705001101",
+      "date": "2029-08-04",
+      "injury_index": 91
+    },
+    {
+      "raw_hex": "1600210200000102e658ed0717001101",
+      "date": "2029-08-18",
+      "injury_index": 22
+    },
+    {
+      "raw_hex": "5400ffffffff03020643ed0702000c01",
+      "date": "2029-09-19",
+      "injury_index": 84
+    },
+    {
+      "raw_hex": "0500f574000002010981ed070d000501",
+      "date": "2029-09-22",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "05002102000002012a6fed070a000501",
+      "date": "2029-10-25",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "5c002102000001016459ed0702000501",
+      "date": "2029-12-22",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "54002102000001014c58ee0703000c01",
+      "date": "2030-03-17",
+      "injury_index": 84
+    },
+    {
+      "raw_hex": "1d00ffffffff03017e42ee0705000101",
+      "date": "2030-05-06",
+      "injury_index": 29
+    },
+    {
+      "raw_hex": "6100ffffffff0301f942ee070c000501",
+      "date": "2030-09-06",
+      "injury_index": 97
+    },
+    {
+      "raw_hex": "0200ffffffff00000b00e20708000000",
+      "date": "2018-01-11",
+      "injury_index": 2
+    },
+    {
+      "raw_hex": "4100ffffffff00006800e3070a000000",
+      "date": "2019-04-14",
+      "injury_index": 65
+    },
+    {
+      "raw_hex": "2400ffffffff0000de00e30703000000",
+      "date": "2019-08-10",
+      "injury_index": 36
+    },
+    {
+      "raw_hex": "2400ffffffff00002100e40704000000",
+      "date": "2020-02-02",
+      "injury_index": 36
+    },
+    {
+      "raw_hex": "6500ffffffff00003a01e40709000000",
+      "date": "2020-11-09",
+      "injury_index": 101
+    },
+    {
+      "raw_hex": "6500ffffffff00007d00e50708000000",
+      "date": "2021-05-05",
+      "injury_index": 101
+    },
+    {
+      "raw_hex": "4c00ffffffff00001501e50708000000",
+      "date": "2021-10-04",
+      "injury_index": 76
+    },
+    {
+      "raw_hex": "3d00ffffffff00002901e50704000000",
+      "date": "2021-10-24",
+      "injury_index": 61
+    },
+    {
+      "raw_hex": "1700ffffffff00006f00e60720000000",
+      "date": "2022-04-21",
+      "injury_index": 23
+    },
+    {
+      "raw_hex": "1e00ffffffff0000f800e60718000000",
+      "date": "2022-09-05",
+      "injury_index": 30
+    },
+    {
+      "raw_hex": "2600ffffffff00001001e60704000000",
+      "date": "2022-09-29",
+      "injury_index": 38
+    },
+    {
+      "raw_hex": "5800ffffffff00003301e60702000000",
+      "date": "2022-11-03",
+      "injury_index": 88
+    },
+    {
+      "raw_hex": "1e00ffffffff00004400e70714000000",
+      "date": "2023-03-09",
+      "injury_index": 30
+    },
+    {
+      "raw_hex": "6a00ffffffff0301c342e90713000902",
+      "date": "2025-07-14",
+      "injury_index": 106
+    },
+    {
+      "raw_hex": "1000210200000102fc80ea0702000001",
+      "date": "2026-09-09",
+      "injury_index": 16
+    },
+    {
+      "raw_hex": "1d002102000002012481eb0707000001",
+      "date": "2027-10-19",
+      "injury_index": 29
+    },
+    {
+      "raw_hex": "16002102000002024881eb0717000001",
+      "date": "2027-11-24",
+      "injury_index": 22
+    },
+    {
+      "raw_hex": "5e00210200000101476cec0703000001",
+      "date": "2028-03-11",
+      "injury_index": 94
+    },
+    {
+      "raw_hex": "5c00ffffffff0301d442e90703000701",
+      "date": "2025-07-31",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "1000c002000001020d89e90703000001",
+      "date": "2025-09-26",
+      "injury_index": 16
+    },
+    {
+      "raw_hex": "1c00ffffffff03026642ea070d000501",
+      "date": "2026-04-12",
+      "injury_index": 28
+    },
+    {
+      "raw_hex": "1a00ffffffff0301db42ea073f000402",
+      "date": "2026-08-07",
+      "injury_index": 26
+    },
+    {
+      "raw_hex": "5b00210200000101f058eb0706000001",
+      "date": "2027-08-28",
+      "injury_index": 91
+    },
+    {
+      "raw_hex": "2000210200000201256fec0706000020",
+      "date": "2028-10-19",
+      "injury_index": 32
+    },
+    {
+      "raw_hex": "5400ffffffff03018d42ed0701000101",
+      "date": "2029-05-21",
+      "injury_index": 84
+    },
+    {
+      "raw_hex": "5a00ffffffff03017942ee0703000b01",
+      "date": "2030-05-01",
+      "injury_index": 90
+    },
+    {
+      "raw_hex": "6600ffffffff00005600e80761000000",
+      "date": "2024-03-26",
+      "injury_index": 102
+    },
+    {
+      "raw_hex": "0f00ffffffff0003b800e8076c000000",
+      "date": "2024-07-02",
+      "injury_index": 15
+    },
+    {
+      "raw_hex": "2200ffffffff03025043e9071f000401",
+      "date": "2025-12-02",
+      "injury_index": 34
+    },
+    {
+      "raw_hex": "5c00ffffffff03014f43ea0703000701",
+      "date": "2026-12-01",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "5900ffffffff03025543eb070d000601",
+      "date": "2027-12-07",
+      "injury_index": 89
+    },
+    {
+      "raw_hex": "5e00ffffffff03024842ec0703000401",
+      "date": "2028-03-12",
+      "injury_index": 94
+    },
+    {
+      "raw_hex": "5400210200000201186eee0703000501",
+      "date": "2030-01-24",
+      "injury_index": 84
+    },
+    {
+      "raw_hex": "5400f57400000202c258ee0701001101",
+      "date": "2030-07-13",
+      "injury_index": 84
+    },
+    {
+      "raw_hex": "5f00ffffffff0701de52e90703000001",
+      "date": "2025-08-10",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "0b00ffffffff07012752ea0723000001",
+      "date": "2026-02-08",
+      "injury_index": 11
+    },
+    {
+      "raw_hex": "5f00ffffffff03029942ec0703000701",
+      "date": "2028-06-01",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "5e00ffffffff03024b43ec0702000601",
+      "date": "2028-11-26",
+      "injury_index": 94
+    },
+    {
+      "raw_hex": "5400ffffffff03018742ed0702000c01",
+      "date": "2029-05-15",
+      "injury_index": 84
+    },
+    {
+      "raw_hex": "5900ffffffff0301e342ed070b000501",
+      "date": "2029-08-15",
+      "injury_index": 89
+    },
+    {
+      "raw_hex": "1300ffffffff03029142ee0708000c20",
+      "date": "2030-05-25",
+      "injury_index": 19
+    },
+    {
+      "raw_hex": "5b00210200000201bb58ee0707000501",
+      "date": "2030-07-06",
+      "injury_index": 91
+    },
+    {
+      "raw_hex": "5b00210200000101de58ee0707000501",
+      "date": "2030-08-10",
+      "injury_index": 91
+    },
+    {
+      "raw_hex": "6300ffffffff0303f942ee070e000301",
+      "date": "2030-09-06",
+      "injury_index": 99
+    },
+    {
+      "raw_hex": "0000ffffffff03036943e90704000008",
+      "date": "2025-12-27",
+      "injury_index": 0
+    },
+    {
+      "raw_hex": "5e00ffffffff0301ec42eb0702000601",
+      "date": "2027-08-24",
+      "injury_index": 94
+    },
+    {
+      "raw_hex": "4200ffffffff03033d43eb0708000120",
+      "date": "2027-11-13",
+      "injury_index": 66
+    },
+    {
+      "raw_hex": "5a00ffffffff03015443eb0702000c01",
+      "date": "2027-12-06",
+      "injury_index": 90
+    },
+    {
+      "raw_hex": "5e00c00200000202cc58ec0703000001",
+      "date": "2028-07-22",
+      "injury_index": 94
+    },
+    {
+      "raw_hex": "5c00ffffffff03019042ee0702000401",
+      "date": "2030-05-24",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "5400f405000001018880ea0702000001",
+      "date": "2026-05-16",
+      "injury_index": 84
+    },
+    {
+      "raw_hex": "05003502000001011d81eb0709000001",
+      "date": "2027-10-12",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "2200ffffffff03026543eb071e000601",
+      "date": "2027-12-23",
+      "injury_index": 34
+    },
+    {
+      "raw_hex": "2200ffffffff03024e42ed071f000001",
+      "date": "2029-03-19",
+      "injury_index": 34
+    },
+    {
+      "raw_hex": "3d00ffffffff03038742ed0707000101",
+      "date": "2029-05-15",
+      "injury_index": 61
+    },
+    {
+      "raw_hex": "6f00ffffffff03012d43ed0706000201",
+      "date": "2029-10-28",
+      "injury_index": 111
+    },
+    {
+      "raw_hex": "0000ffffffff03035043ed0704000008",
+      "date": "2029-12-02",
+      "injury_index": 0
+    },
+    {
+      "raw_hex": "5f000c02000001012858ee0703000001",
+      "date": "2030-02-09",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "2200ffffffff03023342ee071d000001",
+      "date": "2030-02-20",
+      "injury_index": 34
+    },
+    {
+      "raw_hex": "5b00f57400000201c680ee0707000501",
+      "date": "2030-07-17",
+      "injury_index": 91
+    },
+    {
+      "raw_hex": "5c00ffffffff00037800e80720000000",
+      "date": "2024-04-29",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "5f00ffffffff03023342ec0703000601",
+      "date": "2028-02-20",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "5e002102000001016381ec0703000001",
+      "date": "2028-12-20",
+      "injury_index": 94
+    },
+    {
+      "raw_hex": "5800ffffffff03021742ed0702000401",
+      "date": "2029-01-23",
+      "injury_index": 88
+    },
+    {
+      "raw_hex": "3f00ffffffff03038c42ee0703000120",
+      "date": "2030-05-20",
+      "injury_index": 63
+    },
+    {
+      "raw_hex": "5f00ffffffff0301f542ee0702000501",
+      "date": "2030-09-02",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "5e00ffffffff03023243ea0702000601",
+      "date": "2026-11-02",
+      "injury_index": 94
+    },
+    {
+      "raw_hex": "5900ffffffff03023843ea070c000501",
+      "date": "2026-11-08",
+      "injury_index": 89
+    },
+    {
+      "raw_hex": "61004502000001021b80eb0709000001",
+      "date": "2027-01-27",
+      "injury_index": 97
+    },
+    {
+      "raw_hex": "0b00ffffffff03012c42eb071e000401",
+      "date": "2027-02-13",
+      "injury_index": 11
+    },
+    {
+      "raw_hex": "5c00ffffffff0301f842eb0702000601",
+      "date": "2027-09-05",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "5c003502000001011658ec0703000001",
+      "date": "2028-01-22",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "5800ffffffff0302ce42ed0702000701",
+      "date": "2029-07-25",
+      "injury_index": 88
+    },
+    {
+      "raw_hex": "5e00f574000002010259ed0702000501",
+      "date": "2029-09-15",
+      "injury_index": 94
+    },
+    {
+      "raw_hex": "5b00ffffffff03025442ee0706000401",
+      "date": "2030-03-25",
+      "injury_index": 91
+    },
+    {
+      "raw_hex": "5b00ffffffff0302c142ee0707000401",
+      "date": "2030-07-12",
+      "injury_index": 91
+    },
+    {
+      "raw_hex": "0100ffffffff00002900e70702000000",
+      "date": "2023-02-10",
+      "injury_index": 1
+    },
+    {
+      "raw_hex": "1700ffffffff0000da00e8072b000000",
+      "date": "2024-08-05",
+      "injury_index": 23
+    },
+    {
+      "raw_hex": "1b00ffffffff00004b01e8078f010002",
+      "date": "2024-11-26",
+      "injury_index": 27
+    },
+    {
+      "raw_hex": "6300ffffffff03034a42ec070f000401",
+      "date": "2028-03-14",
+      "injury_index": 99
+    },
+    {
+      "raw_hex": "1700de0200000101fe6cec072a000001",
+      "date": "2028-09-10",
+      "injury_index": 23
+    },
+    {
+      "raw_hex": "5400de02000002016d5dec0703000001",
+      "date": "2028-12-30",
+      "injury_index": 84
+    },
+    {
+      "raw_hex": "5500ffffffff03010a42ed0704000401",
+      "date": "2029-01-10",
+      "injury_index": 85
+    },
+    {
+      "raw_hex": "5f001300000004026b51ed0703000501",
+      "date": "2029-12-29",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "5a003a0200000101357fe90702000001",
+      "date": "2025-11-05",
+      "injury_index": 90
+    },
+    {
+      "raw_hex": "1c003a02000001026859ea070d000001",
+      "date": "2026-12-26",
+      "injury_index": 28
+    },
+    {
+      "raw_hex": "6300ffffffff03031d43eb070b000301",
+      "date": "2027-10-12",
+      "injury_index": 99
+    },
+    {
+      "raw_hex": "1d00ffffffff03028442ec0706000201",
+      "date": "2028-05-11",
+      "injury_index": 29
+    },
+    {
+      "raw_hex": "5b003a02000001011b58ed0707000001",
+      "date": "2029-01-27",
+      "injury_index": 91
+    },
+    {
+      "raw_hex": "0700ffffffff03017342ee0712000b01",
+      "date": "2030-04-25",
+      "injury_index": 7
+    },
+    {
+      "raw_hex": "2200210200000201bb58ee0720000501",
+      "date": "2030-07-06",
+      "injury_index": 34
+    },
+    {
+      "raw_hex": "1f00ffffffff00032700e90769000000",
+      "date": "2025-02-08",
+      "injury_index": 31
+    },
+    {
+      "raw_hex": "6b00ffffffff03015d42ea0703000301",
+      "date": "2026-04-03",
+      "injury_index": 107
+    },
+    {
+      "raw_hex": "5b00d801000001024a59ec0705000001",
+      "date": "2028-11-25",
+      "injury_index": 91
+    },
+    {
+      "raw_hex": "5d00ffffffff03020a42ed0731000401",
+      "date": "2029-01-10",
+      "injury_index": 93
+    },
+    {
+      "raw_hex": "4500d801000001016f58ed0713000002",
+      "date": "2029-04-21",
+      "injury_index": 69
+    },
+    {
+      "raw_hex": "7200ffffffff03021a43ea0711000002",
+      "date": "2026-10-09",
+      "injury_index": 114
+    },
+    {
+      "raw_hex": "1700ffffffff03011c42ec0727000401",
+      "date": "2028-01-28",
+      "injury_index": 23
+    },
+    {
+      "raw_hex": "5e00ffffffff03023243ec0702000601",
+      "date": "2028-11-01",
+      "injury_index": 94
+    },
+    {
+      "raw_hex": "66003502000001024a59ec072a000002",
+      "date": "2028-11-25",
+      "injury_index": 102
+    },
+    {
+      "raw_hex": "0b00210200000101ed6ced071b000c01",
+      "date": "2029-08-25",
+      "injury_index": 11
+    },
+    {
+      "raw_hex": "0200ffffffff03030f42ee0707000020",
+      "date": "2030-01-15",
+      "injury_index": 2
+    },
+    {
+      "raw_hex": "0e00ffffffff03013f42ee0746000b02",
+      "date": "2030-03-04",
+      "injury_index": 14
+    },
+    {
+      "raw_hex": "5900ffffffff0301be42ee070f000501",
+      "date": "2030-07-09",
+      "injury_index": 89
+    },
+    {
+      "raw_hex": "0600ffffffff0000e700e8070f000000",
+      "date": "2024-08-18",
+      "injury_index": 6
+    },
+    {
+      "raw_hex": "6100ffffffff0301ed42ea070d000501",
+      "date": "2026-08-25",
+      "injury_index": 97
+    },
+    {
+      "raw_hex": "5d00ff0200000101f86ceb0727000001",
+      "date": "2027-09-05",
+      "injury_index": 93
+    },
+    {
+      "raw_hex": "5800ffffffff03018742ec0701000501",
+      "date": "2028-05-14",
+      "injury_index": 88
+    },
+    {
+      "raw_hex": "5300ffffffff03012743ed0705000701",
+      "date": "2029-10-22",
+      "injury_index": 83
+    },
+    {
+      "raw_hex": "0600ffffffff03025d43ed070e000601",
+      "date": "2029-12-15",
+      "injury_index": 6
+    },
+    {
+      "raw_hex": "5e00ffffffff0302ea42ee0703000501",
+      "date": "2030-08-22",
+      "injury_index": 94
+    },
+    {
+      "raw_hex": "2200ffffffff03015343e9071d000501",
+      "date": "2025-12-05",
+      "injury_index": 34
+    },
+    {
+      "raw_hex": "5b00ffffffff03016743ea0706000401",
+      "date": "2026-12-25",
+      "injury_index": 91
+    },
+    {
+      "raw_hex": "0800ffffffff03011342ec0709000101",
+      "date": "2028-01-19",
+      "injury_index": 8
+    },
+    {
+      "raw_hex": "5f00ffffffff03020b43ec0701000501",
+      "date": "2028-09-23",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "5f009274000002012d79ec0702000001",
+      "date": "2028-10-27",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "5800ffffffff03011e42ed0703000401",
+      "date": "2029-01-30",
+      "injury_index": 88
+    },
+    {
+      "raw_hex": "0500210200000201f880ed0709000501",
+      "date": "2029-09-05",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "5a00ffffffff03024442ee0703000b01",
+      "date": "2030-03-09",
+      "injury_index": 90
+    },
+    {
+      "raw_hex": "0f00ffffffff0302f142ee0731000b02",
+      "date": "2030-08-29",
+      "injury_index": 15
+    },
+    {
+      "raw_hex": "0100ffffffff00000c01e4070b000000",
+      "date": "2020-09-24",
+      "injury_index": 1
+    },
+    {
+      "raw_hex": "0d00ffffffff0000cb00e5077b000000",
+      "date": "2021-07-22",
+      "injury_index": 13
+    },
+    {
+      "raw_hex": "6f00ffffffff00022d00e6070e000000",
+      "date": "2022-02-14",
+      "injury_index": 111
+    },
+    {
+      "raw_hex": "3900ffffffff0001f600e607c3010000",
+      "date": "2022-09-03",
+      "injury_index": 57
+    },
+    {
+      "raw_hex": "3800ffffffff00024b00e7070f000000",
+      "date": "2023-03-16",
+      "injury_index": 56
+    },
+    {
+      "raw_hex": "3900ffffffff00027f00e70767000000",
+      "date": "2023-05-07",
+      "injury_index": 57
+    },
+    {
+      "raw_hex": "5f00ffffffff00003f01e80704000000",
+      "date": "2024-11-14",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "0000ffffffff0000af00e90702000000",
+      "date": "2025-06-24",
+      "injury_index": 0
+    },
+    {
+      "raw_hex": "0500e801000001010759e9070d000001",
+      "date": "2025-09-20",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "5a00e801000002015781e90703000001",
+      "date": "2025-12-09",
+      "injury_index": 90
+    },
+    {
+      "raw_hex": "0000ffffffff03030a43ea0703000008",
+      "date": "2026-09-23",
+      "injury_index": 0
+    },
+    {
+      "raw_hex": "6700ffffffff03031443ea0706000301",
+      "date": "2026-10-03",
+      "injury_index": 103
+    },
+    {
+      "raw_hex": "5900ffffffff03017f42eb070f000801",
+      "date": "2027-05-07",
+      "injury_index": 89
+    },
+    {
+      "raw_hex": "1c00e80100000202036feb0710000001",
+      "date": "2027-09-16",
+      "injury_index": 28
+    },
+    {
+      "raw_hex": "5400e801000001014f81eb0702000001",
+      "date": "2027-12-01",
+      "injury_index": 84
+    },
+    {
+      "raw_hex": "4700ffffffff0303e042ec073b000102",
+      "date": "2028-08-11",
+      "injury_index": 71
+    },
+    {
+      "raw_hex": "7900ffffffff03016143ec0731000801",
+      "date": "2028-12-18",
+      "injury_index": 121
+    },
+    {
+      "raw_hex": "5400ffffffff0301c342ed0703000101",
+      "date": "2029-07-14",
+      "injury_index": 84
+    },
+    {
+      "raw_hex": "2200210200000202496eee071e000501",
+      "date": "2030-03-14",
+      "injury_index": 34
+    },
+    {
+      "raw_hex": "5a00ffffffff03010a43ee0702000101",
+      "date": "2030-09-23",
+      "injury_index": 90
+    },
+    {
+      "raw_hex": "0600ffffffff00030c00e7071d000000",
+      "date": "2023-01-12",
+      "injury_index": 6
+    },
+    {
+      "raw_hex": "5c00ffffffff0003bb00e7070a000000",
+      "date": "2023-07-06",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "5800ffffffff00031501e70704000000",
+      "date": "2023-10-04",
+      "injury_index": 88
+    },
+    {
+      "raw_hex": "2400ffffffff00032e01e80723000000",
+      "date": "2024-10-28",
+      "injury_index": 36
+    },
+    {
+      "raw_hex": "2400ffffffff00035501e80733000000",
+      "date": "2024-12-06",
+      "injury_index": 36
+    },
+    {
+      "raw_hex": "4100ffffffff00008900e9070e000000",
+      "date": "2025-05-17",
+      "injury_index": 65
+    },
+    {
+      "raw_hex": "5e00ffffffff0302f242e90703000701",
+      "date": "2025-08-30",
+      "injury_index": 94
+    },
+    {
+      "raw_hex": "2400f401000001015158ea074d000002",
+      "date": "2026-03-22",
+      "injury_index": 36
+    },
+    {
+      "raw_hex": "0000ffffffff0303e542eb0704000008",
+      "date": "2027-08-17",
+      "injury_index": 0
+    },
+    {
+      "raw_hex": "1700f40100000102f864eb072d000001",
+      "date": "2027-09-05",
+      "injury_index": 23
+    },
+    {
+      "raw_hex": "5a00f40100000101f750ec0702000001",
+      "date": "2028-09-03",
+      "injury_index": 90
+    },
+    {
+      "raw_hex": "1000f401000002023981ec0703000001",
+      "date": "2028-11-08",
+      "injury_index": 16
+    },
+    {
+      "raw_hex": "2000d20000000201046fea0707000020",
+      "date": "2026-09-17",
+      "injury_index": 32
+    },
+    {
+      "raw_hex": "3c00ffffffff03016742eb0732000102",
+      "date": "2027-04-13",
+      "injury_index": 60
+    },
+    {
+      "raw_hex": "1d00ffffffff03026843eb0707000101",
+      "date": "2027-12-26",
+      "injury_index": 29
+    },
+    {
+      "raw_hex": "5b00d200000001010f80ec0706000001",
+      "date": "2028-01-15",
+      "injury_index": 91
+    },
+    {
+      "raw_hex": "5f00d200000002012880ec0702000001",
+      "date": "2028-02-09",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "5300ffffffff0302cd42ec0706000701",
+      "date": "2028-07-23",
+      "injury_index": 83
+    },
+    {
+      "raw_hex": "0500d200000001018b80ed070c000001",
+      "date": "2029-05-19",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "5b00ffffffff03016042ee0706000401",
+      "date": "2030-04-06",
+      "injury_index": 91
+    },
+    {
+      "raw_hex": "0500ffffffff0301ea42ee070a000401",
+      "date": "2030-08-22",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "54002102000002010481ee0702000501",
+      "date": "2030-09-17",
+      "injury_index": 84
+    },
+    {
+      "raw_hex": "1c00ffffffff05020c43ee0710000401",
+      "date": "2030-09-25",
+      "injury_index": 28
+    },
+    {
+      "raw_hex": "1a00ffffffff0001f000e80761000000",
+      "date": "2024-08-27",
+      "injury_index": 26
+    },
+    {
+      "raw_hex": "1b00ffffffff00031600e9070e010002",
+      "date": "2025-01-22",
+      "injury_index": 27
+    },
+    {
+      "raw_hex": "5a00f40100000201c060ea0702000001",
+      "date": "2026-07-11",
+      "injury_index": 90
+    },
+    {
+      "raw_hex": "6b00a006000001013859ea0702000001",
+      "date": "2026-11-08",
+      "injury_index": 107
+    },
+    {
+      "raw_hex": "0600ffffffff03013542eb070c000601",
+      "date": "2027-02-22",
+      "injury_index": 6
+    },
+    {
+      "raw_hex": "5a00ffffffff0302f542eb0702000101",
+      "date": "2027-09-02",
+      "injury_index": 90
+    },
+    {
+      "raw_hex": "41001d00000004023c7deb070e000020",
+      "date": "2027-11-12",
+      "injury_index": 65
+    },
+    {
+      "raw_hex": "6b00a006000001022384ec0702000001",
+      "date": "2028-02-04",
+      "injury_index": 107
+    },
+    {
+      "raw_hex": "5c00ffffffff03028242ec0703000501",
+      "date": "2028-05-09",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "1600ffffffff03012c43ec0716000801",
+      "date": "2028-10-26",
+      "injury_index": 22
+    },
+    {
+      "raw_hex": "41001d00000004025358ed070e000020",
+      "date": "2029-03-24",
+      "injury_index": 65
+    },
+    {
+      "raw_hex": "1c000003000001022c5ded070f000001",
+      "date": "2029-10-27",
+      "injury_index": 28
+    },
+    {
+      "raw_hex": "5f00ffffffff03012342ee0702000701",
+      "date": "2030-02-04",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "1c00000300000101285cee0710000001",
+      "date": "2030-02-09",
+      "injury_index": 28
+    },
+    {
+      "raw_hex": "5f007503000001012e89e90701000001",
+      "date": "2025-10-29",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "0500ffffffff03026243e9070e000401",
+      "date": "2025-12-20",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "1a00ffffffff03010d42ea0740000402",
+      "date": "2026-01-13",
+      "injury_index": 26
+    },
+    {
+      "raw_hex": "5800ffffffff0302c342ea0702000701",
+      "date": "2026-07-14",
+      "injury_index": 88
+    },
+    {
+      "raw_hex": "5c00ffffffff03012b43ea0702000601",
+      "date": "2026-10-26",
+      "injury_index": 92
+    },
+    {
+      "raw_hex": "5a007503000001024870eb0703000001",
+      "date": "2027-03-13",
+      "injury_index": 90
+    },
+    {
+      "raw_hex": "0000ffffffff0303e942ec0704000008",
+      "date": "2028-08-20",
+      "injury_index": 0
+    },
+    {
+      "raw_hex": "6300ffffffff03030c43ec0709000301",
+      "date": "2028-09-24",
+      "injury_index": 99
+    },
+    {
+      "raw_hex": "1e00ffffffff03013e42ed0720000601",
+      "date": "2029-03-03",
+      "injury_index": 30
+    },
+    {
+      "raw_hex": "5f00ffffffff03024643ed0703000501",
+      "date": "2029-11-22",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "6100ffffffff07024b53ec070c000001",
+      "date": "2028-11-26",
+      "injury_index": 97
+    },
+    {
+      "raw_hex": "0000ffffffff03038542ed0703000008",
+      "date": "2029-05-13",
+      "injury_index": 0
+    },
+    {
+      "raw_hex": "5f00ffffffff0301c142ee0703000401",
+      "date": "2030-07-12",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "4a00ffffffff03032d42ea0713000720",
+      "date": "2026-02-14",
+      "injury_index": 74
+    },
+    {
+      "raw_hex": "5800ffffffff03017b42ea0703000601",
+      "date": "2026-05-03",
+      "injury_index": 88
+    },
+    {
+      "raw_hex": "5b004f0200000101ff58ea0707000001",
+      "date": "2026-09-12",
+      "injury_index": 91
+    },
+    {
+      "raw_hex": "0500ffffffff03011443ea070f000401",
+      "date": "2026-10-03",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "5e00ffffffff03010342eb0702000701",
+      "date": "2027-01-03",
+      "injury_index": 94
+    },
+    {
+      "raw_hex": "59004f02000001016b6ceb070e000001",
+      "date": "2027-04-17",
+      "injury_index": 89
+    },
+    {
+      "raw_hex": "0b00ffffffff03011d43eb0720000401",
+      "date": "2027-10-12",
+      "injury_index": 11
+    },
+    {
+      "raw_hex": "5e004f02000001028c64ed0702000001",
+      "date": "2029-05-20",
+      "injury_index": 94
+    },
+    {
+      "raw_hex": "0500ffffffff03023743ed070d000401",
+      "date": "2029-11-07",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "5b002400000004010180ee0706000501",
+      "date": "2030-01-01",
+      "injury_index": 91
+    },
+    {
+      "raw_hex": "5a00ffffffff03011c43ee0702000b01",
+      "date": "2030-10-11",
+      "injury_index": 90
+    },
+    {
+      "raw_hex": "1900ffffffff00003a00e4079c000000",
+      "date": "2020-02-27",
+      "injury_index": 25
+    },
+    {
+      "raw_hex": "0600ffffffff00020c01e50715000000",
+      "date": "2021-09-25",
+      "injury_index": 6
+    },
+    {
+      "raw_hex": "4e00ffffffff00000400e60732000000",
+      "date": "2022-01-04",
+      "injury_index": 78
+    },
+    {
+      "raw_hex": "1e00ffffffff00031400e70725000000",
+      "date": "2023-01-20",
+      "injury_index": 30
+    },
+    {
+      "raw_hex": "6f00ffffffff00033b01e70709000000",
+      "date": "2023-11-11",
+      "injury_index": 111
+    },
+    {
+      "raw_hex": "5a00ffffffff00031100e90706000000",
+      "date": "2025-01-17",
+      "injury_index": 90
+    },
+    {
+      "raw_hex": "1b00ffffffff0003c31ae90705010002",
+      "date": "2025-07-14",
+      "injury_index": 27
+    },
+    {
+      "raw_hex": "2400e801000001016b7fea0743000002",
+      "date": "2026-12-29",
+      "injury_index": 36
+    },
+    {
+      "raw_hex": "5900e80100000102e96ceb070d000001",
+      "date": "2027-08-21",
+      "injury_index": 89
+    },
+    {
+      "raw_hex": "4100e80100000101ff64eb070e000020",
+      "date": "2027-09-12",
+      "injury_index": 65
+    },
+    {
+      "raw_hex": "5f00690200000401127deb0703000001",
+      "date": "2027-10-01",
+      "injury_index": 95
+    },
+    {
+      "raw_hex": "5b00ffffffff03021a43ec0704000401",
+      "date": "2028-10-08",
+      "injury_index": 91
+    },
+    {
+      "raw_hex": "0500ffffffff03026242ed070a000401",
+      "date": "2029-04-08",
+      "injury_index": 5
+    },
+    {
+      "raw_hex": "4000ffffffff03033a43ed0705000101",
+      "date": "2029-11-10",
+      "injury_index": 64
+    },
+    {
+      "raw_hex": "0100ffffffff03035243ed0707000020",
+      "date": "2029-12-04",
+      "injury_index": 1
+    },
+    {
+      "raw_hex": "5e00ffffffff0301c842ee0702000701",
+      "date": "2030-07-19",
+      "injury_index": 94
+    },
+    {
+      "raw_hex": "6a008805000001014552ee0711000002",
+      "date": "2030-03-10",
+      "injury_index": 106
+    },
+    {
+      "raw_hex": "5a008805000001027f84ee0703000001",
+      "date": "2030-05-07",
+      "injury_index": 90
+    }
+  ]
+}

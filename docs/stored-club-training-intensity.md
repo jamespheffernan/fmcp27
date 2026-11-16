@@ -1,0 +1,9 @@
+# Stored club individual-training intensity
+
+`fm_get_player_individual_training` adds `club_training_intensity` for checked regular PLAYER records on the selected HUMAN/TEAM roster. The existing input schema and additional-focus field remain compatible. Its independent source is PLAYER+0x1EB; the optional focus child and national byte+0x1F5 are separate sources.
+
+Native audit2CF59D4 names club_training_intensity and reads a signed byte at+1EB. Caller1915240 requests resolver2CF5FBC only forFF. Caller1A09B68 passes club context1 into formatter2CECC84. The pinned English keys map0→466612 Half Intensity,1→467455 Normal Intensity,2→466613 Double Intensity and254/-2→467456 No pitch or gym work. FF/-1 is a stored request for native default resolution. The formatter-alone Standard key is not promoted to an applied club setting.
+
+Every other code preserves its raw and signed values with unknown meaning. Unsupported combined/virtual identities return null fields without reading the regular PLAYER offset. Missing focus children do not suppress a readable intensity byte. Each consumed byte and the outer process/build/save/coach/TEAM/roster binding are rechecked; the read remains non-atomic. Applied intensity, medical overrides, workload, attendance, training control and outcomes remain unknown. The resolver and live game functions are never called.
+
+Original instructions replayed in owned Unicorn memory covered256 formatter cases,256 default-request branches and256 signed audit loads, with two national-context controls. Synthetic typed/public tests cover explicit values, unknowns, unsupported types and drift. Actual143 source capture on9November2026 found29 current roster players, allFF; this establishes only their stored default-resolution requests. Installed/configured/ordinary acceptance is recorded separately under evidence/training-intensity-20261109.

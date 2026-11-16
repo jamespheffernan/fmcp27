@@ -1,0 +1,105 @@
+{
+  "title": "Striker comparison: Okafor or Lindgren",
+  "subtitle": "Who leads the line for the run-in, with Delaney rotating",
+  "game_date": "2028-01-14",
+  "view": "full",
+  "summary": "Start **Jonah Okafor**: he gets into better chances (0.58 xG per 90 against 0.41) and presses more, which suits the high turnovers we rely on. **Erik Lindgren** is the better option off the bench when we need to hold the ball and bring midfielders in.",
+  "sections": [
+    {
+      "type": "comparison",
+      "title": "Side by side",
+      "note": "League matches this season. Per-90 figures need at least 600 minutes; both qualify.",
+      "entities": [
+        { "name": "Jonah Okafor", "subtitle": "ST · 24 · 1,512 minutes" },
+        { "name": "Erik Lindgren", "subtitle": "ST · 28 · 1,236 minutes" }
+      ],
+      "metrics": [
+        { "group": "Contract and cost", "label": "Age", "values": [24, 28], "better": "none" },
+        { "group": "Contract and cost", "label": "Weekly wage", "type": "money", "unit": "p/w", "values": [42000, 55000], "better": "low" },
+        { "group": "Contract and cost", "label": "Contract ends", "type": "date", "values": ["2031-06-30", "2029-06-30"], "better": "none" },
+        { "group": "Output per 90", "label": "Non-penalty goals", "decimals": 2, "values": [0.54, 0.44] },
+        { "group": "Output per 90", "label": "Non-penalty xG", "decimals": 2, "values": [0.58, 0.41] },
+        { "group": "Output per 90", "label": "Shots", "decimals": 1, "values": [3.4, 2.6] },
+        { "group": "Output per 90", "label": "xA", "decimals": 2, "values": [0.11, 0.19] },
+        { "group": "Output per 90", "label": "Passes completed", "decimals": 1, "values": [14.2, 22.8] },
+        { "group": "Output per 90", "label": "Pressures in the final third", "decimals": 1, "values": [6.1, 3.7] },
+        { "group": "Output per 90", "label": "Aerial duels won", "type": "percent", "values": [41, 58] },
+        { "group": "Attributes", "label": "Finishing", "type": "rating", "scale": { "min": 1, "max": 20 }, "values": [16, 15] },
+        { "group": "Attributes", "label": "Off the Ball", "type": "rating", "scale": { "min": 1, "max": 20 }, "values": [17, 14] },
+        { "group": "Attributes", "label": "First Touch", "type": "rating", "scale": { "min": 1, "max": 20 }, "values": [13, 16] },
+        { "group": "Attributes", "label": "Work Rate", "type": "rating", "scale": { "min": 1, "max": 20 }, "values": [16, 12] },
+        { "group": "Attributes", "label": "Strength", "type": "rating", "scale": { "min": 1, "max": 20 }, "values": [13, 16] },
+        { "group": "Attributes", "label": "Pace", "type": "rating", "scale": { "min": 1, "max": 20 }, "values": [16, 13] }
+      ]
+    },
+    {
+      "type": "bar_chart",
+      "title": "Where their games differ",
+      "note": "Per-90 rates indexed to the league average for strikers with 600+ minutes (100 = average), so different measures share one scale.",
+      "value_label": "Index, league striker average = 100",
+      "categories": ["Non-penalty xG", "Shots", "xA", "Pressures in final third", "Passes completed"],
+      "series": [
+        { "name": "Okafor", "values": [145, 131, 92, 152, 79] },
+        { "name": "Lindgren", "values": [103, 100, 158, 92, 127] }
+      ],
+      "reference_lines": [{ "value": 100, "label": "League average" }]
+    },
+    {
+      "type": "player_cards",
+      "players": [
+        {
+          "name": "Jonah Okafor",
+          "subtitle": "ST · 24 · Advanced Forward",
+          "facts": [
+            { "label": "League goals", "value": 9 },
+            { "label": "Average rating", "value": "7.12" },
+            { "label": "Wage", "value": "£42K p/w" }
+          ],
+          "key_attributes": ["Finishing", "Off the Ball", "Pace", "Work Rate", "Anticipation"],
+          "attributes": {
+            "technical": [
+              { "label": "Finishing", "value": 16 }, { "label": "First Touch", "value": 13 }, { "label": "Heading", "value": 11 }, { "label": "Passing", "value": 11 }
+            ],
+            "mental": [
+              { "label": "Anticipation", "value": 15 }, { "label": "Composure", "value": 14 }, { "label": "Off the Ball", "value": 17 }, { "label": "Work Rate", "value": 16 }
+            ],
+            "physical": [
+              { "label": "Acceleration", "value": 17 }, { "label": "Pace", "value": 16 }, { "label": "Strength", "value": 13 }
+            ]
+          },
+          "use_when": "We press high and want runs in behind; best against a high defensive line."
+        },
+        {
+          "name": "Erik Lindgren",
+          "subtitle": "ST · 28 · Target Forward / Deep-Lying Forward",
+          "facts": [
+            { "label": "League goals", "value": 6 },
+            { "label": "Average rating", "value": "7.04" },
+            { "label": "Wage", "value": "£55K p/w" }
+          ],
+          "key_attributes": ["First Touch", "Strength", "Heading", "Passing", "Composure"],
+          "attributes": {
+            "technical": [
+              { "label": "Finishing", "value": 15 }, { "label": "First Touch", "value": 16 }, { "label": "Heading", "value": 15 }, { "label": "Passing", "value": 14 }
+            ],
+            "mental": [
+              { "label": "Anticipation", "value": 14 }, { "label": "Composure", "value": 16 }, { "label": "Off the Ball", "value": 14 }, { "label": "Work Rate", "value": 12 }
+            ],
+            "physical": [
+              { "label": "Acceleration", "value": 12 }, { "label": "Pace", "value": 13 }, { "label": "Strength", "value": 16 }
+            ]
+          },
+          "use_when": "We are ahead and need to keep the ball, or face a deep block where crosses and lay-offs matter more than runs."
+        }
+      ]
+    }
+  ],
+  "caveats": [
+    "Per-90 rates over about 1,200–1,500 minutes still move a lot between matches; a 0.1 xG gap is roughly two good chances.",
+    "Attributes are stored values; the manager's own scouting view of our players matches them closely but not always exactly."
+  ],
+  "sources": [
+    "fm_get_player_season_stats for both players, league only, to 8 Jan 2028",
+    "fm_get_player for attributes and contracts, 14 Jan 2028"
+  ]
+}

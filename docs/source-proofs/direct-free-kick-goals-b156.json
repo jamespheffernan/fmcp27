@@ -1,0 +1,1181 @@
+{
+  "state": "verified_named_retained_per_match_direct_free_kick_goals",
+  "field": {
+    "official_label": "DirectFreeKickGoals",
+    "key": "0x30616977",
+    "native_offset": "0xde",
+    "wire_u32_person": 158,
+    "wire_u64_person": 162,
+    "parent_version": 60
+  },
+  "instruction_guards": [
+    {
+      "rva": "0x2058a8",
+      "raw": "e17a4339",
+      "instruction": [
+        "ldrb",
+        "w1, [x23, #0xde]"
+      ]
+    },
+    {
+      "rva": "0x2058b0",
+      "raw": "84f90795",
+      "instruction": [
+        "bl",
+        "#0x4403ec0"
+      ]
+    },
+    {
+      "rva": "0x2058bc",
+      "raw": "e12e8d52",
+      "instruction": [
+        "mov",
+        "w1, #0x6977"
+      ]
+    },
+    {
+      "rva": "0x2058c0",
+      "raw": "210ca672",
+      "instruction": [
+        "movk",
+        "w1, #0x3061, lsl #16"
+      ]
+    },
+    {
+      "rva": "0x2058c4",
+      "raw": "88c60795",
+      "instruction": [
+        "bl",
+        "#0x43f72e4"
+      ]
+    },
+    {
+      "rva": "0x266d38",
+      "raw": "e92e8d52",
+      "instruction": [
+        "mov",
+        "w9, #0x6977"
+      ]
+    },
+    {
+      "rva": "0x266d3c",
+      "raw": "290ca672",
+      "instruction": [
+        "movk",
+        "w9, #0x3061, lsl #16"
+      ]
+    },
+    {
+      "rva": "0x266d40",
+      "raw": "1f01096b",
+      "instruction": [
+        "cmp",
+        "w8, w9"
+      ]
+    },
+    {
+      "rva": "0x266d44",
+      "raw": "c00e0054",
+      "instruction": [
+        "b.eq",
+        "#0x266f1c"
+      ]
+    },
+    {
+      "rva": "0x266f1c",
+      "raw": "01784339",
+      "instruction": [
+        "ldrb",
+        "w1, [x0, #0xde]"
+      ]
+    },
+    {
+      "rva": "0x266f20",
+      "raw": "6e000014",
+      "instruction": [
+        "b",
+        "#0x2670d8"
+      ]
+    },
+    {
+      "rva": "0x4ad2bc0",
+      "raw": "3b410391",
+      "instruction": [
+        "add",
+        "x27, x9, #0xd0"
+      ]
+    },
+    {
+      "rva": "0x4ad2db4",
+      "raw": "fb2f00f9",
+      "instruction": [
+        "str",
+        "x27, [sp, #0x58]"
+      ]
+    },
+    {
+      "rva": "0x4ad2db8",
+      "raw": "08028052",
+      "instruction": [
+        "mov",
+        "w8, #0x10"
+      ]
+    },
+    {
+      "rva": "0x4ad2dc0",
+      "raw": "35810391",
+      "instruction": [
+        "add",
+        "x21, x9, #0xe0"
+      ]
+    },
+    {
+      "rva": "0x4ad2dc4",
+      "raw": "e85706a9",
+      "instruction": [
+        "stp",
+        "x8, x21, [sp, #0x60]"
+      ]
+    },
+    {
+      "rva": "0x4ad2dcc",
+      "raw": "e099e297",
+      "instruction": [
+        "bl",
+        "#0x437954c"
+      ]
+    },
+    {
+      "rva": "0xab0c9c",
+      "raw": "39678c52",
+      "instruction": [
+        "mov",
+        "w25, #0x6339"
+      ]
+    },
+    {
+      "rva": "0xab0ca0",
+      "raw": "390ca672",
+      "instruction": [
+        "movk",
+        "w25, #0x3061, lsl #16"
+      ]
+    },
+    {
+      "rva": "0xab88a0",
+      "raw": "20fb1811",
+      "instruction": [
+        "add",
+        "w0, w25, #0x63e"
+      ]
+    },
+    {
+      "rva": "0xab88a8",
+      "raw": "dc57d594",
+      "instruction": [
+        "bl",
+        "#0x400e818"
+      ]
+    },
+    {
+      "rva": "0xab88ac",
+      "raw": "08bb02b0",
+      "instruction": [
+        "adrp",
+        "x8, #0x6219000"
+      ]
+    },
+    {
+      "rva": "0xab88b0",
+      "raw": "08c12291",
+      "instruction": [
+        "add",
+        "x8, x8, #0x8b0"
+      ]
+    },
+    {
+      "rva": "0xab88b4",
+      "raw": "020140f9",
+      "instruction": [
+        "ldr",
+        "x2, [x8]"
+      ]
+    },
+    {
+      "rva": "0xab88e0",
+      "raw": "6b844d94",
+      "instruction": [
+        "bl",
+        "#0x1e19a8c"
+      ]
+    }
+  ],
+  "controls": {
+    "total_rows": 3760,
+    "rows": [
+      {
+        "native_match_key": 135117,
+        "side_index": 0,
+        "person_name": "Elliot Anderson",
+        "canonical_person_id": 28127254,
+        "person_index_word": 13345,
+        "fixture_id": "066a42e4100efd6162d40064",
+        "goals": 1,
+        "direct_free_kick_goals": 1,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135903,
+        "side_index": 0,
+        "person_name": "Martin \u00d8degaard",
+        "canonical_person_id": 53095137,
+        "person_index_word": 23755,
+        "fixture_id": "10410fc9ac4550f97370fedb",
+        "goals": 1,
+        "direct_free_kick_goals": 1,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Dylan Moody",
+        "canonical_person_id": 2000380083,
+        "person_index_word": 59969,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Lorenz Assignon",
+        "canonical_person_id": 49053443,
+        "person_index_word": 22402,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Joshua Quarshie",
+        "canonical_person_id": 2000102796,
+        "person_index_word": 41449,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Taylor Harwood-Bellis",
+        "canonical_person_id": 28120046,
+        "person_index_word": 13088,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Alexander Prass",
+        "canonical_person_id": 16191722,
+        "person_index_word": 9164,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Marlon Gomes",
+        "canonical_person_id": 2000136301,
+        "person_index_word": 44065,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Joey Veerman",
+        "canonical_person_id": 37060896,
+        "person_index_word": 16211,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Mat\u011bj \u0160\u00edn",
+        "canonical_person_id": 2000130424,
+        "person_index_word": 43597,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Tom Fellows",
+        "canonical_person_id": 292380030,
+        "person_index_word": 36557,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Amine Adli",
+        "canonical_person_id": 49037698,
+        "person_index_word": 21866,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Christian Kofane",
+        "canonical_person_id": 2000426277,
+        "person_index_word": 64309,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 1,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Alex Palmer",
+        "canonical_person_id": 28096363,
+        "person_index_word": 12543,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Mads Roerslev",
+        "canonical_person_id": 27122563,
+        "person_index_word": 11818,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Nikolaus Wurmbrand",
+        "canonical_person_id": 2000103231,
+        "person_index_word": 41484,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Gift Orban",
+        "canonical_person_id": 2000183736,
+        "person_index_word": 46494,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Toby Collyer",
+        "canonical_person_id": 2000010840,
+        "person_index_word": 36703,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "N\u00fcraly \u00c4lip",
+        "canonical_person_id": 59136080,
+        "person_index_word": 24239,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Nathan Wood",
+        "canonical_person_id": 29216806,
+        "person_index_word": 14897,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Jaydan Kamason",
+        "canonical_person_id": 2000272808,
+        "person_index_word": 53326,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 0,
+        "person_name": "Daniel Sealey",
+        "canonical_person_id": 2002071274,
+        "person_index_word": 101807,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "\u00c1lex Padilla",
+        "canonical_person_id": 2000065884,
+        "person_index_word": 39975,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "V.Tobias",
+        "canonical_person_id": 2000012523,
+        "person_index_word": 36749,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 1,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Nikola Milenkovi\u0107",
+        "canonical_person_id": 62191195,
+        "person_index_word": 24743,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Murillo",
+        "canonical_person_id": 2000123482,
+        "person_index_word": 42911,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Youri Baas",
+        "canonical_person_id": 37076141,
+        "person_index_word": 16334,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Nicol\u00e1s Dom\u00ednguez",
+        "canonical_person_id": 14077011,
+        "person_index_word": 8694,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Elliot Anderson",
+        "canonical_person_id": 28127254,
+        "person_index_word": 13345,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Dan Ndoye",
+        "canonical_person_id": 84153276,
+        "person_index_word": 30310,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Morgan Gibbs-White",
+        "canonical_person_id": 29175220,
+        "person_index_word": 14532,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Julio Enciso",
+        "canonical_person_id": 79034187,
+        "person_index_word": 29829,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Arnaud Kalimuendo",
+        "canonical_person_id": 49048445,
+        "person_index_word": 22275,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 1,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Peter Burke",
+        "canonical_person_id": 2002071937,
+        "person_index_word": 102470,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Nicol\u00f2 Savona",
+        "canonical_person_id": 43617691,
+        "person_index_word": 20660,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "James McAtee",
+        "canonical_person_id": 28126249,
+        "person_index_word": 13298,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Evanilson",
+        "canonical_person_id": 19342183,
+        "person_index_word": 11130,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Callum Hudson-Odoi",
+        "canonical_person_id": 28112986,
+        "person_index_word": 12936,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Rodrigo Huescas",
+        "canonical_person_id": 2000131671,
+        "person_index_word": 125960,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Danny Maskell",
+        "canonical_person_id": 2002105342,
+        "person_index_word": 145687,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Amjad Qadir",
+        "canonical_person_id": 2002112373,
+        "person_index_word": 152718,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 135904,
+        "side_index": 1,
+        "person_name": "Spencer Sutton",
+        "canonical_person_id": 2000479075,
+        "person_index_word": 67763,
+        "fixture_id": "f8325cf6e38c9c6763a10644",
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136440,
+        "side_index": 0,
+        "person_name": "Florian Wirtz",
+        "canonical_person_id": 91193048,
+        "person_index_word": 33620,
+        "fixture_id": "e8f40af2e2ca9ad2784c9387",
+        "goals": 1,
+        "direct_free_kick_goals": 1,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Pablo Campos",
+        "canonical_person_id": 2000062888,
+        "person_index_word": 39559,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Sa\u00ebl Kumbedi",
+        "canonical_person_id": 2000104915,
+        "person_index_word": 41712,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Maxime Est\u00e8ve",
+        "canonical_person_id": 49060933,
+        "person_index_word": 22722,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Tom Thorpe",
+        "canonical_person_id": 2002071666,
+        "person_index_word": 102199,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Matteo P\u00e9rez Vinl\u00f6f",
+        "canonical_person_id": 2000085967,
+        "person_index_word": 40703,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Lesley Ugochukwu",
+        "canonical_person_id": 2000006186,
+        "person_index_word": 36609,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Panagiotis Farmakas",
+        "canonical_person_id": 2002071044,
+        "person_index_word": 101577,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Alejandro Gomes Rodr\u00edguez",
+        "canonical_person_id": 2000385891,
+        "person_index_word": 60531,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Liam Crawford",
+        "canonical_person_id": 2000136699,
+        "person_index_word": 44096,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Henry Ward",
+        "canonical_person_id": 2002071667,
+        "person_index_word": 102200,
+        "fixture_id": null,
+        "goals": 1,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Armando Broja",
+        "canonical_person_id": 28121369,
+        "person_index_word": 13112,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Tim Goller",
+        "canonical_person_id": 2000180805,
+        "person_index_word": 46259,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Oliver Sonne",
+        "canonical_person_id": 27148022,
+        "person_index_word": 11865,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Alex Coombes",
+        "canonical_person_id": 2002105121,
+        "person_index_word": 145466,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Shadane Dennison",
+        "canonical_person_id": 2002071668,
+        "person_index_word": 102201,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Joe Bhamra",
+        "canonical_person_id": 2002096972,
+        "person_index_word": 137317,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Sani Kabir",
+        "canonical_person_id": 2002105124,
+        "person_index_word": 145469,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Diandro Fletchman",
+        "canonical_person_id": 2000483844,
+        "person_index_word": 68162,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Harry Dyer",
+        "canonical_person_id": 2002105125,
+        "person_index_word": 145470,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 0,
+        "person_name": "Ethan Robbins",
+        "canonical_person_id": 2000135419,
+        "person_index_word": 44003,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Alex Palmer",
+        "canonical_person_id": 28096363,
+        "person_index_word": 12543,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Lorenz Assignon",
+        "canonical_person_id": 49053443,
+        "person_index_word": 22402,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Taylor Harwood-Bellis",
+        "canonical_person_id": 28120046,
+        "person_index_word": 13088,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Joshua Quarshie",
+        "canonical_person_id": 2000102796,
+        "person_index_word": 41449,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Alexander Prass",
+        "canonical_person_id": 16191722,
+        "person_index_word": 9164,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Marlon Gomes",
+        "canonical_person_id": 2000136301,
+        "person_index_word": 44065,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Joey Veerman",
+        "canonical_person_id": 37060896,
+        "person_index_word": 16211,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Mat\u011bj \u0160\u00edn",
+        "canonical_person_id": 2000130424,
+        "person_index_word": 43597,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Tom Fellows",
+        "canonical_person_id": 292380030,
+        "person_index_word": 36557,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Amine Adli",
+        "canonical_person_id": 49037698,
+        "person_index_word": 21866,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Christian Kofane",
+        "canonical_person_id": 2000426277,
+        "person_index_word": 64309,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Dylan Moody",
+        "canonical_person_id": 2000380083,
+        "person_index_word": 59969,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Mads Roerslev",
+        "canonical_person_id": 27122563,
+        "person_index_word": 11818,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Toby Collyer",
+        "canonical_person_id": 2000010840,
+        "person_index_word": 36703,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Gift Orban",
+        "canonical_person_id": 2000183736,
+        "person_index_word": 46494,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Benjam\u00edn Dom\u00ednguez",
+        "canonical_person_id": 2000110081,
+        "person_index_word": 42141,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "N\u00fcraly \u00c4lip",
+        "canonical_person_id": 59136080,
+        "person_index_word": 24239,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Zouhair El Khattabi",
+        "canonical_person_id": 2000198725,
+        "person_index_word": 47849,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Daniel Sealey",
+        "canonical_person_id": 2002071274,
+        "person_index_word": 101807,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      },
+      {
+        "native_match_key": 136157,
+        "side_index": 1,
+        "person_name": "Jaydan Kamason",
+        "canonical_person_id": 2000272808,
+        "person_index_word": 53326,
+        "fixture_id": null,
+        "goals": 0,
+        "direct_free_kick_goals": 0,
+        "wire_offset": 158
+      }
+    ]
+  },
+  "positive_controls": [
+    {
+      "native_match_key": 135117,
+      "side_index": 0,
+      "person_name": "Elliot Anderson",
+      "canonical_person_id": 28127254,
+      "person_index_word": 13345,
+      "fixture_id": "066a42e4100efd6162d40064",
+      "goals": 1,
+      "direct_free_kick_goals": 1,
+      "wire_offset": 158
+    },
+    {
+      "native_match_key": 135903,
+      "side_index": 0,
+      "person_name": "Martin \u00d8degaard",
+      "canonical_person_id": 53095137,
+      "person_index_word": 23755,
+      "fixture_id": "10410fc9ac4550f97370fedb",
+      "goals": 1,
+      "direct_free_kick_goals": 1,
+      "wire_offset": 158
+    },
+    {
+      "native_match_key": 136440,
+      "side_index": 0,
+      "person_name": "Florian Wirtz",
+      "canonical_person_id": 91193048,
+      "person_index_word": 33620,
+      "fixture_id": "e8f40af2e2ca9ad2784c9387",
+      "goals": 1,
+      "direct_free_kick_goals": 1,
+      "wire_offset": 158
+    }
+  ],
+  "target_result": "All80 player counters zero: no recorded direct-free-kick goal on either side of Forest135904 or Burnley136157",
+  "limits": [
+    "No corner or indirect-free-kick goal origin has been verified",
+    "Zero direct-free-kick goals does not establish open play",
+    "No all-attempt situation label inferred",
+    "No evidence to prioritise set pieces from these two fixtures alone",
+    "GoalType50387a43 is CBE terminal goal/own-goal code, not set-piece origin",
+    "No production or game writes; counters from existing read-only captures"
+  ],
+  "source_binary_hashes": {
+    "native_plugin_sha256": "774cacde63567fd3901c47719e7a6ed94cc3a0a62e9b94989dcac6b4890ec0e1",
+    "game_assembly_sha256": "d26f882851f26248bb56ca3575fc7759d74aebc21fb9722f44cab29b63c1e654",
+    "metadata_sha256": "ff4780c66f37e088f363d0c4365110dd0d7968204cb36283a6262055badab21d"
+  },
+  "control_fixture_sha256": "8ce7eb7d89b8abccee0a10aa87c77f989c34fa931d310537b83513427d14b384"
+}

@@ -1,0 +1,13 @@
+{
+  "source": "Manually read Game Details and Head Coaches screens on 2026-11-05; screenshots in ignored evidence/game-details.png and evidence/game-status.png",
+  "name": "Cesar Jules - Newcastle",
+  "created_date": "2025-10-23",
+  "created_version": 2223821,
+  "save_count": 418,
+  "last_saved_date": "2030-09-18",
+  "coach_display_name": "Cesar Jules",
+  "club_short_name": "Newcastle",
+  "senior_count_label": 28,
+  "visible_member_names": ["Nick Woltemade", "Anthony Gordon", "Gregor Kobel", "Alberto Costa", "Beraldo", "Chema Andrés", "João Neves", "Lewis Miley"],
+  "scope": "The UI senior count label is 28, but its visible table mixes youth call-ups and loans. These samples do not prove equality of the whole visible list and native roster."
+}

@@ -1,0 +1,44 @@
+import assert from 'node:assert/strict';
+import {chromium} from '/opt/homebrew/lib/node_modules/playwright/index.mjs';
+import {pathToFileURL} from 'node:url';
+import {writeFile,mkdir} from 'node:fs/promises';
+const [file,directory]=process.argv.slice(2);
+const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
+try{
+ const page=await browser.newPage({viewport:{width:1000,height:900}}),errors=[],network=[];page.setDefaultTimeout(3000);
+ page.on('pageerror',e=>errors.push(String(e)));page.on('request',r=>{if(/^https?:/.test(r.url()))network.push(r.url());});
+ await page.goto(pathToFileURL(file).href);await page.waitForFunction(()=>window.__REPORT_READY__,null,{timeout:10000});
+ const data=await page.evaluate(()=>window.__REPORT_DATA__);
+ assert.equal(data.shots.length,11);assert.equal(data.source_observed_shots.length,6);
+ assert.equal(data.shot_coverage[0].xg_float32_ulp_distance,3);assert.equal(data.shot_coverage[0].expected_goals,null);
+ const shots=page.locator('#match-pitch .shot');assert.equal(await shots.count(),11);
+ const toggle=page.getByRole('checkbox',{name:'Include 6 source-observed attempts · counts and actors verified, xG unreconciled'});
+ assert.equal(await toggle.isChecked(),false);
+ const info=title=>page.locator('.details .info').filter({has:page.getByText(title,{exact:true})}).locator('strong');
+ assert.equal(await info('Strict attempt xG shown').innerText(),'1.955');
+ const chartNote=page.locator('section[aria-labelledby="pitch-heading"] .chart-note').filter({hasText:'No displayed minute is inferred.'});
+ assert.match(await chartNote.innerText(),/strictly reconciled/);
+ await toggle.check();assert.equal(await shots.count(),17);
+ const enabledNote=await chartNote.innerText();
+ assert.ok(!enabledNote.includes('Only strictly reconciled shot-map sides are plotted.'),'Enabled observed layer must not claim only strict sides are plotted');
+ assert.ok(enabledNote.includes('Source-observed attempts are enabled alongside the strict layer.'));
+ assert.ok(enabledNote.includes('counts and player identities are checked; their native xG remains unreconciled.'));
+ assert.equal(await info('Strict attempt xG shown').innerText(),'1.955');
+ assert.equal(await info('Observed attempts shown · xG unreconciled').innerText(),'6');
+ assert.ok((await page.locator('body').innerText()).includes('Official team aggregate xG is separate from plotted attempt values.'));
+ assert.equal(await page.getByText('Expected goals shown',{exact:true}).count(),0);
+ await shots.nth(11).click();const details=await page.getByRole('complementary',{name:'Selected mark details'}).innerText();
+ assert.ok(details.includes('Source-observed · xG unreconciled'));
+ assert.ok(details.includes('Observed native value · xG unreconciled'));
+ assert.ok((await shots.nth(11).getAttribute('aria-label')).includes('observed native value, xG unreconciled'));
+ await page.getByRole('button',{name:'Clear selection',exact:true}).click();
+ await page.locator('section[aria-labelledby="pitch-heading"]').getByRole('combobox',{name:'Team',exact:true}).selectOption('0');
+ assert.equal(await shots.count(),6);assert.equal(await info('Strict attempt xG shown').innerText(),'—');
+ await toggle.uncheck();assert.equal(await shots.count(),0);assert.equal(await info('Strict attempt xG shown').innerText(),'—');
+ assert.equal(data.team_totals[0].expected_goals,1.4353783130645752);
+ assert.equal(data.shots.some(s=>s.event_id===1313)||data.source_observed_shots.some(s=>s.event_id===1313),false);
+ assert.deepEqual(errors,[]);assert.deepEqual(network,[]);
+ const result={state:'passed_actual_headless_retained_observed_DOM',strict_default_marks:11,toggled_marks:17,observed_marks:6,strict_xg_summary_before_after:'1.955',selected_unavailable_side_xg:'unavailable_not_zero',toggled_caption_describes_both_layers:true,observed_inspector_qualification:true,observed_ARIA_qualification:true,own_goal_not_double_counted:true,official_home_aggregate_separate:true,errors,network,scope:'Fixed genuine packet source adapter and actual local HTML/Chrome renderer; no live game attachment or user browser control.'};
+ if(directory){await mkdir(directory,{recursive:true});await writeFile(directory+'/dom.json',JSON.stringify(result,null,2)+'\n');}
+ console.log(JSON.stringify(result));
+}finally{await browser.close();}

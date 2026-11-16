@@ -1,0 +1,391 @@
+{
+ "source": "TEAM_UI_HANDLER uvRT (TeamAnalytics) read through the client with context Hhum + mCLv and boolean=1; Newcastle United, game date 2031-01-05, build 27.0.1; five of 28 charts, scatter points cut to three",
+ "items": [
+  {
+   "UO5Q": "",
+   "wjEU": -1,
+   "7ddJ": "",
+   "0Zoa": {
+    "kCGC": {
+     "FM3F": false,
+     "8wVs": true,
+     "cWoO": {
+      "data_hex": "07010000000121020018000000000407000000010b000000010001020300000003"
+     },
+     "CpVd": "team-zone_map-possession_gains-seasonal-"
+    },
+    "7ddJ": "Possession Gained",
+    "comp": {
+     "110 ": 28,
+     "dref": 419430407
+    },
+    "xMhl": "Fairly average number of possession gains.",
+    "OBcC": "Fairly average number of possession gains.\n\n81 possession gains per game, compared to an average team, with 79 per game.\n\nFewer possession gains in defensive third than expected.\n\nWe gained most possession around our penalty area.",
+    "wjEU": 2,
+    "BmeB": {
+     "110 ": 28,
+     "dref": 402653729
+    },
+    "tDch": "This Season",
+    "tzwN": 34.21361541748047,
+    "UZlS": [
+     {
+      "1gpM": 34.21361541748047,
+      "pyZE": 7
+     },
+     {
+      "1gpM": 20.892017364501953,
+      "pyZE": 4
+     },
+     {
+      "1gpM": 23.122066497802734,
+      "pyZE": 5
+     },
+     {
+      "1gpM": 12.558685302734375,
+      "pyZE": 2
+     },
+     {
+      "1gpM": 7.805164337158203,
+      "pyZE": 1
+     },
+     {
+      "1gpM": 1.408450722694397,
+      "pyZE": 1
+     }
+    ]
+   },
+   "vj3R": 2,
+   "L9Nj": 0,
+   "nLdp": {
+    "110 ": 28,
+    "dref": 16827773
+   }
+  },
+  {
+   "UO5Q": "",
+   "wjEU": -1,
+   "7ddJ": "",
+   "0Zoa": {
+    "kCGC": {
+     "FM3F": false,
+     "8wVs": true,
+     "cWoO": {
+      "data_hex": "07010000000121020018000000000407000000010b000000010101020300000003"
+     },
+     "CpVd": "team-zone_map-possession_losses-seasonal-"
+    },
+    "7ddJ": "Possession Lost",
+    "comp": {
+     "110 ": 28,
+     "dref": 419430407
+    },
+    "xMhl": "Fairly average number of losses of possession.",
+    "OBcC": "Fairly average number of losses of possession.\n\n89 possession losses per game, compared to an average team, with 92 per game.\n\nFewer possession losses in midfield third than expected.\n\nWe lost possession the most around the opposition's penalty area.",
+    "wjEU": 2,
+    "BmeB": {
+     "110 ": 28,
+     "dref": 402653729
+    },
+    "tDch": "This Season",
+    "tzwN": 26.9560546875,
+    "UZlS": [
+     {
+      "1gpM": 14.20150089263916,
+      "pyZE": 3
+     },
+     {
+      "1gpM": 5.037513256072998,
+      "pyZE": 1
+     },
+     {
+      "1gpM": 12.37942123413086,
+      "pyZE": 2
+     },
+     {
+      "1gpM": 21.597000122070312,
+      "pyZE": 6
+     },
+     {
+      "1gpM": 19.828510284423828,
+      "pyZE": 5
+     },
+     {
+      "1gpM": 26.9560546875,
+      "pyZE": 7
+     }
+    ]
+   },
+   "vj3R": 2,
+   "L9Nj": 1,
+   "nLdp": {
+    "110 ": 28,
+    "dref": 16827773
+   }
+  },
+  {
+   "UO5Q": "",
+   "wjEU": -1,
+   "7ddJ": "",
+   "0Zoa": {
+    "comp": {
+     "110 ": 28,
+     "dref": 419430407
+    },
+    "7ddJ": "Set Piece First Contacts - Own Box",
+    "xMhl": "We are most effective at winning headers when faced with set pieces delivered to the centre of the box.",
+    "OBcC": "We are most effective at winning headers when faced with set pieces delivered to the centre of the box.\n\nWe are most vulnerable to set pieces delivered to the near post.\n\nOur success rate in the centre of the box is 100%, compared to 86% at the near post, and 97% at the far post.",
+    "UZlS": [
+     {
+      "pyZE": 4,
+      "1gpM": 86.0465087890625
+     },
+     {
+      "pyZE": 4,
+      "1gpM": 100.0
+     },
+     {
+      "pyZE": 4,
+      "1gpM": 96.7213134765625
+     }
+    ],
+    "BmeB": {
+     "110 ": 28,
+     "dref": 402653729
+    },
+    "tDch": "This Season",
+    "kCGC": {
+     "FM3F": false,
+     "8wVs": true,
+     "cWoO": {
+      "data_hex": "07010000000121020018000000000407000000010b0000000101010c0300000003"
+     },
+     "CpVd": "team-first_contact_zone_map-own_box-seasonal-"
+    }
+   },
+   "vj3R": 12,
+   "L9Nj": 1,
+   "nLdp": {
+    "110 ": 28,
+    "dref": 16827773
+   }
+  },
+  {
+   "UO5Q": "",
+   "wjEU": -1,
+   "7ddJ": "",
+   "0Zoa": {
+    "kCGC": {
+     "FM3F": false,
+     "8wVs": true,
+     "cWoO": {
+      "data_hex": "07010000000121020018000000000407000000010b000000010901010301000003"
+     },
+     "CpVd": "team-scatter_graph-possession-seasonal-"
+    },
+    "comp": {
+     "110 ": 28,
+     "dref": 419430407
+    },
+    "xMhl": "Our possession numbers are very intriguing.",
+    "OBcC": "Our possession numbers are very intriguing.\n\n We win the ball back more than the average team.\n\n We give the ball away less than the average team.",
+    "wjEU": 4,
+    "7ddJ": "Possession",
+    "tDch": "This Season",
+    "Ywr3": [
+     {
+      "YYiF": {
+       "dEkT": 76.19047546386719,
+       "H gt": 87.0952377319336
+      },
+      "plyr": null,
+      "Team": {
+       "110 ": 28,
+       "dref": 402653644
+      }
+     },
+     {
+      "YYiF": {
+       "dEkT": 78.57142639160156,
+       "H gt": 89.23809814453125
+      },
+      "plyr": null,
+      "Team": {
+       "110 ": 28,
+       "dref": 402653769
+      }
+     },
+     {
+      "YYiF": {
+       "dEkT": 80.18181610107422,
+       "H gt": 91.13636016845703
+      },
+      "plyr": null,
+      "Team": {
+       "110 ": 28,
+       "dref": 402653672
+      }
+     }
+    ],
+    "8DzB": {
+     "tYLv": 88.8499984741211,
+     "NewX": 71.9047622680664,
+     "uQqV": 78.71031188964844,
+     "7gZ2": "Possession Won per Game",
+     "8pCM": "Psn W/Gm"
+    },
+    "mEuQ": {
+     "tYLv": 103.3499984741211,
+     "NewX": 85.80952453613281,
+     "uQqV": 92.05677795410156,
+     "7gZ2": "Possession Lost per Game",
+     "8pCM": "Psn L/Gm"
+    },
+    "bMU2": [
+     {
+      "Ng8F": 0,
+      "0yQ1": "Infrequently wins ball",
+      "lhOD": "Reliable in possession",
+      "9r2h": 1
+     },
+     {
+      "Ng8F": 1,
+      "0yQ1": "Frequently wins ball",
+      "lhOD": "Reliable in possession",
+      "9r2h": 2
+     },
+     {
+      "Ng8F": 2,
+      "0yQ1": "Infrequently wins ball",
+      "lhOD": "Loose in possession",
+      "9r2h": 0
+     },
+     {
+      "Ng8F": 3,
+      "0yQ1": "Frequently wins ball",
+      "lhOD": "Loose in possession",
+      "9r2h": 1
+     }
+    ]
+   },
+   "vj3R": 1,
+   "L9Nj": 9,
+   "nLdp": {
+    "110 ": 28,
+    "dref": 16827773
+   }
+  },
+  {
+   "UO5Q": "",
+   "wjEU": -1,
+   "7ddJ": "",
+   "0Zoa": {
+    "comp": {
+     "110 ": 28,
+     "dref": 419430407
+    },
+    "VpLh": [
+     {
+      "7gZ2": "Goals per Game",
+      "8pCM": "Gl/Gm",
+      "Obqu": false,
+      "1gpM": 2.190476179122925,
+      "NewX": 0.22886645793914795,
+      "tYLv": 2.390385150909424,
+      "ZtAj": 1.3096258640289307
+     },
+     {
+      "7gZ2": "Non Penalty Expected Goals per 90",
+      "8pCM": "Np-xG/90",
+      "Obqu": false,
+      "1gpM": 1.8226450681686401,
+      "NewX": 0.6291157007217407,
+      "tYLv": 1.9608880281448364,
+      "ZtAj": 1.2950018644332886
+     },
+     {
+      "7gZ2": "Conceded per Game",
+      "8pCM": "Conc/Gm",
+      "Obqu": true,
+      "1gpM": 0.8095238208770752,
+      "NewX": 0.2288661003112793,
+      "tYLv": 2.3903844356536865,
+      "ZtAj": 1.309625267982483
+     },
+     {
+      "7gZ2": "Expected Goals Against per Game",
+      "8pCM": "xGA/Gm",
+      "Obqu": true,
+      "1gpM": 0.9735653400421143,
+      "NewX": 0.6345224976539612,
+      "tYLv": 2.0175230503082275,
+      "ZtAj": 1.326022744178772
+     },
+     {
+      "7gZ2": "Shots per Game",
+      "8pCM": "Sh/Gm",
+      "Obqu": false,
+      "1gpM": 14.523809432983398,
+      "NewX": 7.160601615905762,
+      "tYLv": 16.132911682128906,
+      "ZtAj": 11.646757125854492
+     },
+     {
+      "7gZ2": "Shots On Target Ratio (%)",
+      "8pCM": "Shot %",
+      "Obqu": false,
+      "1gpM": 43.278690338134766,
+      "NewX": 13.781536102294922,
+      "tYLv": 68.46403503417969,
+      "ZtAj": 41.12278366088867
+     },
+     {
+      "7gZ2": "Pass Completion Ratio (%)",
+      "8pCM": "Pas %",
+      "Obqu": false,
+      "1gpM": 88.74954986572266,
+      "NewX": 52.71504211425781,
+      "tYLv": 100.0,
+      "ZtAj": 91.07508087158203
+     },
+     {
+      "7gZ2": "Tackles Won Ratio (%)",
+      "8pCM": "Tck %",
+      "Obqu": false,
+      "1gpM": 75.45787811279297,
+      "NewX": 37.89033889770508,
+      "tYLv": 100.0,
+      "ZtAj": 75.7688217163086
+     }
+    ],
+    "7ddJ": "General Performance",
+    "CCgd": 4,
+    "xMhl": "We are performing well above average statistically, which is great to see.",
+    "OBcC": "We are performing well above average statistically, which is great to see.\n\nNewcastle:\n\nScores a high number of goals per 90 minutes compared to average.\n\nCompletes a relatively average percentage of passes.",
+    "X20r": {
+     "110 ": 28,
+     "dref": 402653729
+    },
+    "BmeB": {
+     "110 ": 28,
+     "dref": 402653729
+    },
+    "tDch": "This Season",
+    "kCGC": {
+     "FM3F": false,
+     "8wVs": true,
+     "cWoO": {
+      "data_hex": "07010000000121020018000000000407000000010b000000010001030300000003"
+     },
+     "CpVd": "team-polygon-team_general-seasonal-"
+    }
+   },
+   "vj3R": 3,
+   "L9Nj": 0,
+   "nLdp": {
+    "110 ": 28,
+    "dref": 16827773
+   }
+  }
+ ]
+}

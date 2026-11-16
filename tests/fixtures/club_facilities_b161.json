@@ -1,0 +1,689 @@
+{
+  "save": {
+    "name": "Cesar Jules - Newcastle",
+    "created_date": "2025-10-23",
+    "created_version": 2223821,
+    "save_count": 425,
+    "last_saved_date": "2030-10-30",
+    "current_date": "2030-11-01",
+    "coaches": [
+      {
+        "name": "Cesar  Jules",
+        "club": {
+          "name": "Newcastle United",
+          "short_name": "Newcastle"
+        }
+      }
+    ]
+  },
+  "pid": 4793,
+  "records": [
+    {
+      "club": {
+        "name": "Newcastle United",
+        "short_name": "Newcastle"
+      },
+      "canonical_identity": {
+        "database_index": 414,
+        "native_id": 688,
+        "random_id": 688
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0f13001000000f000105010e1114",
+      "values": {
+        "training_facilities": 15,
+        "youth_facilities": 14,
+        "youth_coaching": 17,
+        "youth_recruitment": 20
+      }
+    },
+    {
+      "club": {
+        "name": "Newcastle Jets FC",
+        "short_name": "Newcastle Jets"
+      },
+      "canonical_identity": {
+        "database_index": 3284,
+        "native_id": 426430,
+        "random_id": 426430
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0d02000000000a00030501090e0e",
+      "values": {
+        "training_facilities": 13,
+        "youth_facilities": 9,
+        "youth_coaching": 14,
+        "youth_recruitment": 14
+      }
+    },
+    {
+      "club": {
+        "name": "Newcastle (NIR)",
+        "short_name": "Newcastle (NIR)"
+      },
+      "canonical_identity": {
+        "database_index": 5417,
+        "native_id": 1900828,
+        "random_id": 1900828
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "010a000000000e0000000001ffff",
+      "values": {
+        "training_facilities": 1,
+        "youth_facilities": 1,
+        "youth_coaching": -1,
+        "youth_recruitment": -1
+      }
+    },
+    {
+      "club": {
+        "name": "Newcastle Town",
+        "short_name": "Newcastle Town"
+      },
+      "canonical_identity": {
+        "database_index": 5865,
+        "native_id": 5103611,
+        "random_id": 5103611
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "020a000000000a00000000020303",
+      "values": {
+        "training_facilities": 2,
+        "youth_facilities": 2,
+        "youth_coaching": 3,
+        "youth_recruitment": 3
+      }
+    },
+    {
+      "club": {
+        "name": "Newcastle Blue Star",
+        "short_name": "Newcastle Blue Star"
+      },
+      "canonical_identity": {
+        "database_index": 6057,
+        "native_id": 5103877,
+        "random_id": 5103877
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "040e000000000a05000000010505",
+      "values": {
+        "training_facilities": 4,
+        "youth_facilities": 1,
+        "youth_coaching": 5,
+        "youth_recruitment": 5
+      }
+    },
+    {
+      "club": {
+        "name": "Newcastle Benfield",
+        "short_name": "Newcastle Benfield"
+      },
+      "canonical_identity": {
+        "database_index": 8605,
+        "native_id": 8601365,
+        "random_id": 8601365
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0108000000000504000000010305",
+      "values": {
+        "training_facilities": 1,
+        "youth_facilities": 1,
+        "youth_coaching": 3,
+        "youth_recruitment": 5
+      }
+    },
+    {
+      "club": {
+        "name": "Newcastle Jets (NPL)",
+        "short_name": "Newcastle Jets (NPL)"
+      },
+      "canonical_identity": {
+        "database_index": 9363,
+        "native_id": 15068483,
+        "random_id": 15068483
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "090000000000140003000009090e",
+      "values": {
+        "training_facilities": 9,
+        "youth_facilities": 9,
+        "youth_coaching": 9,
+        "youth_recruitment": 14
+      }
+    },
+    {
+      "club": {
+        "name": "Newcastle University",
+        "short_name": "Newcastle Uni"
+      },
+      "canonical_identity": {
+        "database_index": 21089,
+        "native_id": 2000032060,
+        "random_id": 2000032060
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0100000000000501000000010105",
+      "values": {
+        "training_facilities": 1,
+        "youth_facilities": 1,
+        "youth_coaching": 1,
+        "youth_recruitment": 5
+      }
+    },
+    {
+      "club": {
+        "name": "Newcastle Jets FC",
+        "short_name": "Newcastle Jets"
+      },
+      "canonical_identity": {
+        "database_index": 22194,
+        "native_id": 2000133321,
+        "random_id": 2000133321
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0c01000000000f000205010c0d0c",
+      "values": {
+        "training_facilities": 12,
+        "youth_facilities": 12,
+        "youth_coaching": 13,
+        "youth_recruitment": 12
+      }
+    },
+    {
+      "club": {
+        "name": "Newcastle United",
+        "short_name": "Newcastle"
+      },
+      "canonical_identity": {
+        "database_index": 24259,
+        "native_id": 2000290848,
+        "random_id": 2000290848
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0e0e00000000080b0201010e0909",
+      "values": {
+        "training_facilities": 14,
+        "youth_facilities": 14,
+        "youth_coaching": 9,
+        "youth_recruitment": 9
+      }
+    },
+    {
+      "club": {
+        "name": "Southampton",
+        "short_name": "Southampton"
+      },
+      "canonical_identity": {
+        "database_index": 439,
+        "native_id": 713,
+        "random_id": 713
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "120800020200100d010101111113",
+      "values": {
+        "training_facilities": 18,
+        "youth_facilities": 17,
+        "youth_coaching": 17,
+        "youth_recruitment": 19
+      }
+    },
+    {
+      "club": {
+        "name": "Southampton",
+        "short_name": "Southampton"
+      },
+      "canonical_identity": {
+        "database_index": 22451,
+        "native_id": 2000173676,
+        "random_id": 2000173676
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "1310000000000a09010101110b0b",
+      "values": {
+        "training_facilities": 19,
+        "youth_facilities": 17,
+        "youth_coaching": 11,
+        "youth_recruitment": 11
+      }
+    },
+    {
+      "club": {
+        "name": "Barcelona B",
+        "short_name": "Barcelona B"
+      },
+      "canonical_identity": {
+        "database_index": 1091,
+        "native_id": 1668,
+        "random_id": 1668
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "130c00000100130d010000141414",
+      "values": {
+        "training_facilities": 19,
+        "youth_facilities": 20,
+        "youth_coaching": 20,
+        "youth_recruitment": 20
+      }
+    },
+    {
+      "club": {
+        "name": "Barcelona",
+        "short_name": "Barcelona"
+      },
+      "canonical_identity": {
+        "database_index": 1115,
+        "native_id": 1708,
+        "random_id": 1708
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "140d00030000120d010301141414",
+      "values": {
+        "training_facilities": 20,
+        "youth_facilities": 20,
+        "youth_coaching": 20,
+        "youth_recruitment": 20
+      }
+    },
+    {
+      "club": {
+        "name": "Espa\u00f1a Barcelona",
+        "short_name": "Espa\u00f1a Barcelona"
+      },
+      "canonical_identity": {
+        "database_index": 1837,
+        "native_id": 102025,
+        "random_id": 102025
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0200000000000b00000000010101",
+      "values": {
+        "training_facilities": 2,
+        "youth_facilities": 1,
+        "youth_coaching": 1,
+        "youth_recruitment": 1
+      }
+    },
+    {
+      "club": {
+        "name": "Europa Barcelona",
+        "short_name": "Europa Barcelona"
+      },
+      "canonical_identity": {
+        "database_index": 1839,
+        "native_id": 102036,
+        "random_id": 102036
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0100000000000900000000010101",
+      "values": {
+        "training_facilities": 1,
+        "youth_facilities": 1,
+        "youth_coaching": 1,
+        "youth_recruitment": 1
+      }
+    },
+    {
+      "club": {
+        "name": "Barcelona Sporting Club",
+        "short_name": "Barcelona S.C."
+      },
+      "canonical_identity": {
+        "database_index": 2110,
+        "native_id": 109180,
+        "random_id": 109180
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0c01000000000e080303010b0d13",
+      "values": {
+        "training_facilities": 12,
+        "youth_facilities": 11,
+        "youth_coaching": 13,
+        "youth_recruitment": 19
+      }
+    },
+    {
+      "club": {
+        "name": "Barcelona C",
+        "short_name": "Barcelona C"
+      },
+      "canonical_identity": {
+        "database_index": 5620,
+        "native_id": 4212171,
+        "random_id": 4212171
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0200000000000900000000010101",
+      "values": {
+        "training_facilities": 2,
+        "youth_facilities": 1,
+        "youth_coaching": 1,
+        "youth_recruitment": 1
+      }
+    },
+    {
+      "club": {
+        "name": "Barcelona Futebol Clube (RO)",
+        "short_name": "Barcelona (RO)"
+      },
+      "canonical_identity": {
+        "database_index": 9909,
+        "native_id": 19318744,
+        "random_id": 19318744
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0500000000000100040302050404",
+      "values": {
+        "training_facilities": 5,
+        "youth_facilities": 5,
+        "youth_coaching": 4,
+        "youth_recruitment": 4
+      }
+    },
+    {
+      "club": {
+        "name": "Club y Escuela de Formaci\u00f3n Barcelona F.C. Bogot\u00e1",
+        "short_name": "Barcelona F.C. (COL)"
+      },
+      "canonical_identity": {
+        "database_index": 21017,
+        "native_id": 2000024121,
+        "random_id": 2000024121
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0400000000000501000000030505",
+      "values": {
+        "training_facilities": 4,
+        "youth_facilities": 3,
+        "youth_coaching": 5,
+        "youth_recruitment": 5
+      }
+    },
+    {
+      "club": {
+        "name": "Barcelona Futebol Clube (BA)",
+        "short_name": "Barcelona de Ilh\u00e9us"
+      },
+      "canonical_identity": {
+        "database_index": 21346,
+        "native_id": 2000053639,
+        "random_id": 2000053639
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0400000000000100040702040503",
+      "values": {
+        "training_facilities": 4,
+        "youth_facilities": 4,
+        "youth_coaching": 5,
+        "youth_recruitment": 3
+      }
+    },
+    {
+      "club": {
+        "name": "Barcelona",
+        "short_name": "Barcelona"
+      },
+      "canonical_identity": {
+        "database_index": 22385,
+        "native_id": 2000167899,
+        "random_id": 2000167899
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "1314000000001200010302131111",
+      "values": {
+        "training_facilities": 19,
+        "youth_facilities": 19,
+        "youth_coaching": 17,
+        "youth_recruitment": 17
+      }
+    },
+    {
+      "club": {
+        "name": "AFC Ajax",
+        "short_name": "Ajax"
+      },
+      "canonical_identity": {
+        "database_index": 610,
+        "native_id": 992,
+        "random_id": 992
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "131100040200140d010201131214",
+      "values": {
+        "training_facilities": 19,
+        "youth_facilities": 19,
+        "youth_coaching": 18,
+        "youth_recruitment": 20
+      }
+    },
+    {
+      "club": {
+        "name": "Ajax Amateurs",
+        "short_name": "Ajax Amateurs"
+      },
+      "canonical_identity": {
+        "database_index": 4537,
+        "native_id": 862775,
+        "random_id": 862775
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0201000000000b00000000020202",
+      "values": {
+        "training_facilities": 2,
+        "youth_facilities": 2,
+        "youth_coaching": 2,
+        "youth_recruitment": 2
+      }
+    },
+    {
+      "club": {
+        "name": "Ajax Sarkkiranta",
+        "short_name": "Ajax Sarkkiranta"
+      },
+      "canonical_identity": {
+        "database_index": 10813,
+        "native_id": 33012790,
+        "random_id": 33012790
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0500000000000400040401040404",
+      "values": {
+        "training_facilities": 5,
+        "youth_facilities": 4,
+        "youth_coaching": 4,
+        "youth_recruitment": 4
+      }
+    },
+    {
+      "club": {
+        "name": "AFC Ajax",
+        "short_name": "Ajax"
+      },
+      "canonical_identity": {
+        "database_index": 11407,
+        "native_id": 37087229,
+        "random_id": 37087229
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0204fd0000000700040000060609",
+      "values": {
+        "training_facilities": 2,
+        "youth_facilities": 6,
+        "youth_coaching": 6,
+        "youth_recruitment": 9
+      }
+    },
+    {
+      "club": {
+        "name": "ASSU-Ajax",
+        "short_name": "ASSU-Ajax"
+      },
+      "canonical_identity": {
+        "database_index": 24882,
+        "native_id": 2000339430,
+        "random_id": 2000339430
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0200000000000d00000002020203",
+      "values": {
+        "training_facilities": 2,
+        "youth_facilities": 2,
+        "youth_coaching": 2,
+        "youth_recruitment": 3
+      }
+    },
+    {
+      "club": {
+        "name": "Crewe Alexandra",
+        "short_name": "Crewe"
+      },
+      "canonical_identity": {
+        "database_index": 368,
+        "native_id": 641,
+        "random_id": 641
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0f01000a000012020301010d0a08",
+      "values": {
+        "training_facilities": 15,
+        "youth_facilities": 13,
+        "youth_coaching": 10,
+        "youth_recruitment": 8
+      }
+    },
+    {
+      "club": {
+        "name": "Crewe United",
+        "short_name": "Crewe Utd"
+      },
+      "canonical_identity": {
+        "database_index": 3250,
+        "native_id": 414163,
+        "random_id": 414163
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "020c000000000b00000001010801",
+      "values": {
+        "training_facilities": 2,
+        "youth_facilities": 1,
+        "youth_coaching": 8,
+        "youth_recruitment": 1
+      }
+    },
+    {
+      "club": {
+        "name": "Gateshead",
+        "short_name": "Gateshead"
+      },
+      "canonical_identity": {
+        "database_index": 381,
+        "native_id": 655,
+        "random_id": 655
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0902000a00000700030501080708",
+      "values": {
+        "training_facilities": 9,
+        "youth_facilities": 8,
+        "youth_coaching": 7,
+        "youth_recruitment": 8
+      }
+    },
+    {
+      "club": {
+        "name": "Gateshead Town",
+        "short_name": "Gateshead Town"
+      },
+      "canonical_identity": {
+        "database_index": 10757,
+        "native_id": 30023633,
+        "random_id": 30023633
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0100000000000900000000010101",
+      "values": {
+        "training_facilities": 1,
+        "youth_facilities": 1,
+        "youth_coaching": 1,
+        "youth_recruitment": 1
+      }
+    },
+    {
+      "club": {
+        "name": "San Marino Calcio",
+        "short_name": "San Marino (ext)"
+      },
+      "canonical_identity": {
+        "database_index": 4370,
+        "native_id": 829175,
+        "random_id": 829175
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0a08000000000800040102070707",
+      "values": {
+        "training_facilities": 10,
+        "youth_facilities": 7,
+        "youth_coaching": 7,
+        "youth_recruitment": 7
+      }
+    },
+    {
+      "club": {
+        "name": "San Marino Academy",
+        "short_name": "San Marino Academy"
+      },
+      "canonical_identity": {
+        "database_index": 16817,
+        "native_id": 60021565,
+        "random_id": 60021565
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "070f000000001407040702070710",
+      "values": {
+        "training_facilities": 7,
+        "youth_facilities": 7,
+        "youth_coaching": 7,
+        "youth_recruitment": 16
+      }
+    },
+    {
+      "club": {
+        "name": "AC San Marino Calcio",
+        "short_name": "San Marino"
+      },
+      "canonical_identity": {
+        "database_index": 22003,
+        "native_id": 2000113410,
+        "random_id": 2000113410
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0703000000000700040002050404",
+      "values": {
+        "training_facilities": 7,
+        "youth_facilities": 5,
+        "youth_coaching": 4,
+        "youth_recruitment": 4
+      }
+    },
+    {
+      "club": {
+        "name": "San Marino Academy",
+        "short_name": "San Marino Academy"
+      },
+      "canonical_identity": {
+        "database_index": 23197,
+        "native_id": 2000252760,
+        "random_id": 2000252760
+      },
+      "secondary_present": true,
+      "raw120_12d_hex": "0101000000000800040002040404",
+      "values": {
+        "training_facilities": 1,
+        "youth_facilities": 4,
+        "youth_coaching": 4,
+        "youth_recruitment": 4
+      }
+    }
+  ],
+  "native_calls": false,
+  "game_writes": false
+}

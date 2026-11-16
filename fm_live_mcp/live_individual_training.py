@@ -1,0 +1,138 @@
+"""Save/coach-bound adapter for stored focus and club intensity."""
+from copy import deepcopy
+from datetime import datetime, timezone
+
+from . import database, default_training_intensity, individual_training_focus, players, prepared_tactics_source, world
+from . import individual_training_role_position
+from .bridge import BridgeError
+
+
+ROSTER_SCOPE = ('Requested distinct player references on the selected HUMAN/TEAM native roster. '
+         'That stored roster can include loaned-out players; membership does not establish '
+         'the whole club, current training control, attendance or match eligibility. ')
+SCOPE = ROSTER_SCOPE + individual_training_focus.SCOPE
+
+
+def get_player_individual_training(bridge, session_id, player_refs, coach_name=None, *, include_default_resolution=False, include_role_position=False, _capture=None, _for_edit=False):
+    """Read stored focus and club intensity for1–100 distinct existing refs, with outer rechecks.
+
+    The core checks each PLAYER/PERSON identity, selected TEAM membership and
+    consumed source. This adapter establishes/rechecks build, process, loaded
+    career/date, selected HUMAN/TEAM ownership, roster and reference bindings.
+    It never requests a rich profile, expands virtual records or invokes native
+    game functions. A failure rejects the whole request before publishing rows.
+    """
+    if (type(player_refs) is not list or not 1 <= len(player_refs) <= 100
+            or any(type(ref) is not str or not ref for ref in player_refs)
+            or len(set(player_refs)) != len(player_refs)):
+        raise BridgeError('Supply 1 through 100 distinct nonempty player references.')
+    if coach_name is not None and (type(coach_name) is not str or not 1 <= len(coach_name) <= 256):
+        raise BridgeError('coach_name must be a name returned by fm_get_save.')
+    if type(include_default_resolution) is not bool:
+        raise BridgeError('include_default_resolution must be a Boolean.')
+    if type(include_role_position) is not bool:
+        raise BridgeError('include_role_position must be a Boolean.')
+
+    def seal():
+        # Canonical _read_scope performs its post-yield callback before this
+        # hook. Every callback and cache check below precedes both byte fences.
+        current = bridge._current(session_id)
+        if current != process:
+            raise ValueError('Individual-training process lifetime changed')
+        after_tables = bridge._player_layout(current)
+        if after_tables != tables or bridge.plugin_identity != plugin_identity:
+            raise ValueError('Individual-training loaded plugin/build changed')
+        after_read, after_save, after_identity = bridge._world_state(current, after_tables)
+        if (after_identity != world_identity or bridge.world_identity != world_identity
+                or after_save != save):
+            raise ValueError('Individual-training loaded save/date context changed')
+        if players.verify_runtime(after_read, base, plugin_identity[1]) != tables:
+            raise ValueError('Individual-training final runtime layout binding differs')
+        after_coach = bridge._select_coach(after_save, coach_name)
+        after_team, after_human = prepared_tactics_source._team_and_human(after_read, base, after_coach)
+        after_roster = world.vector(after_read, after_coach['team_address'] + 0x38, 256)
+        if (after_coach != coach or after_team != team or after_human != human
+                or after_roster != roster):
+            raise ValueError('Individual-training selected coach/TEAM/roster changed')
+        if any(bridge.player_refs.get(ref) != binding for ref, binding in bindings.items()):
+            raise ValueError('Individual-training player reference binding changed')
+        if bridge._current(session_id) != process:
+            raise ValueError('Individual-training process lifetime changed')
+        if (bridge.session != session_id or bridge.process != process
+                or bridge.plugin_identity != plugin_identity or bridge.world_identity != world_identity
+                or any(bridge.player_refs.get(ref) != binding for ref, binding in bindings.items())):
+            raise ValueError('Individual-training final context/reference binding changed')
+        read.verify()
+        after_read.verify()
+        if _capture is not None:
+            for source in (read, after_read):
+                for key, data in source.observed.items():
+                    if key in _capture and _capture[key] != data:
+                        raise ValueError('Individual-training edit capture changed')
+                    _capture[key] = data
+
+    try:
+        with bridge.lock, bridge._read_scope(session_id, final_verify=seal):
+            process = bridge._current(session_id)
+            tables = bridge._player_layout(process)
+            plugin_identity = deepcopy(bridge.plugin_identity)
+            read, loaded, world_identity = bridge._world_state(process, tables)
+            save = deepcopy(loaded)
+            world_identity = deepcopy(world_identity)
+            if bridge.world_identity != world_identity:
+                raise ValueError('Individual-training world binding differs')
+            base = tables[0] - players.RVA[0]
+            if players.verify_runtime(read, base, plugin_identity[1]) != tables:
+                raise ValueError('Individual-training runtime layout binding differs')
+            coach = deepcopy(bridge._select_coach(save, coach_name))
+            team, human = prepared_tactics_source._team_and_human(read, base, coach)
+            roster = world.vector(read, coach['team_address'] + 0x38, 256)
+            people = database.table(read, base, 'people')
+            if include_role_position:
+                individual_training_role_position.verify_native(read,base)
+            bindings, rows = {}, []
+            for reference in player_refs:
+                binding = bridge.player_refs.get(reference)
+                if type(binding) is not dict:
+                    raise ValueError('Unknown or expired player reference')
+                binding = deepcopy(binding)
+                if binding.get('address') not in roster:
+                    raise ValueError('Player reference is outside the selected native TEAM roster')
+                bindings[reference] = binding
+                row = individual_training_focus.inspect(
+                    read, base, tables, people, binding, team_address=coach['team_address'])
+                if _for_edit:
+                    if row['record_kind'] != 'actual':
+                        raise ValueError('Editing requires an ordinary ACTUAL_PLAYER')
+                    default_training_intensity.verify_native(read, base)
+                    if not default_training_intensity._direct_training_team(
+                            read, base, binding['address'], coach['team_address']):
+                        raise ValueError('Editing requires the verified direct managed training TEAM route')
+                if include_default_resolution:
+                    row['default_intensity_resolution'] = (
+                        default_training_intensity.inspect(read, base, coach, binding['address'])
+                        if row['record_kind'] == 'actual' else
+                        default_training_intensity._unavailable('unsupported_record_kind'))
+                if include_role_position:
+                    row['role_position']=(individual_training_role_position.inspect(read,base,binding['address'])
+                        if row['record_kind']=='actual'else individual_training_role_position.unavailable('unsupported_record_kind'))
+                    row['scope']=individual_training_role_position.COMBINED_SCOPE
+                rows.append({'player_ref': reference, **row})
+            read.verify()
+            public_save = bridge._public_save(save)
+        return {'session_id': session_id,
+                'observed_at': datetime.now(timezone.utc).isoformat(),
+                'save': public_save, 'coach': coach['name'],
+                'club': coach['club'], 'team': team, 'players': rows, 'count': len(rows),
+                'source': 'stored_player_individual_training_additional_focus',
+                'field_sources': {'additional_focus': 'stored_player_individual_training_additional_focus',
+                                  'club_training_intensity': 'stored_regular_player_club_training_intensity',
+                                  **({'default_intensity_resolution': 'reconstructed_existing_native_default_policy'}
+                                     if include_default_resolution else {}),
+                                  **({'role_position':'stored_individual_training_role_position_native_sources'}
+                                     if include_role_position else {})},
+                'scope': (ROSTER_SCOPE+individual_training_role_position.COMBINED_SCOPE if include_role_position else SCOPE)
+                         + (' ' + default_training_intensity.SCOPE if include_default_resolution else ''),
+                'atomic': False, 'saved_file_fallback': False}
+    except (ValueError, IndexError, KeyError, TypeError, BridgeError) as exc:
+        raise BridgeError(f'Individual-training query rejected; no partial result returned: {exc}') from exc

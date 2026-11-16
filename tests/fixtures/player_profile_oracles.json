@@ -1,0 +1,33 @@
+{
+  "source": "Manually transcribed from the running game Overview pages on 2026-11-05; Newcastle save showing 2030-09-18. Screenshots retained locally in evidence/woltemade-profile.png and evidence/wirtz-profile.png.",
+  "players": [
+    {
+      "name": "Nick Woltemade", "birth_date": "2002-02-14",
+      "attributes": {
+        "crossing": 9, "dribbling": 16, "finishing": 15, "first_touch": 17,
+        "heading": 14, "long_shots": 12, "marking": 11, "passing": 15,
+        "tackling": 9, "technique": 16, "corners": 7, "free_kick_taking": 13,
+        "long_throws": 6, "penalty_taking": 16, "aggression": 13, "anticipation": 15,
+        "bravery": 13, "composure": 15, "concentration": 13, "decisions": 15,
+        "determination": 16, "flair": 16, "leadership": 14, "off_the_ball": 15,
+        "positioning": 10, "teamwork": 14, "vision": 15, "work_rate": 13,
+        "acceleration": 13, "agility": 16, "balance": 18, "jumping_reach": 17,
+        "natural_fitness": 12, "pace": 14, "stamina": 13, "strength": 15
+      }
+    },
+    {
+      "name": "Florian Wirtz", "birth_date": "2003-05-03",
+      "attributes": {
+        "crossing": 15, "dribbling": 18, "finishing": 15, "first_touch": 18,
+        "heading": 9, "long_shots": 14, "marking": 12, "passing": 18,
+        "tackling": 11, "technique": 19, "corners": 15, "free_kick_taking": 14,
+        "long_throws": 6, "penalty_taking": 14, "aggression": 13, "anticipation": 17,
+        "bravery": 13, "composure": 17, "concentration": 14, "decisions": 16,
+        "determination": 17, "flair": 18, "leadership": 14, "off_the_ball": 15,
+        "positioning": 10, "teamwork": 16, "vision": 19, "work_rate": 17,
+        "acceleration": 15, "agility": 17, "balance": 15, "jumping_reach": 7,
+        "natural_fitness": 14, "pace": 16, "stamina": 16, "strength": 12
+      }
+    }
+  ]
+}

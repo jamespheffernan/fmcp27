@@ -1,0 +1,1223 @@
+{
+  "plugin_sha256": "774cacde63567fd3901c47719e7a6ed94cc3a0a62e9b94989dcac6b4890ec0e1",
+  "metadata_sha256": "ff4780c66f37e088f363d0c4365110dd0d7968204cb36283a6262055badab21d",
+  "english_resource_sha256": "3ce742519bf694636f41a1dae8d45a3dab86fad7d164a58696139e4b4509dd43",
+  "roles": {
+    "in_possession": [
+      {
+        "bit": 0,
+        "word": 1,
+        "compiled_english_name": "Goalkeeper",
+        "native_resource_key": 688068,
+        "metadata_name": "Goalkeeper",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 1,
+        "word": 2,
+        "compiled_english_name": "Centre-Back",
+        "native_resource_key": 688071,
+        "metadata_name": "CentreBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 2,
+        "word": 4,
+        "compiled_english_name": "Full-Back",
+        "native_resource_key": 688077,
+        "metadata_name": "FullBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 52,
+        "word": 4503599627370496,
+        "compiled_english_name": "Inside Full-Back",
+        "native_resource_key": 688107,
+        "metadata_name": "InsideFullBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 3,
+        "word": 8,
+        "compiled_english_name": "Wing-Back",
+        "native_resource_key": 688080,
+        "metadata_name": "WingBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 4,
+        "word": 16,
+        "compiled_english_name": "Defensive Midfielder",
+        "native_resource_key": 688083,
+        "metadata_name": "DefensiveMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 5,
+        "word": 32,
+        "compiled_english_name": "Central Midfielder",
+        "native_resource_key": 688088,
+        "metadata_name": "CentralMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 6,
+        "word": 64,
+        "compiled_english_name": "Wide Midfielder",
+        "native_resource_key": 688108,
+        "metadata_name": "WideMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 7,
+        "word": 128,
+        "compiled_english_name": "Winger",
+        "native_resource_key": 688102,
+        "metadata_name": "Winger",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 27,
+        "word": 134217728,
+        "compiled_english_name": "Inside Forward",
+        "native_resource_key": 688109,
+        "metadata_name": "InsideForward",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 49,
+        "word": 562949953421312,
+        "compiled_english_name": "Inside Winger",
+        "native_resource_key": 688110,
+        "metadata_name": "InsideWinger",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 9,
+        "word": 512,
+        "compiled_english_name": "Attacking Midfielder",
+        "native_resource_key": 688095,
+        "metadata_name": "AttackingMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 56,
+        "word": 72057594037927936,
+        "compiled_english_name": "Channel Midfielder",
+        "native_resource_key": 688111,
+        "metadata_name": "ChannelMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 10,
+        "word": 1024,
+        "compiled_english_name": "Deep-Lying Forward",
+        "native_resource_key": 688112,
+        "metadata_name": "DeepLyingForward",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 11,
+        "word": 2048,
+        "compiled_english_name": "Centre Forward",
+        "native_resource_key": 688103,
+        "metadata_name": "CentreForward",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 12,
+        "word": 4096,
+        "compiled_english_name": "Ball-Playing Goalkeeper",
+        "native_resource_key": 688113,
+        "metadata_name": "BallPlayingGoalkeeper",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 53,
+        "word": 9007199254740992,
+        "compiled_english_name": "No-Nonsense Goalkeeper",
+        "native_resource_key": 688114,
+        "metadata_name": "NoNonsenseGoalkeeper",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 14,
+        "word": 16384,
+        "compiled_english_name": "Advanced Centre-Back",
+        "native_resource_key": 688115,
+        "metadata_name": "AdvancedCentreBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 24,
+        "word": 16777216,
+        "compiled_english_name": "Ball-Playing Centre-Back",
+        "native_resource_key": 688116,
+        "metadata_name": "BallPlayingCentreBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 51,
+        "word": 2251799813685248,
+        "compiled_english_name": "Wide Centre-Back",
+        "native_resource_key": 688117,
+        "metadata_name": "WideCentreBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 54,
+        "word": 18014398509481984,
+        "compiled_english_name": "Overlapping Centre-Back",
+        "native_resource_key": 688118,
+        "metadata_name": "OverlappingCentreBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 15,
+        "word": 32768,
+        "compiled_english_name": "Deep-Lying Playmaker",
+        "native_resource_key": 688119,
+        "metadata_name": "DeepLyingPlaymaker",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 28,
+        "word": 268435456,
+        "compiled_english_name": "Ball Winning Midfielder",
+        "native_resource_key": 688120,
+        "metadata_name": "BallWinningMidfielder",
+        "survives_native_phase_filter": false
+      },
+      {
+        "bit": 16,
+        "word": 65536,
+        "compiled_english_name": "Box-To-Box Midfielder",
+        "native_resource_key": 688121,
+        "metadata_name": "BoxToBoxMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 47,
+        "word": 140737488355328,
+        "compiled_english_name": "Mezzala",
+        "native_resource_key": 688122,
+        "metadata_name": "Mezzala",
+        "survives_native_phase_filter": false
+      },
+      {
+        "bit": 48,
+        "word": 281474976710656,
+        "compiled_english_name": "Wide Central Midfielder",
+        "native_resource_key": 688123,
+        "metadata_name": "WideCentralMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 50,
+        "word": 1125899906842624,
+        "compiled_english_name": "Segundo Volante",
+        "native_resource_key": 688124,
+        "metadata_name": "SegundoVolante",
+        "survives_native_phase_filter": false
+      },
+      {
+        "bit": 17,
+        "word": 131072,
+        "compiled_english_name": "Advanced Playmaker",
+        "native_resource_key": 688125,
+        "metadata_name": "AdvancedPlaymaker",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 18,
+        "word": 262144,
+        "compiled_english_name": "Target Forward",
+        "native_resource_key": 688126,
+        "metadata_name": "TargetForward",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 19,
+        "word": 524288,
+        "compiled_english_name": "Poacher",
+        "native_resource_key": 688127,
+        "metadata_name": "Poacher",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 20,
+        "word": 1048576,
+        "compiled_english_name": "Complete Forward",
+        "native_resource_key": 688128,
+        "metadata_name": "CompleteForward",
+        "survives_native_phase_filter": false
+      },
+      {
+        "bit": 29,
+        "word": 536870912,
+        "compiled_english_name": "No-Nonsense Centre-Back",
+        "native_resource_key": 688129,
+        "metadata_name": "NoNonsenseCentreBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 30,
+        "word": 1073741824,
+        "compiled_english_name": "Defensive Winger",
+        "native_resource_key": 688130,
+        "metadata_name": "DefensiveWinger",
+        "survives_native_phase_filter": false
+      },
+      {
+        "bit": 31,
+        "word": 2147483648,
+        "compiled_english_name": "Channel Forward",
+        "native_resource_key": 688635,
+        "metadata_name": "ChannelForward",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 32,
+        "word": 4294967296,
+        "compiled_english_name": "Free Role",
+        "native_resource_key": 688131,
+        "metadata_name": "FreeRole",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 33,
+        "word": 8589934592,
+        "compiled_english_name": "Anchor",
+        "native_resource_key": 688132,
+        "metadata_name": "Anchor",
+        "survives_native_phase_filter": false
+      },
+      {
+        "bit": 35,
+        "word": 34359738368,
+        "compiled_english_name": "Half Back",
+        "native_resource_key": 688133,
+        "metadata_name": "HalfBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 39,
+        "word": 549755813888,
+        "compiled_english_name": "Regista",
+        "native_resource_key": 688134,
+        "metadata_name": "Regista",
+        "survives_native_phase_filter": false
+      },
+      {
+        "bit": 36,
+        "word": 68719476736,
+        "compiled_english_name": "No-Nonsense Full-Back",
+        "native_resource_key": 688135,
+        "metadata_name": "NoNonsenseFullBack",
+        "survives_native_phase_filter": false
+      },
+      {
+        "bit": 38,
+        "word": 274877906944,
+        "compiled_english_name": "Advanced Wing-Back",
+        "native_resource_key": 688136,
+        "metadata_name": "AdvancedWingBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 37,
+        "word": 137438953472,
+        "compiled_english_name": "Enganche",
+        "native_resource_key": 688137,
+        "metadata_name": "Enganche",
+        "survives_native_phase_filter": false
+      },
+      {
+        "bit": 42,
+        "word": 4398046511104,
+        "compiled_english_name": "Wide Target Forward",
+        "native_resource_key": 688138,
+        "metadata_name": "WideTargetForward",
+        "survives_native_phase_filter": false
+      },
+      {
+        "bit": 40,
+        "word": 1099511627776,
+        "compiled_english_name": "False Nine",
+        "native_resource_key": 688139,
+        "metadata_name": "FalseNine",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 41,
+        "word": 2199023255552,
+        "compiled_english_name": "Second Striker",
+        "native_resource_key": 688140,
+        "metadata_name": "SecondStriker",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 43,
+        "word": 8796093022208,
+        "compiled_english_name": "Playmaking Winger",
+        "native_resource_key": 688141,
+        "metadata_name": "PlaymakingWinger",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 44,
+        "word": 17592186044416,
+        "compiled_english_name": "Inside Wing-Back",
+        "native_resource_key": 688142,
+        "metadata_name": "InsideWingBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 55,
+        "word": 36028797018963968,
+        "compiled_english_name": "Playmaking Wing-Back",
+        "native_resource_key": 688143,
+        "metadata_name": "PlaymakingWingBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 45,
+        "word": 35184372088832,
+        "compiled_english_name": "Wide Forward",
+        "native_resource_key": 696156,
+        "metadata_name": "WideForward",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 46,
+        "word": 70368744177664,
+        "compiled_english_name": "Box-To-Box Playmaker",
+        "native_resource_key": 688145,
+        "metadata_name": "BoxToBoxPlaymaker",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 57,
+        "word": 144115188075855872,
+        "compiled_english_name": "Midfield Playmaker",
+        "native_resource_key": 688146,
+        "metadata_name": "MidfieldPlaymaker",
+        "survives_native_phase_filter": true
+      }
+    ],
+    "out_of_possession": [
+      {
+        "bit": 0,
+        "word": 1,
+        "compiled_english_name": "Goalkeeper",
+        "native_resource_key": 688068,
+        "metadata_name": "OPGoalkeeper",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 2,
+        "word": 4,
+        "compiled_english_name": "Line-Holding Goalkeeper",
+        "native_resource_key": 688069,
+        "metadata_name": "OPLineKeeper",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 1,
+        "word": 2,
+        "compiled_english_name": "Sweeper Keeper",
+        "native_resource_key": 688070,
+        "metadata_name": "OPSweeperKeeper",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 3,
+        "word": 8,
+        "compiled_english_name": "Centre-Back",
+        "native_resource_key": 688071,
+        "metadata_name": "OPCentreBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 5,
+        "word": 32,
+        "compiled_english_name": "Covering Centre-Back",
+        "native_resource_key": 688072,
+        "metadata_name": "OPCoveringCentreBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 4,
+        "word": 16,
+        "compiled_english_name": "Stopping Centre-Back",
+        "native_resource_key": 688073,
+        "metadata_name": "OPStoppingCentreBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 8,
+        "word": 256,
+        "compiled_english_name": "Covering Wide Centre-Back",
+        "native_resource_key": 688074,
+        "metadata_name": "OPCoveringWideCentreBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 7,
+        "word": 128,
+        "compiled_english_name": "Stopping Wide Centre-Back",
+        "native_resource_key": 688075,
+        "metadata_name": "OPStoppingWideCentreBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 6,
+        "word": 64,
+        "compiled_english_name": "Wide Centre-Back",
+        "native_resource_key": 688076,
+        "metadata_name": "OPWideCentreBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 9,
+        "word": 512,
+        "compiled_english_name": "Full-Back",
+        "native_resource_key": 688077,
+        "metadata_name": "OPFullBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 11,
+        "word": 2048,
+        "compiled_english_name": "Holding Full-Back",
+        "native_resource_key": 688078,
+        "metadata_name": "OPHoldingFullBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 10,
+        "word": 1024,
+        "compiled_english_name": "Pressing Full-Back",
+        "native_resource_key": 688079,
+        "metadata_name": "OPPressingFullBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 12,
+        "word": 4096,
+        "compiled_english_name": "Wing-Back",
+        "native_resource_key": 688080,
+        "metadata_name": "OPWingBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 14,
+        "word": 16384,
+        "compiled_english_name": "Holding Wing-Back",
+        "native_resource_key": 688081,
+        "metadata_name": "OPHoldingWingBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 13,
+        "word": 8192,
+        "compiled_english_name": "Pressing Wing-Back",
+        "native_resource_key": 688082,
+        "metadata_name": "OPPressingWingBack",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 15,
+        "word": 32768,
+        "compiled_english_name": "Defensive Midfielder",
+        "native_resource_key": 688083,
+        "metadata_name": "OPDefensiveMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 16,
+        "word": 65536,
+        "compiled_english_name": "Dropping Defensive Midfielder",
+        "native_resource_key": 688084,
+        "metadata_name": "OPDroppingDefensiveMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 17,
+        "word": 131072,
+        "compiled_english_name": "Pressing Defensive Midfielder",
+        "native_resource_key": 688085,
+        "metadata_name": "OPPressingDefensiveMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 18,
+        "word": 262144,
+        "compiled_english_name": "Screening Defensive Midfielder",
+        "native_resource_key": 688086,
+        "metadata_name": "OPScreeningDefensiveMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 19,
+        "word": 524288,
+        "compiled_english_name": "Wide Covering Defensive Midfielder",
+        "native_resource_key": 688087,
+        "metadata_name": "OPWideCoverDefensiveMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 20,
+        "word": 1048576,
+        "compiled_english_name": "Central Midfielder",
+        "native_resource_key": 688088,
+        "metadata_name": "OPCentralMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 27,
+        "word": 134217728,
+        "compiled_english_name": "Pressing Central Midfielder",
+        "native_resource_key": 688089,
+        "metadata_name": "OPPressingCentralMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 28,
+        "word": 268435456,
+        "compiled_english_name": "Screening Central Midfielder",
+        "native_resource_key": 688090,
+        "metadata_name": "OPScreeningCentralMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 29,
+        "word": 536870912,
+        "compiled_english_name": "Wide Covering Central Midfielder",
+        "native_resource_key": 688091,
+        "metadata_name": "OPWideCoverCentralMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 36,
+        "word": 68719476736,
+        "compiled_english_name": "Tracking Wide Midfielder",
+        "native_resource_key": 688092,
+        "metadata_name": "OPTrackingWideMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 35,
+        "word": 34359738368,
+        "compiled_english_name": "Wide Midfielder",
+        "native_resource_key": 688093,
+        "metadata_name": "OPWideMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 37,
+        "word": 137438953472,
+        "compiled_english_name": "Wide Outlet Wide Midfielder",
+        "native_resource_key": 688094,
+        "metadata_name": "OPWideOutletWideMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 30,
+        "word": 1073741824,
+        "compiled_english_name": "Attacking Midfielder",
+        "native_resource_key": 688095,
+        "metadata_name": "OPAttackingMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 32,
+        "word": 4294967296,
+        "compiled_english_name": "Central Outlet Attacking Midfielder",
+        "native_resource_key": 688096,
+        "metadata_name": "OPCentralOutletAttackingMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 33,
+        "word": 8589934592,
+        "compiled_english_name": "Splitting Outlet Attacking Midfielder",
+        "native_resource_key": 688097,
+        "metadata_name": "OPSplittingOutletAttackingMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 31,
+        "word": 2147483648,
+        "compiled_english_name": "Tracking Attacking Midfielder",
+        "native_resource_key": 688098,
+        "metadata_name": "OPTrackingAttackingMidfielder",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 40,
+        "word": 1099511627776,
+        "compiled_english_name": "Inside Outlet Winger",
+        "native_resource_key": 696138,
+        "metadata_name": "OPInsideOutletWinger",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 39,
+        "word": 549755813888,
+        "compiled_english_name": "Tracking Winger",
+        "native_resource_key": 688100,
+        "metadata_name": "OPTrackingWinger",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 41,
+        "word": 2199023255552,
+        "compiled_english_name": "Wide Outlet Winger",
+        "native_resource_key": 688101,
+        "metadata_name": "OPWideOutletWinger",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 38,
+        "word": 274877906944,
+        "compiled_english_name": "Winger",
+        "native_resource_key": 688102,
+        "metadata_name": "OPWinger",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 42,
+        "word": 4398046511104,
+        "compiled_english_name": "Centre Forward",
+        "native_resource_key": 688103,
+        "metadata_name": "OPCentreForward",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 43,
+        "word": 8796093022208,
+        "compiled_english_name": "Tracking Centre Forward",
+        "native_resource_key": 688104,
+        "metadata_name": "OPTrackingCentreForward",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 44,
+        "word": 17592186044416,
+        "compiled_english_name": "Central Outlet Centre Forward",
+        "native_resource_key": 688105,
+        "metadata_name": "OPCentralOutletCentreForward",
+        "survives_native_phase_filter": true
+      },
+      {
+        "bit": 45,
+        "word": 35184372088832,
+        "compiled_english_name": "Splitting Outlet Centre Forward",
+        "native_resource_key": 688106,
+        "metadata_name": "OPSplittingOutletCentreForward",
+        "survives_native_phase_filter": true
+      }
+    ]
+  },
+  "duties": [
+    {
+      "bit": 21,
+      "word": 2097152,
+      "compiled_english_name": "Defend",
+      "native_resource_key": 297461,
+      "metadata_name": "DefendDuty"
+    },
+    {
+      "bit": 25,
+      "word": 33554432,
+      "compiled_english_name": "Stopper",
+      "native_resource_key": 297462,
+      "metadata_name": "DefendStopperDuty"
+    },
+    {
+      "bit": 26,
+      "word": 67108864,
+      "compiled_english_name": "Cover",
+      "native_resource_key": 297463,
+      "metadata_name": "DefendCoveringDuty"
+    },
+    {
+      "bit": 22,
+      "word": 4194304,
+      "compiled_english_name": "Support",
+      "native_resource_key": 297464,
+      "metadata_name": "SupportDuty"
+    },
+    {
+      "bit": 23,
+      "word": 8388608,
+      "compiled_english_name": "Attack",
+      "native_resource_key": 297465,
+      "metadata_name": "AttackDuty"
+    },
+    {
+      "bit": 34,
+      "word": 17179869184,
+      "compiled_english_name": "Automatic",
+      "native_resource_key": 300963,
+      "metadata_name": "FloatDuty"
+    }
+  ],
+  "positions": [
+    {
+      "compact_token": -15,
+      "native_mask": 1,
+      "compiled_english_name": "GK",
+      "metadata_mask_components": [
+        "Goalkeeper"
+      ]
+    },
+    {
+      "compact_token": -13,
+      "native_mask": 4,
+      "compiled_english_name": "D(R)",
+      "metadata_mask_components": [
+        "DefenderRight"
+      ]
+    },
+    {
+      "compact_token": -12,
+      "native_mask": 2097168,
+      "compiled_english_name": "D(CR)",
+      "metadata_mask_components": [
+        "DefenderCentre",
+        "RightSidedPosition"
+      ]
+    },
+    {
+      "compact_token": -11,
+      "native_mask": 16,
+      "compiled_english_name": "D(C)",
+      "metadata_mask_components": [
+        "DefenderCentre"
+      ]
+    },
+    {
+      "compact_token": -10,
+      "native_mask": 1048592,
+      "compiled_english_name": "D(CL)",
+      "metadata_mask_components": [
+        "DefenderCentre",
+        "LeftSidedPosition"
+      ]
+    },
+    {
+      "compact_token": -9,
+      "native_mask": 8,
+      "compiled_english_name": "D(L)",
+      "metadata_mask_components": [
+        "DefenderLeft"
+      ]
+    },
+    {
+      "compact_token": -8,
+      "native_mask": 32,
+      "compiled_english_name": "WB(R)",
+      "metadata_mask_components": [
+        "WingBackRight"
+      ]
+    },
+    {
+      "compact_token": -7,
+      "native_mask": 2097280,
+      "compiled_english_name": "DM(CR)",
+      "metadata_mask_components": [
+        "DefensiveMidfielderCentre",
+        "RightSidedPosition"
+      ]
+    },
+    {
+      "compact_token": -6,
+      "native_mask": 128,
+      "compiled_english_name": "DM(C)",
+      "metadata_mask_components": [
+        "DefensiveMidfielderCentre"
+      ]
+    },
+    {
+      "compact_token": -5,
+      "native_mask": 1048704,
+      "compiled_english_name": "DM(CL)",
+      "metadata_mask_components": [
+        "DefensiveMidfielderCentre",
+        "LeftSidedPosition"
+      ]
+    },
+    {
+      "compact_token": -4,
+      "native_mask": 64,
+      "compiled_english_name": "WB(L)",
+      "metadata_mask_components": [
+        "WingBackLeft"
+      ]
+    },
+    {
+      "compact_token": -3,
+      "native_mask": 256,
+      "compiled_english_name": "M(R)",
+      "metadata_mask_components": [
+        "MidfielderRight"
+      ]
+    },
+    {
+      "compact_token": -2,
+      "native_mask": 2098176,
+      "compiled_english_name": "M(CR)",
+      "metadata_mask_components": [
+        "MidfielderCentre",
+        "RightSidedPosition"
+      ]
+    },
+    {
+      "compact_token": -1,
+      "native_mask": 1024,
+      "compiled_english_name": null,
+      "metadata_mask_components": [
+        "MidfielderCentre"
+      ]
+    },
+    {
+      "compact_token": 0,
+      "native_mask": 1049600,
+      "compiled_english_name": "M(CL)",
+      "metadata_mask_components": [
+        "MidfielderCentre",
+        "LeftSidedPosition"
+      ]
+    },
+    {
+      "compact_token": 1,
+      "native_mask": 512,
+      "compiled_english_name": "M(L)",
+      "metadata_mask_components": [
+        "MidfielderLeft"
+      ]
+    },
+    {
+      "compact_token": 2,
+      "native_mask": 2048,
+      "compiled_english_name": "AM(R)",
+      "metadata_mask_components": [
+        "AttackingMidfielderRight"
+      ]
+    },
+    {
+      "compact_token": 3,
+      "native_mask": 2105344,
+      "compiled_english_name": "AM(CR)",
+      "metadata_mask_components": [
+        "AttackingMidfielderCentre",
+        "RightSidedPosition"
+      ]
+    },
+    {
+      "compact_token": 4,
+      "native_mask": 8192,
+      "compiled_english_name": "AM(C)",
+      "metadata_mask_components": [
+        "AttackingMidfielderCentre"
+      ]
+    },
+    {
+      "compact_token": 5,
+      "native_mask": 1056768,
+      "compiled_english_name": "AM(CL)",
+      "metadata_mask_components": [
+        "AttackingMidfielderCentre",
+        "LeftSidedPosition"
+      ]
+    },
+    {
+      "compact_token": 6,
+      "native_mask": 4096,
+      "compiled_english_name": "AM(L)",
+      "metadata_mask_components": [
+        "AttackingMidfielderLeft"
+      ]
+    },
+    {
+      "compact_token": 7,
+      "native_mask": 32768,
+      "compiled_english_name": null,
+      "metadata_mask_components": [
+        "AttackerRight"
+      ]
+    },
+    {
+      "compact_token": 8,
+      "native_mask": 2113536,
+      "compiled_english_name": "ST(CR)",
+      "metadata_mask_components": [
+        "AttackerCentre",
+        "RightSidedPosition"
+      ]
+    },
+    {
+      "compact_token": 9,
+      "native_mask": 16384,
+      "compiled_english_name": "ST(C)",
+      "metadata_mask_components": [
+        "AttackerCentre"
+      ]
+    },
+    {
+      "compact_token": 10,
+      "native_mask": 1064960,
+      "compiled_english_name": "ST(CL)",
+      "metadata_mask_components": [
+        "AttackerCentre",
+        "LeftSidedPosition"
+      ]
+    },
+    {
+      "compact_token": 11,
+      "native_mask": 65536,
+      "compiled_english_name": null,
+      "metadata_mask_components": [
+        "AttackerLeft"
+      ]
+    }
+  ],
+  "native_phase_masks": {
+    "in_possession": 286958557567377151,
+    "out_of_possession": 70351432187903
+  },
+  "player_instructions": [
+    {
+      "metadata_name": "PI_NONE",
+      "native_option": 0
+    },
+    {
+      "metadata_name": "PI_PASS_SHORTER",
+      "native_option": 1
+    },
+    {
+      "metadata_name": "PI_PASS_MORE_DIRECT",
+      "native_option": 2
+    },
+    {
+      "metadata_name": "PI_TAKE_MORE_RISKS",
+      "native_option": 3
+    },
+    {
+      "metadata_name": "PI_TAKE_FEWER_RISKS",
+      "native_option": 4
+    },
+    {
+      "metadata_name": "PI_CROSS_OFTEN",
+      "native_option": 5
+    },
+    {
+      "metadata_name": "PI_CROSS_LESS_OFTEN",
+      "native_option": 6
+    },
+    {
+      "metadata_name": "PI_CROSS_FROM_DEEP",
+      "native_option": 7
+    },
+    {
+      "metadata_name": "PI_CROSS_FROM_BYLINE",
+      "native_option": 8
+    },
+    {
+      "metadata_name": "PI_CROSS_TO_NEAR_POST",
+      "native_option": 9
+    },
+    {
+      "metadata_name": "PI_CROSS_TO_FAR_POST",
+      "native_option": 10
+    },
+    {
+      "metadata_name": "PI_CROSS_TO_CENTRE",
+      "native_option": 11
+    },
+    {
+      "metadata_name": "PI_CROSS_TO_TARGET_MAN",
+      "native_option": 12
+    },
+    {
+      "metadata_name": "PI_DRIBBLE_MORE",
+      "native_option": 13
+    },
+    {
+      "metadata_name": "PI_DRIBBLE_LESS",
+      "native_option": 14
+    },
+    {
+      "metadata_name": "PI_RUN_WIDE_WITH_BALL",
+      "native_option": 15
+    },
+    {
+      "metadata_name": "PI_CUT_INSIDE_WITH_BALL",
+      "native_option": 16
+    },
+    {
+      "metadata_name": "PI_HOLD_UP_BALL",
+      "native_option": 17
+    },
+    {
+      "metadata_name": "PI_SHOOT_MORE",
+      "native_option": 18
+    },
+    {
+      "metadata_name": "PI_SHOOT_LESS",
+      "native_option": 19
+    },
+    {
+      "metadata_name": "PI_BE_MORE_EXPRESSIVE",
+      "native_option": 20
+    },
+    {
+      "metadata_name": "PI_BE_MORE_DISCIPLINED",
+      "native_option": 21
+    },
+    {
+      "metadata_name": "PI_GET_FORWARD_OFTEN",
+      "native_option": 22
+    },
+    {
+      "metadata_name": "PI_HOLD_POSITION",
+      "native_option": 23
+    },
+    {
+      "metadata_name": "PI_ROAM_FROM_POSITION",
+      "native_option": 24
+    },
+    {
+      "metadata_name": "PI_STAY_WIDER",
+      "native_option": 25
+    },
+    {
+      "metadata_name": "PI_PLAY_NARROW",
+      "native_option": 26
+    },
+    {
+      "metadata_name": "PI_MOVE_INTO_CHANNELS",
+      "native_option": 27
+    },
+    {
+      "metadata_name": "PI_SWITCH_POSITION",
+      "native_option": 28
+    },
+    {
+      "metadata_name": "PI_HIGHER_PRESSING_INTENSITY",
+      "native_option": 29
+    },
+    {
+      "metadata_name": "PI_LOWER_PRESSING_INTENSITY",
+      "native_option": 30
+    },
+    {
+      "metadata_name": "PI_GET_STUCK_IN",
+      "native_option": 31
+    },
+    {
+      "metadata_name": "PI_STAY_ON_FEET",
+      "native_option": 32
+    },
+    {
+      "metadata_name": "PI_MARK_TIGHTER",
+      "native_option": 33
+    },
+    {
+      "metadata_name": "PI_MARK_SPECIFIC_PLAYER",
+      "native_option": 34
+    },
+    {
+      "metadata_name": "PI_MARK_SPECIFIC_POSITION",
+      "native_option": 35
+    },
+    {
+      "metadata_name": "PI_ATTACK_BOX_SIDE_CENTRE",
+      "native_option": 36
+    },
+    {
+      "metadata_name": "PI_ATTACK_BOX_SIDE_LEFT",
+      "native_option": 37
+    },
+    {
+      "metadata_name": "PI_ATTACK_BOX_SIDE_RIGHT",
+      "native_option": 38
+    },
+    {
+      "metadata_name": "PI_ATTACK_BOX_SIDE_NEAR_POST",
+      "native_option": 39
+    },
+    {
+      "metadata_name": "PI_ATTACK_BOX_SIDE_FAR_POST",
+      "native_option": 40
+    },
+    {
+      "metadata_name": "PI_ATTACK_FRONT_ZONE",
+      "native_option": 41
+    },
+    {
+      "metadata_name": "PI_ATTACK_BACK_ZONE",
+      "native_option": 42
+    }
+  ],
+  "team_instruction_phases": [
+    {
+      "metadata_name": "Invalid",
+      "native_id": -1
+    },
+    {
+      "metadata_name": "InPossessionDefault",
+      "native_id": 0
+    },
+    {
+      "metadata_name": "FinalThird",
+      "native_id": 1
+    },
+    {
+      "metadata_name": "Progression",
+      "native_id": 2
+    },
+    {
+      "metadata_name": "BuildUp",
+      "native_id": 3
+    },
+    {
+      "metadata_name": "OutOfPossessionDefault",
+      "native_id": 4
+    },
+    {
+      "metadata_name": "HighPress",
+      "native_id": 5
+    },
+    {
+      "metadata_name": "MidBlock",
+      "native_id": 6
+    },
+    {
+      "metadata_name": "LowBlock",
+      "native_id": 7
+    },
+    {
+      "metadata_name": "SupportingRuns",
+      "native_id": 8
+    },
+    {
+      "metadata_name": "Dribbling",
+      "native_id": 9
+    },
+    {
+      "metadata_name": "PressingTrap",
+      "native_id": 10
+    },
+    {
+      "metadata_name": "ProgressThrough",
+      "native_id": 11
+    },
+    {
+      "metadata_name": "GKDistributeTo",
+      "native_id": 12
+    }
+  ]
+}

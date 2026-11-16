@@ -1,0 +1,11 @@
+{
+ "format": "fmcp-structure-offsets/1",
+ "about": "Proven field moves per plugin build, applied by address_book.field(structure, pinned offset). Each entry needs its proof: the aligned instructions on both builds or a live comparison with the getter. Static candidates from the update report are not proof.",
+ "builds": {
+  "68adfde2e0588458c1830cb7e688855d9c61237973a7eb7a105af5ac4ed112a4": {
+   "version": "27.0.1.2503222",
+   "offsets": {},
+   "note": "No field move used by a hand-built decoder is proven on 27.0.1 (docs/builds/27.0.1.md)."
+  }
+ }
+}

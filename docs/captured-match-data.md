@@ -1,0 +1,13 @@
+# Historical captured-live match data
+
+`fm_list_captured_match_sources` discovers approved local SQLite originals without attaching to Football Manager. `fm_query_captured_match_data` returns filtered typed projections from one exact catalog hash. These tools remain available while the game is at its menu. They read historical live captures; they do not parse the last disk save or establish current player availability.
+
+This release registers three originals in `~/Agent Outputs/Reference/`: Newcastle through28October2030, the Premier League through28October2030, and Newcastle v Arsenal on29October2030. The cup original appears in the catalog only after publication. New exports require an approved-source registration; unrelated SQLite files and arbitrary caller paths are excluded. The original's simulation date, fixture date window and wall-clock capture timestamp (when recorded) are separate provenance fields.
+
+Choose a `source_id`, copy its `capture_id` and optionally `career_id`, select an available table and columns, then provide fixture-date, native team and native competition filters. The catalog exposes the original's actual schema, so an older capture cannot silently supply a newly supported metric. Missing requested columns cause an unavailable-field error. Supported projections include `fixtures`, `retained_players`, `player_match_analysis`, `team_totals`, `events`, `player_matches`, `goal_crossings` and `sub_entry_context` when present. Aggregate arbitrary analyses in code from these bounded rows; the tool accepts no SQL.
+
+A team filter selects fixtures containing that team. Player and team projections still include both ordered sides: join `side_index=0` to the fixture's `home_team_id`, and `side_index=1` to `away_team_id`, before attributing contributions. Filtering never relabels an opponent contribution as your team's.
+
+Follow every cursor with the same source/hash/career/table/field/filter selectors. Pages use deterministic ordering, preserve the hash and expire after five minutes. Each read rechecks source bytes, read-only SQLite integrity, approved career, schema and named fixture scope; changed files require a fresh catalog selection. Limits are500rows and256KiB per page,100000filtered rows,32cached cursors and512MiB per approved file. Raw rows that exceed the response budget require fewer selected fields.
+
+`fm_report_captured_match_crossing` uses the same named-source authority and exact hash pin. It never falls back to the current game. Individual save, aerial or crossing counts preserve their source-specific semantic limits; rows and zeros do not prove appearances, match completion, current fitness or causation.

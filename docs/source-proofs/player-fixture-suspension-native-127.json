@@ -1,0 +1,376 @@
+{
+  "verified": true,
+  "state": "explicit_fixture_native_mode0_suspension_subset",
+  "installed": false,
+  "source_base_commit": "5079d3ff882ba8bc136162da56a415465aeac32a",
+  "plugin_sha256": "774cacde63567fd3901c47719e7a6ed94cc3a0a62e9b94989dcac6b4890ec0e1",
+  "native_boundary_authority": "LC_FUNCTION_STARTS",
+  "native_functions": [
+    {
+      "target": "0x1f8af7c",
+      "start": "0x1f8af7c",
+      "end": "0x1f8bff0",
+      "sha256": "9c5deec489e1e637de136d72a5d40e8f9e2b12ab5abda1e8e82d4dd36133ad41"
+    },
+    {
+      "target": "0x3cc6904",
+      "start": "0x3cc6904",
+      "end": "0x3cc7320",
+      "sha256": "06a2bc52b7fbb0339a6b4a4d3c651f92c594827393960b84206daeeced4753e9"
+    },
+    {
+      "target": "0x4060580",
+      "start": "0x4060580",
+      "end": "0x40606f4",
+      "sha256": "39c69cba44b1ccf45a5083aba88823279b49ef5ce95b7a4ff71ec30005cf3379"
+    },
+    {
+      "target": "0x108f88",
+      "start": "0x108f88",
+      "end": "0x108fb8",
+      "sha256": "3728d23d47c6535660b77e44b12b05cc533a24f51bf85980c2f05b3302dab198"
+    },
+    {
+      "target": "0x1f8db6c",
+      "start": "0x1f8db6c",
+      "end": "0x1f946c0",
+      "sha256": "462d5ecc6093048cf56fb5d4216d39843777396adf4ee87a3abc5121e7ecdcb6"
+    },
+    {
+      "target": "0x14e3400",
+      "start": "0x14e3400",
+      "end": "0x14e375c",
+      "sha256": "505d63effc612baa3cab90102cb099d40a6280ccd4ee94b2cf3c34cd835e3277"
+    },
+    {
+      "target": "0x2094c08",
+      "start": "0x209489c",
+      "end": "0x20abd4c",
+      "sha256": "d5bb65202359b68f7a852f13bcc43e9f3874cfac01d5a4d1dde218e4209cbf17"
+    },
+    {
+      "target": "0x3d030d8",
+      "start": "0x3d030d8",
+      "end": "0x3d030e0",
+      "sha256": "2f6110664dbd16b514a0c2c7c8326932a36e85d2f15b91e57ca76efd2c7a625a"
+    },
+    {
+      "target": "0x2e88b4c",
+      "start": "0x2e88b4c",
+      "end": "0x2e88bb0",
+      "sha256": "2690b5e99f8c2a8ac910d290728b3f42744cf44c972cf20378990d5025c0da62"
+    }
+  ],
+  "native_runtime_guards": [
+    {
+      "rva": "0x1f8af7c",
+      "length": 4212,
+      "sha256": "9c5deec489e1e637de136d72a5d40e8f9e2b12ab5abda1e8e82d4dd36133ad41"
+    },
+    {
+      "rva": "0x3cc6904",
+      "length": 2588,
+      "sha256": "06a2bc52b7fbb0339a6b4a4d3c651f92c594827393960b84206daeeced4753e9"
+    },
+    {
+      "rva": "0x4060580",
+      "length": 372,
+      "sha256": "39c69cba44b1ccf45a5083aba88823279b49ef5ce95b7a4ff71ec30005cf3379"
+    },
+    {
+      "rva": "0x108f88",
+      "length": 48,
+      "sha256": "3728d23d47c6535660b77e44b12b05cc533a24f51bf85980c2f05b3302dab198"
+    }
+  ],
+  "semantic_guards": [
+    {
+      "rva": "0x1f8e80c",
+      "length": 52,
+      "raw_hex": "28ba0190008546f9080040f9081941f9e10314aae20316aae50319aa2600805200013fd6800000341b008052a800805259010014",
+      "sha256": "5fa5a391f817f06f6ba6b3de22898fb690ae1d7fd50a3bb10d31aa9938ef947b"
+    },
+    {
+      "rva": "0x14e35e0",
+      "length": 8,
+      "raw_hex": "2800805258000014",
+      "sha256": "712eac9e2db15b796256b45376993a45ed52b9006bcc1c47ca6077d8277f9b82"
+    },
+    {
+      "rva": "0x5397fdc",
+      "length": 1,
+      "raw_hex": "6f",
+      "sha256": "65c74c15a686187bb6bbf9958f494fc6b80068034a659a9ad44991b08c58f2d2"
+    },
+    {
+      "rva": "0x2094be8",
+      "length": 8,
+      "raw_hex": "2bc34039e90000b5",
+      "sha256": "710fbbf5e7ea71a228fdc15ee3dac9265fe5b02ea70d1de2d45aae6be3ac09f3"
+    },
+    {
+      "rva": "0x2094c08",
+      "length": 88,
+      "raw_hex": "7f05007101050054e8cf44a9f41f40f9680100b4a82302d1e00314aa011483524101a072231b8d94a08302d1a12302d18a138d94a02302d1a3f38c94e82340f9680100b4a82302d1e00314aa211483524101a072171b8d94",
+      "sha256": "69419024756c23059b50c54e0869d075e00182fc485f0c2233a2adf939e1706c"
+    },
+    {
+      "rva": "0x55df1b8",
+      "length": 8,
+      "raw_hex": "7caff80100001000",
+      "sha256": "77bf5799464e56dcde048bc2f728f8ca63427fc16edd8044d292747d4bf2d786"
+    },
+    {
+      "rva": "0x52dfbd8",
+      "length": 4,
+      "raw_hex": "00000000",
+      "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    }
+  ],
+  "english_resource_sha256": "3ce742519bf694636f41a1dae8d45a3dab86fad7d164a58696139e4b4509dd43",
+  "labels": {
+    "661664": "KEY-661664: Sus[%person#status_subject-hidden][COMMENT - suspended for next match, short string]",
+    "661665": "KEY-661665: Suspended[%person#status_subject-hidden][COMMENT - on player form screen, shown if player was suspended for a match]"
+  },
+  "meaning": "Official manager+230 predicate returns true to outer reason5, mapped to status1 Suspended.",
+  "competition_binding": "explicit canonical stored fixture-name COMP, not outer UI+1D0 lookup",
+  "future_condition": "currently_recorded_ban_state_unchanged",
+  "save": {
+    "name": "Cesar Jules - Newcastle",
+    "created_date": "2025-10-23",
+    "created_version": 2223821,
+    "save_count": 428,
+    "last_saved_date": "2030-11-13",
+    "current_date": "2030-11-13",
+    "coaches": [
+      {
+        "name": "Cesar  Jules",
+        "club": {
+          "name": "Newcastle United",
+          "short_name": "Newcastle"
+        }
+      }
+    ]
+  },
+  "process_pid": 3505,
+  "genuine_record_raw32": "96020000ff01000000000000000000002e7fee078800ffff020000ff01000000",
+  "genuine_runtime_contexts": {
+    "premier_league": {
+      "native_id": 11,
+      "runtime_type": 0,
+      "runtime_phase": 0,
+      "native_season_code": 2030,
+      "default_rule_present": true,
+      "default_group_equals_ban_group": true,
+      "owner_group_equals_ban_group": true,
+      "ban_rule_phase_bytes": "",
+      "scope_comp_equals_parent": false,
+      "scope_comp_runtime_equals_runtime": false,
+      "scope_comp_equals_fallback_parent": false,
+      "flags4c": 2097152,
+      "byte4c0": 0,
+      "pointer510_present": false,
+      "owner23c": 0,
+      "signed3b6": -1,
+      "special_competition": -1,
+      "parent_native_id": 11,
+      "scope_runtime_type": 3
+    },
+    "carabao_cup": {
+      "native_id": 1301427,
+      "runtime_type": 3,
+      "runtime_phase": 4,
+      "native_season_code": 2030,
+      "default_rule_present": true,
+      "default_group_equals_ban_group": true,
+      "owner_group_equals_ban_group": true,
+      "ban_rule_phase_bytes": "",
+      "scope_comp_equals_parent": true,
+      "scope_comp_runtime_equals_runtime": true,
+      "scope_comp_equals_fallback_parent": false,
+      "flags4c": 2097152,
+      "byte4c0": 0,
+      "pointer510_present": false,
+      "owner23c": 0,
+      "signed3b6": 167,
+      "special_competition": -1,
+      "parent_native_id": 1301427,
+      "scope_runtime_type": 3
+    }
+  },
+  "public_controls": [
+    {
+      "player": "El Hadji Malick Diouf",
+      "person_native_id": 2000262615,
+      "fixture_context": {
+        "state": "available",
+        "reason": "canonical_unplayed_fixture_mode0_inputs",
+        "competition": {
+          "native_id": 11,
+          "random_id": null,
+          "database_index": 7,
+          "name": "Premier League",
+          "short_name": "Premier League",
+          "abbreviation": "PL",
+          "name_source": "stored_native_strings"
+        },
+        "native_season_code": 2030,
+        "fixture_date": "2030-11-23",
+        "competition_binding": "canonical_stored_fixture_name",
+        "future_condition": "currently_recorded_ban_state_unchanged",
+        "full_outer_availability_evaluated": false,
+        "native_runtime_kind": 0,
+        "global_queue": "skipped_by_native_unplayed_fixture_branch",
+        "as_of_date": "2030-11-13"
+      },
+      "fixture_suspension": {
+        "state": "checked",
+        "reason": "native_record_not_applicable_to_fixture_context",
+        "native_suspended": false,
+        "personal_record_count": 1,
+        "record_context": {
+          "native_kind": 1,
+          "native_competition_date_predicate": false,
+          "native_rule_index": 136,
+          "native_scope_competition": {
+            "native_id": 1301427,
+            "random_id": null,
+            "database_index": 662,
+            "name": "Carabao Cup",
+            "short_name": "Carabao Cup",
+            "abbreviation": "CC",
+            "name_source": "stored_native_strings"
+          },
+          "trace": [
+            "native_start_date_comparison",
+            "native_kind1_competition_comparisons"
+          ],
+          "native_phase": 0,
+          "native_phase_selector": 255,
+          "native_carryover_phase_list": [],
+          "direct_scope_matches": false,
+          "scope_runtime_matches": false,
+          "fallback_scope_matches": false
+        },
+        "overall_fixture_eligibility": "not_evaluated"
+      },
+      "stored_match_balance": 1
+    },
+    {
+      "player": "El Hadji Malick Diouf",
+      "person_native_id": 2000262615,
+      "fixture_context": {
+        "state": "available",
+        "reason": "canonical_unplayed_fixture_mode0_inputs",
+        "competition": {
+          "native_id": 1301427,
+          "random_id": null,
+          "database_index": 662,
+          "name": "Carabao Cup",
+          "short_name": "Carabao Cup",
+          "abbreviation": "CC",
+          "name_source": "stored_native_strings"
+        },
+        "native_season_code": 2030,
+        "fixture_date": "2030-12-18",
+        "competition_binding": "canonical_stored_fixture_name",
+        "future_condition": "currently_recorded_ban_state_unchanged",
+        "full_outer_availability_evaluated": false,
+        "native_runtime_kind": 3,
+        "global_queue": "skipped_by_native_unplayed_fixture_branch",
+        "as_of_date": "2030-11-13"
+      },
+      "fixture_suspension": {
+        "state": "checked",
+        "reason": "native_applicable_kind1_suspension",
+        "native_suspended": true,
+        "personal_record_count": 1,
+        "record_context": {
+          "native_kind": 1,
+          "native_competition_date_predicate": true,
+          "native_rule_index": 136,
+          "native_scope_competition": {
+            "native_id": 1301427,
+            "random_id": null,
+            "database_index": 662,
+            "name": "Carabao Cup",
+            "short_name": "Carabao Cup",
+            "abbreviation": "CC",
+            "name_source": "stored_native_strings"
+          },
+          "trace": [
+            "native_start_date_comparison",
+            "native_kind1_competition_comparisons"
+          ],
+          "native_phase": 4,
+          "native_phase_selector": 255,
+          "native_carryover_phase_list": [],
+          "direct_scope_matches": true,
+          "scope_runtime_matches": true,
+          "fallback_scope_matches": false,
+          "match_balance_gate": "not_read_on_supported_native_path"
+        },
+        "overall_fixture_eligibility": "not_evaluated"
+      },
+      "stored_match_balance": 1
+    }
+  ],
+  "city_roster_counts": {
+    "True": 0,
+    "False": 25,
+    "None": 3
+  },
+  "unknown_current_outside_team_controls": [
+    "Trevan Sanusi",
+    "Leo Shahar",
+    "Matthew Cox"
+  ],
+  "acceptance": {
+    "transport": "fresh_candidate_stdio",
+    "incumbent_default_parity": true,
+    "invalid_fixture_rejections": 3,
+    "supported_path_reads_match_balance": false,
+    "complete_consumed_byte_and_save_recheck": true
+  },
+  "full_outer_availability_evaluated": false,
+  "overall_fixture_eligibility": "not_evaluated",
+  "unknown_branches": [
+    "score-bearing global queue",
+    "multiple records",
+    "non-kind1 records",
+    "finite expiry and cleanup",
+    "default phase rule fallback",
+    "special national exemption",
+    "unsupported runtime activation",
+    "outside fixture current TEAM",
+    "combined player/staff"
+  ],
+  "constraints": {
+    "native_execution": false,
+    "game_writes": false,
+    "UI": false,
+    "archive_reads": false
+  },
+  "focused_tests": {
+    "ban_source_public_and_mcp": 143,
+    "fixture_regression": 183
+  },
+  "source_sha256": {
+    "fm_live_mcp/player_fixture_suspensions.py": "af0dd48500232d812a5680a34b718cbb4cfaf2d34d6c8519222d94fe97c0bd9c",
+    "fm_live_mcp/player_ban_source.py": "705ee6fe10495db1f32a6bf2becd4847c1a3c48a6c8f66740b9126d6b774a9f4",
+    "fm_live_mcp/bridge.py": "35a018379d5c02a8f9c3ee3ec23e7401afe2ce9fd4bc86d36a8a6809e5fcd8d2",
+    "fm_live_mcp/server.py": "7eae7e9ecc9c1f9180fed797bad418b557b1373370407928ca9d58464456d9dc",
+    "tests/test_player_fixture_suspensions.py": "50454e43e88ce58eb08b8c0cb241a991ae64fd9209886bd51f8f79635ca69347",
+    "tests/test_player_fixture_suspensions_public.py": "e59d551dd67ef472651dab0313adca17d59e292c4889e3607927d6cd8a8158b6",
+    "tests/test_mcp.py": "953ee728c9ab7b50e24d04520d92c806e07b652f1f331d87e21e30c0c7299659",
+    "docs/native-player-fixture-suspension.md": "a232408b7058045c2b48a6b714120edb167b211db65c71667ac1517400e8c1b0"
+  },
+  "local_evidence_sha256": {
+    "current.json": "24abf988491c6b15aa091aeacbbdaff20ae22c2733f1ae2b4e8123a82e2327e9",
+    "candidate-public-mcp.json": "ca0f1325675f85f702e2478caf2d64c7b8d933330c84488c8e86e6fb30429254",
+    "probe.py": "7e13257e424b082645994f324339cc1d1a9d28bdf77c6bd61f0e24df540a2220",
+    "probe_public_mcp.py": "b479296866085501087356619bbfec680527a732729d7f452fb73cf9b71edc25",
+    "extract_native.py": "1dbd4008361d7a44cd239fdbaf7a4ba2370af78b72669f33ee84da70f0bbb0a6",
+    "freeze.py": "939bb73c649c49ada3adc43b47e581f733e07d48ec48ade7baa5ea47cba6e8ef"
+  }
+}

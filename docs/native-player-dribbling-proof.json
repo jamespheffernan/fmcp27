@@ -1,0 +1,100 @@
+{
+  "state": "verified_official_individual_dribbles_made_getter_writer_wire_and_CBE_controls",
+  "metadata": {
+    "version": 39,
+    "sha256": "ff4780c66f37e088f363d0c4365110dd0d7968204cb36283a6262055badab21d",
+    "literal_index": 7578,
+    "literal": "DribblesMade"
+  },
+  "managed_registration": {
+    "rva": "0xab5ee0..0xab5f28",
+    "key_expression": "0x4d416542 + 0xf34 = 0x4d417476",
+    "wrapper": "0x400e818 preserves numeric key",
+    "usage": "0x6219f60"
+  },
+  "field_registry": {
+    "dribbles_made": {
+      "official_property_label": "DribblesMade",
+      "native_property_key": "0x4d417476",
+      "native_offset": "0xa1",
+      "wire_offset_u32_person": 58,
+      "wire_offset_u64_person": 62,
+      "consumer_load_rva": "0x266e10",
+      "exporter_load_rva": "0x205000",
+      "native_writer_rva": "0x493c600",
+      "native_event_kind": 13,
+      "unit": "unsigned byte stored count",
+      "semantic_proof": "Official indexed managed property registration, native individual exporter/getter and native wire block; kind13 producer independently maps to CBE34",
+      "scope": "FM DribblesMade count. No dribble-attempt count, success percentage, progressive carry, distance, action location or tactical cause is established.",
+      "independent_serialized_team_oracle": false
+    }
+  },
+  "native_spans": [
+    {
+      "rva": "0x205000",
+      "hex": "e1864239e0230091bbfb0795e0630091e2230091c18e8e5221a8a972b2c80795"
+    },
+    {
+      "rva": "0x266e00",
+      "hex": "c98e8e5229a8a9721f01096b411a005401844239c3000014"
+    },
+    {
+      "rva": "0x493c4d8",
+      "hex": "3f750071481e01544b5600b06bb10b918c0000106d7969788c090d8b80011fd6"
+    },
+    {
+      "rva": "0x493c5fc",
+      "hex": "571501b4e886423908050011e8860239a6080014"
+    },
+    {
+      "rva": "0x4ad2a54",
+      "hex": "88018052e92340f933710291e84f06a9e0430191b99ae297e92340f9"
+    },
+    {
+      "rva": "0x4ad2aa0",
+      "hex": "e8018052f4a305a9e82340f914b90291f43700f9e0430191a59ae297"
+    },
+    {
+      "rva": "0x4893184",
+      "hex": "48048052d8ffff17"
+    },
+    {
+      "rva": "0x5405306",
+      "hex": "4100"
+    },
+    {
+      "rva": "0x54023d0",
+      "hex": "2c"
+    }
+  ],
+  "producer": "source kind13 dispatch table54052ec[13]\u2192493c5fc\u2192unsigned playerA1++",
+  "converter": "48930ac kind13 uniquely\u21924893184 returns34",
+  "wire": "4ad2aa0 emits15 bytes9f..ad; A1 is wire58 narrow,62 wide; entire60 child boundary checked",
+  "live_control": {
+    "native_match_key": 137388,
+    "events_sha256": "54ac76b69b0be3f29ccc112d366cb9c2237648b819b38d47a0d1bd955d88db24",
+    "rows": 40,
+    "positive_rows": 14,
+    "zero_rows": 26,
+    "total": 22,
+    "side_totals": [
+      12,
+      10
+    ],
+    "same_readset_native_guards": true
+  },
+  "limits": [
+    "No separate attempt counter or success percentage",
+    "No progressive carries, distance, location or tactical cause",
+    "No claim one DribblesMade event beats a fixed number of opponents",
+    "No independent serialized team oracle"
+  ],
+  "evidence_files": {
+    "labels.json": "0aeaffefccbb1d501d5c5571347bd9c85cc43d1d7da3a89a82ef54647d44f35e",
+    "native-property-xrefs.json": "9e89ae037fc36a9bd271883c97f69854f70cc2afddea05fe950d03f872469c61",
+    "native-literals.json": "c308e366db24ea055c21c365eabfdd67c5fee2d522d842a6a2a787f08fbd999d",
+    "live-proof.json": "16414000adde00d743b11ea829f988e204f702c984489fd88c8be352c33fe4d0",
+    "forest-controls.json": "1c79e6544eb0d2176a3c41af3e607e42b06f0c6a5bd2fe4fb96ee499c2d7d9d9",
+    "binding-xrefs.json": "687ba1b076e9341e47921ddf10d65afdf7a00894adeb2d28b8636c4a343ee0dc"
+  }
+}

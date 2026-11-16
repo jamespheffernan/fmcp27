@@ -1,0 +1,892 @@
+{
+  "source_save": {
+    "name": "Cesar Jules - Newcastle",
+    "created_date": "2025-10-23",
+    "created_version": 2223821,
+    "save_count": 426,
+    "last_saved_date": "2030-11-02",
+    "current_date": "2030-11-02",
+    "coaches": [
+      {
+        "name": "Cesar  Jules",
+        "club": {
+          "name": "Newcastle United",
+          "short_name": "Newcastle"
+        }
+      }
+    ]
+  },
+  "total_count": 3883,
+  "selected_controls": [
+    {
+      "row": {
+        "native_id": 102412,
+        "database_index": 6,
+        "random_id": 102412,
+        "name": "Premier League Players' Player of the Year",
+        "short_name": "Premier League Players' Player of the Year",
+        "name_source": "stored_native_strings",
+        "record_scope": "award_definition",
+        "award_category": {
+          "native_code": 37,
+          "label": "Highest Average Rating",
+          "native_property": "AWty",
+          "state": "mapped"
+        },
+        "award_period": {
+          "native_code": 3,
+          "label": "Of The Season",
+          "native_property": "AWdr",
+          "state": "mapped"
+        },
+        "recipient_type": {
+          "native_code": 1,
+          "label": "Player",
+          "native_property": "AWrt",
+          "state": "mapped"
+        },
+        "winner_history": {
+          "state": "not_decoded",
+          "winners": null
+        },
+        "continent": {
+          "native_id": 3,
+          "database_index": 2,
+          "name": "Europe",
+          "abbreviation": "EUR",
+          "name_source": "stored_native_strings"
+        },
+        "competition": {
+          "native_id": 11,
+          "random_id": null,
+          "database_index": 7,
+          "name": "Premier League",
+          "short_name": "Premier League",
+          "abbreviation": "PL",
+          "name_source": "stored_native_strings"
+        },
+        "nation": {
+          "native_id": 765,
+          "database_index": 139,
+          "short_name": "England",
+          "abbreviation": "ENG",
+          "name_source": "stored_native_strings"
+        },
+        "award_ref": "muJnkfZ_mGMMcGYL"
+      },
+      "raw8_97_hex": "060000000c9001000c900100f8f8f8ff502000ff000000ff000000ff000000ff01000000000000009479679c760000009479679c76000000000000000000000001006c07e700e90700a0a4ae76000000d0cb033c7a000000581ad3aa76000000000000000000000020e548b876000000ffffffff00000000110000000125030200030000030100020600000000000046"
+    },
+    {
+      "row": {
+        "native_id": 102413,
+        "database_index": 7,
+        "random_id": 102413,
+        "name": "Premier League Players' Young Player of the Year",
+        "short_name": "Premier League Players' Young Player of the Year",
+        "name_source": "stored_native_strings",
+        "record_scope": "award_definition",
+        "award_category": {
+          "native_code": 37,
+          "label": "Highest Average Rating",
+          "native_property": "AWty",
+          "state": "mapped"
+        },
+        "award_period": {
+          "native_code": 3,
+          "label": "Of The Season",
+          "native_property": "AWdr",
+          "state": "mapped"
+        },
+        "recipient_type": {
+          "native_code": 1,
+          "label": "Player",
+          "native_property": "AWrt",
+          "state": "mapped"
+        },
+        "winner_history": {
+          "state": "not_decoded",
+          "winners": null
+        },
+        "continent": {
+          "native_id": 3,
+          "database_index": 2,
+          "name": "Europe",
+          "abbreviation": "EUR",
+          "name_source": "stored_native_strings"
+        },
+        "competition": {
+          "native_id": 11,
+          "random_id": null,
+          "database_index": 7,
+          "name": "Premier League",
+          "short_name": "Premier League",
+          "abbreviation": "PL",
+          "name_source": "stored_native_strings"
+        },
+        "nation": {
+          "native_id": 765,
+          "database_index": 139,
+          "short_name": "England",
+          "abbreviation": "ENG",
+          "name_source": "stored_native_strings"
+        },
+        "award_ref": "JtP2KS17DuOV2DCk"
+      },
+      "raw8_97_hex": "070000000d9001000d900100f8f8f8ff502000ff000000ff000000ff000000ff010000000000000024e844ad7600000024e844ad76000000000000000000000001006c07e700e90700a0a4ae76000000d0cb033c7a000000581ad3aa760000000000000000000000a0e648b876000000ffffffff000000000f00000001250302000300000301000208000016009b0032"
+    },
+    {
+      "row": {
+        "native_id": 102414,
+        "database_index": 8,
+        "random_id": 102414,
+        "name": "Premier League Team of the Year",
+        "short_name": "Premier League Team of the Year",
+        "name_source": "stored_native_strings",
+        "record_scope": "award_definition",
+        "award_category": {
+          "native_code": 37,
+          "label": "Highest Average Rating",
+          "native_property": "AWty",
+          "state": "mapped"
+        },
+        "award_period": {
+          "native_code": 3,
+          "label": "Of The Season",
+          "native_property": "AWdr",
+          "state": "mapped"
+        },
+        "recipient_type": {
+          "native_code": 7,
+          "label": "Squad Of Players",
+          "native_property": "AWrt",
+          "state": "mapped"
+        },
+        "winner_history": {
+          "state": "not_decoded",
+          "winners": null
+        },
+        "continent": {
+          "native_id": 3,
+          "database_index": 2,
+          "name": "Europe",
+          "abbreviation": "EUR",
+          "name_source": "stored_native_strings"
+        },
+        "competition": {
+          "native_id": 11,
+          "random_id": null,
+          "database_index": 7,
+          "name": "Premier League",
+          "short_name": "Premier League",
+          "abbreviation": "PL",
+          "name_source": "stored_native_strings"
+        },
+        "nation": {
+          "native_id": 765,
+          "database_index": 139,
+          "short_name": "England",
+          "abbreviation": "ENG",
+          "name_source": "stored_native_strings"
+        },
+        "award_ref": "Ju90BO5k6A-qQ4CY"
+      },
+      "raw8_97_hex": "080000000e9001000e900100f8f8f8ff502000ff000000ff000000ff000000ff010000000000000034ebc29b7600000034ebc29b76000000000000000000000001006c0701006c0700a0a4ae76000000d0cb033c7a000000581ad3aa760000000000000000000000e0b3f29a76000000ffffffff000000000e0000000125030200000000000700000000030000aa8c46"
+    },
+    {
+      "row": {
+        "native_id": 102418,
+        "database_index": 12,
+        "random_id": 102418,
+        "name": "Premier League Player of the Month",
+        "short_name": "Premier League Player of the Month",
+        "name_source": "stored_native_strings",
+        "record_scope": "award_definition",
+        "award_category": {
+          "native_code": 37,
+          "label": "Highest Average Rating",
+          "native_property": "AWty",
+          "state": "mapped"
+        },
+        "award_period": {
+          "native_code": 2,
+          "label": "Of The Month",
+          "native_property": "AWdr",
+          "state": "mapped"
+        },
+        "recipient_type": {
+          "native_code": 1,
+          "label": "Player",
+          "native_property": "AWrt",
+          "state": "mapped"
+        },
+        "winner_history": {
+          "state": "not_decoded",
+          "winners": null
+        },
+        "continent": {
+          "native_id": 3,
+          "database_index": 2,
+          "name": "Europe",
+          "abbreviation": "EUR",
+          "name_source": "stored_native_strings"
+        },
+        "competition": {
+          "native_id": 11,
+          "random_id": null,
+          "database_index": 7,
+          "name": "Premier League",
+          "short_name": "Premier League",
+          "abbreviation": "PL",
+          "name_source": "stored_native_strings"
+        },
+        "nation": {
+          "native_id": 765,
+          "database_index": 139,
+          "short_name": "England",
+          "abbreviation": "ENG",
+          "name_source": "stored_native_strings"
+        },
+        "award_ref": "_sp9ZnnIkJW9fUKR"
+      },
+      "raw8_97_hex": "0c0000001290010012900100f8f8f8ff502000ff000000ff000000ff000000ff0100000000000000ac6dc19b76000000ac6dc19b76000000000000000000000001006c0701006c0700a0a4ae76000000d0cb033c7a000000581ad3aa760000000000000000000000802d84b676000000ffffffff000000000f000000012502020000000000010002000000000096003c"
+    },
+    {
+      "row": {
+        "native_id": 102422,
+        "database_index": 16,
+        "random_id": 102422,
+        "name": "Premier League Young Player of the Month",
+        "short_name": "Premier League Young Player of the Month",
+        "name_source": "stored_native_strings",
+        "record_scope": "award_definition",
+        "award_category": {
+          "native_code": 37,
+          "label": "Highest Average Rating",
+          "native_property": "AWty",
+          "state": "mapped"
+        },
+        "award_period": {
+          "native_code": 2,
+          "label": "Of The Month",
+          "native_property": "AWdr",
+          "state": "mapped"
+        },
+        "recipient_type": {
+          "native_code": 1,
+          "label": "Player",
+          "native_property": "AWrt",
+          "state": "mapped"
+        },
+        "winner_history": {
+          "state": "not_decoded",
+          "winners": null
+        },
+        "continent": {
+          "native_id": 3,
+          "database_index": 2,
+          "name": "Europe",
+          "abbreviation": "EUR",
+          "name_source": "stored_native_strings"
+        },
+        "competition": {
+          "native_id": 11,
+          "random_id": null,
+          "database_index": 7,
+          "name": "Premier League",
+          "short_name": "Premier League",
+          "abbreviation": "PL",
+          "name_source": "stored_native_strings"
+        },
+        "nation": {
+          "native_id": 765,
+          "database_index": 139,
+          "short_name": "England",
+          "abbreviation": "ENG",
+          "name_source": "stored_native_strings"
+        },
+        "award_ref": "AU6e-3jd9mhG5ko_"
+      },
+      "raw8_97_hex": "100000001690010016900100f8f8f8ff502000ff000000ff000000ff000000ff0100000000000000147a679c76000000147a679c76000000000000000000000001006c0701006c0700a0a4ae76000000d0cb033c7a000000581ad3aa760000000000000000000000f02d84b676000000ffffffff000000000e000000012502020000000000010002000000170000003c"
+    },
+    {
+      "row": {
+        "native_id": 102426,
+        "database_index": 20,
+        "random_id": 102426,
+        "name": "Premier League Team of the Week",
+        "short_name": "Premier League Team of the Week",
+        "name_source": "stored_native_strings",
+        "record_scope": "award_definition",
+        "award_category": {
+          "native_code": 37,
+          "label": "Highest Average Rating",
+          "native_property": "AWty",
+          "state": "mapped"
+        },
+        "award_period": {
+          "native_code": 1,
+          "label": "Of The Week",
+          "native_property": "AWdr",
+          "state": "mapped"
+        },
+        "recipient_type": {
+          "native_code": 7,
+          "label": "Squad Of Players",
+          "native_property": "AWrt",
+          "state": "mapped"
+        },
+        "winner_history": {
+          "state": "not_decoded",
+          "winners": null
+        },
+        "continent": {
+          "native_id": 3,
+          "database_index": 2,
+          "name": "Europe",
+          "abbreviation": "EUR",
+          "name_source": "stored_native_strings"
+        },
+        "competition": {
+          "native_id": 11,
+          "random_id": null,
+          "database_index": 7,
+          "name": "Premier League",
+          "short_name": "Premier League",
+          "abbreviation": "PL",
+          "name_source": "stored_native_strings"
+        },
+        "nation": {
+          "native_id": 765,
+          "database_index": 139,
+          "short_name": "England",
+          "abbreviation": "ENG",
+          "name_source": "stored_native_strings"
+        },
+        "award_ref": "1Ar9mDQ2CbWm46_V"
+      },
+      "raw8_97_hex": "140000001a9001001a900100f8f8f8ff502000ff000000ff000000ff000000ff010000000000000064ebc29b7600000064ebc29b76000000000000000000000001006c0701006c0700a0a4ae76000000d0cb033c7a000000581ad3aa76000000000000000000000090b3f29a76000000ffffffff000000000e0000000125010200000000000700000000030000820000"
+    },
+    {
+      "row": {
+        "native_id": 107383,
+        "database_index": 97,
+        "random_id": 107383,
+        "name": "English Premier Division Head Coach of the Year",
+        "short_name": "Head Coach of the Year",
+        "name_source": "stored_native_strings",
+        "record_scope": "award_definition",
+        "award_category": {
+          "native_code": 3,
+          "label": "Manager",
+          "native_property": "AWty",
+          "state": "mapped"
+        },
+        "award_period": {
+          "native_code": 3,
+          "label": "Of The Season",
+          "native_property": "AWdr",
+          "state": "mapped"
+        },
+        "recipient_type": {
+          "native_code": 2,
+          "label": "Non Player",
+          "native_property": "AWrt",
+          "state": "mapped"
+        },
+        "winner_history": {
+          "state": "not_decoded",
+          "winners": null
+        },
+        "continent": {
+          "native_id": 3,
+          "database_index": 2,
+          "name": "Europe",
+          "abbreviation": "EUR",
+          "name_source": "stored_native_strings"
+        },
+        "competition": {
+          "native_id": 11,
+          "random_id": null,
+          "database_index": 7,
+          "name": "Premier League",
+          "short_name": "Premier League",
+          "abbreviation": "PL",
+          "name_source": "stored_native_strings"
+        },
+        "nation": {
+          "native_id": 765,
+          "database_index": 139,
+          "short_name": "England",
+          "abbreviation": "ENG",
+          "name_source": "stored_native_strings"
+        },
+        "award_ref": "jsV5pEGY8XW9-JQX"
+      },
+      "raw8_97_hex": "6100000077a3010077a30100f8f8f8ff502000ff000000ff000000ff000000ff01000000000000005481679c7600000064c7c49b76000000000000000000000001006c0701006c0700a0a4ae76000000d0cb033c7a000000581ad3aa76000000000000000000000060e748b876000000ffffffff00000000100000000103030200000000030200020000000000aa0046"
+    },
+    {
+      "row": {
+        "native_id": 107384,
+        "database_index": 98,
+        "random_id": 107384,
+        "name": "English Premier Division Head Coach of the Month",
+        "short_name": "Head Coach of the Month",
+        "name_source": "stored_native_strings",
+        "record_scope": "award_definition",
+        "award_category": {
+          "native_code": 3,
+          "label": "Manager",
+          "native_property": "AWty",
+          "state": "mapped"
+        },
+        "award_period": {
+          "native_code": 2,
+          "label": "Of The Month",
+          "native_property": "AWdr",
+          "state": "mapped"
+        },
+        "recipient_type": {
+          "native_code": 2,
+          "label": "Non Player",
+          "native_property": "AWrt",
+          "state": "mapped"
+        },
+        "winner_history": {
+          "state": "not_decoded",
+          "winners": null
+        },
+        "continent": {
+          "native_id": 3,
+          "database_index": 2,
+          "name": "Europe",
+          "abbreviation": "EUR",
+          "name_source": "stored_native_strings"
+        },
+        "competition": {
+          "native_id": 11,
+          "random_id": null,
+          "database_index": 7,
+          "name": "Premier League",
+          "short_name": "Premier League",
+          "abbreviation": "PL",
+          "name_source": "stored_native_strings"
+        },
+        "nation": {
+          "native_id": 765,
+          "database_index": 139,
+          "short_name": "England",
+          "abbreviation": "ENG",
+          "name_source": "stored_native_strings"
+        },
+        "award_ref": "6s9DmOBGKIqFrYyh"
+      },
+      "raw8_97_hex": "6200000078a3010078a30100f8f8f8ff502000ff000000ff000000ff000000ff0100000000000000fce844ad760000008cc7c49b76000000000000000000000001006c0701006c0700a0a4ae76000000d0cb033c7a000000581ad3aa760000000000000000000000602e84b676000000ffffffff000000000d000000010302020000000000020002000000000096003c"
+    },
+    {
+      "row": {
+        "native_id": 114746,
+        "database_index": 141,
+        "random_id": 114746,
+        "name": "English Player of the Year",
+        "short_name": "Player of the Year",
+        "name_source": "stored_native_strings",
+        "record_scope": "award_definition",
+        "award_category": {
+          "native_code": 37,
+          "label": "Highest Average Rating",
+          "native_property": "AWty",
+          "state": "mapped"
+        },
+        "award_period": {
+          "native_code": 3,
+          "label": "Of The Season",
+          "native_property": "AWdr",
+          "state": "mapped"
+        },
+        "recipient_type": {
+          "native_code": 1,
+          "label": "Player",
+          "native_property": "AWrt",
+          "state": "mapped"
+        },
+        "winner_history": {
+          "state": "not_decoded",
+          "winners": null
+        },
+        "continent": {
+          "native_id": 3,
+          "database_index": 2,
+          "name": "Europe",
+          "abbreviation": "EUR",
+          "name_source": "stored_native_strings"
+        },
+        "competition": {
+          "native_id": 11,
+          "random_id": null,
+          "database_index": 7,
+          "name": "Premier League",
+          "short_name": "Premier League",
+          "abbreviation": "PL",
+          "name_source": "stored_native_strings"
+        },
+        "nation": {
+          "native_id": 765,
+          "database_index": 139,
+          "short_name": "England",
+          "abbreviation": "ENG",
+          "name_source": "stored_native_strings"
+        },
+        "award_ref": "ZIKNTWKuP_IOLBUM"
+      },
+      "raw8_97_hex": "8d0000003ac001003ac00100f8f8f8ff502000ff000000ff000000ff000000ff010000000000000014f0c29b7600000014c7c49b76000000000000000000000001006c0701006c0700a0a4ae76000000d0cb033c7a000000581ad3aa760000000000000000000000c0e448b876000000ffffffff00000000110000000125030200020000030100020000000000be9646"
+    },
+    {
+      "row": {
+        "native_id": 150767,
+        "database_index": 369,
+        "random_id": 150767,
+        "name": "Premier League Top Goalscorer",
+        "short_name": "Premier League Top Goalscorer",
+        "name_source": "stored_native_strings",
+        "record_scope": "award_definition",
+        "award_category": {
+          "native_code": 4,
+          "label": "Top Goalscorer",
+          "native_property": "AWty",
+          "state": "mapped"
+        },
+        "award_period": {
+          "native_code": 3,
+          "label": "Of The Season",
+          "native_property": "AWdr",
+          "state": "mapped"
+        },
+        "recipient_type": {
+          "native_code": 1,
+          "label": "Player",
+          "native_property": "AWrt",
+          "state": "mapped"
+        },
+        "winner_history": {
+          "state": "not_decoded",
+          "winners": null
+        },
+        "continent": {
+          "native_id": 3,
+          "database_index": 2,
+          "name": "Europe",
+          "abbreviation": "EUR",
+          "name_source": "stored_native_strings"
+        },
+        "competition": {
+          "native_id": 11,
+          "random_id": null,
+          "database_index": 7,
+          "name": "Premier League",
+          "short_name": "Premier League",
+          "abbreviation": "PL",
+          "name_source": "stored_native_strings"
+        },
+        "nation": {
+          "native_id": 765,
+          "database_index": 139,
+          "short_name": "England",
+          "abbreviation": "ENG",
+          "name_source": "stored_native_strings"
+        },
+        "award_ref": "TYWIitMQDtQmuRGw"
+      },
+      "raw8_97_hex": "71010000ef4c0200ef4c0200f8f8f8ff502000ff000000ff000000ff000000ff010000000000000054f2c29b7600000054f2c29b76000000000000000000000001006c0701006c0700a0a4ae76000000d0cb033c7a000000581ad3aa76000000000000000000000040e648b876000000ffffffff00000000100000000104030200010001000100000000000000b4b400"
+    },
+    {
+      "row": {
+        "native_id": 168515,
+        "database_index": 415,
+        "random_id": 168515,
+        "name": "Premier League Golden Glove",
+        "short_name": "Premier League Golden Glove",
+        "name_source": "stored_native_strings",
+        "record_scope": "award_definition",
+        "award_category": {
+          "native_code": 44,
+          "label": "Most Clean Sheets",
+          "native_property": "AWty",
+          "state": "mapped"
+        },
+        "award_period": {
+          "native_code": 3,
+          "label": "Of The Season",
+          "native_property": "AWdr",
+          "state": "mapped"
+        },
+        "recipient_type": {
+          "native_code": 1,
+          "label": "Player",
+          "native_property": "AWrt",
+          "state": "mapped"
+        },
+        "winner_history": {
+          "state": "not_decoded",
+          "winners": null
+        },
+        "continent": {
+          "native_id": 3,
+          "database_index": 2,
+          "name": "Europe",
+          "abbreviation": "EUR",
+          "name_source": "stored_native_strings"
+        },
+        "competition": {
+          "native_id": 11,
+          "random_id": null,
+          "database_index": 7,
+          "name": "Premier League",
+          "short_name": "Premier League",
+          "abbreviation": "PL",
+          "name_source": "stored_native_strings"
+        },
+        "nation": {
+          "native_id": 765,
+          "database_index": 139,
+          "short_name": "England",
+          "abbreviation": "ENG",
+          "name_source": "stored_native_strings"
+        },
+        "award_ref": "oP1wvYGTevZK6_34"
+      },
+      "raw8_97_hex": "9f0100004392020043920200f8f8f8ff502000ff000000ff000000ff000000ff010000000000000074f9c29b7600000074f9c29b76000000000000000000000001006c0701006c0700a0a4ae76000000d0cb033c7a000000581ad3aa76000000000000000000000000e748b876000000ffffffff010000000f000000012c030200010001030100020000000000000000"
+    },
+    {
+      "row": {
+        "native_id": 5004896,
+        "database_index": 634,
+        "random_id": 5004896,
+        "name": "Premier League Goal of the Month",
+        "short_name": "Premier League Goal of the Month",
+        "name_source": "stored_native_strings",
+        "record_scope": "award_definition",
+        "award_category": {
+          "native_code": 15,
+          "label": "Goal",
+          "native_property": "AWty",
+          "state": "mapped"
+        },
+        "award_period": {
+          "native_code": 2,
+          "label": "Of The Month",
+          "native_property": "AWdr",
+          "state": "mapped"
+        },
+        "recipient_type": {
+          "native_code": 1,
+          "label": "Player",
+          "native_property": "AWrt",
+          "state": "mapped"
+        },
+        "winner_history": {
+          "state": "not_decoded",
+          "winners": null
+        },
+        "continent": {
+          "native_id": 3,
+          "database_index": 2,
+          "name": "Europe",
+          "abbreviation": "EUR",
+          "name_source": "stored_native_strings"
+        },
+        "competition": {
+          "native_id": 11,
+          "random_id": null,
+          "database_index": 7,
+          "name": "Premier League",
+          "short_name": "Premier League",
+          "abbreviation": "PL",
+          "name_source": "stored_native_strings"
+        },
+        "nation": {
+          "native_id": 765,
+          "database_index": 139,
+          "short_name": "England",
+          "abbreviation": "ENG",
+          "name_source": "stored_native_strings"
+        },
+        "award_ref": "e-BwDbBb29SvqaIu"
+      },
+      "raw8_97_hex": "7a020000605e4c00605e4c00f8f8f8ff502000ff000000ff000000ff000000ff01000000000000000c9cc19b760000000c9cc19b76000000000000000000000001006c0701006c0700a0a4ae76000000d0cb033c7a000000581ad3aa760000000000000000000000d02e2c9c76000000ffffffff000000000c000000010f02020002000000010002000000000000003c"
+    },
+    {
+      "row": {
+        "native_id": 5004897,
+        "database_index": 635,
+        "random_id": 5004897,
+        "name": "Premier League Goal of the Season",
+        "short_name": "Premier League Goal of the Season",
+        "name_source": "stored_native_strings",
+        "record_scope": "award_definition",
+        "award_category": {
+          "native_code": 15,
+          "label": "Goal",
+          "native_property": "AWty",
+          "state": "mapped"
+        },
+        "award_period": {
+          "native_code": 3,
+          "label": "Of The Season",
+          "native_property": "AWdr",
+          "state": "mapped"
+        },
+        "recipient_type": {
+          "native_code": 1,
+          "label": "Player",
+          "native_property": "AWrt",
+          "state": "mapped"
+        },
+        "winner_history": {
+          "state": "not_decoded",
+          "winners": null
+        },
+        "continent": {
+          "native_id": 3,
+          "database_index": 2,
+          "name": "Europe",
+          "abbreviation": "EUR",
+          "name_source": "stored_native_strings"
+        },
+        "competition": {
+          "native_id": 11,
+          "random_id": null,
+          "database_index": 7,
+          "name": "Premier League",
+          "short_name": "Premier League",
+          "abbreviation": "PL",
+          "name_source": "stored_native_strings"
+        },
+        "nation": {
+          "native_id": 765,
+          "database_index": 139,
+          "short_name": "England",
+          "abbreviation": "ENG",
+          "name_source": "stored_native_strings"
+        },
+        "award_ref": "64SVr4gmnLuZkxaO"
+      },
+      "raw8_97_hex": "7b020000615e4c00615e4c00f8f8f8ff502000ff000000ff000000ff000000ff0100000000000000449cc19b76000000449cc19b76000000000000000000000001006c0701006c0700a0a4ae76000000d0cb033c7a000000581ad3aa760000000000000000000000402f2c9c76000000ffffffff000000000d000000010f030200020000000100010000000000000046"
+    },
+    {
+      "row": {
+        "native_id": 2000256229,
+        "database_index": 3427,
+        "random_id": 2000256229,
+        "name": "Northwest Football Awards Player of the Season - Premier League",
+        "short_name": "Northwest Football Awards Player of the Season - Premier League",
+        "name_source": "stored_native_strings",
+        "record_scope": "award_definition",
+        "award_category": {
+          "native_code": 37,
+          "label": "Highest Average Rating",
+          "native_property": "AWty",
+          "state": "mapped"
+        },
+        "award_period": {
+          "native_code": 3,
+          "label": "Of The Season",
+          "native_property": "AWdr",
+          "state": "mapped"
+        },
+        "recipient_type": {
+          "native_code": 1,
+          "label": "Player",
+          "native_property": "AWrt",
+          "state": "mapped"
+        },
+        "winner_history": {
+          "state": "not_decoded",
+          "winners": null
+        },
+        "continent": {
+          "native_id": 3,
+          "database_index": 2,
+          "name": "Europe",
+          "abbreviation": "EUR",
+          "name_source": "stored_native_strings"
+        },
+        "competition": {
+          "native_id": 11,
+          "random_id": null,
+          "database_index": 7,
+          "name": "Premier League",
+          "short_name": "Premier League",
+          "abbreviation": "PL",
+          "name_source": "stored_native_strings"
+        },
+        "nation": {
+          "native_id": 765,
+          "database_index": 139,
+          "short_name": "England",
+          "abbreviation": "ENG",
+          "name_source": "stored_native_strings"
+        },
+        "award_ref": "RNMU3NIMCLxD84zk"
+      },
+      "raw8_97_hex": "630d0000e57c3977e57c3977f8f8f8ff502000ff000000ff000000ff000000ff010000000000000014477db17600000014477db176000000000000000000000001006c073301e90700a0a4ae76000000d0cb033c7a000000581ad3aa76000000c001cfa87600000080e548b876000000ffffffff00000000080000000125030900020000030100020000000000000046"
+    },
+    {
+      "row": {
+        "native_id": 2000463068,
+        "database_index": 3825,
+        "random_id": 2000463068,
+        "name": "Premier League Playmaker",
+        "short_name": "Premier League Playmaker",
+        "name_source": "stored_native_strings",
+        "record_scope": "award_definition",
+        "award_category": {
+          "native_code": 30,
+          "label": "Most Assists",
+          "native_property": "AWty",
+          "state": "mapped"
+        },
+        "award_period": {
+          "native_code": 3,
+          "label": "Of The Season",
+          "native_property": "AWdr",
+          "state": "mapped"
+        },
+        "recipient_type": {
+          "native_code": 1,
+          "label": "Player",
+          "native_property": "AWrt",
+          "state": "mapped"
+        },
+        "winner_history": {
+          "state": "not_decoded",
+          "winners": null
+        },
+        "continent": {
+          "native_id": 3,
+          "database_index": 2,
+          "name": "Europe",
+          "abbreviation": "EUR",
+          "name_source": "stored_native_strings"
+        },
+        "competition": {
+          "native_id": 11,
+          "random_id": null,
+          "database_index": 7,
+          "name": "Premier League",
+          "short_name": "Premier League",
+          "abbreviation": "PL",
+          "name_source": "stored_native_strings"
+        },
+        "nation": {
+          "native_id": 765,
+          "database_index": 139,
+          "short_name": "England",
+          "abbreviation": "ENG",
+          "name_source": "stored_native_strings"
+        },
+        "award_ref": "jpRSooIRsZbo2QDE"
+      },
+      "raw8_97_hex": "f10e0000dca43c77dca43c77f8f8f8ff502000ff000000ff000000ff000000ff0100000000000000c48cc59b76000000c48cc59b76000000000000000000000001006c0701006c0700a0a4ae76000000d0cb033c7a000000581ad3aa760000000000000000000000e0e548b876000000ffffffff000000000e000000011e030200010001000100020000000000a0a000"
+    }
+  ]
+}

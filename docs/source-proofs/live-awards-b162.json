@@ -1,0 +1,454 @@
+{
+  "state": "verified_live_award_definitions_and_relationships",
+  "plugin_sha256": "774cacde63567fd3901c47719e7a6ed94cc3a0a62e9b94989dcac6b4890ec0e1",
+  "record_rtti": "N2db5AWARDE",
+  "record_vtable": "0x559b4a0",
+  "getter": "0xd82d7c",
+  "singleton": "0x56d2d18",
+  "table_vtable": "0x55a1418",
+  "record_count": 3883,
+  "editor_path": "/Volumes/4TB Private/Offloaded/FMCP 27/evidence/editor-frame-53.bin",
+  "editor_sha256": "2a77d27c9f4defba0d8d08eae83efb36f4776975404a587c35123ee0f9bfe22d",
+  "editor_fields": {
+    "AWna": {
+      "field": "AWna",
+      "name": "Name",
+      "type": "string",
+      "is_client_field": "true",
+      "is_language_field": "true",
+      "enums": {}
+    },
+    "AWsn": {
+      "field": "AWsn",
+      "name": "Short Name",
+      "type": "string",
+      "is_client_field": "true",
+      "is_language_field": "true",
+      "max_length": "25",
+      "enums": {}
+    },
+    "AWci": {
+      "field": "AWci",
+      "name": "Continent",
+      "type": "database_record_unique_id",
+      "database_table_type": "continent",
+      "is_optional": "true",
+      "is_client_field": "true",
+      "enums": {}
+    },
+    "AWni": {
+      "field": "AWni",
+      "name": "Nation",
+      "type": "database_record_unique_id",
+      "database_table_type": "nation",
+      "is_optional": "true",
+      "is_client_field": "true",
+      "enums": {}
+    },
+    "AWmi": {
+      "field": "AWmi",
+      "name": "Competition",
+      "type": "database_record_unique_id",
+      "database_table_type": "competition",
+      "is_optional": "true",
+      "is_client_field": "true",
+      "enums": {}
+    },
+    "AWrt": {
+      "field": "AWrt",
+      "name": "Award Recipient Type[COMMENT: language field name]",
+      "type": "enum",
+      "is_client_field": "true",
+      "enum_values": null,
+      "enums": {
+        "0": "Not Set[COMMENT: award recipient type]",
+        "1": "Player[COMMENT: award recipient type]",
+        "2": "Non Player[COMMENT: award recipient type]",
+        "3": "Player or Non Player[COMMENT: award recipient type]",
+        "4": "Referee[COMMENT: award recipient type]",
+        "6": "Rookie Player[COMMENT: award recipient type]",
+        "7": "Squad Of Players[COMMENT: award recipient type]",
+        "8": "Club or Nation[COMMENT: award recipient type]"
+      }
+    },
+    "AWty": {
+      "field": "AWty",
+      "name": "Award Type[COMMENT: language field name]",
+      "type": "enum",
+      "is_client_field": "true",
+      "enum_values": null,
+      "enums": {
+        "-1": "Ignore[COMMENT: award type]",
+        "0": "Not Set[COMMENT: award type]",
+        "1": "Club[COMMENT: award type]",
+        "3": "Manager[COMMENT: award type]",
+        "4": "Top Goalscorer[COMMENT: award type]",
+        "5": "Most Player Of The Match[COMMENT: award type]",
+        "14": "Personality[COMMENT: award type]",
+        "15": "Goal[COMMENT: award type]",
+        "16": "Referee[COMMENT: award type]",
+        "19": "Recruitment Policy[COMMENT: award type]",
+        "30": "Most Assists[COMMENT: award type]",
+        "31": "Quickest Goal[COMMENT: award type]",
+        "33": "Flair Player[COMMENT: award type]",
+        "37": "Highest Average Rating[COMMENT: award type]",
+        "38": "Highest Reputation[COMMENT: award type]",
+        "39": "Least Goals Conceded[COMMENT: award type]",
+        "44": "Most Clean Sheets[COMMENT: award type]",
+        "41": "Most Improved[COMMENT: award type]",
+        "42": "Fair Play Team[COMMENT: award type]",
+        "43": "Comeback[COMMENT: award type]"
+      }
+    },
+    "AWdr": {
+      "field": "AWdr",
+      "name": "Award Period[COMMENT: language field name]",
+      "type": "enum",
+      "is_client_field": "true",
+      "enum_values": null,
+      "enums": {
+        "0": "Invalid[COMMENT: award period type]",
+        "1": "Of The Week[COMMENT: award period type]",
+        "2": "Of The Month[COMMENT: award period type]",
+        "3": "Of The Season[COMMENT: award period type]",
+        "4": "Of The Competition[COMMENT: award period type]",
+        "5": "Of The Year[COMMENT: award period type]",
+        "6": "On Specified Date[COMMENT: award period type]",
+        "8": "Of The Opening Or Closing Season[COMMENT: award period type]"
+      }
+    },
+    "AWda": {
+      "field": "AWda",
+      "name": "Award Date[COMMENT: language field name]",
+      "type": "date",
+      "is_client_field": "true",
+      "dependencies": null,
+      "enums": {}
+    }
+  },
+  "instruction_guards": [
+    {
+      "rva": "0xd82df4",
+      "raw": "28ad8d52",
+      "instruction": [
+        "mov",
+        "w8, #0x6d69"
+      ]
+    },
+    {
+      "rva": "0xd82df8",
+      "raw": "e82aa872",
+      "instruction": [
+        "movk",
+        "w8, #0x4157, lsl #16"
+      ]
+    },
+    {
+      "rva": "0xd82e00",
+      "raw": "e06c0054",
+      "instruction": [
+        "b.eq",
+        "#0xd83b9c"
+      ]
+    },
+    {
+      "rva": "0xd82e04",
+      "raw": "28cc8d52",
+      "instruction": [
+        "mov",
+        "w8, #0x6e61"
+      ]
+    },
+    {
+      "rva": "0xd82e08",
+      "raw": "e82aa872",
+      "instruction": [
+        "movk",
+        "w8, #0x4157, lsl #16"
+      ]
+    },
+    {
+      "rva": "0xd82e18",
+      "raw": "881a40f9",
+      "instruction": [
+        "ldr",
+        "x8, [x20, #0x30]"
+      ]
+    },
+    {
+      "rva": "0xd83424",
+      "raw": "c86d8e52",
+      "instruction": [
+        "mov",
+        "w8, #0x736e"
+      ]
+    },
+    {
+      "rva": "0xd83428",
+      "raw": "e82aa872",
+      "instruction": [
+        "movk",
+        "w8, #0x4157, lsl #16"
+      ]
+    },
+    {
+      "rva": "0xd83438",
+      "raw": "881e40f9",
+      "instruction": [
+        "ldr",
+        "x8, [x20, #0x38]"
+      ]
+    },
+    {
+      "rva": "0xd8338c",
+      "raw": "286d8c52",
+      "instruction": [
+        "mov",
+        "w8, #0x6369"
+      ]
+    },
+    {
+      "rva": "0xd83390",
+      "raw": "e82aa872",
+      "instruction": [
+        "movk",
+        "w8, #0x4157, lsl #16"
+      ]
+    },
+    {
+      "rva": "0xd83398",
+      "raw": "00240054",
+      "instruction": [
+        "b.eq",
+        "#0xd83818"
+      ]
+    },
+    {
+      "rva": "0xd83818",
+      "raw": "892a40f9",
+      "instruction": [
+        "ldr",
+        "x9, [x20, #0x50]"
+      ]
+    },
+    {
+      "rva": "0xd835a0",
+      "raw": "28cd8d52",
+      "instruction": [
+        "mov",
+        "w8, #0x6e69"
+      ]
+    },
+    {
+      "rva": "0xd835a4",
+      "raw": "e82aa872",
+      "instruction": [
+        "movk",
+        "w8, #0x4157, lsl #16"
+      ]
+    },
+    {
+      "rva": "0xd835ac",
+      "raw": "a02b0054",
+      "instruction": [
+        "b.eq",
+        "#0xd83b20"
+      ]
+    },
+    {
+      "rva": "0xd83b20",
+      "raw": "893240f9",
+      "instruction": [
+        "ldr",
+        "x9, [x20, #0x60]"
+      ]
+    },
+    {
+      "rva": "0xd83b9c",
+      "raw": "892e40f9",
+      "instruction": [
+        "ldr",
+        "x9, [x20, #0x58]"
+      ]
+    },
+    {
+      "rva": "0xd83520",
+      "raw": "288f8e52",
+      "instruction": [
+        "mov",
+        "w8, #0x7479"
+      ]
+    },
+    {
+      "rva": "0xd83524",
+      "raw": "e82aa872",
+      "instruction": [
+        "movk",
+        "w8, #0x4157, lsl #16"
+      ]
+    },
+    {
+      "rva": "0xd8352c",
+      "raw": "c02c0054",
+      "instruction": [
+        "b.eq",
+        "#0xd83ac4"
+      ]
+    },
+    {
+      "rva": "0xd83ac4",
+      "raw": "9416c239",
+      "instruction": [
+        "ldrsb",
+        "w20, [x20, #0x85]"
+      ]
+    },
+    {
+      "rva": "0xd82f5c",
+      "raw": "488e8c52",
+      "instruction": [
+        "mov",
+        "w8, #0x6472"
+      ]
+    },
+    {
+      "rva": "0xd82f60",
+      "raw": "e82aa872",
+      "instruction": [
+        "movk",
+        "w8, #0x4157, lsl #16"
+      ]
+    },
+    {
+      "rva": "0xd82f68",
+      "raw": "406b0054",
+      "instruction": [
+        "b.eq",
+        "#0xd83cd0"
+      ]
+    },
+    {
+      "rva": "0xd83cd0",
+      "raw": "941ac239",
+      "instruction": [
+        "ldrsb",
+        "w20, [x20, #0x86]"
+      ]
+    },
+    {
+      "rva": "0xd83310",
+      "raw": "884e8e52",
+      "instruction": [
+        "mov",
+        "w8, #0x7274"
+      ]
+    },
+    {
+      "rva": "0xd83314",
+      "raw": "e82aa872",
+      "instruction": [
+        "movk",
+        "w8, #0x4157, lsl #16"
+      ]
+    },
+    {
+      "rva": "0xd8331c",
+      "raw": "00250054",
+      "instruction": [
+        "b.eq",
+        "#0xd837bc"
+      ]
+    },
+    {
+      "rva": "0xd837bc",
+      "raw": "9436c239",
+      "instruction": [
+        "ldrsb",
+        "w20, [x20, #0x8d]"
+      ]
+    },
+    {
+      "rva": "0xd83414",
+      "raw": "086d8e52",
+      "instruction": [
+        "mov",
+        "w8, #0x7368"
+      ]
+    },
+    {
+      "rva": "0xd83418",
+      "raw": "e82aa872",
+      "instruction": [
+        "movk",
+        "w8, #0x4157, lsl #16"
+      ]
+    },
+    {
+      "rva": "0xd83420",
+      "raw": "80200054",
+      "instruction": [
+        "b.eq",
+        "#0xd83830"
+      ]
+    },
+    {
+      "rva": "0xd83838",
+      "raw": "38912594",
+      "instruction": [
+        "bl",
+        "#0x16e7d18"
+      ]
+    },
+    {
+      "rva": "0x16e7d68",
+      "raw": "084d41f9",
+      "instruction": [
+        "ldr",
+        "x8, [x8, #0x298]"
+      ]
+    },
+    {
+      "rva": "0x16e7d90",
+      "raw": "080d40f9",
+      "instruction": [
+        "ldr",
+        "x8, [x8, #0x18]"
+      ]
+    },
+    {
+      "rva": "0x16e7d94",
+      "raw": "1f0114eb",
+      "instruction": [
+        "cmp",
+        "x8, x20"
+      ]
+    }
+  ],
+  "selected_raw_control_count": 15,
+  "premier_league_definitions": 15,
+  "source_save": {
+    "name": "Cesar Jules - Newcastle",
+    "created_date": "2025-10-23",
+    "created_version": 2223821,
+    "save_count": 426,
+    "last_saved_date": "2030-11-02",
+    "current_date": "2030-11-02",
+    "coaches": [
+      {
+        "name": "Cesar  Jules",
+        "club": {
+          "name": "Newcastle United",
+          "short_name": "Newcastle"
+        }
+      }
+    ]
+  },
+  "limits": [
+    "Stored award definitions only; category/period/recipient labels do not identify actual winners",
+    "Null relationships differ from unavailable/unmapped enum meanings",
+    "AWsh official starting-history getter scans STARTING_AWARD_HISTORY singleton56D3298 matching award pointer+18; current priorrootcapturecount0, not proof of no career winners",
+    "Runtime GAME_AWARD winner/decision source remains unproved and unexposed",
+    "Unmapped period codes7/9 stay unknown, not guessed from names",
+    "No UI, native calls, memory writes, or .fm archive decode"
+  ]
+}

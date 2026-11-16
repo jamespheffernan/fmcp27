@@ -1,0 +1,192 @@
+{
+  "title": "Young left-back shortlist",
+  "subtitle": "Successor to Callum Reid (31) for an inverted full-back role, scouted pool of eight",
+  "game_date": "2028-01-14",
+  "view": "manager",
+  "summary": "Pursue **Tomás Ferreira** first: his scouted pace, stamina and positioning ranges already sit at or above Reid's level, and at about £6.5M he fits the £9M budget with room for wages. Keep **Noah Verbeek** as the cheaper alternative and ask for a fuller report on Ilyas Benali before ruling him out.",
+  "sections": [
+    {
+      "type": "kpis",
+      "items": [
+        { "label": "Candidates scouted", "value": 8 },
+        { "label": "Transfer budget left", "value": 9000000, "type": "money" },
+        { "label": "Wage room", "value": 38000, "type": "money", "unit": "p/w" },
+        { "label": "Reid's contract ends", "value": "Jun 2029", "type": "text", "note": "18 months of cover remain" }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "What the role needs",
+      "paragraphs": [
+        "The 4-2-3-1 asks the left-back to tuck into midfield in possession and recover the flank when the ball is lost. That puts pace, stamina and positioning first, with passing and composure close behind."
+      ],
+      "bullets": [
+        "Recovery: **Pace** and **Acceleration** of 14 or more.",
+        "Inverted build-up: **Passing**, **Composure** and **Decisions** of 12 or more.",
+        "Availability: under 23, contract within reach, no reported interest from a bigger club."
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Shortlist as the scouts see it",
+      "note": "Attribute bars use the fixed 1–20 scale. A band means the scouts only know the value lies inside it; a dash means nothing is known yet.",
+      "columns": [
+        { "key": "name", "label": "Player" },
+        { "key": "age", "label": "Age", "type": "number" },
+        { "key": "club", "label": "Club" },
+        { "key": "value", "label": "Est. value", "type": "money" },
+        { "key": "wage", "label": "Wage", "type": "money", "unit": "p/w" },
+        { "key": "expires", "label": "Contract ends", "type": "date" },
+        { "key": "pace", "label": "Pace", "type": "range" },
+        { "key": "stamina", "label": "Stamina", "type": "range" },
+        { "key": "positioning", "label": "Positioning", "type": "range" },
+        { "key": "passing", "label": "Passing", "type": "range" },
+        { "key": "decisions", "label": "Decisions", "type": "range" },
+        { "key": "knowledge", "label": "Scout knowledge", "type": "percent", "scale": { "min": 0, "max": 100, "style": "bar" } }
+      ],
+      "rows": [
+        { "name": "Tomás Ferreira", "age": 20, "club": "SC Olhão", "value": 6500000, "wage": 14500, "expires": "2029-06-30", "pace": { "min": 15, "max": 17 }, "stamina": 15, "positioning": { "min": 12, "max": 14 }, "passing": { "min": 12, "max": 15 }, "decisions": { "min": 11, "max": 14 }, "knowledge": 70 },
+        { "name": "Noah Verbeek", "age": 21, "club": "KV Westhoek", "value": 3200000, "wage": 9000, "expires": "2028-06-30", "pace": 14, "stamina": { "min": 13, "max": 15 }, "positioning": { "min": 11, "max": 13 }, "passing": 13, "decisions": { "min": 12, "max": 13 }, "knowledge": 85 },
+        { "name": "Ilyas Benali", "age": 19, "club": "Racing Brabant", "value": 4800000, "wage": 7500, "expires": "2030-06-30", "pace": { "min": 14, "max": 18 }, "stamina": null, "positioning": { "min": 9, "max": 14 }, "passing": null, "decisions": { "min": 9, "max": 15 }, "knowledge": 30 },
+        { "name": "Sami Lindqvist", "age": 22, "club": "FC Nordhavn", "value": 5100000, "wage": 16000, "expires": "2029-06-30", "pace": { "min": 13, "max": 14 }, "stamina": 16, "positioning": 14, "passing": { "min": 10, "max": 12 }, "decisions": 13, "knowledge": 90 },
+        { "name": "Ethan Moyo", "age": 20, "club": "Atlético Ribeira", "value": 7800000, "wage": 21000, "expires": "2031-06-30", "pace": 17, "stamina": { "min": 12, "max": 14 }, "positioning": { "min": 10, "max": 12 }, "passing": { "min": 11, "max": 13 }, "decisions": { "min": 9, "max": 12 }, "knowledge": 75 },
+        { "name": "Mateo Quiroga", "age": 21, "club": "Dinamo Varna", "value": 2400000, "wage": 6000, "expires": "2028-12-31", "pace": { "min": 12, "max": 14 }, "stamina": { "min": 14, "max": 16 }, "positioning": { "min": 12, "max": 13 }, "passing": { "min": 13, "max": 15 }, "decisions": { "min": 12, "max": 14 }, "knowledge": 60 },
+        { "name": "Oscar Henningsen", "age": 18, "club": "Lyngby Vest", "value": 1600000, "wage": 2500, "expires": "2029-06-30", "pace": { "min": 13, "max": 16 }, "stamina": { "min": 10, "max": 14 }, "positioning": { "min": 7, "max": 11 }, "passing": { "min": 9, "max": 13 }, "decisions": null, "knowledge": 35 },
+        { "name": "Kian Walsh", "age": 22, "club": "Kingsmere Town U23", "value": 900000, "wage": 4000, "expires": "2028-06-30", "pace": 13, "stamina": 14, "positioning": 12, "passing": 12, "decisions": 11, "knowledge": 100 }
+      ],
+      "highlight_rows": [0]
+    },
+    {
+      "type": "player_cards",
+      "title": "The three to act on",
+      "players": [
+        {
+          "name": "Tomás Ferreira",
+          "subtitle": "D/WB (L) · 20 · SC Olhão · Portugal",
+          "tags": ["First choice", "Interested in joining"],
+          "facts": [
+            { "label": "Est. value", "value": "£6.5M" },
+            { "label": "Wage", "value": "£14.5K p/w" },
+            { "label": "Contract", "value": "Jun 2029" },
+            { "label": "Scout knowledge", "value": "70%" }
+          ],
+          "key_attributes": ["Pace", "Acceleration", "Stamina", "Positioning", "Passing", "Decisions"],
+          "attributes": {
+            "technical": [
+              { "label": "Crossing", "value": { "min": 11, "max": 13 } },
+              { "label": "Passing", "value": { "min": 12, "max": 15 } },
+              { "label": "Tackling", "value": 13 },
+              { "label": "Technique", "value": { "min": 12, "max": 14 } }
+            ],
+            "mental": [
+              { "label": "Composure", "value": { "min": 11, "max": 14 } },
+              { "label": "Decisions", "value": { "min": 11, "max": 14 } },
+              { "label": "Positioning", "value": { "min": 12, "max": 14 } },
+              { "label": "Work Rate", "value": 15 }
+            ],
+            "physical": [
+              { "label": "Acceleration", "value": 16 },
+              { "label": "Pace", "value": { "min": 15, "max": 17 } },
+              { "label": "Stamina", "value": 15 }
+            ]
+          },
+          "use_when": "You want a starter within a season who can already recover the flank; bid before the summer, when two Portuguese sides are expected to move."
+        },
+        {
+          "name": "Noah Verbeek",
+          "subtitle": "D/WB (L), DM · 21 · KV Westhoek · Netherlands",
+          "tags": ["Value option"],
+          "facts": [
+            { "label": "Est. value", "value": "£3.2M" },
+            { "label": "Wage", "value": "£9K p/w" },
+            { "label": "Contract", "value": "Jun 2028" },
+            { "label": "Scout knowledge", "value": "85%" }
+          ],
+          "key_attributes": ["Pace", "Acceleration", "Stamina", "Positioning", "Passing", "Decisions"],
+          "attributes": {
+            "technical": [
+              { "label": "Crossing", "value": 12 },
+              { "label": "Passing", "value": 13 },
+              { "label": "Tackling", "value": { "min": 12, "max": 13 } },
+              { "label": "Technique", "value": 12 }
+            ],
+            "mental": [
+              { "label": "Composure", "value": 13 },
+              { "label": "Decisions", "value": { "min": 12, "max": 13 } },
+              { "label": "Positioning", "value": { "min": 11, "max": 13 } },
+              { "label": "Work Rate", "value": 14 }
+            ],
+            "physical": [
+              { "label": "Acceleration", "value": 13 },
+              { "label": "Pace", "value": 14 },
+              { "label": "Stamina", "value": { "min": 13, "max": 15 } }
+            ]
+          },
+          "use_when": "Ferreira's price rises past £8M; Verbeek's contract runs out in June, so a pre-contract is possible from now."
+        },
+        {
+          "name": "Ilyas Benali",
+          "subtitle": "D/WB (L) · 19 · Racing Brabant · Morocco",
+          "tags": ["Needs a full report"],
+          "facts": [
+            { "label": "Est. value", "value": "£4.8M" },
+            { "label": "Wage", "value": "£7.5K p/w" },
+            { "label": "Contract", "value": "Jun 2030" },
+            { "label": "Scout knowledge", "value": "30%" }
+          ],
+          "key_attributes": ["Pace", "Acceleration", "Stamina", "Positioning", "Passing", "Decisions"],
+          "attributes": {
+            "technical": [
+              { "label": "Crossing", "value": { "min": 10, "max": 15 } },
+              { "label": "Passing", "value": null },
+              { "label": "Tackling", "value": { "min": 9, "max": 14 } },
+              { "label": "Technique", "value": null }
+            ],
+            "mental": [
+              { "label": "Composure", "value": null },
+              { "label": "Decisions", "value": { "min": 9, "max": 15 } },
+              { "label": "Positioning", "value": { "min": 9, "max": 14 } },
+              { "label": "Work Rate", "value": { "min": 12, "max": 16 } }
+            ],
+            "physical": [
+              { "label": "Acceleration", "value": { "min": 15, "max": 18 } },
+              { "label": "Pace", "value": { "min": 14, "max": 18 } },
+              { "label": "Stamina", "value": null }
+            ]
+          },
+          "use_when": "A scout covers two more Racing Brabant matches. The ranges are too wide to judge the role yet."
+        }
+      ]
+    },
+    {
+      "type": "scatter",
+      "title": "Price against readiness",
+      "note": "Readiness is the midpoint of the five role attributes the scouts can see. Wide ranges make a midpoint uncertain, so treat Benali and Henningsen as provisional.",
+      "x_label": "Estimated value",
+      "x_unit": "£M",
+      "y_label": "Role readiness (1–20 midpoint)",
+      "label_points": "all",
+      "reference_lines": [{ "axis": "x", "value": 9, "label": "Budget £9M" }, { "axis": "y", "value": 13.4, "label": "Reid today 13.4" }],
+      "points": [
+        { "x": 6.5, "y": 14.4, "label": "Ferreira", "highlight": true },
+        { "x": 3.2, "y": 13.3, "label": "Verbeek", "highlight": true },
+        { "x": 4.8, "y": 13.2, "label": "Benali", "highlight": true },
+        { "x": 5.1, "y": 13.7, "label": "Lindqvist" },
+        { "x": 7.8, "y": 13.1, "label": "Moyo" },
+        { "x": 2.4, "y": 13.6, "label": "Quiroga" },
+        { "x": 1.6, "y": 11.2, "label": "Henningsen" },
+        { "x": 0.9, "y": 12.4, "label": "Walsh" }
+      ]
+    }
+  ],
+  "caveats": [
+    "Ranges are what the scouts have seen; the true value can sit anywhere inside the band. Bands were not averaged into a single rating except for the readiness midpoint, which is marked provisional.",
+    "Interest in joining is the latest dated assessment (2 Jan 2028) and does not prove present willingness.",
+    "Estimated values are the scouts' figures; a selling club can ask for more."
+  ],
+  "sources": [
+    "fm_get_manager_visible_attributes for eight players, 14 Jan 2028",
+    "fm_get_player_assessments with joining interest, latest record 2 Jan 2028",
+    "fm_get_club_finances, transfer and wage budget, 14 Jan 2028"
+  ]
+}

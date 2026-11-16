@@ -1,0 +1,166 @@
+[
+  {
+    "source": "/Volumes/4TB Private/Offloaded/FMCP 27/evidence/batches/saved-human-person-83/acceptance/selected-player.json",
+    "source_metadata": {
+      "state": "expected_selected_before_product_calls_record_raw_and_original_name_rows_checked_full_spool_audit_pending",
+      "selection": "first regular PLAYER in the new main append journal by ordinal/type only; no name/rating criterion",
+      "filename": "Cesar Jules - Newcastle.fm",
+      "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+      "component_sha256": "4d563471a32d61d36faf78f1302597cb82e9e8c56ca870234d6ec797c62d58e0",
+      "journal": "evidence/batches/saved-person-extension-66/continuous_append/8ff7b7053760.append.jsonl",
+      "journal_sha256": "f87d9fa53f76e5ed90cac471e0d595325a3d77b0cab7272b476211937a33e405",
+      "journal_line": 5061,
+      "person_index": 114729,
+      "record_kind": "ACTUAL_PLAYER",
+      "signed_tag": 2,
+      "native_identity": {
+        "database_index": 114729,
+        "native_id": 2002084196,
+        "secondary_id": 2002084196
+      },
+      "header_relative_tag_offset": 77692360,
+      "header_relative_end": 77693302,
+      "component_tag_offset": 173774037,
+      "component_end": 173774979,
+      "record_sha256": "2fb743c543f92d9b86e3693dd03e9f2ddeaf908a298f059c4f3262e43f1c4fb8",
+      "original_name_fields": [
+        {
+          "namespace": "first",
+          "stored_index": 200420,
+          "state": "decoded",
+          "text": "Claudio",
+          "raw_hex": "436c617564696f",
+          "source_start": 83330067,
+          "source_end": 83330074
+        },
+        {
+          "namespace": "second",
+          "stored_index": 406240,
+          "state": "decoded",
+          "text": "Silva",
+          "raw_hex": "53696c7661",
+          "source_start": 91224690,
+          "source_end": 91224695
+        },
+        {
+          "namespace": "common",
+          "stored_index": -1,
+          "state": "null_reference",
+          "text": null,
+          "raw_hex": null
+        }
+      ],
+      "ability": {
+        "current": 82,
+        "potential": 111,
+        "native_signed16_record_offsets": [
+          7,
+          9
+        ],
+        "property_proof": "prior frozen PCAB/PPAB getters and paired CFD388 first10-byte prefix; raw arithmetic only"
+      },
+      "scouting_criteria": {
+        "ability.current": {
+          "min": 82,
+          "max": 82
+        },
+        "ability.potential": {
+          "min": 111,
+          "max": 111
+        }
+      },
+      "whole_population_scout_matches": "pending independent all-row raw audit, including combined rows with the same leading PLAYER-specific codec",
+      "name_candidate_query": {
+        "first_name": "Claudio",
+        "surname": "Silva",
+        "match_mode": "exact"
+      },
+      "name_query_expectation": "At least this same-pin canonical identity/name witness; candidate-only API may have additional witnesses, so no unique/whole-population absence claim.",
+      "canonical_name_query_expectation": "fm_get_saved_person_records must return this exact index/class/span/hash/identity/name fields once the source prefix is reached.",
+      "source_scope": "Existing immutable whole-component spool with frozen original frame/pin proof; selected record and name bytes independently reread here. Full spool digest/census follows in separate bounded host audit.",
+      "no_product_imports_or_calls": true
+    },
+    "raw_hex": "026a0e6d0e440752006f007509110273630007ffffffff6779000000000000010101010101010101140c010e01012e35372e4206311a0608220f050a05050f251b05010a2e44346447073c3f020a0a0a3d08364840242d32451d20323c37282a31172e0dab1801000901006c0701006c07ce180000ac260000000000ff526f02b1000400000000040c000000000000000000000000000000ffffffff0c071a9cf9db161d1d129f000101040000000504e21aee0701000509e21aee0701000509011bee07010005091f1bee07010000000000000103ff000001006c07ff00000002000000ff040000000600810003003201ff170100000000000006080000000001006c070001006c0701006c07ff00000000007f070000ffffffffffffffff010000000006000000000006000100010001000100000000000600010001000000011f000000000000000000000001006c07000000a034eb0701006c0701006c0701006c0701006c0700000b00ffffffffffffffff5c01000002ffffffff01006c0700000000000002000000000001006c070001006c07ffffffff01006c07ffffffff01000f00000000b3050000ffffffff1f1bee075b5eee0700000d9c00000300000001ffff00000301ffff00000301ffff0000035f0017000705000c8007311b262728ff1000ffffffffffffffff000000000f0201006c07e600e6070a0040cb00000500018c030000e0010000000000000212ee07ffffffffffffffff0000000637000000ffff200021000000ffff27001b000000ffff2600ffffffff050003001e01000019000d00ed390300ffff1200000000000000ff030400000000000000ee07000000000000ffffffffffffffff6d01ef071200ea070b0404000000010000000725b30401ffffffffffffffff0212ee07161eee070000000000000000006538ed0709a92f20000001000000000000000001006c070029c00100b305000000000000e9000000010000ffffffff0000000000000000000000e600e6070101006c0701006c0796e40000ffffffffe21aed07000000000000000000e40e030000e032060000ffffffff00000000003901da07ff011001020000000301c3000000000000000c080c0d040d1106a7390000000000000103e6040000000000000000016a031e01ffb30500000000000000000419020000ffb30500000000000000000443022000ff01000000e6040000010100ff01ff0400ac0b000505000000ac0b50b3050000024908000505000002490800b30500000000080240300400000029c001006461557764615577"
+  },
+  {
+    "source": "/Volumes/4TB Private/Offloaded/FMCP 27/evidence/batches/saved-human-person-83/acceptance/literal-name-control.json",
+    "source_metadata": {
+      "state": "independent_bounded_raw_literal_positive",
+      "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+      "source_raw_sha256": "4d563471a32d61d36faf78f1302597cb82e9e8c56ca870234d6ec797c62d58e0",
+      "source_spool": "evidence/batches/saved-person-population-42/core/inputs/spools/8ff7b7053760.game_db.bin",
+      "raw_record_sha256": "fdf2d38e189f48b8ce8ae9c1c3e83197293f4add8e905f45db316b66bf2add57",
+      "source_tag_offset": 150511697,
+      "source_end": 150511741,
+      "person_index": 71529,
+      "signed_tag": 5,
+      "record_kind": "RETIRED_PERSON_NAME_STRINGS",
+      "identity": {
+        "native_id_word": 2002040996,
+        "secondary_word": 2002040996
+      },
+      "stored_literals": [
+        {
+          "native_offset": "0x20",
+          "byte_count": 0,
+          "raw_hex": "",
+          "literal_text": ""
+        },
+        {
+          "native_offset": "0x28",
+          "byte_count": 15,
+          "raw_hex": "466f74617120537472616b6f736861",
+          "literal_text": "Fotaq Strakosha"
+        }
+      ],
+      "semantics": "Two stored literal strings at native20/28 only; do not split or rename them first/surname without native getter proof. Empty is observed, null equivalence unproved.",
+      "inline_name_transport_positive": false,
+      "source_proof": "B83 complete all-source hash+every raw record audit; this control reread exact44B and independently parsed2u32 lengths, canonical trailer."
+    },
+    "raw_hex": "05000000000f000000466f74617120537472616b6f736861000040000000000069170100a4b85477a4b85477"
+  },
+  {
+    "source": "/Volumes/4TB Private/Offloaded/FMCP 27/evidence/batches/saved-human-person-83/acceptance/retired-pointer-control.json",
+    "source_metadata": {
+      "state": "independent_bounded_raw_retired_pointer_and_original_vector_control",
+      "snapshot_id": "8ff7b7053760d72f9389fbe8ef36b00a46a3a08cb40a477234006df2330d70d3",
+      "component_raw_sha256": "4d563471a32d61d36faf78f1302597cb82e9e8c56ca870234d6ec797c62d58e0",
+      "person_index": 1,
+      "native_id_word": 14,
+      "secondary_word": 14,
+      "signed_tag": 16,
+      "record_kind": "RETIRED_PERSON_NAME_POINTERS",
+      "component_tag_offset": 96082275,
+      "component_end": 96082305,
+      "raw_record_sha256": "4e04b99c9f657940f1501ee3bb50c58dd4b683584086fa07a4daff74233f071d",
+      "selector": 0,
+      "native_0x20_raw_u32": 23066,
+      "native_0x28_raw_u32": 27101,
+      "final_flags_raw_u64": 272630273,
+      "fixup": "B55 final flags no29/30/31/16, so native20->first/native28->second; typedvirtual150 null, no common alias",
+      "fields": [
+        {
+          "native_offset": "0x20",
+          "namespace": "first",
+          "stored_index_u32": 23066,
+          "raw_hex": "4178656c",
+          "text": "Axel",
+          "source_start": 80566070,
+          "source_end": 80566074
+        },
+        {
+          "native_offset": "0x28",
+          "namespace": "second",
+          "stored_index_u32": 27101,
+          "raw_hex": "536d65657473",
+          "text": "Smeets",
+          "source_start": 85123466,
+          "source_end": 85123472
+        }
+      ],
+      "inline_transport": false,
+      "source_basis": "B83 all-source/raw-record/native-tag audit, then exact30B +same-file indexed name row reread without product imports"
+    },
+    "raw_hex": "10001a5a0000dd6900000102401000000000010000000e0000000e000000"
+  }
+]

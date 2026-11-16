@@ -1,0 +1,459 @@
+"""A fixture-bound read of the resident match client, with an explicit clock scope."""
+from copy import deepcopy
+from datetime import datetime, timezone
+import struct
+
+from . import (current_match_native_playback, active_match_half_boundaries, active_match_playback, active_match_score,
+               active_match_shot_timeline, active_match_source, active_match_people, live_match_performance, players,
+               resident_match_plans, world)
+
+
+TACTICS_MODULES = ('resident_match_plans', 'prepared_tactics_source', 'prepared_tactics_fields',
+                   'prepared_tactic_instructions', 'prepared_tactic_roles')
+
+
+def _tactics_unavailable(reasons):
+    from . import address_book
+    return {'state': 'unavailable', 'reason': 'stored_plan_decoders_unavailable_on_this_build',
+            'build': address_book.build_label(), 'native_sites': reasons[:6]}
+
+
+def _section(name, unavailable):
+    from . import address_book
+    return address_book.optional_section(name, unavailable)
+
+
+@_section('tactics', _tactics_unavailable)
+def _tactics_section(read, base, binding):
+    """The stored-plan decoders (resident_match_plans and the prepared_tactic* modules). On a build
+    where any native site they reach is unresolved or its guard changed, the report marks only this
+    section unavailable, with the sites, instead of refusing the whole current-match read."""
+    plans = resident_match_plans.inspect(read, base, binding['engine'], binding['team_indices'])
+    return _tactics(plans)
+
+
+def tactics_unavailable_on_build():
+    """The native sites that keep the tactics section from running on the loaded build ([] when it runs)."""
+    return _tactics_section.blocked()
+
+
+def _cursor_advance(before, after):
+    old = struct.unpack('<' + 'I' * (len(before)//4), before)
+    new = struct.unpack('<' + 'I' * (len(after)//4), after)
+    return (new[0] >= old[0] and new[0] - old[0] <= 4096
+            and (len(new) == 1 or new[1] >= old[1] and new[0] <= new[1]))
+
+
+def _period_advance(before, after):
+    return (before[4] == after[4] and 0 <= struct.unpack_from('<i', after)[0]
+            - struct.unpack_from('<i', before)[0] <= 4096)
+
+
+class ReportReadSet(world.ReadSet):
+    """Query-local cache-line transport; verify only requested bytes, never whole cache lines.
+
+    The cache belongs to one attempt. Verification bypasses it and compares every
+    consumed byte. Coalescing reduces IPC, not the source consistency requirement.
+    """
+    PAGE = 128
+
+    def __init__(self, read, observed=None):
+        super().__init__(read)
+        self.observed.update(observed or {})
+        self.pages = {}
+        self.monotonic = {}
+
+    def __call__(self, address, length):
+        if length < 0:
+            raise ValueError('Invalid read length')
+        chunks = []
+        cursor = address
+        while cursor < address + length:
+            page = cursor - cursor % self.PAGE
+            if page not in self.pages:
+                raw = self.read(page, self.PAGE)
+                if len(raw) != self.PAGE:
+                    raise ValueError('Incomplete world read')
+                self.pages[page] = raw
+            count = min(address + length - cursor, self.PAGE - (cursor - page))
+            chunks.append(self.pages[page][cursor-page:cursor-page+count])
+            cursor += count
+        data = b''.join(chunks)
+        key = address, length
+        if key in self.observed and self.observed[key] != data:
+            raise ValueError('Game state changed during read; retry')
+        self.observed[key] = data
+        return data
+
+    def verify(self):
+        # Latest source pages (cursor/period/counters) first; immutable native
+        # spans and canonical identity are still all checked before publication.
+        pages = {}
+        for (address, length), expected in reversed(list(self.observed.items())):
+            cursor = address
+            while cursor < address + length:
+                page = cursor - cursor % self.PAGE
+                if page not in pages:
+                    raw = self.read(page, self.PAGE)
+                    if len(raw) != self.PAGE:
+                        raise ValueError('Incomplete world read')
+                    pages[page] = raw
+                count = min(address + length - cursor, self.PAGE - (cursor-page))
+                offset = cursor-address
+                actual = pages[page][cursor-page:cursor-page+count]
+                if actual != expected[offset:offset+count]:
+                    # Policies are installed only for the explicitly bound cursor
+                    # and its named-period state, never arbitrary source bytes.
+                    policy = self.monotonic.get((address, length))
+                    if offset or count != length or policy is None or not policy(expected, actual):
+                        raise ValueError('Game state changed during read; retry')
+                cursor += count
+
+
+def _statistics_reader(read, client, engine, scope):
+    """Supply the existing decoder only the fields it consumes for this report.
+
+    Unmapped input clock words and unused SIDE_STATS padding are not part of
+    this projection. Both sides' identity and numeric validation remain checked.
+    """
+    inputs = {client + 8, players.u64(read(engine + 0x14e90, 8))}
+    sides = set()
+    selected_sides = set()
+    def project(address, length):
+        if address in inputs and length == 0x78:
+            fields = ((0, 8), (0x18, 8), (0x68, 16))
+        elif address in sides and length == 0x1a0:
+            fields = ((0x5c, 8), (0xd8, 4), (0x16f, 2))
+            if address in selected_sides:
+                fields += ((0x7c, 4), (0x19d, 1))
+        else:
+            return read(address, length)
+        result = bytearray(length)
+        for offset, count in fields:
+            result[offset:offset+count] = read(address+offset, count)
+        if address in inputs:
+            pointers = (players.u64(result, 0x68), players.u64(result, 0x70))
+            sides.update(pointers)
+            if (address == client + 8) == (scope == 'client_snapshot'):
+                selected_sides.update(pointers)
+        return bytes(result)
+    return project
+
+
+def _statistics(performance, scope, teams):
+    if performance.get('sides') is None:
+        return {'state': performance['state'], 'sides': None, 'scope': scope}
+
+    if scope == 'client_snapshot':
+        rows = performance['client_statistics_snapshot']['sides']
+    else:
+        rows = performance['sides']
+    if len(rows) != 2:
+        raise ValueError('Expected exactly two match statistics sides')
+    result = []
+    supported_fields = {'team_index', 'shots', 'shots_on_target', 'expected_goals',
+                        'passes_attempted', 'passes_completed', 'pass_completion_percentage_computed',
+                        'corners', 'possession_time_raw', 'possession_time_units', 'chances',
+                        'side_index', 'team_native_id'}
+    for index, (row, team) in enumerate(zip(rows, teams, strict=True)):
+        if set(row) - supported_fields:
+            raise ValueError('Match statistics projection requires explicit field verification')
+        if (row['side_index'], row['team_index'], row['team_native_id']) != (
+                index, team['database_index'], team['native_id']):
+            raise ValueError('Match report statistics disagree with the bound fixture teams')
+        result.append({
+            **row, 'team': team, 'expected_goals_per_shot': (
+                row['expected_goals'] / row['shots'] if row['shots'] else None),
+        })
+    return {
+        'state': 'available', 'scope': scope, 'sides': result,
+        'period_coverage': 'cumulative_through_source_snapshot',
+        'displayed_time_verified': False,
+        # Which object the screen reads: fmdb/sources/match_state.py (MATCH_UI_HANDLER +0x108). On a live match
+        # of 27.0.1 (12 November 2026): paused at tick 6332 the engine object held 8 shots and 277 completed
+        # passes, equal to the events before the playback cursor, while the client copy held 3 shots; running
+        # at tick 9630 the engine object held 11 shots (one goal ahead of the 10 before the cursor) and the
+        # client copy equalled it. On 27.0.0 the client copy was observed one shot ahead of the engine object.
+        'interpretation': ('A copy of the counters held by the match client. It is refreshed at moments the reader '
+                           'does not know and has been observed both behind and ahead of the match screen. '
+                           'Use statistics_scope=simulation for the numbers the screen shows.'
+                           if scope == 'client_snapshot' else
+                           "The engine's statistics object, the one the match screen's statistics panel reads. "
+                           'While the match runs the engine is ahead of the picture, so these counters can include '
+                           'play just beyond the viewing position; chance_breakdown counts only events before the '
+                           'playback cursor.'),
+    }
+
+
+def _tactics(source):
+    sides = []
+    for side in source['sides']:
+        plan = side['plan']
+        phases = {}
+        for name, phase in plan['phases'].items():
+            positions = []
+            for position in phase['positions']:
+                role = position['stored_base_role']
+                positions.append({'slot': position['position_index'], 'position': position['name'],
+                                  'position_mask': position['native_mask'],
+                                  'base_role': role['compiled_english_name']})
+            phases[name] = positions
+        sides.append({'team': side['team'], 'name': plan['name'], 'mentality': plan['mentality'],
+                      'instructions': plan['team_instructions'], 'phases': phases})
+    return {'state': 'available', 'scope': 'resident_engine_manager_settings', 'sides': sides,
+            'kickoff_plan_verified': False, 'displayed_time_verified': False,
+            'effective_individual_overrides_verified': False}
+
+
+def _score(score):
+    if score and score['state'] == 'available':
+        return {'home': score['home_goals'], 'away': score['away_goals']}
+    return None
+
+
+def _native_options(include_playback_events, playback_event_limit, include_player_changes):
+    """Forward opt-in native playback options only when requested, leaving legacy calls unchanged."""
+    options = {}
+    if include_playback_events:
+        options.update(include_playback_events=True, playback_event_limit=playback_event_limit)
+    if include_player_changes:
+        options['include_player_changes'] = True
+    return options
+
+
+def _playback_report(read, base, binding, include_shot_events, *, include_playback_events=False,
+                     playback_event_limit=100, include_player_changes=False):
+    captured = active_match_playback.capture(read, base, client=binding['client'])
+    result = {'playback': {'state': captured['state']}, 'displayed_score': None,
+              'half_time_score': None, 'displayed_period': None, 'chance_breakdown': None}
+    if captured['state'] != 'bound_playback_cursor':
+        if include_playback_events:
+            result['playback_events'] = current_match_native_playback.unavailable(captured['state'])
+        if include_player_changes:
+            result['player_changes'] = current_match_native_playback.unavailable(captured['state'])
+        return result
+    bound = captured['bound_playback']
+    if isinstance(read, ReportReadSet):
+        # This float is returned by the lower-level capture but is not consumed
+        # by this report or its score/period/chance projections.
+        read.observed.pop((bound['playback_address'] + 0x1DDC, 4), None)
+    split = active_match_half_boundaries.inspect(read, base, bound)
+    # Independent terminal spatial source; no shot/counter success is required.
+    if split.get('state') == 'available' and split.get('period_source', {}).get('simulation_period') == 'FullTime':
+        result['_spatial_period_capture_candidate'] = dict(
+            bound=bound, split=split, client=binding['client'], engine=binding['engine'])
+    period = split['period_source']
+    score = active_match_score.capture(read, base, bound_playback=bound,
+                                       trusted_first_half_boundary=split['first_half_boundary'])
+    actor_options = {}
+    if include_shot_events:
+        actor_options['actor_binding'] = active_match_people.inspect_actor_bindings(
+            read, base, binding['engine'], expected_match_unique_id=bound['official_match_unique_id'])
+    chances = active_match_shot_timeline.inspect_bound(read, base, binding['client'], binding['engine'],
+                                                       bound, period_split=split, capture_observation=True, **actor_options)
+    source = chances.pop('_host_period_source', None)
+    if source is not None and split.get('state') == 'available':
+        result['_period_capture_candidate'] = dict(bound=bound, split=split, source=source)
+    if not include_shot_events:
+        chances.pop('shots', None)
+        chances.pop('own_goal_markers', None)
+    result.update(displayed_period=period['simulation_period'] if period['source_state'] == 'available' else None,
+                  displayed_score=_score(score['current_score']), half_time_score=_score(score['first_half_score']),
+                  chance_breakdown=chances)
+    result['playback'].update(current_time_slice=bound['current_time_slice'], period_reason=period['reason'],
+                              score_state=score['state'], half_boundary_state=split['state'],
+                              half_boundary_reason=split['reason'], score_scope='official_match_state_at_playback')
+    if include_playback_events or include_player_changes:
+        result.update(current_match_native_playback.inspect(
+            read, base, binding, bound, include_events=include_playback_events,
+            event_limit=playback_event_limit, include_changes=include_player_changes))
+    if isinstance(read, ReportReadSet):
+        cursor_address = bound['playback_address'] + 0x1DC0
+        state = players.u64(read(bound['frame_provider_address'] + 0x220, 8))
+        if state and period['source_state'] == 'available':
+            read.monotonic[(cursor_address, 4)] = _cursor_advance
+            read.monotonic[(cursor_address, 8)] = _cursor_advance
+            read.monotonic[(state + 0x38, 5)] = _period_advance
+        result['playback']['observation_policy'] = 'pinned_cursor_with_same_period_monotonic_recheck'
+        result['playback']['cursor_still_current_verified'] = False
+    return result
+
+
+def _inspect(read, base, current_date, statistics_scope, include_tactics, include_shot_events=False, include_player_passing=False, include_player_statistics=False,
+             include_playback_events=False, playback_event_limit=100, include_player_changes=False):
+    context, binding = active_match_source.inspect_context(read, base, expected_current_date=current_date)
+    result = {'state': context['source_state'], 'reason': context.get('reason'),
+              'resident_clients': context['physical_client_count'], 'fixture': None,
+              'team_statistics': None, 'tactics': None, 'displayed_minute': None,
+              'displayed_score': None, 'half_time_score': None, 'displayed_period': None,
+              'live_or_replay_verified': False, 'playback': None, 'chance_breakdown': None}
+    if include_player_passing:
+        result['player_passing'] = {'state': 'unavailable',
+            'reason': context.get('reason') or 'unique_current_fixture_source_unavailable', 'rows': None}
+    if include_player_statistics:
+        result['player_statistics'] = {'state': 'unavailable',
+            'reason': context.get('reason') or 'unique_current_fixture_source_unavailable', 'rows': None}
+    for requested, key in ((include_playback_events, 'playback_events'), (include_player_changes, 'player_changes')):
+        if requested:
+            result[key] = current_match_native_playback.unavailable(
+                context.get('reason') or 'unique_current_fixture_source_unavailable')
+    if binding is None:
+        return result
+    fixture = context['bound_active_fixture']
+    # A provisional fixture-result object can be ahead of playback. Project only identity.
+    result['fixture'] = {k: fixture[k] for k in ('date', 'competition', 'home_team', 'away_team')}
+    teams = [fixture['home_team'], fixture['away_team']]
+    if list(binding['team_indices']) != [team['database_index'] for team in teams]:
+        raise ValueError('Match source fixture ordering changed')
+    performance_read = (_statistics_reader(read, binding['client'], binding['engine'], statistics_scope)
+                        if isinstance(read, ReportReadSet) else read)
+    performance = live_match_performance.inspect(performance_read, base, binding['client'], binding['engine'])
+    result['team_statistics'] = _statistics(performance, statistics_scope, teams)
+    if include_tactics:
+        result['tactics'] = _tactics_section(read, base, binding)
+    if include_player_passing:
+        from .current_player_passing import inspect as inspect_player_passing
+        official = active_match_people._u64(read, binding['engine'] + 0x20)
+        result['player_passing'] = inspect_player_passing(
+            read, base, binding['engine'], expected_match_unique_id=official)
+    if include_player_statistics:
+        from .current_player_match_statistic_groups import inspect as inspect_player_statistics
+        official = active_match_people._u64(read, binding['engine'] + 0x20)
+        result['player_statistics'] = inspect_player_statistics(
+            read, base, binding['engine'], expected_match_unique_id=official)
+    result.update(_playback_report(read, base, binding, include_shot_events,
+                                   **_native_options(include_playback_events, playback_event_limit, include_player_changes)))
+    return result
+
+
+def current_match_report(bridge, session_id, statistics_scope='simulation', include_tactics=True, include_shot_events=False, include_player_passing=False, include_player_statistics=False, *, persist_host_observations=True,
+                         include_playback_events=False, playback_event_limit=100, include_player_changes=False, player_statistics_observation_window=False):
+    if statistics_scope not in ('client_snapshot', 'simulation'):
+        raise ValueError('Choose client_snapshot or simulation.')
+    if type(include_tactics) is not bool:
+        raise ValueError('include_tactics must be a boolean.')
+    if type(include_shot_events) is not bool:
+        raise ValueError('include_shot_events must be a boolean.')
+    if type(include_player_passing) is not bool:
+        raise ValueError('include_player_passing must be a boolean.')
+    if type(include_player_statistics) is not bool:
+        raise ValueError('include_player_statistics must be a boolean.')
+    if type(persist_host_observations) is not bool:
+        raise ValueError('persist_host_observations must be a boolean.')
+    if type(include_playback_events) is not bool:
+        raise ValueError('include_playback_events must be a boolean.')
+    if type(include_player_changes) is not bool:
+        raise ValueError('include_player_changes must be a boolean.')
+    if (type(playback_event_limit) is not int
+            or not 1 <= playback_event_limit <= current_match_native_playback.MAX_EVENT_ROWS_RETURNED):
+        raise ValueError('playback_event_limit must be an integer from 1 to 500.')
+    if type(player_statistics_observation_window) is not bool:
+        raise ValueError('player_statistics_observation_window must be a boolean.')
+    if player_statistics_observation_window:
+        # Separate, player-only contract: other report sections are not read.
+        if not include_player_statistics:
+            raise ValueError('player_statistics_observation_window requires include_player_statistics=true.')
+        if include_shot_events or include_player_passing or include_playback_events or include_player_changes:
+            raise ValueError('player_statistics_observation_window is player-only; leave include_shot_events, include_player_passing, include_playback_events and include_player_changes false.')
+        from .current_match_statistic_observations import current_match_statistic_observations
+        return current_match_statistic_observations(bridge, session_id)
+    for attempt in range(2):
+        try:
+            def seal():
+                # Bridge's post-yield lifetime callback runs before this hook.
+                # Enrol the real runtime guards in both publication journals;
+                # direct _player_layout transport alone cannot fence late drift.
+                current = bridge._current(session_id)
+                if current != process:
+                    raise ValueError('Current-match process lifetime changed')
+                after_layout = bridge._player_layout(current)
+                if after_layout != layout or bridge.plugin_identity != plugin_identity:
+                    raise ValueError('Current-match loaded plugin/build changed')
+                after_read, after_save, after_identity = bridge._world_state(current, after_layout)
+                if (after_save != save or after_identity != world_identity
+                        or bridge.world_identity != world_identity):
+                    raise ValueError('Current-match loaded save/date context changed')
+                if players.verify_runtime(after_read, base, plugin_identity[1]) != layout:
+                    raise ValueError('Current-match final runtime layout binding differs')
+                if bridge._current(session_id) != process:
+                    raise ValueError('Current-match final process lifetime changed')
+                if (bridge.session != session_id or bridge.process != process
+                        or bridge.plugin_identity != plugin_identity or bridge.world_identity != world_identity):
+                    raise ValueError('Current-match final context binding changed')
+                read.verify()
+                after_read.verify()
+
+            with bridge.lock, bridge._read_scope(session_id, final_verify=seal):
+                process = bridge._current(session_id)
+                layout = bridge._player_layout(process)
+                plugin_identity = deepcopy(bridge.plugin_identity)
+                read, loaded, world_identity = bridge._world_state(process, layout)
+                save, world_identity = deepcopy(loaded), deepcopy(world_identity)
+                if bridge.world_identity != world_identity:
+                    raise ValueError('Current-match initial world binding differs')
+                base = layout[0] - players.RVA[0]
+                if players.verify_runtime(read, base, plugin_identity[1]) != layout:
+                    raise ValueError('Current-match runtime layout binding differs')
+                if isinstance(read, world.ReadSet):
+                    read = ReportReadSet(read.read, read.observed)
+                native_options = _native_options(include_playback_events, playback_event_limit, include_player_changes)
+                result = _inspect(read, base, save['current_date'],
+                                  statistics_scope, include_tactics, include_shot_events, include_player_passing, include_player_statistics,
+                                  **native_options)
+                spatial_candidate = result.pop('_spatial_period_capture_candidate', None)
+                spatial_source, spatial_reason = None, 'verified_terminal_spatial_source_unavailable'
+                if persist_host_observations and spatial_candidate is not None:
+                    from .spatial_period_witness import capture_terminal_source
+                    spatial_candidate = {**spatial_candidate, 'fixture': result['fixture']}
+                    try:
+                        spatial_source = capture_terminal_source(
+                            read, base, spatial_candidate)
+                    except (ValueError, TypeError, KeyError) as error:
+                        spatial_reason = str(error)
+                read.verify()
+                if bridge._current(session_id) != process:
+                    raise ValueError('Current-match process lifetime changed')
+                candidate = result.pop('_period_capture_candidate', None)
+                epoch = None
+                if persist_host_observations:
+                    from .match_period_observations import process_epoch
+                    epoch = process_epoch(bridge) if candidate is not None or spatial_source is not None else None
+                packet = {**result, 'save': bridge._public_save(save),
+                        'observed_at': datetime.now(timezone.utc).isoformat(),
+                        'saved_file_fallback': False,
+                        'snapshot_consistency': {'policy': 'rechecked_consumed_bytes',
+                            'atomic_snapshot_verified': False,
+                            'statistics_and_playback_same_tick_verified': False,
+                            'statistics_aligned_to_playback_verified': False}}
+            if not persist_host_observations:
+                packet['host_period_capture'] = {'state': 'not_captured', 'reason': 'disabled_by_request'}
+                packet['host_spatial_period_capture'] = {'state': 'not_captured', 'reason': 'disabled_by_request'}
+                return packet
+            packet['host_period_capture'] = {'state': 'not_captured', 'reason': 'verified_period_source_unavailable'}
+            if candidate is not None:
+                from .match_period_observations import make_observation, ObservationStore
+                try:
+                    observation = make_observation(packet['save'], packet['fixture'],
+                                                   candidate['bound'], candidate['split'], candidate['source'],
+                                                   epoch, packet['observed_at'])
+                    packet['host_period_capture'] = ObservationStore().save(observation)
+                    packet['host_period_capture']['source_kind'] = 'host_captured_native_period_observation'
+                except (OSError, ValueError, TypeError, KeyError) as error:
+                    packet['host_period_capture'] = {'state': 'not_captured', 'reason': str(error)}
+            # Separate prospective spatial record/store; leave legacy shot
+            # observation construction and validation completely unchanged.
+            packet['host_spatial_period_capture'] = {'state': 'not_captured', 'reason': spatial_reason}
+            if spatial_source is not None:
+                from .spatial_period_witness import make_observation as make_spatial_observation
+                from .spatial_period_observations import SpatialPeriodStore
+                try:
+                    observation = make_spatial_observation(packet['save'], packet['fixture'],
+                        spatial_candidate, spatial_source, epoch, packet['observed_at'])
+                    packet['host_spatial_period_capture'] = SpatialPeriodStore().save(observation)
+                    packet['host_spatial_period_capture']['source_kind'] = 'host_captured_native_spatial_period_observation'
+                except (OSError, ValueError, TypeError, KeyError) as error:
+                    packet['host_spatial_period_capture'] = {'state': 'not_captured', 'reason': str(error)}
+            return packet
+        except ValueError as error:
+            if attempt or str(error) != 'Game state changed during read; retry':
+                raise

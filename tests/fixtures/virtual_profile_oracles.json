@@ -1,0 +1,39 @@
+{
+  "source": "Manually transcribed live profiles on 6 November 2026. Local screenshots: evidence/goal-virtual-profile.png (Jay Stinson) and evidence/goal-logan-profile.png (Logan Greenup). These are independent UI expectations, not memory snapshots.",
+  "players": [
+    {
+      "name": "Jay Stinson",
+      "birth_date": "2014-10-27",
+      "displayed_contract_state": "Free Agent",
+      "attributes": {
+        "aggression": 7, "anticipation": 8, "bravery": 9, "composure": 7,
+        "concentration": 8, "decisions": 7, "determination": 7, "flair": 5,
+        "leadership": 7, "off_the_ball": 4, "positioning": 8, "teamwork": 8,
+        "vision": 6, "work_rate": 8, "acceleration": 7, "agility": 6,
+        "balance": 9, "jumping_reach": 9, "natural_fitness": 7, "pace": 6,
+        "stamina": 8, "strength": 9, "first_touch": 6, "passing": 7,
+        "free_kick_taking": 5, "penalty_taking": 2, "technique": 7
+      }
+    },
+    {
+      "name": "Logan Greenup",
+      "birth_date": "2014-04-22",
+      "displayed_contract_state": "Free Agent",
+      "attributes": {
+        "crossing": 7, "dribbling": 6, "finishing": 6, "first_touch": 8,
+        "heading": 5, "long_shots": 6, "marking": 4, "passing": 6,
+        "tackling": 4, "technique": 8, "corners": 6, "free_kick_taking": 5,
+        "long_throws": 5, "penalty_taking": 5, "aggression": 6,
+        "anticipation": 6, "bravery": 6, "composure": 6, "concentration": 5,
+        "decisions": 5, "determination": 5, "flair": 5, "leadership": 5,
+        "off_the_ball": 8, "positioning": 5, "teamwork": 7, "vision": 6,
+        "work_rate": 8, "acceleration": 7, "agility": 6, "balance": 7,
+        "jumping_reach": 4, "natural_fitness": 6, "pace": 6, "stamina": 7,
+        "strength": 6
+      }
+    }
+  ],
+  "squad_counts": {"Senior": 28, "U21": 23, "U18": 24},
+  "squad_count_source": "Live First Team, U21 and U18 header labels in evidence/continue-squad.png, evidence/goal-current.png, evidence/goal-u18-list.png. The fourth native team has no verified UI label.",
+  "u18_visible_virtual_names": ["Jay Stinson", "Ellis Portas", "Promise Fewster", "Daryl McLaren", "Ellis Steels", "Logan Greenup", "Buster Wing", "Jay Reach", "Frankie Zych"]
+}

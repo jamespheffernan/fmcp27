@@ -1,0 +1,33 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+build/
+evidence/
+.DS_Store
+
+# Local credentials and assistant state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+*.p12
+*.mobileprovision
+.secrets/
+.claude/
+.impeccable/
+.mcp.json
+
+# Generated and private working data
+node_modules/
+.cache/
+.wrangler/
+tmp/
+sessions/
+*.fm
+*.fm.bak
+*.log
+site/public/download/*.zip
+
